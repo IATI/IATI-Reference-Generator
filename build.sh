@@ -1,0 +1,47 @@
+#!/bin/bash
+
+git submodule init
+git submodule update
+
+python3 -m virtualenv venv
+source venv/bin/activate
+
+pip install -r IATI-Standard-SSOT-version-2.03/requirements.txt
+
+cd IATI-Standard-SSOT-version-2.03
+git submodule init
+git submodule update
+./gen.sh
+cd ..
+
+cd IATI-Standard-SSOT-version-2.02
+git submodule init
+git submodule update
+./gen.sh
+cd ..
+
+cd IATI-Standard-SSOT-version-2.01
+git submodule init
+git submodule update
+./gen.sh
+cd ..
+
+cd IATI-Standard-SSOT-version-1.05
+git submodule init
+git submodule update
+./gen.sh
+cd ..
+
+cd IATI-Standard-SSOT-version-1.04
+git submodule init
+git submodule update
+./gen.sh
+cd ..
+
+cd IATI-Guidance/en
+make dirhtml
+cd ../..
+
+cd IATI-Developer-Documentation
+make dirhtml
+cd ../..
