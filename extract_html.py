@@ -17,7 +17,7 @@ build_dirs = {
     "104": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml",
     "103": "IATI-Standard-SSOT-version-1.03/103.new",
     "102": "IATI-Standard-SSOT-version-1.02/102.new",
-    "101": "IATI-Standard-SSOT-version-1.02/101.new",
+    "101": "IATI-Standard-SSOT-version-1.01/101.new",
     "guidance": "IATI-Guidance/en/_build/dirhtml",
     "developer-documentation": "IATI-Developer-Documentation/_build/dirhtml"
 }
@@ -46,17 +46,18 @@ for parent_slug, root_dir in build_dirs.items():
                     main = soup.find("div", attrs={"role": "main"})
                     if main is None:
                         main = soup.find("div", attrs={"id": "main"})
-                    pre_spans = main.findAll("span", attrs={'class': 'pre'})
-                    for pre_span in pre_spans:
-                        pre_span.name = 'pre'
-                    for tag in main():
-                        for attribute in ["class", "style"]:
-                            del tag[attribute]
-                    output_dir = os.path.join("output", parent_slug, *dir_split[root_len:])
-                    output_path = os.path.join(output_dir, "index.html")
-                    if not os.path.isdir(output_dir):
-                        os.makedirs(output_dir)
-                    with open(output_path, 'w') as output_xml:
-                        output_xml.write(str(main))
+                    if main is not None:
+                        pre_spans = main.findAll("span", attrs={'class': 'pre'})
+                        for pre_span in pre_spans:
+                            pre_span.name = 'pre'
+                        for tag in main():
+                            for attribute in ["class", "style"]:
+                                del tag[attribute]
+                        output_dir = os.path.join("output", parent_slug, *dir_split[root_len:])
+                        output_path = os.path.join(output_dir, "index.html")
+                        if not os.path.isdir(output_dir):
+                            os.makedirs(output_dir)
+                        with open(output_path, 'w') as output_xml:
+                            output_xml.write(str(main))
 
 shutil.make_archive("output", "zip", "output")
