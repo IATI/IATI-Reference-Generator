@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>IATI Standard 1.03 | Standard, Schema and Guides for implementing IATI</title>
+<style type="text/css" media="screen, projection">
+  @import url(http://asset0.zendesk.com/external/zenbox/v2.1/zenbox.css);
+</style>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://iatistandard.org/103/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://iatistandard.org/103/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<link rel='stylesheet' id='wp-syntax-css-css'  href='wp-content/plugins/wp-syntax/css/wp-syntax.css@ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='wp-content/plugins/wp-pagenavi/pagenavi-css.css@ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='main-stylesheet-css'  href='wp-content/themes/iatistandard_1.03/style.css@ver=0.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='wp-content/plugins/collapsing-pages/collapsFunctions.js@ver=1.6'></script>
+<script type='text/javascript' src='wp-includes/js/comment-reply.min.js@ver=3.8.3'></script>
+<script type='text/javascript' src='wp-content/themes/iatistandard_1.03/library/js/modernizr-2.6.1.min.js@ver=2.6.1'></script>
+<script type='text/javascript' src='wp-content/themes/iatistandard_1.03/library/js/selectivizr.min.js@ver=1.2'></script>
+<link rel='prev' title='Sitemap' href='sitemap/index.html' />
+<link rel='next' title='The IATI Standard' href='standard/index.html' />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='index.html' />
+<style type='text/css'>
+    #sidebar span.collapsing.pages {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#sidebar li.widget_collapspage h2 span.sym {float:right;padding:0 .5em}
+#sidebar li.collapsing.pages a.self {font-weight:bold}
+#sidebar ul.collapsing.pages.list ul.collapsing.pages.list:before {content:'';} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages:before {content:'';} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages {list-style-type:none}
+#sidebar ul.collapsing.pages.list li.collapsing.pages{
+       padding:0 0 0 1em;
+       text-indent:-1em;
+}
+#sidebar ul.collapsing.pages.list li.collapsing.pages.item:before {content: '\00BB \00A0' !important;} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages .sym {
+   cursor:pointer;
+   font-size:1.2em;
+   font-family:Monaco, 'Andale Mono', 'FreeMono', 'Courier new', 'Courier', monospace;
+    padding-right:5px;}
+    </style>
+<link rel="Shortcut Icon" type="image/x-icon" href="wp-content/themes/twentyeleven/favicon.ico" />
+
+</head>
+
+
+<body class="home page page-id-17 page-template page-template-template-home-page-php  single-author singular two-column right-sidebar">
+<a id="top"></a>
+    <div id="site-notice"><strong>Version 1.03 of the IATI Standard is no longer supported. <a href="/upgrades/all-versions/">Please use other versions</a>.</strong></div>
+    <div id="page" class="hfeed">
+    <header id="header" role="banner">
+        <div class="header-wrapper">
+            <a id="logo" href="http://iatistandard.org/103">IATI Standard 1.03</a>
+            <div id="version-id">Current Version: 1.03</div>
+
+            <!--<form role="search" method="get" id="searchform" action="/">
+                <input type="text" value="" name="s" id="s" placeholder="Search IATI Standard">
+                <input type="submit" id="searchsubmit" value="Search" class="button">
+            </form>-->
+        </div><!-- end wrapper -->
+
+        <nav id="main-nav" class="nav" role="navigation">
+
+            <h3 class="assistive-text">Main menu</h3>
+                        <div class="skip-link"><a class="assistive-text" href="index.html#content" title="Skip to primary content">Skip to primary content</a></div>
+            <div class="skip-link"><a class="assistive-text" href="index.html#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+            <ul class="iati-family">
+    <li class="transparency"><a href="http://www.aidtransparency.net/">Aid Transparency</a></li>
+    <li class="standard"><a href="http://iatistandard.org">IATI Standard</a></li>
+    <li class="registry"><a href="http://iatiregistry.org">IATI Registry / Data</a></li>
+    <li class="community"><a href="http://support.iatistandard.org">IATI Community</a></li>
+</ul>
+            <ul id="menu-primary-navigation" class="menu-main"><li id="menu-item-4016" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4016"><a href="getting-started/index.html">Getting Started</a></li>
+<li id="menu-item-4013" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4013"><a title=" The Organisation Standard" href="organisation-standard/index.html">Organisation</a></li>
+<li id="menu-item-4014" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4014"><a title=" The IATI Activities Standard" href="activities-standard/index.html">Activities</a></li>
+<li id="menu-item-4015" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4015"><a href="codelists/index.html">Code Lists</a></li>
+<li id="menu-item-4038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4038"><a href="schema/index.html">IATI Schema</a></li>
+<li id="menu-item-4040" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4040"><a href="datastore/index.html">Datastore</a></li>
+<li id="menu-item-4039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4039"><a href="updates/index.html">Updates</a></li>
+</ul>        </nav>
+
+    </div><!-- end header -->
+
+    <div id="page-content">
+
+        
+
+        <div id="main">
+
+
+<div id="home-strapline">
+    <h1>IATI Standard is a technical publishing framework allowing data to be compared. This site gives detail on the standard, how to implement it and provides guidance.</h1>
+    </div>
+</div><!--#page-content -->
+</div><!--#page -->
+
+<div id="pre-footer">
+
+    <div id="home-icon-panels">
+    <div class="icon started">
+        <h2><a title="Getting Started" href="getting-started/index.html">Getting Started</a></h2>
+<ul>
+<li><a title="What is IATI?" href="getting-started/what-is-iati/index.html">What is IATI?</a></li>
+<li><a title="Getting Started" href="getting-started/index.html">What you need to know to get started</a></li>
+</ul>
+    </div>
+    <div class="icon detail">
+        <h2><a href="organisation-standard/index.html">Getting the Detail</a></h2>
+<ul>
+<li><a title="The IATI Organisation Standard" href="organisation-standard/index.html">The Organisation Standard</a></li>
+<li><a title="The IATI Activities Standard" href="activities-standard/index.html">The Activities Standard</a></li>
+<li><a title="IATI Code Lists" href="codelists/index.html">Code lists</a></li>
+<li><a title="IATI Schema" href="schema/index.html">Schema</a></li>
+</ul>
+<p>&nbsp;</p>
+    </div>
+    <div class="icon support">
+        <h2><a title="Community Support" href="community-support/index.html">Getting Support</a></h2>
+<ul>
+<li><a title="Updating the IATI Standard" href="updates/index.html">How the Standard is updated</a></li>
+<li><a title="Support" href="getting-started/tools-to-help/index.html">Useful tools</a></li>
+</ul>
+
+<!--        <div id="google-groups" class="box">-->
+<!--            <a href="https://groups.google.com/forum/?fromgroups#!forum/iati-technical" target="_blank">Google groups</a>-->
+<!--        </div>-->
+<!--        <div id="community-search" class="box">-->
+<!--            <form action="https://iati.zendesk.com/categories/search" method="get" target="_blank">-->
+<!--                <label for="suggestions_query">Search The Community </label>-->
+<!--                <input type="text" id="zendesk_query" name="suggestions_query" required/>-->
+<!--                <input type="submit" id="zendesk_submit" name="submit" value="Search" class="button">-->
+<!--            </form>-->
+<!--        </div>-->
+    </div>
+</div><!--#home-icon-panels -->
+
+    <div id="footer-links">
+        <ul>
+            <li>
+                <a href="sitemap/index.html">Site map</a>
+            </li>
+            <li>
+                <a href="community-support/index.html">Support</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer-additional">
+        <div id="footer-cookie">
+            <aside id="text-3" class="widget-1 widget-first widget-last widget-odd widget widget_text"><h3 class="widget-title">Cookie Disclaimer</h3>			<div class="textwidget"><p>Cookies' are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+</div>
+		</aside>        </div>
+        <div id="footer-social">
+            <aside id="sidebar_social_links" class="widget widget_social_links">
+    <div class="text-widget">
+        <ul class="social-links">
+            <li class="social facebook"><a href="index.html">Facebook</a></li>
+            <li class="social twitter"><a href="index.html">Twitter</a></li>
+            <li class="social linkedin"><a href="index.html">LinkedIn</a></li>
+            <li class="social rss"><a href="http://iatistandard.org/103/feed/">RSS</a></li>
+        </ul>
+    </div>
+</aside>
+        </div>
+        <!--#footer-social -->
+    </div>
+</div><!--#footer-wrapper -->
+
+<footer id="footer">
+
+    <div id="footer-credits">
+        <span class="glyphicons">Icons from <a href="http://glyphicons.com">Glyphicons Free</a> licensed under <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></span>
+    </div>
+    <!--.footer-inner -->
+</footer><!--#footer -->
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=1.8.2'></script>
+<script type='text/javascript' src='wp-content/themes/iatistandard_1.03/library/js/iati.js@ver=0.1.1'></script>
+<script type='text/javascript' src='wp-content/themes/iatistandard_1.03/library/js/common.js@ver=0.1.1'></script>
+</body>
+</html>

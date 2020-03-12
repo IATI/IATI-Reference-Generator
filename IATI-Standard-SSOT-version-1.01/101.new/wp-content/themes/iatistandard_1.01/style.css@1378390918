@@ -1,0 +1,451 @@
+/*
+Theme Name:     IATI Standard 1.01 Theme
+Theme URI:      http://example.com/
+Description:    Child theme for the Twenty Eleven theme  for IATI V1.01
+Author:         caprenter@gmail.com
+Author URI:     http://caprenter.me.uk
+Template:       twentyeleven
+Version:        0.1.0
+*/
+
+
+@import url("../twentyeleven/style.css");
+body {
+	background:none;
+	padding:0;
+}
+/*Shared IATI navigation*/
+#topbar {
+    background: none repeat scroll 0 0 #81B1CD;
+    height: 20px;
+    padding-top: 2px;
+}
+#topbar ul {
+    display: block;
+    margin: 0 auto;
+    width: 940px;
+}
+#topbar ul li:first-child {
+    padding: 0 0 0 10px;
+}
+
+#topbar ul li {
+    float: right;
+    list-style-type: none;
+    padding: 0 10px;
+    text-transform: uppercase;
+    line-height:15px;
+    margin:0;
+}
+#topbar ul li a {
+    color: #536FA1;
+    font-size: 11px;
+}
+
+ol, ul {
+    list-style: none outside none;
+}
+#page {
+	margin: 0 auto;
+  padding:0 10px;
+}
+#branding {
+	border: none;
+}
+#branding hgroup {
+	display:none;
+}
+#branding img {
+    height: auto;
+    margin-bottom: 7px;
+    width: 432px;
+}
+#logo {
+    float: left;
+    overflow: hidden;
+    padding: 15px 0 10px;
+}
+#branding  #searchform input {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    color: #AAAAAA;
+    float: left;
+    font-size: 12px;
+    margin: 5px 0 0 10px;
+    padding: 3px;
+    width: 178px;
+}
+#branding #searchform .btn {
+    margin: 7px 0 0;
+    padding: 0;
+    width: auto;
+}
+
+/*Main navigation*/
+#access {
+    background: none;
+    box-shadow: none;
+    clear: both;
+    display: block;
+    float: left;
+    margin: 0 auto 6px;
+    width: 100%;
+}
+#access div {
+    margin: 0;
+}
+.menu-default-container {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #E6E6E6;
+    border-style: solid;
+    border-width: 1px 0;
+    height: 33px;
+    margin-bottom: 20px;
+    position: relative;
+}
+#access ul {
+    float: left;
+    list-style: none outside none;
+    padding: 0;
+    margin:0;
+    line-height:33px;
+}
+#access li {
+    float: left;
+    line-height: 33px;
+    border-left: 1px solid #DEDBD1;
+}
+#access a {
+    color: #555555;
+    display: block;
+    line-height: 33px;
+    padding: 0 1.2125em;
+    text-decoration: none;
+}
+#access ul ul {
+    top: 33px;
+}
+
+/*Pages and Posts */
+
+.entry-content ul li {
+    list-style: disc outside none;
+}
+
+.entry-content th, .comment-content th {
+    padding: 0 10px 0 0;
+}
+
+/*Sidebar*/
+.left-sidebar #secondary {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    width: 25.8%;
+}
+.widget, #post-author, #main #connect, #main h3 {
+    background-color: #FAFAFA;
+    border-color: #DEDEDE;
+}
+#main h3 {
+background-color: #F5F4F0;
+padding: 2px 0 2px 5px;
+font-weight:bold;
+}
+
+.entry-content h3 {
+font-size:0.8em;
+}
+
+.widget {
+    background: url("images/bgr-box-trans.png") repeat-x scroll left top #F5F4F0;
+    border: 1px solid #DEDBD1;
+    margin: 0 0 15px;
+    padding: 18px;
+}
+.widget h3 {
+    background: none repeat scroll 0 0 #EBEBEB;
+    border: 1px solid #DEDEDE;
+}
+.widget h3 {
+    color: #363636;
+    display: block;
+    font: bold 12px/18px sans-serif;
+    margin: 0 0 7px;
+    padding: 5px 8px;
+    text-align: left;
+}
+.widget-title {
+    text-transform: none;
+}
+.widget a {
+    color: #333333;
+}
+.textwidget {
+    margin-left: 5px;
+}
+#secondary .textwidget {
+    margin: 15px 0 0 65px;
+}
+
+/*The Knowledge Base*/
+#text-9 {
+  background: url("../../uploads/2012/05/noun_project_20365050.png") no-repeat 25px 70px #F5F4F0;
+}
+
+/*The IATI Organisation Standard*/
+#text-8 {
+  background: url("../../uploads/2012/05/noun_project_12515050.png") no-repeat 25px 70px #F5F4F0;
+}
+
+/*The IATI Activities Standard*/
+#text-4 {
+  background: url("../../uploads/2012/05/noun_project_1714.png") no-repeat 25px 70px #F5F4F0;
+}
+
+/*Getting Started*/
+#text-10 {
+  background: url("../../uploads/2012/05/noun_project_938-5050.png") no-repeat 25px 70px #F5F4F0;
+}
+
+/*Code Lists*/
+#text-12  {
+  background: url("../../uploads/2012/05/noun_project_1714.png") no-repeat 25px 70px #F5F4F0;
+}
+
+/*IATI Schema*/
+#text-13 {
+  background: url("../../uploads/2012/05/noun_project_1056-5050.png") no-repeat 25px 70px #F5F4F0;
+}
+
+/*Community Support*/
+#text-16 {
+  background: url("../../uploads/2012/05/noun_project_20365050.png") no-repeat 25px 70px #F5F4F0;
+}
+
+/*Guidance
+#text-13 {
+  background: url("../../uploads/2012/05/noun_project_22495050.png") no-repeat 25px 70px #F5F4F0;
+}
+* */
+
+/*Governance
+#text-14 {
+  background: url("../../uploads/2012/05/noun_project_22805050.png") no-repeat 25px 70px #F5F4F0;
+}
+*/
+ul.collapsing.pages.list li a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight:normal;
+}
+ul.collapsing.pages.list li a:hover {
+background: #D6E099;
+}
+
+span.collapsing.pages {
+    border: 0 none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+ul.collapsing.pages.list li.collapsing.pages .sym {
+    cursor: pointer;
+    float: left;
+    font-family: Monaco,'Andale Mono','FreeMono','Courier new','Courier',monospace;
+    font-size: 1em;
+    padding-right: 5px;
+}
+
+
+
+#collapsPage-2410 li.collapsing.pages.item,
+#collapsPage-1469 li.collapsing.pages.item,
+#collapsPage-2133 li.collapsing.pages.item,
+#collapsPage-2114 li.collapsing.pages.item,
+#collapsPage-2107 li.collapsing.pages.item,
+#collapsPage-1279 li.collapsing.pages.item {
+	margin-left:0;
+}
+#collapsPage-2410 li.collapsing.pages,
+#collapsPage-1469 li.collapsing.pages,
+#collapsPage-2133 li.collapsing.pages,
+#collapsPage-2114 li.collapsing.pages,
+#collapsPage-2107 li.collapsing.pages,
+#collapsPage-1279 li.collapsing.pages {
+	margin-left:-1.2em;
+}
+
+#community-support-nav {
+margin-left:14px;
+}
+
+.text-with-image img {
+    float: left;
+    padding: 20px 20px 25px 5px;
+}
+
+/*Article*/
+.singular .entry-header,
+.singular .entry-content,
+.singular footer.entry-meta,
+.singular #comments-title {
+    margin: 0 auto;
+    width: 640px;
+}
+.singular #content,
+.left-sidebar.singular #content {
+    margin: 0 1.6% 0 25.8%;
+}
+.singular.page .hentry {
+    padding: 0;
+}
+#content-table .entry-content,
+#content-table .entry-header {
+width:95%;
+margin:0;
+}
+.entry-title {
+    padding-top: 0;
+}
+/*Edit link*/
+.singular .entry-meta .edit-link a {
+display:none;
+}
+
+/*Single post*/
+.singular .entry-header .entry-meta {
+	left: 30px;
+}
+
+/*captions*/
+.wp-caption .wp-caption-text:before {
+    content: none;
+}
+
+.date-comments {
+  text-align:right;
+  font-size: 0.9em;
+}
+
+/*Footer*/
+#colophon {
+    border-top: 1px solid #DDDDDD;
+    clear: both;
+}
+
+#supplementary {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+#site-generator {
+   text-align: left;
+}
+#copyright {
+	max-width:1000px;
+	margin:0 auto;
+}
+#copyright span {
+    color: #555555;
+    display: block;
+    font: bold 14px "Droid Serif",serif;
+}
+
+ul.blogroll {
+  margin-left: 5px;
+}
+
+
+#access ul {
+    border-right: 1px solid #DEDBD1;
+    width: 100%;
+}
+
+li.item {
+  list-style-type:square;
+}
+
+#zenbox_tab {
+    top: 40%;
+}
+
+.widget-title {
+    letter-spacing:normal;
+}
+
+ol {
+    list-style-type: decimal;
+}
+.under-review {
+    background: url("images/under-review.png") no-repeat 0 20px;
+    border: 1px solid #BBBBBB;
+    margin: -1em 0 1em;
+    padding: 20px 20px 20px 40px;
+}
+
+#colophon .widget ul {
+    list-style: square outside none;
+    margin-left: 16px;
+}
+
+/*front page boxes*/
+.got-a-question {
+float: left;
+width: 45%;
+margin-right: 5%;
+}
+
+.text-with-image {
+padding: 0 10px 20px 0;
+}
+
+#site-notice {
+margin:0 auto;
+background:#c6c7da;
+background: rgb(245, 38, 9);
+text-align:center;
+}
+
+#text-10 .textwidget, #text-11 .textwidget {
+margin:0;
+}
+
+/*Wiki Mark up css*/
+h2.sectionedit1 {
+display:none;
+}
+h3.sectionedit2,
+h3.sectionedit3  {
+background:none;
+color:#000;
+}
+h3.sectionedit2 a,
+h3.sectionedit3 a,
+#additional_notes {
+text-decoration:none;
+color:#000;
+}
+
+pre {
+padding: 0.75em 0.2em;
+}
+
+#content-table .entry-content table {
+border-bottom: 0;
+margin: 0;
+width: 80%;
+}
+#content-table .entry-content td {
+padding: 6px 0px 6px 0;
+}
+#version-id {
+margin:-30px 0 0 279px;
+}
+/*Hides links from the wiki that reference versions of documentation*/
+.page4release {
+display:none;
+}

@@ -49,4 +49,3 @@ make dirhtml
 cd ..
 
 python3 extract_html.py
-zip -r output.zip output

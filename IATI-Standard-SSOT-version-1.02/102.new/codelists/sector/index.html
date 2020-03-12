@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>Sector | IATI Standard 1.02</title>
+<style type="text/css" media="screen, projection">
+  @import url(http://asset0.zendesk.com/external/zenbox/v2.1/zenbox.css);
+</style>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://iatistandard.org/102/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://iatistandard.org/102/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<link rel='stylesheet' id='wp-syntax-css-css'  href='../../wp-content/plugins/wp-syntax/css/wp-syntax.css@ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='../../wp-content/plugins/wp-pagenavi/pagenavi-css.css@ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='main-stylesheet-css'  href='../../wp-content/themes/iatistandard_1.02/style.css@ver=0.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-content/plugins/collapsing-pages/collapsFunctions.js@ver=1.6'></script>
+<script type='text/javascript' src='../../wp-content/themes/iatistandard_1.02/library/js/modernizr-2.6.1.min.js@ver=2.6.1'></script>
+<script type='text/javascript' src='../../wp-content/themes/iatistandard_1.02/library/js/selectivizr.min.js@ver=1.2'></script>
+<link rel='prev' title='Related Activity Type' href='../related_activity_type/index.html' />
+<link rel='next' title='Tied Status' href='../tied_status/index.html' />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='index.html' />
+<style type='text/css'>
+    #sidebar span.collapsing.pages {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#sidebar li.widget_collapspage h2 span.sym {float:right;padding:0 .5em}
+#sidebar li.collapsing.pages a.self {font-weight:bold}
+#sidebar ul.collapsing.pages.list ul.collapsing.pages.list:before {content:'';} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages:before {content:'';} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages {list-style-type:none}
+#sidebar ul.collapsing.pages.list li.collapsing.pages{
+       padding:0 0 0 1em;
+       text-indent:-1em;
+}
+#sidebar ul.collapsing.pages.list li.collapsing.pages.item:before {content: '\00BB \00A0' !important;} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages .sym {
+   cursor:pointer;
+   font-size:1.2em;
+   font-family:Monaco, 'Andale Mono', 'FreeMono', 'Courier new', 'Courier', monospace;
+    padding-right:5px;}
+    </style>
+<link rel="Shortcut Icon" type="image/x-icon" href="../../wp-content/themes/twentyeleven/favicon.ico" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+</head>
+
+
+<body class="page page-id-968 page-child parent-pageid-737 page-template page-template-page_codelist-php custom-background  single-author singular two-column left-sidebar">
+<a id="top"></a>
+    <div id="site-notice"><strong>Version 1.02 of the IATI Standard is no longer supported. <a href="/upgrades/all-versions/">Please use other versions</a>.</strong></div>
+    <div id="page" class="hfeed">
+    <header id="header" role="banner">
+        <div class="header-wrapper">
+            <a id="logo" href="http://iatistandard.org/102">IATI Standard 1.02</a>
+            <div id="version-id"></div>
+
+            <!--<form role="search" method="get" id="searchform" action="/">
+                <input type="text" value="" name="s" id="s" placeholder="Search IATI Standard">
+                <input type="submit" id="searchsubmit" value="Search" class="button">
+            </form>-->
+        </div><!-- end wrapper -->
+
+        <nav id="main-nav" class="nav" role="navigation">
+
+            <h3 class="assistive-text">Main menu</h3>
+                        <div class="skip-link"><a class="assistive-text" href="index.html#content" title="Skip to primary content">Skip to primary content</a></div>
+            <div class="skip-link"><a class="assistive-text" href="index.html#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+            <ul class="iati-family">
+    <li class="transparency"><a href="http://www.aidtransparency.net/">Aid Transparency</a></li>
+    <li class="standard"><a href="http://iatistandard.org">IATI Standard</a></li>
+    <li class="registry"><a href="http://iatiregistry.org">IATI Registry / Data</a></li>
+    <li class="community"><a href="http://support.iatistandard.org">IATI Community</a></li>
+</ul>
+            <ul id="menu-primary-navigation" class="menu-main"><li id="menu-item-3663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3663"><a href="../../getting-started/index.html">Getting Started</a></li>
+<li id="menu-item-3660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3660"><a title=" The Organisation Standard" href="../../organisation-standard/index.html">Organisation</a></li>
+<li id="menu-item-3661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3661"><a title=" The IATI Activities Standard" href="../../activities-standard/index.html">Activities</a></li>
+<li id="menu-item-3662" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-3662"><a href="../index.html">Code Lists</a></li>
+<li id="menu-item-3686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3686"><a href="../../schema/index.html">IATI Schema</a></li>
+<li id="menu-item-3659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3659"><a title="IATI Standard &#8211; Guidance" href="../../guides/index.html">Guidance</a></li>
+<li id="menu-item-3664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3664"><a href="../../governance/index.html">Governance</a></li>
+<li id="menu-item-3687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3687"><a href="../../community-support/index.html">Support</a></li>
+</ul>        </nav>
+
+    </div><!-- end header -->
+
+    <div id="page-content">
+
+                <div id="nav-breadcrumbs">
+            <!-- Breadcrumb NavXT 5.0.1 -->
+<a title="Go to The IATI Standard Sites." href="http://iatistandard.org" class="main-home">The IATI Standard Sites</a> &gt; <a title="Go to IATI Standard 1.02." href="http://iatistandard.org/102" class="home">IATI Standard 1.02</a> &gt; <a title="Go to Code Lists." href="../index.html" class="post post-page">Code Lists</a> &gt; Sector        </div><!--.breadcrumbs -->
+        
+
+        <div id="main">
+
+
+		<div id="primary">
+			<div id="content" role="main">
+
+						
+					<article id="post-968" class="post-968 page type-page status-publish hentry">
+						<header class="entry-header">
+							<h1 class="entry-title">Sector</h1>
+						</header><!-- .entry-header -->
+		
+						<div class="entry-content">
+							<div class="entry">
+								<p><div><div class="last-modified">Codelist last modified: 2012-03-02T16:37:03.457Z</div><div class="version">Codelist Version: 1.0</div><div class="codelist-links">
+                <ul>
+                    <li><a href="http://datadev.aidinfolabs.org/data/codelist/Sector/version/1.0/lang/en.xml">xml</a></li>
+                    <li><a href="http://datadev.aidinfolabs.org/data/codelist/Sector/version/1.0/lang/en.csv">csv</a></li>
+                    <li><a href="http://datadev.aidinfolabs.org/data/codelist/Sector/metadata">metadata</a></li>
+                </ul>
+               </div></div><table><thead><tr><th>code</th><th>name</th><th>description</th><th>category</th><th>category-name</th><th>category-description</th></tr></thead><tbody><tr><td>11110</td><td>Education policy and administrative management</td><td>Education sector policy, planning and programmes; aid to education ministries, administration and management systems; institution capacity building and advice; school management and governance; curriculum and materials development; unspecified education activities.</td><td>111</td><td>Education, level unspecified</td><td>The codes in this category are to be used only when level of education is unspecified or unknown (e.g. training of primary school teachers should be coded under 11220).</td></tr><tr><td>11120</td><td>Education facilities and training</td><td>Educational buildings, equipment, materials; subsidiary services to education (boarding facilities, staff housing); language training; colloquia, seminars, lectures, etc.</td><td>111</td><td>Education, level unspecified</td><td>The codes in this category are to be used only when level of education is unspecified or unknown (e.g. training of primary school teachers should be coded under 11220).</td></tr><tr><td>11130</td><td>Teacher training</td><td>Teacher education (where the level of education is unspecified); in-service and pre-service training; materials development.</td><td>111</td><td>Education, level unspecified</td><td>The codes in this category are to be used only when level of education is unspecified or unknown (e.g. training of primary school teachers should be coded under 11220).</td></tr><tr><td>11182</td><td>Educational research</td><td>Research and studies on education effectiveness, relevance and quality; systematic evaluation and monitoring.</td><td>111</td><td>Education, level unspecified</td><td>The codes in this category are to be used only when level of education is unspecified or unknown (e.g. training of primary school teachers should be coded under 11220).</td></tr><tr><td>11220</td><td>Primary education</td><td>Formal and non-formal primary education for children; all elementary and first cycle systematic instruction; provision of learning materials.</td><td>112</td><td>Basic education</td><td></td></tr><tr><td>11230</td><td>Basic life skills for youth and adults</td><td>Formal and non-formal education for basic life skills for young people and adults (adults education); literacy and numeracy training.</td><td>112</td><td>Basic education</td><td></td></tr><tr><td>11240</td><td>Early childhood education</td><td>Formal and non-formal pre-school education.</td><td>112</td><td>Basic education</td><td></td></tr><tr><td>11320</td><td>Secondary education</td><td>Second cycle systematic instruction at both junior and senior levels.</td><td>113</td><td>Secondary education</td><td></td></tr><tr><td>11330</td><td>Vocational training</td><td>Elementary vocational training and secondary level technical education; on-the job training; apprenticeships; including informal vocational training.</td><td>113</td><td>Secondary education</td><td></td></tr><tr><td>11420</td><td>Higher education</td><td>Degree and diploma programmes at universities, colleges and polytechnics; scholarships.</td><td>114</td><td>Post-secondary education</td><td></td></tr><tr><td>11430</td><td>Advanced technical and managerial training</td><td>Professional-level vocational training programmes and in-service training.</td><td>114</td><td>Post-secondary education</td><td></td></tr><tr><td>12110</td><td>Health policy and administrative management</td><td>Health sector policy, planning and programmes; aid to health ministries, public health administration; institution capacity building and advice; medical insurance programmes; unspecified health activities.</td><td>121</td><td>Health, general</td><td></td></tr><tr><td>12181</td><td>Medical education/training</td><td>Medical education and training for tertiary level services.</td><td>121</td><td>Health, general</td><td></td></tr><tr><td>12182</td><td>Medical research</td><td>General medical research (excluding basic health research).</td><td>121</td><td>Health, general</td><td></td></tr><tr><td>12191</td><td>Medical services</td><td>Laboratories, specialised clinics and hospitals (including equipment and supplies); ambulances; dental services; mental health care; medical rehabilitation; control of non-infectious diseases; drug and substance abuse control [excluding narcotics traffic control (16063)].</td><td>121</td><td>Health, general</td><td></td></tr><tr><td>12220</td><td>Basic health care</td><td>Basic and primary health care programmes; paramedical and nursing care programmes; supply of drugs, medicines and vaccines related to basic health care.</td><td>122</td><td>Basic health</td><td></td></tr><tr><td>12230</td><td>Basic health infrastructure</td><td>District-level hospitals, clinics and dispensaries and related medical equipment; excluding specialised hospitals and clinics (12191).</td><td>122</td><td>Basic health</td><td></td></tr><tr><td>12240</td><td>Basic nutrition</td><td>Direct feeding programmes (maternal feeding, breastfeeding and weaning foods, child feeding, school feeding); determination of micro-nutrient deficiencies; provision of vitamin A, iodine, iron etc.; monitoring of nutritional status; nutrition and food hygiene education; household food security.</td><td>122</td><td>Basic health</td><td></td></tr><tr><td>12250</td><td>Infectious disease control</td><td>Immunisation; prevention and control of infectious and parasite diseases, except malaria (12262), tuberculosis (12263), HIV/AIDS and other STDs (13040). It includes diarrheal diseases, vector-borne diseases (e.g. river blindness and guinea worm), viral diseases, mycosis, helminthiasis, zoonosis, diseases by other bacteria and viruses, pediculosis, etc.</td><td>122</td><td>Basic health</td><td></td></tr><tr><td>12261</td><td>Health education</td><td>Information, education and training of the population for improving health knowledge and practices; public health and awareness campaigns.</td><td>122</td><td>Basic health</td><td></td></tr><tr><td>12262</td><td>Malaria control</td><td>Prevention and control of malaria.</td><td>122</td><td>Basic health</td><td></td></tr><tr><td>12263</td><td>Tuberculosis control</td><td>Immunisation, prevention and control of tuberculosis.</td><td>122</td><td>Basic health</td><td></td></tr><tr><td>12281</td><td>Health personnel development</td><td>Training of health staff for basic health care services.</td><td>122</td><td>Basic health</td><td></td></tr><tr><td>13010</td><td>Population policy and administrative management</td><td>Population/development policies; census work, vital registration; migration data; demographic research/analysis; reproductive health research; unspecified population activities.</td><td>130</td><td>POPULATION POLICIES/PROGRAMMES AND REPRODUCTIVE HEALTH</td><td></td></tr><tr><td>13020</td><td>Reproductive health care</td><td>Promotion of reproductive health; prenatal and postnatal care including delivery; prevention and treatment of infertility; prevention and management of consequences of abortion; safe motherhood activities.</td><td>130</td><td>POPULATION POLICIES/PROGRAMMES AND REPRODUCTIVE HEALTH</td><td></td></tr><tr><td>13030</td><td>Family planning</td><td>Family planning services including counselling; information, education and communication (IEC) activities; delivery of contraceptives; capacity building and training.</td><td>130</td><td>POPULATION POLICIES/PROGRAMMES AND REPRODUCTIVE HEALTH</td><td></td></tr><tr><td>13040</td><td>STD control including HIV/AIDS</td><td>All activities related to sexually transmitted diseases and HIV/AIDS control e.g. information, education and communication; testing; prevention; treatment, care.</td><td>130</td><td>POPULATION POLICIES/PROGRAMMES AND REPRODUCTIVE HEALTH</td><td></td></tr><tr><td>13081</td><td>Personnel development for population and reproductive health</td><td>Education and training of health staff for population and reproductive health care services.</td><td>130</td><td>POPULATION POLICIES/PROGRAMMES AND REPRODUCTIVE HEALTH</td><td></td></tr><tr><td>14010</td><td>Water resources policy and administrative management</td><td>Water sector policy, planning and programmes; water legislation and management; institution capacity building and advice; water supply assessments and studies; groundwater, water quality and watershed studies; hydrogeology; excluding agricultural water resources (31140).</td><td>140</td><td>WATER AND SANITATION</td><td></td></tr><tr><td>14015</td><td>Water resources protection</td><td>Inland surface waters (rivers, lakes, etc.); conservation and rehabilitation of ground water; prevention of water contamination from agro-chemicals, industrial effluents.</td><td>140</td><td>WATER AND SANITATION</td><td></td></tr><tr><td>14020</td><td>Water supply and sanitation - large systems</td><td>Water desalination plants; intakes, storage, treatment, pumping stations, conveyance and distribution systems; sewerage; domestic and industrial waste water treatment plants.</td><td>140</td><td>WATER AND SANITATION</td><td></td></tr><tr><td>14030</td><td>Basic drinking water supply and basic sanitation</td><td>Water supply and sanitation through low-cost technologies such as handpumps, spring catchment, gravity-fed systems, rain water collection, storage tanks, small distribution systems; latrines, small-bore sewers, on-site disposal (septic tanks).</td><td>140</td><td>WATER AND SANITATION</td><td></td></tr><tr><td>14040</td><td>River development</td><td>Integrated river basin projects; river flow control; dams and reservoirs [excluding dams primarily for irrigation (31140) and hydropower (23065) and activities related to river transport (21040)].</td><td>140</td><td>WATER AND SANITATION</td><td></td></tr><tr><td>14050</td><td>Waste management/disposal</td><td>Municipal and industrial solid waste management, including hazardous and toxic waste; collection, disposal and treatment; landfill areas; composting and reuse.</td><td>140</td><td>WATER AND SANITATION</td><td></td></tr><tr><td>14081</td><td>Education and training in water supply and sanitation</td><td></td><td>140</td><td>WATER AND SANITATION</td><td></td></tr><tr><td>15110</td><td>Economic and development policy/planning</td><td>Macro-economic, fiscal and monetary policy and planning; social planning; economic and social analysis and forecasting; development planning and preparation of structural reforms; organisational development; support to ministries involved in aid co-ordination; other ministries and government departments when sector cannot be specified. (Use code 51010 for budget support to macroeconomic reforms.)</td><td>151</td><td>Government and civil society, general</td><td>N.B. Use code 51010 for general budget support.</td></tr><tr><td>15120</td><td>Public sector financial management</td><td>Strengthening financial and managerial accountability; public expenditure management; improving financial management systems; tax assessment procedures; budget drafting; field auditing; measures against waste, fraud and corruption.</td><td>151</td><td>Government and civil society, general</td><td>N.B. Use code 51010 for general budget support.</td></tr><tr><td>15130</td><td>Legal and judicial development</td><td>Constitutional development, legal drafting; institutional strengthening of legal and judicial systems; legal training and education; legal advice and services; crime prevention.</td><td>151</td><td>Government and civil society, general</td><td>N.B. Use code 51010 for general budget support.</td></tr><tr><td>15140</td><td>Government administration</td><td>Systems of government including parliament, local government, decentralisation; civil service and civil service reform. Including general services by government (or commissioned by government) not elsewhere specified e.g. police, fire protection; cartography, meteorology, legal metrology, aerial surveys and remote sensing; administrative buildings.</td><td>151</td><td>Government and civil society, general</td><td>N.B. Use code 51010 for general budget support.</td></tr><tr><td>15150</td><td>Strengthening civil society</td><td>Community participation and development; co-operatives; grassroots organisations; development of other participatory planning and decision making procedures and institutions (see code 15220 for civilian peace-building, conflict prevention and resolution).</td><td>151</td><td>Government and civil society, general</td><td>N.B. Use code 51010 for general budget support.</td></tr><tr><td>15161</td><td>Elections</td><td>Electoral assistance and monitoring, voters' education [other than in connection with UN peace building (15230)].</td><td>151</td><td>Government and civil society, general</td><td>N.B. Use code 51010 for general budget support.</td></tr><tr><td>15162</td><td>Human rights</td><td>Monitoring of human rights performance; support for national and regional human rights bodies; protection of ethnic, religious and cultural minorities [other than in connection with UN peace building (15230)].</td><td>151</td><td>Government and civil society, general</td><td>N.B. Use code 51010 for general budget support.</td></tr><tr><td>15163</td><td>Free flow of information</td><td>Uncensored flow of information on public issues, including activities that increase the professionalism, skills and integrity of the print and broadcast media (e.g. training of journalists).</td><td>151</td><td>Government and civil society, general</td><td>N.B. Use code 51010 for general budget support.</td></tr><tr><td>15164</td><td>Women's equality organisations and institutions</td><td>Support for institutions and organisations (governmental and non-governmental) working for gender equality and women's empowerment.</td><td>151</td><td>Government and civil society, general</td><td>N.B. Use code 51010 for general budget support.</td></tr><tr><td>15210</td><td>Security system management and reform</td><td>Technical co-operation provided to parliament, government ministries, law enforcement agencies and the judiciary to assist review and reform of the security system to improve democratic governance and civilian control; technical co-operation provided to government to improve civilian oversight and democratic control of budgeting, management, accountability and auditing of security expenditure, including military budgets, as part of a public expenditure management programme; assistance to civil society to enhance its competence and capacity to scrutinise the security system so that it is managed in accordance with democratic norms and principles of accountability, transparency and good governance.</td><td>152</td><td>Conflict prevention and resolution, peace and security</td><td>N.B. Further notes on ODA eligibility (and exclusions) of conflict, peace and security related activities are given in paragraphs 41-46 of the DAC Statistical Reporting Directives.</td></tr><tr><td>15220</td><td>Civilian peace-building, conflict prevention and resolution</td><td>Support for civilian activities related to peace building, conflict prevention and resolution, including capacity building, monitoring, dialogue and information exchange.</td><td>152</td><td>Conflict prevention and resolution, peace and security</td><td>N.B. Further notes on ODA eligibility (and exclusions) of conflict, peace and security related activities are given in paragraphs 41-46 of the DAC Statistical Reporting Directives.</td></tr><tr><td>15230</td><td>Post-conflict peace-building (UN)</td><td>Participation in the post-conflict peace-building phase of United Nations peace operations (activities such as human rights and elections monitoring, rehabilitation of demobilised soldiers, rehabilitation of basic national infrastructure, monitoring or retraining of civil administrators and police forces, training in customs and border control procedures, advice or training in fiscal or macroeconomic stabilisation policy, repatriation and demobilisation of armed factions, and disposal of their weapons; support for landmine removal). Direct contributions to the UN peacekeeping budget are excluded from bilateral ODA (they are reportable in part as multilateral ODA).</td><td>152</td><td>Conflict prevention and resolution, peace and security</td><td>N.B. Further notes on ODA eligibility (and exclusions) of conflict, peace and security related activities are given in paragraphs 41-46 of the DAC Statistical Reporting Directives.</td></tr><tr><td>15240</td><td>Reintegration and SALW control</td><td>Reintegration of demobilised military personnel into the economy; conversion of production facilities from military to civilian outputs; technical co-operation to control, prevent and/or reduce the proliferation of small arms and light weapons (SALW) - see para. 39 of the DAC Statistical Reporting Directives for definition of SALW activities covered. [Other than in connection with UN peace-building (15230) or child soldiers (15261)].</td><td>152</td><td>Conflict prevention and resolution, peace and security</td><td>N.B. Further notes on ODA eligibility (and exclusions) of conflict, peace and security related activities are given in paragraphs 41-46 of the DAC Statistical Reporting Directives.</td></tr><tr><td>15250</td><td>Land mine clearance</td><td>Explosive mine removal for developmental purposes [other than in connection with UN peace-building (15230)].</td><td>152</td><td>Conflict prevention and resolution, peace and security</td><td>N.B. Further notes on ODA eligibility (and exclusions) of conflict, peace and security related activities are given in paragraphs 41-46 of the DAC Statistical Reporting Directives.</td></tr><tr><td>15261</td><td>Child soldiers (Prevention and demobilisation)</td><td>Technical co-operation provided to government  and assistance to civil society organisations  to support and apply legislation designed to prevent the recruitment of child soldiers, and to demobilise, disarm, reintegrate, repatriate and resettle (DDR) child soldiers.</td><td>152</td><td>Conflict prevention and resolution, peace and security</td><td>N.B. Further notes on ODA eligibility (and exclusions) of conflict, peace and security related activities are given in paragraphs 41-46 of the DAC Statistical Reporting Directives.</td></tr><tr><td>16010</td><td>Social/ welfare services</td><td>Social legislation and administration; institution capacity building and advice; social security and other social schemes; special programmes for the elderly, orphans, the disabled, street children; social dimensions of structural adjustment; unspecified social infrastructure and services, including consumer protection.</td><td>160</td><td>OTHER SOCIAL INFRASTRUCTURE AND SERVICES</td><td></td></tr><tr><td>16020</td><td>Employment policy and administrative management</td><td>Employment policy and planning; labour law; labour unions; institution capacity building and advice; support programmes for unemployed; employment creation and income generation programmes; occupational safety and health; combating child labour.</td><td>160</td><td>OTHER SOCIAL INFRASTRUCTURE AND SERVICES</td><td></td></tr><tr><td>16030</td><td>Housing policy and administrative management</td><td>Housing sector policy, planning and programmes; excluding low-cost housing and slum clearance (16040).</td><td>160</td><td>OTHER SOCIAL INFRASTRUCTURE AND SERVICES</td><td></td></tr><tr><td>16040</td><td>Low-cost housing</td><td>Including slum clearance.</td><td>160</td><td>OTHER SOCIAL INFRASTRUCTURE AND SERVICES</td><td></td></tr><tr><td>16050</td><td>Multisector aid for basic social services</td><td>Basic social services are defined to include basic education, basic health, basic nutrition, population/reproductive health and basic drinking water supply and basic sanitation.</td><td>160</td><td>OTHER SOCIAL INFRASTRUCTURE AND SERVICES</td><td></td></tr><tr><td>16061</td><td>Culture and recreation</td><td>Including libraries and museums.</td><td>160</td><td>OTHER SOCIAL INFRASTRUCTURE AND SERVICES</td><td></td></tr><tr><td>16062</td><td>Statistical capacity building</td><td>Both in national statistical offices and any other government ministries.</td><td>160</td><td>OTHER SOCIAL INFRASTRUCTURE AND SERVICES</td><td></td></tr><tr><td>16063</td><td>Narcotics control</td><td>In-country and customs controls including training of the police; educational programmes and awareness campaigns to restrict narcotics traffic and in-country distribution.</td><td>160</td><td>OTHER SOCIAL INFRASTRUCTURE AND SERVICES</td><td></td></tr><tr><td>16064</td><td>Social mitigation of HIV/AIDS</td><td>Special programmes to address the consequences of HIV/AIDS, e.g. social, legal and economic assistance to people living with HIV/AIDS including food security and employment; support to vulnerable groups and children orphaned by HIV/AIDS; human rights of HIV/AIDS affected people.</td><td>160</td><td>OTHER SOCIAL INFRASTRUCTURE AND SERVICES</td><td></td></tr><tr><td>21010</td><td>Transport policy and administrative management</td><td>Transport sector policy, planning and programmes; aid to transport ministries; institution capacity building and advice; unspecified transport; activities that combine road, rail, water and/or air transport.</td><td>210</td><td>TRANSPORT AND STORAGE</td><td>Note: Manufacturing of transport equipment should be included under code 32172.</td></tr><tr><td>21020</td><td>Road transport</td><td>Road infrastructure, road vehicles; passenger road transport, motor passenger cars.</td><td>210</td><td>TRANSPORT AND STORAGE</td><td>Note: Manufacturing of transport equipment should be included under code 32172.</td></tr><tr><td>21030</td><td>Rail transport</td><td>Rail infrastructure, rail equipment, locomotives, other rolling stock; including light rail (tram) and underground systems.</td><td>210</td><td>TRANSPORT AND STORAGE</td><td>Note: Manufacturing of transport equipment should be included under code 32172.</td></tr><tr><td>21040</td><td>Water transport</td><td>Harbours and docks, harbour guidance systems, ships and boats; river and other inland water transport, inland barges and vessels.</td><td>210</td><td>TRANSPORT AND STORAGE</td><td>Note: Manufacturing of transport equipment should be included under code 32172.</td></tr><tr><td>21050</td><td>Air transport</td><td>Airports, airport guidance systems, aeroplanes, aeroplane maintenance equipment.</td><td>210</td><td>TRANSPORT AND STORAGE</td><td>Note: Manufacturing of transport equipment should be included under code 32172.</td></tr><tr><td>21061</td><td>Storage</td><td>Whether or not related to transportation.</td><td>210</td><td>TRANSPORT AND STORAGE</td><td>Note: Manufacturing of transport equipment should be included under code 32172.</td></tr><tr><td>21081</td><td>Education and training in transport and storage</td><td></td><td>210</td><td>TRANSPORT AND STORAGE</td><td>Note: Manufacturing of transport equipment should be included under code 32172.</td></tr><tr><td>22010</td><td>Communications policy and administrative management</td><td>Communications sector policy, planning and programmes; institution capacity building and advice; including postal services development; unspecified communications activities.</td><td>220</td><td>COMMUNICATION</td><td></td></tr><tr><td>22020</td><td>Telecommunications</td><td>Telephone networks, telecommunication satellites, earth stations.</td><td>220</td><td>COMMUNICATION</td><td></td></tr><tr><td>22030</td><td>Radio/television/print media</td><td>Radio and TV links, equipment; newspapers; printing and publishing.</td><td>220</td><td>COMMUNICATION</td><td></td></tr><tr><td>22040</td><td>Information and communication technology (ICT)</td><td>Computer hardware and software; internet access; IT training. When sector cannot be specified.</td><td>220</td><td>COMMUNICATION</td><td></td></tr><tr><td>23010</td><td>Energy policy and administrative management</td><td>Energy sector policy, planning and programmes; aid to energy ministries; institution capacity building and advice; unspecified energy activities including energy conservation.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23020</td><td>Power generation/non-renewable sources</td><td>Thermal power plants including when heat source cannot be determined; combined gas-coal power plants.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23030</td><td>Power generation/renewable sources</td><td>Including policy, planning, development programmes, surveys and incentives. Fuelwood/ charcoal production should be included under forestry (31261).</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23040</td><td>Electrical transmission/ distribution</td><td>Distribution from power source to end user; transmission lines.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23050</td><td>Gas distribution</td><td>Delivery for use by ultimate consumer.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23061</td><td>Oil-fired power plants</td><td>Including diesel power plants.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23062</td><td>Gas-fired power plants</td><td></td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23063</td><td>Coal-fired power plants</td><td></td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23064</td><td>Nuclear power plants</td><td>Including nuclear safety.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23065</td><td>Hydro-electric power plants</td><td>Including power-generating river barges.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23066</td><td>Geothermal energy</td><td></td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23067</td><td>Solar energy</td><td>Including photo-voltaic cells, solar thermal applications and solar heating.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23068</td><td>Wind power</td><td>Wind energy for water lifting and electric power generation.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23069</td><td>Ocean power</td><td>Including ocean thermal energy conversion, tidal and wave power.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23070</td><td>Biomass</td><td>Densification technologies and use of biomass for direct power generation including biogas, gas obtained from sugar cane and other plant residues, anaerobic digesters.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23081</td><td>Energy education/training</td><td>Applies to all energy sub-sectors; all levels of training.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>23082</td><td>Energy research</td><td>Including general inventories, surveys.</td><td>230</td><td>ENERGY GENERATION AND SUPPLY</td><td>Note: Extraction of raw materials for power generation should be included in the mining sector. Energy manufacturing should be included in the industry sector.</td></tr><tr><td>24010</td><td>Financial policy and administrative management</td><td>Finance sector policy, planning and programmes; institution capacity building and advice; financial markets and systems.</td><td>240</td><td>BANKING AND FINANCIAL SERVICES</td><td></td></tr><tr><td>24020</td><td>Monetary institutions</td><td>Central banks.</td><td>240</td><td>BANKING AND FINANCIAL SERVICES</td><td></td></tr><tr><td>24030</td><td>Formal sector financial intermediaries</td><td>All formal sector financial intermediaries; credit lines; insurance, leasing, venture capital, etc. (except when focused on only one sector).</td><td>240</td><td>BANKING AND FINANCIAL SERVICES</td><td></td></tr><tr><td>24040</td><td>Informal/semi-formal financial intermediaries</td><td>Micro credit, savings and credit co-operatives etc.</td><td>240</td><td>BANKING AND FINANCIAL SERVICES</td><td></td></tr><tr><td>24081</td><td>Education/training in banking and financial services</td><td></td><td>240</td><td>BANKING AND FINANCIAL SERVICES</td><td></td></tr><tr><td>25010</td><td>Business support services and institutions</td><td>Support to trade and business associations, chambers of commerce; legal and regulatory reform aimed at improving business and investment climate; private sector institution capacity building and advice; trade information; public-private sector networking including trade fairs; e?commerce. Where sector cannot be specified: general support to private sector enterprises (in particular, use code 32130 for enterprises in the industrial sector).</td><td>250</td><td>BUSINESS AND OTHER SERVICES</td><td></td></tr><tr><td>25020</td><td>Privatisation</td><td>When sector cannot be specified. Including general state enterprise restructuring or demonopolisation programmes; planning, programming, advice.</td><td>250</td><td>BUSINESS AND OTHER SERVICES</td><td></td></tr><tr><td>31110</td><td>Agricultural policy and administrative management</td><td>Agricultural sector policy, planning and programmes; aid to agricultural ministries; institution capacity building and advice; unspecified agriculture.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31120</td><td>Agricultural development</td><td>Integrated projects; farm development.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31130</td><td>Agricultural land resources</td><td>Including soil degradation control; soil improvement; drainage of water logged areas; soil desalination; agricultural land surveys; land reclamation; erosion control, desertification control.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31140</td><td>Agricultural water resources</td><td>Irrigation, reservoirs, hydraulic structures, ground water exploitation for agricultural use.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31150</td><td>Agricultural inputs</td><td>Supply of seeds, fertilizers, agricultural machinery/equipment.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31161</td><td>Food crop production</td><td>Including grains (wheat, rice, barley, maize, rye, oats, millet, sorghum); horticulture; vegetables; fruit and berries; other annual and perennial crops. [Use code 32161 for agro-industries.]</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31162</td><td>Industrial crops/export crops</td><td>Including sugar; coffee, cocoa, tea; oil seeds, nuts, kernels; fibre crops; tobacco; rubber. [Use code 32161 for agro-industries.]</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31163</td><td>Livestock</td><td>Animal husbandry; animal feed aid.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31164</td><td>Agrarian reform</td><td>Including agricultural sector adjustment.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31165</td><td>Agricultural alternative development</td><td>Projects to reduce illicit drug cultivation through other agricultural marketing and production opportunities (see code 43050 for non-agricultural alternative development).</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31166</td><td>Agricultural extension</td><td>Non-formal training in agriculture.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31181</td><td>Agricultural education/training</td><td></td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31182</td><td>Agricultural research</td><td>Plant breeding, physiology, genetic resources, ecology, taxonomy, disease control, agricultural bio-technology; including livestock research (animal health, breeding and genetics, nutrition, physiology).</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31191</td><td>Agricultural services</td><td>Marketing policies and organisation; storage and transportation, creation of strategic reserves.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31192</td><td>Plant and post-harvest protection and pest control</td><td>Including integrated plant protection, biological plant protection activities, supply and management of agrochemicals, supply of pesticides, plant protection policy and legislation.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31193</td><td>Agricultural financial services</td><td>Financial intermediaries for the agricultural sector including credit schemes; crop insurance.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31194</td><td>Agricultural co-operatives</td><td>Including farmersÂ’ organisations.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31195</td><td>Livestock/veterinary services</td><td>Animal health and management, genetic resources, feed resources.</td><td>311</td><td>AGRICULTURE</td><td></td></tr><tr><td>31210</td><td>Forestry policy and administrative management</td><td>Forestry sector policy, planning and programmes; institution capacity building and advice; forest surveys; unspecified forestry and agro-forestry activities.</td><td>312</td><td>FORESTRY</td><td></td></tr><tr><td>31220</td><td>Forestry development</td><td>Afforestation for industrial and rural consumption; exploitation and utilisation; erosion control, desertification control; integrated forestry projects.</td><td>312</td><td>FORESTRY</td><td></td></tr><tr><td>31261</td><td>Fuelwood/charcoal</td><td>Forestry development whose primary purpose is production of fuelwood and charcoal.</td><td>312</td><td>FORESTRY</td><td></td></tr><tr><td>31281</td><td>Forestry education/training</td><td></td><td>312</td><td>FORESTRY</td><td></td></tr><tr><td>31282</td><td>Forestry research</td><td>Including artificial regeneration, genetic improvement, production methods, fertilizer, harvesting.</td><td>312</td><td>FORESTRY</td><td></td></tr><tr><td>31291</td><td>Forestry services</td><td></td><td>312</td><td>FORESTRY</td><td></td></tr><tr><td>31310</td><td>Fishing policy and administrative management</td><td>Fishing sector policy, planning and programmes; institution capacity building and advice; ocean and coastal fishing; marine and freshwater fish surveys and prospecting; fishing boats/equipment; unspecified fishing activities.</td><td>313</td><td>FISHING</td><td></td></tr><tr><td>31320</td><td>Fishery development</td><td>Exploitation and utilisation of fisheries; fish stock protection; aquaculture; integrated fishery projects.</td><td>313</td><td>FISHING</td><td></td></tr><tr><td>31381</td><td>Fishery education/training</td><td></td><td>313</td><td>FISHING</td><td></td></tr><tr><td>31382</td><td>Fishery research</td><td>Pilot fish culture; marine/freshwater biological research.</td><td>313</td><td>FISHING</td><td></td></tr><tr><td>31391</td><td>Fishery services</td><td>Fishing harbours; fish markets; fishery transport and cold storage.</td><td>313</td><td>FISHING</td><td></td></tr><tr><td>32110</td><td>Industrial policy and administrative management</td><td>Industrial sector policy, planning and programmes; institution capacity building and advice; unspecified industrial activities; manufacturing of goods not specified below.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32120</td><td>Industrial development</td><td></td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32130</td><td>Small and medium-sized enterprises (SME) development</td><td>Direct support to the development of small and medium-sized enterprises in the industrial sector, including accounting, auditing and advisory services.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32140</td><td>Cottage industries and handicraft</td><td></td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32161</td><td>Agro-industries</td><td>Staple food processing, dairy products, slaughter houses and equipment, meat and fish processing and preserving, oils/fats, sugar refineries, beverages/tobacco, animal feeds production.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32162</td><td>Forest industries</td><td>Wood production, pulp/paper production.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32163</td><td>Textiles, leather and substitutes</td><td>Including knitting factories.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32164</td><td>Chemicals</td><td>Industrial and non-industrial production facilities; includes pesticides production.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32165</td><td>Fertilizer plants</td><td></td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32166</td><td>Cement/lime/plaster</td><td></td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32167</td><td>Energy manufacturing</td><td>Including gas liquefaction; petroleum refineries.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32168</td><td>Pharmaceutical production</td><td>Medical equipment/supplies; drugs, medicines, vaccines; hygienic products.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32169</td><td>Basic metal industries</td><td>Iron and steel, structural metal production.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32170</td><td>Non-ferrous metal industries</td><td></td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32171</td><td>Engineering</td><td>Manufacturing of electrical and non-electrical machinery, engines/turbines.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32172</td><td>Transport equipment industry</td><td>Shipbuilding, fishing boats building; railroad equipment; motor vehicles and motor passenger cars; aircraft; navigation/guidance systems.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32182</td><td>Technological research and development</td><td>Including industrial standards; quality management; metrology; testing; accreditation; certification.</td><td>321</td><td>INDUSTRY</td><td>Only includes aid to production or manufacturing. Provision of finished products should be included under relevant sector.</td></tr><tr><td>32210</td><td>Mineral/mining policy and administrative management</td><td>Mineral and mining sector policy, planning and programmes; mining legislation, mining cadastre, mineral resources inventory, information systems, institution capacity building and advice; unspecified mineral resources exploitation.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32220</td><td>Mineral prospection and exploration</td><td>Geology, geophysics, geochemistry; excluding hydrogeology (14010) and environmental geology (41010), mineral extraction and processing, infrastructure, technology, economics, safety and environment management.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32261</td><td>Coal</td><td>Including lignite and peat.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32262</td><td>Oil and gas</td><td>Petroleum, natural gas, condensates, liquefied petroleum gas (LPG), liquefied natural gas (LNG); including drilling and production.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32263</td><td>Ferrous metals</td><td>Iron and ferro-alloy metals.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32264</td><td>Nonferrous metals</td><td>Aluminium, copper, lead, nickel, tin, zinc.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32265</td><td>Precious metals/materials</td><td>Gold, silver, platinum, diamonds, gemstones.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32266</td><td>Industrial minerals</td><td>Baryte, limestone, feldspar, kaolin, sand, gypsym, gravel, ornamental stones.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32267</td><td>Fertilizer minerals</td><td>Phosphates, potash.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32268</td><td>Offshore minerals</td><td>Polymetallic nodules, phosphorites, marine placer deposits.</td><td>322</td><td>MINERAL RESOURCES AND MINING</td><td></td></tr><tr><td>32310</td><td>Construction policy and administrative management</td><td>Construction sector policy and planning; excluding construction activities within specific sectors (e.g., hospital or school construction).</td><td>323</td><td>CONSTRUCTION</td><td></td></tr><tr><td>33110</td><td>Trade policy and administrative management</td><td>Trade policy and planning; support to ministries and departments responsible for trade policy; trade-related legislation and regulatory reforms; policy analysis and implementation of multilateral trade agreements e.g. technical barriers to trade and sanitary and phytosanitary measures (TBT/SPS) except at regional level (see 33130); mainstreaming trade in national development strategies (e.g. poverty reduction strategy papers); wholesale/retail trade; unspecified trade and trade promotion activities.</td><td>331</td><td>TRADE POLICY AND REGULATIONS AND TRADE-RELATED ADJUSTMENT</td><td></td></tr><tr><td>33120</td><td>Trade facilitation</td><td>Simplification and harmonisation of international import and export procedures (e.g. customs valuation, licensing procedures, transport formalities, payments, insurance); support to customs departments; tariff reforms.</td><td>331</td><td>TRADE POLICY AND REGULATIONS AND TRADE-RELATED ADJUSTMENT</td><td></td></tr><tr><td>33130</td><td>Regional trade agreements (RTAs)</td><td>Support to regional trade arrangements [e.g. Southern African Development Community (SADC), Association of Southeast Asian Nations (ASEAN), Free Trade Area of the Americas (FTAA), African Caribbean Pacific/European Union (ACP/EU)], including work on technical barriers to trade and sanitary and phytosanitary measures (TBT/SPS) at regional level; elaboration of rules of origin and introduction of special and differential treatment in RTAs.</td><td>331</td><td>TRADE POLICY AND REGULATIONS AND TRADE-RELATED ADJUSTMENT</td><td></td></tr><tr><td>33140</td><td>Multilateral trade negotiations</td><td>Support developing countries' effective participation in multilateral trade negotiations, including training of negotiators, assessing impacts of negotiations; accession to the World Trade Organisation (WTO) and other multilateral trade-related organisations.</td><td>331</td><td>TRADE POLICY AND REGULATIONS AND TRADE-RELATED ADJUSTMENT</td><td></td></tr><tr><td>33150</td><td>Trade-related adjustment</td><td>Contributions to the government budget to assist the implementation of recipients' own trade reforms and adjustments to trade policy measures by other countries; assistance to manage shortfalls in the balance of payments due to changes in the world trading environment.</td><td>331</td><td>TRADE POLICY AND REGULATIONS AND TRADE-RELATED ADJUSTMENT</td><td></td></tr><tr><td>33181</td><td>Trade education/training</td><td>Human resources development in trade not included under any of the above codes. Includes university programmes in trade.</td><td>331</td><td>TRADE POLICY AND REGULATIONS AND TRADE-RELATED ADJUSTMENT</td><td></td></tr><tr><td>33210</td><td>Tourism policy and administrative management</td><td></td><td>332</td><td>TOURISM</td><td></td></tr><tr><td>41010</td><td>Environmental policy and administrative management</td><td>Environmental policy, laws, regulations and economic instruments; administrational institutions and practices; environmental and land use planning and decision-making procedures; seminars, meetings; miscellaneous conservation and protection measures not specified below.</td><td>410</td><td>General environmental protection</td><td>Non-sector specific.</td></tr><tr><td>41020</td><td>Biosphere protection</td><td>Air pollution control, ozone layer preservation; marine pollution control.</td><td>410</td><td>General environmental protection</td><td>Non-sector specific.</td></tr><tr><td>41030</td><td>Bio-diversity</td><td>Including natural reserves and actions in the surrounding areas; other measures to protect endangered or vulnerable species and their habitats (e.g. wetlands preservation).</td><td>410</td><td>General environmental protection</td><td>Non-sector specific.</td></tr><tr><td>41040</td><td>Site preservation</td><td>Applies to unique cultural landscape; including sites/objects of historical, archeological, aesthetic, scientific or educational value.</td><td>410</td><td>General environmental protection</td><td>Non-sector specific.</td></tr><tr><td>41050</td><td>Flood prevention/control</td><td>Floods from rivers or the sea; including sea water intrusion control and sea level rise related activities.</td><td>410</td><td>General environmental protection</td><td>Non-sector specific.</td></tr><tr><td>41081</td><td>Environmental education/ training</td><td></td><td>410</td><td>General environmental protection</td><td>Non-sector specific.</td></tr><tr><td>41082</td><td>Environmental research</td><td>Including establishment of databases, inventories/accounts of physical and natural resources; environmental profiles and impact studies if not sector specific.</td><td>410</td><td>General environmental protection</td><td>Non-sector specific.</td></tr><tr><td>43010</td><td>Multisector aid</td><td></td><td>430</td><td>Other multisector</td><td></td></tr><tr><td>43030</td><td>Urban development and management</td><td>Integrated urban development projects; local development and urban management; urban infrastructure and services; municipal finances; urban environmental management; urban development and planning; urban renewal and urban housing; land information systems.</td><td>430</td><td>Other multisector</td><td></td></tr><tr><td>43040</td><td>Rural development</td><td>Integrated rural development projects; e.g. regional development planning; promotion of decentralised and multi-sectoral competence for planning, co-ordination and management; implementation of regional development and measures (including natural reserve management); land management; land use planning; land settlement and resettlement activities [excluding resettlement of refugees and internally displaced persons (72010)]; functional integration of rural and urban areas; geographical information systems.</td><td>430</td><td>Other multisector</td><td></td></tr><tr><td>43050</td><td>Non-agricultural alternative development</td><td>Projects to reduce illicit drug cultivation through, for example, non-agricultural income opportunities, social and physical infrastructure (see code 31165 for agricultural alternative development).</td><td>430</td><td>Other multisector</td><td></td></tr><tr><td>43081</td><td>Multisector education/training</td><td>Including scholarships.</td><td>430</td><td>Other multisector</td><td></td></tr><tr><td>43082</td><td>Research/scientific institutions</td><td>When sector cannot be identified.</td><td>430</td><td>Other multisector</td><td></td></tr><tr><td>51010</td><td>General budget support</td><td>Unearmarked contributions to the government budget; support for the implementation of macroeconomic reforms (structural adjustment programmes, poverty reduction strategies); general programme assistance (when not allocable by sector).</td><td>510</td><td>General budget support</td><td>Budget support in the form of sector-wide approaches (SWAps) should be included in the respective sectors.</td></tr><tr><td>52010</td><td>Food aid/Food security programmes</td><td>Supply of edible human food under national or international programmes including transport costs; cash payments made for food supplies; project food aid and food aid for market sales when benefiting sector not specified; excluding emergency food aid.</td><td>520</td><td>Developmental food aid/Food security assistance</td><td></td></tr><tr><td>53030</td><td>Import support (capital goods)</td><td>Capital goods and services; lines of credit.</td><td>530</td><td>Other commodity assistance</td><td>Non-food commodity assistance (when benefiting sector not specified).</td></tr><tr><td>53040</td><td>Import support (commodities)</td><td>Commodities, general goods and services, oil imports.</td><td>530</td><td>Other commodity assistance</td><td>Non-food commodity assistance (when benefiting sector not specified).</td></tr><tr><td>60010</td><td>Action relating to debt</td><td>Actions falling outside the code headings below; training in debt management.</td><td>600</td><td>ACTION RELATING TO DEBT</td><td></td></tr><tr><td>60020</td><td>Debt forgiveness</td><td></td><td>600</td><td>ACTION RELATING TO DEBT</td><td></td></tr><tr><td>60030</td><td>Relief of multilateral debt</td><td>Grants or credits to cover debt owed to multilateral financial institutions; including contributions to Heavily Indebted Poor Countries (HIPC) Trust Fund.</td><td>600</td><td>ACTION RELATING TO DEBT</td><td></td></tr><tr><td>60040</td><td>Rescheduling and refinancing</td><td></td><td>600</td><td>ACTION RELATING TO DEBT</td><td></td></tr><tr><td>60061</td><td>Debt for development swap</td><td>Allocation of debt claims to use for development (e.g., debt for education, debt for environment).</td><td>600</td><td>ACTION RELATING TO DEBT</td><td></td></tr><tr><td>60062</td><td>Other debt swap</td><td>Where the debt swap benefits an external agent i.e. is not specifically for development purposes.</td><td>600</td><td>ACTION RELATING TO DEBT</td><td></td></tr><tr><td>60063</td><td>Debt buy-back</td><td>Purchase of debt for the purpose of cancellation.</td><td>600</td><td>ACTION RELATING TO DEBT</td><td></td></tr><tr><td>72010</td><td>Material relief assistance and services</td><td>Shelter, water, sanitation and health services, supply of medicines and other non-food relief items; assistance to refugees and internally displaced people in developing countries other than for food (72040) or protection (72050).</td><td>720</td><td>Emergency Response</td><td>An emergency is a situation which results from man made crises and/or natural disasters.</td></tr><tr><td>72040</td><td>Emergency food aid</td><td>Food aid normally for general free distribution or special supplementary feeding programmes; short-term relief to targeted population groups affected by emergency situations. Excludes non-emergency food security assistance programmes/food aid (52010).</td><td>720</td><td>Emergency Response</td><td>An emergency is a situation which results from man made crises and/or natural disasters.</td></tr><tr><td>72050</td><td>Relief co-ordination; protection and support services</td><td>Measures to co-ordinate delivery of humanitarian aid, including logistics and communications systems; measures to promote and protect the safety, well-being, dignity and integrity of civilians and those no longer taking part in hostilities. (Activities designed to protect the security of persons or property through the use or display of force are not reportable as ODA.)</td><td>720</td><td>Emergency Response</td><td>An emergency is a situation which results from man made crises and/or natural disasters.</td></tr><tr><td>73010</td><td>Reconstruction relief and rehabilitation</td><td>Short-term reconstruction work after emergency or conflict limited to restoring pre-existing infrastructure (e.g. repair or construction of roads, bridges and ports, restoration of essential facilities, such as water and sanitation, shelter, health care services); social and economic rehabilitation in the aftermath of emergencies to facilitate transition and enable populations to return to their previous livelihood or develop a new livelihood in the wake of an emergency situation (e.g. trauma counselling and treatment, employment programmes).</td><td>730</td><td>Reconstruction relief and rehabilitation</td><td>This relates to activities during and in the aftermath of an emergency situation. Longer-term activities to improve the level of infrastructure or social services should be reported under the relevant economic and social sector codes. See also guideline on distinguishing humanitarian from sector-allocable aid.</td></tr><tr><td>74010</td><td>Disaster prevention and preparedness</td><td>Disaster risk reduction activities (e.g. developing knowledge, natural risks cartography, legal norms for construction); early warning systems; emergency contingency stocks and contingency planning including preparations for forced displacement.</td><td>740</td><td>Disaster prevention and preparedness</td><td>See codes 41050 and 15220 for prevention of floods and conflicts.</td></tr><tr><td>91010</td><td>Administrative costs</td><td></td><td>910</td><td>ADMINISTRATIVE COSTS OF DONORS</td><td></td></tr><tr><td>92010</td><td>Support to national NGOs</td><td>In the donor country.</td><td>920</td><td>SUPPORT TO NON- GOVERNMENTAL ORGANISATIONS (NGOs)</td><td></td></tr><tr><td>92020</td><td>Support to international NGOs</td><td></td><td>920</td><td>SUPPORT TO NON- GOVERNMENTAL ORGANISATIONS (NGOs)</td><td></td></tr><tr><td>92030</td><td>Support to local and regional NGOs</td><td>In the recipient country or region.</td><td>920</td><td>SUPPORT TO NON- GOVERNMENTAL ORGANISATIONS (NGOs)</td><td></td></tr><tr><td>93010</td><td>Refugees in donor countries</td><td></td><td>930</td><td>REFUGEES IN DONOR COUNTRIES</td><td></td></tr><tr><td>99810</td><td>Sectors not specified</td><td>Contributions to general development of the recipient should be included under programme assistance (51010).</td><td>998</td><td>UNALLOCATED/ UNSPECIFIED</td><td></td></tr><tr><td>99820</td><td>Promotion of development awareness</td><td>Spending in donor country for heightened awareness/interest in development co-operation (brochures, lectures, special research projects, etc.).</td><td>998</td><td>UNALLOCATED/ UNSPECIFIED</td><td></td></tr></tbody></table></p>
+							</div>
+							<div class="fix"></div>
+						</div><!-- .entry-content -->
+					</article><!-- #post-968 -->
+    
+                				
+				<div class="date-comments">
+				<!--  <p class="fl">
+									  </p> -->
+					<!--<p class="fl">Last updated: October 29, 2010   
+					<p class="fr"></p>	-->	                                          
+				</div> 
+
+			</div><!-- #content -->
+
+		</div><!-- #primary -->
+
+<div id="secondary" class="widget-area" role="complementary">
+    <aside id="pages-4" class="widget-1 widget-first widget-odd widget widget_pages"><h3 class="widget-title">Pages</h3>		<ul>
+			<li class="page_item page-item-2410 page_item_has_children"><a href="../../getting-started/index.html">Getting Started</a>
+<ul class='children'>
+	<li class="page_item page-item-2632"><a href="../../getting-started/what-is-iati/index.html">What is IATI?</a></li>
+	<li class="page_item page-item-2634 page_item_has_children"><a href="../../getting-started/policy-considerations/index.html">Policy Considerations</a>
+	<ul class='children'>
+		<li class="page_item page-item-2776"><a href="../../getting-started/policy-considerations/understanding-transparency/index.html">Understanding Transparency</a></li>
+		<li class="page_item page-item-2781"><a href="../../getting-started/policy-considerations/organisational-incentives-and-buy-in/index.html">Organisational Incentives and Buy-In</a></li>
+		<li class="page_item page-item-2594"><a href="../../getting-started/policy-considerations/exclusions-and-thresholds/index.html">Exclusions and Thresholds</a></li>
+		<li class="page_item page-item-2773"><a href="../../getting-started/policy-considerations/units-of-aid/index.html">Units of Aid</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2797 page_item_has_children"><a href="../../getting-started/managing-implementation/index.html">Managing Implementation</a>
+	<ul class='children'>
+		<li class="page_item page-item-2844"><a href="../../getting-started/managing-implementation/change-management/index.html">Change Management</a></li>
+		<li class="page_item page-item-2636"><a href="../../getting-started/managing-implementation/implementation-support/index.html">Implementation schedule</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2639 page_item_has_children"><a href="../../getting-started/data-considerations/index.html">Data Considerations</a>
+	<ul class='children'>
+		<li class="page_item page-item-2786"><a href="../../getting-started/data-considerations/data-availability/index.html">Data Availability</a></li>
+		<li class="page_item page-item-2783"><a href="../../getting-started/data-considerations/data-quality/index.html">Data Quality</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2791 page_item_has_children"><a href="../../getting-started/licencing/index.html">Licencing</a>
+	<ul class='children'>
+		<li class="page_item page-item-2837"><a href="../../getting-started/licencing/licence-types/index.html">Licence Types</a></li>
+		<li class="page_item page-item-2464"><a href="../../getting-started/licencing/licensing-your-iati-data/index.html">Licensing Considerations</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2641 page_item_has_children"><a href="../../getting-started/technical-issues/index.html">Technical Issues</a>
+	<ul class='children'>
+		<li class="page_item page-item-2814"><a href="../../getting-started/technical-issues/data-architecture/index.html">Data Architecture</a></li>
+		<li class="page_item page-item-2816"><a href="../../getting-started/technical-issues/in-house-capacity/index.html">In-house Capacity</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2643 page_item_has_children"><a href="../../getting-started/preparing-data/index.html">Preparing Data</a>
+	<ul class='children'>
+		<li class="page_item page-item-2871"><a href="../../getting-started/preparing-data/mandatory-data/index.html">Mandatory Data</a></li>
+		<li class="page_item page-item-2873"><a href="../../getting-started/preparing-data/optional-data/index.html">Optional Data</a></li>
+		<li class="page_item page-item-2875"><a href="../../getting-started/preparing-data/using-codelists/index.html">Using Codelists</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2645 page_item_has_children"><a href="../../getting-started/publishing-data/index.html">Publishing Data</a>
+	<ul class='children'>
+		<li class="page_item page-item-2880"><a href="../../getting-started/publishing-data/outputting-xml/index.html">Outputting XML</a></li>
+		<li class="page_item page-item-2828"><a href="../../getting-started/publishing-data/registering/index.html">Registering</a></li>
+		<li class="page_item page-item-2830"><a href="../../getting-started/publishing-data/updating/index.html">Updating</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2647 page_item_has_children"><a href="../../getting-started/tools-to-help/index.html">Tools to Help</a>
+	<ul class='children'>
+		<li class="page_item page-item-2851"><a href="../../getting-started/tools-to-help/tools-to-create-data/index.html">Tools to Create Data</a></li>
+		<li class="page_item page-item-2891"><a href="../../getting-started/tools-to-help/tools-to-validate-data/index.html">Tools to Validate Data</a></li>
+		<li class="page_item page-item-2920"><a href="../../getting-started/tools-to-help/tools-to-view-data/index.html">Tools to View Data</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-1523 page_item_has_children"><a href="../../organisation-standard/index.html">The IATI Organisation Standard</a>
+<ul class='children'>
+	<li class="page_item page-item-2962"><a href="../../organisation-standard/org-overview/index.html">Overview</a></li>
+	<li class="page_item page-item-1527"><a href="../../organisation-standard/file-header/index.html">File Header</a></li>
+	<li class="page_item page-item-1596"><a href="../../organisation-standard/record-header/index.html">Record Header</a></li>
+	<li class="page_item page-item-1723"><a href="../../organisation-standard/reporting-organisation/index.html">Reporting Organisation</a></li>
+	<li class="page_item page-item-1525"><a href="../../organisation-standard/organisation-identifier/index.html">Organisation Identifier</a></li>
+	<li class="page_item page-item-1529"><a href="../../organisation-standard/organisation-name/index.html">Organisation Name</a></li>
+	<li class="page_item page-item-1531"><a href="../../organisation-standard/budget-organisation/index.html">Annual forward planning budget (total-budget)</a></li>
+	<li class="page_item page-item-1533"><a href="../../organisation-standard/budget-institution/index.html">Annual forward planning budgets for funded institutions</a></li>
+	<li class="page_item page-item-1535"><a href="../../organisation-standard/budget-country/index.html">Annual forward planning budgets for recipient countries</a></li>
+	<li class="page_item page-item-1538"><a href="../../organisation-standard/documents/index.html">Organisation Documents</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1379 page_item_has_children"><a href="../../activities-standard/index.html">The IATI Activities Standard</a>
+<ul class='children'>
+	<li class="page_item page-item-2863"><a href="../../activities-standard/overview/index.html">Overview</a></li>
+	<li class="page_item page-item-1387"><a href="../../activities-standard/iati-activities/index.html">IATI Activities</a></li>
+	<li class="page_item page-item-1381"><a href="../../activities-standard/iati-activity/index.html">IATI Activity</a></li>
+	<li class="page_item page-item-1389"><a href="../../activities-standard/reporting-org/index.html">Reporting Organisation</a></li>
+	<li class="page_item page-item-1391"><a href="../../activities-standard/iati-identifier/index.html">IATI Identifier</a></li>
+	<li class="page_item page-item-1417"><a href="../../activities-standard/other-activity-identifiers/index.html">Other Identifier</a></li>
+	<li class="page_item page-item-1431"><a href="../../activities-standard/activity-website/index.html">Activity Website</a></li>
+	<li class="page_item page-item-1404"><a href="../../activities-standard/title/index.html">Title</a></li>
+	<li class="page_item page-item-1406"><a href="../../activities-standard/description/index.html">Description</a></li>
+	<li class="page_item page-item-1427"><a href="../../activities-standard/activity-status/index.html">Activity Status</a></li>
+	<li class="page_item page-item-1421"><a href="../../activities-standard/activity-dates/index.html">Activity Date</a></li>
+	<li class="page_item page-item-1429 page_item_has_children"><a href="../../activities-standard/contact-info/index.html">Contact Info</a>
+	<ul class='children'>
+		<li class="page_item page-item-2246"><a href="../../activities-standard/contact-info/organisation/index.html">Organisation</a></li>
+		<li class="page_item page-item-2252"><a href="../../activities-standard/contact-info/person-name/index.html">Person name</a></li>
+		<li class="page_item page-item-2254"><a href="../../activities-standard/contact-info/telephone/index.html">Telephone</a></li>
+		<li class="page_item page-item-2260"><a href="../../activities-standard/contact-info/email/index.html">Email</a></li>
+		<li class="page_item page-item-2262"><a href="../../activities-standard/contact-info/mailing-address/index.html">Mailing address</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1393"><a href="../../activities-standard/participating-org/index.html">Participating Organisation</a></li>
+	<li class="page_item page-item-1400"><a href="../../activities-standard/recipient-country/index.html">Recipient Country</a></li>
+	<li class="page_item page-item-1402"><a href="../../activities-standard/recipient-region/index.html">Recipient Region</a></li>
+	<li class="page_item page-item-1467 page_item_has_children"><a href="../../activities-standard/location/index.html">Location</a>
+	<ul class='children'>
+		<li class="page_item page-item-2270"><a href="../../activities-standard/location/location-type/index.html">Location Type</a></li>
+		<li class="page_item page-item-2272"><a href="../../activities-standard/location/name/index.html">Name</a></li>
+		<li class="page_item page-item-2274"><a href="../../activities-standard/location/description/index.html">Description</a></li>
+		<li class="page_item page-item-2276"><a href="../../activities-standard/location/administrative/index.html">Administrative</a></li>
+		<li class="page_item page-item-2280"><a href="../../activities-standard/location/coordinates/index.html">Coordinates</a></li>
+		<li class="page_item page-item-2282"><a href="../../activities-standard/location/gazetteer-entry/index.html">Gazetteer entry</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1419"><a href="../../activities-standard/sector/index.html">Sector</a></li>
+	<li class="page_item page-item-1425"><a href="../../activities-standard/thematic-marker/index.html">Policy Marker</a></li>
+	<li class="page_item page-item-1408"><a href="../../activities-standard/collaboration-type/index.html">Collaboration Type</a></li>
+	<li class="page_item page-item-1415"><a href="../../activities-standard/default-finance-type/index.html">Default Finance Type</a></li>
+	<li class="page_item page-item-1410"><a href="../../activities-standard/default-flow-type/index.html">Default Flow Type</a></li>
+	<li class="page_item page-item-1412"><a href="../../activities-standard/default-aid-type/index.html">Default Aid Type</a></li>
+	<li class="page_item page-item-1423"><a href="../../activities-standard/default-tied-status/index.html">Default Tied Status</a></li>
+	<li class="page_item page-item-1461 page_item_has_children"><a href="../../activities-standard/budget/index.html">Budget</a>
+	<ul class='children'>
+		<li class="page_item page-item-2284"><a href="../../activities-standard/budget/period-start/index.html">Period start</a></li>
+		<li class="page_item page-item-2286"><a href="../../activities-standard/budget/period-end/index.html">Period end</a></li>
+		<li class="page_item page-item-2288"><a href="../../activities-standard/budget/value/index.html">Value</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1463 page_item_has_children"><a href="../../activities-standard/planned-disbursement/index.html">Planned Disbursement</a>
+	<ul class='children'>
+		<li class="page_item page-item-2290"><a href="../../activities-standard/planned-disbursement/period-start/index.html">Period start</a></li>
+		<li class="page_item page-item-2292"><a href="../../activities-standard/planned-disbursement/period-end/index.html">Period end</a></li>
+		<li class="page_item page-item-2294"><a href="../../activities-standard/planned-disbursement/value/index.html">Value</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3327 page_item_has_children"><a href="../../activities-standard/transaction/index.html">Transaction</a>
+	<ul class='children'>
+		<li class="page_item page-item-1453"><a href="../../activities-standard/transaction/aid-type/index.html">Aid Type</a></li>
+		<li class="page_item page-item-1445"><a href="../../activities-standard/transaction/description/index.html">Description</a></li>
+		<li class="page_item page-item-1455"><a href="../../activities-standard/transaction/disbursement-channel/index.html">Disbursement Channel</a></li>
+		<li class="page_item page-item-1451"><a href="../../activities-standard/transaction/finance-type/index.html">Finance Type</a></li>
+		<li class="page_item page-item-1449"><a href="../../activities-standard/transaction/flow-type/index.html">Flow Type</a></li>
+		<li class="page_item page-item-1439"><a href="../../activities-standard/transaction/provider-org/index.html">Provider Organisation</a></li>
+		<li class="page_item page-item-1441"><a href="../../activities-standard/transaction/receiver-org/index.html">Receiver Organisation</a></li>
+		<li class="page_item page-item-1457"><a href="../../activities-standard/transaction/tied-status/index.html">Tied Status</a></li>
+		<li class="page_item page-item-1447"><a href="../../activities-standard/transaction/transaction-date/index.html">Transaction Date</a></li>
+		<li class="page_item page-item-1437"><a href="../../activities-standard/transaction/transaction-type/index.html">Transaction Type</a></li>
+		<li class="page_item page-item-1443"><a href="../../activities-standard/transaction/value/index.html">Value</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1459 page_item_has_children"><a href="../../activities-standard/document-link/index.html">Document Link</a>
+	<ul class='children'>
+		<li class="page_item page-item-2297"><a href="../../activities-standard/document-link/title/index.html">Title</a></li>
+		<li class="page_item page-item-2299"><a href="../../activities-standard/document-link/category/index.html">Category</a></li>
+		<li class="page_item page-item-3617"><a href="../../activities-standard/document-link/language/index.html">Language</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1433"><a href="../../activities-standard/related-activity/index.html">Related Activity</a></li>
+	<li class="page_item page-item-1465 page_item_has_children"><a href="../../activities-standard/conditions/index.html">Conditions</a>
+	<ul class='children'>
+		<li class="page_item page-item-2304"><a href="../../activities-standard/conditions/condition/index.html">Condition</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1469 page_item_has_children"><a href="../../activities-standard/result/index.html">Result</a>
+	<ul class='children'>
+		<li class="page_item page-item-2306"><a href="../../activities-standard/result/title/index.html">Title</a></li>
+		<li class="page_item page-item-2308"><a href="../../activities-standard/result/description/index.html">Description</a></li>
+		<li class="page_item page-item-2313 page_item_has_children"><a href="../../activities-standard/result/indicator/index.html">Indicator</a>
+		<ul class='children'>
+			<li class="page_item page-item-2324"><a href="../../activities-standard/result/indicator/title/index.html">Title</a></li>
+			<li class="page_item page-item-2326"><a href="../../activities-standard/result/indicator/description/index.html">Description</a></li>
+			<li class="page_item page-item-2328 page_item_has_children"><a href="../../activities-standard/result/indicator/period/index.html">Period</a>
+			<ul class='children'>
+				<li class="page_item page-item-2332"><a href="../../activities-standard/result/indicator/period/period-start/index.html">Period Start</a></li>
+				<li class="page_item page-item-2341"><a href="../../activities-standard/result/indicator/period/period-end/index.html">Period-end</a></li>
+				<li class="page_item page-item-2344"><a href="../../activities-standard/result/indicator/period/target/index.html">Target</a></li>
+				<li class="page_item page-item-2347"><a href="../../activities-standard/result/indicator/period/actual/index.html">Actual</a></li>
+			</ul>
+</li>
+			<li class="page_item page-item-2330 page_item_has_children"><a href="../../activities-standard/result/indicator/baseline/index.html">Baseline</a>
+			<ul class='children'>
+				<li class="page_item page-item-2350"><a href="../../activities-standard/result/indicator/baseline/comment/index.html">Comment</a></li>
+			</ul>
+</li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li class="page_item page-item-2318"><a href="../../activities-standard/legacy-data/index.html">Legacy Data</a></li>
+</ul>
+</li>
+<li class="page_item page-item-737 page_item_has_children current_page_ancestor current_page_parent"><a href="../index.html">Code Lists</a>
+<ul class='children'>
+	<li class="page_item page-item-2973"><a href="../code-list-api/index.html">Code List API</a></li>
+	<li class="page_item page-item-2397"><a href="../all-codelists/index.html">All Codelists</a></li>
+	<li class="page_item page-item-915"><a href="../activity_date_type/index.html">Activity Date Type</a></li>
+	<li class="page_item page-item-919"><a href="../activity_status/index.html">Activity Status</a></li>
+	<li class="page_item page-item-923"><a href="../administrative_area_1/index.html">Administrative Area (First-level)</a></li>
+	<li class="page_item page-item-925"><a href="../administrative_area_2/index.html">Administrative Area (Second-level)</a></li>
+	<li class="page_item page-item-869"><a href="../aid_type/index.html">Aid Type</a></li>
+	<li class="page_item page-item-1122"><a href="../budget_type/index.html">Budget Type</a></li>
+	<li class="page_item page-item-862"><a href="../collaboration_type/index.html">Collaboration Type</a></li>
+	<li class="page_item page-item-1221"><a href="../condition_type/index.html">Condition Type</a></li>
+	<li class="page_item page-item-844"><a href="../country/index.html">Country</a></li>
+	<li class="page_item page-item-798"><a href="../currency/index.html">Currency</a></li>
+	<li class="page_item page-item-878"><a href="../description_type/index.html">Description Type</a></li>
+	<li class="page_item page-item-977"><a href="../disbursement_channel/index.html">Disbursement Channel</a></li>
+	<li class="page_item page-item-928"><a href="../document_category/index.html">Document Category</a></li>
+	<li class="page_item page-item-851"><a href="../file_format/index.html">File Format</a></li>
+	<li class="page_item page-item-873"><a href="../finance_type/index.html">Finance Type</a></li>
+	<li class="page_item page-item-865"><a href="../flow_type/index.html">Flow Type</a></li>
+	<li class="page_item page-item-937"><a href="../gazetteer_agency/index.html">Gazetteer Agency</a></li>
+	<li class="page_item page-item-940"><a href="../geographical_precision/index.html">Geographical Precision</a></li>
+	<li class="page_item page-item-1551"><a href="../indicator_measure/index.html">Indicator Measure</a></li>
+	<li class="page_item page-item-791"><a href="../language/index.html">Language</a></li>
+	<li class="page_item page-item-943"><a href="../location_type/index.html">Location Type</a></li>
+	<li class="page_item page-item-825"><a href="../organisation/index.html">Organisation Identifiers</a></li>
+	<li class="page_item page-item-854"><a href="../organisation_role/index.html">Organisation Role</a></li>
+	<li class="page_item page-item-839"><a href="../organisation_type/index.html">Organisation Type</a></li>
+	<li class="page_item page-item-957"><a href="../policy_marker/index.html">Policy Marker</a></li>
+	<li class="page_item page-item-960"><a href="../policy_significance/index.html">Policy Significance</a></li>
+	<li class="page_item page-item-837"><a href="../publisher_type/index.html">Publisher Type</a></li>
+	<li class="page_item page-item-858"><a href="../region/index.html">Region</a></li>
+	<li class="page_item page-item-965"><a href="../related_activity_type/index.html">Related Activity Type</a></li>
+	<li class="page_item page-item-1549"><a href="../result_type/index.html">Result Type</a></li>
+	<li class="page_item page-item-968 current_page_item"><a href="index.html">Sector</a></li>
+	<li class="page_item page-item-970"><a href="../tied_status/index.html">Tied Status</a></li>
+	<li class="page_item page-item-973"><a href="../transaction_type/index.html">Transaction Type</a></li>
+	<li class="page_item page-item-848"><a href="../verification_status/index.html">Verification Status</a></li>
+	<li class="page_item page-item-883"><a href="../vocabulary/index.html">Vocabulary</a></li>
+</ul>
+</li>
+<li class="page_item page-item-720 page_item_has_children"><a href="../../schema/index.html">IATI Schema</a>
+<ul class='children'>
+	<li class="page_item page-item-1041"><a href="../../schema/sample-activity-xml/index.html">Sample XML for the Activities Standard</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1279 page_item_has_children"><a href="../../guides/index.html">Guidance Materials</a>
+<ul class='children'>
+	<li class="page_item page-item-2649 page_item_has_children"><a href="../../guides/data-considerations/index.html">Data Considerations</a>
+	<ul class='children'>
+		<li class="page_item page-item-2449"><a href="../../guides/data-considerations/defining-an-activity/index.html">Defining an Activity</a></li>
+		<li class="page_item page-item-2462"><a href="../../guides/data-considerations/traceability/index.html">Traceability</a></li>
+		<li class="page_item page-item-2470"><a href="../../guides/data-considerations/segmenting-your-data/index.html">Segmenting your Data</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2681 page_item_has_children"><a href="../../guides/technical-issues/index.html">Basic Activity Information</a>
+	<ul class='children'>
+		<li class="page_item page-item-2420"><a href="../../guides/technical-issues/character-encoding/index.html">Character Encoding</a></li>
+		<li class="page_item page-item-1671"><a href="../../guides/technical-issues/dates/index.html">Dates</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2654 page_item_has_children"><a href="../../guides/financial-data/index.html">Financial Data</a>
+	<ul class='children'>
+		<li class="page_item page-item-2439"><a href="../../guides/financial-data/budgets-planned-disbursements/index.html">Budgets &amp; Planned Disbursements</a></li>
+		<li class="page_item page-item-2437"><a href="../../guides/financial-data/transactions/index.html">Transactions</a></li>
+		<li class="page_item page-item-2657"><a href="../../guides/financial-data/multi-funded-projects/index.html">Multi-funded Projects</a></li>
+		<li class="page_item page-item-2662"><a href="../../guides/financial-data/double-counting/index.html">How to Deal with Double Counting</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2664 page_item_has_children"><a href="../../guides/geographic-data/index.html">Geopolitical Information</a>
+	<ul class='children'>
+		<li class="page_item page-item-2457"><a href="../../guides/geographic-data/geocoding/index.html">Geocoding</a></li>
+		<li class="page_item page-item-2459"><a href="../../guides/geographic-data/countries-regions/index.html">Countries &amp; Regions</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2668 page_item_has_children"><a href="../../guides/organisation-data/index.html">Identifiers</a>
+	<ul class='children'>
+		<li class="page_item page-item-1647"><a href="../../guides/organisation-data/organisation-identifiers/index.html">Organisation Identifiers</a></li>
+		<li class="page_item page-item-2441"><a href="../../guides/organisation-data/participating-organisations/index.html">Participating Organisations</a></li>
+		<li class="page_item page-item-2475"><a href="../../guides/organisation-data/contact-information/index.html">Contact Information</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2709 page_item_has_children"><a href="../../guides/classifications/index.html">Classifications</a>
+	<ul class='children'>
+		<li class="page_item page-item-2425"><a href="../../guides/classifications/sectors/index.html">Sectors</a></li>
+		<li class="page_item page-item-2446"><a href="../../guides/classifications/namespaces-extensions/index.html">Namespaces &amp; Extensions</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2673 page_item_has_children"><a href="../../guides/related-documents/index.html">Related Documents</a>
+	<ul class='children'>
+		<li class="page_item page-item-2452"><a href="../../guides/related-documents/documents/index.html">Documents</a></li>
+		<li class="page_item page-item-2468"><a href="../../guides/related-documents/related-activity/index.html">Related Activity</a></li>
+		<li class="page_item page-item-2454"><a href="../../guides/related-documents/legacy-data/index.html">Legacy Data</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2467"><a href="../../guides/the-iati-registry/index.html">The IATI Registry</a></li>
+	<li class="page_item page-item-892"><a href="../../guides/xml-schema-tutorial/index.html">XML Schema Tutorial</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2418 page_item_has_children"><a href="../../governance/index.html">Governance</a>
+<ul class='children'>
+	<li class="page_item page-item-3090"><a href="../../governance/steering-committee/index.html">Steering Committee</a></li>
+	<li class="page_item page-item-3092"><a href="../../governance/iati-secretariat/index.html">IATI Secretariat</a></li>
+	<li class="page_item page-item-3094"><a href="../../governance/technical-advisory-group/index.html">Technical Advisory Group</a></li>
+	<li class="page_item page-item-2537 page_item_has_children"><a href="../../governance/updating-the-standard/index.html">Updating the IATI Standard</a>
+	<ul class='children'>
+		<li class="page_item page-item-3124"><a href="../../governance/updating-the-standard/decimal-upgrade-to-1-02/index.html">Decimal Upgrade to 1.02</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-1037"><a href="../../get-involved/support/index.html">Support</a></li>
+		</ul>
+		</aside><aside id="text-17" class="widget-2 widget-last widget-even community green widget widget_text"><h3 class="widget-title">Community Support</h3>			<div class="textwidget"><p>Have a question about publishing or using IATI-formatted data? Access the <a href="http://support.iatistandard.org/home">Knowledge Base</a>.</p>
+</div>
+		</aside></div><!-- #secondary .widget-area -->
+</div><!--#page-content -->
+</div><!--#page -->
+
+<div id="pre-footer">
+
+    
+    <div id="footer-links">
+        <ul>
+            <li>
+                <a href="../../sitemap/index.html">Site map</a>
+            </li>
+            <li>
+                <a href="../../community-support/index.html">Support</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer-additional">
+        <div id="footer-cookie">
+            <aside id="text-21" class="widget-1 widget-first widget-last widget-odd widget widget_text"><h3 class="widget-title">Cookie Disclaimer</h3>			<div class="textwidget"><p>Cookies' are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+</div>
+		</aside>        </div>
+        <div id="footer-social">
+            <aside id="sidebar_social_links" class="widget widget_social_links">
+    <div class="text-widget">
+        <ul class="social-links">
+            <li class="social facebook"><a href="index.html">Facebook</a></li>
+            <li class="social twitter"><a href="index.html">Twitter</a></li>
+            <li class="social linkedin"><a href="index.html">LinkedIn</a></li>
+            <li class="social rss"><a href="http://iatistandard.org/102/feed/">RSS</a></li>
+        </ul>
+    </div>
+</aside>
+        </div>
+        <!--#footer-social -->
+    </div>
+</div><!--#footer-wrapper -->
+
+<footer id="footer">
+
+    <div id="footer-credits">
+        <span class="copyright">&copy; 2015 IATI Standard 1.02</span>
+    </div>
+    <!--.footer-inner -->
+</footer><!--#footer -->
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=1.8.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/iatistandard_1.02/library/js/iati.js@ver=0.1.1'></script>
+<script type='text/javascript' src='../../wp-content/themes/iatistandard_1.02/library/js/common.js@ver=0.1.1'></script>
+</body>
+</html>

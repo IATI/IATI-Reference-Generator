@@ -1,0 +1,222 @@
+/*
+Theme Name:     IATI Standard Theme v1.03
+Theme URI:      http://example.com/
+Description:    Child theme for the Twenty Eleven theme 
+Author:         caprenter@gmail.com
+Author URI:     http://caprenter.me.uk
+Template:       twentyeleven
+Version:        0.1.1
+*/
+
+
+@import url("library/css/style.css");
+
+caption, th, td {
+    text-align: left;
+    vertical-align: baseline;
+}
+
+pre {
+    padding: 0.75em 0.2em;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+.widget-title {
+    letter-spacing:normal;
+}
+
+.under-review {
+    background: url("images/under-review.png") no-repeat 0 20px;
+    border: 1px solid #BBBBBB;
+    margin: -1em 0 1em;
+    padding: 20px 20px 20px 40px;
+}
+
+.alpha-version {
+    background: url("images/circle_exclamation_mark.png") no-repeat 10px 11px;
+    margin: -1em 0 1em;
+    padding: 1px 0px 0px 40px;
+    color: #c43b1d;
+    border: 1px solid #BBBBBB;
+}
+
+.text-with-image img {
+    float: left;
+    padding: 20px 20px 25px 5px;
+}
+
+.entry-content h3{
+    padding-bottom: 0.25em;
+    /*border-bottom: 1px dashed rgb(190,190,190);*/
+    background: transparent url(library/images/border-dashed-background.png) repeat-x bottom left;
+
+}
+
+.entry-content table,
+.comment-content table{
+    width: 100%;
+    margin: 0 0 1.625em;
+}
+
+.entry-content table th{
+    color: rgb(66,66,66);
+    font-size: 13px;
+    padding: 1px 10px 5px 0;
+}
+.entry-content strong{
+
+}
+
+.entry-content td,
+.comment-content td {
+    border-top: 1px solid #DDD;
+    padding: 6px 10px 6px 0;
+}
+
+
+#content-table .entry-content table {
+    border-bottom: 0;
+    margin: 0;
+    width: 80%;
+}
+#content-table .entry-content td {
+    padding: 6px 0px 6px 0;
+}
+
+
+
+/*Wiki Mark up css*/
+h1.sectionedit1,
+h2.sectionedit1 {
+    display:none;
+}
+h3.sectionedit2,
+h3.sectionedit3  {
+    color: #1a206d;
+}
+h3.sectionedit2 a,
+h3.sectionedit3 a,
+#additional_notes {
+    text-decoration:none;
+    color: #1a206d;
+}
+
+/*Hides links from the wiki that reference versions of documentation*/
+.page4release {
+    display:none;
+}
+
+#secondary .widget.widget_pages ul ul.children > li.page-item-3741 {
+background: transparent url(images/page-menu-list-item-new.gif) no-repeat 0 8px;
+}
+/*The Knowledge Base*/
+/*#text-4 {*/
+    /*background: url("../../uploads/2012/05/noun_project_20365050.png") no-repeat 25px 70px #F5F4F0;*/
+/*}*/
+
+/*The IATI Organisation Standard*/
+/*#text-8 {*/
+    /*background: url("../../uploads/2012/05/noun_project_12515050.png") no-repeat 25px 70px #F5F4F0;*/
+/*}*/
+
+/*The IATI Activities Standard*/
+/*#text-9 {*/
+    /*background: url("../../uploads/2012/05/noun_project_1714.png") no-repeat 25px 70px #F5F4F0;*/
+/*}*/
+
+/*Getting Started*/
+/*#text-10 {*/
+    /*background: url("../../uploads/2012/05/noun_project_938-5050.png") no-repeat 25px 70px #F5F4F0;*/
+/*}*/
+
+/*Code Lists*/
+/*#text-11  {*/
+    /*background: url("../../uploads/2012/05/noun_project_1714.png") no-repeat 25px 70px #F5F4F0;*/
+/*}*/
+
+/*IATI Schema*/
+/*#text-12 {*/
+    /*background: url("../../uploads/2012/05/noun_project_1056-5050.png") no-repeat 25px 70px #F5F4F0;*/
+/*}*/
+
+/*Community Support*/
+/*#text-17 {*/
+    /*background: url("../../uploads/2012/05/noun_project_20365050.png") no-repeat 25px 70px #F5F4F0;*/
+/*}*/
+
+/*Guidance*/
+/*#text-13 {*/
+    /*background: url("../../uploads/2012/05/noun_project_22495050.png") no-repeat 25px 70px #F5F4F0;*/
+/*}*/
+
+/*Governance*/
+/*#text-14 {*/
+    /*background: url("../../uploads/2012/05/noun_project_22805050.png") no-repeat 25px 70px #F5F4F0;*/
+/*}*/
+
+
+#zenbox_tab {
+    top: 40%;
+}
+
+
+
+.url {border:2px solid #e8eef7; padding:5px; margin:10px 0;}
+.guide {font-weight:bold}
+
+
+.datastore input {
+-webkit-appearance: radio;
+}
+
+.datastore .hentry ul li { 
+padding:0;
+background :none;
+}
+
+.datastore .hentry ul {
+background :none;
+}
+
+input[type="submit"] {
+  -webkit-appearance: button;
+}
+
+.page.page-template-page_datastore_form-php #primary {
+  margin-left: 0;
+  margin-right: 20px;
+  width:100%;
+}
+.page.page-template-page_datastore_form-php #secondary {
+  margin-left: 0;
+}
+
+.ss-form-entry{margin-bottom:1.5em;clear:left}
+.ss-form-entry-top {float:left;width:32%;padding-bottom:10px}
+.ss-form-entry-top div {display: block;}
+.ss-form-entry input{vertical-align:middle;margin-left:0;margin-top:0}
+.ss-form-entry select{max-width:100%}
+.ss-q-title{display:block;font-weight:bold; color:#1a206d}
+.ss-q-help{display:block;margin:.1em 0 .25em 0}
+.ss-secondary-text{color:#666}
+.ss-textarea{max-width:99%}
+.ss-q-long{resize:vertical;width:70%}
+.ss-choices{list-style:none;margin:.5em 0 0 0;padding:0}
+.ss-choice-item{margin:0;line-height:1.3em;padding-bottom:.5em}
+.ss-required-asterisk{color:#c43b1d}
+.ss-section-title{background-color:#eee;padding:0.4em;margin:2em -0.4em 0}
+.ss-section-description{margin-top:0.5em}
+.ss-page-title{margin:0;padding:0}
+.ss-formwidget-container:focus{outline:none}
+.ss-item{margin:12px 0}
+.ss-image{max-width:100%}
+.ss-edit-link,.ss-edit-link:active,.ss-edit-link:visited,.ss-edit-link:hover,.ss-edit-link:link{background:url(http://www.gstatic.com/docs/spreadsheets/forms/edit_dark.png) 7px 8px no-repeat #1f1f1d;border:1px solid #fff;color:#fff;float:right;font:normal 13px arial,sans-serif;font-weight:bold;padding:7px 7px 7px 27px;text-decoration:none}
+.errorbox-bad{border:2px solid #c43b1d;background-color:#ffe6cc;padding:5px;margin:10px 0;}
+.errorheader{color:#c43b1d}
+
+.glyphicons {
+color: #fff;
+}

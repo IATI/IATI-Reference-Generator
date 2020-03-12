@@ -15,6 +15,9 @@ build_dirs = {
     "201": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml",
     "105": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml",
     "104": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml",
+    "103": "IATI-Standard-SSOT-version-1.03/103.new",
+    "102": "IATI-Standard-SSOT-version-1.02/102.new",
+    "101": "IATI-Standard-SSOT-version-1.02/101.new",
     "guidance": "IATI-Guidance/en/_build/dirhtml",
     "developer-documentation": "IATI-Developer-Documentation/_build/dirhtml"
 }
@@ -40,7 +43,9 @@ for parent_slug, root_dir in build_dirs.items():
                 input_path = os.path.join(dirname, "index.html")
                 with open(input_path, 'r') as input_html:
                     soup = BeautifulSoup(input_html.read(), 'html.parser')
-                    main = soup.find("div", {"role": "main"})
+                    main = soup.find("div", attrs={"role": "main"})
+                    if main is None:
+                        main = soup.find("div", attrs={"id": "main"})
                     pre_spans = main.findAll("span", attrs={'class': 'pre'})
                     for pre_span in pre_spans:
                         pre_span.name = 'pre'
@@ -53,3 +58,5 @@ for parent_slug, root_dir in build_dirs.items():
                         os.makedirs(output_dir)
                     with open(output_path, 'w') as output_xml:
                         output_xml.write(str(main))
+
+shutil.make_archive("output", "zip", "output")

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>XML Schema Tutorial | IATI Standard 1.02</title>
+<style type="text/css" media="screen, projection">
+  @import url(http://asset0.zendesk.com/external/zenbox/v2.1/zenbox.css);
+</style>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://iatistandard.org/102/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://iatistandard.org/102/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<link rel='stylesheet' id='wp-syntax-css-css'  href='../../wp-content/plugins/wp-syntax/css/wp-syntax.css@ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='../../wp-content/plugins/wp-pagenavi/pagenavi-css.css@ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='main-stylesheet-css'  href='../../wp-content/themes/iatistandard_1.02/style.css@ver=0.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='../../wp-content/plugins/collapsing-pages/collapsFunctions.js@ver=1.6'></script>
+<script type='text/javascript' src='../../wp-content/themes/iatistandard_1.02/library/js/modernizr-2.6.1.min.js@ver=2.6.1'></script>
+<script type='text/javascript' src='../../wp-content/themes/iatistandard_1.02/library/js/selectivizr.min.js@ver=1.2'></script>
+<link rel='prev' title='Vocabulary' href='../../codelists/vocabulary/index.html' />
+<link rel='next' title='Activity Date Type' href='../../codelists/activity_date_type/index.html' />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='index.html' />
+<style type='text/css'>
+    #sidebar span.collapsing.pages {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#sidebar li.widget_collapspage h2 span.sym {float:right;padding:0 .5em}
+#sidebar li.collapsing.pages a.self {font-weight:bold}
+#sidebar ul.collapsing.pages.list ul.collapsing.pages.list:before {content:'';} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages:before {content:'';} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages {list-style-type:none}
+#sidebar ul.collapsing.pages.list li.collapsing.pages{
+       padding:0 0 0 1em;
+       text-indent:-1em;
+}
+#sidebar ul.collapsing.pages.list li.collapsing.pages.item:before {content: '\00BB \00A0' !important;} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages .sym {
+   cursor:pointer;
+   font-size:1.2em;
+   font-family:Monaco, 'Andale Mono', 'FreeMono', 'Courier new', 'Courier', monospace;
+    padding-right:5px;}
+    </style>
+<link rel="Shortcut Icon" type="image/x-icon" href="../../wp-content/themes/twentyeleven/favicon.ico" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+</head>
+
+
+<body class="page page-id-892 page-child parent-pageid-1279 page-template-default custom-background  single-author singular two-column left-sidebar">
+<a id="top"></a>
+    <div id="site-notice"><strong>Version 1.02 of the IATI Standard is no longer supported. <a href="/upgrades/all-versions/">Please use other versions</a>.</strong></div>
+    <div id="page" class="hfeed">
+    <header id="header" role="banner">
+        <div class="header-wrapper">
+            <a id="logo" href="http://iatistandard.org/102">IATI Standard 1.02</a>
+            <div id="version-id"></div>
+
+            <!--<form role="search" method="get" id="searchform" action="/">
+                <input type="text" value="" name="s" id="s" placeholder="Search IATI Standard">
+                <input type="submit" id="searchsubmit" value="Search" class="button">
+            </form>-->
+        </div><!-- end wrapper -->
+
+        <nav id="main-nav" class="nav" role="navigation">
+
+            <h3 class="assistive-text">Main menu</h3>
+                        <div class="skip-link"><a class="assistive-text" href="index.html#content" title="Skip to primary content">Skip to primary content</a></div>
+            <div class="skip-link"><a class="assistive-text" href="index.html#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+            <ul class="iati-family">
+    <li class="transparency"><a href="http://www.aidtransparency.net/">Aid Transparency</a></li>
+    <li class="standard"><a href="http://iatistandard.org">IATI Standard</a></li>
+    <li class="registry"><a href="http://iatiregistry.org">IATI Registry / Data</a></li>
+    <li class="community"><a href="http://support.iatistandard.org">IATI Community</a></li>
+</ul>
+            <ul id="menu-primary-navigation" class="menu-main"><li id="menu-item-3663" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3663"><a href="../../getting-started/index.html">Getting Started</a></li>
+<li id="menu-item-3660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3660"><a title=" The Organisation Standard" href="../../organisation-standard/index.html">Organisation</a></li>
+<li id="menu-item-3661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3661"><a title=" The IATI Activities Standard" href="../../activities-standard/index.html">Activities</a></li>
+<li id="menu-item-3662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3662"><a href="../../codelists/index.html">Code Lists</a></li>
+<li id="menu-item-3686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3686"><a href="../../schema/index.html">IATI Schema</a></li>
+<li id="menu-item-3659" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-3659"><a title="IATI Standard &#8211; Guidance" href="../index.html">Guidance</a></li>
+<li id="menu-item-3664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3664"><a href="../../governance/index.html">Governance</a></li>
+<li id="menu-item-3687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3687"><a href="../../community-support/index.html">Support</a></li>
+</ul>        </nav>
+
+    </div><!-- end header -->
+
+    <div id="page-content">
+
+                <div id="nav-breadcrumbs">
+            <!-- Breadcrumb NavXT 5.0.1 -->
+<a title="Go to The IATI Standard Sites." href="http://iatistandard.org" class="main-home">The IATI Standard Sites</a> &gt; <a title="Go to IATI Standard 1.02." href="http://iatistandard.org/102" class="home">IATI Standard 1.02</a> &gt; <a title="Go to Guidance Materials." href="../index.html" class="post post-page">Guidance Materials</a> &gt; XML Schema Tutorial        </div><!--.breadcrumbs -->
+        
+
+        <div id="main">
+
+
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-892" class="post-892 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">XML Schema Tutorial</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="c4"><del><span class="c1"><br class="c1" /></span></del></p>
+<p class="c4"><span class="c1"> </span></p>
+<p>&nbsp;</p>
+<p class="c4 c17"><a name="h.g9a7xa51g6jj"></a><span class="c18 c5">Table of contents</span></p>
+<p class="c4 c8"><span class="c11"><a href="index.html#h.g9a7xa51g6jj">Table of contents</a></span></p>
+<p class="c4 c8"><span class="c11"><a href="index.html#h.ajixwaunfq9f">Background</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.25qqpe-rw3hur">IATI document types</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.ln899c-tjwxbf">Character Encoding</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.e4lqbq-2fjzpc">Conventions</a></span></p>
+<p class="c4 c8"><span class="c11"><a href="index.html#h.6kbjiu-gv0mqy">Activities document walk-through</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.qbj1ma-ab19os">Basic structure and date/time generated</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.ypt3qw-fr6xuu">Top level of an activity report</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.1o496w-46v38t">Identifiers</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.p4u4anl71tk3">Order</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.lq7ai4-ndr6bw">Reporting and participating organizations</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.4s82oc-a8bbg9">Jurisdictions and Geography</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.27wh2u-ifu1x8">Jurisdictions</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.iygxgg-h3bk8h">Geography</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.a82363g30kx9">Dates and status</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.98jswk3wfsrh">Milestone dates</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.6qa23c8pjkpe">Implementation status</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.ljcmolygvvs7">Categorization</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.hg6usqqwl3l8">Sectors</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.guppvpkv699i">Policy Markers</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.rpihr3qo9x5e">Aid type information</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.bifyuo-gs52z6">Financial information</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.2lk6myfl9ga9">Financial transactions</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.tdt1hzt45i8i">Planned expenditures</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.22y627diruu5">Relationships</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.bwkt6pmmzyvv">Related activities</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.tb3md7lfj93g">Other related initiatives</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.uafe6uagnv6n">Contact information</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.eggaxji6b1oi">Adding other information</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.1is9983z4oza">XML namespaces</a></span></p>
+<p class="c4 c6"><span class="c11"><a href="index.html#h.bko1rqq458yb">Legacy data</a></span></p>
+<p class="c4 c13"><span class="c11"><a href="index.html#h.lulw808ly921">Next steps</a></span></p>
+<p class="c4 c8"><span class="c11"><a href="index.html#h.2c9os8-k60akt">References and Glossary</a></span></p>
+<p><span class="c1"> </span></p>
+<p class="c4 c17"><a name="h.ajixwaunfq9f"></a><span class="c18 c5">Background</span></p>
+<p class="c4"><span class="c1">This section provides general background information about IATI documents.</span></p>
+<p class="c4 c16"><a name="h.25qqpe-rw3hur"></a><span class="c15 c5">IATI document types</span></p>
+<p class="c4"><span class="c1">IATI has defined two XML document types:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<ol class="c19">
+<li class="c9"><span class="c1">The </span><span class="c1 c2">Organizations</span><span class="c1"> document, describing a single organization (such as a donor, foundation, agency, or NGO) involved in aid work.  This document may include aggregate budget information for the organization.</span></li>
+<li class="c9"><span class="c1">The </span><span class="c1 c2">Activities</span><span class="c1"> document, describing a single aid activity (such as a project or humanitarian appeal). This document may include specific budget information for the activity, including inflows and outflows of money.</span></li>
+</ol>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">For example, let’s say that in 2011 the fictitious </span><span class="c1 c2">ACME Aid Agency </span><span class="c1">were funding three projects, divided evenly between Rwanda and Burundi, each worth €500,000:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<ol class="c19">
+<li class="c9"><span class="c1">The </span><span class="c1 c2">organization </span><span class="c1">document would state that ACME has budgeted a total of €3,000,000 for aid in 2011, and would further specify that €1,500,000 was allocated for activities in Rwanda and €1,500,000 was allocated for activities in Burundi.</span></li>
+<li class="c9"><span class="c1">The three </span><span class="c1 c2">activity</span><span class="c1"> documents would each state that the total budget of the activity was €1,000,000, of which €500,000 was allocated for Rwanda, and €500,000 allocated for Burundi.</span></li>
+</ol>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">The formal definitions of these document types appear as two XML schemas, </span><span class="c0">iati-organizations-schema.xsd</span><span class="c1"> and </span><span class="c0">iati-activities-schema.xsd</span><span class="c1">.  It is important to understand, however, that these schemas do not provide a complete definition of the IATI document types: it is possible for a document to validate against one of the schemas and still not be a conformant IATI aid document.</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">Since the </span><span class="c1 c2">activities</span><span class="c1"> document type is the most widely used (and the best defined at this early stage of IATI development), this tutorial will concentrate solely on it; however, many of the points made in this tutorial also apply to the </span><span class="c1 c2">organization</span><span class="c1"> document type.</span></p>
+<p>&nbsp;</p>
+<p class="c4 c16"><a name="h.e4lqbq-2fjzpc"></a><span class="c15 c5">Conventions</span></p>
+<p class="c4"><span class="c1">Throughout this tutorial, examples may contain an ellipsis (“&#8230;”) to show that part of the expected markup has been left out for brevity or clarity.  Literal XML examples appear in </span><span class="c0">monospace type</span><span class="c1">, while XML element or attribute names mentioned inline appear in </span><span class="c1 c2">italic type</span><span class="c1">.</span></p>
+<p class="c4 c17"><a name="h.6kbjiu-gv0mqy"></a><span class="c18 c5">Activities document walk-through</span></p>
+<p class="c4"><span class="c1">This is the main body of the tutorial, containing a walk-through of the most important parts of the IATI activities document type.</span></p>
+<p class="c4 c16"><a name="h.qbj1ma-ab19os"></a><span class="c15 c5">Basic structure and date/time generated</span></p>
+<p class="c4"><span class="c1">An activity document may include descriptions for one or more activities, like this:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c7"><span class="c3">&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;</span></p>
+<p class="c7"><span class="c3"> </span></p>
+<p class="c7"><span class="c3">&lt;iati-activities version=”1.01”   </span></p>
+<p class="c7"><span class="c3">    </span><span class="c3 c5">generated-datetime=”2010-07-12T13:26:00-0400”</span><span class="c3">&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</span></p>
+<p class="c7"><span class="c3">    &lt;!&#8211; first activity &#8211;&gt;</span></p>
+<p class="c7"><span class="c3">    &#8230;</span></p>
+<p class="c7"><span class="c3">  &lt;/iati-activity&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;iati-activity last-updated-datetime=”2010-07-01T09:00:01-04:00”&gt;</span></p>
+<p class="c7"><span class="c3">    &lt;!&#8211; second activity &#8211;&gt;</span></p>
+<p class="c7"><span class="c3">    &#8230;</span></p>
+<p class="c7"><span class="c3">  &lt;/iati-activity&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">&lt;/iati-activities&gt;</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">The top-level </span><span class="c1 c2">iati-activities</span><span class="c1"> element is a container for as many activity reports as needed, each represented by its own </span><span class="c1 c2">iati-activity</span><span class="c1"> element.  </span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">The </span><span class="c1 c2">version</span><span class="c1"> attribute specifies the version of the IATI specification in use (currently “1.01”).  IATI’s goal is not to introduce backward-incompatibilities into different versions of the schema, but the version number may still be useful for processing and validation.  If omitted, the version defaults to “1.0”.</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">The </span><span class="c1 c2">generated-datetime</span><span class="c1"> attribute is not required by the schema, but it is strongly recommended.  It specifies when this report was generated using the extended ISO 8601 date/time format, so “2010-07-12T13:26:00-04:00” represents July 12, 2010 at 1:26:00 PM 4:00 hours before UTC/Greenwich Mean Time (in other words, North American Eastern Daylight Time).  This date/time stamp is important for processing IATI information, because the most recent data counts: if a data consumer receives a report with a </span><span class="c1 c2">generated-datetime </span><span class="c1">value later than the one in this report, it should discard the data from this report and replace it with the data in the newer report.  Note that the </span><span class="c1 c2">generated-datetime</span><span class="c1"> should be updated </span><span class="c1 c21">every</span><span class="c1"> time a new report is generated, even if none of the information in it has changed.</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">The remainder of the tutorial will focus on the individual </span><span class="c1 c2">iati-activity</span><span class="c1"> element that appears one or more times inside the </span><span class="c1 c2">iati-activities</span><span class="c1"> container element.</span></p>
+<p class="c4 c16"><a name="h.ypt3qw-fr6xuu"></a><span class="c15 c5">Top level of an activity report</span></p>
+<p class="c4"><span class="c1">Inside the </span><span class="c1 c2">iati-activities</span><span class="c1"> container appears a series of one or more </span><span class="c1 c2">iati-activity</span><span class="c1"> elements, each describing an individual aid activity (such as a development project or humanitarian appeal):</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c7"><span class="c3">&lt;iati-activity </span><span class="c3 c5">last-updated-datetime=”2010-04-01T00:00:01”</span><span class="c3">&gt;</span></p>
+<p class="c7"><span class="c3">  </span><span class="c3 c5">&lt;iati-identifier&gt;ACME:12345&lt;/iati-identifier&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;reporting-organization ref=”ACME”/&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;title xml:lang=”en”&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">&lt;/iati-activity&gt;</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">The </span><span class="c1 c2">last-updated-datetime</span><span class="c1"> attribute is not required by the schema, but it is strongly recommended.  It specifies the last time a change was made to this activity data, using the extended ISO 8601 date/time format (so that “2010-04-01T00:00:01” represents one second after midnight UTC/GMT on April 1, 2010).  This date/timestamp should change only when a field inside </span><span class="c1 c2">iati-activity</span><span class="c1"> is added, removed, or modified; if the data content is unchanged since the last report, the </span><span class="c1 c2">last-updated-datetime</span><span class="c1"> value should remain the same (though the </span><span class="c1 c2">generated-datetime</span><span class="c1"> attribute on the </span><span class="c1 c2">iati-activities</span><span class="c1"> container would still be updated).</span></p>
+<p class="c4 c16"><a name="h.1o496w-46v38t"></a><span class="c15 c5">Identifiers</span></p>
+<p class="c4"><span class="c1">The </span><span class="c1 c2">iati-identifier</span><span class="c1"> element contains a unique identifier for the activity: this identifier must remain the same in every report, no matter what other changes take place (it is what database specialists refer to as a “primary key”).  For the current IATI release, the activity identifier uses an organization identifier assigned by IATI (and specified in the IATI organisation_identifiers code list) followed by a colon (“:”) and an identifier string assigned by the organization, such as an internal project tracking number.  It is the organization’s responsibility to ensure that the part after the colon is unique among all other identifiers it assigns.  In this example, we have the fictional aid organization with the IATI identifier “ACME”, which identifiers this activity using the number “12345”, so the IATI identifier is “ACME:12345”.  (Future releases may use a different scheme, such as a URL, so that non-IATI-member organizations can also participate).</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">IATI also assigns unique identifiers to financial transactions (such as contributions), organizations (such as donors), and aid initiatives (such as humanitarian appeals), so that these can be connected across multiple reports.</span></p>
+<p class="c4 c16"><a name="h.p4u4anl71tk3"></a><span class="c15 c5">Order</span></p>
+<p class="c4"><span class="c1">The order of subelements inside </span><span class="c1 c2">iati-activity</span><span class="c1"> is </span><span class="c1 c21">not</span><span class="c1"> significant: the reporting organization is free to rearrange them however desired.  The following example is functionally identical to the previous one, despite the fact that the order of elements has changed:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c7"><span class="c3">&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;reporting-organization ref=”ACME”/&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;title xml:lang=”en”&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;iati-identifier&gt;ACME:12345&lt;/iati-identifier&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">&lt;/iati-activity&gt;</span></p>
+<p class="c7"><span class="c1"> </span></p>
+<p class="c4"><span class="c15 c5">Multiple languages</span></p>
+<p class="c4"><span class="c1">The </span><span class="c1 c2">title</span><span class="c1"> element in the previous examples contains a human-readable title for the aid activity: in this case, “Sample Activity Report.”  The </span><span class="c1 c2">xml:lang</span><span class="c1"> attribute uses the ISO 639 language code “en” to specify that the title appears in English.  For organizations generating multilingual reports, the </span><span class="c1 c2">title</span><span class="c1"> element may be repeated with different values of </span><span class="c1 c2">xml:lang</span><span class="c1">; in the following example, the title appears English, French, and Spanish:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c7"><span class="c3">&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">  &lt;title </span><span class="c3 c5">xml:lang=”en”</span><span class="c3">&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;title </span><span class="c3 c5">xml:lang=”fr”</span><span class="c3">&gt;Rapport d&#8217;activité échantillon&lt;/title&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;title </span><span class="c3 c5">xml:lang=”es”</span><span class="c3">&gt;Muestra de informe de actividades&lt;/title&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">&lt;/iati-activity&gt;</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">There are many other IATI elements that may contain human-readable text, and each of these may also take the </span><span class="c1 c2">xml:lang</span><span class="c1"> attribute.  Two common examples are the </span><span class="c1 c2">description</span><span class="c1"> element and the </span><span class="c1 c2">reporting-org</span><span class="c1"> element (which may include the organization’s name as well as its identifier):</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c7"><span class="c3">&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">  &lt;reporting-org </span><span class="c3 c5">xml:lang=”en”</span><span class="c3"> ref=”ACME:12345”&gt;ACME </span></p>
+<p class="c7"><span class="c3">    Foundation&lt;/reporting-org&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;title </span><span class="c3 c5">xml:lang=”en”</span><span class="c3">&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;description </span><span class="c3 c5">xml:lang=”en”</span><span class="c3">&gt;</span></p>
+<p class="c7"><span class="c3">    This is a longer description of the sample activity.</span></p>
+<p class="c7"><span class="c3">      It may have multiple paragraphs and other kinds of </span></p>
+<p class="c7"><span class="c3">    information.</span></p>
+<p class="c7"><span class="c3">  &lt;/description&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">&lt;/iati-activity&gt;</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">It can be tedious repeating the </span><span class="c1 c2">xml:lang </span><span class="c1">attribute for every element that contains human-readable text, especially when a report uses only a single language.  As an alternative, the </span><span class="c1 c2">xml:lang</span><span class="c1"> attribute may be specified just once for the </span><span class="c1 c2">iati-activity</span><span class="c1"> element to provide a default language for the entire activity report:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c7"><span class="c3">&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01” </span><span class="c3 c5">xml:lang=”en”</span><span class="c3">&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">  &lt;reporting-org ref=”ACME:12345”&gt;ACME Foundation&lt;/reporting-org&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;title&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p class="c7"><span class="c3">  &lt;description&gt;</span></p>
+<p class="c7"><span class="c3">    This is a longer description of the sample activity.</span></p>
+<p class="c7"><span class="c3">      It may have multiple paragraphs and other kinds of </span></p>
+<p class="c7"><span class="c3">    information.</span></p>
+<p class="c7"><span class="c3">  &lt;/description&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">&lt;/iati-activity&gt;</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">The remaining examples in this tutorial will assume that a default language has been set, and will omit the </span><span class="c1 c2">xml:lang</span><span class="c1"> attribute.</span></p>
+<p>&nbsp;</p>
+<p class="c4 c10"><a name="h.6qa23c8pjkpe"></a><span class="c14 c5">Implementation status</span></p>
+<p class="c4"><span class="c1">The </span><span class="c1 c2">activity-status</span><span class="c1"> element specifies the current status of the activity (at the time of reporting):</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c3">&lt;activity-status code=”</span><span class="c3 c5">02</span><span class="c3">”/&gt;</span></p>
+<p class="c4"><span class="c3"> </span></p>
+<p class="c4"><span class="c1">The IATI </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2Fcodelists%2Factivity_status.html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHJDsrNJzcdxk_ErmaPKcqvGQrBGg">Activity Status</a></span><span class="c1"> code list specifies the allowed numeric values for the </span><span class="c1 c2">code</span><span class="c1"> attribute:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<ol class="c19">
+<li class="c9"><span class="c1 c5">01:</span><span class="c1"> pipeline/identification</span></li>
+<li class="c9"><span class="c1 c5">02: </span><span class="c1">implementation</span></li>
+<li class="c9"><span class="c1 c5">03:</span><span class="c1"> completion</span></li>
+<li class="c9"><span class="c1 c5">04:</span><span class="c1"> post-completion</span></li>
+<li class="c9"><span class="c1 c5">05:</span><span class="c1"> cancelled</span></li>
+</ol>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">Like the </span><span class="c1 c2">activity-date</span><span class="c1"> element, the </span><span class="c1 c2">activity-status</span><span class="c1"> element allows plain text content as well, to provide additional information about the status for human readers:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c3">&lt;activity-status code=”01”&gt;</span><span class="c3 c5">Awaiting final budget</span><span class="c3">&lt;/activity-status&gt;</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="c4"><span class="c1">The </span><span class="c1 c2">activity-website</span><span class="c1"> element simply contains a URL that represents this specific activity:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c3">&lt;activity-website&gt;http://example.org/acme/12345.html&lt;/activity-website&gt;</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">Ideally, the URL should be a link directly to a page describing this activity (if one exists), not a general link to an aid organization’s home page.</span></p>
+<p class="c4 c16"><a name="h.eggaxji6b1oi"></a><span class="c15 c5">Adding other information</span></p>
+<p class="c4"><span class="c1">There will be situations where reporting organizations want to publish additional data that are not covered by the default IATI elements, or want to specify the data using the original formats or values to avoid information loss.  IATI provides two mechanisms for doing so:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<ol class="c22">
+<li class="c9"><span class="c1">Use an XML namespace to extend the schema.</span></li>
+<li class="c9"><span class="c1">Use the </span><span class="c1 c2">legacy-data</span><span class="c1"> element to provide original data values.</span></li>
+</ol>
+<p class="c4 c10"><a name="h.1is9983z4oza"></a><span class="c14 c5">XML namespaces</span></p>
+<p class="c4"><span class="c1">The first approach allows reporting organizations to invent any required markup and add it to an IATI activity report.  IATI users who don’t recognize the extended markup are required simply to ignore it, without reporting an error.  Here is an example:</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c7"><span class="c3">&lt;iati-activity xmlns:acme=”http://example.org/acme/ns#”&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">  &lt;acme:risk-level&gt;3&lt;/acme:risk-level&gt;</span></p>
+<p class="c7"><span class="c3">  &#8230;</span></p>
+<p class="c7"><span class="c3">&lt;/iati-activity&gt;</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">In this example, ACME has defined its own namespace using the URL “http://example.org/acme/ns#” and mapped that to the prefix “acme”.  It then adds the new element, </span><span class="c1 c2">acme:risk-level</span><span class="c1">, to provide information about its risk assessment for the activity.  IATI users who don’t recognize the “http://example.org/acme/ns#” namespace are required to ignore the </span><span class="c1 c2">acme:risk</span><span class="c1"> element rather than reporting an error, so the extended markup does not harm compatibility.  Users who </span><span class="c1 c21">are</span><span class="c1"> familiar with the namespace, however, can take advantage of the additional information.</span></p>
+<p>&nbsp;</p>
+<p class="c4 c16"><del><a name="h.lulw808ly921"></a></del><span class="c15 c5">Next steps</span></p>
+<p class="c4"><span class="c1">This tutorial has provided a detailed introduction to the IATI XML document format for aid activities, but it is not a complete reference guide.  To produce or use IATI data files, you should now turn to the official reference documentation available online at </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEktUL2ednsGUZmqnBD8Hnrev0uow">http://iatistandard.org/</a></span><span class="c1">.</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1">There is also an IATI organisation document type, which will be the subject of a future tutorial.</span></p>
+<p class="c4 c17"><a name="h.2c9os8-k60akt"></a><span class="c18 c5">References and Glossary</span></p>
+<p class="c4"><span class="c1 c5">DAC:</span><span class="c1"> the </span><span class="c1 c2">Development Assistance Committee</span><span class="c1"> of the </span><span class="c1 c2">Organisation for Economic Co-operation and Development</span><span class="c1"> (OECD).  DAC defines some aid-related code lists used by IATI. </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.oecd.org%2Fdac%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGZ9n6adESth6CZujjeenFeuoJWDQ">http://www.oecd.org/dac/</a></span></p>
+<p class="c4"><span class="c1 c5"> </span></p>
+<p class="c4"><span class="c1 c5">IATI:</span><span class="c1"> the </span><span class="c1 c2">International Aid Transparency Initiative.</span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEktUL2ednsGUZmqnBD8Hnrev0uow">http://iatistandard.org/</a></span></p>
+<p class="c4"><span class="c1">        Schemas: </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2Fschema%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFXVZj7M5TNEq8sfRn41YsP3itD1Q">http://iatistandard.org/schema/</a></span></p>
+<p class="c4"><span class="c1">        Code lists: </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2Fcodelists%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHjpCQyQ32XQGeZmgO8mNX_XDitBQ">http://iatistandard.org/codelists/</a></span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1 c5">ISO 691: </span><span class="c1 c2">Codes for the Representation of Names of Languages</span><span class="c1"> (IATI uses the 2-letter abbreviations). </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.loc.gov%2Fstandards%2Fiso639-2%2Fphp%2FEnglish_list.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFSGKMCPxVC0LxRZkGI_iMADz34aA">http://www.loc.gov/standards/iso639-2/php/English_list.php</a></span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1 c5">ISO 3166:</span><span class="c1 c2">Codes for the representation of names of countries and their subdivisions</span><span class="c1"> (IATI uses the alpha-2 country codes). </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.iso.org%2Fiso%2Fcountry_codes.htm&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGaXjKAEjN0aOA4FM_wZ-y7l7peWQ">http://www.iso.org/iso/country_codes.htm</a></span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1 c5">ISO 4217:</span><span class="c1 c2">Currency and Funds Name and Code Elements</span><span class="c1"> (IATI uses the alphabetic codes): </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.iso.org%2Fiso%2Fsupport%2Ffaqs%2Ffaqs_widely_used_standards%2Fwidely_used_standards_other%2Fcurrency_codes%2Fcurrency_codes_list-1.htm&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH2kj0LsjwgSfd2DK9jaX-NFIxNjA">http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/currency_codes/currency_codes_list-1.htm</a></span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1 c5">ISO 8601:</span><span class="c1 c2">Representation of Dates and Times </span><span class="c1">(IATI uses the W3C profile described in </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3.org%2FTR%2FNOTE-datetime&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHMST1Urxitlkn8nmMda5a8QlXcvQ">http://www.w3.org/TR/NOTE-datetime</a></span><span class="c1">)</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1 c5">NGO:</span><span class="c1"> a </span><span class="c1 c2">non-governmental organization</span><span class="c1">, such as Médecins san frontières.</span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1 c5">XML:</span><span class="c1"> the </span><span class="c1 c2">Extensible Markup Language.</span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3.org%2FXML%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHrfygZXah13Um-G7ZVO628KBsPgw">http://www.w3.org/XML/</a></span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1 c5">XML Namespace:</span><span class="c1"> a mechanism for extending XML vocabularies safely. </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3.org%2FTR%2FREC-xml-names%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHJMGviCkTvFD0F32tV7oe4w_8gGA">http://www.w3.org/TR/REC-xml-names/</a></span></p>
+<p class="c4"><span class="c1"> </span></p>
+<p class="c4"><span class="c1 c5">XML Schema:</span><span class="c1"> a formal description of the structure rules governing an XML document type. </span><span class="c11"><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3.org%2FXML%2FSchema.html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHvYvvkLt2HjSMYpm3gfe4KYJt30g">http://www.w3.org/XML/Schema.html</a></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-892 -->
+
+						<div id="comments">
+	
+	
+	
+			
+</div><!-- #comments -->
+
+								
+				<div class="date-comments">
+				  <p class="fl">
+									  </p> 
+					<!--<p class="fl">Last updated: October 4, 2010   
+					<p class="fr"></p>	-->	   
+                                             
+				</div> 
+
+			</div><!-- #content -->
+
+		</div><!-- #primary -->
+
+<div id="secondary" class="widget-area" role="complementary">
+    <aside id="pages-4" class="widget-1 widget-first widget-odd widget widget_pages"><h3 class="widget-title">Pages</h3>		<ul>
+			<li class="page_item page-item-2410 page_item_has_children"><a href="../../getting-started/index.html">Getting Started</a>
+<ul class='children'>
+	<li class="page_item page-item-2632"><a href="../../getting-started/what-is-iati/index.html">What is IATI?</a></li>
+	<li class="page_item page-item-2634 page_item_has_children"><a href="../../getting-started/policy-considerations/index.html">Policy Considerations</a>
+	<ul class='children'>
+		<li class="page_item page-item-2776"><a href="../../getting-started/policy-considerations/understanding-transparency/index.html">Understanding Transparency</a></li>
+		<li class="page_item page-item-2781"><a href="../../getting-started/policy-considerations/organisational-incentives-and-buy-in/index.html">Organisational Incentives and Buy-In</a></li>
+		<li class="page_item page-item-2594"><a href="../../getting-started/policy-considerations/exclusions-and-thresholds/index.html">Exclusions and Thresholds</a></li>
+		<li class="page_item page-item-2773"><a href="../../getting-started/policy-considerations/units-of-aid/index.html">Units of Aid</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2797 page_item_has_children"><a href="../../getting-started/managing-implementation/index.html">Managing Implementation</a>
+	<ul class='children'>
+		<li class="page_item page-item-2844"><a href="../../getting-started/managing-implementation/change-management/index.html">Change Management</a></li>
+		<li class="page_item page-item-2636"><a href="../../getting-started/managing-implementation/implementation-support/index.html">Implementation schedule</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2639 page_item_has_children"><a href="../../getting-started/data-considerations/index.html">Data Considerations</a>
+	<ul class='children'>
+		<li class="page_item page-item-2786"><a href="../../getting-started/data-considerations/data-availability/index.html">Data Availability</a></li>
+		<li class="page_item page-item-2783"><a href="../../getting-started/data-considerations/data-quality/index.html">Data Quality</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2791 page_item_has_children"><a href="../../getting-started/licencing/index.html">Licencing</a>
+	<ul class='children'>
+		<li class="page_item page-item-2837"><a href="../../getting-started/licencing/licence-types/index.html">Licence Types</a></li>
+		<li class="page_item page-item-2464"><a href="../../getting-started/licencing/licensing-your-iati-data/index.html">Licensing Considerations</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2641 page_item_has_children"><a href="../../getting-started/technical-issues/index.html">Technical Issues</a>
+	<ul class='children'>
+		<li class="page_item page-item-2814"><a href="../../getting-started/technical-issues/data-architecture/index.html">Data Architecture</a></li>
+		<li class="page_item page-item-2816"><a href="../../getting-started/technical-issues/in-house-capacity/index.html">In-house Capacity</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2643 page_item_has_children"><a href="../../getting-started/preparing-data/index.html">Preparing Data</a>
+	<ul class='children'>
+		<li class="page_item page-item-2871"><a href="../../getting-started/preparing-data/mandatory-data/index.html">Mandatory Data</a></li>
+		<li class="page_item page-item-2873"><a href="../../getting-started/preparing-data/optional-data/index.html">Optional Data</a></li>
+		<li class="page_item page-item-2875"><a href="../../getting-started/preparing-data/using-codelists/index.html">Using Codelists</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2645 page_item_has_children"><a href="../../getting-started/publishing-data/index.html">Publishing Data</a>
+	<ul class='children'>
+		<li class="page_item page-item-2880"><a href="../../getting-started/publishing-data/outputting-xml/index.html">Outputting XML</a></li>
+		<li class="page_item page-item-2828"><a href="../../getting-started/publishing-data/registering/index.html">Registering</a></li>
+		<li class="page_item page-item-2830"><a href="../../getting-started/publishing-data/updating/index.html">Updating</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2647 page_item_has_children"><a href="../../getting-started/tools-to-help/index.html">Tools to Help</a>
+	<ul class='children'>
+		<li class="page_item page-item-2851"><a href="../../getting-started/tools-to-help/tools-to-create-data/index.html">Tools to Create Data</a></li>
+		<li class="page_item page-item-2891"><a href="../../getting-started/tools-to-help/tools-to-validate-data/index.html">Tools to Validate Data</a></li>
+		<li class="page_item page-item-2920"><a href="../../getting-started/tools-to-help/tools-to-view-data/index.html">Tools to View Data</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-1523 page_item_has_children"><a href="../../organisation-standard/index.html">The IATI Organisation Standard</a>
+<ul class='children'>
+	<li class="page_item page-item-2962"><a href="../../organisation-standard/org-overview/index.html">Overview</a></li>
+	<li class="page_item page-item-1527"><a href="../../organisation-standard/file-header/index.html">File Header</a></li>
+	<li class="page_item page-item-1596"><a href="../../organisation-standard/record-header/index.html">Record Header</a></li>
+	<li class="page_item page-item-1723"><a href="../../organisation-standard/reporting-organisation/index.html">Reporting Organisation</a></li>
+	<li class="page_item page-item-1525"><a href="../../organisation-standard/organisation-identifier/index.html">Organisation Identifier</a></li>
+	<li class="page_item page-item-1529"><a href="../../organisation-standard/organisation-name/index.html">Organisation Name</a></li>
+	<li class="page_item page-item-1531"><a href="../../organisation-standard/budget-organisation/index.html">Annual forward planning budget (total-budget)</a></li>
+	<li class="page_item page-item-1533"><a href="../../organisation-standard/budget-institution/index.html">Annual forward planning budgets for funded institutions</a></li>
+	<li class="page_item page-item-1535"><a href="../../organisation-standard/budget-country/index.html">Annual forward planning budgets for recipient countries</a></li>
+	<li class="page_item page-item-1538"><a href="../../organisation-standard/documents/index.html">Organisation Documents</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1379 page_item_has_children"><a href="../../activities-standard/index.html">The IATI Activities Standard</a>
+<ul class='children'>
+	<li class="page_item page-item-2863"><a href="../../activities-standard/overview/index.html">Overview</a></li>
+	<li class="page_item page-item-1387"><a href="../../activities-standard/iati-activities/index.html">IATI Activities</a></li>
+	<li class="page_item page-item-1381"><a href="../../activities-standard/iati-activity/index.html">IATI Activity</a></li>
+	<li class="page_item page-item-1389"><a href="../../activities-standard/reporting-org/index.html">Reporting Organisation</a></li>
+	<li class="page_item page-item-1391"><a href="../../activities-standard/iati-identifier/index.html">IATI Identifier</a></li>
+	<li class="page_item page-item-1417"><a href="../../activities-standard/other-activity-identifiers/index.html">Other Identifier</a></li>
+	<li class="page_item page-item-1431"><a href="../../activities-standard/activity-website/index.html">Activity Website</a></li>
+	<li class="page_item page-item-1404"><a href="../../activities-standard/title/index.html">Title</a></li>
+	<li class="page_item page-item-1406"><a href="../../activities-standard/description/index.html">Description</a></li>
+	<li class="page_item page-item-1427"><a href="../../activities-standard/activity-status/index.html">Activity Status</a></li>
+	<li class="page_item page-item-1421"><a href="../../activities-standard/activity-dates/index.html">Activity Date</a></li>
+	<li class="page_item page-item-1429 page_item_has_children"><a href="../../activities-standard/contact-info/index.html">Contact Info</a>
+	<ul class='children'>
+		<li class="page_item page-item-2246"><a href="../../activities-standard/contact-info/organisation/index.html">Organisation</a></li>
+		<li class="page_item page-item-2252"><a href="../../activities-standard/contact-info/person-name/index.html">Person name</a></li>
+		<li class="page_item page-item-2254"><a href="../../activities-standard/contact-info/telephone/index.html">Telephone</a></li>
+		<li class="page_item page-item-2260"><a href="../../activities-standard/contact-info/email/index.html">Email</a></li>
+		<li class="page_item page-item-2262"><a href="../../activities-standard/contact-info/mailing-address/index.html">Mailing address</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1393"><a href="../../activities-standard/participating-org/index.html">Participating Organisation</a></li>
+	<li class="page_item page-item-1400"><a href="../../activities-standard/recipient-country/index.html">Recipient Country</a></li>
+	<li class="page_item page-item-1402"><a href="../../activities-standard/recipient-region/index.html">Recipient Region</a></li>
+	<li class="page_item page-item-1467 page_item_has_children"><a href="../../activities-standard/location/index.html">Location</a>
+	<ul class='children'>
+		<li class="page_item page-item-2270"><a href="../../activities-standard/location/location-type/index.html">Location Type</a></li>
+		<li class="page_item page-item-2272"><a href="../../activities-standard/location/name/index.html">Name</a></li>
+		<li class="page_item page-item-2274"><a href="../../activities-standard/location/description/index.html">Description</a></li>
+		<li class="page_item page-item-2276"><a href="../../activities-standard/location/administrative/index.html">Administrative</a></li>
+		<li class="page_item page-item-2280"><a href="../../activities-standard/location/coordinates/index.html">Coordinates</a></li>
+		<li class="page_item page-item-2282"><a href="../../activities-standard/location/gazetteer-entry/index.html">Gazetteer entry</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1419"><a href="../../activities-standard/sector/index.html">Sector</a></li>
+	<li class="page_item page-item-1425"><a href="../../activities-standard/thematic-marker/index.html">Policy Marker</a></li>
+	<li class="page_item page-item-1408"><a href="../../activities-standard/collaboration-type/index.html">Collaboration Type</a></li>
+	<li class="page_item page-item-1415"><a href="../../activities-standard/default-finance-type/index.html">Default Finance Type</a></li>
+	<li class="page_item page-item-1410"><a href="../../activities-standard/default-flow-type/index.html">Default Flow Type</a></li>
+	<li class="page_item page-item-1412"><a href="../../activities-standard/default-aid-type/index.html">Default Aid Type</a></li>
+	<li class="page_item page-item-1423"><a href="../../activities-standard/default-tied-status/index.html">Default Tied Status</a></li>
+	<li class="page_item page-item-1461 page_item_has_children"><a href="../../activities-standard/budget/index.html">Budget</a>
+	<ul class='children'>
+		<li class="page_item page-item-2284"><a href="../../activities-standard/budget/period-start/index.html">Period start</a></li>
+		<li class="page_item page-item-2286"><a href="../../activities-standard/budget/period-end/index.html">Period end</a></li>
+		<li class="page_item page-item-2288"><a href="../../activities-standard/budget/value/index.html">Value</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1463 page_item_has_children"><a href="../../activities-standard/planned-disbursement/index.html">Planned Disbursement</a>
+	<ul class='children'>
+		<li class="page_item page-item-2290"><a href="../../activities-standard/planned-disbursement/period-start/index.html">Period start</a></li>
+		<li class="page_item page-item-2292"><a href="../../activities-standard/planned-disbursement/period-end/index.html">Period end</a></li>
+		<li class="page_item page-item-2294"><a href="../../activities-standard/planned-disbursement/value/index.html">Value</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3327 page_item_has_children"><a href="../../activities-standard/transaction/index.html">Transaction</a>
+	<ul class='children'>
+		<li class="page_item page-item-1453"><a href="../../activities-standard/transaction/aid-type/index.html">Aid Type</a></li>
+		<li class="page_item page-item-1445"><a href="../../activities-standard/transaction/description/index.html">Description</a></li>
+		<li class="page_item page-item-1455"><a href="../../activities-standard/transaction/disbursement-channel/index.html">Disbursement Channel</a></li>
+		<li class="page_item page-item-1451"><a href="../../activities-standard/transaction/finance-type/index.html">Finance Type</a></li>
+		<li class="page_item page-item-1449"><a href="../../activities-standard/transaction/flow-type/index.html">Flow Type</a></li>
+		<li class="page_item page-item-1439"><a href="../../activities-standard/transaction/provider-org/index.html">Provider Organisation</a></li>
+		<li class="page_item page-item-1441"><a href="../../activities-standard/transaction/receiver-org/index.html">Receiver Organisation</a></li>
+		<li class="page_item page-item-1457"><a href="../../activities-standard/transaction/tied-status/index.html">Tied Status</a></li>
+		<li class="page_item page-item-1447"><a href="../../activities-standard/transaction/transaction-date/index.html">Transaction Date</a></li>
+		<li class="page_item page-item-1437"><a href="../../activities-standard/transaction/transaction-type/index.html">Transaction Type</a></li>
+		<li class="page_item page-item-1443"><a href="../../activities-standard/transaction/value/index.html">Value</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1459 page_item_has_children"><a href="../../activities-standard/document-link/index.html">Document Link</a>
+	<ul class='children'>
+		<li class="page_item page-item-2297"><a href="../../activities-standard/document-link/title/index.html">Title</a></li>
+		<li class="page_item page-item-2299"><a href="../../activities-standard/document-link/category/index.html">Category</a></li>
+		<li class="page_item page-item-3617"><a href="../../activities-standard/document-link/language/index.html">Language</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1433"><a href="../../activities-standard/related-activity/index.html">Related Activity</a></li>
+	<li class="page_item page-item-1465 page_item_has_children"><a href="../../activities-standard/conditions/index.html">Conditions</a>
+	<ul class='children'>
+		<li class="page_item page-item-2304"><a href="../../activities-standard/conditions/condition/index.html">Condition</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1469 page_item_has_children"><a href="../../activities-standard/result/index.html">Result</a>
+	<ul class='children'>
+		<li class="page_item page-item-2306"><a href="../../activities-standard/result/title/index.html">Title</a></li>
+		<li class="page_item page-item-2308"><a href="../../activities-standard/result/description/index.html">Description</a></li>
+		<li class="page_item page-item-2313 page_item_has_children"><a href="../../activities-standard/result/indicator/index.html">Indicator</a>
+		<ul class='children'>
+			<li class="page_item page-item-2324"><a href="../../activities-standard/result/indicator/title/index.html">Title</a></li>
+			<li class="page_item page-item-2326"><a href="../../activities-standard/result/indicator/description/index.html">Description</a></li>
+			<li class="page_item page-item-2328 page_item_has_children"><a href="../../activities-standard/result/indicator/period/index.html">Period</a>
+			<ul class='children'>
+				<li class="page_item page-item-2332"><a href="../../activities-standard/result/indicator/period/period-start/index.html">Period Start</a></li>
+				<li class="page_item page-item-2341"><a href="../../activities-standard/result/indicator/period/period-end/index.html">Period-end</a></li>
+				<li class="page_item page-item-2344"><a href="../../activities-standard/result/indicator/period/target/index.html">Target</a></li>
+				<li class="page_item page-item-2347"><a href="../../activities-standard/result/indicator/period/actual/index.html">Actual</a></li>
+			</ul>
+</li>
+			<li class="page_item page-item-2330 page_item_has_children"><a href="../../activities-standard/result/indicator/baseline/index.html">Baseline</a>
+			<ul class='children'>
+				<li class="page_item page-item-2350"><a href="../../activities-standard/result/indicator/baseline/comment/index.html">Comment</a></li>
+			</ul>
+</li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li class="page_item page-item-2318"><a href="../../activities-standard/legacy-data/index.html">Legacy Data</a></li>
+</ul>
+</li>
+<li class="page_item page-item-737 page_item_has_children"><a href="../../codelists/index.html">Code Lists</a>
+<ul class='children'>
+	<li class="page_item page-item-2973"><a href="../../codelists/code-list-api/index.html">Code List API</a></li>
+	<li class="page_item page-item-2397"><a href="../../codelists/all-codelists/index.html">All Codelists</a></li>
+	<li class="page_item page-item-915"><a href="../../codelists/activity_date_type/index.html">Activity Date Type</a></li>
+	<li class="page_item page-item-919"><a href="../../codelists/activity_status/index.html">Activity Status</a></li>
+	<li class="page_item page-item-923"><a href="../../codelists/administrative_area_1/index.html">Administrative Area (First-level)</a></li>
+	<li class="page_item page-item-925"><a href="../../codelists/administrative_area_2/index.html">Administrative Area (Second-level)</a></li>
+	<li class="page_item page-item-869"><a href="../../codelists/aid_type/index.html">Aid Type</a></li>
+	<li class="page_item page-item-1122"><a href="../../codelists/budget_type/index.html">Budget Type</a></li>
+	<li class="page_item page-item-862"><a href="../../codelists/collaboration_type/index.html">Collaboration Type</a></li>
+	<li class="page_item page-item-1221"><a href="../../codelists/condition_type/index.html">Condition Type</a></li>
+	<li class="page_item page-item-844"><a href="../../codelists/country/index.html">Country</a></li>
+	<li class="page_item page-item-798"><a href="../../codelists/currency/index.html">Currency</a></li>
+	<li class="page_item page-item-878"><a href="../../codelists/description_type/index.html">Description Type</a></li>
+	<li class="page_item page-item-977"><a href="../../codelists/disbursement_channel/index.html">Disbursement Channel</a></li>
+	<li class="page_item page-item-928"><a href="../../codelists/document_category/index.html">Document Category</a></li>
+	<li class="page_item page-item-851"><a href="../../codelists/file_format/index.html">File Format</a></li>
+	<li class="page_item page-item-873"><a href="../../codelists/finance_type/index.html">Finance Type</a></li>
+	<li class="page_item page-item-865"><a href="../../codelists/flow_type/index.html">Flow Type</a></li>
+	<li class="page_item page-item-937"><a href="../../codelists/gazetteer_agency/index.html">Gazetteer Agency</a></li>
+	<li class="page_item page-item-940"><a href="../../codelists/geographical_precision/index.html">Geographical Precision</a></li>
+	<li class="page_item page-item-1551"><a href="../../codelists/indicator_measure/index.html">Indicator Measure</a></li>
+	<li class="page_item page-item-791"><a href="../../codelists/language/index.html">Language</a></li>
+	<li class="page_item page-item-943"><a href="../../codelists/location_type/index.html">Location Type</a></li>
+	<li class="page_item page-item-825"><a href="../../codelists/organisation/index.html">Organisation Identifiers</a></li>
+	<li class="page_item page-item-854"><a href="../../codelists/organisation_role/index.html">Organisation Role</a></li>
+	<li class="page_item page-item-839"><a href="../../codelists/organisation_type/index.html">Organisation Type</a></li>
+	<li class="page_item page-item-957"><a href="../../codelists/policy_marker/index.html">Policy Marker</a></li>
+	<li class="page_item page-item-960"><a href="../../codelists/policy_significance/index.html">Policy Significance</a></li>
+	<li class="page_item page-item-837"><a href="../../codelists/publisher_type/index.html">Publisher Type</a></li>
+	<li class="page_item page-item-858"><a href="../../codelists/region/index.html">Region</a></li>
+	<li class="page_item page-item-965"><a href="../../codelists/related_activity_type/index.html">Related Activity Type</a></li>
+	<li class="page_item page-item-1549"><a href="../../codelists/result_type/index.html">Result Type</a></li>
+	<li class="page_item page-item-968"><a href="../../codelists/sector/index.html">Sector</a></li>
+	<li class="page_item page-item-970"><a href="../../codelists/tied_status/index.html">Tied Status</a></li>
+	<li class="page_item page-item-973"><a href="../../codelists/transaction_type/index.html">Transaction Type</a></li>
+	<li class="page_item page-item-848"><a href="../../codelists/verification_status/index.html">Verification Status</a></li>
+	<li class="page_item page-item-883"><a href="../../codelists/vocabulary/index.html">Vocabulary</a></li>
+</ul>
+</li>
+<li class="page_item page-item-720 page_item_has_children"><a href="../../schema/index.html">IATI Schema</a>
+<ul class='children'>
+	<li class="page_item page-item-1041"><a href="../../schema/sample-activity-xml/index.html">Sample XML for the Activities Standard</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1279 page_item_has_children current_page_ancestor current_page_parent"><a href="../index.html">Guidance Materials</a>
+<ul class='children'>
+	<li class="page_item page-item-2649 page_item_has_children"><a href="../data-considerations/index.html">Data Considerations</a>
+	<ul class='children'>
+		<li class="page_item page-item-2449"><a href="../data-considerations/defining-an-activity/index.html">Defining an Activity</a></li>
+		<li class="page_item page-item-2462"><a href="../data-considerations/traceability/index.html">Traceability</a></li>
+		<li class="page_item page-item-2470"><a href="../data-considerations/segmenting-your-data/index.html">Segmenting your Data</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2681 page_item_has_children"><a href="../technical-issues/index.html">Basic Activity Information</a>
+	<ul class='children'>
+		<li class="page_item page-item-2420"><a href="../technical-issues/character-encoding/index.html">Character Encoding</a></li>
+		<li class="page_item page-item-1671"><a href="../technical-issues/dates/index.html">Dates</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2654 page_item_has_children"><a href="../financial-data/index.html">Financial Data</a>
+	<ul class='children'>
+		<li class="page_item page-item-2439"><a href="../financial-data/budgets-planned-disbursements/index.html">Budgets &amp; Planned Disbursements</a></li>
+		<li class="page_item page-item-2437"><a href="../financial-data/transactions/index.html">Transactions</a></li>
+		<li class="page_item page-item-2657"><a href="../financial-data/multi-funded-projects/index.html">Multi-funded Projects</a></li>
+		<li class="page_item page-item-2662"><a href="../financial-data/double-counting/index.html">How to Deal with Double Counting</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2664 page_item_has_children"><a href="../geographic-data/index.html">Geopolitical Information</a>
+	<ul class='children'>
+		<li class="page_item page-item-2457"><a href="../geographic-data/geocoding/index.html">Geocoding</a></li>
+		<li class="page_item page-item-2459"><a href="../geographic-data/countries-regions/index.html">Countries &amp; Regions</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2668 page_item_has_children"><a href="../organisation-data/index.html">Identifiers</a>
+	<ul class='children'>
+		<li class="page_item page-item-1647"><a href="../organisation-data/organisation-identifiers/index.html">Organisation Identifiers</a></li>
+		<li class="page_item page-item-2441"><a href="../organisation-data/participating-organisations/index.html">Participating Organisations</a></li>
+		<li class="page_item page-item-2475"><a href="../organisation-data/contact-information/index.html">Contact Information</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2709 page_item_has_children"><a href="../classifications/index.html">Classifications</a>
+	<ul class='children'>
+		<li class="page_item page-item-2425"><a href="../classifications/sectors/index.html">Sectors</a></li>
+		<li class="page_item page-item-2446"><a href="../classifications/namespaces-extensions/index.html">Namespaces &amp; Extensions</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2673 page_item_has_children"><a href="../related-documents/index.html">Related Documents</a>
+	<ul class='children'>
+		<li class="page_item page-item-2452"><a href="../related-documents/documents/index.html">Documents</a></li>
+		<li class="page_item page-item-2468"><a href="../related-documents/related-activity/index.html">Related Activity</a></li>
+		<li class="page_item page-item-2454"><a href="../related-documents/legacy-data/index.html">Legacy Data</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2467"><a href="../the-iati-registry/index.html">The IATI Registry</a></li>
+	<li class="page_item page-item-892 current_page_item"><a href="index.html">XML Schema Tutorial</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2418 page_item_has_children"><a href="../../governance/index.html">Governance</a>
+<ul class='children'>
+	<li class="page_item page-item-3090"><a href="../../governance/steering-committee/index.html">Steering Committee</a></li>
+	<li class="page_item page-item-3092"><a href="../../governance/iati-secretariat/index.html">IATI Secretariat</a></li>
+	<li class="page_item page-item-3094"><a href="../../governance/technical-advisory-group/index.html">Technical Advisory Group</a></li>
+	<li class="page_item page-item-2537 page_item_has_children"><a href="../../governance/updating-the-standard/index.html">Updating the IATI Standard</a>
+	<ul class='children'>
+		<li class="page_item page-item-3124"><a href="../../governance/updating-the-standard/decimal-upgrade-to-1-02/index.html">Decimal Upgrade to 1.02</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-1037"><a href="../../get-involved/support/index.html">Support</a></li>
+		</ul>
+		</aside><aside id="text-17" class="widget-2 widget-last widget-even community green widget widget_text"><h3 class="widget-title">Community Support</h3>			<div class="textwidget"><p>Have a question about publishing or using IATI-formatted data? Access the <a href="http://support.iatistandard.org/home">Knowledge Base</a>.</p>
+</div>
+		</aside></div><!-- #secondary .widget-area -->
+</div><!--#page-content -->
+</div><!--#page -->
+
+<div id="pre-footer">
+
+    
+    <div id="footer-links">
+        <ul>
+            <li>
+                <a href="../../sitemap/index.html">Site map</a>
+            </li>
+            <li>
+                <a href="../../community-support/index.html">Support</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer-additional">
+        <div id="footer-cookie">
+            <aside id="text-21" class="widget-1 widget-first widget-last widget-odd widget widget_text"><h3 class="widget-title">Cookie Disclaimer</h3>			<div class="textwidget"><p>Cookies' are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+</div>
+		</aside>        </div>
+        <div id="footer-social">
+            <aside id="sidebar_social_links" class="widget widget_social_links">
+    <div class="text-widget">
+        <ul class="social-links">
+            <li class="social facebook"><a href="index.html">Facebook</a></li>
+            <li class="social twitter"><a href="index.html">Twitter</a></li>
+            <li class="social linkedin"><a href="index.html">LinkedIn</a></li>
+            <li class="social rss"><a href="http://iatistandard.org/102/feed/">RSS</a></li>
+        </ul>
+    </div>
+</aside>
+        </div>
+        <!--#footer-social -->
+    </div>
+</div><!--#footer-wrapper -->
+
+<footer id="footer">
+
+    <div id="footer-credits">
+        <span class="copyright">&copy; 2015 IATI Standard 1.02</span>
+    </div>
+    <!--.footer-inner -->
+</footer><!--#footer -->
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=1.8.2'></script>
+<script type='text/javascript' src='../../wp-content/themes/iatistandard_1.02/library/js/iati.js@ver=0.1.1'></script>
+<script type='text/javascript' src='../../wp-content/themes/iatistandard_1.02/library/js/common.js@ver=0.1.1'></script>
+</body>
+</html>

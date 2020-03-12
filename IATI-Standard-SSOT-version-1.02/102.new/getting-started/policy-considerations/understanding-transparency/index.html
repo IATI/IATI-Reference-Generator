@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en-US"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>Understanding Transparency | IATI Standard 1.02</title>
+<style type="text/css" media="screen, projection">
+  @import url(http://asset0.zendesk.com/external/zenbox/v2.1/zenbox.css);
+</style>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://iatistandard.org/102/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://iatistandard.org/102/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
+<![endif]-->
+
+<link rel='stylesheet' id='wp-syntax-css-css'  href='../../../wp-content/plugins/wp-syntax/css/wp-syntax.css@ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='../../../wp-content/plugins/wp-pagenavi/pagenavi-css.css@ver=2.70' type='text/css' media='all' />
+<link rel='stylesheet' id='main-stylesheet-css'  href='../../../wp-content/themes/iatistandard_1.02/style.css@ver=0.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='../../../wp-content/plugins/collapsing-pages/collapsFunctions.js@ver=1.6'></script>
+<script type='text/javascript' src='../../../wp-content/themes/iatistandard_1.02/library/js/modernizr-2.6.1.min.js@ver=2.6.1'></script>
+<script type='text/javascript' src='../../../wp-content/themes/iatistandard_1.02/library/js/selectivizr.min.js@ver=1.2'></script>
+<link rel='prev' title='Units of Aid' href='../units-of-aid/index.html' />
+<link rel='next' title='Organisational Incentives and Buy-In' href='../organisational-incentives-and-buy-in/index.html' />
+<link rel='canonical' href='index.html' />
+<link rel='shortlink' href='index.html' />
+<style type='text/css'>
+    #sidebar span.collapsing.pages {
+        border:0;
+        padding:0; 
+        margin:0; 
+        cursor:pointer;
+} 
+
+#sidebar li.widget_collapspage h2 span.sym {float:right;padding:0 .5em}
+#sidebar li.collapsing.pages a.self {font-weight:bold}
+#sidebar ul.collapsing.pages.list ul.collapsing.pages.list:before {content:'';} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages:before {content:'';} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages {list-style-type:none}
+#sidebar ul.collapsing.pages.list li.collapsing.pages{
+       padding:0 0 0 1em;
+       text-indent:-1em;
+}
+#sidebar ul.collapsing.pages.list li.collapsing.pages.item:before {content: '\00BB \00A0' !important;} 
+#sidebar ul.collapsing.pages.list li.collapsing.pages .sym {
+   cursor:pointer;
+   font-size:1.2em;
+   font-family:Monaco, 'Andale Mono', 'FreeMono', 'Courier new', 'Courier', monospace;
+    padding-right:5px;}
+    </style>
+<link rel="Shortcut Icon" type="image/x-icon" href="../../../wp-content/themes/twentyeleven/favicon.ico" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+
+</head>
+
+
+<body class="page page-id-2776 page-child parent-pageid-2634 page-template-default custom-background  single-author singular two-column left-sidebar">
+<a id="top"></a>
+    <div id="site-notice"><strong>Version 1.02 of the IATI Standard is no longer supported. <a href="/upgrades/all-versions/">Please use other versions</a>.</strong></div>
+    <div id="page" class="hfeed">
+    <header id="header" role="banner">
+        <div class="header-wrapper">
+            <a id="logo" href="http://iatistandard.org/102">IATI Standard 1.02</a>
+            <div id="version-id"></div>
+
+            <!--<form role="search" method="get" id="searchform" action="/">
+                <input type="text" value="" name="s" id="s" placeholder="Search IATI Standard">
+                <input type="submit" id="searchsubmit" value="Search" class="button">
+            </form>-->
+        </div><!-- end wrapper -->
+
+        <nav id="main-nav" class="nav" role="navigation">
+
+            <h3 class="assistive-text">Main menu</h3>
+                        <div class="skip-link"><a class="assistive-text" href="index.html#content" title="Skip to primary content">Skip to primary content</a></div>
+            <div class="skip-link"><a class="assistive-text" href="index.html#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+            <ul class="iati-family">
+    <li class="transparency"><a href="http://www.aidtransparency.net/">Aid Transparency</a></li>
+    <li class="standard"><a href="http://iatistandard.org">IATI Standard</a></li>
+    <li class="registry"><a href="http://iatiregistry.org">IATI Registry / Data</a></li>
+    <li class="community"><a href="http://support.iatistandard.org">IATI Community</a></li>
+</ul>
+            <ul id="menu-primary-navigation" class="menu-main"><li id="menu-item-3663" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-3663"><a href="../../index.html">Getting Started</a></li>
+<li id="menu-item-3660" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3660"><a title=" The Organisation Standard" href="../../../organisation-standard/index.html">Organisation</a></li>
+<li id="menu-item-3661" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3661"><a title=" The IATI Activities Standard" href="../../../activities-standard/index.html">Activities</a></li>
+<li id="menu-item-3662" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3662"><a href="../../../codelists/index.html">Code Lists</a></li>
+<li id="menu-item-3686" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3686"><a href="../../../schema/index.html">IATI Schema</a></li>
+<li id="menu-item-3659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3659"><a title="IATI Standard &#8211; Guidance" href="../../../guides/index.html">Guidance</a></li>
+<li id="menu-item-3664" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3664"><a href="../../../governance/index.html">Governance</a></li>
+<li id="menu-item-3687" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3687"><a href="../../../community-support/index.html">Support</a></li>
+</ul>        </nav>
+
+    </div><!-- end header -->
+
+    <div id="page-content">
+
+                <div id="nav-breadcrumbs">
+            <!-- Breadcrumb NavXT 5.0.1 -->
+<a title="Go to The IATI Standard Sites." href="http://iatistandard.org" class="main-home">The IATI Standard Sites</a> &gt; <a title="Go to IATI Standard 1.02." href="http://iatistandard.org/102" class="home">IATI Standard 1.02</a> &gt; <a title="Go to Getting Started." href="../../index.html" class="post post-page">Getting Started</a> &gt; <a title="Go to Policy Considerations." href="../index.html" class="post post-page">Policy Considerations</a> &gt; Understanding Transparency        </div><!--.breadcrumbs -->
+        
+
+        <div id="main">
+
+
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-2776" class="post-2776 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Understanding Transparency</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>Provision of information on projects that development agencies are funding or implementing is important for several stakeholder groups:</p>
+<ul>
+<li><strong>Governments</strong> to improve how they plan and manage the aid they receive</li>
+<li><strong>Citizens of developing countries</strong> to improve how they understand what aid their country is receiving, so they can hold their governments to account</li>
+<li><strong>Citizens of donor countries</strong> to understand better how their taxes are being used to fight poverty in the developing world</li>
+<li><strong>Donors and development agencies</strong> to co-ordinate their efforts better</li>
+<li><strong>Parliaments and non-governmental organisations</strong> in developing countries to track aid flows and ensure that aid is spent wisely</li>
+</ul>
+<p>With so many stakeholders needing this information, an important aspect of the information that organisations are publishing is that it should be publicly available and published in a way that is easy to understand.</p>
+<p>Transparency of development assistance means that everyone can see how much assistance is being provided: they can see what it’s being spent on, and what it aims to achieve. This helps to ensure that it is used in the most effective ways, ensuring that assistance goes as far as possible in fighting poverty.</p>
+<p>IATI has built on the High Level Forum on Aid Effectiveness, started in Rome and Paris, with its launch at the Accra forum in 2008. The Accra Agenda for Action built on the work of Paris 3 years earlier, by emphasising the importance of country ownership and accountability in improving aid delivery and management. The Accra Agenda says that greater transparency and accountability for aid is a firm step towards providing better aid.</p>
+<p>Find out more about the <a href="http://www.aidtransparency.net/about">International Aid Transparency Initiative</a>.</p>
+			</div><!-- .entry-content -->
+	<footer class="entry-meta">
+			</footer><!-- .entry-meta -->
+</article><!-- #post-2776 -->
+
+						<div id="comments">
+	
+	
+	
+			
+</div><!-- #comments -->
+
+								
+				<div class="date-comments">
+				  <p class="fl">
+									  </p> 
+					<!--<p class="fl">Last updated: May 8, 2012   
+					<p class="fr"></p>	-->	   
+                                             
+				</div> 
+
+			</div><!-- #content -->
+
+		</div><!-- #primary -->
+
+<div id="secondary" class="widget-area" role="complementary">
+    <aside id="pages-4" class="widget-1 widget-first widget-odd widget widget_pages"><h3 class="widget-title">Pages</h3>		<ul>
+			<li class="page_item page-item-2410 page_item_has_children current_page_ancestor"><a href="../../index.html">Getting Started</a>
+<ul class='children'>
+	<li class="page_item page-item-2632"><a href="../../what-is-iati/index.html">What is IATI?</a></li>
+	<li class="page_item page-item-2634 page_item_has_children current_page_ancestor current_page_parent"><a href="../index.html">Policy Considerations</a>
+	<ul class='children'>
+		<li class="page_item page-item-2776 current_page_item"><a href="index.html">Understanding Transparency</a></li>
+		<li class="page_item page-item-2781"><a href="../organisational-incentives-and-buy-in/index.html">Organisational Incentives and Buy-In</a></li>
+		<li class="page_item page-item-2594"><a href="../exclusions-and-thresholds/index.html">Exclusions and Thresholds</a></li>
+		<li class="page_item page-item-2773"><a href="../units-of-aid/index.html">Units of Aid</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2797 page_item_has_children"><a href="../../managing-implementation/index.html">Managing Implementation</a>
+	<ul class='children'>
+		<li class="page_item page-item-2844"><a href="../../managing-implementation/change-management/index.html">Change Management</a></li>
+		<li class="page_item page-item-2636"><a href="../../managing-implementation/implementation-support/index.html">Implementation schedule</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2639 page_item_has_children"><a href="../../data-considerations/index.html">Data Considerations</a>
+	<ul class='children'>
+		<li class="page_item page-item-2786"><a href="../../data-considerations/data-availability/index.html">Data Availability</a></li>
+		<li class="page_item page-item-2783"><a href="../../data-considerations/data-quality/index.html">Data Quality</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2791 page_item_has_children"><a href="../../licencing/index.html">Licencing</a>
+	<ul class='children'>
+		<li class="page_item page-item-2837"><a href="../../licencing/licence-types/index.html">Licence Types</a></li>
+		<li class="page_item page-item-2464"><a href="../../licencing/licensing-your-iati-data/index.html">Licensing Considerations</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2641 page_item_has_children"><a href="../../technical-issues/index.html">Technical Issues</a>
+	<ul class='children'>
+		<li class="page_item page-item-2814"><a href="../../technical-issues/data-architecture/index.html">Data Architecture</a></li>
+		<li class="page_item page-item-2816"><a href="../../technical-issues/in-house-capacity/index.html">In-house Capacity</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2643 page_item_has_children"><a href="../../preparing-data/index.html">Preparing Data</a>
+	<ul class='children'>
+		<li class="page_item page-item-2871"><a href="../../preparing-data/mandatory-data/index.html">Mandatory Data</a></li>
+		<li class="page_item page-item-2873"><a href="../../preparing-data/optional-data/index.html">Optional Data</a></li>
+		<li class="page_item page-item-2875"><a href="../../preparing-data/using-codelists/index.html">Using Codelists</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2645 page_item_has_children"><a href="../../publishing-data/index.html">Publishing Data</a>
+	<ul class='children'>
+		<li class="page_item page-item-2880"><a href="../../publishing-data/outputting-xml/index.html">Outputting XML</a></li>
+		<li class="page_item page-item-2828"><a href="../../publishing-data/registering/index.html">Registering</a></li>
+		<li class="page_item page-item-2830"><a href="../../publishing-data/updating/index.html">Updating</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2647 page_item_has_children"><a href="../../tools-to-help/index.html">Tools to Help</a>
+	<ul class='children'>
+		<li class="page_item page-item-2851"><a href="../../tools-to-help/tools-to-create-data/index.html">Tools to Create Data</a></li>
+		<li class="page_item page-item-2891"><a href="../../tools-to-help/tools-to-validate-data/index.html">Tools to Validate Data</a></li>
+		<li class="page_item page-item-2920"><a href="../../tools-to-help/tools-to-view-data/index.html">Tools to View Data</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-1523 page_item_has_children"><a href="../../../organisation-standard/index.html">The IATI Organisation Standard</a>
+<ul class='children'>
+	<li class="page_item page-item-2962"><a href="../../../organisation-standard/org-overview/index.html">Overview</a></li>
+	<li class="page_item page-item-1527"><a href="../../../organisation-standard/file-header/index.html">File Header</a></li>
+	<li class="page_item page-item-1596"><a href="../../../organisation-standard/record-header/index.html">Record Header</a></li>
+	<li class="page_item page-item-1723"><a href="../../../organisation-standard/reporting-organisation/index.html">Reporting Organisation</a></li>
+	<li class="page_item page-item-1525"><a href="../../../organisation-standard/organisation-identifier/index.html">Organisation Identifier</a></li>
+	<li class="page_item page-item-1529"><a href="../../../organisation-standard/organisation-name/index.html">Organisation Name</a></li>
+	<li class="page_item page-item-1531"><a href="../../../organisation-standard/budget-organisation/index.html">Annual forward planning budget (total-budget)</a></li>
+	<li class="page_item page-item-1533"><a href="../../../organisation-standard/budget-institution/index.html">Annual forward planning budgets for funded institutions</a></li>
+	<li class="page_item page-item-1535"><a href="../../../organisation-standard/budget-country/index.html">Annual forward planning budgets for recipient countries</a></li>
+	<li class="page_item page-item-1538"><a href="../../../organisation-standard/documents/index.html">Organisation Documents</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1379 page_item_has_children"><a href="../../../activities-standard/index.html">The IATI Activities Standard</a>
+<ul class='children'>
+	<li class="page_item page-item-2863"><a href="../../../activities-standard/overview/index.html">Overview</a></li>
+	<li class="page_item page-item-1387"><a href="../../../activities-standard/iati-activities/index.html">IATI Activities</a></li>
+	<li class="page_item page-item-1381"><a href="../../../activities-standard/iati-activity/index.html">IATI Activity</a></li>
+	<li class="page_item page-item-1389"><a href="../../../activities-standard/reporting-org/index.html">Reporting Organisation</a></li>
+	<li class="page_item page-item-1391"><a href="../../../activities-standard/iati-identifier/index.html">IATI Identifier</a></li>
+	<li class="page_item page-item-1417"><a href="../../../activities-standard/other-activity-identifiers/index.html">Other Identifier</a></li>
+	<li class="page_item page-item-1431"><a href="../../../activities-standard/activity-website/index.html">Activity Website</a></li>
+	<li class="page_item page-item-1404"><a href="../../../activities-standard/title/index.html">Title</a></li>
+	<li class="page_item page-item-1406"><a href="../../../activities-standard/description/index.html">Description</a></li>
+	<li class="page_item page-item-1427"><a href="../../../activities-standard/activity-status/index.html">Activity Status</a></li>
+	<li class="page_item page-item-1421"><a href="../../../activities-standard/activity-dates/index.html">Activity Date</a></li>
+	<li class="page_item page-item-1429 page_item_has_children"><a href="../../../activities-standard/contact-info/index.html">Contact Info</a>
+	<ul class='children'>
+		<li class="page_item page-item-2246"><a href="../../../activities-standard/contact-info/organisation/index.html">Organisation</a></li>
+		<li class="page_item page-item-2252"><a href="../../../activities-standard/contact-info/person-name/index.html">Person name</a></li>
+		<li class="page_item page-item-2254"><a href="../../../activities-standard/contact-info/telephone/index.html">Telephone</a></li>
+		<li class="page_item page-item-2260"><a href="../../../activities-standard/contact-info/email/index.html">Email</a></li>
+		<li class="page_item page-item-2262"><a href="../../../activities-standard/contact-info/mailing-address/index.html">Mailing address</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1393"><a href="../../../activities-standard/participating-org/index.html">Participating Organisation</a></li>
+	<li class="page_item page-item-1400"><a href="../../../activities-standard/recipient-country/index.html">Recipient Country</a></li>
+	<li class="page_item page-item-1402"><a href="../../../activities-standard/recipient-region/index.html">Recipient Region</a></li>
+	<li class="page_item page-item-1467 page_item_has_children"><a href="../../../activities-standard/location/index.html">Location</a>
+	<ul class='children'>
+		<li class="page_item page-item-2270"><a href="../../../activities-standard/location/location-type/index.html">Location Type</a></li>
+		<li class="page_item page-item-2272"><a href="../../../activities-standard/location/name/index.html">Name</a></li>
+		<li class="page_item page-item-2274"><a href="../../../activities-standard/location/description/index.html">Description</a></li>
+		<li class="page_item page-item-2276"><a href="../../../activities-standard/location/administrative/index.html">Administrative</a></li>
+		<li class="page_item page-item-2280"><a href="../../../activities-standard/location/coordinates/index.html">Coordinates</a></li>
+		<li class="page_item page-item-2282"><a href="../../../activities-standard/location/gazetteer-entry/index.html">Gazetteer entry</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1419"><a href="../../../activities-standard/sector/index.html">Sector</a></li>
+	<li class="page_item page-item-1425"><a href="../../../activities-standard/thematic-marker/index.html">Policy Marker</a></li>
+	<li class="page_item page-item-1408"><a href="../../../activities-standard/collaboration-type/index.html">Collaboration Type</a></li>
+	<li class="page_item page-item-1415"><a href="../../../activities-standard/default-finance-type/index.html">Default Finance Type</a></li>
+	<li class="page_item page-item-1410"><a href="../../../activities-standard/default-flow-type/index.html">Default Flow Type</a></li>
+	<li class="page_item page-item-1412"><a href="../../../activities-standard/default-aid-type/index.html">Default Aid Type</a></li>
+	<li class="page_item page-item-1423"><a href="../../../activities-standard/default-tied-status/index.html">Default Tied Status</a></li>
+	<li class="page_item page-item-1461 page_item_has_children"><a href="../../../activities-standard/budget/index.html">Budget</a>
+	<ul class='children'>
+		<li class="page_item page-item-2284"><a href="../../../activities-standard/budget/period-start/index.html">Period start</a></li>
+		<li class="page_item page-item-2286"><a href="../../../activities-standard/budget/period-end/index.html">Period end</a></li>
+		<li class="page_item page-item-2288"><a href="../../../activities-standard/budget/value/index.html">Value</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1463 page_item_has_children"><a href="../../../activities-standard/planned-disbursement/index.html">Planned Disbursement</a>
+	<ul class='children'>
+		<li class="page_item page-item-2290"><a href="../../../activities-standard/planned-disbursement/period-start/index.html">Period start</a></li>
+		<li class="page_item page-item-2292"><a href="../../../activities-standard/planned-disbursement/period-end/index.html">Period end</a></li>
+		<li class="page_item page-item-2294"><a href="../../../activities-standard/planned-disbursement/value/index.html">Value</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-3327 page_item_has_children"><a href="../../../activities-standard/transaction/index.html">Transaction</a>
+	<ul class='children'>
+		<li class="page_item page-item-1453"><a href="../../../activities-standard/transaction/aid-type/index.html">Aid Type</a></li>
+		<li class="page_item page-item-1445"><a href="../../../activities-standard/transaction/description/index.html">Description</a></li>
+		<li class="page_item page-item-1455"><a href="../../../activities-standard/transaction/disbursement-channel/index.html">Disbursement Channel</a></li>
+		<li class="page_item page-item-1451"><a href="../../../activities-standard/transaction/finance-type/index.html">Finance Type</a></li>
+		<li class="page_item page-item-1449"><a href="../../../activities-standard/transaction/flow-type/index.html">Flow Type</a></li>
+		<li class="page_item page-item-1439"><a href="../../../activities-standard/transaction/provider-org/index.html">Provider Organisation</a></li>
+		<li class="page_item page-item-1441"><a href="../../../activities-standard/transaction/receiver-org/index.html">Receiver Organisation</a></li>
+		<li class="page_item page-item-1457"><a href="../../../activities-standard/transaction/tied-status/index.html">Tied Status</a></li>
+		<li class="page_item page-item-1447"><a href="../../../activities-standard/transaction/transaction-date/index.html">Transaction Date</a></li>
+		<li class="page_item page-item-1437"><a href="../../../activities-standard/transaction/transaction-type/index.html">Transaction Type</a></li>
+		<li class="page_item page-item-1443"><a href="../../../activities-standard/transaction/value/index.html">Value</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1459 page_item_has_children"><a href="../../../activities-standard/document-link/index.html">Document Link</a>
+	<ul class='children'>
+		<li class="page_item page-item-2297"><a href="../../../activities-standard/document-link/title/index.html">Title</a></li>
+		<li class="page_item page-item-2299"><a href="../../../activities-standard/document-link/category/index.html">Category</a></li>
+		<li class="page_item page-item-3617"><a href="../../../activities-standard/document-link/language/index.html">Language</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1433"><a href="../../../activities-standard/related-activity/index.html">Related Activity</a></li>
+	<li class="page_item page-item-1465 page_item_has_children"><a href="../../../activities-standard/conditions/index.html">Conditions</a>
+	<ul class='children'>
+		<li class="page_item page-item-2304"><a href="../../../activities-standard/conditions/condition/index.html">Condition</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-1469 page_item_has_children"><a href="../../../activities-standard/result/index.html">Result</a>
+	<ul class='children'>
+		<li class="page_item page-item-2306"><a href="../../../activities-standard/result/title/index.html">Title</a></li>
+		<li class="page_item page-item-2308"><a href="../../../activities-standard/result/description/index.html">Description</a></li>
+		<li class="page_item page-item-2313 page_item_has_children"><a href="../../../activities-standard/result/indicator/index.html">Indicator</a>
+		<ul class='children'>
+			<li class="page_item page-item-2324"><a href="../../../activities-standard/result/indicator/title/index.html">Title</a></li>
+			<li class="page_item page-item-2326"><a href="../../../activities-standard/result/indicator/description/index.html">Description</a></li>
+			<li class="page_item page-item-2328 page_item_has_children"><a href="../../../activities-standard/result/indicator/period/index.html">Period</a>
+			<ul class='children'>
+				<li class="page_item page-item-2332"><a href="../../../activities-standard/result/indicator/period/period-start/index.html">Period Start</a></li>
+				<li class="page_item page-item-2341"><a href="../../../activities-standard/result/indicator/period/period-end/index.html">Period-end</a></li>
+				<li class="page_item page-item-2344"><a href="../../../activities-standard/result/indicator/period/target/index.html">Target</a></li>
+				<li class="page_item page-item-2347"><a href="../../../activities-standard/result/indicator/period/actual/index.html">Actual</a></li>
+			</ul>
+</li>
+			<li class="page_item page-item-2330 page_item_has_children"><a href="../../../activities-standard/result/indicator/baseline/index.html">Baseline</a>
+			<ul class='children'>
+				<li class="page_item page-item-2350"><a href="../../../activities-standard/result/indicator/baseline/comment/index.html">Comment</a></li>
+			</ul>
+</li>
+		</ul>
+</li>
+	</ul>
+</li>
+	<li class="page_item page-item-2318"><a href="../../../activities-standard/legacy-data/index.html">Legacy Data</a></li>
+</ul>
+</li>
+<li class="page_item page-item-737 page_item_has_children"><a href="../../../codelists/index.html">Code Lists</a>
+<ul class='children'>
+	<li class="page_item page-item-2973"><a href="../../../codelists/code-list-api/index.html">Code List API</a></li>
+	<li class="page_item page-item-2397"><a href="../../../codelists/all-codelists/index.html">All Codelists</a></li>
+	<li class="page_item page-item-915"><a href="../../../codelists/activity_date_type/index.html">Activity Date Type</a></li>
+	<li class="page_item page-item-919"><a href="../../../codelists/activity_status/index.html">Activity Status</a></li>
+	<li class="page_item page-item-923"><a href="../../../codelists/administrative_area_1/index.html">Administrative Area (First-level)</a></li>
+	<li class="page_item page-item-925"><a href="../../../codelists/administrative_area_2/index.html">Administrative Area (Second-level)</a></li>
+	<li class="page_item page-item-869"><a href="../../../codelists/aid_type/index.html">Aid Type</a></li>
+	<li class="page_item page-item-1122"><a href="../../../codelists/budget_type/index.html">Budget Type</a></li>
+	<li class="page_item page-item-862"><a href="../../../codelists/collaboration_type/index.html">Collaboration Type</a></li>
+	<li class="page_item page-item-1221"><a href="../../../codelists/condition_type/index.html">Condition Type</a></li>
+	<li class="page_item page-item-844"><a href="../../../codelists/country/index.html">Country</a></li>
+	<li class="page_item page-item-798"><a href="../../../codelists/currency/index.html">Currency</a></li>
+	<li class="page_item page-item-878"><a href="../../../codelists/description_type/index.html">Description Type</a></li>
+	<li class="page_item page-item-977"><a href="../../../codelists/disbursement_channel/index.html">Disbursement Channel</a></li>
+	<li class="page_item page-item-928"><a href="../../../codelists/document_category/index.html">Document Category</a></li>
+	<li class="page_item page-item-851"><a href="../../../codelists/file_format/index.html">File Format</a></li>
+	<li class="page_item page-item-873"><a href="../../../codelists/finance_type/index.html">Finance Type</a></li>
+	<li class="page_item page-item-865"><a href="../../../codelists/flow_type/index.html">Flow Type</a></li>
+	<li class="page_item page-item-937"><a href="../../../codelists/gazetteer_agency/index.html">Gazetteer Agency</a></li>
+	<li class="page_item page-item-940"><a href="../../../codelists/geographical_precision/index.html">Geographical Precision</a></li>
+	<li class="page_item page-item-1551"><a href="../../../codelists/indicator_measure/index.html">Indicator Measure</a></li>
+	<li class="page_item page-item-791"><a href="../../../codelists/language/index.html">Language</a></li>
+	<li class="page_item page-item-943"><a href="../../../codelists/location_type/index.html">Location Type</a></li>
+	<li class="page_item page-item-825"><a href="../../../codelists/organisation/index.html">Organisation Identifiers</a></li>
+	<li class="page_item page-item-854"><a href="../../../codelists/organisation_role/index.html">Organisation Role</a></li>
+	<li class="page_item page-item-839"><a href="../../../codelists/organisation_type/index.html">Organisation Type</a></li>
+	<li class="page_item page-item-957"><a href="../../../codelists/policy_marker/index.html">Policy Marker</a></li>
+	<li class="page_item page-item-960"><a href="../../../codelists/policy_significance/index.html">Policy Significance</a></li>
+	<li class="page_item page-item-837"><a href="../../../codelists/publisher_type/index.html">Publisher Type</a></li>
+	<li class="page_item page-item-858"><a href="../../../codelists/region/index.html">Region</a></li>
+	<li class="page_item page-item-965"><a href="../../../codelists/related_activity_type/index.html">Related Activity Type</a></li>
+	<li class="page_item page-item-1549"><a href="../../../codelists/result_type/index.html">Result Type</a></li>
+	<li class="page_item page-item-968"><a href="../../../codelists/sector/index.html">Sector</a></li>
+	<li class="page_item page-item-970"><a href="../../../codelists/tied_status/index.html">Tied Status</a></li>
+	<li class="page_item page-item-973"><a href="../../../codelists/transaction_type/index.html">Transaction Type</a></li>
+	<li class="page_item page-item-848"><a href="../../../codelists/verification_status/index.html">Verification Status</a></li>
+	<li class="page_item page-item-883"><a href="../../../codelists/vocabulary/index.html">Vocabulary</a></li>
+</ul>
+</li>
+<li class="page_item page-item-720 page_item_has_children"><a href="../../../schema/index.html">IATI Schema</a>
+<ul class='children'>
+	<li class="page_item page-item-1041"><a href="../../../schema/sample-activity-xml/index.html">Sample XML for the Activities Standard</a></li>
+</ul>
+</li>
+<li class="page_item page-item-1279 page_item_has_children"><a href="../../../guides/index.html">Guidance Materials</a>
+<ul class='children'>
+	<li class="page_item page-item-2649 page_item_has_children"><a href="../../../guides/data-considerations/index.html">Data Considerations</a>
+	<ul class='children'>
+		<li class="page_item page-item-2449"><a href="../../../guides/data-considerations/defining-an-activity/index.html">Defining an Activity</a></li>
+		<li class="page_item page-item-2462"><a href="../../../guides/data-considerations/traceability/index.html">Traceability</a></li>
+		<li class="page_item page-item-2470"><a href="../../../guides/data-considerations/segmenting-your-data/index.html">Segmenting your Data</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2681 page_item_has_children"><a href="../../../guides/technical-issues/index.html">Basic Activity Information</a>
+	<ul class='children'>
+		<li class="page_item page-item-2420"><a href="../../../guides/technical-issues/character-encoding/index.html">Character Encoding</a></li>
+		<li class="page_item page-item-1671"><a href="../../../guides/technical-issues/dates/index.html">Dates</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2654 page_item_has_children"><a href="../../../guides/financial-data/index.html">Financial Data</a>
+	<ul class='children'>
+		<li class="page_item page-item-2439"><a href="../../../guides/financial-data/budgets-planned-disbursements/index.html">Budgets &amp; Planned Disbursements</a></li>
+		<li class="page_item page-item-2437"><a href="../../../guides/financial-data/transactions/index.html">Transactions</a></li>
+		<li class="page_item page-item-2657"><a href="../../../guides/financial-data/multi-funded-projects/index.html">Multi-funded Projects</a></li>
+		<li class="page_item page-item-2662"><a href="../../../guides/financial-data/double-counting/index.html">How to Deal with Double Counting</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2664 page_item_has_children"><a href="../../../guides/geographic-data/index.html">Geopolitical Information</a>
+	<ul class='children'>
+		<li class="page_item page-item-2457"><a href="../../../guides/geographic-data/geocoding/index.html">Geocoding</a></li>
+		<li class="page_item page-item-2459"><a href="../../../guides/geographic-data/countries-regions/index.html">Countries &amp; Regions</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2668 page_item_has_children"><a href="../../../guides/organisation-data/index.html">Identifiers</a>
+	<ul class='children'>
+		<li class="page_item page-item-1647"><a href="../../../guides/organisation-data/organisation-identifiers/index.html">Organisation Identifiers</a></li>
+		<li class="page_item page-item-2441"><a href="../../../guides/organisation-data/participating-organisations/index.html">Participating Organisations</a></li>
+		<li class="page_item page-item-2475"><a href="../../../guides/organisation-data/contact-information/index.html">Contact Information</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2709 page_item_has_children"><a href="../../../guides/classifications/index.html">Classifications</a>
+	<ul class='children'>
+		<li class="page_item page-item-2425"><a href="../../../guides/classifications/sectors/index.html">Sectors</a></li>
+		<li class="page_item page-item-2446"><a href="../../../guides/classifications/namespaces-extensions/index.html">Namespaces &amp; Extensions</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2673 page_item_has_children"><a href="../../../guides/related-documents/index.html">Related Documents</a>
+	<ul class='children'>
+		<li class="page_item page-item-2452"><a href="../../../guides/related-documents/documents/index.html">Documents</a></li>
+		<li class="page_item page-item-2468"><a href="../../../guides/related-documents/related-activity/index.html">Related Activity</a></li>
+		<li class="page_item page-item-2454"><a href="../../../guides/related-documents/legacy-data/index.html">Legacy Data</a></li>
+	</ul>
+</li>
+	<li class="page_item page-item-2467"><a href="../../../guides/the-iati-registry/index.html">The IATI Registry</a></li>
+	<li class="page_item page-item-892"><a href="../../../guides/xml-schema-tutorial/index.html">XML Schema Tutorial</a></li>
+</ul>
+</li>
+<li class="page_item page-item-2418 page_item_has_children"><a href="../../../governance/index.html">Governance</a>
+<ul class='children'>
+	<li class="page_item page-item-3090"><a href="../../../governance/steering-committee/index.html">Steering Committee</a></li>
+	<li class="page_item page-item-3092"><a href="../../../governance/iati-secretariat/index.html">IATI Secretariat</a></li>
+	<li class="page_item page-item-3094"><a href="../../../governance/technical-advisory-group/index.html">Technical Advisory Group</a></li>
+	<li class="page_item page-item-2537 page_item_has_children"><a href="../../../governance/updating-the-standard/index.html">Updating the IATI Standard</a>
+	<ul class='children'>
+		<li class="page_item page-item-3124"><a href="../../../governance/updating-the-standard/decimal-upgrade-to-1-02/index.html">Decimal Upgrade to 1.02</a></li>
+	</ul>
+</li>
+</ul>
+</li>
+<li class="page_item page-item-1037"><a href="../../../get-involved/support/index.html">Support</a></li>
+		</ul>
+		</aside><aside id="text-17" class="widget-2 widget-last widget-even community green widget widget_text"><h3 class="widget-title">Community Support</h3>			<div class="textwidget"><p>Have a question about publishing or using IATI-formatted data? Access the <a href="http://support.iatistandard.org/home">Knowledge Base</a>.</p>
+</div>
+		</aside></div><!-- #secondary .widget-area -->
+</div><!--#page-content -->
+</div><!--#page -->
+
+<div id="pre-footer">
+
+    
+    <div id="footer-links">
+        <ul>
+            <li>
+                <a href="../../../sitemap/index.html">Site map</a>
+            </li>
+            <li>
+                <a href="../../../community-support/index.html">Support</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="footer-additional">
+        <div id="footer-cookie">
+            <aside id="text-21" class="widget-1 widget-first widget-last widget-odd widget widget_text"><h3 class="widget-title">Cookie Disclaimer</h3>			<div class="textwidget"><p>Cookies' are small text files that are stored by the browser (e.g. Internet Explorer, Chrome, Firefox) on your computer or mobile phone. This site uses anonymous Analytics cookies which allow us to track how many unique individual users we have, and how often they visit the site. Unless a user signs in, these cookies cannot be used to identify an individual; they are used for statistical purposes only. If you are logged in, we will also know the details you gave to us for this, such as username and email address. By continuing to use this site, you are agreeing to the use of cookies.</p>
+</div>
+		</aside>        </div>
+        <div id="footer-social">
+            <aside id="sidebar_social_links" class="widget widget_social_links">
+    <div class="text-widget">
+        <ul class="social-links">
+            <li class="social facebook"><a href="index.html">Facebook</a></li>
+            <li class="social twitter"><a href="index.html">Twitter</a></li>
+            <li class="social linkedin"><a href="index.html">LinkedIn</a></li>
+            <li class="social rss"><a href="http://iatistandard.org/102/feed/">RSS</a></li>
+        </ul>
+    </div>
+</aside>
+        </div>
+        <!--#footer-social -->
+    </div>
+</div><!--#footer-wrapper -->
+
+<footer id="footer">
+
+    <div id="footer-credits">
+        <span class="copyright">&copy; 2015 IATI Standard 1.02</span>
+    </div>
+    <!--.footer-inner -->
+</footer><!--#footer -->
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js?ver=1.8.2'></script>
+<script type='text/javascript' src='../../../wp-content/themes/iatistandard_1.02/library/js/iati.js@ver=0.1.1'></script>
+<script type='text/javascript' src='../../../wp-content/themes/iatistandard_1.02/library/js/common.js@ver=0.1.1'></script>
+</body>
+</html>
