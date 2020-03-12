@@ -2,11 +2,13 @@
 
 git submodule init
 git submodule update
-
-python3 -m virtualenv venv
-source venv/bin/activate
-
-pip install -r IATI-Standard-SSOT-version-2.03/requirements.txt
+if [ ! -d venv ]; then
+  python3 -m virtualenv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+else
+  source venv/bin/activate
+fi
 
 cd IATI-Standard-SSOT-version-2.03
 git submodule init
@@ -44,4 +46,7 @@ cd ../..
 
 cd IATI-Developer-Documentation
 make dirhtml
-cd ../..
+cd ..
+
+python3 extract_html.py
+zip -r output.zip output
