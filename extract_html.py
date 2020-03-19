@@ -47,7 +47,7 @@ for parent_slug, root_dir in build_dirs.items():
             if "index.html" in files:
                 input_path = os.path.join(dirname, "index.html")
                 with open(input_path, 'r') as input_html:
-                    soup = BeautifulSoup(input_html.read(), 'html.parser')
+                    soup = BeautifulSoup(input_html.read(), 'lxml')
                     main = soup.find("div", attrs={"role": "main"})
                     if main is None:
                         main = soup.find("div", attrs={"id": "main"})

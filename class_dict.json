@@ -499,20 +499,20 @@
     "103": {
         "div": {
             "entry-content": 226,
-            "date-comments": 204,
+            "date-comments": 221,
             "under-review": 14,
             "wp-caption|alignnone": 1,
             "entry": 142,
             "level1": 3,
             "table|sectionedit2": 3,
-            "fix": 137,
+            "fix": 142,
             "wp-caption|aligncenter": 3,
             "entry|schema_data": 97,
             "schema-wrap": 97,
             "entry|rulesets": 62,
-            "level2": 88,
-            "page4release": 104,
-            "level3": 128,
+            "level2": 93,
+            "page4release": 109,
+            "level3": 134,
             "level4": 49,
             "li": 4,
             "last-modified": 41,
@@ -792,25 +792,25 @@
         },
         "a": {
             "urlextern": 18,
-            "wikilink1": 125
+            "wikilink1": 131
         },
         "br": {},
         "pre": {
-            "code|xml": 146,
+            "code|xml": 160,
             "code": 22
         },
         "footer": {
-            "entry-meta": 67
+            "entry-meta": 84
         },
         "p": {
-            "fl": 67,
+            "fl": 84,
             "wp-caption-text": 4,
             "element_documentation": 293
         },
         "h3": {
             "element_name": 62,
-            "sectionedit2": 88,
-            "sectionedit3": 36,
+            "sectionedit2": 93,
+            "sectionedit3": 37,
             "sectionedit4": 4
         },
         "ul": {
@@ -841,19 +841,19 @@
         "h2": {
             "get-involved": 3,
             "element_name": 97,
-            "sectionedit1": 88
+            "sectionedit1": 93
         },
         "dl": {},
         "dt": {},
         "dd": {},
         "tbody": {},
         "span": {
-            "active_page4release": 104,
-            "sc3": 311,
-            "re1": 311,
-            "re0": 237,
-            "st0": 239,
-            "re2": 309
+            "active_page4release": 109,
+            "sc3": 355,
+            "re1": 355,
+            "re0": 249,
+            "st0": 251,
+            "re2": 353
         },
         "abbr": {},
         "thead": {},
@@ -862,21 +862,21 @@
     "102": {
         "div": {
             "entry-content": 206,
+            "date-comments": 201,
             "under-review": 23,
             "wp-caption|alignright": 1,
-            "date-comments": 183,
             "entry": 109,
             "level1": 1,
             "table|sectionedit2": 1,
-            "fix": 104,
+            "fix": 109,
             "wp-caption|alignnone": 1,
             "wp-caption|aligncenter": 3,
             "entry|schema_data": 74,
             "schema-wrap": 74,
             "entry|rulesets": 61,
-            "level2": 66,
-            "page4release": 66,
-            "level3": 76,
+            "level2": 71,
+            "page4release": 71,
+            "level3": 82,
             "level4": 10,
             "last-modified": 33,
             "version": 33,
@@ -1120,10 +1120,10 @@
         "td": {
             "s0": 1,
             "s1": 5,
-            "s3": 1,
-            "s5": 5,
-            "s6": 3,
-            "s7": 12,
+            "s3": 30,
+            "s5": 150,
+            "s6": 234,
+            "s7": 1165,
             "col0": 12,
             "col1": 7,
             "col2|leftalign": 3,
@@ -1133,14 +1133,14 @@
         },
         "a": {
             "urlextern": 12,
-            "wikilink1": 125
+            "wikilink1": 127
         },
         "br": {
             "c1": 1
         },
         "p": {
+            "fl": 97,
             "wp-caption-text": 5,
-            "fl": 79,
             "c4": 89,
             "c4|c17": 4,
             "c4|c8": 4,
@@ -1151,6 +1151,13 @@
             "c4|c10": 2,
             "element_documentation": 223
         },
+        "pre": {
+            "code|xml": 146,
+            "code": 6
+        },
+        "footer": {
+            "entry-meta": 97
+        },
         "ul": {
             "element_documentation": 61
         },
@@ -1159,8 +1166,8 @@
         },
         "h3": {
             "element_name": 61,
-            "sectionedit2": 66,
-            "sectionedit3": 10
+            "sectionedit2": 71,
+            "sectionedit3": 11
         },
         "img": {
             "size-full|wp-image-2800": 1,
@@ -1169,9 +1176,6 @@
             "size-full|wp-image-1234|": 6,
             "alignright|size-full|wp-image-3233": 1,
             "alignright|size-full|wp-image-3281": 1
-        },
-        "footer": {
-            "entry-meta": 79
         },
         "strong": {},
         "th": {
@@ -1200,21 +1204,17 @@
             "c1|c21": 3,
             "c14|c5": 2,
             "c1|c5": 16,
-            "active_page4release": 66,
-            "sc3": 276,
-            "re1": 276,
-            "re0": 202,
-            "st0": 204,
-            "re2": 274
-        },
-        "pre": {
-            "code|xml": 133,
-            "code": 6
+            "active_page4release": 71,
+            "sc3": 318,
+            "re1": 318,
+            "re0": 214,
+            "st0": 216,
+            "re2": 316
         },
         "h2": {
             "get-involved": 3,
             "element_name": 74,
-            "sectionedit1": 66
+            "sectionedit1": 71
         },
         "dl": {},
         "dt": {},
@@ -1388,21 +1388,21 @@
             "entry-content": 150,
             "got-a-question": 4,
             "text-with-image": 4,
-            "date-comments": 126,
+            "date-comments": 141,
             "entry-meta": 4,
             "entry": 111,
             "level1": 1,
             "table|sectionedit2": 1,
-            "fix": 106,
+            "fix": 111,
             "category-archive-meta": 1,
             "under-review": 2,
             "wp-caption|aligncenter": 3,
             "entry|schema_data": 73,
             "schema-wrap": 73,
             "entry|rulesets": 61,
-            "level2": 65,
-            "page4release": 66,
-            "level3": 71,
+            "level2": 70,
+            "page4release": 71,
+            "level3": 77,
             "level4": 2,
             "last-modified": 33,
             "version": 33,
@@ -1411,11 +1411,11 @@
         "a": {
             "url|fn|n": 5,
             "urlextern": 6,
-            "wikilink1": 10
+            "wikilink1": 14
         },
         "br": {},
         "p": {
-            "fl": 20,
+            "fl": 35,
             "wp-caption-text": 3,
             "element_documentation": 218
         },
@@ -1423,8 +1423,8 @@
         "h3": {
             "assistive-text": 1,
             "element_name": 61,
-            "sectionedit2": 65,
-            "sectionedit3": 6
+            "sectionedit2": 70,
+            "sectionedit3": 7
         },
         "img": {
             "size-full|wp-image-1234|": 6,
@@ -1432,7 +1432,7 @@
             "alignright|size-full|wp-image-3281": 1
         },
         "footer": {
-            "entry-meta": 24
+            "entry-meta": 39
         },
         "table": {
             "tblGenFixed": 1,
@@ -1458,16 +1458,20 @@
         "td": {
             "s0": 1,
             "s1": 5,
-            "s3": 2,
-            "s5": 10,
-            "s6": 6,
-            "s7": 27,
+            "s3": 30,
+            "s5": 150,
+            "s6": 229,
+            "s7": 1140,
             "col0": 12,
             "col1": 7,
             "col2|leftalign": 3,
             "col3": 12,
             "col2": 9,
             "col1|leftalign": 5
+        },
+        "pre": {
+            "code|xml": 144,
+            "code": 6
         },
         "span": {
             "sep": 8,
@@ -1477,12 +1481,12 @@
             "entry-utility-prep|entry-utility-prep-cat-links": 3,
             "nav-previous": 1,
             "nav-next": 1,
-            "active_page4release": 66,
-            "sc3": 270,
-            "re1": 270,
-            "re0": 196,
-            "st0": 198,
-            "re2": 268,
+            "active_page4release": 71,
+            "sc3": 312,
+            "re1": 312,
+            "re0": 208,
+            "st0": 210,
+            "re2": 310,
             "vcard": 1
         },
         "time": {
@@ -1501,13 +1505,9 @@
         "li": {},
         "h2": {
             "element_name": 73,
-            "sectionedit1": 65
+            "sectionedit1": 70
         },
         "em": {},
-        "pre": {
-            "code|xml": 131,
-            "code": 6
-        },
         "abbr": {},
         "h4": {},
         "thead": {},
@@ -1515,27 +1515,27 @@
     },
     "guidance": {
         "div": {
-            "section": 293,
+            "section": 294,
             "toctree-wrapper|compound": 15,
-            "highlight-xml": 14,
-            "highlight": 20,
+            "highlight-xml": 16,
+            "highlight": 22,
             "highlight-json": 3,
+            "line-block": 8,
+            "line": 19,
             "contents|topic": 7,
-            "line-block": 4,
-            "line": 7,
             "first|last|highlight-xml": 2,
             "last|highlight-xml": 1,
             "first|line-block": 1
         },
         "h1": {},
         "a": {
-            "headerlink": 297,
+            "headerlink": 298,
             "reference|internal": 196,
-            "reference|external": 716,
+            "reference|external": 726,
             "toc-backref": 138
         },
         "ul": {
-            "simple": 131,
+            "simple": 135,
             "first|last": 1,
             "first|last|simple": 5,
             "first": 1
@@ -1546,8 +1546,8 @@
             "toctree-l3": 6
         },
         "p": {
-            "first": 19,
-            "last": 12,
+            "first": 22,
+            "last": 15,
             "topic-title|first": 7
         },
         "code": {
@@ -1555,39 +1555,33 @@
         },
         "span": {
             "pre": 47,
-            "problematic": 7,
-            "nt": 133,
-            "na": 56,
-            "s": 56,
+            "nt": 169,
+            "na": 71,
+            "s": 71,
             "c": 2,
             "p": 24,
             "s2": 6,
             "mi": 3,
+            "problematic": 5,
             "xref|std|std-doc": 324,
             "xref|std|std-ref": 1,
             "doc": 7,
             "cp": 3,
             "caption-text": 4
         },
-        "blockquote": {},
-        "dl": {
-            "docutils": 24,
-            "first|docutils": 8
-        },
-        "dt": {},
-        "dd": {},
+        "pre": {},
         "h2": {},
         "strong": {},
         "table": {
             "colwidths-given|docutils": 47,
-            "docutils": 9
+            "docutils": 10
         },
         "colgroup": {},
         "col": {},
         "thead": {},
         "tr": {
-            "row-odd": 204,
-            "row-even": 180
+            "row-odd": 207,
+            "row-even": 182
         },
         "th": {
             "head": 173
@@ -1595,9 +1589,15 @@
         "tbody": {},
         "td": {},
         "cite": {},
-        "pre": {},
+        "dl": {
+            "first|docutils": 8,
+            "docutils": 22
+        },
+        "dt": {},
+        "dd": {},
         "h3": {},
         "em": {},
+        "blockquote": {},
         "ol": {
             "arabic|simple": 2,
             "first|last|loweralpha": 6
