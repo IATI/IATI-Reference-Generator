@@ -58,13 +58,12 @@ for parent_slug, root_dir in build_dirs.items():
                             tag_class = tag.get("class", None)
                             if tag_class:
                                 if "|".join(tag_class) not in class_dict[parent_slug][tag.name].keys():
-                                    class_dict[parent_slug][tag.name]["|".join(tag_class)] = 0
-                                class_dict[parent_slug][tag.name]["|".join(tag_class)] += 1
-                        pre_spans = main.findAll("span", attrs={'class': 'pre'})
-                        for pre_span in pre_spans:
-                            pre_span.name = 'pre'
+                                    class_dict[parent_slug][tag.name]["|".join(tag_class)] = dirname
+                        # pre_spans = main.findAll("span", attrs={'class': 'pre'})
+                        # for pre_span in pre_spans:
+                        #     pre_span.name = 'pre'
                         for tag in main():
-                            for attribute in ["class", "style"]:
+                            for attribute in ["style"]:
                                 del tag[attribute]
                         output_dir = os.path.join("output", parent_slug, *dir_split[root_len:])
                         output_path = os.path.join(output_dir, "index.html")
