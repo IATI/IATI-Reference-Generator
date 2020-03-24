@@ -1,6 +1,7 @@
 import os
 import shutil
 import json
+import csv
 from bs4 import BeautifulSoup
 
 
@@ -11,6 +12,8 @@ if os.path.isdir("output"):
 
 
 class_dict = dict()
+href_list = list()
+href_csv = [["href", "dirname"]]
 
 
 build_dirs = {
@@ -53,6 +56,11 @@ for parent_slug, root_dir in build_dirs.items():
                         main = soup.find("div", attrs={"id": "main"})
                     if main is not None:
                         for tag in main():
+                            if tag.name == "a":
+                                href = tag.get("href", None)
+                                if href and href not in href_list and "iatistandard.org" in href:
+                                    href_list.append(href)
+                                    href_csv.append([href, dirname])
                             if tag.name not in class_dict[parent_slug].keys():
                                 class_dict[parent_slug][tag.name] = dict()
                             tag_class = tag.get("class", None)
@@ -74,5 +82,9 @@ for parent_slug, root_dir in build_dirs.items():
 
 with open("class_dict.json", "w") as json_file:
     json.dump(class_dict, json_file, indent=4)
+
+with open("href_list.csv", "w") as txt_file:
+    csvwriter = csv.writer(txt_file, delimiter=',')
+    csvwriter.writerows(href_csv)
 
 shutil.make_archive("output", "zip", "output")
