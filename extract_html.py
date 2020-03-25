@@ -71,6 +71,11 @@ for parent_slug, root_dir in build_dirs.items():
                         # for pre_span in pre_spans:
                         #     pre_span.name = 'pre'
                         for tag in main():
+                            if tag.name == "a":
+                                href = tag.get("href", None)
+                                if href and (href[0] == "." or href[0] == "/" and "index.htm" in href.split("/")[-1]):
+                                    amended_href = "/".join(href.split("/")[:-1])
+                                    setattr(tag, "href", amended_href)
                             for attribute in ["style"]:
                                 del tag[attribute]
                         output_dir = os.path.join("output", parent_slug, *dir_split[root_len:])
