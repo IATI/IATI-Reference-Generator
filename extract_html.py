@@ -11,6 +11,10 @@ if os.path.isdir("output"):
     shutil.rmtree("output")
 
 
+with open("class_transformations.json", "r") as json_file:
+    class_transformations = json.load(json_file)
+
+
 class_dict = dict()
 href_list = list()
 href_csv = [["href", "dirname"]]
@@ -67,10 +71,26 @@ for parent_slug, root_dir in build_dirs.items():
                             if tag_class:
                                 if "|".join(tag_class) not in class_dict[parent_slug][tag.name].keys():
                                     class_dict[parent_slug][tag.name]["|".join(tag_class)] = dirname
-                        # pre_spans = main.findAll("span", attrs={'class': 'pre'})
-                        # for pre_span in pre_spans:
-                        #     pre_span.name = 'pre'
+                        for class_transform in class_transformations:
+                            old_tag = class_transform["old_tag"]
+                            new_tag = class_transform["new_tag"]
+                            old_class = class_transform["old_class"]
+                            new_class = class_transform["new_class"]
+                            if old_class == "" and new_class == "":
+                                tags_to_transform = main.findAll(old_tag)
+                                for tag_to_transform in tags_to_transform:
+                                    tag_to_transform.name = new_tag
+                            elif new_class == "":
+                                tags_to_transform = main.findAll(old_tag, attrs={'class': old_class})
+                                for tag_to_transform in tags_to_transform:
+                                    tag_to_transform.name = new_tag
+                            else:
+                                tags_to_transform = main.findAll(old_tag, attrs={'class': old_class})
+                                for tag_to_transform in tags_to_transform:
+                                    tag_to_transform.name = new_tag
+                                    tag_to_transform["class"] = new_class
                         for tag in main():
+                            # Fix for hardcoded index.html's
                             if tag.name == "a":
                                 href = tag.get("href", None)
                                 if href and (href[0] == "." or href[0] == "/" and "index.htm" in href.split("/")[-1]):
