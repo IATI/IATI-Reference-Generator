@@ -1,0 +1,32 @@
+[
+  {
+    "old_tag": "span",
+    "old_class": "pre",
+    "new_tag": "pre",
+    "new_class": ""
+  },
+  {
+    "old_tag": "div",
+    "old_class": "line-block",
+    "new_tag": "p",
+    "new_class": ""
+  },
+  {
+    "old_tag": "div",
+    "old_class": "line",
+    "new_tag": "p",
+    "new_class": ""
+  },
+  {
+    "old_tag": "span",
+    "old_class": "underline",
+    "new_tag": "em",
+    "new_class": ""
+  },
+  {
+    "old_tag": "div",
+    "old_class": "highlight",
+    "new_tag": "code",
+    "new_class": ""
+  }
+]

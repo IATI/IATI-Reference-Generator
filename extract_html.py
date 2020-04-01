@@ -89,6 +89,7 @@ for parent_slug, root_dir in build_dirs.items():
                                 for tag_to_transform in tags_to_transform:
                                     tag_to_transform.name = new_tag
                                     tag_to_transform["class"] = new_class
+                                    tag_to_transform.transformed = True
                         for tag in main():
                             # Fix for hardcoded index.html's
                             if tag.name == "a":
@@ -96,8 +97,9 @@ for parent_slug, root_dir in build_dirs.items():
                                 if href and (href[0] == "." or href[0] == "/" and "index.htm" in href.split("/")[-1]):
                                     amended_href = "/".join(href.split("/")[:-1])
                                     setattr(tag, "href", amended_href)
-                            for attribute in ["style"]:
-                                del tag[attribute]
+                            del tag["style"]
+                            if not tag.transformed:
+                                del tag["class"]
                         output_dir = os.path.join("output", parent_slug, *dir_split[root_len:])
                         output_path = os.path.join(output_dir, "index.html")
                         if not os.path.isdir(output_dir):
