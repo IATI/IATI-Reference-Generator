@@ -26,7 +26,7 @@
 [submodule "IATI-Guidance"]
 	path = IATI-Guidance
 	url = https://github.com/IATI/IATI-Guidance.git
-	branch = master
+	branch = guidance-test
 	ignore = dirty
 [submodule "IATI-Developer-Documentation"]
 	path = IATI-Developer-Documentation

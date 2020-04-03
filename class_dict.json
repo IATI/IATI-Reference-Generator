@@ -1517,12 +1517,12 @@
         "div": {
             "section": "IATI-Guidance/en/_build/dirhtml",
             "toctree-wrapper|compound": "IATI-Guidance/en/_build/dirhtml",
-            "highlight-xml": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "highlight": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
+            "highlight-xml": "IATI-Guidance/en/_build/dirhtml/datastore/reference/structure-of-data",
+            "highlight": "IATI-Guidance/en/_build/dirhtml/datastore/reference/structure-of-data",
             "highlight-json": "IATI-Guidance/en/_build/dirhtml/datastore/reference/structure-of-data",
-            "line-block": "IATI-Guidance/en/_build/dirhtml/Abudgets",
-            "line": "IATI-Guidance/en/_build/dirhtml/Abudgets",
             "contents|topic": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03/2-03-changes",
+            "line-block": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-05",
+            "line": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-05",
             "first|last|highlight-xml": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-04/location-summary",
             "last|highlight-xml": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-04/location-summary",
             "first|line-block": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-03/1-03-changes"
@@ -1531,11 +1531,11 @@
         "a": {
             "headerlink": "IATI-Guidance/en/_build/dirhtml",
             "reference|internal": "IATI-Guidance/en/_build/dirhtml",
-            "reference|external": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
+            "reference|external": "IATI-Guidance/en/_build/dirhtml/datastore",
             "toc-backref": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03/2-03-changes"
         },
         "ul": {
-            "simple": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
+            "simple": "IATI-Guidance/en/_build/dirhtml/datastore",
             "first|last": "IATI-Guidance/en/_build/dirhtml/datastore/reference/metadata-api",
             "first|last|simple": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03",
             "first": "IATI-Guidance/en/_build/dirhtml/upgrades/integer-upgrade-to-2-01/migrating"
@@ -1546,49 +1546,30 @@
             "toctree-l3": "IATI-Guidance/en/_build/dirhtml"
         },
         "p": {
-            "first": "IATI-Guidance/en/_build/dirhtml/Abudgets",
-            "last": "IATI-Guidance/en/_build/dirhtml/Abudgets",
-            "topic-title|first": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03/2-03-changes"
+            "topic-title|first": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03/2-03-changes",
+            "first": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-04/location-summary",
+            "last": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-04/location-summary"
         },
-        "code": {
-            "docutils|literal": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
-        },
+        "h2": {},
+        "strong": {},
+        "cite": {},
+        "pre": {},
         "span": {
-            "pre": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "nt": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "na": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "s": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
+            "nt": "IATI-Guidance/en/_build/dirhtml/datastore/reference/structure-of-data",
+            "na": "IATI-Guidance/en/_build/dirhtml/datastore/reference/structure-of-data",
+            "s": "IATI-Guidance/en/_build/dirhtml/datastore/reference/structure-of-data",
             "c": "IATI-Guidance/en/_build/dirhtml/datastore/reference/structure-of-data",
             "p": "IATI-Guidance/en/_build/dirhtml/datastore/reference/metadata-api",
             "s2": "IATI-Guidance/en/_build/dirhtml/datastore/reference/metadata-api",
             "mi": "IATI-Guidance/en/_build/dirhtml/datastore/reference/metadata-api",
             "problematic": "IATI-Guidance/en/_build/dirhtml/datastore/reference/data-api",
             "xref|std|std-doc": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03/2-03-changes",
+            "pre": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-02/2-02-changes",
             "xref|std|std-ref": "IATI-Guidance/en/_build/dirhtml/upgrades/integer-upgrade-to-2-01/migrating",
             "doc": "IATI-Guidance/en/_build/dirhtml/upgrades/integer-upgrade-to-2-01/migrating",
             "cp": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-04/location-summary",
             "caption-text": "IATI-Guidance/en/_build/dirhtml/upgrades/noncore-codelist-changelog"
         },
-        "pre": {},
-        "h2": {},
-        "strong": {},
-        "table": {
-            "colwidths-given|docutils": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "docutils": "IATI-Guidance/en/_build/dirhtml/Abudgets"
-        },
-        "colgroup": {},
-        "col": {},
-        "thead": {},
-        "tr": {
-            "row-odd": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "row-even": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
-        },
-        "th": {
-            "head": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
-        },
-        "tbody": {},
-        "td": {},
-        "cite": {},
         "dl": {
             "first|docutils": "IATI-Guidance/en/_build/dirhtml/datastore/reference/metadata-api",
             "docutils": "IATI-Guidance/en/_build/dirhtml/datastore/reference/data-api"
@@ -1597,10 +1578,29 @@
         "dd": {},
         "h3": {},
         "em": {},
-        "blockquote": {},
         "ol": {
             "arabic|simple": "IATI-Guidance/en/_build/dirhtml/upgrades",
             "first|last|loweralpha": "IATI-Guidance/en/_build/dirhtml/upgrades"
+        },
+        "table": {
+            "colwidths-given|docutils": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03",
+            "docutils": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-02"
+        },
+        "colgroup": {},
+        "col": {},
+        "thead": {},
+        "tr": {
+            "row-odd": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03",
+            "row-even": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03"
+        },
+        "th": {
+            "head": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03"
+        },
+        "tbody": {},
+        "td": {},
+        "blockquote": {},
+        "code": {
+            "docutils|literal": "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-02/2-02-changes"
         },
         "h4": {},
         "caption": {}
