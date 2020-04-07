@@ -71,16 +71,16 @@ for parent_slug, root_dir in build_dirs.items():
                             if tag_class:
                                 if "|".join(tag_class) not in class_dict[parent_slug][tag.name].keys():
                                     class_dict[parent_slug][tag.name]["|".join(tag_class)] = dirname
-                        for class_transform in class_transformations:
-                            old_tag = class_transform["old_tag"]
-                            new_tag = class_transform["new_tag"]
-                            old_class = class_transform["old_class"]
-                            new_class = class_transform["new_class"]
-                            if old_class == "" and new_class == "":
+                        for class_transform in class_transformations["transform"]:
+                            old_tag = class_transform["before"]["tag"]
+                            new_tag = class_transform["after"]["tag"]
+                            old_class = class_transform["before"]["class"]
+                            new_class = class_transform["after"]["class"]
+                            if len(old_class) == 0 and len(new_class) == 0:
                                 tags_to_transform = main.findAll(old_tag)
                                 for tag_to_transform in tags_to_transform:
                                     tag_to_transform.name = new_tag
-                            elif new_class == "":
+                            elif len(new_class) == 0:
                                 tags_to_transform = main.findAll(old_tag, attrs={'class': old_class})
                                 for tag_to_transform in tags_to_transform:
                                     tag_to_transform.name = new_tag
