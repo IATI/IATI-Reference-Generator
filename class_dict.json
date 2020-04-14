@@ -5855,6 +5855,7 @@
                 "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency",
                 "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/FinanceType",
                 "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/SectorCategory",
+                "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/CRSChannelCode",
                 "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Currency",
                 "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/FinanceType-category",
                 "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Sector"
@@ -34224,11 +34225,16 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations-all",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
                 "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/conditions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/humanitarian",
@@ -34258,8 +34264,10 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/financial-transactions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sdg-guidance",
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
-                "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets"
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets"
             ],
             "highlight": [
                 "IATI-Guidance/en/_build/dirhtml/datastore/reference/structure-of-data",
@@ -34269,8 +34277,10 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/financial-transactions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sdg-guidance",
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
-                "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets"
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets"
             ],
             "highlight-json": [
                 "IATI-Guidance/en/_build/dirhtml/datastore/reference/structure-of-data",
@@ -34363,11 +34373,16 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations-all",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
                 "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/conditions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/humanitarian",
@@ -34427,11 +34442,16 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations-all",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
                 "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/humanitarian",
                 "IATI-Guidance/en/_build/dirhtml/guidance/country-budget-alignment"
@@ -34465,10 +34485,15 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations-all",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend"
             ],
             "last": [
@@ -34480,10 +34505,15 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations-all",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend"
             ]
         },
@@ -34525,10 +34555,14 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/conditions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/humanitarian",
@@ -34609,7 +34643,8 @@
             "problematic": [
                 "IATI-Guidance/en/_build/dirhtml/datastore/reference/data-api",
                 "IATI-Guidance/en/_build/dirhtml/upgrades/all-versions/previous-process",
-                "IATI-Guidance/en/_build/dirhtml/upgrades/noncore-codelist-changelog"
+                "IATI-Guidance/en/_build/dirhtml/upgrades/noncore-codelist-changelog",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend"
             ],
             "xref|std|std-doc": [
                 "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-2-03/2-03-changes",
@@ -34634,6 +34669,7 @@
                 "IATI-Guidance/en/_build/dirhtml/introduction/codelists-schema",
                 "IATI-Guidance/en/_build/dirhtml/guidance/crs-fss",
                 "IATI-Guidance/en/_build/dirhtml/guidance/results",
+                "IATI-Guidance/en/_build/dirhtml/guidance/sdg-guidance",
                 "IATI-Guidance/en/_build/dirhtml/guidance/conditions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/humanitarian",
                 "IATI-Guidance/en/_build/dirhtml/guidance/country-budget-alignment"
@@ -34663,10 +34699,8 @@
                 "IATI-Guidance/en/_build/dirhtml/datastore/reference/data-api",
                 "IATI-Guidance/en/_build/dirhtml/upgrades/integer-upgrade-to-2-01/migrating",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sdg-guidance",
-                "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets"
-            ],
-            "first|last|docutils": [
-                "IATI-Guidance/en/_build/dirhtml/guidance/sdg-guidance"
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets"
             ]
         },
         "dt": {},
@@ -34677,6 +34711,7 @@
             "arabic|simple": [
                 "IATI-Guidance/en/_build/dirhtml/upgrades",
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus"
             ],
             "first|last|loweralpha": [
@@ -34696,10 +34731,14 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations-all",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend"
             ],
             "docutils": [
@@ -34709,7 +34748,9 @@
                 "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-04",
                 "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-04/location-summary",
                 "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-02",
-                "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-03"
+                "IATI-Guidance/en/_build/dirhtml/upgrades/decimal-upgrade-to-1-03",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend"
             ]
         },
         "colgroup": {},
@@ -34735,10 +34776,15 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations-all",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend"
             ],
             "row-even": [
@@ -34760,10 +34806,15 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations-all",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/activity-budgets",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend"
             ]
         },
@@ -34787,10 +34838,14 @@
                 "IATI-Guidance/en/_build/dirhtml/guidance/countries-regions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-dates-status",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations-all",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/countries-regions",
+                "IATI-Guidance/en/_build/dirhtml/guidance/activity-geography/sub-national-locations",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-thematic-focus",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-classifications",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-budgets",
                 "IATI-Guidance/en/_build/dirhtml/guidance/activity-participants",
+                "IATI-Guidance/en/_build/dirhtml/guidance/budgets-overview/organisation-budgets-spend",
                 "IATI-Guidance/en/_build/dirhtml/guidance/organisation-budgets-spend"
             ]
         },
@@ -34808,6 +34863,7 @@
                 "IATI-Guidance/en/_build/dirhtml/introduction/codelists-schema",
                 "IATI-Guidance/en/_build/dirhtml/guidance/crs-fss",
                 "IATI-Guidance/en/_build/dirhtml/guidance/results",
+                "IATI-Guidance/en/_build/dirhtml/guidance/sdg-guidance",
                 "IATI-Guidance/en/_build/dirhtml/guidance/conditions",
                 "IATI-Guidance/en/_build/dirhtml/guidance/humanitarian",
                 "IATI-Guidance/en/_build/dirhtml/guidance/country-budget-alignment"
