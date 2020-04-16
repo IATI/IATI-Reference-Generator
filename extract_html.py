@@ -91,6 +91,26 @@ for parent_slug, root_dir in build_dirs.items():
                                 else:
                                     for child_match in child_matches:
                                         child_match.unwrap()
+                        for class_tbp in class_transformations["transform_by_parent"]:
+                            parent_tag = class_tbp["parent"]["tag"]
+                            parent_class = class_tbp["parent"]["class"]
+                            b_child_tag = class_tbp["before"]["tag"]
+                            b_child_class = class_tbp["before"]["class"]
+                            a_child_tag = class_tbp["after"]["tag"]
+                            a_child_class = class_tbp["after"]["class"]
+                            if len(parent_class) == 0:
+                                parent_matches = main.findAll(parent_tag)
+                            else:
+                                parent_matches = main.findAll(parent_tag, attrs={'class': parent_class})
+                            for parent_match in parent_matches:
+                                if len(b_child_class) == 0:
+                                    child_matches = parent_match.findAll(b_child_tag)
+                                else:
+                                    child_matches = parent_match.findAll(b_child_tag, attrs={'class': b_child_class})
+                                for child_match in child_matches:
+                                    child_match.name = a_child_tag
+                                    child_match["class"] = a_child_class
+                                    child_match.transformed = True
                         for class_transform in class_transformations["transform"]:
                             old_tag = class_transform["before"]["tag"]
                             new_tag = class_transform["after"]["tag"]

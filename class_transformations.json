@@ -16,6 +16,13 @@
       "unwrap": "parent"
     }
   ],
+  "transform_by_parent": [
+    {
+      "parent": {"tag": "blockquote", "class": []},
+      "before": {"tag": "div", "class": []},
+      "after": {"tag": "p", "class": []}
+    }
+  ],
   "transform": [
     {
       "before": {"tag": "div", "class": ["line"]},
