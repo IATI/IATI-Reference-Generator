@@ -67,7 +67,7 @@ for parent_slug, root_dir in build_dirs.items():
                                     href_csv.append([href, dirname])
                             if tag.name not in class_dict[parent_slug].keys():
                                 class_dict[parent_slug][tag.name] = dict()
-                            tag_class = tag.get("class", "None")
+                            tag_class = tag.get("class", ["None"])
                             if tag_class:
                                 if "|".join(tag_class) not in class_dict[parent_slug][tag.name].keys():
                                     class_dict[parent_slug][tag.name]["|".join(tag_class)] = dirname
