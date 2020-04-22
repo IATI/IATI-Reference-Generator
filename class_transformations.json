@@ -1,5 +1,5 @@
 {
-  "unwrap": [
+  "unwrap_by_parent": [
     {
       "parent": {"tag": "div", "class": ["line-block"]},
       "child": {"tag": "div", "class": ["line"]},
@@ -15,6 +15,20 @@
       "child": {"tag": "div", "class": ["highlight"]},
       "unwrap": "parent"
     }
+  ],
+  "unwrap": [
+    {"tag": "span", "class": ["nt"]},
+    {"tag": "span", "class": ["c"]},
+    {"tag": "span", "class": ["na"]},
+    {"tag": "span", "class": ["s"]},
+    {"tag": "span", "class": ["n"]},
+    {"tag": "span", "class": ["p"]},
+    {"tag": "span", "class": ["o"]},
+    {"tag": "span", "class": ["mf"]},
+    {"tag": "span", "class": ["mi"]},
+    {"tag": "span", "class": ["k"]},
+    {"tag": "span", "class": ["nb"]},
+    {"tag": "span", "class": ["s2"]}
   ],
   "transform_by_parent": [
     {
