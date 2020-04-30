@@ -1,27 +1,27 @@
 [submodule "IATI-Standard-SSOT-version-2.03"]
 	path = IATI-Standard-SSOT-version-2.03
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-2.03
+	branch = version-2.03-update
 	ignore = dirty
 [submodule "IATI-Standard-SSOT-version-2.02"]
 	path = IATI-Standard-SSOT-version-2.02
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-2.02
+	branch = version-2.02-update
 	ignore = dirty
 [submodule "IATI-Standard-SSOT-version-2.01"]
 	path = IATI-Standard-SSOT-version-2.01
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-2.01
+	branch = version-2.01-update
 	ignore = dirty
 [submodule "IATI-Standard-SSOT-version-1.05"]
 	path = IATI-Standard-SSOT-version-1.05
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-1.05
+	branch = version-1.05-update
 	ignore = dirty
 [submodule "IATI-Standard-SSOT-version-1.04"]
 	path = IATI-Standard-SSOT-version-1.04
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-1.04
+	branch = version-1.04-update
 	ignore = dirty
 [submodule "IATI-Guidance"]
 	path = IATI-Guidance
