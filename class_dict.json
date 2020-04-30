@@ -69,6 +69,7 @@
             "s": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/self-defined-vocabularies",
             "caption-text": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI",
             "xref|std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location",
+            "hll": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/sector/narrative",
             "n": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "p": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "o": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
@@ -1973,96 +1974,6 @@
         },
         "hr": {
             "docutils": "IATI-Guidance/en/_build/dirhtml/guidance/sdg-guidance"
-        }
-    },
-    "developer-documentation": {
-        "div": {
-            "section": "IATI-Developer-Documentation/_build/dirhtml",
-            "toctree-wrapper|compound": "IATI-Developer-Documentation/_build/dirhtml",
-            "None": "IATI-Developer-Documentation/_build/dirhtml/ssot",
-            "contents|topic": "IATI-Developer-Documentation/_build/dirhtml/ssot/proposal",
-            "highlight-xquery": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "highlight": "IATI-Developer-Documentation/_build/dirhtml/xquery"
-        },
-        "h1": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml"
-        },
-        "a": {
-            "headerlink": "IATI-Developer-Documentation/_build/dirhtml",
-            "reference|external": "IATI-Developer-Documentation/_build/dirhtml",
-            "reference|internal": "IATI-Developer-Documentation/_build/dirhtml",
-            "toc-backref": "IATI-Developer-Documentation/_build/dirhtml/ssot/proposal"
-        },
-        "p": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml",
-            "topic-title|first": "IATI-Developer-Documentation/_build/dirhtml/ssot/proposal"
-        },
-        "ul": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml",
-            "simple": "IATI-Developer-Documentation/_build/dirhtml/contribute",
-            "first|last": "IATI-Developer-Documentation/_build/dirhtml/ssot"
-        },
-        "li": {
-            "toctree-l1": "IATI-Developer-Documentation/_build/dirhtml",
-            "None": "IATI-Developer-Documentation/_build/dirhtml/contribute"
-        },
-        "h2": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/contribute"
-        },
-        "dl": {
-            "first|docutils": "IATI-Developer-Documentation/_build/dirhtml/contribute"
-        },
-        "dt": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/contribute"
-        },
-        "dd": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/contribute"
-        },
-        "blockquote": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/ssot"
-        },
-        "span": {
-            "doc": "IATI-Developer-Documentation/_build/dirhtml/ssot",
-            "pre": "IATI-Developer-Documentation/_build/dirhtml/ssot",
-            "std|std-ref": "IATI-Developer-Documentation/_build/dirhtml/ssot",
-            "None": "IATI-Developer-Documentation/_build/dirhtml/ssot/proposal",
-            "p": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "nt": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "nf": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "na": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "o": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "s1": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "k": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "mi": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "nv": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "n": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "ow": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "s2": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "xref|std|std-ref": "IATI-Developer-Documentation/_build/dirhtml/code"
-        },
-        "code": {
-            "docutils|literal": "IATI-Developer-Documentation/_build/dirhtml/ssot"
-        },
-        "h3": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/ssot/proposal"
-        },
-        "img": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/ssot/proposal"
-        },
-        "h4": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/ssot/proposal"
-        },
-        "em": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/ssot/proposal"
-        },
-        "strong": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/ssot/proposal"
-        },
-        "pre": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/xquery"
-        },
-        "cite": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/access"
         }
     }
 }
