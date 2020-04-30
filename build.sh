@@ -44,8 +44,4 @@ cd IATI-Guidance/en
 make dirhtml
 cd ../..
 
-cd IATI-Developer-Documentation
-make dirhtml
-cd ..
-
 python3 extract_html.py

@@ -28,8 +28,3 @@
 	url = https://github.com/IATI/IATI-Guidance.git
 	branch = guidance-test
 	ignore = dirty
-[submodule "IATI-Developer-Documentation"]
-	path = IATI-Developer-Documentation
-	url = https://github.com/IATI/IATI-Developer-Documentation
-	branch = master
-	ignore = dirty
