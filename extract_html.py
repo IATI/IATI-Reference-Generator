@@ -148,7 +148,13 @@ for parent_slug, root_dir in build_dirs.items():
                                     setattr(tag, "href", amended_href)
                             if tag.name == "img":
                                 src = tag.get("src", None)
-                                setattr(tag, "src", "/media/original_images/{}".format(os.path.basename(src)))
+                                src_basename = os.path.basename(src)
+                                amended_src = "/media/original_images/{}".format(src_basename)
+                                tag["src"] = amended_src
+                                parent_href = tag.parent.get("href", None)  # For anchor wrapped img tags
+                                if parent_href:
+                                    if os.path.basename(parent_href) == src_basename:
+                                        tag.parent["href"] = amended_src
                             del tag["style"]
                             if not tag.transformed:
                                 del tag["class"]
