@@ -16,6 +16,7 @@ with open("class_transformations.json", "r") as json_file:
 
 
 class_dict = dict()
+image_dict = dict()
 href_list = list()
 href_csv = [["href", "dirname"]]
 
@@ -145,6 +146,12 @@ for parent_slug, root_dir in build_dirs.items():
                                 if href and (href[0] == "." or href[0] == "/" and "index.htm" in href.split("/")[-1]):
                                     amended_href = "/".join(href.split("/")[:-1])
                                     setattr(tag, "href", amended_href)
+                            if tag.name == "img":
+                                src = tag.get("src", None)
+                                if parent_slug not in image_dict.keys():
+                                    image_dict[parent_slug] = list()
+                                if src not in image_dict[parent_slug]:
+                                    image_dict[parent_slug].append(src)
                             del tag["style"]
                             if not tag.transformed:
                                 del tag["class"]
@@ -161,5 +168,8 @@ with open("class_dict.json", "w") as json_file:
 with open("href_list.csv", "w") as txt_file:
     csvwriter = csv.writer(txt_file, delimiter=',')
     csvwriter.writerows(href_csv)
+
+with open("image_dict.json", "w") as json_file:
+    json.dump(image_dict, json_file, indent=4)
 
 shutil.make_archive("output", "zip", "output")
