@@ -148,10 +148,7 @@ for parent_slug, root_dir in build_dirs.items():
                                     setattr(tag, "href", amended_href)
                             if tag.name == "img":
                                 src = tag.get("src", None)
-                                if parent_slug not in image_dict.keys():
-                                    image_dict[parent_slug] = list()
-                                if src not in image_dict[parent_slug]:
-                                    image_dict[parent_slug].append(src)
+                                setattr(tag, "src", "/media/original_images/{}".format(os.path.basename(src)))
                             del tag["style"]
                             if not tag.transformed:
                                 del tag["class"]
@@ -168,8 +165,5 @@ with open("class_dict.json", "w") as json_file:
 with open("href_list.csv", "w") as txt_file:
     csvwriter = csv.writer(txt_file, delimiter=',')
     csvwriter.writerows(href_csv)
-
-with open("image_dict.json", "w") as json_file:
-    json.dump(image_dict, json_file, indent=4)
 
 shutil.make_archive("output", "zip", "output")
