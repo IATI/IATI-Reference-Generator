@@ -2,47 +2,78 @@
     "203": {
         "div": {
             "section": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml",
-            "line-block": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard",
-            "line": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard",
-            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard",
-            "highlight-xml": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/self-defined-vocabularies",
-            "highlight": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/self-defined-vocabularies",
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/country-budget-alignment",
-            "highlight-default": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "code|highlight-default": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists-guides/codelist-api"
+            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "contents|topic": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "highlight-xml": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "highlight": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "line-block": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-1-05",
+            "line": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-1-05",
+            "first|last|highlight-xml": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
+            "last|highlight-xml": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
+            "first|line-block": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-03/1-03-changes",
+            "highlight-default": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "h1": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml"
         },
         "a": {
             "headerlink": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml",
-            "reference|external": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers",
-            "reference|internal": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers",
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
+            "reference|external": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "toc-backref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "reference|internal": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
         },
         "p": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers",
-            "first": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
-            "last": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities"
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs",
+            "topic-title|first": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "first": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
+            "last": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary"
         },
         "strong": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers"
-        },
-        "em": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers"
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
         },
         "h2": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers"
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "table": {
+            "colwidths-given|docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02"
+        },
+        "colgroup": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "col": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "thead": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "tr": {
+            "row-odd": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "row-even": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "withdrawn|row-even": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Country",
+            "withdrawn|row-odd": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/FileFormat"
+        },
+        "th": {
+            "head": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "tbody": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "withdrawn": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/BudgetIdentifierVocabulary"
+        },
+        "td": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
         },
         "ul": {
-            "simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers",
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard",
-            "first|last": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/transactions",
-            "first|last|simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists-guides/codelist-api"
+            "first|last|simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "first": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
         },
         "li": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers",
-            "toctree-l1": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard",
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "toctree-l1": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01",
             "toctree-l2": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/elements",
             "toctree-l3": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/elements",
             "toctree-l4": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/elements",
@@ -54,21 +85,20 @@
             "toctree-l10": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference",
             "toctree-l11": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference"
         },
-        "code": {
-            "docutils|literal": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers"
-        },
         "span": {
-            "pre": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers",
-            "doc": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers",
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers",
-            "underline": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/budgets",
-            "xref|std|std-doc": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/activity-file",
-            "nt": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/self-defined-vocabularies",
-            "c": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/self-defined-vocabularies",
-            "na": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/self-defined-vocabularies",
-            "s": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/self-defined-vocabularies",
-            "caption-text": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI",
-            "xref|std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location",
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "doc": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "xref|std|std-doc": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes",
+            "pre": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes",
+            "xref|std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "nt": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "na": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "s": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "cp": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
+            "caption-text": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
+            "problematic": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
+            "c": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result",
+            "std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location",
             "hll": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/sector/narrative",
             "n": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "p": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
@@ -78,75 +108,48 @@
             "ow": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "k": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "nb": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "s2": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/ruleset-spec",
-            "std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Country",
-            "problematic": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
+            "s2": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/ruleset-spec"
         },
-        "img": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers"
+        "h3": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes"
         },
-        "ol": {
-            "arabic|simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-identifiers"
+        "blockquote": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes"
+        },
+        "code": {
+            "docutils|literal": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes"
+        },
+        "dl": {
+            "docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "first|docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+        },
+        "dt": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+        },
+        "dd": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+        },
+        "pre": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+        },
+        "em": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+        },
+        "h4": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes"
+        },
+        "caption": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
         },
         "cite": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard"
         },
-        "h3": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/budgets"
-        },
-        "dl": {
-            "first|docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/transactions",
-            "docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities"
-        },
-        "dt": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/transactions"
-        },
-        "dd": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/transactions"
-        },
-        "pre": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/self-defined-vocabularies"
-        },
-        "table": {
-            "colwidths-given|docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI",
-            "docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "caption": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI"
-        },
-        "colgroup": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI"
-        },
-        "col": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI"
-        },
-        "thead": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI"
-        },
-        "tr": {
-            "row-odd": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI",
-            "row-even": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI",
-            "withdrawn|row-even": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Country",
-            "withdrawn|row-odd": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/FileFormat"
-        },
-        "th": {
-            "head": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI"
-        },
-        "tbody": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI",
-            "withdrawn": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/BudgetIdentifierVocabulary"
-        },
-        "td": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/all-elements-in-IATI"
-        },
-        "blockquote": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/overview/country-budget-alignment"
-        },
         "br": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference"
         },
-        "h4": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier"
+        "ol": {
+            "arabic|simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/namespaces-extensions",
+            "first|last|loweralpha": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process"
         }
     },
     "202": {
