@@ -56,6 +56,7 @@ for parent_slug, root_dir in build_dirs.items():
                 with open(input_path, 'r') as input_html:
                     soup = BeautifulSoup(input_html.read(), 'lxml')
                     main = soup.find("div", attrs={"role": "main"})
+                    meta = soup.findAll("meta", attrs={"name": ["title", "description", "guidance_type"]})
                     if main is None:
                         main = soup.find("div", attrs={"id": "main"})
                     if main is not None:
@@ -158,6 +159,8 @@ for parent_slug, root_dir in build_dirs.items():
                             del tag["style"]
                             if not tag.transformed:
                                 del tag["class"]
+                        for meta_tag in meta:
+                            main.append(meta_tag)
                         output_dir = os.path.join("output", parent_slug, *dir_split[root_len:])
                         output_path = os.path.join(output_dir, "index.html")
                         if not os.path.isdir(output_dir):
