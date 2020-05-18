@@ -41,6 +41,7 @@ git submodule update
 cd ..
 
 cd IATI-Guidance/en
+rm -rf _build
 make dirhtml
 cd ../..
 
