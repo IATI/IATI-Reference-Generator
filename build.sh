@@ -45,4 +45,14 @@ rm -rf _build
 make dirhtml
 cd ../..
 
+cd IATI-Upgrades/en
+rm -rf _build
+make dirhtml
+cd ../..
+
+cd IATI-Developer-Documentation
+rm -rf _build
+make dirhtml
+cd ../..
+
 python3 extract_html.py

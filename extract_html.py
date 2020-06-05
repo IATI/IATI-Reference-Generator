@@ -30,7 +30,9 @@ build_dirs = {
     "103": "IATI-Standard-SSOT-version-1.03/103.new",
     "102": "IATI-Standard-SSOT-version-1.02/102.new",
     "101": "IATI-Standard-SSOT-version-1.01/101.new",
-    "guidance": "IATI-Guidance/en/_build/dirhtml"
+    "guidance": "IATI-Guidance/en/_build/dirhtml",
+    "upgrades": "IATI-Upgrades/en/_build/dirhtml",
+    "developer-docs": "IATI-Developer-Documentation/_build/dirhtml"
 }
 
 ignore_dirs = [
