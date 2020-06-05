@@ -1312,3 +1312,13 @@ http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=SO
 http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=ET|SO|KE&reporting-org.type=21|22|23,IATI-Guidance/en/_build/dirhtml/to-move/datastore
 http://iatistandard.org/guidance/datastore/guidance/,IATI-Guidance/en/_build/dirhtml/to-move/datastore
 http://iatistandard.org/guidance/datastore/reference/,IATI-Guidance/en/_build/dirhtml/to-move/datastore
+https://iatistandard.org/en/guidance/publishing-data/creating-files/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades
+https://iatistandard.org/en/contact/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades
+https://iatistandard.org/documents/660/2018_MA_Minutes_FINAL_circulated_Friday_September_7th_2018.pdf,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades
+https://iatistandard.org/documents/709/TAG_2018_report.pdf,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades
+https://discuss.iatistandard.org,IATI-Developer-Documentation/_build/dirhtml/community-about
+mailto:code%40iatistandard.org,IATI-Developer-Documentation/_build/dirhtml/community-about
+https://iatistandard.org/en/about/governance/who-runs-iati/technical-team/,IATI-Developer-Documentation/_build/dirhtml/tools
+https://iatidatastore.iatistandard.org/documentation/introduction,IATI-Developer-Documentation/_build/dirhtml/guidance
+https://iatistandard.org/en/using-data/iati-tools-and-resources/using-iati-registry/,IATI-Developer-Documentation/_build/dirhtml/guidance
+https://test-validator.iatistandard.org/about,IATI-Developer-Documentation/_build/dirhtml/guidance
