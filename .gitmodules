@@ -33,3 +33,7 @@
 	url = https://github.com/IATI/IATI-Developer-Documentation.git
         branch = documentation-test
         ignore = dirty
+[submodule "IATI-Upgrades"]
+	path = IATI-Upgrades
+	url = https://github.com/IATI/IATI-Upgrades.git
+        ignore = dirty
