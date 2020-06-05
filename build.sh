@@ -53,6 +53,6 @@ cd ../..
 cd IATI-Developer-Documentation
 rm -rf _build
 make dirhtml
-cd ../..
+cd ..
 
 python3 extract_html.py
