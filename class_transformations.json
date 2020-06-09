@@ -70,7 +70,10 @@
       "unwrap": "child"
     }
   ],
-  "unwrap_last": [
-    {"tag": "div", "class": []}
-  ]
+  "transform_last": [
+    {
+      "before": {"tag": "div", "class": []},
+      "after": {"tag": "p", "class": []}
+    }
+  ],
 }

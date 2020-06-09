@@ -162,15 +162,25 @@ for parent_slug, root_dir in build_dirs.items():
                                 else:
                                     for child_match in child_matches:
                                         child_match.unwrap()
-                        for class_unwrap in class_transformations["unwrap_last"]:
-                            unwrap_tag = class_unwrap["tag"]
-                            unwrap_class = class_unwrap["class"]
-                            if len(unwrap_class) == 0:
-                                unwrap_matches = main.findAll(unwrap_tag)
+                        for class_transform in class_transformations["transform_last"]:
+                            old_tag = class_transform["before"]["tag"]
+                            new_tag = class_transform["after"]["tag"]
+                            old_class = class_transform["before"]["class"]
+                            new_class = class_transform["after"]["class"]
+                            if len(old_class) == 0 and len(new_class) == 0:
+                                tags_to_transform = main.findAll(old_tag)
+                                for tag_to_transform in tags_to_transform:
+                                    tag_to_transform.name = new_tag
+                            elif len(new_class) == 0:
+                                tags_to_transform = main.findAll(old_tag, attrs={'class': old_class})
+                                for tag_to_transform in tags_to_transform:
+                                    tag_to_transform.name = new_tag
                             else:
-                                unwrap_matches = main.findAll(unwrap_tag, attrs={'class': unwrap_class})
-                            for unwrap_match in unwrap_matches:
-                                unwrap_match.unwrap()
+                                tags_to_transform = main.findAll(old_tag, attrs={'class': old_class})
+                                for tag_to_transform in tags_to_transform:
+                                    tag_to_transform.name = new_tag
+                                    tag_to_transform["class"] = new_class
+                                    tag_to_transform.transformed = True
                         for tag in main():
                             # Fix for hardcoded index.html's
                             if tag.name == "a":
