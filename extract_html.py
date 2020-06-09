@@ -23,7 +23,7 @@ with open("class_transformations.json", "r") as json_file:
 class_dict = dict()
 image_dict = dict()
 href_list = list()
-href_csv = [["href", "dirname"]]
+href_csv = []
 
 
 build_dirs = {
@@ -218,6 +218,8 @@ with open("class_dict.json", "w") as json_file:
     json.dump(class_dict, json_file, indent=4)
 
 with open("href_list.csv", "w") as txt_file:
+    href_csv.sort(key=lambda x: x[0])
+    href_csv.insert(0, ["href", "dirname"])
     csvwriter = csv.writer(txt_file, delimiter=',')
     csvwriter.writerows(href_csv)
 
