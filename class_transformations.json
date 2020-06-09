@@ -61,6 +61,10 @@
     {
       "before": {"tag": "div", "class": ["highlight"]},
       "after": {"tag": "code", "class": []}
+    },
+    {
+      "before": {"tag": "div", "class": ["text-with-image"]},
+      "after": {"tag": "p", "class": []}
     }
   ],
   "unwrap_by_parent_last": [
