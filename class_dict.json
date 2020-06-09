@@ -1849,16 +1849,7 @@
             "section": "IATI-Guidance/en/_build/dirhtml",
             "highlight-xml": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "highlight": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "None": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "toctree-wrapper|compound": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/decimal-upgrade-to-2-03",
-            "contents|topic": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "line-block": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/decimal-upgrade-to-1-05",
-            "line": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/decimal-upgrade-to-1-05",
-            "first|last|highlight-xml": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "last|highlight-xml": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "first|line-block": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-03/1-03-changes",
-            "highlight-json": "IATI-Guidance/en/_build/dirhtml/to-move/old-datastore/reference/structure-of-data",
-            "code|highlight-default": "IATI-Guidance/en/_build/dirhtml/to-move/developer-documentation/codelist-api"
+            "None": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
         "h1": {
             "None": "IATI-Guidance/en/_build/dirhtml"
@@ -1868,26 +1859,22 @@
             "reference|external": "IATI-Guidance/en/_build/dirhtml",
             "reference|internal": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "footnote-reference": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "fn-backref": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "None": "IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend",
-            "toc-backref": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes"
+            "None": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "fn-backref": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
         "p": {
             "None": "IATI-Guidance/en/_build/dirhtml",
             "first": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "last": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "topic-title|first": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes"
+            "last": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
         },
         "ul": {
             "simple": "IATI-Guidance/en/_build/dirhtml",
-            "None": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "first|last": "IATI-Guidance/en/_build/dirhtml/related-data",
-            "first|last|simple": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/decimal-upgrade-to-2-03",
-            "first": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+            "None": "IATI-Guidance/en/_build/dirhtml/countries-regions",
+            "first|last|simple": "IATI-Guidance/en/_build/dirhtml/sub-national-locations",
+            "first|last": "IATI-Guidance/en/_build/dirhtml/related-data"
         },
         "li": {
-            "None": "IATI-Guidance/en/_build/dirhtml",
-            "toctree-l1": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/integer-upgrade-to-2-01"
+            "None": "IATI-Guidance/en/_build/dirhtml"
         },
         "span": {
             "None": "IATI-Guidance/en/_build/dirhtml",
@@ -1896,17 +1883,7 @@
             "nt": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "na": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "s": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "problematic": "IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend",
-            "xref|std|std-doc": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "xref|std|std-ref": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "cp": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "caption-text": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/noncore-codelist-changelog",
-            "c": "IATI-Guidance/en/_build/dirhtml/to-move/old-datastore/reference/structure-of-data",
-            "p": "IATI-Guidance/en/_build/dirhtml/to-move/old-datastore/reference/metadata-api",
-            "s2": "IATI-Guidance/en/_build/dirhtml/to-move/old-datastore/reference/metadata-api",
-            "mi": "IATI-Guidance/en/_build/dirhtml/to-move/old-datastore/reference/metadata-api",
-            "n": "IATI-Guidance/en/_build/dirhtml/to-move/developer-documentation/codelist-api",
-            "o": "IATI-Guidance/en/_build/dirhtml/to-move/developer-documentation/codelist-api"
+            "problematic": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
         "h2": {
             "None": "IATI-Guidance/en/_build/dirhtml/crs-fss"
@@ -1923,6 +1900,7 @@
         "table": {
             "colwidths-given|docutils": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "docutils|footnote": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "first|docutils|field-list": "IATI-Guidance/en/_build/dirhtml/sub-national-locations",
             "docutils": "IATI-Guidance/en/_build/dirhtml/activity-budgets"
         },
         "colgroup": {
@@ -1930,7 +1908,9 @@
         },
         "col": {
             "None": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "label": "IATI-Guidance/en/_build/dirhtml/covid-19"
+            "label": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "field-name": "IATI-Guidance/en/_build/dirhtml/sub-national-locations",
+            "field-body": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
         },
         "thead": {
             "None": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
@@ -1938,17 +1918,20 @@
         "tr": {
             "row-odd": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "row-even": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "None": "IATI-Guidance/en/_build/dirhtml/covid-19"
+            "None": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "field-odd|field": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
         },
         "th": {
-            "head": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
+            "head": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
+            "field-name": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
         },
         "tbody": {
             "None": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
         },
         "td": {
             "None": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "label": "IATI-Guidance/en/_build/dirhtml/covid-19"
+            "label": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "field-body": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
         },
         "em": {
             "None": "IATI-Guidance/en/_build/dirhtml/results"
@@ -1957,156 +1940,26 @@
             "docutils": "IATI-Guidance/en/_build/dirhtml/sdg-guidance"
         },
         "ol": {
-            "arabic|simple": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "first|last|loweralpha": "IATI-Guidance/en/_build/dirhtml/to-move/how-we-manage-the-standard/upgrade-process"
+            "arabic|simple": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
         "blockquote": {
             "None": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
-        "dl": {
-            "first|docutils": "IATI-Guidance/en/_build/dirhtml/related-data",
-            "docutils": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
-        },
-        "dt": {
-            "None": "IATI-Guidance/en/_build/dirhtml/related-data"
-        },
-        "dd": {
-            "None": "IATI-Guidance/en/_build/dirhtml/related-data"
-        },
         "cite": {
-            "None": "IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend"
-        },
-        "h3": {
-            "None": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes"
-        },
-        "h4": {
-            "None": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes"
-        },
-        "caption": {
-            "None": "IATI-Guidance/en/_build/dirhtml/to-move/upgrade-changelogs/noncore-codelist-changelog"
-        }
-    },
-    "upgrades": {
-        "div": {
-            "section": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "toctree-wrapper|compound": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
-            "contents|topic": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "highlight-xml": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "highlight": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "line-block": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-05",
-            "line": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-05",
-            "first|last|highlight-xml": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "last|highlight-xml": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "first|line-block": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-03/1-03-changes"
-        },
-        "h1": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs"
-        },
-        "a": {
-            "headerlink": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "reference|internal": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "reference|external": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
-            "toc-backref": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "p": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "topic-title|first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "last": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary"
-        },
-        "ul": {
-            "simple": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "first|last|simple": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
-        },
-        "li": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "toctree-l1": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01"
-        },
-        "span": {
-            "doc": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "xref|std|std-doc": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "pre": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes",
-            "xref|std|std-ref": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "nt": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "na": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "s": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "cp": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "caption-text": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
-            "problematic": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "strong": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "h2": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "table": {
-            "colwidths-given|docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
-            "docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02"
-        },
-        "colgroup": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "col": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "thead": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "tr": {
-            "row-odd": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
-            "row-even": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "th": {
-            "head": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "tbody": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "td": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "h3": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes"
-        },
-        "blockquote": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes"
-        },
-        "code": {
-            "docutils|literal": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes"
+            "None": "IATI-Guidance/en/_build/dirhtml/countries-regions"
         },
         "dl": {
-            "docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "first|docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+            "docutils": "IATI-Guidance/en/_build/dirhtml/sub-national-locations",
+            "first|docutils": "IATI-Guidance/en/_build/dirhtml/related-data"
         },
         "dt": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+            "None": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
         },
         "dd": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
-        },
-        "pre": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
-        },
-        "em": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
-        },
-        "h4": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes"
-        },
-        "caption": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "ol": {
-            "arabic|simple": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process",
-            "first|last|loweralpha": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process"
+            "None": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
         }
     },
+    "upgrades": {},
     "developer-docs": {
         "div": {
             "section": "IATI-Developer-Documentation/_build/dirhtml",
@@ -2115,10 +1968,7 @@
             "highlight-xml": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/structure-of-data",
             "highlight": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/structure-of-data",
             "highlight-json": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/structure-of-data",
-            "highlight-xquery": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "code|highlight-default": "IATI-Developer-Documentation/_build/dirhtml/codelist-api",
-            "line-block": "IATI-Developer-Documentation/_build/dirhtml/codelist-api",
-            "line": "IATI-Developer-Documentation/_build/dirhtml/codelist-api"
+            "highlight-xquery": "IATI-Developer-Documentation/_build/dirhtml/xquery"
         },
         "h1": {
             "None": "IATI-Developer-Documentation/_build/dirhtml"
@@ -2135,8 +1985,7 @@
         "ul": {
             "simple": "IATI-Developer-Documentation/_build/dirhtml",
             "None": "IATI-Developer-Documentation/_build/dirhtml",
-            "first|last": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api",
-            "first|last|simple": "IATI-Developer-Documentation/_build/dirhtml/codelist-api"
+            "first|last": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api"
         },
         "li": {
             "None": "IATI-Developer-Documentation/_build/dirhtml",
