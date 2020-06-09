@@ -192,7 +192,7 @@ for parent_slug, root_dir in build_dirs.items():
                                 href = tag.get("href", None)
                                 if href and (is_relative(href) and "index.htm" in href.split("/")[-1]):
                                     amended_href = "/".join(href.split("/")[:-1])
-                                    setattr(tag, "href", amended_href)
+                                    tag["href"] = amended_href
                             if tag.name == "img":
                                 src = tag.get("src", None)
                                 src_basename = os.path.basename(src)
