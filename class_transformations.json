@@ -69,5 +69,8 @@
       "child": {"tag": "div", "class": []},
       "unwrap": "child"
     }
+  ],
+  "unwrap_last": [
+    {"tag": "div", "class": []}
   ]
 }

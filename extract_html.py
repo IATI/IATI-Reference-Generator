@@ -162,6 +162,15 @@ for parent_slug, root_dir in build_dirs.items():
                                 else:
                                     for child_match in child_matches:
                                         child_match.unwrap()
+                        for class_unwrap in class_transformations["unwrap_last"]:
+                            unwrap_tag = class_unwrap["tag"]
+                            unwrap_class = class_unwrap["class"]
+                            if len(unwrap_class) == 0:
+                                unwrap_matches = main.findAll(unwrap_tag)
+                            else:
+                                unwrap_matches = main.findAll(unwrap_tag, attrs={'class': unwrap_class})
+                            for unwrap_match in unwrap_matches:
+                                unwrap_match.unwrap()
                         for tag in main():
                             # Fix for hardcoded index.html's
                             if tag.name == "a":
