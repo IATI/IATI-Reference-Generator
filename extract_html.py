@@ -196,7 +196,7 @@ for parent_slug, root_dir in build_dirs.items():
                             if tag.name == "img":
                                 src = tag.get("src", None)
                                 src_basename = os.path.basename(src)
-                                amended_src = "/media/original_images/{}".format(src_basename)
+                                amended_src = "/media/original_images/{}/".format(src_basename)
                                 tag["src"] = amended_src
                                 parent_href = tag.parent.get("href", None)  # For anchor wrapped img tags
                                 if parent_href:
