@@ -2,7 +2,12 @@ import os
 import shutil
 import json
 import csv
+from six.moves.urllib.parse import urlparse
 from bs4 import BeautifulSoup
+
+
+def is_relative(url):
+    return not bool(urlparse(url).netloc)
 
 
 if os.path.exists("output.zip"):
@@ -185,7 +190,7 @@ for parent_slug, root_dir in build_dirs.items():
                             # Fix for hardcoded index.html's
                             if tag.name == "a":
                                 href = tag.get("href", None)
-                                if href and (href[0] == "." or href[0] == "/" and "index.htm" in href.split("/")[-1]):
+                                if href and (is_relative(href) and "index.htm" in href.split("/")[-1]):
                                     amended_href = "/".join(href.split("/")[:-1])
                                     setattr(tag, "href", amended_href)
                             if tag.name == "img":
