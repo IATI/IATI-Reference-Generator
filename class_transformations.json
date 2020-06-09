@@ -28,7 +28,8 @@
     {"tag": "span", "class": ["mi"]},
     {"tag": "span", "class": ["k"]},
     {"tag": "span", "class": ["nb"]},
-    {"tag": "span", "class": ["s2"]}
+    {"tag": "span", "class": ["s2"]},
+    {"tag": "article", "class": []}
   ],
   "transform_by_parent": [
     {
