@@ -62,5 +62,12 @@
       "before": {"tag": "div", "class": ["highlight"]},
       "after": {"tag": "code", "class": []}
     }
+  ],
+  "unwrap_by_parent_last": [
+    {
+      "parent": {"tag": "div", "class": []},
+      "child": {"tag": "div", "class": []},
+      "unwrap": "child"
+    }
   ]
 }
