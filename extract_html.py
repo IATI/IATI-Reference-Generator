@@ -4,6 +4,11 @@ import json
 import csv
 from six.moves.urllib.parse import urlparse
 from bs4 import BeautifulSoup
+from spellchecker import SpellChecker
+
+
+spell = SpellChecker()
+spell.word_frequency.load_text_file('./known_words.txt')
 
 
 def is_relative(url):
@@ -24,6 +29,7 @@ class_dict = dict()
 image_dict = dict()
 href_list = list()
 href_csv = []
+word_csv = []
 
 
 build_dirs = {
@@ -79,6 +85,9 @@ for parent_slug, root_dir in build_dirs.items():
                             if tag_class:
                                 if "|".join(tag_class) not in class_dict[parent_slug][tag.name].keys():
                                     class_dict[parent_slug][tag.name]["|".join(tag_class)] = dirname
+                            misspelled = spell.unknown(spell.split_words(tag.text))
+                            for m_word in misspelled:
+                                word_csv.append([m_word, dirname])
                         for class_unwrap in class_transformations["unwrap_by_parent"]:
                             parent_tag = class_unwrap["parent"]["tag"]
                             parent_class = class_unwrap["parent"]["class"]
@@ -222,5 +231,11 @@ with open("href_list.csv", "w") as txt_file:
     href_csv.insert(0, ["href", "dirname"])
     csvwriter = csv.writer(txt_file, delimiter=',')
     csvwriter.writerows(href_csv)
+
+with open("unknown_words.csv", "w") as txt_file:
+    word_csv.sort(key=lambda x: x[0])
+    word_csv.insert(0, ["word", "dirname"])
+    csvwriter = csv.writer(txt_file, delimiter=',')
+    csvwriter.writerows(word_csv)
 
 shutil.make_archive("output", "zip", "output")
