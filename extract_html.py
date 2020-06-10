@@ -86,7 +86,7 @@ for parent_slug, root_dir in build_dirs.items():
                             if tag_class:
                                 if "|".join(tag_class) not in class_dict[parent_slug][tag.name].keys():
                                     class_dict[parent_slug][tag.name]["|".join(tag_class)] = dirname
-                            misspelled = spell.unknown(spell.split_words(tag.text))
+                            misspelled = spell.unknown(spell.split_words(tag.get_text(separator=" ", strip=True)))
                             for m_word in misspelled:
                                 if dirname not in word_dict.keys():
                                     word_dict[dirname] = list()
