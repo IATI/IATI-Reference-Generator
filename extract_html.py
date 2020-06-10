@@ -29,6 +29,7 @@ class_dict = dict()
 image_dict = dict()
 href_list = list()
 href_csv = []
+word_dict = dict()
 word_csv = []
 
 
@@ -87,7 +88,11 @@ for parent_slug, root_dir in build_dirs.items():
                                     class_dict[parent_slug][tag.name]["|".join(tag_class)] = dirname
                             misspelled = spell.unknown(spell.split_words(tag.text))
                             for m_word in misspelled:
-                                word_csv.append([m_word, dirname])
+                                if dirname not in word_dict.keys():
+                                    word_dict[dirname] = list()
+                                if m_word not in word_dict[dirname]:
+                                    word_dict[dirname].append(m_word)
+                                    word_csv.append([m_word, dirname])
                         for class_unwrap in class_transformations["unwrap_by_parent"]:
                             parent_tag = class_unwrap["parent"]["tag"]
                             parent_class = class_unwrap["parent"]["class"]
