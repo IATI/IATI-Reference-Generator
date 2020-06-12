@@ -19,6 +19,8 @@ if os.path.exists("output.zip"):
     os.remove("output.zip")
 if os.path.isdir("output"):
     shutil.rmtree("output")
+if os.path.isdir("downloads"):
+    shutil.rmtree("downloads")
 
 
 with open("class_transformations.json", "r") as json_file:
@@ -46,6 +48,36 @@ build_dirs = {
     "upgrades": "IATI-Upgrades/en/_build/dirhtml",
     "developer-docs": "IATI-Developer-Documentation/_build/dirhtml"
 }
+
+download_folders = {
+    "203": {
+        "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/downloads/": "codelists/downloads",
+        "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/schema/downloads/": "schema/downloads"
+    },
+    "202": {
+        "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/downloads/": "codelists/downloads",
+        "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/schema/downloads/": "schema/downloads"
+    },
+    "201": {
+        "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/downloads/": "codelists/downloads",
+        "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/schema/downloads/": "schema/downloads"
+    },
+    "105": {
+        "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists/downloads/": "codelists/downloads",
+        "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema/downloads/": "schema/downloads"
+    },
+    "104": {
+        "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists/downloads/": "codelists/downloads",
+        "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema/downloads/": "schema/downloads"
+    },
+    "103": {},
+    "102": {},
+    "101": {},
+    "guidance": {},
+    "upgrades": {},
+    "developer-docs": {}
+}
+allowed_download_ext = [".csv", ".xml", ".json", ".xsd"]
 
 ignore_dirs = [
     "404",
@@ -228,6 +260,18 @@ for parent_slug, root_dir in build_dirs.items():
                         with open(output_path, 'w') as output_xml:
                             output_xml.write(str(main))
 
+
+for parent_slug, download_dict in download_folders.items():
+    for download_folder, download_suffix in download_dict.items():
+        for dirname, dirs, files in os.walk(download_folder, followlinks=True):
+            for filename in files:
+                if os.path.splitext(filename)[1].lower() in allowed_download_ext:
+                    download_output_dir = os.path.join("downloads", parent_slug, download_suffix, dirname[len(download_folder):])
+                    if not os.path.isdir(download_output_dir):
+                        os.makedirs(download_output_dir)
+                    shutil.copy(os.path.join(dirname, filename), os.path.join(download_output_dir, filename))
+
+
 with open("class_dict.json", "w") as json_file:
     json.dump(class_dict, json_file, indent=4)
 
@@ -244,3 +288,4 @@ with open("unknown_words.csv", "w") as txt_file:
     csvwriter.writerows(word_csv)
 
 shutil.make_archive("output", "zip", "output")
+shutil.make_archive("downloads", "zip", "downloads")
