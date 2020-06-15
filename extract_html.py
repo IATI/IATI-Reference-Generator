@@ -92,6 +92,7 @@ ignore_dirs = [
 
 
 download_path_dict = dict()
+referenced_downloads = list()
 for parent_slug, download_dict in download_folders.items():
     for download_folder, download_suffix in download_dict.items():
         for dirname, dirs, files in os.walk(download_folder, followlinks=True):
@@ -252,9 +253,12 @@ for parent_slug, root_dir in build_dirs.items():
                                 if href and (is_relative(href) and "index.htm" in href.split("/")[-1]):
                                     amended_href = "/".join(href.split("/")[:-1]) + "/"
                                     tag["href"] = amended_href
-                                if href and os.path.join(dirname, href) in download_path_dict.keys():
-                                    amended_href = download_path_dict[os.path.join(dirname, href)]
-                                    tag["href"] = amended_href
+                                if href:
+                                    relpath = os.path.relpath(os.path.join(dirname, href))
+                                    if relpath in download_path_dict.keys():
+                                        referenced_downloads.append(relpath)
+                                        amended_href = download_path_dict[relpath]
+                                        tag["href"] = amended_href
                             if tag.name == "img":
                                 src = tag.get("src", None)
                                 src_basename = os.path.basename(src)
@@ -275,6 +279,13 @@ for parent_slug, root_dir in build_dirs.items():
                             os.makedirs(output_dir)
                         with open(output_path, 'w') as output_xml:
                             output_xml.write(str(main))
+
+
+all_downloads = download_path_dict.keys()
+unreferenced_downloads = list(set(all_downloads) - set(referenced_downloads))
+for unreferenced_download in unreferenced_downloads:
+    copied_file = "." + download_path_dict[unreferenced_download]
+    os.remove(copied_file)
 
 
 with open("class_dict.json", "w") as json_file:
