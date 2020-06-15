@@ -101,8 +101,8 @@ for parent_slug, download_dict in download_folders.items():
                     download_output_dir = os.path.join("downloads", parent_slug, download_suffix, dirname[len(download_folder):])
                     if not os.path.isdir(download_output_dir):
                         os.makedirs(download_output_dir)
-                    shutil.copy(os.path.join(dirname, filename), os.path.join(download_output_dir, filename))
-                    download_path_dict[os.path.join(dirname, filename)] = os.path.join(download_output_dir, filename)
+                    shutil.copy(os.path.join(dirname, filename), os.path.join(download_output_dir, filename).lower())
+                    download_path_dict[os.path.join(dirname, filename)] = os.path.join(download_output_dir, filename).lower()
 
 
 for parent_slug, root_dir in build_dirs.items():
@@ -257,7 +257,7 @@ for parent_slug, root_dir in build_dirs.items():
                                     relpath = os.path.relpath(os.path.join(dirname, href))
                                     if relpath in download_path_dict.keys():
                                         referenced_downloads.append(relpath)
-                                        amended_href = "/en/" + download_path_dict[relpath]
+                                        amended_href = "/" + download_path_dict[relpath]
                                         tag["href"] = amended_href
                             if tag.name == "img":
                                 src = tag.get("src", None)
