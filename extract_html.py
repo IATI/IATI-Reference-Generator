@@ -91,6 +91,19 @@ ignore_dirs = [
 ]
 
 
+download_path_dict = dict()
+for parent_slug, download_dict in download_folders.items():
+    for download_folder, download_suffix in download_dict.items():
+        for dirname, dirs, files in os.walk(download_folder, followlinks=True):
+            for filename in files:
+                if os.path.splitext(filename)[1].lower() in allowed_download_ext:
+                    download_output_dir = os.path.join("downloads", parent_slug, download_suffix, dirname[len(download_folder):])
+                    if not os.path.isdir(download_output_dir):
+                        os.makedirs(download_output_dir)
+                    shutil.copy(os.path.join(dirname, filename), os.path.join(download_output_dir, filename))
+                    download_path_dict[os.path.join(dirname, filename)] = "/" + os.path.join(download_output_dir, filename)
+
+
 for parent_slug, root_dir in build_dirs.items():
     class_dict[parent_slug] = dict()
     for dirname, dirs, files in os.walk(root_dir, followlinks=True):
@@ -239,6 +252,9 @@ for parent_slug, root_dir in build_dirs.items():
                                 if href and (is_relative(href) and "index.htm" in href.split("/")[-1]):
                                     amended_href = "/".join(href.split("/")[:-1])
                                     tag["href"] = amended_href
+                                if os.path.join(dirname, href) in download_path_dict.keys():
+                                    amended_href = download_path_dict[os.path.join(dirname, href)]
+                                    tag["href"] = amended_href
                             if tag.name == "img":
                                 src = tag.get("src", None)
                                 src_basename = os.path.basename(src)
@@ -259,17 +275,6 @@ for parent_slug, root_dir in build_dirs.items():
                             os.makedirs(output_dir)
                         with open(output_path, 'w') as output_xml:
                             output_xml.write(str(main))
-
-
-for parent_slug, download_dict in download_folders.items():
-    for download_folder, download_suffix in download_dict.items():
-        for dirname, dirs, files in os.walk(download_folder, followlinks=True):
-            for filename in files:
-                if os.path.splitext(filename)[1].lower() in allowed_download_ext:
-                    download_output_dir = os.path.join("downloads", parent_slug, download_suffix, dirname[len(download_folder):])
-                    if not os.path.isdir(download_output_dir):
-                        os.makedirs(download_output_dir)
-                    shutil.copy(os.path.join(dirname, filename), os.path.join(download_output_dir, filename))
 
 
 with open("class_dict.json", "w") as json_file:
