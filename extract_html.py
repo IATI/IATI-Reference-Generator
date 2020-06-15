@@ -250,7 +250,7 @@ for parent_slug, root_dir in build_dirs.items():
                             if tag.name == "a":
                                 href = tag.get("href", None)
                                 if href and (is_relative(href) and "index.htm" in href.split("/")[-1]):
-                                    amended_href = "/".join(href.split("/")[:-1])
+                                    amended_href = "/".join(href.split("/")[:-1]) + "/"
                                     tag["href"] = amended_href
                                 if href and os.path.join(dirname, href) in download_path_dict.keys():
                                     amended_href = download_path_dict[os.path.join(dirname, href)]
@@ -258,7 +258,7 @@ for parent_slug, root_dir in build_dirs.items():
                             if tag.name == "img":
                                 src = tag.get("src", None)
                                 src_basename = os.path.basename(src)
-                                amended_src = "/media/original_images/{}/".format(src_basename)
+                                amended_src = "/media/original_images/{}".format(src_basename)
                                 tag["src"] = amended_src
                                 parent_href = tag.parent.get("href", None)  # For anchor wrapped img tags
                                 if parent_href:
