@@ -252,7 +252,7 @@ for parent_slug, root_dir in build_dirs.items():
                                 if href and (is_relative(href) and "index.htm" in href.split("/")[-1]):
                                     amended_href = "/".join(href.split("/")[:-1])
                                     tag["href"] = amended_href
-                                if os.path.join(dirname, href) in download_path_dict.keys():
+                                if href and os.path.join(dirname, href) in download_path_dict.keys():
                                     amended_href = download_path_dict[os.path.join(dirname, href)]
                                     tag["href"] = amended_href
                             if tag.name == "img":
