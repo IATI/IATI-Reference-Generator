@@ -102,7 +102,7 @@ for parent_slug, download_dict in download_folders.items():
                     if not os.path.isdir(download_output_dir):
                         os.makedirs(download_output_dir)
                     shutil.copy(os.path.join(dirname, filename), os.path.join(download_output_dir, filename))
-                    download_path_dict[os.path.join(dirname, filename)] = "/" + os.path.join(download_output_dir, filename)
+                    download_path_dict[os.path.join(dirname, filename)] = os.path.join(download_output_dir, filename)
 
 
 for parent_slug, root_dir in build_dirs.items():
@@ -257,7 +257,7 @@ for parent_slug, root_dir in build_dirs.items():
                                     relpath = os.path.relpath(os.path.join(dirname, href))
                                     if relpath in download_path_dict.keys():
                                         referenced_downloads.append(relpath)
-                                        amended_href = download_path_dict[relpath]
+                                        amended_href = "/en/" + download_path_dict[relpath]
                                         tag["href"] = amended_href
                             if tag.name == "img":
                                 src = tag.get("src", None)
@@ -284,7 +284,7 @@ for parent_slug, root_dir in build_dirs.items():
 all_downloads = download_path_dict.keys()
 unreferenced_downloads = list(set(all_downloads) - set(referenced_downloads))
 for unreferenced_download in unreferenced_downloads:
-    copied_file = "." + download_path_dict[unreferenced_download]
+    copied_file = download_path_dict[unreferenced_download]
     os.remove(copied_file)
 
 
