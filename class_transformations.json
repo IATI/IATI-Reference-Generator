@@ -66,6 +66,10 @@
     {
       "before": {"tag": "div", "class": ["text-with-image"]},
       "after": {"tag": "p", "class": []}
+    },
+    {
+      "before": {"tag": "pre", "class": []},
+      "after": {"tag": "code", "class": []}
     }
   ],
   "unwrap_by_parent_last": [
@@ -78,6 +82,10 @@
   "transform_last": [
     {
       "before": {"tag": "div", "class": []},
+      "after": {"tag": "p", "class": []}
+    },
+    {
+      "before": {"tag": "span", "class": []},
       "after": {"tag": "p", "class": []}
     }
   ]
