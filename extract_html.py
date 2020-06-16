@@ -139,6 +139,15 @@ for parent_slug, root_dir in build_dirs.items():
                                 if m_word not in word_dict[dirname]:
                                     word_dict[dirname].append(m_word)
                                     word_csv.append([m_word, dirname])
+                        for tag_to_remove in class_transformations["remove_tags"]:
+                            remove_tag = tag_to_remove["tag"]
+                            remove_class = tag_to_remove["class"]
+                            if len(remove_class) == 0:
+                                remove_matches = main.findAll(remove_tag)
+                            else:
+                                remove_matches = main.findAll(remove_tag, attrs={'class': remove_class})
+                            for remove_match in remove_matches:
+                                remove_match.decompose()
                         for class_unwrap in class_transformations["unwrap_by_parent"]:
                             parent_tag = class_unwrap["parent"]["tag"]
                             parent_class = class_unwrap["parent"]["class"]

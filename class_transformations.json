@@ -1,4 +1,7 @@
 {
+  "remove_tags": [
+    {"tag": "div", "class": ["level2"]}
+  ],
   "unwrap_by_parent": [
     {
       "parent": {"tag": "div", "class": ["line-block"]},
