@@ -2089,7 +2089,7 @@
             "first|last|loweralpha": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process"
         }
     },
-    "developer-docs": {
+    "developer": {
         "div": {
             "section": "IATI-Developer-Documentation/_build/dirhtml",
             "toctree-wrapper|compound": "IATI-Developer-Documentation/_build/dirhtml",
