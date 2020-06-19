@@ -68,8 +68,7 @@ def rewrite_local_href(url, parent_slug):
             return "archive_downloads/" + slug_remainder
         return url
     else:
-        return url
-    return url
+        return BASE_DOMAIN
 
 
 if os.path.exists("output.zip"):
