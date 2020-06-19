@@ -15,6 +15,41 @@ def is_relative(url):
     return not bool(urlparse(url).netloc)
 
 
+def is_local(url):
+    parsed_url = urlparse(url)
+    return parsed_url.netloc in ["reference.iatistandard.org", "iatistandard.org"]
+
+
+local_url_map = {
+    "101": "en/iati-standard/",
+    "102": "en/iati-standard/",
+    "103": "en/iati-standard/",
+    "104": "en/iati-standard/",
+    "105": "en/iati-standard/",
+    "201": "en/iati-standard/",
+    "202": "en/iati-standard/",
+    "203": "en/iati-standard/",
+    "guidance": "en/guidance/standard-guidance",
+    "upgrades": "en/iati-standard/",
+    "developer-docs": "en/guidance/standard-guidance"
+}
+
+
+def rewrite_local_href(url, parent_slug):
+    BASE_DOMAIN = "https://iatistandard.org/"
+    parsed_url = urlparse(url)
+    parsed_path = parsed_url.path
+    if parsed_path:
+        # parsed_path_split = parsed_path.split("/")
+        # root_slug = parsed_path_split[1]
+        # slug_remainder = parsed_path_split[2:]
+
+        return url
+    else:
+        return url
+    return url
+
+
 if os.path.exists("output.zip"):
     os.remove("output.zip")
 if os.path.isdir("output"):
@@ -123,7 +158,7 @@ for parent_slug, root_dir in build_dirs.items():
                         for tag in main():
                             if tag.name == "a":
                                 href = tag.get("href", None)
-                                if href and href not in href_list and "iatistandard.org" in href:
+                                if href and href not in href_list and is_local(href):
                                     href_list.append(href)
                                     href_csv.append([href, dirname])
                             if tag.name not in class_dict[parent_slug].keys():
@@ -256,18 +291,20 @@ for parent_slug, root_dir in build_dirs.items():
                                     tag_to_transform["class"] = new_class
                                     tag_to_transform.transformed = True
                         for tag in main():
-                            # Fix for hardcoded index.html's
+                            # Fix for hardcoded index.html's, images, references to old url
                             if tag.name == "a":
                                 href = tag.get("href", None)
-                                if href and (is_relative(href) and "index.htm" in href.split("/")[-1]):
-                                    amended_href = "/".join(href.split("/")[:-1]) + "/"
-                                    tag["href"] = amended_href
                                 if href:
-                                    relpath = os.path.relpath(os.path.join(dirname, href))
+                                    amended_href = href
+                                    if is_local(amended_href):
+                                        amended_href = rewrite_local_href(amended_href, parent_slug)
+                                    if is_relative(amended_href) and "index.htm" in amended_href.split("/")[-1]:
+                                        amended_href = "/".join(amended_href.split("/")[:-1]) + "/"
+                                    relpath = os.path.relpath(os.path.join(dirname, amended_href))
                                     if relpath in download_path_dict.keys():
                                         referenced_downloads.append(relpath)
                                         amended_href = "/" + download_path_dict[relpath]
-                                        tag["href"] = amended_href
+                                    tag["href"] = amended_href
                             if tag.name == "img":
                                 src = tag.get("src", None)
                                 src_basename = os.path.basename(src)
