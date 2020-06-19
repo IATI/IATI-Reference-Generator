@@ -2,6 +2,7 @@ import os
 import shutil
 import json
 import csv
+import re
 from six.moves.urllib.parse import urlparse
 from bs4 import BeautifulSoup
 from spellchecker import SpellChecker
@@ -21,29 +22,50 @@ def is_local(url):
 
 
 local_url_map = {
-    "101": "en/iati-standard/",
-    "102": "en/iati-standard/",
-    "103": "en/iati-standard/",
-    "104": "en/iati-standard/",
-    "105": "en/iati-standard/",
-    "201": "en/iati-standard/",
-    "202": "en/iati-standard/",
-    "203": "en/iati-standard/",
-    "guidance": "en/guidance/standard-guidance",
-    "upgrades": "en/iati-standard/",
-    "developer-docs": "en/guidance/standard-guidance"
+    "101": "en/iati-standard/101/",
+    "102": "en/iati-standard/102/",
+    "103": "en/iati-standard/103/",
+    "104": "en/iati-standard/104/",
+    "105": "en/iati-standard/105/",
+    "201": "en/iati-standard/201/",
+    "202": "en/iati-standard/202/",
+    "203": "en/iati-standard/203/",
+    "introduction": "en/iati-standard/203/",
+    "reference": "en/iati-standard/203/",
+    "organisation-identifiers": "en/iati-standard/203/organisation-identifiers/",
+    "activity-standard": "en/iati-standard/203/activity-standard/",
+    "organisation-standard": "en/iati-standard/203/organisation-standard/",
+    "namespaces-extensions": "en/iati-standard/203/namespaces-extensions/",
+    "codelists": "en/iati-standard/203/codelists/",
+    "codelists-guides": "en/iati-standard/203/codelists-guides/",
+    "schema": "en/iati-standard/203/schema/",
+    "rulesets": "en/iati-standard/203/rulesets/",
+    "upgrades": "en/iati-standard/upgrades/",
+    "guidance": "en/guidance/standard-guidance/",
+    "developer": "en/guidance/developer/",
+    "en": "en/",
+    "documents": "documents/",
+    "org-ref": "en/iati-standard/203/organisation-identifiers/"
 }
 
 
 def rewrite_local_href(url, parent_slug):
-    BASE_DOMAIN = "https://iatistandard.org/"
+    BASE_DOMAIN = "https://dev.iatistandard.org/"
     parsed_url = urlparse(url)
     parsed_path = parsed_url.path
+    parsed_path = re.sub("/{2,}", "/", parsed_path)
     if parsed_path:
-        # parsed_path_split = parsed_path.split("/")
-        # root_slug = parsed_path_split[1]
-        # slug_remainder = parsed_path_split[2:]
-
+        parsed_path_split = parsed_path.split("/")
+        root_slug = parsed_path_split[1]
+        slug_remainder = ""
+        if len(parsed_path_split) > 2:
+            slug_remainder = "/".join(parsed_path_split[2:])
+        if root_slug in local_url_map.keys():
+            if slug_remainder.startswith("upgrades"):  # Special case where we've moved upgrades out of version roots
+                root_slug = "upgrades"
+            return BASE_DOMAIN + local_url_map[root_slug] + slug_remainder
+        if root_slug == "downloads":  # Special case for archived downloads
+            return "archive_downloads/" + slug_remainder
         return url
     else:
         return url
@@ -81,7 +103,7 @@ build_dirs = {
     "101": "IATI-Standard-SSOT-version-1.01/101.new",
     "guidance": "IATI-Guidance/en/_build/dirhtml",
     "upgrades": "IATI-Upgrades/en/_build/dirhtml",
-    "developer-docs": "IATI-Developer-Documentation/_build/dirhtml"
+    "developer": "IATI-Developer-Documentation/_build/dirhtml"
 }
 
 download_folders = {
@@ -110,9 +132,12 @@ download_folders = {
     "101": {},
     "guidance": {},
     "upgrades": {},
-    "developer-docs": {}
+    "developer": {},
+    "archive": {
+        "archive_downloads/": "downloads"
+    }
 }
-allowed_download_ext = [".csv", ".xml", ".json", ".xsd"]
+allowed_download_ext = [".csv", ".xml", ".json", ".xsd", ".txt", ".xslt", ".odt", ".doc"]
 
 ignore_dirs = [
     "404",
@@ -138,7 +163,6 @@ for parent_slug, download_dict in download_folders.items():
                         os.makedirs(download_output_dir)
                     shutil.copy(os.path.join(dirname, filename), os.path.join(download_output_dir, filename).lower())
                     download_path_dict[os.path.join(dirname, filename)] = os.path.join(download_output_dir, filename).lower()
-
 
 for parent_slug, root_dir in build_dirs.items():
     class_dict[parent_slug] = dict()
@@ -304,6 +328,9 @@ for parent_slug, root_dir in build_dirs.items():
                                     if relpath in download_path_dict.keys():
                                         referenced_downloads.append(relpath)
                                         amended_href = "/" + download_path_dict[relpath]
+                                    if amended_href in download_path_dict.keys():
+                                        referenced_downloads.append(amended_href)
+                                        amended_href = "/" + download_path_dict[amended_href]
                                     tag["href"] = amended_href
                             if tag.name == "img":
                                 src = tag.get("src", None)
