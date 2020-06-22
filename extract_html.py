@@ -40,7 +40,7 @@ local_url_map = {
     "codelists-guides": "en/iati-standard/203/codelists-guides/",
     "schema": "en/iati-standard/203/schema/",
     "rulesets": "en/iati-standard/203/rulesets/",
-    "upgrades": "en/iati-standard/upgrades/",
+    "upgrades": "en/iati-standard/upgrades/upgrade-changelogs/",
     "guidance": "en/guidance/standard-guidance/",
     "developer": "en/guidance/developer/",
     "en": "en/",
