@@ -63,6 +63,7 @@ def rewrite_local_href(url, parent_slug):
         if root_slug in local_url_map.keys():
             if slug_remainder.startswith("upgrades"):  # Special case where we've moved upgrades out of version roots
                 root_slug = "upgrades"
+                slug_remainder = "/".join(slug_remainder.split("/")[1:])
             return BASE_DOMAIN + local_url_map[root_slug] + slug_remainder
         if root_slug == "downloads":  # Special case for archived downloads
             return "archive_downloads/" + slug_remainder
