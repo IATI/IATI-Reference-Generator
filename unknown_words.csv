@@ -29,7 +29,6 @@ anactivity,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 anddonors,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 anisation,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 aplha,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/2-01-headlines
-aplha,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/2-01-headlines
 arereported,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 ascontent,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 asscending,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result/indicator
@@ -65,7 +64,6 @@ codesshould,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 coldelist,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists-guides/codelist-api
 coldelist,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists-guides/codelist-api
 comercial,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog
-comercial,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog
 commited,IATI-Standard-SSOT-version-1.03/103.new/getting-started/financial-data/transactions
 commited,IATI-Standard-SSOT-version-1.02/102.new/guides/financial-data/transactions
 contactperson,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
@@ -190,7 +188,6 @@ multiliateral,IATI-Standard-SSOT-version-1.01/101.new/organisation-standard/budg
 musthave,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 nopercentage,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 noteable,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog
-noteable,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog
 occurance,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result/indicator/baseline
 ofofficially,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 opinoin,IATI-Standard-SSOT-version-1.03/103.new/updates/decimal-upgrade-to-1-04
@@ -220,7 +217,6 @@ organsiations,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/O
 organsiations,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency
 organsiations,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency
 orginial,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog
-orginial,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog
 ormissing,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 oroutflow,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 oryear,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
@@ -324,7 +320,6 @@ singlular,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standa
 specificactivity,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 specificcountry,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 ssubdivision,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
-stanard,IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard
 standar,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 subemelement,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location
 subemelement,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location
