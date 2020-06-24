@@ -74,10 +74,6 @@
     {
       "before": {"tag": "div", "class": ["text-with-image"]},
       "after": {"tag": "p", "class": []}
-    },
-    {
-      "before": {"tag": "pre", "class": []},
-      "after": {"tag": "code", "class": []}
     }
   ],
   "unwrap_by_parent_last": [
