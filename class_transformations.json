@@ -17,6 +17,11 @@
       "parent": {"tag": "div", "class": ["code", "highlight-default"]},
       "child": {"tag": "div", "class": ["highlight"]},
       "unwrap": "parent"
+    },
+    {
+      "parent": {"tag": "div", "class": ["highlight-xml"]},
+      "child": {"tag": "div", "class": ["highlight"]},
+      "unwrap": "child"
     }
   ],
   "unwrap": [
