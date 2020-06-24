@@ -345,9 +345,10 @@ for parent_slug, root_dir in build_dirs.items():
                                 if parent_href:
                                     if os.path.basename(parent_href) == src_basename:
                                         tag.parent["href"] = amended_src
-                            del tag["style"]
-                            if not tag.transformed:
-                                del tag["class"]
+                            if tag is not None:
+                                del tag["style"]
+                                if not tag.transformed:
+                                    del tag["class"]
                         for meta_tag in meta:
                             main.append(meta_tag)
                         output_dir = os.path.join("output", parent_slug, *dir_split[root_len:])
