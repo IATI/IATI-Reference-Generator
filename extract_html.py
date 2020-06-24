@@ -198,9 +198,6 @@ for parent_slug, root_dir in build_dirs.items():
                                 if m_word not in word_dict[dirname]:
                                     word_dict[dirname].append(m_word)
                                     word_csv.append([m_word, dirname])
-                        if tag.name in ["p", "span"]:
-                            if len(tag.get_text(strip=True)) == 0:
-                                tag.decompose()
                         for tag_to_remove in class_transformations["remove_tags"]:
                             remove_tag = tag_to_remove["tag"]
                             remove_class = tag_to_remove["class"]
@@ -318,6 +315,9 @@ for parent_slug, root_dir in build_dirs.items():
                                     tag_to_transform["class"] = new_class
                                     tag_to_transform.transformed = True
                         for tag in main():
+                            if tag.name in ["p", "span"]:
+                                if len(tag.get_text(strip=True)) == 0:
+                                    tag.decompose()
                             # Fix for hardcoded index.html's, images, references to old url
                             if tag.name == "a":
                                 href = tag.get("href", None)
