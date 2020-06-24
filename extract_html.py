@@ -198,6 +198,9 @@ for parent_slug, root_dir in build_dirs.items():
                                 if m_word not in word_dict[dirname]:
                                     word_dict[dirname].append(m_word)
                                     word_csv.append([m_word, dirname])
+                        if tag.name in ["p", "span"]:
+                            if len(tag.get_text(strip=True)) == 0:
+                                tag.decompose()
                         for tag_to_remove in class_transformations["remove_tags"]:
                             remove_tag = tag_to_remove["tag"]
                             remove_class = tag_to_remove["class"]
