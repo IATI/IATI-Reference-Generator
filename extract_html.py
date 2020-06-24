@@ -315,6 +315,10 @@ for parent_slug, root_dir in build_dirs.items():
                                     tag_to_transform["class"] = new_class
                                     tag_to_transform.transformed = True
                         for tag in main():
+                            if tag.name in ["p", "span"]:
+                                if len(tag.get_text(strip=True)) == 0:
+                                    tag.decompose()
+                                    continue
                             # Fix for hardcoded index.html's, images, references to old url
                             if tag.name == "a":
                                 href = tag.get("href", None)
@@ -344,9 +348,6 @@ for parent_slug, root_dir in build_dirs.items():
                             del tag["style"]
                             if not tag.transformed:
                                 del tag["class"]
-                            if tag.name in ["p", "span"]:
-                                if len(tag.get_text(strip=True)) == 0:
-                                    tag.decompose()
                         for meta_tag in meta:
                             main.append(meta_tag)
                         output_dir = os.path.join("output", parent_slug, *dir_split[root_len:])
