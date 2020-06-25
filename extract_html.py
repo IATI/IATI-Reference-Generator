@@ -319,6 +319,10 @@ for parent_slug, root_dir in build_dirs.items():
                                 if len(tag.get_text(strip=True)) == 0:
                                     tag.decompose()
                                     continue
+                            if tag.name in ["a"]:
+                                if tag.get_text(strip=True) == "¶":
+                                    tag.decompose()
+                                    continue
                             # Fix for hardcoded index.html's, images, references to old url
                             if tag.name == "a":
                                 href = tag.get("href", None)
