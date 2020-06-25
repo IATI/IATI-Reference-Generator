@@ -15,30 +15,35 @@ fi
 cd IATI-Standard-SSOT-version-2.03
 git submodule init
 git submodule update
+rm -rf IATI-Extra-Documentation/en/_build
 ./gen.sh
 cd ..
 
 cd IATI-Standard-SSOT-version-2.02
 git submodule init
 git submodule update
+rm -rf IATI-Extra-Documentation/en/_build
 ./gen.sh
 cd ..
 
 cd IATI-Standard-SSOT-version-2.01
 git submodule init
 git submodule update
+rm -rf IATI-Extra-Documentation/en/_build
 ./gen.sh
 cd ..
 
 cd IATI-Standard-SSOT-version-1.05
 git submodule init
 git submodule update
+rm -rf IATI-Extra-Documentation/en/_build
 ./gen.sh
 cd ..
 
 cd IATI-Standard-SSOT-version-1.04
 git submodule init
 git submodule update
+rm -rf IATI-Extra-Documentation/en/_build
 ./gen.sh
 cd ..
 
