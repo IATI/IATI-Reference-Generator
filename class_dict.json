@@ -1829,8 +1829,7 @@
             "reference|external": "IATI-Guidance/en/_build/dirhtml",
             "reference|internal": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "footnote-reference": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "fn-backref": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "None": "IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend"
+            "fn-backref": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
         "p": {
             "None": "IATI-Guidance/en/_build/dirhtml",
@@ -1852,8 +1851,7 @@
             "doc": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "nt": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "na": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "s": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "problematic": "IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend"
+            "s": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
         },
         "h2": {
             "None": "IATI-Guidance/en/_build/dirhtml/crs-fss"

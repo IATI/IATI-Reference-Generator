@@ -678,6 +678,7 @@ http://iatistandard.org/upgrades/nonembedded-codelist-changelog,IATI-Standard-SS
 http://iatistandard.org/wp-content/uploads/2010/09/iati_activity_standard_graphic_web.png,IATI-Standard-SSOT-version-1.02/102.new/standard
 http://iatistandard.org/wp-content/uploads/2010/09/iati_codelists_graphic_web.png,IATI-Standard-SSOT-version-1.02/102.new/standard
 http://iatistandard.org/wp-content/uploads/2010/09/iati_web_graphic_org.png,IATI-Standard-SSOT-version-1.02/102.new/standard
+http://reference.iatistandard.org//organisation-standard/iati-organisations/iati-organisation/total-expendititure/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 http://reference.iatistandard.org//organisation-standard/iati-organisations/iati-organisation/total-expenditure/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/humanitarian-scope/,IATI-Guidance/en/_build/dirhtml/covid-19
 http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/location/location-reach/,IATI-Guidance/en/_build/dirhtml/sub-national-locations-all
@@ -789,8 +790,12 @@ http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-
 http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-organisation/total-budget/period-start/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-organisation/total-budget/value/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-organisation/total-expenditure/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
+http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
+http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/value/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-organisation/total-expenditure/period-end/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
+http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-organisation/total-expenditure/period-start/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
+http://reference.iatistandard.org/organisation-standard/iati-organisations/iati-organisation/total-expenditure/value/,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 http://reference.iatistandard.org/upgrades/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/how-we-manage-the-standard/codelist-management
 https://iatistandard.org/101/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/how-we-manage-the-standard/versions
 https://iatistandard.org/102/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/how-we-manage-the-standard/versions
