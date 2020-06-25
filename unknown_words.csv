@@ -55,7 +55,6 @@ bothon,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 byiati,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 canhave,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 capitalspending,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
-catgory,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/overview/classifications
 catgory,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/classifications
 catgory,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/classifications
 codelis,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
@@ -80,7 +79,6 @@ decription,IATI-Standard-SSOT-version-1.01/101.new/codelists/all-codelists
 desciption,IATI-Standard-SSOT-version-1.03/103.new/organisation-standard/documents
 desciption,IATI-Standard-SSOT-version-1.02/102.new/organisation-standard/documents
 desciption,IATI-Standard-SSOT-version-1.01/101.new/organisation-standard/documents
-dibursement,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/overview/budgets
 dibursement,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/budgets
 dibursement,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/budgets
 differentlanguages,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
@@ -124,8 +122,6 @@ githib,IATI-Standard-SSOT-version-1.03/103.new/getting-started/tools-to-help/too
 githib,IATI-Standard-SSOT-version-1.02/102.new/getting-started/tools-to-help/tools-to-validate-data
 historicalcurrency,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 iat,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
-iatiorganisation,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/overview/organisation-file
-iatiorganisation,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/organisation-standard/overview/organisation-file
 iatiorganisation,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/organisation-standard/overview/organisation-file
 iatiorganisation,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/organisation-standard/overview/organisation-file
 iatistand,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
@@ -179,7 +175,6 @@ maychoose,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 ministere,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/transaction/receiver-org
 ministere,IATI-Standard-SSOT-version-1.02/102.new/activities-standard/transaction/receiver-org
 ministere,IATI-Standard-SSOT-version-1.01/101.new/activities-standard/financial-transaction/transaction-receiver
-minium,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/overview/iati-organisation
 minium,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/organisation-standard/overview/iati-organisation
 minium,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/organisation-standard/overview/iati-organisation
 multiliateral,IATI-Standard-SSOT-version-1.03/103.new/organisation-standard/budget-institution
@@ -192,7 +187,6 @@ occurance,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standa
 ofofficially,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 opinoin,IATI-Standard-SSOT-version-1.03/103.new/updates/decimal-upgrade-to-1-04
 orany,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
-ordinates,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/overview/what-to-publish
 ordinates,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location/coordinates
 ordinates,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location/coordinates
 ordinates,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/location/coordinates
@@ -230,8 +224,6 @@ overridesiati,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 ownerof,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 ownlinked,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 ownvocabulary,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
-pecentage,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/overview/geography
-pecentage,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/overview/geography
 pecentage,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/geography
 pecentage,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/geography
 philantropic,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/FlowType
@@ -270,14 +262,10 @@ recommendedthat,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 refere,IATI-Guidance/en/_build/dirhtml/organisation-budgets-spend
 refernce,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/transactions
 refernce,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/transactions
-registation,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-identifiers
-registation,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/organisation-identifiers
 registation,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/organisation-identifiers
 registation,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/organisation-identifiers
-relavant,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/elements
 relavant,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/reference
 relavant,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/organisation-standard/elements
-relavant,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/elements
 relavant,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/reference
 relavant,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/organisation-standard/elements
 rendement,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/result/indicator/title
