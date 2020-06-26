@@ -31,14 +31,12 @@
         "li": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml",
             "toctree-l1": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
-            "toctree-l2": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l3": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l4": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l5": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l6": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l7": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l8": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l9": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/reference"
+            "toctree-l2": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference",
+            "toctree-l3": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference",
+            "toctree-l4": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference",
+            "toctree-l5": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference",
+            "toctree-l6": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference",
+            "toctree-l7": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference"
         },
         "h2": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml"
@@ -166,13 +164,12 @@
         "li": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml",
             "toctree-l1": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities",
-            "toctree-l2": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l3": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l4": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l5": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l6": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l7": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l8": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/reference"
+            "toctree-l2": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/reference",
+            "toctree-l3": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/reference",
+            "toctree-l4": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/reference",
+            "toctree-l5": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/reference",
+            "toctree-l6": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/reference",
+            "toctree-l7": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/reference"
         },
         "h2": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml"
@@ -297,13 +294,12 @@
         "li": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml",
             "toctree-l1": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities",
-            "toctree-l2": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l3": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l4": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l5": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l6": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l7": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l8": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/reference"
+            "toctree-l2": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/reference",
+            "toctree-l3": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/reference",
+            "toctree-l4": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/reference",
+            "toctree-l5": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/reference",
+            "toctree-l6": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/reference",
+            "toctree-l7": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/reference"
         },
         "h2": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml"
@@ -439,12 +435,11 @@
         "li": {
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/organisation-identifiers",
             "toctree-l1": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard",
-            "toctree-l2": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l3": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l4": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l5": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l6": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l7": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/reference"
+            "toctree-l2": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/reference",
+            "toctree-l3": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/reference",
+            "toctree-l4": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/reference",
+            "toctree-l5": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/reference",
+            "toctree-l6": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/reference"
         },
         "code": {
             "docutils|literal": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/organisation-identifiers"
@@ -574,12 +569,11 @@
         "li": {
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/organisation-identifiers",
             "toctree-l1": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard",
-            "toctree-l2": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l3": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l4": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l5": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l6": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/reference",
-            "toctree-l7": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/reference"
+            "toctree-l2": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/reference",
+            "toctree-l3": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/reference",
+            "toctree-l4": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/reference",
+            "toctree-l5": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/reference",
+            "toctree-l6": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/reference"
         },
         "code": {
             "docutils|literal": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/organisation-identifiers"
