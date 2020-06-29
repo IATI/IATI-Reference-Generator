@@ -77,11 +77,6 @@
     }
   ],
   "unwrap_by_parent_last": [
-    {
-      "parent": {"tag": "div", "class": []},
-      "child": {"tag": "div", "class": []},
-      "unwrap": "child"
-    }
   ],
   "transform_last": [
     {
