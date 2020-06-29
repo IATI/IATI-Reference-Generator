@@ -148,8 +148,8 @@
         },
         "a": {
             "headerlink": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml",
+            "reference|external": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml",
             "reference|internal": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard",
-            "reference|external": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "p": {
@@ -278,8 +278,8 @@
         },
         "a": {
             "headerlink": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml",
+            "reference|external": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml",
             "reference|internal": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard",
-            "reference|external": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "p": {
@@ -1829,7 +1829,8 @@
             "doc": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "nt": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "na": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "s": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
+            "s": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
+            "c": "IATI-Guidance/en/_build/dirhtml/self-defined-vocabularies"
         },
         "h2": {
             "None": "IATI-Guidance/en/_build/dirhtml/crs-fss"
@@ -1924,7 +1925,7 @@
         },
         "a": {
             "headerlink": "IATI-Upgrades/en/_build/dirhtml",
-            "reference|internal": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
+            "reference|internal": "IATI-Upgrades/en/_build/dirhtml",
             "reference|external": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
             "toc-backref": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
@@ -1935,8 +1936,18 @@
             "first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
             "last": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary"
         },
-        "cite": {
-            "None": "IATI-Upgrades/en/_build/dirhtml"
+        "span": {
+            "doc": "IATI-Upgrades/en/_build/dirhtml",
+            "xref|std|std-doc": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
+            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "pre": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes",
+            "xref|std|std-ref": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "nt": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "na": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "s": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "cp": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
+            "caption-text": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
+            "problematic": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
         },
         "h2": {
             "None": "IATI-Upgrades/en/_build/dirhtml"
@@ -1951,52 +1962,33 @@
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
             "toctree-l1": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01"
         },
-        "table": {
-            "first|docutils|field-list": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "colwidths-given|docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
-            "docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02"
-        },
-        "col": {
-            "field-name": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "field-body": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "tbody": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs"
-        },
-        "tr": {
-            "field-odd|field": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "row-odd": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
-            "row-even": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "th": {
-            "field-name": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "head": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "td": {
-            "field-body": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
-        },
-        "span": {
-            "doc": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "xref|std|std-doc": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "pre": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes",
-            "xref|std|std-ref": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "nt": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "na": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "s": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "cp": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "caption-text": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
-            "problematic": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
         "strong": {
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "table": {
+            "colwidths-given|docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02"
         },
         "colgroup": {
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
         },
+        "col": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
         "thead": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "tr": {
+            "row-odd": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
+            "row-even": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "th": {
+            "head": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "tbody": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
+        },
+        "td": {
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03"
         },
         "h3": {
