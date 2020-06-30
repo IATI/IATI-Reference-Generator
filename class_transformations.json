@@ -48,6 +48,10 @@
   ],
   "transform": [
     {
+      "before": {"tag": "blockquote", "class": []},
+      "after": {"tag": "dd", "class": []}
+    },
+    {
       "before": {"tag": "div", "class": ["line"]},
       "after": {"tag": "p", "class": []}
     },
