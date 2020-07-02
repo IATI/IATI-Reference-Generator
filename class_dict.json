@@ -1838,7 +1838,6 @@
         "table": {
             "colwidths-given|docutils": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "docutils|footnote": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "first|docutils|field-list": "IATI-Guidance/en/_build/dirhtml/sub-national-locations",
             "docutils": "IATI-Guidance/en/_build/dirhtml/activity-budgets"
         },
         "colgroup": {
@@ -1846,9 +1845,7 @@
         },
         "col": {
             "None": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "label": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "field-name": "IATI-Guidance/en/_build/dirhtml/sub-national-locations",
-            "field-body": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
+            "label": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
         "thead": {
             "None": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
@@ -1856,20 +1853,17 @@
         "tr": {
             "row-odd": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "row-even": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "None": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "field-odd|field": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
+            "None": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
         "th": {
-            "head": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "field-name": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
+            "head": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
         },
         "tbody": {
             "None": "IATI-Guidance/en/_build/dirhtml/financial-transactions"
         },
         "td": {
             "None": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
-            "label": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "field-body": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
+            "label": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
         "em": {
             "None": "IATI-Guidance/en/_build/dirhtml/results"
@@ -1883,9 +1877,6 @@
         "ol": {
             "arabic|simple": "IATI-Guidance/en/_build/dirhtml/countries-regions"
         },
-        "cite": {
-            "None": "IATI-Guidance/en/_build/dirhtml/countries-regions"
-        },
         "dl": {
             "docutils": "IATI-Guidance/en/_build/dirhtml/sub-national-locations",
             "first|docutils": "IATI-Guidance/en/_build/dirhtml/related-data"
@@ -1895,6 +1886,9 @@
         },
         "dd": {
             "None": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
+        },
+        "cite": {
+            "None": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
         }
     },
     "upgrades": {
