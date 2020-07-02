@@ -1,39 +1,40 @@
 [submodule "IATI-Standard-SSOT-version-2.03"]
 	path = IATI-Standard-SSOT-version-2.03
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-2.03-update
+	branch = version-2.03
 	ignore = dirty
 [submodule "IATI-Standard-SSOT-version-2.02"]
 	path = IATI-Standard-SSOT-version-2.02
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-2.02-update
+	branch = version-2.02
 	ignore = dirty
 [submodule "IATI-Standard-SSOT-version-2.01"]
 	path = IATI-Standard-SSOT-version-2.01
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-2.01-update
+	branch = version-2.01
 	ignore = dirty
 [submodule "IATI-Standard-SSOT-version-1.05"]
 	path = IATI-Standard-SSOT-version-1.05
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-1.05-update
+	branch = version-1.05
 	ignore = dirty
 [submodule "IATI-Standard-SSOT-version-1.04"]
 	path = IATI-Standard-SSOT-version-1.04
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-1.04-update
+	branch = version-1.04
 	ignore = dirty
 [submodule "IATI-Guidance"]
 	path = IATI-Guidance
 	url = https://github.com/IATI/IATI-Guidance.git
-	branch = guidance-test
+	branch = master
 	ignore = dirty
 [submodule "IATI-Developer-Documentation"]
 	path = IATI-Developer-Documentation
 	url = https://github.com/IATI/IATI-Developer-Documentation.git
-        branch = documentation-test
+        branch = master
         ignore = dirty
 [submodule "IATI-Upgrades"]
 	path = IATI-Upgrades
 	url = https://github.com/IATI/IATI-Upgrades.git
+        branch = master
         ignore = dirty
