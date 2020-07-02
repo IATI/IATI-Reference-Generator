@@ -50,7 +50,7 @@ local_url_map = {
 
 
 def rewrite_local_href(url, parent_slug):
-    BASE_DOMAIN = "https://dev.iatistandard.org/"
+    BASE_DOMAIN = "https://iatistandard.org/"
     parsed_url = urlparse(url)
     parsed_path = parsed_url.path
     parsed_path = re.sub("/{2,}", "/", parsed_path)
