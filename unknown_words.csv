@@ -337,4 +337,14 @@ vocabularyattribute,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-tabl
 willbenefit,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 withdrawl,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists-guides/codelist-management
 withdrawl,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists-guides/codelist-management
+wvdrc,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wvdrc,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wvdrc,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wvdrc,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wvdrc,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wvi,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wvi,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wvi,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wvi,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wvi,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
 yearas,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table

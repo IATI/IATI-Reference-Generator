@@ -175,7 +175,7 @@ for parent_slug, root_dir in build_dirs.items():
                 with open(input_path, 'r') as input_html:
                     soup = BeautifulSoup(input_html.read(), 'lxml')
                     main = soup.find("div", attrs={"role": "main"})
-                    meta = soup.findAll("meta", attrs={"name": ["title", "description", "guidance_type", "order"]})
+                    meta = soup.findAll("meta", attrs={"name": ["title", "description", "guidance_type", "order", "date"]})
                     if main is None:
                         main = soup.find("div", attrs={"id": "main"})
                     if main is not None:
