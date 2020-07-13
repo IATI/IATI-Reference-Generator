@@ -152,7 +152,6 @@ ignore_dirs = [
 
 
 download_path_dict = dict()
-referenced_downloads = list()
 for parent_slug, download_dict in download_folders.items():
     for download_folder, download_suffix in download_dict.items():
         for dirname, dirs, files in os.walk(download_folder, followlinks=True):
@@ -334,10 +333,8 @@ for parent_slug, root_dir in build_dirs.items():
                                         amended_href = "/".join(amended_href.split("/")[:-1]) + "/"
                                     relpath = os.path.relpath(os.path.join(dirname, amended_href))
                                     if relpath in download_path_dict.keys():
-                                        referenced_downloads.append(relpath)
                                         amended_href = "/" + download_path_dict[relpath]
                                     if amended_href in download_path_dict.keys():
-                                        referenced_downloads.append(amended_href)
                                         amended_href = "/" + download_path_dict[amended_href]
                                     tag["href"] = amended_href
                             if tag.name == "img":
@@ -363,13 +360,6 @@ for parent_slug, root_dir in build_dirs.items():
                             os.makedirs(output_dir)
                         with open(output_path, 'w') as output_xml:
                             output_xml.write(str(main))
-
-
-all_downloads = download_path_dict.keys()
-unreferenced_downloads = list(set(all_downloads) - set(referenced_downloads))
-for unreferenced_download in unreferenced_downloads:
-    copied_file = download_path_dict[unreferenced_download]
-    os.remove(copied_file)
 
 
 with open("class_dict.json", "w") as json_file:
