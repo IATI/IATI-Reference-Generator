@@ -58,7 +58,24 @@ combined_download_regex = "(" + ")|(".join(old_download_paths) + ")"
 download_roots = ("/101", "/102", "/103", "/104", "/105", "/201", "/202", "/203")
 
 
-def rewrite_local_href(url, parent_slug):
+def rewrite_relative_href(url, parent_href):
+    if "index.htm" in url.split("/")[-1]:
+        return "/".join(url.split("/")[:-1]) + "/"
+    if url.startswith("/"):
+        absolute_href = url
+    else:
+        absolute_href = os.path.join(parent_href, url)
+    if absolute_href.startswith("/downloads"):
+        return "/reference_downloads/archive{}".format(absolute_href)
+    if re.search(combined_download_regex, absolute_href):
+        if absolute_href.startswith(download_roots):
+            return "/reference_downloads{}".format(absolute_href)
+        else:
+            return "/reference_downloads/203{}".format(absolute_href)
+    return url
+
+
+def rewrite_local_href(url):
     BASE_DOMAIN = "/"
     parsed_url = urlparse(url)
     parsed_path = parsed_url.path
@@ -166,7 +183,6 @@ ignore_dirs = [
 ]
 
 
-download_path_dict = dict()
 for parent_slug, download_dict in download_folders.items():
     for download_folder, download_suffix in download_dict.items():
         for dirname, dirs, files in os.walk(download_folder, followlinks=True):
@@ -175,8 +191,7 @@ for parent_slug, download_dict in download_folders.items():
                     download_output_dir = os.path.join("downloads", parent_slug, download_suffix, dirname[len(download_folder):])
                     if not os.path.isdir(download_output_dir):
                         os.makedirs(download_output_dir)
-                    shutil.copy(os.path.join(dirname, filename), os.path.join(download_output_dir, filename).lower())
-                    download_path_dict[os.path.join(dirname, filename)] = os.path.join(download_output_dir, filename).lower()
+                    shutil.copy(os.path.join(dirname, filename), os.path.join(download_output_dir, filename))
 
 for parent_slug, root_dir in build_dirs.items():
     class_dict[parent_slug] = dict()
@@ -342,15 +357,11 @@ for parent_slug, root_dir in build_dirs.items():
                                 href = tag.get("href", None)
                                 if href:
                                     amended_href = href
-                                    if is_local(amended_href):
-                                        amended_href = rewrite_local_href(amended_href, parent_slug)
-                                    if is_relative(amended_href) and "index.htm" in amended_href.split("/")[-1]:
-                                        amended_href = "/".join(amended_href.split("/")[:-1]) + "/"
-                                    relpath = os.path.relpath(os.path.join(dirname, amended_href))
-                                    if relpath in download_path_dict.keys():
-                                        amended_href = "/" + download_path_dict[relpath]
-                                    if amended_href in download_path_dict.keys():
-                                        amended_href = "/" + download_path_dict[amended_href]
+                                    if is_relative(amended_href):
+                                        parent_href = "/{}{}".format(parent_slug, dirname[len(root_dir):])
+                                        amended_href = rewrite_relative_href(amended_href, parent_href)
+                                    elif is_local(amended_href):
+                                        amended_href = rewrite_local_href(amended_href)
                                     tag["href"] = amended_href
                             if tag.name == "img":
                                 src = tag.get("src", None)
