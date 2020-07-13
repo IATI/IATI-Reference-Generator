@@ -49,12 +49,29 @@ local_url_map = {
 }
 
 
+old_download_paths = [
+    r"^\/downloads.*",
+    r".*codelists\/downloads.*",
+    r".*schema\/downloads.*"
+]
+combined_download_regex = "(" + ")|(".join(old_download_paths) + ")"
+download_roots = ("/101", "/102", "/103", "/104", "/105", "/201", "/202", "/203")
+
+
 def rewrite_local_href(url, parent_slug):
-    BASE_DOMAIN = "https://iatistandard.org/"
+    BASE_DOMAIN = "/"
     parsed_url = urlparse(url)
     parsed_path = parsed_url.path
     parsed_path = re.sub("/{2,}", "/", parsed_path)
     if parsed_path:
+        if parsed_path.startswith("/reference_downloads"):
+            return parsed_path
+        if re.search(combined_download_regex, parsed_path):
+            if parsed_path.startswith("/downloads"):
+                return "/reference_downloads/archive{}".format(parsed_path)
+            if not parsed_path.startswith(download_roots):
+                return "/reference_downloads/203{}".format(parsed_path)
+            return "/reference_downloads{}".format(parsed_path)
         parsed_path_split = parsed_path.split("/")
         root_slug = parsed_path_split[1]
         slug_remainder = ""
@@ -65,8 +82,6 @@ def rewrite_local_href(url, parent_slug):
                 root_slug = "upgrades"
                 slug_remainder = "/".join(slug_remainder.split("/")[1:])
             return BASE_DOMAIN + local_url_map[root_slug] + slug_remainder
-        if root_slug == "downloads":  # Special case for archived downloads
-            return "archive_downloads/" + slug_remainder
         return url
     else:
         return BASE_DOMAIN
