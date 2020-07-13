@@ -64,7 +64,7 @@ def rewrite_relative_href(url, parent_href):
     if url.startswith("/"):
         absolute_href = url
     else:
-        absolute_href = os.path.join(parent_href, url)
+        absolute_href = os.path.abspath(os.path.join(parent_href, url))
     if absolute_href.startswith("/downloads"):
         return "/reference_downloads/archive{}".format(absolute_href)
     if re.search(combined_download_regex, absolute_href):
