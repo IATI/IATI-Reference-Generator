@@ -41,14 +41,12 @@
         },
         "span": {
             "doc": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard",
-            "xref|std|std-doc": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard",
             "pre": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "nt": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "na": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "s": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "c": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result",
-            "xref|std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location",
             "hll": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/sector/narrative",
             "n": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "p": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
@@ -59,13 +57,11 @@
             "k": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "nb": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "s2": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/ruleset-spec",
+            "xref|std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Country",
             "std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Country",
             "problematic": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "em": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard"
-        },
-        "cite": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard"
         },
         "code": {
@@ -120,6 +116,9 @@
         "br": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference"
         },
+        "cite": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/standard-ruleset"
+        },
         "ol": {
             "arabic|simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/namespaces-extensions"
         },
@@ -169,7 +168,6 @@
         },
         "span": {
             "doc": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard",
-            "xref|std|std-doc": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard",
             "pre": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "nt": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities",
@@ -177,7 +175,6 @@
             "s": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "hll": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/country-budget-items",
             "c": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/transaction",
-            "xref|std|std-ref": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location",
             "n": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
             "p": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
             "o": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
@@ -187,13 +184,11 @@
             "k": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
             "nb": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
             "s2": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/rulesets/ruleset-spec",
+            "xref|std|std-ref": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/Country",
             "std|std-ref": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/Country",
             "problematic": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "em": {
-            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard"
-        },
-        "cite": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard"
         },
         "code": {
@@ -245,6 +240,9 @@
         "br": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/reference"
         },
+        "cite": {
+            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/rulesets/standard-ruleset"
+        },
         "ol": {
             "arabic|simple": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/namespaces-extensions"
         },
@@ -294,7 +292,6 @@
         },
         "span": {
             "doc": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard",
-            "xref|std|std-doc": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard",
             "pre": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "nt": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities",
@@ -302,7 +299,6 @@
             "s": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "hll": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/country-budget-items",
             "c": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/transaction",
-            "xref|std|std-ref": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location",
             "n": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
             "p": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
             "o": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
@@ -312,13 +308,11 @@
             "k": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
             "nb": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
             "s2": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/rulesets/ruleset-spec",
+            "xref|std|std-ref": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/Country",
             "std|std-ref": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/Country",
             "problematic": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "em": {
-            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard"
-        },
-        "cite": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard"
         },
         "code": {
@@ -369,6 +363,9 @@
         },
         "br": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/reference"
+        },
+        "cite": {
+            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/rulesets/standard-ruleset"
         },
         "ol": {
             "arabic|simple": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/namespaces-extensions"
@@ -1920,8 +1917,8 @@
         },
         "span": {
             "doc": "IATI-Upgrades/en/_build/dirhtml",
-            "xref|std|std-doc": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs",
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "xref|std|std-doc": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
             "pre": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes",
             "xref|std|std-ref": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
             "nt": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
@@ -2025,8 +2022,7 @@
         "a": {
             "headerlink": "IATI-Developer-Documentation/_build/dirhtml",
             "reference|internal": "IATI-Developer-Documentation/_build/dirhtml",
-            "reference|external": "IATI-Developer-Documentation/_build/dirhtml/code-of-practice",
-            "None": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api"
+            "reference|external": "IATI-Developer-Documentation/_build/dirhtml/code-of-practice"
         },
         "p": {
             "None": "IATI-Developer-Documentation/_build/dirhtml"
@@ -2050,7 +2046,6 @@
             "p": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api",
             "s2": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api",
             "mi": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api",
-            "problematic": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api",
             "doc": "IATI-Developer-Documentation/_build/dirhtml/community-about",
             "nf": "IATI-Developer-Documentation/_build/dirhtml/xquery",
             "o": "IATI-Developer-Documentation/_build/dirhtml/xquery",
@@ -2058,8 +2053,7 @@
             "k": "IATI-Developer-Documentation/_build/dirhtml/xquery",
             "nv": "IATI-Developer-Documentation/_build/dirhtml/xquery",
             "n": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "ow": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "xref|std|std-doc": "IATI-Developer-Documentation/_build/dirhtml/codelist-api"
+            "ow": "IATI-Developer-Documentation/_build/dirhtml/xquery"
         },
         "h2": {
             "None": "IATI-Developer-Documentation/_build/dirhtml/code-of-practice"

@@ -322,9 +322,6 @@ typefor,IATI-Standard-SSOT-version-1.01/101.new/activity-schema-table
 typesappears,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 underlaying,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists-guides/codelist-management
 underlaying,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists-guides/codelist-management
-unquiely,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-standard
-unquiely,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard
-unquiely,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/organisation-standard
 unquiely,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/organisation-standard
 unquiely,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/organisation-standard
 unsupport,IATI-Standard-SSOT-version-1.02/102.new/activities-standard/overview
@@ -334,6 +331,11 @@ uriformat,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 usethe,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 vocabulariesthen,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 vocabularyattribute,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
+wbtf,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wbtf,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wbtf,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wbtf,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
+wbtf,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier
 willbenefit,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 withdrawl,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists-guides/codelist-management
 withdrawl,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists-guides/codelist-management
