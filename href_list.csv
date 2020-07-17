@@ -403,17 +403,6 @@ http://iatistandard.org/governance/iati-secretariat,IATI-Standard-SSOT-version-1
 http://iatistandard.org/governance/steering-committee,IATI-Standard-SSOT-version-1.02/102.new/governance
 http://iatistandard.org/governance/technical-advisory-group,IATI-Standard-SSOT-version-1.02/102.new/community-support
 http://iatistandard.org/governance/updating-the-standard,IATI-Standard-SSOT-version-1.02/102.new/governance
-http://iatistandard.org/guidance/datastore/#alpha-status,IATI-Developer-Documentation/_build/dirhtml/old-datastore/datastore
-http://iatistandard.org/guidance/datastore/guidance/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/datastore
-http://iatistandard.org/guidance/datastore/guidance/data-formats/#csv,IATI-Developer-Documentation/_build/dirhtml/old-datastore/guidance/forming-queries
-http://iatistandard.org/guidance/datastore/guidance/data-formats/#json,IATI-Developer-Documentation/_build/dirhtml/old-datastore/guidance/forming-queries
-http://iatistandard.org/guidance/datastore/guidance/data-formats/#xml,IATI-Developer-Documentation/_build/dirhtml/old-datastore/guidance/forming-queries
-http://iatistandard.org/guidance/datastore/guidance/forming-queries/#pagination,IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/structure-of-data
-http://iatistandard.org/guidance/datastore/reference/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/datastore
-http://iatistandard.org/guidance/datastore/reference/data-api/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/datastore
-http://iatistandard.org/guidance/datastore/reference/error-api/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/datastore
-http://iatistandard.org/guidance/datastore/reference/metadata-api/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/datastore
-http://iatistandard.org/guidance/datastore/reference/structure-of-data/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/guidance/data-formats
 http://iatistandard.org/guides,IATI-Standard-SSOT-version-1.02/102.new/get-involved
 http://iatistandard.org/guides/dates,IATI-Standard-SSOT-version-1.02/102.new/organisation-standard/budget-organisation
 http://iatistandard.org/guides/organisation-data/organisation-identifiers,IATI-Standard-SSOT-version-1.02/102.new/codelists/organisation
@@ -421,7 +410,6 @@ http://iatistandard.org/guides/organisation-identifiers,IATI-Standard-SSOT-versi
 http://iatistandard.org/old-activity-standard-matrix,IATI-Standard-SSOT-version-1.02/102.new/activities-standard/overview
 http://iatistandard.org/org-ref,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/other-identifier
 http://iatistandard.org/organisation-identifiers/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/OrganisationIdentifier
-http://iatistandard.org/organisation-identifiers//,IATI-Developer-Documentation/_build/dirhtml/old-datastore/guidance/forming-queries
 http://iatistandard.org/organisation-standard,IATI-Standard-SSOT-version-1.02/102.new/standard
 http://iatistandard.org/organisation-standard/iati-organisations/iati-organisation/document-link/,IATI-Guidance/en/_build/dirhtml/related-documents
 http://iatistandard.org/organisation-standard/iati-organisations/iati-organisation/name/,IATI-Guidance/en/_build/dirhtml/activity-participants
@@ -880,9 +868,6 @@ https://iatistandard.org/en/iati-standard/201/codelists/policymarker/,IATI-Stand
 https://iatistandard.org/en/iati-standard/202/codelists/policymarker/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/PolicySignificance
 https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/iati-identifier/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api
 https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api
-https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api
-https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/provider-org/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api
-https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/receiver-org/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api
 https://iatistandard.org/en/iati-standard/203/codelists/fileformat/,IATI-Developer-Documentation/_build/dirhtml/codelist-api
 https://iatistandard.org/en/iati-standard/203/codelists/organisationtype/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists
 https://iatistandard.org/en/iati-standard/203/codelists/policymarker/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/PolicySignificance

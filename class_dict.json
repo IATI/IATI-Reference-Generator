@@ -101,7 +101,7 @@
             "row-odd": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "row-even": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "withdrawn|row-even": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Country",
-            "withdrawn|row-odd": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/FileFormat"
+            "withdrawn|row-odd": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Region"
         },
         "th": {
             "head": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
@@ -2034,8 +2034,7 @@
         },
         "li": {
             "None": "IATI-Developer-Documentation/_build/dirhtml",
-            "toctree-l1": "IATI-Developer-Documentation/_build/dirhtml",
-            "toctree-l2": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/guidance"
+            "toctree-l1": "IATI-Developer-Documentation/_build/dirhtml"
         },
         "span": {
             "None": "IATI-Developer-Documentation/_build/dirhtml/code-of-practice",
