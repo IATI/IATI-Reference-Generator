@@ -839,6 +839,7 @@ https://iatistandard.org/en/about/governance/who-runs-iati/,IATI-Upgrades/en/_bu
 https://iatistandard.org/en/about/governance/who-runs-iati/technical-team/,IATI-Developer-Documentation/_build/dirhtml/tools
 https://iatistandard.org/en/about/join-iati/members-assembly/,IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard
 https://iatistandard.org/en/contact/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades
+https://iatistandard.org/en/guidance/,IATI-Developer-Documentation/_build/dirhtml/ssot
 https://iatistandard.org/en/guidance/developer/codelist-api/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists
 https://iatistandard.org/en/guidance/preparing-data/activity-information/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard
 https://iatistandard.org/en/guidance/preparing-data/organisation-infromation/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-standard
@@ -862,15 +863,18 @@ https://iatistandard.org/en/guidance/standard-overview/preparing-your-data/activ
 https://iatistandard.org/en/guidance/standard-overview/preparing-your-data/activity-information/creating-iati-identifiers/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard
 https://iatistandard.org/en/guidance/standard-overview/preparing-your-data/organisation-infromation/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-standard
 https://iatistandard.org/en/guidance/standard-overview/preparing-your-organisation-data-publication/information-and-data-you-cant-publish-exclusions/,IATI-Guidance/en/_build/dirhtml/sub-national-locations
+https://iatistandard.org/en/iati-standard/,IATI-Developer-Documentation/_build/dirhtml/ssot
 https://iatistandard.org/en/iati-standard/105/codelists/budgetidentifier/,IATI-Developer-Documentation/_build/dirhtml/codelist-api
 https://iatistandard.org/en/iati-standard/201/codelists/organisationtype/,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists
 https://iatistandard.org/en/iati-standard/201/codelists/policymarker/,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/PolicySignificance
 https://iatistandard.org/en/iati-standard/202/codelists/policymarker/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/PolicySignificance
+https://iatistandard.org/en/iati-standard/203/activity-standard/,IATI-Developer-Documentation/_build/dirhtml/ssot
 https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/iati-identifier/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api
 https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api
 https://iatistandard.org/en/iati-standard/203/codelists/fileformat/,IATI-Developer-Documentation/_build/dirhtml/codelist-api
 https://iatistandard.org/en/iati-standard/203/codelists/organisationtype/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists
 https://iatistandard.org/en/iati-standard/203/codelists/policymarker/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/PolicySignificance
+https://iatistandard.org/en/iati-standard/203/organisation-standard/,IATI-Developer-Documentation/_build/dirhtml/ssot
 https://iatistandard.org/en/iati-standard/upgrades/how-we-manage-the-standard/codelist-management/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists
 https://iatistandard.org/en/iati-standard/upgrades/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/1-04-changes/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location
 https://iatistandard.org/en/iati-standard/upgrades/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location

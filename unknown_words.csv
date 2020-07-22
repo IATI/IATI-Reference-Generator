@@ -53,6 +53,7 @@ bilateraal,IATI-Standard-SSOT-version-1.01/101.new/activities-standard/classific
 bolean,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/conditions
 bolean,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/conditions
 bothon,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
+bugfixes,IATI-Developer-Documentation/_build/dirhtml/ssot
 byiati,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 canhave,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 capitalspending,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
@@ -279,6 +280,7 @@ sectoriel,IATI-Standard-SSOT-version-1.01/101.new/activities-standard/classifica
 seehttp,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 seld,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes
 separatevocabularies,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
+seperately,IATI-Developer-Documentation/_build/dirhtml/ssot
 seperators,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/transactions
 seperators,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/transactions
 setare,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
@@ -294,6 +296,7 @@ subemelement,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-sta
 subemelement,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location
 subemelement,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location
 subemelement,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location
+submodule,IATI-Developer-Documentation/_build/dirhtml/ssot
 supportdiscovery,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 textdescription,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 textin,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table

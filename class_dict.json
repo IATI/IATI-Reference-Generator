@@ -2045,6 +2045,7 @@
             "p": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api",
             "s2": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api",
             "mi": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api",
+            "pre": "IATI-Developer-Documentation/_build/dirhtml/ssot",
             "doc": "IATI-Developer-Documentation/_build/dirhtml/community-about",
             "nf": "IATI-Developer-Documentation/_build/dirhtml/xquery",
             "o": "IATI-Developer-Documentation/_build/dirhtml/xquery",
@@ -2087,6 +2088,9 @@
         },
         "em": {
             "None": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/guidance/forming-queries"
+        },
+        "code": {
+            "docutils|literal": "IATI-Developer-Documentation/_build/dirhtml/ssot"
         }
     }
 }
