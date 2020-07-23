@@ -116,14 +116,14 @@
         "br": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference"
         },
-        "cite": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/standard-ruleset"
-        },
         "ol": {
             "arabic|simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/namespaces-extensions"
         },
         "h4": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier"
+        },
+        "cite": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Vocabulary"
         }
     },
     "202": {
@@ -240,14 +240,14 @@
         "br": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/reference"
         },
-        "cite": {
-            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/rulesets/standard-ruleset"
-        },
         "ol": {
             "arabic|simple": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/namespaces-extensions"
         },
         "h4": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier"
+        },
+        "cite": {
+            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/Vocabulary"
         }
     },
     "201": {
@@ -364,14 +364,14 @@
         "br": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/reference"
         },
-        "cite": {
-            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/rulesets/standard-ruleset"
-        },
         "ol": {
             "arabic|simple": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/namespaces-extensions"
         },
         "h4": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/IATIOrganisationIdentifier"
+        },
+        "cite": {
+            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/Vocabulary"
         }
     },
     "105": {
