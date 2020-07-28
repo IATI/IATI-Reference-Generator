@@ -1883,6 +1883,9 @@
         },
         "dd": {
             "None": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
+        },
+        "img": {
+            "None": "IATI-Guidance/en/_build/dirhtml/understanding-results"
         }
     },
     "upgrades": {

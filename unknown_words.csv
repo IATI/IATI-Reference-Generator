@@ -15,6 +15,7 @@ admininistrative,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelist
 admininistrative,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/GeographicVocabulary
 admininistrative,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists/GeographicVocabulary
 admininistrative,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists/GeographicVocabulary
+aggregatable,IATI-Guidance/en/_build/dirhtml/results
 aidactivity,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 alongisde,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/transaction/recipient-country
 alongisde,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/transaction/recipient-region
@@ -284,6 +285,7 @@ seperately,IATI-Developer-Documentation/_build/dirhtml/ssot
 seperators,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/transactions
 seperators,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/transactions
 setare,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
+shewa,IATI-Guidance/en/_build/dirhtml/understanding-results
 similarily,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists-guides/codelist-management
 similarily,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists-guides/codelist-management
 singlular,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/classifications
