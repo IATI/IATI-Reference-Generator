@@ -1795,7 +1795,8 @@
             "reference|external": "IATI-Guidance/en/_build/dirhtml",
             "reference|internal": "IATI-Guidance/en/_build/dirhtml/financial-transactions",
             "footnote-reference": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "fn-backref": "IATI-Guidance/en/_build/dirhtml/covid-19"
+            "fn-backref": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "reference|internal|image-reference": "IATI-Guidance/en/_build/dirhtml/understanding-results"
         },
         "p": {
             "None": "IATI-Guidance/en/_build/dirhtml",
@@ -1921,12 +1922,12 @@
         "span": {
             "doc": "IATI-Upgrades/en/_build/dirhtml",
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "xref|std|std-doc": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
             "pre": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes",
             "xref|std|std-ref": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
             "nt": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
             "na": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
             "s": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "xref|std|std-doc": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-05",
             "cp": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
             "caption-text": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
             "problematic": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"

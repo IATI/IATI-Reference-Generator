@@ -18,7 +18,6 @@ http://iatistandard.org/102/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirh
 http://iatistandard.org/102/schema/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/schema
 http://iatistandard.org/103/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/Version
 http://iatistandard.org/103/101/,IATI-Standard-SSOT-version-1.03/103.new/updates/previous-versions
-http://iatistandard.org/103/101/activities-standard/classifications/general-detailed-sector/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-02/1-02-changes
 http://iatistandard.org/103/102/,IATI-Standard-SSOT-version-1.03/103.new/updates/previous-versions
 http://iatistandard.org/103/activities-standard/activity-description,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/overview
 http://iatistandard.org/103/activities-standard/activity-title,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/overview
@@ -29,7 +28,6 @@ http://iatistandard.org/103/activities-standard/iati-activity-identifier,IATI-St
 http://iatistandard.org/103/activities-standard/performance/results,IATI-Standard-SSOT-version-1.03/103.new/getting-started/preparing-data/optional-data
 http://iatistandard.org/103/activities-standard/planned-disbursements,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/overview
 http://iatistandard.org/103/activities-standard/results,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/overview
-http://iatistandard.org/103/activities-standard/sector/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-02/1-02-changes
 http://iatistandard.org/103/activities-standard/transaction/transaction-aid-type,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/overview
 http://iatistandard.org/103/activities-standard/transaction/transaction-description,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/overview
 http://iatistandard.org/103/activities-standard/transaction/transaction-finance-type,IATI-Standard-SSOT-version-1.03/103.new/activities-standard/overview
@@ -790,7 +788,6 @@ http://reference.iatistandard.org/activity-standard/iati-activities/iati-activit
 http://reference.iatistandard.org/activity-standard/iati-activities/iati-activity/transaction/value/,IATI-Guidance/en/_build/dirhtml/financial-transactions
 http://reference.iatistandard.org/activity-standard/overview/conditions/,IATI-Guidance/en/_build/dirhtml/related-documents
 http://reference.iatistandard.org/activity-standard/overview/country-budget-alignment/,IATI-Guidance/en/_build/dirhtml/activity-thematic-focus
-http://reference.iatistandard.org/codelists-guides/codelist-management/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog
 http://reference.iatistandard.org/codelists/ActivityDateType/,IATI-Guidance/en/_build/dirhtml/activity-dates-status
 http://reference.iatistandard.org/codelists/ActivityScope/,IATI-Guidance/en/_build/dirhtml/countries-regions
 http://reference.iatistandard.org/codelists/AidType/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/AidTypeVocabulary
@@ -893,6 +890,8 @@ https://iatistandard.org/en/guidance/standard-overview/preparing-your-data/activ
 https://iatistandard.org/en/guidance/standard-overview/preparing-your-data/organisation-infromation/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-standard
 https://iatistandard.org/en/guidance/standard-overview/preparing-your-organisation-data-publication/information-and-data-you-cant-publish-exclusions/,IATI-Guidance/en/_build/dirhtml/sub-national-locations
 https://iatistandard.org/en/iati-standard/,IATI-Developer-Documentation/_build/dirhtml/ssot
+https://iatistandard.org/en/iati-standard/101/activities-standard/classifications/general-detailed-sector/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-02/1-02-changes
+https://iatistandard.org/en/iati-standard/102/activities-standard/sector/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-02/1-02-changes
 https://iatistandard.org/en/iati-standard/105/codelists/budgetidentifier/,IATI-Developer-Documentation/_build/dirhtml/codelist-api
 https://iatistandard.org/en/iati-standard/201/codelists/organisationtype/,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists
 https://iatistandard.org/en/iati-standard/201/codelists/policymarker/,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/PolicySignificance
