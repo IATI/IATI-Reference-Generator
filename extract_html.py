@@ -32,7 +32,7 @@ local_url_map = {
     "203": "en/iati-standard/203/",
     "introduction": "en/iati-standard/203/",
     "reference": "en/iati-standard/203/",
-    "organisation-identifiers": "en/iati-standard/203/organisation-identifiers/",
+    "organisation-identifiers": "en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/",
     "activity-standard": "en/iati-standard/203/activity-standard/",
     "organisation-standard": "en/iati-standard/203/organisation-standard/",
     "namespaces-extensions": "en/iati-standard/203/namespaces-extensions/",
@@ -45,7 +45,7 @@ local_url_map = {
     "developer": "en/guidance/developer/",
     "en": "en/",
     "documents": "documents/",
-    "org-ref": "en/iati-standard/203/organisation-identifiers/"
+    "org-ref": "en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/"
 }
 
 
