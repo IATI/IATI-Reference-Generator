@@ -680,16 +680,6 @@ http://reference.iatistandard.org/201/rulesets/,IATI-Standard-SSOT-version-2.01/
 http://reference.iatistandard.org/201/schema/,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml
 http://reference.iatistandard.org/201/upgrades/integer-upgrade-to-2-01/,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml
 http://reference.iatistandard.org/201/upgrades/integer-upgrade-to-2-01/2-01-changes/,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/activity-standard/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/activity-standard/summary-table/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/codelists/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/namespaces-extensions/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/organisation-standard/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/organisation-standard/summary-table/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/rulesets/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/schema/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/upgrades/decimal-upgrade-to-2-02/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
-http://reference.iatistandard.org/202/upgrades/decimal-upgrade-to-2-02/2-02-changes/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml
 http://reference.iatistandard.org/203/activity-standard/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml
 http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/humanitarian-scope/,IATI-Guidance/en/_build/dirhtml/covid-19
 http://reference.iatistandard.org/203/activity-standard/iati-activities/iati-activity/location/location-reach/,IATI-Guidance/en/_build/dirhtml/sub-national-locations-all
@@ -895,7 +885,6 @@ https://iatistandard.org/en/iati-standard/102/activities-standard/sector/,IATI-U
 https://iatistandard.org/en/iati-standard/105/codelists/budgetidentifier/,IATI-Developer-Documentation/_build/dirhtml/codelist-api
 https://iatistandard.org/en/iati-standard/201/codelists/organisationtype/,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists
 https://iatistandard.org/en/iati-standard/201/codelists/policymarker/,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/PolicySignificance
-https://iatistandard.org/en/iati-standard/202/codelists/policymarker/,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/PolicySignificance
 https://iatistandard.org/en/iati-standard/203/activity-standard/,IATI-Developer-Documentation/_build/dirhtml/ssot
 https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/conditions/condition/narrative/,IATI-Guidance/en/_build/dirhtml/conditions
 https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/iati-identifier/,IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api
