@@ -65,6 +65,7 @@ canhave,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 capitalspending,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 catgory,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/classifications
 catgory,IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/classifications
+codebase,IATI-Developer-Documentation/_build/dirhtml/contribute
 codeor,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 codesshould,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 coldelist,IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists-guides/codelist-api
@@ -73,8 +74,10 @@ commited,IATI-Standard-SSOT-version-1.03/103.new/getting-started/financial-data/
 commited,IATI-Standard-SSOT-version-1.02/102.new/guides/financial-data/transactions
 contactperson,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 contentmust,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
+contributers,IATI-Developer-Documentation/_build/dirhtml/contribute
 countrysystem,IATI-Standard-SSOT-version-1.03/103.new/activity-schema-table
 crschannel,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02/2-02-changes
+datastoreredirect,IATI-Developer-Documentation/_build/dirhtml/old-datastore/datastore
 decription,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/DescriptionType
 decription,IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/DescriptionType
 decription,IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/DescriptionType
