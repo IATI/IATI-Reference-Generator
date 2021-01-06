@@ -186,7 +186,7 @@
             "ow": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table",
             "k": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table",
             "nb": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table",
-            "hll": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/iati-organisations/iati-organisation/document-link/category",
+            "hll": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/iati-organisations/iati-organisation/total-budget/period-start",
             "xref|std|std-ref": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/CRSChannelCode",
             "std|std-ref": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/ConditionType",
             "problematic": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
@@ -226,16 +226,13 @@
         },
         "tr": {
             "row-odd": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table",
-            "row-even": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table",
-            "withdrawn|row-even": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/CRSChannelCode",
-            "withdrawn|row-odd": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/CRSChannelCode"
+            "row-even": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table"
         },
         "th": {
             "head": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table"
         },
         "tbody": {
-            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table",
-            "withdrawn": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/BudgetIdentifierVocabulary"
+            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table"
         },
         "td": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/organisation-standard/summary-table"
