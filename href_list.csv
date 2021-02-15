@@ -862,8 +862,10 @@ https://iatistandard.org/en/about/governance/who-runs-iati/,IATI-Upgrades/en/_bu
 https://iatistandard.org/en/about/governance/who-runs-iati/technical-team/,IATI-Developer-Documentation/_build/dirhtml/tools
 https://iatistandard.org/en/about/join-iati/members-assembly/,IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard
 https://iatistandard.org/en/contact/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades
+https://iatistandard.org/en/guidance,IATI-Developer-Documentation/_build/dirhtml/normative-content
 https://iatistandard.org/en/guidance/,IATI-Developer-Documentation/_build/dirhtml/ssot
 https://iatistandard.org/en/guidance/developer/codelist-api/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists
+https://iatistandard.org/en/guidance/developer/normative-content,IATI-Upgrades/en/_build/dirhtml/guidance-updates
 https://iatistandard.org/en/guidance/developer/ssot/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/standard-ruleset
 https://iatistandard.org/en/guidance/preparing-data/activity-information/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard
 https://iatistandard.org/en/guidance/preparing-data/donors-reporting-requirements/,IATI-Guidance/en/_build/dirhtml/results
@@ -871,6 +873,8 @@ https://iatistandard.org/en/guidance/preparing-data/organisation-infromation/,IA
 https://iatistandard.org/en/guidance/preparing-organisation/organisation-data-publication/information-and-data-you-cant-publish-exclusions/,IATI-Guidance/en/_build/dirhtml/results
 https://iatistandard.org/en/guidance/publishing-data/creating-files/,IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades
 https://iatistandard.org/en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/,IATI-Guidance/en/_build/dirhtml/activity-participants
+https://iatistandard.org/en/guidance/standard-guidance,IATI-Upgrades/en/_build/dirhtml/guidance-updates
+https://iatistandard.org/en/guidance/standard-guidance/activity-budgets,IATI-Upgrades/en/_build/dirhtml/guidance-updates
 https://iatistandard.org/en/guidance/standard-guidance/activity-budgets/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard
 https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard
 https://iatistandard.org/en/guidance/standard-guidance/activity-participants/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/organisation-standard
@@ -904,6 +908,7 @@ https://iatistandard.org/en/iati-standard/203/codelists/fileformat/,IATI-Develop
 https://iatistandard.org/en/iati-standard/203/codelists/organisationtype/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists
 https://iatistandard.org/en/iati-standard/203/codelists/policymarker/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/PolicySignificance
 https://iatistandard.org/en/iati-standard/203/organisation-standard/,IATI-Developer-Documentation/_build/dirhtml/ssot
+https://iatistandard.org/en/iati-standard/upgrades,IATI-Upgrades/en/_build/dirhtml/guidance-updates
 https://iatistandard.org/en/iati-standard/upgrades/how-we-manage-the-standard/codelist-management/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists
 https://iatistandard.org/en/iati-standard/upgrades/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/1-04-changes/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location
 https://iatistandard.org/en/iati-standard/upgrades/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary/,IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/location

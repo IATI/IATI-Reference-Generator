@@ -1909,19 +1909,20 @@
         "a": {
             "headerlink": "IATI-Upgrades/en/_build/dirhtml",
             "reference|internal": "IATI-Upgrades/en/_build/dirhtml",
-            "reference|external": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard",
+            "reference|external": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
+            "reference|internal|image-reference": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
             "toc-backref": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
         },
         "p": {
             "None": "IATI-Upgrades/en/_build/dirhtml",
-            "topic-title|first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
-            "first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-03/1-03-changes",
-            "last": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary"
+            "first": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
+            "last": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
+            "topic-title|first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
         },
         "span": {
             "doc": "IATI-Upgrades/en/_build/dirhtml",
-            "None": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard",
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
             "pre": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/codelist-management",
             "caption-text": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
             "problematic": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
@@ -1936,17 +1937,49 @@
             "None": "IATI-Upgrades/en/_build/dirhtml"
         },
         "strong": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard"
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
         },
         "ul": {
-            "simple": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard",
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
+            "simple": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
             "first|last|simple": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03",
             "first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
         },
         "li": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard",
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
             "toctree-l1": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01"
+        },
+        "em": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
+        },
+        "table": {
+            "colwidths-given|docutils": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
+            "docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02"
+        },
+        "colgroup": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
+        },
+        "col": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
+        },
+        "thead": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
+        },
+        "tr": {
+            "row-odd": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
+            "row-even": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
+        },
+        "th": {
+            "head": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
+        },
+        "tbody": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
+        },
+        "td": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
+        },
+        "img": {
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
         },
         "ol": {
             "arabic|simple": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process",
@@ -1965,36 +1998,7 @@
         "code": {
             "docutils|literal": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/codelist-management"
         },
-        "table": {
-            "colwidths-given|docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
-            "docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-02"
-        },
         "caption": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "colgroup": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "col": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "thead": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "tr": {
-            "row-odd": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog",
-            "row-even": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "th": {
-            "head": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "tbody": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "td": {
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
-        },
-        "em": {
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/noncore-codelist-changelog"
         },
         "h3": {
@@ -2074,10 +2078,10 @@
         "pre": {
             "None": "IATI-Developer-Documentation/_build/dirhtml/xquery"
         },
-        "cite": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/guidance/forming-queries"
-        },
         "strong": {
+            "None": "IATI-Developer-Documentation/_build/dirhtml/normative-content"
+        },
+        "cite": {
             "None": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/guidance/forming-queries"
         },
         "em": {
