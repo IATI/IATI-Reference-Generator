@@ -78,6 +78,10 @@
     {
       "before": {"tag": "div", "class": ["text-with-image"]},
       "after": {"tag": "p", "class": []}
+    },
+    {
+      "before": {"tag": "div", "class": ["button"]},
+      "after": {"tag": "span", "class": ["button"]}
     }
   ],
   "unwrap_by_parent_last": [
