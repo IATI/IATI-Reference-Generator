@@ -49,7 +49,6 @@
             "nt": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
             "na": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
             "s": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "pre": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "n": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "p": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "o": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
@@ -58,6 +57,7 @@
             "ow": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "k": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
             "nb": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
+            "pre": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "hll": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/sector/narrative",
             "xref|std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/CollaborationType",
             "std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/CollaborationType",
@@ -95,8 +95,11 @@
         "td": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
+        "br": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
+        },
         "code": {
-            "docutils|literal": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "docutils|literal": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dl": {
             "docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities"
@@ -121,9 +124,6 @@
         },
         "ol": {
             "arabic|simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/namespaces-extensions"
-        },
-        "br": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/reference"
         }
     },
     "202": {
@@ -176,7 +176,6 @@
             "nt": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
             "na": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
             "s": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "pre": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
             "n": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
             "p": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
             "o": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
@@ -185,6 +184,7 @@
             "ow": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
             "k": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
             "nb": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
+            "pre": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "hll": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/recipient-country/narrative",
             "xref|std|std-ref": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/CollaborationType",
             "std|std-ref": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/CollaborationType",
@@ -219,8 +219,11 @@
         "td": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
+        "br": {
+            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
+        },
         "code": {
-            "docutils|literal": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "docutils|literal": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dl": {
             "docutils": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities"
@@ -245,9 +248,6 @@
         },
         "ol": {
             "arabic|simple": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/namespaces-extensions"
-        },
-        "br": {
-            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/reference"
         }
     },
     "201": {
@@ -300,7 +300,6 @@
             "nt": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
             "na": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
             "s": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "pre": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
             "n": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
             "p": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
             "o": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
@@ -309,6 +308,7 @@
             "ow": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
             "k": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
             "nb": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
+            "pre": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities",
             "hll": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/recipient-country/narrative",
             "xref|std|std-ref": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/CollaborationType",
             "std|std-ref": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/CollaborationType",
@@ -343,8 +343,11 @@
         "td": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
+        "br": {
+            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
+        },
         "code": {
-            "docutils|literal": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "docutils|literal": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dl": {
             "docutils": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities"
@@ -369,9 +372,6 @@
         },
         "ol": {
             "arabic|simple": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/namespaces-extensions"
-        },
-        "br": {
-            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/reference"
         }
     },
     "105": {
