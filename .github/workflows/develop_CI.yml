@@ -26,7 +26,7 @@ jobs:
           python-version: '3.x'
       - name: Test Python
         run: |
-          pip install -r requirements.txt && ./build.sh && && pytest tests
+          pip install -r requirements.txt && ./build.sh && pytest tests
 
   automerge:
     needs: build-ci
