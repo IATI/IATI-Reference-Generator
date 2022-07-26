@@ -5,3 +5,5 @@ downloads
 downloads.zip
 pyenv
 .vscode
+**/__pycache__
+./pytest_cache
