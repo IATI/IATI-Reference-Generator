@@ -6,7 +6,7 @@ pytz==2019.2
 pyspellchecker==0.5.5
 python-dateutil==2.8.0
 beautifulsoup4==4.6.0
-docutils==0.15.2
+docutils==0.19
 MarkupSafe==1.1.1
 Pygments==2.12.0
 six==1.16.0
