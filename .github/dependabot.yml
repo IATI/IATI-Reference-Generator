@@ -14,12 +14,3 @@ updates:
     target-branch: "master"
     schedule:
       interval: 'daily'
-
-
-  # Enable version updates for python
-  - package-ecosystem: 'pip'
-  # Look for `requirements.txt` file
-    directory: '/'
-    target-branch: "develop"
-    schedule:
-      interval: 'daily'

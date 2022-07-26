@@ -1,4 +1,4 @@
-name: Build_CI_Dev
+name: Build_CI
 
 on:
   pull_request:
@@ -6,10 +6,9 @@ on:
       - "**/README.md"
       - "**/dependabot.yml"
     branches:
-      - develop
       - master
 
-concurrency: develop_CI
+concurrency: CI
 
 jobs:
   build-ci:
