@@ -1,0 +1,79 @@
+<div class="body" role="main">
+<p id="reporting-org">
+<h1>reporting-org</h1>
+<p><code>iati-activities/iati-activity/reporting-org</code></p>
+<p>This is the reference page for the XML element <code>reporting-org</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The organisation issuing the report.
+May be a primary source (reporting on its own activity as
+donor, implementing agency, etc) or a secondary source
+(reporting on the activities of another organisation).</p>
+<p>Specifying the @ref attribute is mandatory.
+May contain the organisation name as content.</p>
+<p>All activities in an activity xml file must contain the same
+@ref AND this @ref must be the same as the iati-identifier
+recorded in the registry publisher record of the account under
+which this file is published.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-reporting-org-ref">
+<dt>@ref</dt>
+<dd><p>Machine-readable identification string for the business
+object being described.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-reporting-org-type">
+<dt>@type</dt>
+<dd><p>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/OrganisationType/"><span>OrganisationType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-reporting-org-secondary-reporter">
+<dt>@secondary-reporter</dt>
+<dd><p>If an activity is being published by a secondary publisher
+you may indicate this here. Use 1 for true, 0 for false.</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-reporting-org-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>reporting-org</code> with <code>ref</code> <em>AA-AAA-123456789</em> and <code>OrganisationType</code> code <em>21</em> (<em>International NGO</em>):</p>
+<p><code><pre>  &lt;reporting-org ref="AA-AAA-123456789" type="21"&gt;Organisation Name&lt;/reporting-org&gt;
+</pre></code>
+</p>
+<p>Example <code>reporting-org</code> that declares it is a <code>secondary-reporter</code> through a boolean:</p>
+<p><code><pre>  &lt;reporting-org ref="BB-BBB-123456789" type="40" secondary-reporter="1"&gt;Organisation Name&lt;/reporting-org&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.04</h3>
+
+<p>The <code>secondary-publisher</code> was introduced in 1.04.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-common.xsd#L83">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/reporting-org.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

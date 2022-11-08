@@ -1,0 +1,480 @@
+<div class="body" role="main">
+<p id="changelog">
+<h1><a href="#id5">1.05 changelog</a></h1>
+<p>Changes / Additions to IATI Standard for version 1.05</p>
+<p id="contents">
+<p>Contents</p>
+<ul>
+<li><a href="#changelog" id="id5">1.05 changelog</a><ul>
+<li><a href="#schema-changes" id="id6">Schema Changes</a><ul>
+<li><a href="#activities-schema" id="id7">Activities schema</a><ul>
+<li><a href="#location-location-id-updated-description-text" id="id8"><em>Location/Location ID: Updated description text</em></a></li>
+<li><a href="#planned-disbursement-updated-description-text" id="id9"><em>Planned Disbursement: Updated description text</em></a></li>
+</ul>
+</li>
+<li><a href="#organisations-schema" id="id10">Organisations schema</a></li>
+<li><a href="#common-schema" id="id11">Common schema</a></li>
+<li><a href="#xml-supplementary-schema" id="id12">XML supplementary schema</a></li>
+<li><a href="#registry-record-schema" id="id13">Registry record schema</a></li>
+</ul>
+</li>
+<li><a href="#codelist-changes" id="id14">Codelist Changes</a><ul>
+<li><a href="#new-codelists" id="id15">New Codelists</a></li>
+<li><a href="#embedded-codelist-updates" id="id16">Embedded codelist updates</a><ul>
+<li><a href="#activity-status-new-code" id="id17"><em>Activity Status: New code</em></a></li>
+<li><a href="#description-type-new-code" id="id18"><em>Description Type: New code</em></a></li>
+<li><a href="#document-category-new-codes" id="id19"><em>Document Category: New codes</em></a></li>
+<li><a href="#related-activity-type-new-code" id="id20"><em>Related Activity Type: New code</em></a></li>
+<li><a href="#related-activity-type-amended-code" id="id21"><em>Related Activity Type: Amended code</em></a></li>
+<li><a href="#transaction-type-amended-code" id="id22"><em>Transaction Type: Amended code</em></a></li>
+<li><a href="#vocabulary-new-code" id="id23"><em>Vocabulary: New code</em></a></li>
+<li><a href="#policy-marker-new-code" id="id24"><em>Policy Marker: New code</em></a></li>
+</ul>
+</li>
+<li><a href="#non-embedded-codelist-updates" id="id25">Non-embedded codelist updates</a><ul>
+<li><a href="#policy-significance-new-code" id="id26"><em>Policy Significance: New code</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#documentation-changes" id="id27">Documentation Changes</a><ul>
+<li><a href="#overview-pages" id="id28">Overview pages</a><ul>
+<li><a href="#activity-standard-dates-overview" id="id29"><em>Activity Standard - Dates Overview</em></a></li>
+<li><a href="#activity-standard-classifications-overview" id="id30"><em>Activity Standard - Classifications Overview</em></a></li>
+</ul>
+</li>
+<li><a href="#codelist-pages" id="id31">Codelist pages</a><ul>
+<li><a href="#policy-significance" id="id32"><em>Policy Significance</em></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</p>
+<p id="schema-changes">
+<h2><a href="#id6">Schema Changes</a></h2>
+<p>A full diff of all schema changes in 1.05 can be found in the <a href="https://github.com/IATI/IATI-Schemas/compare/version-1.04...version-1.05#files_bucket">IATI GitHub</a></p>
+<p id="activities-schema">
+<h3><a href="#id7">Activities schema</a></h3>
+<p id="location-location-id-updated-description-text">
+<h4><a href="#id8"><em>Location/Location ID: Updated description text</em></a></h4>
+<p>Element: <a href="/en/iati-standard/105/activity-standard/iati-activities/iati-activity/location/location-id">location/location-id</a> (<a href="http://support.iatistandard.org/entries/50424779-Add-a-description-in-the-schema-to-planned-disbursement-element">discussion</a>)</p>
+</p>
+<p id="planned-disbursement-updated-description-text">
+<h4><a href="#id9"><em>Planned Disbursement: Updated description text</em></a></h4>
+<p>Element: <a href="/en/iati-standard/105/activity-standard/iati-activities/iati-activity/planned-disbursement">planned-disbursement</a> (<a href="https://github.com/IATI/IATI-Extra-Documentation/issues/205">discussion</a>)</p>
+<p>In 1.04:</p>
+<table border="1">
+<colgroup>
+<col width="33%"/>
+<col width="67%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>location/location-id</td>
+<td>For administrative areas this identifier should only be used if the location being defined is the administrative area itself. For describing the administrative area/s within which a location falls the location/administrative element should be used.</td>
+</tr>
+</tbody>
+</table>
+<p>Description amended in 1.05:</p>
+<table border="1">
+<colgroup>
+<col width="33%"/>
+<col width="67%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>location/location-id</td>
+<td>A unique code describing the location according to a recognised gazetteer or administrative boundary repository. Administrative areas should only be reported here if the location being defined is the administrative area itself. For describing the administrative area/s within which a more specific location falls the location/administrative element should be used.</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<p id="organisations-schema">
+<h3><a href="#id10">Organisations schema</a></h3>
+<p>No substantial changes were made in 1.05, aside from essential version references.</p>
+</p>
+<p id="common-schema">
+<h3><a href="#id11">Common schema</a></h3>
+<p>No substantial changes were made in 1.05, aside from essential version references.</p>
+</p>
+<p id="xml-supplementary-schema">
+<h3><a href="#id12">XML supplementary schema</a></h3>
+<p>No substantial changes were made in 1.05, aside from essential version references.</p>
+</p>
+<p id="registry-record-schema">
+<h3><a href="#id13">Registry record schema</a></h3>
+<p>No substantial changes were made in 1.05, aside from essential version references.</p>
+</p>
+</p>
+<p id="codelist-changes">
+<h2><a href="#id14">Codelist Changes</a></h2>
+<p id="new-codelists">
+<h3><a href="#id15">New Codelists</a></h3>
+<p>No new codelists were added in 1.05</p>
+</p>
+<p id="embedded-codelist-updates">
+<h3><a href="#id16">Embedded codelist updates</a></h3>
+<p id="activity-status-new-code">
+<h4><a href="#id17"><em>Activity Status: New code</em></a></h4>
+<p>Codelist: <a href="/en/iati-standard/105/codelists/ActivityStatus">Activity Status</a>
+(<a href="http://support.iatistandard.org/entries/43247528-Activity-Status-Suspended-">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>6</td>
+<td>Suspended</td>
+<td>(none)</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="description-type-new-code">
+<h4><a href="#id18"><em>Description Type: New code</em></a></h4>
+<p>Codelist: <a href="/en/iati-standard/105/codelists/DescriptionType">DescriptionType</a>
+(<a href="http://support.iatistandard.org/entries/22922878-Description-type-extend-the-codelist">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>4</td>
+<td>Other</td>
+<td>For miscellaneous use. A further classification or breakdown may be included in the narrative.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="document-category-new-codes">
+<h4><a href="#id19"><em>Document Category: New codes</em></a></h4>
+<p>Codelist:  <a href="/en/iati-standard/105/codelists/DocumentCategory">DocumentCategory</a>
+(<a href="http://support.iatistandard.org/entries/86661313-Document-Types-">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>B11</td>
+<td>Sector strategy</td>
+<td>(none)</td>
+</tr>
+<tr><td>B12</td>
+<td>Thematic strategy</td>
+<td>(none)</td>
+</tr>
+<tr><td>B13</td>
+<td>Country-level Memorandum of Understanding</td>
+<td>(none)</td>
+</tr>
+<tr><td>B14</td>
+<td>Evaluations policy</td>
+<td>(none)</td>
+</tr>
+<tr><td>B15</td>
+<td>General Terms and Conditions</td>
+<td>(none)</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="related-activity-type-new-code">
+<h4><a href="#id20"><em>Related Activity Type: New code</em></a></h4>
+<p>Codelist: <a href="/en/iati-standard/105/codelists/RelatedActivityType">RelatedActivityType</a>
+(<a href="http://support.iatistandard.org/entries/54201556-related-activity-new-code">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>5</td>
+<td>Third Party</td>
+<td>A report by another organisation on the same activity (excluding activities reported as part of financial transactions - eg. provider-activity-id - or a co-funded activity using code = 4).</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="related-activity-type-amended-code">
+<h4><a href="#id21"><em>Related Activity Type: Amended code</em></a></h4>
+<p>Codelist: <a href="/en/iati-standard/105/codelists/RelatedActivityType">RelatedActivityType</a>
+(<a href="http://support.iatistandard.org/entries/54201556-related-activity-new-code">discussion</a>)</p>
+<p>In 1.04:</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>4</td>
+<td>Multifunded</td>
+<td>A multifunded, or co-funded activity. The identifier should be globally unique and shared by all reporters of this activity.</td>
+</tr>
+</tbody>
+</table>
+<p>Name and description changed in 1.05:</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>4</td>
+<td>Co-funded</td>
+<td>An activity that receives funding from more than one organisation.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="transaction-type-amended-code">
+<h4><a href="#id22"><em>Transaction Type: Amended code</em></a></h4>
+<p>Codelist: <a href="/en/iati-standard/105/codelists/TransactionType">TransactionType</a>
+(<a href="http://support.iatistandard.org/entries/50777388-Description-For-Transcation-Type-Incoming-Funds-Is-Incorrect">discussion</a>)</p>
+<p>In 1.04:</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>IF</td>
+<td>Incoming Funds</td>
+<td>Funds received from an external funding source (eg a donor).</td>
+</tr>
+</tbody>
+</table>
+<p>Description changed in 1.05:</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>IF</td>
+<td>Incoming Funds</td>
+<td>Funds received (whether from an external source or through internal accounting) for specific use on this activity.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="vocabulary-new-code">
+<h4><a href="#id23"><em>Vocabulary: New code</em></a></h4>
+<p>Codelist: <a href="/en/iati-standard/105/codelists/Vocabulary">Vocabulary</a>
+(<a href="http://support.iatistandard.org/entries/22916773">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>RO2</td>
+<td>Reporting Organisation (2)</td>
+<td>Where reporting organisations have more than one vocabulary that they wish to reference.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="policy-marker-new-code">
+<h4><a href="#id24"><em>Policy Marker: New code</em></a></h4>
+<p>Codelist: <a href="/en/iati-standard/105/codelists/PolicyMarker">PolicyMarker</a> (<a href="http://support.iatistandard.org/entries/52320903-New-Policy-Markers-Significance-Codes">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>9</td>
+<td>Reproductive, Maternal, Newborn and Child Health (RMNCH)</td>
+<td>(none)</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<p id="non-embedded-codelist-updates">
+<h3><a href="#id25">Non-embedded codelist updates</a></h3>
+<p id="policy-significance-new-code">
+<h4><a href="#id26"><em>Policy Significance: New code</em></a></h4>
+<p>Codelist: <a href="/en/iati-standard/105/codelists/PolicySignificance">PolicySignificance</a> (<a href="http://support.iatistandard.org/entries/52320903-New-Policy-Markers-Significance-Codes">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="23%"/>
+<col width="31%"/>
+<col width="46%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>4</td>
+<td>Explicit primary objective</td>
+<td>(none)</td>
+</tr>
+</tbody>
+</table>
+<p>As part of this process, the <a href="upgrades/nonembedded-codelist-changelog">non-embedded codelist changelog</a> was also updated</p>
+</p>
+</p>
+</p>
+<p id="documentation-changes">
+<h2><a href="#id27">Documentation Changes</a></h2>
+<p id="overview-pages">
+<h3><a href="#id28">Overview pages</a></h3>
+<p id="activity-standard-dates-overview">
+<h4><a href="#id29"><em>Activity Standard - Dates Overview</em></a></h4>
+<p>Overview page: <a href="/en/iati-standard/105/activity-standard/overview/dates/">Activity Standard - Dates Overview</a> (<a href="http://support.iatistandard.org/entries/43247528-Activity-Status-Suspended-">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="33%"/>
+<col width="67%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Page</th>
+<th>Additional guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Activity Standard - Dates Overview.</td>
+<td>ActivityStatus code 6 indicates a temporary suspension of an activity. In this state an activity is assumed not to be current, but future, forward-looking budgets are still assumed to be applicable.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="activity-standard-classifications-overview">
+<h4><a href="#id30"><em>Activity Standard - Classifications Overview</em></a></h4>
+<p>Overview page: <a href="/en/iati-standard/105/activity-standard/overview/classifications/">Activity Standard - Classifications Overview</a> (<a href="http://support.iatistandard.org/entries/55170393-Tied-and-partially-tied-values">discussion</a>) (<a href="http://support.iatistandard.org/entries/52320903-New-Policy-Markers-Significance-Codes">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="33%"/>
+<col width="67%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Page</th>
+<th>Additional guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Activity Standard - Classifications Overview</td>
+<td>If an activity is either wholly “tied” or “untied” it is recommended that the appropriate <code>default-tied-status</code> code is used / If an activity is “partially tied” it is recommended that the reported commitment/s are split into “tied” and “untied” amounts and <code>tied-status</code> is reported at <code>transaction</code> level. (NB that tied status should be reported for commitments only.)</td>
+</tr>
+<tr><td>Activity Standard - Classifications Overview</td>
+<td>Activity Standard - Classifications Overview  When using <code>policy-marker</code> and the <code>Policy Significance</code> code <em>4</em> (Explicit primary objective) - this SHOULD ONLY be used in conjunction with <code>Policy Marker</code> code <em>9</em> (Reproductive, Maternal, Newborn and Child Health)</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<p id="codelist-pages">
+<h3><a href="#id31">Codelist pages</a></h3>
+<p id="policy-significance">
+<h4><a href="#id32"><em>Policy Significance</em></a></h4>
+<p>Codelist: <a href="/en/iati-standard/105/codelists/PolicySignificance">PolicySignificance</a> (<a href="http://support.iatistandard.org/entries/52320903-New-Policy-Markers-Significance-Codes">discussion</a>)</p>
+<table border="1">
+<colgroup>
+<col width="33%"/>
+<col width="67%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Page</th>
+<th>Additional guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Policy Significance codelist</td>
+<td>Policy Significance code = 4 (Explicit primary objective) SHOULD ONLY be used in conjunction with <a href="/en/iati-standard/105/codelists/PolicyMarker/">Policy Marker</a> code = 9 (Reproductive, Maternal, Newborn and Child Health)</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</p>
+</p>
+</div>

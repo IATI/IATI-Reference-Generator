@@ -1,0 +1,106 @@
+<div id="content" role="main">
+
+<header>
+<h1>Reporting Organisation</h1>
+</header><!-- .entry-header -->
+<p>
+<h3>Definitions</h3>
+<p>The reporting-org element uniquely identifies the organisation providing the information. A reporting organisation may provide information on its own activities, as well as reporting on behalf of other organisations involved in the delivery of aid.</p>
+<p>Files can only be submitted to the IATI Registry by a reporting organisation that has authorised access to the registry. In other words a reporting organisation specified in an IATI data file must match an authorised publisher in the Registry.<br/>
+</p>
+<table>
+<tr>
+<td><strong>org-ref</strong></td>
+<td>A unique identifier for the organisation that is consistent with <a href="../../guides/organisation-data/organisation-identifiers/">IATI’s rules for identifying organisations</a>.</td>
+</tr>
+<tr>
+<td><strong>org-type</strong></td>
+<td>The type of organisation (government, multilateral, private, PPP, NGO, foundation, etc)</td>
+</tr>
+<tr>
+<td><strong>org-name</strong></td>
+<td>The name of the organisation</td>
+</tr>
+<tr>
+<td><strong>org-name-lang</strong></td>
+<td>The language in which the organisation name is reported</td>
+</tr>
+</table>
+<h3>Example Usage</h3>
+<p>In full …</p>
+<pre> 
+
+  ..
+  The XYZ Foundation
+  ..
+
+</pre>
+<p>And the bare minimum</p>
+<pre> 
+
+  ..
+  
+  ..
+
+</pre>
+<h3>Structure</h3>
+<table>
+<tr>
+<th>Item</th>
+<th>Format</th>
+<th>XML</th>
+<th>Occurs</th>
+</tr>
+<tr>
+<td>reporting-org</td>
+<td></td>
+<td>reporting-org</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>   org-ref</td>
+<td>see <a href="../../guides/organisation-data/organisation-identifiers/">IATI Rules for Organisation Identifiers</a>.</td>
+<td>reporrting-org/@ref</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>   org-type</td>
+<td><a href="../../codelists/organisation_type/">Organisation Type Code</a></td>
+<td>reporrting-org/@type</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   org-name</td>
+<td>Text</td>
+<td>reporrting-org/text()</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   org-name- lang</td>
+<td><a href="../../codelists/language/">Language Code</a></td>
+<td>reporrting-org/@xml:lang</td>
+<td>0..1</td>
+</tr>
+</table>
+<h3>Usage &amp; Compliance</h3>
+<p>This element is <strong>mandatory</strong>.</p>
+<ul>
+<li> The <em>org-ref</em> is <strong>mandatory</strong>.
+</li><li> The format of <em>org-ref</em> <strong>MUST</strong> comply with <a href="../../guides/organisation-data/organisation-identifiers/">IATI Rules for Organisation Identifiers</a>.
+</li><li> The <em>org-type</em> is not mandatory, but <strong>recommended</strong>.
+</li><li> If <em>org-type</em> is present it <strong>must</strong> be a valid code from the <a href="../../codelists/organisation_type/">codelist</a>.
+</li><li> The <em>org-name</em> is not mandatory, but <strong>recommended</strong>.
+</li><li> If the <em>org-name</em> is present, the <em>org-name-language</em> is <strong>mandatory if</strong> the <em>default-language</em> in the <a href="../record-header/">Record Header</a> is omitted or the language of the name is different from the default-language.
+</li></ul>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1723 -->
+<!-- #comments -->
+<p>
+<p>
+					Last updated on January 29, 2015. 				  </p>
+<!--<p class="fl">Last updated: April 26, 2011   
+					<p class="fr"></p>	-->
+</p>
+</div>

@@ -1,0 +1,50 @@
+<div id="content" role="main">
+
+<header>
+<h1>Related Activity</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;related-activity&gt;&lt;/related-activity&gt;</h2><p><h3>From the schema</h3><p> Can occur: Min = 0, Max = Unlimited</p><p>
+        XX.XX Related Activity
+
+        Another IATI activity related to this one.  The 'type'
+        attribute describes the type of relationship (e.g. parent,
+        sibling).  This does not need to be used to express funding
+        relationships, since those are covered in individual
+        transactions.
+
+        For the value of the @type attribute, see
+        <a href="/en/iati-standard/203/codelists/related_activity_type" rel="nofollow">http://iatistandard.org/codelists/related_activity_type</a>
+</p><table><tbody><tr><td>@ref</td><td>
+        Machine-readable identification string for the business
+        object being described.
+      </td></tr><tr><td>@type</td><td>
+        Free text describing the type of thing being referenced.
+      </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /related-activity/@ref</h3><ul><li>Must be on: <a href="/en/iati-standard/203/codelists/related_activity_type">Related Activity Type Codelist</a></li></ul></p>
+<h2 id="related_activity">Related Activity</h2>
+
+<!-- EDIT1 SECTION "Related Activity" [1-53] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The reference and type of relation can be cited in this element:
+</p>
+<pre>   <span><span>&lt;related-activity</span> <span>type</span>=<span>"1"</span> <span>ref</span>=<span>"GB-1-105838"</span><span>/&gt;</span></span></pre>
+<p>
+Additionally, a text title of the specific related activity can be provided:
+</p>
+<pre>    <span><span>&lt;related-activity</span> <span>type</span>=<span>"1"</span> <span>ref</span>=<span>"GB-1-105838"</span><span>&gt;</span></span>Trade Sector Programme<span><span>&lt;/related-activity<span>&gt;</span></span></span></pre>
+<p>
+Where this text is in a language that differs from the default set in &lt;iati-activity&gt;, then this should be declared accordingly:
+</p>
+<pre>    <span><span>&lt;related-activity</span> <span>type</span>=<span>"1"</span> <span>ref</span>=<span>"GB-1-105838"</span> <span>xml:lang</span>=<span>"fr"</span><span>&gt;</span></span>Programme du secteur commercial<span><span>&lt;/related-activity<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [54-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1433 -->
+
+</div>

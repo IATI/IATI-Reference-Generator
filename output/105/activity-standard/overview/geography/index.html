@@ -1,0 +1,33 @@
+<div class="body" role="main">
+<p id="geography">
+<h1>Geography</h1>
+<p id="definition">
+<h2>Definition</h2>
+<p>Within the <strong>IATI activity standard</strong> there are three ways to describe the <em>geography</em> of an <code>iati-activity</code>:</p>
+<ul>
+<li><code>recipient-country</code> - the country that will benefit from the <code>iati-activity</code>.</li>
+<li><code>recipient-region</code> - geopolitical region (above the country level) that will benefit from the <code>iati-activity</code>.</li>
+<li><code>location</code> - a geographical location of the <code>iati-activity</code>.</li>
+</ul>
+<p>In addition, the following can also be utilised:</p>
+<ul>
+<li><code>activity-scope</code> - to classify the geographic coverage of the the <code>iati-activity</code>.</li>
+</ul>
+</p>
+<p id="considerations">
+<h2>Considerations</h2>
+<p>When using the <strong>IATI activity standard</strong> to describe <em>geography</em>, the following should be considered:</p>
+<ul>
+<li>When describing the <code>recipient-country</code> the relevant <code>Country</code> code must be used.</li>
+<li>When describing the <code>recipient-region</code> the relevant <code>Region</code> code must be used.</li>
+<li>It is possible to have multiple <code>recipient-country</code> in an <code>iati-activity</code></li>
+<li>It is possible to have multiple <code>recipient-region</code> in an <code>iati-activity</code></li>
+<li>When declaring multiple <code>recipient-country</code> or <code>recipient-region</code> then a <code>pecentage</code> must be declared.  These must sum to 100%.</li>
+<li>If a <code>recipient-country</code> is known, then a <code>recipient-region</code> is not expected.</li>
+<li>If a <code>recipient-country</code> is not known, then a <code>recipient-region</code> is expected.</li>
+<li>The free-text instances of <code>name</code> and <code>description</code> in <code>location</code> should avoid use of text in CAPITALS.</li>
+<li>The <code>activity-scope</code> element should only be used once.  It must use a relevant <code>ActivityScope</code> code.</li>
+</ul>
+</p>
+</p>
+</div>

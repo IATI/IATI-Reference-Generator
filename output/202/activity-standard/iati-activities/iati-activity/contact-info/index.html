@@ -1,0 +1,113 @@
+<div class="body" role="main">
+<p id="contact-info">
+<h1>contact-info</h1>
+<p><code>iati-activities/iati-activity/contact-info</code></p>
+<p>This is the reference page for the XML element <code>contact-info</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Contact information for the activity.  Specify whatever is
+available.  You may repeat this element for each contact
+person.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-contact-info-type">
+<dt>@type</dt>
+<dd><p>The type of contact. See IATI codelist for values.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/ContactType/"><span>ContactType codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>contact-info</code> for an <code>iati-activity</code>.</p>
+
+<p>This element is a parent for other child elements.</p>
+
+
+<p>The <code>@type</code> attribute declares a valid code (<em>1</em>) from the <em>ContactType</em> codelist.</p>
+
+<p><code><pre>&lt;contact-info type="1"&gt;
+...
+&lt;/contact-info&gt;
+</pre></code>
+</p>
+
+<p>Full example with all child elements:</p>
+
+<p><code><pre><span>  &lt;contact-info type="1"&gt;
+</span>   &lt;organisation&gt;
+    &lt;narrative&gt;Agency A&lt;/narrative&gt;
+   &lt;/organisation&gt;
+   &lt;department&gt;
+    &lt;narrative&gt;Department B&lt;/narrative&gt;
+   &lt;/department&gt;
+   &lt;person-name&gt;
+    &lt;narrative&gt;A. Example&lt;/narrative&gt;
+   &lt;/person-name&gt;
+   &lt;job-title&gt;
+    &lt;narrative&gt;Transparency Lead&lt;/narrative&gt;
+   &lt;/job-title&gt;
+   &lt;telephone&gt;0044111222333444&lt;/telephone&gt;
+   &lt;email&gt;transparency@example.org&lt;/email&gt;
+   &lt;website&gt;http://www.example.org&lt;/website&gt;
+   &lt;mailing-address&gt;
+    &lt;narrative&gt;Transparency House, The Street, Town, City, Postcode&lt;/narrative&gt;
+   &lt;/mailing-address&gt;
+<span>  &lt;/contact-info&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>The optional <code>contact-info/department</code> element was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">added</a>.</p>
+</p>
+<p id="id2">
+<h3>1.03</h3>
+<p>Added the optional <code>contact-info/website</code> element.</p>
+
+<p>Added the optional <code>contact-info/@type</code> attribute.</p>
+
+
+<p>Changed the following subelements of contact-info to allow multiple-language versions explicitly (no change to parsing; purely semantic):</p>
+
+<ul>
+<li>organisation</li>
+<li>person-name</li>
+<li>job-title</li>
+<li>mailing-address</li>
+</ul>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L724">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/contact-info.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="organisation/">organisation</a></li>
+<li><a href="department/">department</a></li>
+<li><a href="person-name/">person-name</a></li>
+<li><a href="job-title/">job-title</a></li>
+<li><a href="telephone/">telephone</a></li>
+<li><a href="email/">email</a></li>
+<li><a href="website/">website</a></li>
+<li><a href="mailing-address/">mailing-address</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

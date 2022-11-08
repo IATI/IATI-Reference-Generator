@@ -1,0 +1,92 @@
+<div class="body" role="main">
+<p id="sector">
+<h1>sector</h1>
+<p><code>iati-activities/iati-activity/sector</code></p>
+<p>This is the reference page for the XML element <code>sector</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Sector code and name.  For the value of the @code attribute,
+see <a href="/en/iati-standard/203/codelists/sector">http://iatistandard.org/codelists/sector</a></p>
+<p>Either the @code attribute or descriptive text content must be
+present.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-sector-code">
+<dt>@code</dt>
+<dd><p>The code for the sector. If the vocabulary is “DAC” or
+missing then the CRS Sector Code should be used.</p>
+<p>Code is not mandatory but highly recommended. Either code
+or description must be present.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/Sector/"><span>Sector codelist</span></a>.</p>
+<p>This value must be on the <a href="../../../../codelists/SectorCategory/"><span>SectorCategory codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-sector-vocabulary">
+<dt>@vocabulary</dt>
+<dd><p>The vocabulary (codelist) used for sector
+classifications. If omitted, assume DAC. “DAC” codes
+should be used wherever possible. It is also recommended
+that if a publisher has its own classification system then
+the vocabulary “RO” (Reporting Organisation’s own
+vocabulary” should be used in addition to “DAC”. NB that
+if multiple sector codes are used in multiple vocabularies
+then each vocabulary’s percentages should add up to 100%.</p>
+<p>See <a href="/en/iati-standard/203/codelists/vocabulary">http://iatistandard.org/codelists/vocabulary</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/Vocabulary/"><span>Vocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-sector-percentage">
+<dt>@percentage</dt>
+<dd><p>The percentage of the budget allocated to this item.  Content
+must be a positive decimal number between 0 and 100, with no
+percentage sign. In version 1.03 of the IATI Standard this
+value became designated as a decimal value and no longer
+as a positive integer.</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-sector-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>sector</code> with the <code>Sector</code> code:</p>
+<p><code><pre>  &lt;sector code="11110" vocabulary="DAC" /&gt;
+</pre></code>
+</p>
+<p>When multiple <code>sector</code> are declared, then the <code>percentage</code> values should sum to 100% for the specific <code>iati-activity</code>:</p>
+<p><code><pre>  &lt;sector code="22010" percentage="50" vocabulary="DAC" /&gt;
+  &lt;sector code="11110" percentage="50" vocabulary="DAC" /&gt;
+</pre></code>
+</p>
+<p>The <code>vocabulary</code> is used to declare which <code>sector</code> classification list is in use. If this is omitted, then IATI assumes the DAC.</p>
+<p>If a vocabulary is not on the <code>Vocabulary</code> codelist, then the value of <em>RO</em> (Reporting Organisation) should be declared.  Exceptionally, the text/name for the code should also be include.</p>
+<p><code><pre>&lt;sector vocabulary="RO"&gt;Education&lt;/sector&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+<p>Where used, the @percentage attribute is now designated as a decimal
+value and no longer as a positive Integer</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L391">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/sector.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

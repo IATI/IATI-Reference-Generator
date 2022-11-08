@@ -1,0 +1,50 @@
+* = repeating elements
+
+<iati-activities version="1.01" generated-datetime="">
+<iati-activity xml:lang="" default-currency="" hierarchy=?"" last-updated-datetime="">
+<iati-identifier></iati-identifier>
+<reporting-org ref="" type="" xml:lang=""></reporting-org>
+<participating-org role="" ref="" type="" xml:lang=""></participating-org>*
+<recipient-country code="" percentage="" xml:lang=""></recipient-country>*
+<recipient-region code="" percentage="" xml:lang=""></recipient-region>*
+<title xml:lang=""></title>*
+<description type="" xml:lang=""></description>*
+<activity-website></activity-website>
+<activity-date type="" iso-date="" xml:lang=""></activity-date>*
+<other-identifier owner-ref="" owner-name=""></other-identifier>*
+<related-activity type="" ref="" xml:lang=""></related-activity>*
+<sector vocabulary="" code="" percentage="" xml:lang=""></sector>*
+<policy-marker significance="" vocabulary="" code="" xml:lang=""></policy-marker>*
+<collaboration-type code="" xml:lang=""></collaboration-type>
+<default-flow-type code="" xml:lang=""></default-flow-type>
+<default-aid-type code="" xml:lang=""></default-aid-type>
+<default-finance-type code="" xml:lang=""></default-finance-type>
+<default-tied-status code="" xml:lang=""></default-tied-status>
+<activity-status code="" xml:lang=""></activity-status>
+<transaction>*
+   <transaction-type code=""></transaction-type>
+   <provider-org ref="" provider-activity-id=""></provider-org>
+   <receiver-org ref="" receiver-activity-id=""></receiver-org>
+   <value currency="" value-date=""></value>
+   <description xml:lang=""></description>
+   <transaction-date iso-date=""></transaction-date>
+   <flow-type code="" xml:lang=""></flow-type>
+   <aid-type code="" xml:lang=""></aid-type>
+   <finance-type code="" xml:lang=""></finance-type>
+   <tied-status code="" xml:lang=""></tied-status>
+   <disbursement-channel code=""></disbursement_channel>
+</transaction>
+<document-link url="" format="" xml:lang="">*
+   <category code=""></category>*
+   <title></title>
+</document-link>
+<location percentage="">*
+   <location-type code=""/>
+   <name xml:lang=""></name>
+   <description></description>
+   <administrative country="" adm1="" adm2=""></administrative>
+   <coordinates latitude="" longitude="" precision=""/>
+   <gazetteer-entry gazetteer-ref=""></gazetteer-entry>
+</location>
+</iati-activity>
+</iati-activities>

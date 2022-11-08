@@ -1,0 +1,63 @@
+<div class="body" role="main">
+<p id="value">
+<h1>value</h1>
+<p><code>iati-activities/iati-activity/planned-disbursement/value</code></p>
+<p>This is the reference page for the XML element <code>value</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The amount to be disbursed in the specified currency.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-planned-disbursement-value-currency">
+<dt>@currency</dt>
+<dd><p>A three letter ISO 4217 code for the original currency of the
+amount.
+This is required for all currency amounts unless the
+<a href="mailto:iati-activity/%40default-currency">iati-activity/<span>@</span>default-currency</a> (or <a href="mailto:iati-organisation/%40default-currency">iati-organisation/<span>@</span>default-currency</a>
+for an organisation file) attribute is specified.</p>
+<p>Currency codes are listed at
+<a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/Currency/"><span>Currency codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-planned-disbursement-value-value-date">
+<dt>@value-date</dt>
+<dd><p>The date that this value was set (to allow historical
+currency conversion).  The date must be in ISO 8601
+format (YYYY-MM-DD).</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>value</code> in context of <code>planned-disbursement</code> element.</p>
+<p>A <code>value-date</code> for currency conversions must be provided in ISO 8601 format (YYYY-MM-DD).</p>
+<p>The ISO 4217 code for the <code>currency</code> in which the <code>planned-disbursement</code> is denominated should be declared using the <code>Currency</code> codelist, but only if different to <code>default-currency</code> in the <code>iati-activity</code> element.</p>
+<p><code><pre>  &lt;planned-disbursement updated="2014-01-01"&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+<span>   &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
+</span>  &lt;/planned-disbursement&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+<p>Currency values are now allowed to be declared as decimals instead of integers.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1596">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/planned-disbursement/value.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

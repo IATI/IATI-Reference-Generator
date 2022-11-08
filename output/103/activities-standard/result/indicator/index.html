@@ -1,0 +1,52 @@
+<div id="content" role="main">
+
+<header>
+<h1>Indicator</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;indicator&gt;&lt;/indicator&gt;</h2><p><h3>From the schema</h3><p>
+              The indicator(s) that meet the results. There can be
+              multiple indicators for each result.
+            </p><table><tbody><tr><td>@measure</td><td>
+                  The type of measurement for the indicator value
+                  e.g. unit, percentage, NDP.
+                </td></tr><tr><td>@ascending</td><td>
+                  True if the indicator improves from small to large
+                  (e.g. clinics built); false if it improves from
+                  large to small (e.g. cases of a disease). Defaults
+                  to true if omitted.
+                </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /result/indicator/@measure</h3><ul><li>Must be on: <a href="/en/iati-standard/203/codelists/indicator_measure">Indicator Measure Codelist</a></li></ul></p>
+<h2 id="indicator">Indicator</h2>
+
+<!-- EDIT1 SECTION "Indicator" [1-45] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The Indicator element is contained within a result set, and also contains other elements.
+</p>
+<p>
+The type of measurement for the indicator value e.g. unit, percentage, NDP can be described:
+</p><pre><span><span>&lt;result<span>&gt;</span></span></span>
+....
+    <span><span>&lt;indicator</span> <span>measure</span>=<span>"NDP"</span><span>&gt;</span></span>
+    ....
+    <span><span>&lt;/indicator<span>&gt;</span></span></span>
+.....
+<span><span>&lt;/result<span>&gt;</span></span></span>    </pre>
+<p>
+Additionally, a flag to indicate whether the data in this indicator improves from small to large (ascending = “true”), or whether it is reversed and improves from large to small (ascending=“false”). Boolean. If omitted 'true' is assumed.
+</p><pre><span><span>&lt;result<span>&gt;</span></span></span>
+....
+    <span><span>&lt;indicator</span> <span>measure</span>=<span>"NDP"</span> <span>ascending</span>=<span>"true"</span><span>&gt;</span></span>
+    ....
+    <span><span>&lt;/indicator<span>&gt;</span></span></span>
+.....
+<span><span>&lt;/result<span>&gt;</span></span></span>    </pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [46-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-2313 -->
+
+</div>

@@ -1,0 +1,186 @@
+<div id="content" role="main">
+
+<header>
+<h1>Annual forward planning budget (total-budget)</h1>
+</header><!-- .entry-header -->
+<p>
+<h3>Definitions</h3>
+<p>The <em>total-budget</em> element allows for the reporting of the organisation’s own budget. The recommendation is that, where and when possible, the organisation’s total annual planned budget for the next three years is reported.</p>
+<p>The element is repeated for each reported year. It is possible to report periods other than years, but this is not recommended.<br/>
+</p>
+<table>
+<tr>
+<td><strong>period-start</strong></td>
+<td>Start date of the reporting period.</td>
+</tr>
+<tr>
+<td><strong>period-start (text)</strong></td>
+<td>A free text description of the period start.</td>
+</tr>
+<tr>
+<td><strong>period-end</strong></td>
+<td>End date of the reporting period.</td>
+</tr>
+<tr>
+<td><strong>period-end (text)</strong></td>
+<td>A free text description of the period end.</td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>The total budget for the specified period in the specified or default currency.</td>
+</tr>
+<tr>
+<td><strong>@currency</strong></td>
+<td>The currency in which the project is denominated. </td>
+</tr>
+<tr>
+<td><strong>@value-date</strong></td>
+<td>Date of value for currency conversions.</td>
+</tr>
+</table>
+<h3>Example Usage</h3>
+<p>The example below shows full reporting for two consecutive years. </p>
+<pre> 
+
+  ..
+  
+    2012
+    2012
+    250000000
+  
+  
+    2013
+    2013
+    300000000
+  
+  ..
+
+</pre>
+<p>Stripped to essentials it is:</p>
+<pre> 
+
+  ..
+  
+    
+    
+    250000000
+  
+  
+    
+    
+    300000000
+  
+  ..
+
+</pre>
+<h3>Structure</h3>
+<table>
+<tr>
+<th>Item</th>
+<th>Format</th>
+<th>XML</th>
+<th>Occurs</th>
+</tr>
+<tr>
+<td>total-budget</td>
+<td></td>
+<td>total-budget</td>
+<td>0..*</td>
+</tr>
+<tr>
+<td>   period-start</td>
+<td></td>
+<td>total-budget/period-start</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      period-start[@iso-date]</td>
+<td><a href="../../guides/technical-issues/dates/">Date</a></td>
+<td>total-budget/period-start/@iso-date</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      period-start (text)</td>
+<td>Text</td>
+<td>total-budget/period-start/text()</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   period-end</td>
+<td></td>
+<td>total-budget/period-end</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      period-end[@iso-date]</td>
+<td><a href="../../guides/technical-issues/dates/">Date</a></td>
+<td>total-budget/period-end/@iso-date</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      period-end (text)</td>
+<td>Text</td>
+<td>total-budget/period-end/text()</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   value</td>
+<td></td>
+<td>total-budget/value</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      currency</td>
+<td><a href="../../codelists/currency/">Currency Code</a></td>
+<td>total-budget/value/@currency</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>      value-date</td>
+<td><a href="../../guides/technical-issues/dates/">Date</a></td>
+<td>total-budget/value/@value-date</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      value-amount</td>
+<td>Integer</td>
+<td>total-budget/value/text()</td>
+<td>1..1</td>
+</tr>
+</table>
+<h3>Usage &amp; Compliance</h3>
+<p>The <em>total-budget</em> element is not mandatory, but is <strong>recommended</strong> for full compliance. An instance of the element should be used for each budget-period reported. There is no limit to the number of instances. </p>
+<p>For every occurrence of the total-budget element:</p>
+<ul>
+<li> The <em>period-start</em> element is <strong>mandatory</strong>.
+<ul>
+<li> The <em>period-start[@iso-date]</em> is <strong>mandatory</strong>.
+</li><li> The <em>period-start[@iso-date]</em> <strong>must</strong> be in a valid ISO <a href="http://iatistandard.org/guides/dates">date format</a>.
+  </li></ul>
+</li><li> The <em>period-end</em> element is <strong>mandatory</strong>.
+<ul>
+<li> The <em>period-end[@iso-date]</em> is <strong>mandatory</strong>.
+</li><li> The <em>period-end[@iso-date]</em> <strong>must</strong> be in a valid ISO <a href="http://iatistandard.org/guides/dates">date format</a>.
+  </li></ul>
+</li><li> The <em>value</em> element is <strong>mandatory</strong>.
+<ul>
+<li> If the <em>default-currency</em> has not been specified in the <a href="../record-header/">Record Header</a>, <em>currency</em> is <strong>mandatory</strong>.
+</li><li> If <em>@currency</em> is present it <strong>must</strong> be a valid code from the <a href="../../codelists/currency/">codelist</a>.
+</li><li> The <em>@value-date</em> is <strong>mandatory</strong>.
+</li><li> The <em>@value-date</em> <strong>must</strong> be in a valid ISO <a href="../../guides/technical-issues/dates/">date format</a>.
+</li><li> The <em>value</em> is <strong>mandatory</strong>.
+</li><li> The <em>value</em> <strong>must</strong> be a positive integer.
+  </li></ul>
+</li></ul>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1531 -->
+<!-- #comments -->
+<p>
+<p>
+					Last updated on January 29, 2015. 				  </p>
+<!--<p class="fl">Last updated: April 1, 2011   
+					<p class="fr"></p>	-->
+</p>
+</div>

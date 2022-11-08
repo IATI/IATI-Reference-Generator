@@ -1,0 +1,12 @@
+<codelist name="HumanitarianScopeType" date-last-modified="2022-07-25T19:39:02.453594+00:00" version="" xml:lang="en">
+  <HumanitarianScopeType>
+    <code>1</code>
+    <name>Emergency</name>
+    <language>en</language>
+  </HumanitarianScopeType>
+  <HumanitarianScopeType>
+    <code>2</code>
+    <name>Appeal</name>
+    <language>en</language>
+  </HumanitarianScopeType>
+</codelist>

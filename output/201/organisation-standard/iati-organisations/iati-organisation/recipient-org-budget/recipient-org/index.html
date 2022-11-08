@@ -1,0 +1,72 @@
+<div class="body" role="main">
+<p id="recipient-org">
+<h1>recipient-org</h1>
+<p><code>iati-organisations/iati-organisation/recipient-org-budget/recipient-org</code></p>
+<p>This is the reference page for the XML element <code>recipient-org</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The organisation that will receive the funds.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur once and only once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-recipient-org-budget-recipient-org-ref">
+<dt>@ref</dt>
+<dd><p>Machine-readable identification string for the
+organisation. Must be in the format {Registration Agency}
+- (Registration Number} where {Registration Agency} is a
+valid code in the Registration Agency code list and
+{Registration Number } is a valid identifier issued by the
+{Registration Agency}. If this is not present then the
+narrative MUST contain the name of the organisation.</p>
+<p>This value must be of type xsd:string.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L979">1.17.1</a>: The recipient organisation identifier should not start or end with spaces or newlines.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>recipient-org</code> in context of <code>recipient-org-budget</code> element:</p>
+<p><code><pre>  &lt;recipient-org-budget&gt;
+<span>   &lt;recipient-org ref="AA-ABC-1234567"&gt;
+</span>    &lt;narrative&gt;Org Name&lt;/narrative&gt;   
+<span>   &lt;/recipient-org&gt;
+</span>   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;2500000&lt;/value&gt;
+   &lt;budget-line ref="1234"&gt;
+	&lt;value currency="USD" value-date="2014-01-01"&gt;2000000&lt;/value&gt;
+	&lt;narrative&gt;Budget Line&lt;/narrative&gt;
+   &lt;/budget-line&gt;
+  &lt;/recipient-org-budget&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id2">
+<h3>2.01</h3>
+<p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-organisations-schema.xsd#L244">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/recipient-org.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="0" name="order"/></div>

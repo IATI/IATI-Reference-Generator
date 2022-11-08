@@ -1,0 +1,294 @@
+<div class="body" role="main">
+<p id="results-information">
+<h1>Results information</h1>
+<p>Results describe the benefit or intended benefits of an activity; these can be broken down into <a href="/en/iati-standard/203/codelists/ResultType/">types</a>: outputs, outcomes and impacts. Updating results regularly means that data users can track an activity’s progress and learn from other organisation’s activities - such as whether or not the activity was a success and what challenges were faced. Both positive and negative results should be included.</p>
+<p>IATI offers a rich structure, allowing organisations to publish results which are meaningful to them. Publishers are able to link their results to agreements with their donors e.g., by coordinating results publishing with their partners, alliance and/or stakeholders. Often, the published results will relate to the framework of the agreed objectives for the activity, or activities. There is no single way to publish results in IATI and this can make results hard to understand. This guidance helps explain what can be captured in the IATI Standard.</p>
+<p>How results data is published will depend on the structure of an organisation’s activities and their results frameworks. For example, if a programme is being published, overarching results details may be published in the parent activity, with more detailed results being published in the sub (child) activities. Or, if the publisher is working in an alliance, each organisation could publish results using the same indicators so that their results are comparable.</p>
+<p>To better understand publishing and using results data, it may be helpful to look at a visualisation. <a href="http://www.d-portal.org/">d-portal</a> is one tool that helps to visualise results data, for further information see <a href="../understanding-results/"><span>Understanding results data</span></a>.</p>
+<p><em>Please note:</em> security implications may also prevent results data from being published, or require results to be aggregated. Any security considerations should be outlined in an organisation’s <a href="/en/guidance/preparing-organisation/organisation-data-publication/information-and-data-you-cant-publish-exclusions/">exclusion policy</a><em>.</em></p>
+<p id="understanding-results">
+<h2>Understanding Results</h2>
+<p>There are many elements and attributes that can be used and not all may be needed. For organisations wanting to publish results data, IATI recommends first thinking about <strong>what</strong> the results are that they want shown and then looking at <strong>how</strong> they can be mapped onto the IATI Standard.</p>
+<p>Results in IATI are generally one of three types:</p>
+<ul>
+<li><strong>Output (1)</strong>: A direct consequence of the activity, e.g. vaccinations delivered to X number of children.</li>
+<li><strong>Outcome (2)</strong>: A short term effect the activity has contributed to, e.g. lower rates of infection after a vaccination programme.</li>
+<li><strong>Impact (3)</strong>: A long term effect the activity has contributed to, e.g. improved life expectancy.</li>
+</ul>
+<p>Each activity can have multiple results of each type, i.e. multiple outputs.</p>
+<p><strong>Measuring results</strong></p>
+<p>Each result is measured by one or more indicators. For example, the number of different types of vaccines provided and how many local staff were trained to give them.</p>
+<p>Each indicator can have a given time period with a start and an end date. This is the time period in which the indicator is being measured, e.g. agricultural season or school term. A baseline value shows the progress at the beginning of the time period. Often, the baseline is 0 as no work has yet been carried out. A target value provides the progress that should have been achieved by the end of the period. The actual value provides the progress that was achieved during the given time period. You can track the progress of an indicator over time; to enable this an indicator needs to have multiple time periods. e.g. yearly time periods for 2018, 2019 and 2020.</p>
+<p>The indicator description can be used to help explain what’s being measured and how. For example, whether the published values are aggregatable (the data user should add them up to get the total) or cumulative (the data user should look at the most recent value to get the total).</p>
+<p><em>Please note:</em> the indicators for different types of results (outputs, outcomes and impacts) will often be measured across different time periods, ranging from a few days to multiple years.</p>
+<p>Each indicator must have a measure attribute; this describes what the indicator is being measured in. The three most common <a href="/en/iati-standard/203/codelists/IndicatorMeasure/">measure types</a> in IATI are:</p>
+<p><strong>Numerical (quantitative) measures</strong></p>
+<ul>
+<li><strong>Unit (1)</strong>: e.g. number of workshops delivered.</li>
+<li><strong>Percentage (2)</strong>: e.g. percentage of the population who have received a vaccine.</li>
+</ul>
+<p>Indicators with these measures should have numerical <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">baseline</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">target</a> and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">actual</a> indicator values. If a high number shows improvement, the ‘ascending’ boolean should be set to 1 (true). If a low number shows improvement, the ‘ascending’ boolean should be set to 0 (false).</p>
+<p><strong>Descriptive measures</strong></p>
+<ul>
+<li><strong>Qualitative (5)</strong>: e.g. this is often a description, such as detailing more favourable attitudes towards gender equality amongst trained staff</li>
+</ul>
+<p>Indicators with this measure type should have descriptive <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/comment/">baselines</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/comment/">targets</a> and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/comment/">actuals</a>. This is captured within the comment elements; the value attribute should not be published.</p>
+<p>Indicators can also be linked to existing results frameworks, e.g. the Sustainable Development Goal Indicators. For more information on how to do this please see: <a href="../sdg-guidance/"><span>How to use the IATI Standard for publishing and using data on the Sustainable Development Goals (SDGs)</span></a>.</p>
+<p>Different donors have their own requirements when it comes to publishing results. Guidance from each donor can be found on the <a href="/en/guidance/preparing-data/donors-reporting-requirements/">Donors Reporting Requirements</a> page.</p>
+<p><strong>Example usage</strong></p>
+<p>An activity is working towards the outcome that ‘people to have access to independent media covering a diverse range of outcomes’ (title). One of the ways this is being measured is through ‘the percentage of journalists who feel free to express their opinion’ (indicator). This is measured through a bi-annual survey where they are asked to score how free they feel on a scale of 1 - 4.</p>
+<p>The starting value (baseline) was 15% of journalists felt free to express their opinions. At the end of the chosen time period, the target was set at 50%. The activity did meet its target, as by the end of the period (actual) 53% of journalists felt free to express their opinions.</p>
+<p><code><pre>&lt;result type="2"&gt;
+  &lt;title&gt;
+    &lt;narrative&gt;People who have access to independent media covering diverse options.&lt;/narrative&gt;
+  &lt;/title&gt;
+  &lt;description&gt;
+    &lt;narrative&gt;Further explanation of the expected result.&lt;/narrative&gt;
+  &lt;/description&gt;
+  &lt;indicator measure="2" ascending="1" &gt;
+    &lt;title&gt;
+      &lt;narrative&gt;The percentage of journalists who feel free to express their opinion (scoring 3 or 4)&lt;/narrative&gt;
+    &lt;/title&gt;
+    &lt;description&gt;
+      &lt;narrative&gt;
+        1 = Not at all free
+        2 = No, not entirely free
+        3 = Yes, up to some level
+        4 = Yes, entirely free
+        This is measured through a bi-annual survey amongst journalists.
+      &lt;/narrative&gt;
+    &lt;/description&gt;
+    &lt;baseline year="2012" value="15"&gt;
+            &lt;comment&gt;
+        &lt;narrative&gt;Baseline measured in a survey amongst 1083 journalists in country x.&lt;/narrative&gt;
+      &lt;/comment&gt;
+    &lt;/baseline&gt;
+    &lt;period&gt;
+      &lt;period-start iso-date="2012-01-01" /&gt;
+      &lt;period-end iso-date="2015-12-31" /&gt;
+      &lt;target value="50" /&gt;
+      &lt;actual value="53" /&gt;
+    &lt;/period&gt;
+  &lt;/indicator&gt;
+  &lt;indicator&gt;
+
+    ...
+
+  &lt;/indicator&gt;
+&lt;/result&gt;
+</pre></code>
+</p>
+</p>
+<p id="results-should-include">
+<h2>Results should include</h2>
+<ul>
+<li>A publisher should only publish results about their own work. If working in an alliance or partnership, coordinating results publishing is highly encouraged.</li>
+<li>Each activity can contain multiple results, each of which can contain multiple indicators.</li>
+<li>Different types of results can be published e.g. outputs, outcomes and impacts</li>
+<li>Result indicators can be measured differently e.g. using units, percentages or qualitative measures.</li>
+<li>Every result must include an <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/">indicator</a>, which in turn can detail a <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/">period</a> of time, and then a <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/comment/">baseline</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">target</a> and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">actual</a> measure.</li>
+<li>If possible, the period in which an indicator is measured should be meaningful to the activity e.g. agricultural seasons or school terms.</li>
+<li>Numerical (quantitative) baseline, target and actual measures should be published in the value attributes.</li>
+<li>The ascending boolean details whether high numerical values are good (1 = true) or if low numerical values are good (0 = false)</li>
+<li>Descriptive (qualitative) baselines, targets and actual measures should be published in the comment elements.</li>
+<li>Comment elements can also be used to help describe results and indicators. These can be published in multiple languages.</li>
+<li>Each indicator can have a <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a>, linking it to an external framework (for example, the <a href="../sdg-guidance/"><span>SDG Indicators</span></a>). It is recommended that publishers include this for each indicator, and not for each result.</li>
+</ul>
+</p>
+<p id="technical-guidance-summary">
+<h2>Technical guidance summary</h2>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/">result</a></td>
+<td>This contains information about the result of the activity.</td>
+<td>The <a href="/en/iati-standard/203/codelists/ResultType/">type</a> of result must be published e.g. output, outcome or impact.</td>
+<td>Multiple results can be published.
+The result can flag whether or not the data is suitable for aggregation using the @aggregation-status flag.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/title/">title</a></td>
+<td>This is the title of the result.</td>
+<td>This element must appear only once within each result element.</td>
+<td>The title can be repeated in multiple languages using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/title/narrative/">narrative</a> element.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/description/">description</a></td>
+<td>The description provides more detail about the result.</td>
+<td>This element must appear only once within each result element.</td>
+<td>The description can be repeated in multiple languages using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/description/narrative/">narrative</a> element.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/document-link/">document-link</a></td>
+<td>A link to an online, publicly accessible web page or document expanding on the result.</td>
+<td> </td>
+<td>Further guidance can be found on the <a href="../related-documents/"><span>Related documents</span></a> page.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Publishing Indicators</strong></p>
+<p>Multiple indicators can be published for each result. These describe how the activity’s progress towards the result is measured.</p>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/">indicator</a></td>
+<td>This contains information about the indicator of the result.</td>
+<td>This element must appear at least once within each result element.
+How the indicator is being <a href="/en/iati-standard/203/codelists/IndicatorMeasure/">measured</a> must be included e.g. in units, percentages or qualitative narrative.
+</td>
+<td>The element can specify whether or not the indicator is ascending or descending and if the data is suitable for aggregation.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/title/">title</a></td>
+<td>This is the title of the indicator.</td>
+<td>This element must appear only once within each indicator element.</td>
+<td>The title can be repeated in multiple languages using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/title/narrative/">narrative</a> element.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/description/">description</a></td>
+<td>The description provides more detail about the indicator.</td>
+<td>This element must appear only once within each indicator element.</td>
+<td>The description can be repeated in multiple languages using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/description/narrative/">narrative</a> element.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/document-link/">document-link</a></td>
+<td>A link to an online, publicly accessible web page or document expanding on the indicator.</td>
+<td> </td>
+<td>Further guidance can be found on the <a href="../related-documents/"><span>Related documents</span></a> page.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a></td>
+<td>A standardised means of identifying the indicator from a code in a recognised vocabulary.</td>
+<td>Multiple vocabularies may be specified, but each vocabulary must be specified only once for each indicator.
+Reference can be published here or at results level but not both.
+</td>
+<td>If <a href="/en/iati-standard/203/codelists/IndicatorVocabulary/">indicator vocab</a> 99 (reporting org) is used, it is strongly recommended that a link to the codelist is included. This helps ensure that users can understand the meaning of the code.
+This element can be used to link SDG Indicators to the published indicator. Further guidance is <a href="../sdg-guidance/"><span>here</span></a>.
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Publishing baselines, targets and actuals</strong></p>
+<p>The values of each indicator are published in the following <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">baseline</a>, period <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">target</a> and period <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">actual</a> elements. The baseline is the starting point. The target is a result an organisation wants an activity to achieve in a certain period of time. The actual is what was achieved at the end of that period.</p>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">baseline</a></td>
+<td>Holds the baseline value for the indicator.</td>
+<td>The year (yyyy) the value was taken must be included.
+A value must be included for all non-qualitative measures.
+</td>
+<td>A specific date of when the value was taken can be published.
+The value attribute should be omitted for qualitative measures. The value attribute should be a valid number for all non-qualitative measures.
+If publishing a qualitative measure, the narrative should be provided in the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/comment/">comment</a> element.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/dimension/">dimension</a></td>
+<td>A category used for disaggregating the results by gender or age, etc.
+A name and value for the aggregation can be provided.
+</td>
+<td> </td>
+<td>For example an activity could declare the dimension’s name as <em>sex</em>, with a value of <em>female</em>.
+A baseline can have multiple dimensions.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/document-link/">document-link</a></td>
+<td>A link to an online, publicly accessible web page or document expanding on the baseline.</td>
+<td> </td>
+<td>Further guidance can be found on the <a href="../related-documents/"><span>Related documents</span></a> page.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/comment/">comment</a></td>
+<td>Further describes the baseline and describes qualitative results.</td>
+<td>This element must appear only once within each baseline element.</td>
+<td>The comment can be repeated in multiple languages using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/comment/narrative/">narrative</a> element.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Publishing target and actual values in a given time period</strong></p>
+<p>The period element defines the period of time in which the organisation is measuring the indicator. Multiple periods and measures can be published.</p>
+<p>The period element includes target and actual values. Target and actual contain the same elements and attributes as the baseline element. See the table above on how to publish on these.</p>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/">period</a></td>
+<td>Defines the period in which the indicator is being measured.</td>
+<td> </td>
+<td>Multiple periods can be published.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/period-start/">period-start</a></td>
+<td>The start of the period.</td>
+<td>This must be published and only occur once within each period element.
+The date must be in the format (YYYY-MM-DD).
+The start date must be before, or the same as, the end date.
+</td>
+<td> </td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/period-end/">period-end</a></td>
+<td>The end of the period.</td>
+<td>This must be published and only occur once within each period element.
+The date must be in the format (YYYY-MM-DD).
+The end date must be after, or the same as, the start date.
+</td>
+<td> </td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">target</a></td>
+<td>Defines the target value for this period.</td>
+<td> </td>
+<td>Multiple targets can be published for each period.
+Target contains the same elements and attributes as baseline. See the table above for further guidance.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">actual</a></td>
+<td>Defines the actual value achieved at the end of this time period.</td>
+<td> </td>
+<td>Multiple actuals can be published for each period.
+Actual contains the same elements and attributes as baseline. See the table above for further guidance.
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<meta content="Results information" name="title"/><meta content="Results describe the benefit or intended benefits of an activity; these can be broken down into types: outputs, outcomes and impacts." name="description"/><meta content="activity" name="guidance_type"/><meta content="July 27, 2020" name="date"/></div>

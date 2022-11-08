@@ -1,0 +1,65 @@
+<div class="body" role="main">
+<p id="conditions">
+<h1>Conditions</h1>
+<p>IATI asks publishers to declare any conditions or specific terms that are attached to their activities. For example, these could be the requirements issued by a funder or a six month review to assess whether or not the activity is worth continuing.</p>
+<p>IATI data should first flag whether or not there are conditions attached to an activity in the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/conditions/">conditions</a> element. A short description should be included which explains each of the attached conditions. If there are no conditions attached to the activity, it is strongly recommended that the element is used to declare ‘no conditions’.</p>
+<p>More detail about an activity’s conditions can be added by using the <a href="../related-documents/"><span>document-link</span></a> element. For example, this could include a link to the agreed terms of reference between the organisation carrying out the work and its funder. It is good practice to include in the short description of the condition that further information can be found in a document-link.</p>
+<p><strong>Conditions should include:</strong></p>
+<ul>
+<li>It is recommended that every activity contains a conditions element. It is valid to declare that no conditions are attached.</li>
+<li>When multiple conditions exist, these can be reported separately within the conditions element.</li>
+<li>The conditions can be repeated in multiple languages, using separate narrative elements.</li>
+<li>Three types of condition can be reported:<ul>
+<li><strong>Policy</strong>: e.g. a particular policy needs to be implemented by the receiving organisation.</li>
+<li><strong>Performance</strong>: e.g. certain outputs or outcomes need to be achieved</li>
+<li><strong>Fiduciary</strong>: e.g. the recipient is required to use certain public financial management or public accountability measures.</li>
+</ul>
+</li>
+<li>Further details about a condition can be supplied using the activity <a href="../related-documents/"><span>document-link</span></a> element.</li>
+<li>If a condition relates to the whole organisation, such as organisation-wide terms and conditions, it should not be reported within an activity. Rather, it should be included as a document-link in the organisation file.</li>
+</ul>
+<p id="technical-guidance-summary">
+<h2>Technical guidance summary</h2>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/conditions/">conditions</a></td>
+<td>Specifies if there are terms and conditions attached to an activity.</td>
+<td>This element must occur no more than once for each activity.
+The element must contain one @attached boolean. This states whether or not conditions are attached to the activity.
+</td>
+<td>When using the @attached boolean:
+1 = yes
+0 = no
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/conditions/condition">condition</a></td>
+<td>Contains details of a condition.</td>
+<td>The type of condition must be provided using the <a href="/en/iati-standard/203/codelists/ConditionType/">type</a> attribute: policy, performance or fiduciary.</td>
+<td>This element can be repeated multiple times
+The description of the condition is held within the narrative element.
+If a condition relates to a whole organisation, it should not be reported here. Rather, it should be included as a document link in the organisation file.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/conditions/condition/narrative/">narrative</a></td>
+<td>Short description of the condition.</td>
+<td> </td>
+<td>Further details about a condition can be supplied using the activity <a href="../related-documents/"><span>document-link</span></a> element.</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<meta content="Conditions" name="title"/><meta content="IATI asks publishers to declare any conditions or specific terms that are attached to their activities." name="description"/><meta content="activity" name="guidance_type"/><meta content="July 27, 2020" name="date"/></div>

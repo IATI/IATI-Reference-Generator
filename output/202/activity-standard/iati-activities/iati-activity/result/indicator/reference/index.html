@@ -1,0 +1,127 @@
+<div class="body" role="main">
+<p id="reference">
+<h1>reference</h1>
+<p><code>iati-activities/iati-activity/result/indicator/reference</code></p>
+<p>This is the reference page for the XML element <code>reference</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A standardised means of identifying the indicator from a
+code in a recognised vocabulary. Multiple vocabularies may
+be specified, but each vocabulary may be specified only
+once for each indicator.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L1320">8.11.1</a>: A reference code must only be declared at result OR result indicator level.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-indicator-reference-vocabulary">
+<dt>@vocabulary</dt>
+<dd><p>A code for a recognised vocabulary of indicators. The
+value for this field should appear in the
+IndicatorVocabulary codelist.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value should be on the <a href="../../../../../../codelists/IndicatorVocabulary/"><span>IndicatorVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-result-indicator-reference-code">
+<dt>@code</dt>
+<dd><p>A code for an indicator defined in the specified
+vocabulary specified.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-result-indicator-reference-indicator-uri">
+<dt>@indicator-uri</dt>
+<dd><p>If the vocabulary is 99 (reporting organisation), the
+URI where this internal vocabulary is defined.</p>
+<p>This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example of <code>reference</code> in the context of an <code>indicator</code> of a <code>result</code> element.</p>
+
+<p>This example declares use of <code>@vocabulary</code> <em>1</em>, with a <code>@code</code> of <em>3429</em>:</p>
+
+<p><code><pre>&lt;reference vocabulary="1" code="3429" /&gt;
+</pre></code>
+</p>
+<p>If a publisher uses a vocabulary of 99 (i.e. ‘Reporting Organisation’), then the <code>@indicator-uri</code> attribute should also be used, for example:</p>
+<p><code><pre>&lt;reference vocabulary="99" code="B1" indicator-uri="http://example.com/indicators.html" /&gt;
+</pre></code>
+</p>
+
+<p>The <code>reference</code> element can be repeated in any <code>indicator</code>:</p>
+
+<p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Result title&lt;/narrative&gt;    
+   &lt;/title&gt;
+   &lt;description&gt;
+    &lt;narrative&gt;Result description text&lt;/narrative&gt;   
+   &lt;/description&gt;
+   &lt;indicator measure="1" ascending="1"&gt;
+     &lt;title&gt;
+      &lt;narrative&gt;Indicator title&lt;/narrative&gt;   		 
+     &lt;/title&gt;
+     &lt;description&gt;
+      &lt;narrative&gt;Indicator description text&lt;/narrative&gt;
+     &lt;/description&gt;
+<span>     &lt;reference vocabulary="1" code="3429" /&gt;
+</span><span>     &lt;reference vocabulary="7" code="861" /&gt;
+</span><span>     &lt;reference vocabulary="99" code="B1" indicator-uri="http://example.com/indicators.html" /&gt;     
+</span>     &lt;baseline year="2012" value="10"&gt;
+      &lt;comment&gt;
+       &lt;narrative&gt;Baseline comment text&lt;/narrative&gt;
+      &lt;/comment&gt;
+     &lt;/baseline&gt;
+     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+      &lt;period-end iso-date="2013-03-31" /&gt;
+      &lt;target value="10"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+        &lt;narrative&gt;Target comment text&lt;/narrative&gt;			
+       &lt;/comment&gt; 
+      &lt;/target&gt;
+      &lt;actual value="11"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+         &lt;narrative&gt;Actual comment text&lt;/narrative&gt;
+       &lt;/comment&gt; 
+      &lt;/actual&gt;
+     &lt;/period&gt;
+   &lt;/indicator&gt;
+  &lt;/result&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id2">
+<h3>2.02</h3>
+<p>The optional <code>reference</code> element was <a href="http://support.iatistandard.org/entries/79784435-Results-Require-unambiguous-indicator-reference">added</a>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1861">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/result/indicator/reference.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

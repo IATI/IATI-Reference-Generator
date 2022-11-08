@@ -1,0 +1,10 @@
+code,name,description,language,category,category-name,category-description
+ADT,AidData,,en,,,
+COFOG,Classification of the Functions of Government (UN),,en,,,
+DAC,OECD Development Assistance Committee,,en,,,
+DAC-3,OECD Development Assistance Committee 3 digit codes,,en,,,
+ISO,International Organization for Standardization,,en,,,
+NACE,Statistical classification of economic activities in the European Community,,en,,,
+NTEE,National Taxonomy for Exempt Entities (USA),,en,,,
+RO,Reporting Organisation (i.e. maintained by the organisation referred to in the <reporting-org> element.,,en,,,
+WB,World Bank,,en,,,

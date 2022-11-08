@@ -1,0 +1,50 @@
+<div id="content" role="main">
+
+<header>
+<h1>Dates</h1>
+</header><!-- .entry-header -->
+<p>
+<p>This page is currently flagged for review. We are undertaking an update of the information we publish about the IATI Standard, and the content here has not yet been checked.</p>
+<h3>Dates and status</h3>
+<p>This section introduces the elements describing the milestone dates and status of an activity.</p>
+<h3>Milestone dates</h3>
+<p>The activity-date element contains a milestone date (past, present, or future) for the activity, as in the following example:<br/>
+<code><br/>
+&lt;activity-date type=”start-planned” iso-date=”2010-11-11”/&gt;<br/>
+</code></p>
+<p>The iso-date attribute gives the date in ISO 8601 (YYYY-MM-DD) format: this attribute is optional, but should be included whenever possible.</p>
+<p>The type attribute describes the type of milestone date, from the IATI Activity Date code list.  Currently, the list includes the following values:</p>
+<ul>
+<li>s<strong>tart-planned</strong>: the forecast starting implementation date for the activity.</li>
+<li><strong>start-actual</strong>: the actual starting implementation date for the activity, such as the date of first disbursement.</li>
+<li><strong>end-planned</strong>: the forecast ending implementation date for the activity.</li>
+<li><strong>end-actual</strong>: the actual ending implementation date for the activity, such as the date of final disbursement.</li>
+</ul>
+<p>An IATI activity document may repeat the activity-date element once for each type of date (though the *-actual types make sense only after the dates have arrived).  Here is an excerpt from the report for a completed activity, including all four date types:<br/>
+<code><br/>
+&lt;iati-activity&gt;</code></p>
+<p>...</p>
+<p>&lt;activity-date type=”start-planned” iso-date=”2009-04-01”/&gt;</p>
+<p>&lt;activity-date type=”start-actual” iso-date=”2009-04-18”/&gt;</p>
+<p>&lt;activity-date type=”end-planned” iso-date=”2010-03-31”/&gt;</p>
+<p>&lt;activity-date type=”end-actual” iso-date=”2010-03-15”/&gt;</p>
+<p>...</p>
+<p>&lt;/iati-activity&gt;<br/>
+</p>
+<p>During early planning, it might not be possible to specify a precise date.  A project, for example, might be planned only vaguely for a future year: it is a goal of IATI to allow donors and other participants to provide information as early as possible, to assist with planning in partner countries.  As a result, the iati-activity element allows specifying imprecise dates using plain text in the content (optionally combined with the xml:lang attribute):</p>
+<p><code><br/>
+&lt;activity-date type=”start-planned”</code></p>
+<p>xml:lang=”en”&gt;Late 2012 or early 2013&lt;/activity-date&gt;<br/>
+</p>
+<p>Note that an IATI activity document should use text instead of an ISO date only when it is not possible to provide a specific date; however, it is always allowed to include the text in addition to an ISO date, as in the following example, which specifies that the activity begins in the organization’s first financial quarter, on 1 April 2010::</p>
+<p><code><br/>
+&lt;activity-date type=”start-planned”</code></p>
+<p>iso-date=”2010-04-01”&gt;2010 Q1&lt;/activity-date&gt;<br/>
+</p>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1671 -->
+<!-- #comments -->
+
+</div>

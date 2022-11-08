@@ -1,0 +1,72 @@
+<div class="body" role="main">
+<p id="fss">
+<h1>fss</h1>
+<p><code>iati-activities/iati-activity/fss</code></p>
+<p>This is the reference page for the XML element <code>fss</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>This section allows entry of data required for the OECD
+DAC Forward Spending Survey at an activity level.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-fss-extraction-date">
+<dt>@extraction-date</dt>
+<dd><p>The exact date when the information was collected or
+extracted from donors’ aid management systems.</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-fss-priority">
+<dt>@priority</dt>
+<dd><p>True if the partner country is a priority partner country.</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-fss-phaseout-year">
+<dt>@phaseout-year</dt>
+<dd><p>If there are plans to phase out operations from the
+partner country, this column shows the projected
+year of last disbursements.</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>fss</code> element with <code>extraction-date</code> of <em>2014-05-06</em> and <code>phaseout-year</code> declared as <em>2016</em>.</p>
+<p>A boolean declares that this <code>fss</code> example is a partner country priority.</p>
+<p><code><pre><span>  &lt;fss extraction-date="2014-05-06" priority="1" phaseout-year="2016"&gt;
+</span>   &lt;forecast year="2014" value-date="2013-07-03" currency="GBP"&gt;10000&lt;/forecast&gt;
+<span>  &lt;/fss&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+
+<p>New in 1.03</p>
+<p>Added the optional <code>fss</code> element and its child elements</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1789">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/fss.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="forecast/">forecast</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

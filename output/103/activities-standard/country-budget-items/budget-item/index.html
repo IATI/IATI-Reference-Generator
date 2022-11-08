@@ -1,0 +1,64 @@
+<div id="content" role="main">
+
+<header>
+<h1>Budget Item</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;budget-item&gt;&lt;/budget-item&gt;</h2><p><h3>From the schema</h3><p>
+              Identifier for a single item in the recipient-country
+              budget. If more than one identifier is reported the
+              percentage share must be reported and all percentages
+              should add up to 100 percent.
+            </p><table><tbody><tr><td>@code</td><td>
+        Machine-readable code for the entity being described.
+      </td></tr><tr><td>@percentage</td><td>
+        The percentage of the budget allocated to this item.  Content
+        must be a positive real number between 0 and 100, with no
+        percentage sign.
+      </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /country-budget-items/budget-item/@code</h3><ul><li>Must be on the specified codelist given by country-budget-items/@vocabulary.<br/>
+                  If country-budget-items/@vocabulary = 1 (i.e. IATI) then must be on: <a href="/en/iati-standard/203/codelists/budget_identifier">Budget Identifier Codelist</a></li></ul></p>
+<h2 id="budget_item">Budget Item</h2>
+
+<!-- EDIT1 SECTION "Budget Item" [1-48] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+This is a new element for version 1.03.
+</p>
+<p>
+This is a child element of country-budget-items
+</p>
+<pre><span><span>&lt;country-budget-items</span> <span>vocabulary</span>=<span>"XXX"</span><span>&gt;</span></span>
+  <span><span>&lt;budget-item</span> <span>code</span>=<span>"XXX"</span> <span>percentage</span>=<span>"100"</span><span>&gt;</span></span>
+     <span><span>&lt;description</span> <span>xml:lang</span>=<span>"en"</span><span>&gt;</span></span>XXX<span><span>&lt;/description<span>&gt;</span></span></span>
+  <span><span>&lt;/budget-item<span>&gt;</span></span></span>
+<span><span>&lt;/country-budget-items<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [49-358] -->
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="section103">1.03</h4>
+<p>
+<p>
+Added the optional country-budget-item element
+</p>
+</p>
+<h4 id="section102">1.02</h4>
+<p>
+<p>
+This element did not exist
+</p>
+</p>
+<h4 id="section101">1.01</h4>
+<p>
+<p>
+This element did not exist
+</p>
+</p>
+<!-- EDIT3 SECTION "Changelog" [359-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-3731 -->
+
+</div>

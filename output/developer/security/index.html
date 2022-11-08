@@ -1,0 +1,25 @@
+<div class="body" role="main">
+<p id="security-considerations">
+<h1>Security considerations</h1>
+<p>When building tools for IATI data there are several security issues to be aware of.</p>
+<p id="xml">
+<h2>XML</h2>
+<p>When parsing XML, you should be aware of entity based attacks.</p>
+</p>
+<p id="user-supplied-files">
+<h2>User Supplied Files</h2>
+<p>You should make sure that:</p>
+<ul>
+<li>user supplied files aren’t executable (e.g. if a PHP file is uploaded to the web directory)</li>
+</ul>
+<p id="fetching-remote-files">
+<h3>Fetching Remote Files</h3>
+<p>Working with IATI Data often involves fetching data from arbitrary URLs. You should check:</p>
+<ul>
+<li>the URLs don’t begin <a href="file://">file://</a> as this will expose data on the local filesystem</li>
+<li>the URLs don’t point at any sensitive local HTTP(S) services</li>
+</ul>
+</p>
+</p>
+</p>
+</div>

@@ -1,0 +1,65 @@
+<div id="content" role="main">
+
+<header>
+<h1>Policy / Thematic Markers</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;policy-marker&gt;&lt;/policy-marker&gt;</h2><p><h3>From the schema</h3><p> Can occur: Min = 0, Max = Unlimited</p><p>
+        A policy or theme addressed by the activity.  A text
+        description of the theme appears in the content, and a formal
+        identifier appears in the @ref attribute.  The @vocabulary
+        attribute can also help to segment the markers into separate
+        vocabularies.  This element can be repeated for each policy
+        marker.  For the value of the @code attribute, see
+        <a href="../../../codelists/policy_marker/" rel="nofollow">http://iatistandard.org/101/codelists/policy_marker</a>
+</p><table><tbody><tr><td>@code</td><td>
+        Machine-readable code for the entity being described.
+      </td></tr><tr><td>@vocabulary</td><td>
+            An identifier for the vocabulary in use, to segment codes
+            into different vocabularies (e.g. Rio, Environment) to aid
+            with comparison and classification.
+
+            See <a href="../../../codelists/vocabulary/" rel="nofollow">http://iatistandard.org/101/codelists/vocabulary</a>
+</td></tr><tr><td>@significance</td><td>
+            The significance of the policy marker for this activity
+            (e.g. principal or significant), from a list defined by
+            IATI.  If a marker is not significant, the policy-marker
+            element will not be present.
+
+            See <a href="../../../codelists/policy_significance/" rel="nofollow">http://iatistandard.org/101/codelists/policy_significance</a>
+</td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /policy-marker/@code</h3><ul><li>Must be on: <a href="../../../codelists/policy_marker/">Policy Marker Codelist</a></li><li>Must be on: <a href="../../../codelists/policy_significance/">Policy Significance Codelist</a></li><li>Must be on: <a href="../../../codelists/vocabulary/">Vocabulary Codelist</a></li></ul></p>
+<h2 id="policy_marker">Policy Marker</h2>
+
+<!-- EDIT1 SECTION "Policy Marker" [1-50] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<pre><span><span>&lt;policy-marker</span> <span>vocabulary</span>=<span>"DAC"</span> <span>code</span>=<span>"04"</span> <span>significance</span>=<span>"2"</span><span>/&gt;</span></span></pre>
+<p>
+A code for the policy marker can be declared:
+</p>
+<pre><span><span>&lt;policy-marker</span> <span>vocabulary</span>=<span>"DAC"</span> <span>code</span>=<span>"04"</span><span>/&gt;</span></span></pre>
+<p>
+Additionally, a text description for this code can be provided:
+</p>
+<pre><span><span>&lt;policy-marker</span> <span>vocabulary</span>=<span>"DAC"</span> <span>code</span>=<span>"04"</span><span>&gt;</span></span>Trade Development<span><span>&lt;/policy-marker<span>&gt;</span></span></span></pre>
+<p>
+The significance can declare a score indicating if the activity addresses the policy/theme as a principal or significant objective or not at all.
+</p>
+<pre><span><span>&lt;policy-marker</span> <span>vocabulary</span>=<span>"DAC"</span> <span>code</span>=<span>"04"</span> <span>significance</span>=<span>"2"</span><span>&gt;</span></span>Trade Development<span><span>&lt;/policy-marker<span>&gt;</span></span></span></pre>
+<p>
+The vocabulary attribute can be used to declare which code reference list is in use.  If this is If omitted, then IATI assumes the DAC vocabulary.  If the specific vocabulary in use is not on the vocabulary codelist, then the value of RO (Reporting Organisation) can be used.
+</p><pre><span><span>&lt;policy-marker</span> <span>vocabulary</span>=<span>"DAC"</span> <span>code</span>=<span>"04"</span><span>&gt;</span></span>Trade Development<span><span>&lt;/policy-marker<span>&gt;</span></span></span></pre>
+<p>
+Should a description be used that is different to the default language set for the activity, then this should be declared as follows:
+</p>
+<pre><span><span>&lt;policy-marker</span> <span>vocabulary</span>=<span>"DAC"</span> <span>code</span>=<span>"04"</span> <span>xml:lang</span>=<span>"fr"</span><span>&gt;</span></span>Developpement du commerce<span><span>&lt;/policy-marker<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [51-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1425 -->
+
+</div>

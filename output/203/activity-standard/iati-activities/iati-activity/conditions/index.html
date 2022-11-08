@@ -1,0 +1,73 @@
+<div class="body" role="main">
+<p id="conditions">
+<h1>conditions</h1>
+<p><code>iati-activities/iati-activity/conditions</code></p>
+<p>This is the reference page for the XML element <code>conditions</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Specific terms and conditions attached to the activity that, if not met, may influence the delivery of commitments made by participating organisations.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-conditions-attached">
+<dt>@attached</dt>
+<dd><p>A yes/no (1/0) value stating whether there are conditions attached to the activity. It is strongly recommended that this attribute is reported, even if there are no conditions attached (i.e. attached=”0”)</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>conditions</code> for an <code>iati-activity</code>.</p>
+
+<p>This element is a parent for <code>condition</code> child element(s).</p>
+
+
+<p>The <code>@attached</code> <em>0</em> boolean is included, for illustration of no conditions.</p>
+
+<p><code><pre>&lt;conditions attached="0"/&gt;
+</pre></code>
+</p>
+
+<p>The <code>@attached</code> <em>1</em> boolean is included, for illustration of conditions.</p>
+
+<p><code><pre>&lt;conditions attached="1"&gt;
+...
+&lt;/conditions&gt;
+</pre></code>
+</p>
+
+<p>Full example with all child elements:</p>
+
+<p><code><pre>  &lt;conditions attached="1"&gt;
+   &lt;condition type="1"&gt;
+    &lt;narrative&gt;Conditions text&lt;/narrative&gt;
+    &lt;narrative xml:lang="fr"&gt;Conditions texte&lt;/narrative&gt;
+   &lt;/condition&gt;
+  &lt;/conditions&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1959">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/conditions.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="condition/">condition</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

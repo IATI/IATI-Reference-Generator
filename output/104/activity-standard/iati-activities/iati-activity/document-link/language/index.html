@@ -1,0 +1,76 @@
+<div class="body" role="main">
+<p id="language">
+<h1>language</h1>
+<p><code>iati-activities/iati-activity/document-link/language</code></p>
+<p>This is the reference page for the XML element <code>language</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The ISO 639 language code for the target document, e.g. “en”.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-document-link-language-code">
+<dt>@code</dt>
+<dd><p>Machine readable code for the entity being described. The value should
+be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value should be on the <a href="../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-document-link-language-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example usage of <code>language</code> in context of <code>document-link</code> element.</p>
+<p>NB: This specifies the language of the document being linked to.</p>
+
+<p><code><pre>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;Project report 2013&lt;/title&gt;
+   &lt;category code="A01" /&gt;
+<span>   &lt;language code="en" /&gt;
+</span>  &lt;/document-link&gt;
+</pre></code>
+</p>
+
+<p>It may be appropriate to repeat the <code>document-link</code> element if the document is available in other languages:.</p>
+
+<p>Note: This specifies the language of the document being linked to.  In this example, the <code>title</code> element still uses <code>xml:lang</code> to declare the title text in two languages.</p>
+
+<p><code><pre>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_fr.odt"&gt;
+   &lt;title&gt;Project report 2013&lt;/title&gt;
+   &lt;title xml:lang="fr"&gt;Rapport de projet 2013&lt;/title&gt;
+   &lt;category code="B01" /&gt;
+<span>   &lt;language code="fr" /&gt;
+</span>  &lt;/document-link&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.02</h3>
+<p>Addition of a <code>language</code> element as a child of the <code>document-link</code> element:
+document-link/language/text() (0..1) - The ISO 639 code for the language
+of the document</p>
+</p>
+<p id="id2">
+<h3>1.01</h3>
+<p>This element did not exist</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-common.xsd#L138">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/document-link/language.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

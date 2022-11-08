@@ -1,0 +1,42 @@
+<div class="body" role="main">
+<p id="period-start">
+<h1>period-start</h1>
+<p><code>iati-activities/iati-activity/budget/period-start</code></p>
+<p>This is the reference page for the XML element <code>period-start</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The starting date for the budget period, in ISO 8601
+format (e.g. 2010-04-01 for 1 April 2010).  This element
+must be present.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-budget-period-start-iso-date">
+<dt>@iso-date</dt>
+<dd><p>The ISO 8601 date.</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>period-start</code> in context of <code>budget</code> element.</p>
+<p>A date in ISO 8601 format (YYYY-MM-DD) for the <code>period-start</code> date of the reporting period is required:</p>
+<p><code><pre>  &lt;budget type="1"&gt;
+<span>   &lt;period-start iso-date="2014-01-01" /&gt;
+</span>   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
+  &lt;/budget&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L1538">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/budget/period-start.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

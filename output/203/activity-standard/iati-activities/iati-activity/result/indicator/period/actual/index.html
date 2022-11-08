@@ -1,0 +1,105 @@
+<div class="body" role="main">
+<p id="actual">
+<h1>actual</h1>
+<p><code>iati-activities/iati-activity/result/indicator/period/actual</code></p>
+<p>This is the reference page for the XML element <code>actual</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A record of the achieved result for this period.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-indicator-period-actual-value">
+<dt>@value</dt>
+<dd><p>The actual measure.</p>
+<p>The @value should be omitted for qualitative measures.</p>
+<p>The @value must be included for non-qualitative measures.</p>
+<p>The @value should be a valid number for all non-qualitative measures.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>actual</code> within <code>period</code>, in context of an <code>indicator</code> in a <code>result</code> element.</p>
+
+<p>The <code>@value</code> attribute declares an example value of <em>11</em></p>
+
+<p><code><pre>     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+      &lt;period-end iso-date="2013-03-31" /&gt;
+      &lt;target value="10"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+        &lt;narrative&gt;Target comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_target_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Target Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period target&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/target&gt;
+      &lt;actual value="11"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+         &lt;narrative&gt;Actual comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_actual_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Actual Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period actual&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/actual&gt;
+     &lt;/period&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p>2.03</p>
+<p>The <code>actual</code> element of a <code>period</code> in an <code>indicator</code> in a <code>result</code> element can be reported multiple times <a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data-included-2-03/871">added</a>.</p>
+<p>The attribute <code>@value</code> was made optional and rules for its use <a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">added</a>.</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1878">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result/indicator/period/actual.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="location/">location</a></li>
+<li><a href="dimension/">dimension</a></li>
+<li><a href="comment/">comment</a></li>
+<li><a href="document-link/">document-link</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

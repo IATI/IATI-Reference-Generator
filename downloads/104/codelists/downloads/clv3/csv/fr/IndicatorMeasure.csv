@@ -1,0 +1,6 @@
+code,name,description,category,url
+1,Unité,L'indicateur est mesuré à l'aide d'unités.,,
+2,Pourcentage,L'indicateur est mesuré en pourcentage.,,
+3,Nominal,L'indicateur est mesuré selon une échelle nominale quantitative.,,
+4,Ordinal,L'indicateur est mesurée selon une échelle ordinale quantitative.,,
+5,Qualitatif,L'indicateur est qualitatif.,,

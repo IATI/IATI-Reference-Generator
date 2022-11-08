@@ -1,0 +1,86 @@
+<div class="body" role="main">
+<p id="value">
+<h1>value</h1>
+<p><code>iati-activities/iati-activity/transaction/value</code></p>
+<p>This is the reference page for the XML element <code>value</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The amount of the contribution (or its value, if in
+kind).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-transaction-value-currency">
+<dt>@currency</dt>
+<dd><p>A three letter ISO 4217 code for the original currency of the
+amount.
+This is required for all currency amounts unless the
+<a href="mailto:iati-activity/%40default-currency">iati-activity/<span>@</span>default-currency</a> (or <a href="mailto:iati-organisation/%40default-currency">iati-organisation/<span>@</span>default-currency</a>
+for an organisation file) attribute is specified.</p>
+<p>Currency codes are listed at
+<a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/Currency/"><span>Currency codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-transaction-value-value-date">
+<dt>@value-date</dt>
+<dd><p>The date that this value was set (to allow historical
+currency conversion).  The date must be in ISO 8601
+format (YYYY-MM-DD).</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+<p><code>value/@value-date</code> must not be in the future.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>value</code> in context of <code>transaction</code> element.</p>
+<p>A <code>value-date</code> for currency conversions must be provided in ISO 8601 format (YYYY-MM-DD).</p>
+<p>The ISO 4217 code for the <code>currency</code> in which the <code>transaction</code> is denominated should be declared using the <code>Currency</code> codelist, but only if different to <code>default-currency</code> in the <code>iati-activity</code> element.</p>
+<p><code><pre>  &lt;transaction ref="1234"&gt;
+<span>   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;  
+</span>   &lt;description&gt;Transaction description text&lt;/description&gt;
+   &lt;transaction-type code="IF" /&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" ref="BB-BBB-123456789"&gt;Agency B&lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" ref="AA-AAA-123456789"&gt;Agency A&lt;/receiver-org&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;disbursement-channel code="1" /&gt;
+  &lt;/transaction&gt;
+</pre></code>
+</p>
+<p>Full example with additional elements which can override the default value set in <code>iati-activity</code>:</p>
+<p><code><pre>  &lt;transaction ref="1234"&gt;
+<span>   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;   
+</span>   &lt;description&gt;Transaction description text&lt;/description&gt;
+   &lt;transaction-type code="IF" /&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" ref="BB-BBB-123456789"&gt;Agency B&lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" ref="AA-AAA-123456789"&gt;Agency A&lt;/receiver-org&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;flow-type code="20" /&gt;
+   &lt;finance-type code="111" /&gt;
+   &lt;aid-type code="A02" /&gt;   
+   &lt;tied-status code="5" /&gt;
+   &lt;disbursement-channel code="1" /&gt;
+  &lt;/transaction&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+<p>Currency values are now allowed to be declared as decimals instead of
+integers.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L662">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/transaction/value.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

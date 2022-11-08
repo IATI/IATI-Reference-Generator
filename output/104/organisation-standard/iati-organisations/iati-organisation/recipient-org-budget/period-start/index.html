@@ -1,0 +1,55 @@
+<div class="body" role="main">
+<p id="period-start">
+<h1>period-start</h1>
+<p><code>iati-organisations/iati-organisation/recipient-org-budget/period-start</code></p>
+<p>This is the reference page for the XML element <code>period-start</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The starting date for the budget period, in ISO 8601
+format (e.g. 2010-04-01 for 1 April 2010).  This element
+must be present.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-recipient-org-budget-period-start-iso-date">
+<dt>@iso-date</dt>
+<dd><p>The ISO 8601 date.</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>period-start</code> in context of <code>recipient-org-budget</code> element.</p>
+<p>A date in ISO 8601 format (YYYY-MM-DD) for the <code>period-start</code> date of the reporting period (YYYY-MM-DD) is required:</p>
+<p><code><pre>  &lt;recipient-org-budget&gt;
+   &lt;recipient-org ref="123"&gt;Example Recipient Organisation&lt;/recipient-org&gt;
+<span>   &lt;period-start iso-date="2014-01-01" /&gt;
+</span>   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;2500000&lt;/value&gt;
+  &lt;/recipient-org-budget&gt;
+  &lt;recipient-org-budget&gt;
+   &lt;recipient-org ref="123"&gt;Example Recipient Organisation&lt;/recipient-org&gt;
+<span>   &lt;period-start iso-date="2015-01-01" /&gt;
+</span>   &lt;period-end iso-date="2015-12-31" /&gt;
+   &lt;value currency="USD" value-date="2015-01-01"&gt;3000000&lt;/value&gt;
+  &lt;/recipient-org-budget&gt;
+  &lt;recipient-org-budget&gt;
+   &lt;recipient-org ref="123"&gt;Example Recipient Organisation&lt;/recipient-org&gt;
+<span>   &lt;period-start iso-date="2016-01-01" /&gt;
+</span>   &lt;period-end iso-date="2016-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;3500000&lt;/value&gt;
+  &lt;/recipient-org-budget&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-organisations-schema.xsd#L193">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/period-start.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+<meta content="1" name="order"/></div>

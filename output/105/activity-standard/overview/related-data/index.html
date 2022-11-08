@@ -1,0 +1,32 @@
+<div class="body" role="main">
+<p id="related-data">
+<h1>Related Data</h1>
+<p id="definition">
+<h2>Definition</h2>
+<p>Within the <strong>IATI activity standard</strong> it is possible to express relations between <code>iati-activity</code> records across different publishers / <code>reporting-org</code>.</p>
+<p>This can be described through two methods:</p>
+<ul>
+<li><code>related-activity</code> - another <code>iati-activity</code> that has relationship to the one being described.</li>
+<li><code>transaction</code> - both <code>provider-activity-id</code> &amp; <code>receiver-activity-id</code> can be used to link funds from one <code>iati-activity</code> to another.</li>
+</ul>
+</p>
+<p id="considerations">
+<h2>Considerations</h2>
+<p>When using the <strong>IATI activity standard</strong> to declare <em>traceability</em>, the following should be considered:</p>
+<ul>
+<li>A <code>related-activity</code> can be one published by any <code>reporting-org</code> - it does not have to be from the same publisher.</li>
+<li>When declaring a <code>related-activity</code> it is vital to include the reference to the unique <code>iati-identifier</code>.  This enables structured links to be made.</li>
+<li>It is also recommended to include the type of relationship that is being expressed, through use of the <code>RelatedActivityType</code> code</li>
+<li><dl>
+<dt>At the transaction level , it is recommended to connect <code>iati-activity</code> through use of the <code>provider-activity-id</code> &amp; <code>receiver-activity-id</code> fields.  Specifically:</dt>
+<dd><ul>
+<li>When an <em>Incoming Fund</em> is being described, use the <code>provider-activity-id</code> reference to declare the immediate source of the funds, using the relevant <code>iati-identifier</code> of the <code>iati-activity</code>, if published by the <code>provider-org</code></li>
+<li>When a <em>Disbursement</em> or <em>Commitment</em> is being described, use the <code>receiver-activity-id</code> reference to declare the immediate destination of the funds, using the relevant <code>iati-identifier</code> of the <code>iati-activity</code>, if published by the <code>receiver-org</code></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</p>
+</p>
+</div>

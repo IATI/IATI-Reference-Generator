@@ -1,0 +1,257 @@
+<div id="content" role="main">
+
+<header>
+<h1>Annual forward planning budgets for funded institutions</h1>
+</header><!-- .entry-header -->
+<p>
+<h3>Definitions</h3>
+<p>The <em>recipient-org-budget</em> element allows for the reporting of forward looking budgets for each institution (i.e. multiliateral, INGO, foundation) which receives core funding from a donor. The <strong>recommendation</strong> is that, where and when possible, the donor’s annual planned budget for the next three to five financial years is reported for each recipient institution.<br/>
+</p>
+<table>
+<tr>
+<td><strong>recipient-org-ref</strong></td>
+<td>A unique identifier for the institution receiving the funds.</td>
+</tr>
+<tr>
+<td><strong>recipient-org-name-language</strong></td>
+<td>The language in which the name of the institution is reported.</td>
+</tr>
+<tr>
+<td><strong>recipient-org-name</strong></td>
+<td>The name of the institution</td>
+</tr>
+<tr>
+<td><strong>period-start-date</strong></td>
+<td>Start date of the reporting period.</td>
+</tr>
+<tr>
+<td><strong>period-start-text</strong></td>
+<td>A free text description of the period start.</td>
+</tr>
+<tr>
+<td><strong>period-end-date</strong></td>
+<td>End date of the reporting period.</td>
+</tr>
+<tr>
+<td><strong>period-end-text</strong></td>
+<td>A free text description of the period end.</td>
+</tr>
+<tr>
+<td><strong>currency</strong></td>
+<td>The currency in which the project is denominated. </td>
+</tr>
+<tr>
+<td><strong>value-date</strong></td>
+<td>Date of value for currency conversions.</td>
+</tr>
+<tr>
+<td><strong>value</strong></td>
+<td>The total budget for the specified period in the specified or default currency.</td>
+</tr>
+</table>
+<h3>Example Usage</h3>
+<p>The example below shows full reporting for two countries for two consecutive years. </p>
+<pre> 
+
+  ..
+  
+    United Nations Development Programme
+    2012/13
+    2012/13
+    250000000
+  
+  
+    United Nations Development Programme
+    2013/14
+    2013/14
+    300000000
+  
+ 
+    Banque internationale pour la reconstruction et le développement
+    2012/13
+    2012/13
+    250000000
+  
+  
+    Banque internationale pour la reconstruction et le développement
+    2013/14
+    2013/14
+    300000000
+  
+  ..
+
+</pre>
+<p>Stripped to essentials it is:</p>
+<pre> 
+
+  ..
+  
+    
+    
+    
+    250000000
+  
+  
+    
+    
+    
+    300000000
+  
+ 
+    
+    
+    
+    250000000
+  
+  
+    
+    
+    
+    300000000
+  
+  ..
+
+</pre>
+<h3>Structure</h3>
+<table>
+<tr>
+<th>Item</th>
+<th>Format</th>
+<th>XML</th>
+<th>Occurs</th>
+</tr>
+<tr>
+<td>recipient-org-budget</td>
+<td></td>
+<td>recipient-org-budget</td>
+<td>0..*</td>
+</tr>
+<tr>
+<td>   recipient-org</td>
+<td></td>
+<td>recipient-org-budget/recipient-org</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      recipient-org-ref</td>
+<td>IATI Organisation Identifier</td>
+<td>recipient-org-budget/recipient-org/@ref</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>      recipient-org-name-language</td>
+<td><a href="../../codelists/language/">Language Code</a></td>
+<td>recipient-org-budget/recipient-org/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>      recipient-org-name</td>
+<td>Text</td>
+<td>recipient-org-budget/recipient-org/text()</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   period-start</td>
+<td></td>
+<td>recipient-org-budget/period-start</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      period-start-date</td>
+<td>Date</td>
+<td>recipient-org-budget/period-start/@iso-date</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      period-start-text</td>
+<td>Text</td>
+<td>recipient-org-budget/period-start/text()</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   period-end</td>
+<td></td>
+<td>recipient-org-budget/period-end</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      period-end-date</td>
+<td>Date</td>
+<td>recipient-org-budget/period-end/@iso-date</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      period-end-text</td>
+<td>Text</td>
+<td>recipient-org-budget/period-end/text()</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   value</td>
+<td></td>
+<td>recipient-org-budget/value</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      currency</td>
+<td><a href="../../codelists/currency/">Currency Code</a></td>
+<td>recipient-org-budget/value/@currency</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>      value-date</td>
+<td>Date</td>
+<td>recipient-org-budget/value/@value-date</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>      value-amount</td>
+<td>Integer</td>
+<td>recipient-org-budget/value/text()</td>
+<td>1..1</td>
+</tr>
+</table>
+<h3>Usage &amp; Compliance</h3>
+<p>The <em>recipient-org-budget</em> element is not mandatory, but is <strong>recommended</strong> for full compliance. An instance of the element should be used for each institution budget-period reported. There is no limit to the number of instances. </p>
+<p>For every occurrence of the <em>recipient-org-budget</em> element:</p>
+<ul>
+<li> The <em>recipient-org</em> element is <strong>mandatory</strong>.
+<ul>
+<li> Either the <em>recipient-org-ref</em> or the <em>recipient-org-name</em> <strong>must</strong> be present.
+</li><li> The <em>recipient-org-ref</em> is not mandatory but <strong>recommended</strong> for full compliance.
+</li><li> If present, the format of recipient-org-ref <strong>must</strong> comply with IATI Rules for Organisation Identifier.
+</li><li> If the <em>recipient-org-name</em> is present in a language other than the <em>default-language</em> specified in the <a href="../record-header/">Record Header</a> (or the default-language specified in the Record Header is omitted), <em>recipient-org-name-language</em> is <strong>mandatory</strong>.
+  </li></ul>
+</li><li> The <em>period-start</em> element is <strong>mandatory</strong>.
+<ul>
+<li> The <em>period-start-date</em> is <strong>mandatory</strong>.
+</li><li> The <em>period-start-date</em> <strong>must</strong> be in a valid ISO date format.
+  </li></ul>
+</li><li> The <em>period-end</em> element is <strong>mandatory</strong>.
+<ul>
+<li> The <em>period-end-date</em> is <strong>mandatory</strong>.
+</li><li> The <em>period-end-date</em> <strong>must</strong> be in a valid ISO date format.
+  </li></ul>
+</li><li> The <em>value</em> element is <strong>mandatory</strong>.
+<ul>
+<li> If the <em>default-currency</em> has not been specified in the <a href="../record-header/">Record Header</a>, <em>currency</em> is <strong>mandatory</strong>.
+</li><li> If <em>currency</em> is present it <strong>must</strong> be a valid code from the <a href="../../codelists/currency/">codelist</a>.
+</li><li> The <em>period-end-date</em> <strong>must</strong> be in a valid ISO date format.
+</li><li> The <em>value-date</em> is <strong>mandatory</strong>.
+</li><li> The <em>value-date</em> <strong>must</strong> be in a valid ISO date format.
+</li><li> The <em>value</em> is <strong>mandatory</strong>.
+</li><li> The <em>value</em> <strong>must</strong> be a positive integer.
+  </li></ul>
+</li></ul>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1533 -->
+<!-- #comments -->
+<p>
+<p>
+					Last updated on 16 December 2012. 				  </p>
+<!--<p class="fl">Last updated: 1 April 2011   
+					<p class="fr"></p>	-->
+</p>
+</div>

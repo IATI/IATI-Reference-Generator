@@ -1,0 +1,31 @@
+<div class="body" role="main">
+<p id="iati-activity">
+<h1>IATI Activity</h1>
+<p id="definition">
+<h2>Definition</h2>
+<p>Within the <strong>IATI activity standard</strong>. the <code>iati-activity</code> is the building block to describe aid.</p>
+<p>An <code>iati-activity</code> represents a distinct grouping of information that reports various facts of an aid activity.</p>
+<p>A human-readable title and description for an <code>iati-activity</code> can be provided using:</p>
+<ul>
+<li><code>title</code> - a short, human-readable title.</li>
+<li><code>description</code> - a  longer, human-readable description.</li>
+</ul>
+</p>
+<p id="considerations">
+<h2>Considerations</h2>
+<p>When using the <strong>IATI activity standard</strong> to declare an <em>iati-identifier</em>, the following should be considered:</p>
+<ul>
+<li>Every <code>iati-activity</code> must have a globally unique <code>iati-identifier</code></li>
+<li>Publishers can decide on how best to structure and segment their organisation data around <code>iati-activity</code></li>
+<li>Publishers can decide to utilise the <code>hierarchy</code> attribute to represent subdivision of units of aid.</li>
+<li>A publisher can set a default language and <code>default-currency</code>, that is then used throughout the <code>iati-activity</code>.  This can be overridden in subsequent elements however.</li>
+<li>The <code>last-updated-datetime</code> date must change whenever the value of any field within the associated <code>iati-activity</code> is updated.</li>
+<li>It is recommended that the <code>title</code> should be concise and jargon-free</li>
+<li>A <code>description</code> can have different focal points, by using the appropriate <code>DescriptionType</code> codelist</li>
+<li>The free-text instances of <code>title</code> and <code>description</code> should avoid use of text in CAPITALS, where possible.</li>
+<li>Both the <code>title</code> and <code>descriptions</code> can be repeated for different languages.</li>
+<li>When an <code>iati-activity</code> is being implemented in a <code>recipient-country</code> where the official language is different to that of the <code>reporting-org</code> it is recommended that activity <code>title</code> and <code>description</code> are provided in all official <code>reporting-org</code> and <code>recipient-country</code> languages</li>
+</ul>
+</p>
+</p>
+</div>

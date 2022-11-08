@@ -1,0 +1,215 @@
+<div id="content" role="main">
+
+<header>
+<h1>Organisation Documents</h1>
+</header><!-- .entry-header -->
+<p>
+<h3>Definitions</h3>
+<p>The document-link element is for information about core documents that an organisation publishes that pertain to its overall strategy and/or operations.<br/>
+<br/>
+<strong>PLEASE NOTE: The @language attribute is marked for change in version 1.02. The examples shown below will work in the new version but create schema validation errors in versions 1.01 and 1.0</strong><br/>
+</p>
+<table>
+<tr>
+<td><strong>url</strong></td>
+<td>The web address at which the document can be downloaded.</td>
+<td>M.</td>
+</tr>
+<tr>
+<td><strong>format</strong></td>
+<td>The file format in which the document has been published. This is the Internet Media Type (“MIME type”) of the document, as defined and maintained by the Internet Assigned Numbers Authority.</td>
+<td>R  </td>
+</tr>
+<tr>
+<td><strong>document-language</strong></td>
+<td>The language of the document. Only required if different from the organisation’s default language</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>category-code</strong></td>
+<td>The code/s for the type of content contained within the document.</td>
+<td>R  </td>
+</tr>
+<tr>
+<td><strong>category-description-language</strong></td>
+<td>The language of the category description.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>category-description</strong></td>
+<td>The description of the category.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>document-title-language</strong></td>
+<td>The language/s of the document title.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>document-title</strong></td>
+<td>The title of the document. (Can be repeated for different languages.)</td>
+<td>M  </td>
+</tr>
+</table>
+<h3>Example Usage</h3>
+<p>A typical entry, in full …</p>
+<pre> 
+
+  ..
+  
+    en
+    Strategy Paper
+    
+  
+  ..
+
+</pre>
+<p>… and stripped to essentials.</p>
+<pre> 
+
+  ..
+  
+    
+    
+  
+  ..
+
+</pre>
+<h3>Structure</h3>
+<table>
+<tr>
+<th>Item</th>
+<th>Format</th>
+<th>XML</th>
+<th>Occurs</th>
+<th></th>
+</tr>
+<tr>
+<td>document-link</td>
+<td></td>
+<td>document-link</td>
+<td>0..*</td>
+<td>O</td>
+</tr>
+<tr>
+<td>      url</td>
+<td>u.r.l.</td>
+<td>document-link/@url</td>
+<td>1..1</td>
+<td>M</td>
+</tr>
+<tr>
+<td>      format</td>
+<td><a href="../../codelists/file_format/">File Format Code</a></td>
+<td>document-link/@format</td>
+<td>0..1</td>
+<td>R</td>
+</tr>
+<tr>
+<td>   language</td>
+<td></td>
+<td>document-link/language</td>
+<td>0..*</td>
+<td>C</td>
+</tr>
+<tr>
+<td>      document-language</td>
+<td><a href="../../codelists/language/">Language Code</a></td>
+<td>document-link/language/text()</td>
+<td>1..1</td>
+<td>C</td>
+</tr>
+<tr>
+<td>   category</td>
+<td></td>
+<td>document-link/category</td>
+<td>0..*</td>
+<td>R</td>
+</tr>
+<tr>
+<td>      category-code</td>
+<td><a href="../../codelists/document_category/">Document Category Code</a></td>
+<td>document-link/category/@code</td>
+<td>1..1</td>
+<td>R</td>
+</tr>
+<tr>
+<td>      category-desciption-language</td>
+<td><a href="../../codelists/language/">Language Code</a></td>
+<td>document-link/category/@xml:lang</td>
+<td>0..1</td>
+<td>C</td>
+</tr>
+<tr>
+<td>      category-description</td>
+<td>Text</td>
+<td>document-link/category/text()</td>
+<td>0..1</td>
+<td>O</td>
+</tr>
+<tr>
+<td>   title</td>
+<td></td>
+<td>document-link/title</td>
+<td>1..*</td>
+<td>M</td>
+</tr>
+<tr>
+<td>      document-title-language</td>
+<td><a href="../../codelists/language/">Language Code</a></td>
+<td>document-link/title/@xml:lang</td>
+<td>0..1</td>
+<td>C</td>
+</tr>
+<tr>
+<td>      document-title</td>
+<td>Text</td>
+<td>document-link/title/text()</td>
+<td>1..1</td>
+<td>M</td>
+</tr>
+<tr>
+<td colspan="5">M – Mandatory; R- Recommended; O – Optional; C – Conditional</td>
+</tr>
+</table>
+<h3>Usage &amp; Compliance</h3>
+<p>The <em>document-link</em> element is optional. It can be repeated any number of times. </p>
+<p><strong>If</strong> the element is present:</p>
+<ul>
+<li> The <em>url</em> is <strong>mandatory</strong>.
+<ul>
+<li> The <em>url</em> <strong>must</strong> resolve to a valid internet address.
+</li></ul>
+</li><li> The <em>format</em> is not mandatory, but <strong>recommended</strong> for full compliance.
+<ul>
+<li> <strong>If</strong> present the <em>format</em> <strong>must</strong> be a valid code from the <a href="../../codelists/file_format/">codelist</a>.
+</li></ul>
+</li><li> The <em>document-language</em> element is <strong>mandatory</strong> <strong>if</strong> the <em>default-language</em> in the <a href="../record-header/">Record Header</a> is omitted or the language of the document is different from the <em>default-language</em>.
+<ul>
+<li> <strong>If</strong> present the <em>document-language</em> <strong>must</strong> be a valid code from the <a href="../../codelists/language/">codelist</a>.
+</li></ul>
+</li><li> The <em>category</em> element is not mandatory but is <strong>recommended</strong> for full compliance.
+<ul>
+<li> <strong>If</strong> the <em>category</em> element is present, the <em>category-code</em> is <strong>mandatory</strong>.
+</li><li> <strong>If</strong> present, the <em>category-code</em> <strong>must</strong> be a valid code from the <a href="../../codelists/document_category/">codelist</a>.
+</li><li> The <em>category-description</em> is optional.
+</li><li> <strong>If</strong> the <em>category-description</em> is present, the <em>category-description-language</em> is <strong>mandatory</strong> if the <em>default-language</em> in the <a href="../record-header/">Record Header</a> is omitted or the language of the description is different from the <em>default-language</em>.
+</li></ul>
+</li><li> The <em>title</em> is <strong>mandatory</strong>.
+<ul>
+<li> The <em>title</em> element can be repeated if the document has titles in multiple languages.
+</li><li> The <em>title-language</em> is <strong>mandatory if</strong> the <em>default-language</em> in the <a href="../record-header/">Record Header</a> is omitted or the language of the title is different from the <em>default-language</em>.
+</li></ul>
+</li></ul>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1538 -->
+<!-- #comments -->
+<p>
+<p>
+					Last updated on January 29, 2015. 				  </p>
+<!--<p class="fl">Last updated: April 1, 2011   
+					<p class="fr"></p>	-->
+</p>
+</div>

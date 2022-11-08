@@ -1,0 +1,55 @@
+<codelist name="ActivityStatus" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>
+            <narrative>Activity Status</narrative>
+        </name>
+        <description>
+            <narrative>Lifecycle status of the activity from pipeline to completion</narrative>
+        </description>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>
+                <narrative>Pipeline/identification</narrative>
+                <narrative xml:lang="fr">Planification</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>
+                <narrative>Implementation</narrative>
+                <narrative xml:lang="fr">Actif</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>
+                <narrative>Finalisation</narrative>
+                <narrative xml:lang="fr">Finalisation</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>
+                <narrative>Closed</narrative>
+                <narrative xml:lang="fr">Ferm&#233;</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>5</code>
+            <name>
+                <narrative>Cancelled</narrative>
+                <narrative xml:lang="fr">Annul&#233;</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>6</code>
+            <name>
+                <narrative>Suspended</narrative>
+                <narrative xml:lang="fr">Suspendu</narrative>
+            </name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

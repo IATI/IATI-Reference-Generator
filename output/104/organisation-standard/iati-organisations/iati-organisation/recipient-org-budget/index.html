@@ -1,0 +1,69 @@
+<div class="body" role="main">
+<p id="recipient-org-budget">
+<h1>recipient-org-budget</h1>
+<p><code>iati-organisations/iati-organisation/recipient-org-budget</code></p>
+<p>This is the reference page for the XML element <code>recipient-org-budget</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The recipient-org-budget element allows for the reporting of
+forward looking budgets for each institution which receives
+core funding from the reporting organisation. The
+recommendation is that, where and when possible, annual
+planned budgets for each recipient institution for each of the
+next three financial years are reported. This is primarily
+applicable to donors but any provider of core funding is
+expected to use it. Earmarked budgets should be reported at
+activity-level through the Activity Standard.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example of <code>recipient-org-budget</code> for a single <code>recipient-org</code> <em>123</em>.</p>
+<p>Periods are stated using <code>period-start</code> and <code>period-end</code>, with dates in ISO 8601 format (YYYY-MM-DD).</p>
+<p>This example <code>recipient-org-budget</code> is reported for years <em>2014, *2015</em> and <em>2016</em>.</p>
+<p>The <code>value</code> example includes a <code>currency</code> of <em>USD</em> - which differs from that set as <code>default-currency</code> in <code>iati-organisation</code>.</p>
+<p>The <code>value-date</code> is reported in ISO 8601 format (YYYY-MM-DD).</p>
+<p>Note: multiple budgets are expressed by repeating the <code>recipient-org-budget</code> element.</p>
+
+<p><code><pre><span>  &lt;recipient-org-budget&gt;
+</span>   &lt;recipient-org ref="123"&gt;Example Recipient Organisation&lt;/recipient-org&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;2500000&lt;/value&gt;
+<span>  &lt;/recipient-org-budget&gt;
+</span><span>  &lt;recipient-org-budget&gt;
+</span>   &lt;recipient-org ref="123"&gt;Example Recipient Organisation&lt;/recipient-org&gt;
+   &lt;period-start iso-date="2015-01-01" /&gt;
+   &lt;period-end iso-date="2015-12-31" /&gt;
+   &lt;value currency="USD" value-date="2015-01-01"&gt;3000000&lt;/value&gt;
+<span>  &lt;/recipient-org-budget&gt;
+</span><span>  &lt;recipient-org-budget&gt;
+</span>   &lt;recipient-org ref="123"&gt;Example Recipient Organisation&lt;/recipient-org&gt;
+   &lt;period-start iso-date="2016-01-01" /&gt;
+   &lt;period-end iso-date="2016-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;3500000&lt;/value&gt;
+<span>  &lt;/recipient-org-budget&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-organisations-schema.xsd#L169">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="recipient-org/">recipient-org</a></li>
+<li><a href="period-start/">period-start</a></li>
+<li><a href="period-end/">period-end</a></li>
+<li><a href="value/">value</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="4" name="order"/></div>

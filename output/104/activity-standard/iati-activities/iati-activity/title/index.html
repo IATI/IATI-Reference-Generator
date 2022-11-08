@@ -1,0 +1,47 @@
+<div class="body" role="main">
+<p id="title">
+<h1>title</h1>
+<p><code>iati-activities/iati-activity/title</code></p>
+<p>This is the reference page for the XML element <code>title</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A short, human-readable title.  May be repeated for different
+languages.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-title-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example title for an <code>iati-activity</code>:</p>
+<p><code><pre>  &lt;title&gt;Activity title&lt;/title&gt;
+</pre></code>
+</p>
+<p>If a default langage has not been declared in the <code>iati-activity</code> element, then a language should be specified</p>
+<p><code><pre>&lt;title xml:lang="en"&gt;Activity title&lt;/title&gt;
+</pre></code>
+</p>
+<p>It may be appropriate to repeat the <code>title</code> in other languages using <code>xml:lang</code> attribute.  In this example, the language <em>en</em> has been set in the ‘’iati-activity’’ element:</p>
+<p><code><pre>  &lt;title&gt;Activity title&lt;/title&gt;
+  &lt;title xml:lang="fr"&gt;Titre de l'activité&lt;/title&gt;
+  &lt;title xml:lang="es"&gt;Título de la actividad&lt;/title&gt;
+</pre></code>
+</p>
+<p>Note: It is recommended to provide a <code>title</code> in the language(s) spoken in the country(ies) where the <code>iati-activity</code> take place, or is aimed at.</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-common.xsd#L27">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/title.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

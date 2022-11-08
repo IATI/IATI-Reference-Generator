@@ -1,0 +1,104 @@
+<div class="body" role="main">
+<p id="publishing-data-on-covid-19-using-the-iati-standard">
+<h1>Publishing data on COVID-19 using the IATI Standard</h1>
+<p>Following a <a href="https://discuss.iatistandard.org/t/covid-19-iati-publishing-guidance-consultation/1925">consultation with IATI’s community</a>, this guidance has been updated to provide <strong>additional recommendations</strong> on how to publish data on COVID-19 using the IATI Standard.</p>
+<p id="who-is-this-guidance-for">
+<h2>Who is this guidance for?</h2>
+<p>This document provides instructions on how organisations can publish data about their activities in response to the COVID-19 pandemic. It is written for organisations who are already registered as IATI publishers and have previously published IATI data files on their development and/or humanitarian work. The guidance may be updated as the COVID-19 pandemic evolves and as further feedback is received from the IATI community of publishers and members. International development and humanitarian actors not already registered to publish IATI data are encouraged to contact IATI’s <a href="mailto:support%40iatistandard.org">Technical Team</a> for support on getting set up to publish data on COVID-19 to IATI.</p>
+</p>
+<p id="what-data-should-i-publish">
+<h2>What data should I publish?</h2>
+<p>Organisations who are involved in the international effort to address the COVID-19 pandemic are strongly encouraged to publish data on <strong>all their activities and spending</strong>. This includes activities and/or transactions associated with managing a <strong>humanitarian emergency</strong>, for example, a UN agency launching an international appeal to fund their response or an NGO delivering increased medical and food supplies. This also includes <strong>longer-term development activities</strong>, for example, a donor providing additional funding for debt relief to developing countries affected by public health disasters. It might also include transactions in ongoing activities with the specific purpose of contributing to a humanitarian emergency.</p>
+</p>
+<p id="how-do-i-publish-data-on-covid-19">
+<h2>How do I publish data on COVID-19?</h2>
+<p>Organisations should publish data on their activities responding to COVID-19 using the specific reporting guidance below. IATI has already been in conversation with UN OCHA Financial Tracking Service, ensuring alignment with their reporting guidelines and the Global Humanitarian Response Plans, as well as with the World Health Organisation and the Humanitarian Data Exchange making sure we are aligned.</p>
+</p>
+<p id="using-specific-iati-standard-elements-to-provide-covid-19-data">
+<h2>Using specific IATI Standard elements to provide COVID-19 data</h2>
+<p><strong>1. Title and Description</strong> <a href="#id6" id="id1">[1]</a></p>
+<p>Add “COVID-19” in the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/title/">title</a> of reported activities. If organizations are unable to specify COVID-19 in the activity title, they can include “COVID-19” in the activity descriptions and/or transaction descriptions.</p>
+<p><strong>2. Humanitarian Scope element</strong></p>
+<p>In the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/humanitarian-scope/">humanitarian scope element</a>we strongly recommend using both the Emergency (1) and Appeal (2) <a href="/en/iati-standard/203/codelists/HumanitarianScopeType/">type codelists</a> and respective <a href="/en/iati-standard/203/codelists/HumanitarianScopeVocabulary/">vocabulary for GLIDE and Humanitarian Response Plan (HRP) codes</a> when reporting activities related to COVID-19. You should do that by specifying:</p>
+<ul>
+<li>GLIDE Appeal related to COVID-19- “EP-2020-000012-001” <a href="#id7" id="id2">[2]</a></li>
+</ul>
+<p><code><pre>&lt;humanitarian-scope type="1" vocabulary="1-2" code="EP-2020-000012-001"/&gt;
+</pre></code>
+</p>
+<ul>
+<li>Humanitarian Response Plans related to COVID-19- “HCOVD20” <a href="#id8" id="id3">[3]</a></li>
+</ul>
+<p><code><pre>&lt;humanitarian-scope type="2" vocabulary="2-1" code="HCOVD20"/&gt;
+</pre></code>
+</p>
+<ul>
+<li><em>Note:</em> You are advised to use the humanitarian-scope element irrespective of whether the activity you are reporting classifies as development or humanitarian funding.</li>
+</ul>
+<p><strong>3. Humanitarian flag</strong></p>
+<p>Use the humanitarian attribute for humanitarian activities and/ or transactions related to COVID-19:</p>
+<p><code><pre>&lt;iati-activity humanitarian="1" &gt;
+</pre></code>
+</p>
+<p><code><pre>&lt;transaction humanitarian="1"&gt;
+</pre></code>
+</p>
+<ul>
+<li><em>Note:</em> Not all activities responding to the COVID-19 pandemic will be classified as ‘humanitarian’, so please only use the Humanitarian flag where relevant.</li>
+</ul>
+<p><strong>4. Tag</strong> <a href="#id9" id="id4">[4]</a></p>
+<p>If an organization does not permit the publishing of data in the Humanitarian Scope for their development activities, they can publish “COVID-19” within the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">Tag data field</a>. In order to do this, publishers use vocab= “99”, treat it as free text, and add “COVID-19”.</p>
+<p><code><pre>&lt;tag vocabulary="99" code="COVID-19" /&gt;
+</pre></code>
+</p>
+<p><strong>5. Activity or Transaction Sector</strong> <a href="#id10" id="id5">[5]</a></p>
+<p>Data publishers should only use the sector code 12264 when their activity relates to:
+“All activities related to COVID-19 control e.g. information, education and communication; testing; prevention; immunisation, treatment, care.”</p>
+<p>This code <em>should not</em> be used as a general ‘covid’ marker for an activity.</p>
+<p>All other sectors which the activity relates to should be provided with the relevant percentage split.</p>
+<p><code><pre>&lt;sector vocabulary="1" code="12264" /&gt;
+</pre></code>
+</p>
+</p>
+<p id="providing-timely-and-comprehensive-data">
+<h2>Providing timely and comprehensive data</h2>
+<p>In addition to the use of IATI elements described above, it is also very important that your organisation publish timely and comprehensive data. Organisations should publish information as quickly as possible and update it regularly with progress on the implementation of the activity.</p>
+<p>Please <strong>do not</strong> publish only the minimum required data, but make use of all the IATI elements to provide useful context about your work. For example, publish detailed titles and descriptions, specify the partners involved in the activities and refer to them by their IATI organisation identifier in combination with the IATI activity identifier where possible. Do also include geographic information, results data and all other fields that help to describe your work. Please see IATI’s <a href="/en/news/interpreting_iatis_standard_made_easier_with_new_guidance/">updated guidance</a> for information on publishing data to specific IATI Standard elements.</p>
+</p>
+<p id="how-can-i-receive-further-support-on-publishing-covid-19-activities">
+<h2>How can I receive further support on publishing COVID-19 activities?</h2>
+<p>If you have any specific questions on publishing activities related to COVID-19, please do get in touch with the IATI Secretariat by emailing the <a href="mailto:support%40iatistandard.org">IATI Helpdesk</a>.</p>
+<p>See archived copy of <a href="https://drive.google.com/file/d/1maA508bwKnLvcHdDe6eSItEz-w2SiPoE/view?usp=sharing">Version 1 - 27 March 2020 Guidance: Publishing data on COVID-19 using the IATI Standard</a></p>
+<table frame="void" id="id6" rules="none">
+<colgroup><col/><col/></colgroup>
+<tbody valign="top">
+<tr><td><a href="#id1">[1]</a></td><td>This was added to Version 2 Guidance: Publishing data on COVID-19 using the IATI Standard</td></tr>
+</tbody>
+</table>
+<table frame="void" id="id7" rules="none">
+<colgroup><col/><col/></colgroup>
+<tbody valign="top">
+<tr><td><a href="#id2">[2]</a></td><td>The GLIDE code (EP-2020-000012-001) has now been added- see <a href="https://data.humdata.org/dataset/unocha-glides">here</a>. It follows the format of GLIDE codes with the last three digits ‘001’, specifying that this is a global emergency.</td></tr>
+</tbody>
+</table>
+<table frame="void" id="id8" rules="none">
+<colgroup><col/><col/></colgroup>
+<tbody valign="top">
+<tr><td><a href="#id3">[3]</a></td><td>The Global Humanitarian Response Plan (HRP) (<a href="https://fts.unocha.org/plan-code-list-iati">HCOVD20</a>) is provided by UNOCHA Financial Tracking Service (FTS) and is in addition to all existing humanitarian response plans. There are currently no overlapping requirements between HRP <a href="https://fts.unocha.org/plan-code-list-iati">HCOVD20</a> and existing HRPs on to COVID-19. For any updates, keep an eye on the <a href="https://fts.unocha.org/plan-code-list-iati">FTS site</a>.</td></tr>
+</tbody>
+</table>
+<table frame="void" id="id9" rules="none">
+<colgroup><col/><col/></colgroup>
+<tbody valign="top">
+<tr><td><a href="#id4">[4]</a></td><td>This was added to Version 2 Guidance: Publishing data on COVID-19 using the IATI Standard</td></tr>
+</tbody>
+</table>
+<table frame="void" id="id10" rules="none">
+<colgroup><col/><col/></colgroup>
+<tbody valign="top">
+<tr><td><a href="#id5">[5]</a></td><td>This was added to Version 2 Guidance: Publishing data on COVID-19 using the IATI Standard</td></tr>
+</tbody>
+</table>
+</p>
+</p>
+<meta content="COVID-19 related data" name="title"/><meta content="Following a `consultation with IATI’s community this guidance has been updated to provide recommendations on how to publish data on COVID-19 using the IATI Standard." name="description"/><meta content="activity" name="guidance_type"/><meta content="November 01, 2021" name="date"/></div>

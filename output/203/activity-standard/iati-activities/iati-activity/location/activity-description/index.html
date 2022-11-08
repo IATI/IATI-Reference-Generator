@@ -1,0 +1,68 @@
+<div class="body" role="main">
+<p id="activity-description">
+<h1>activity-description</h1>
+<p><code>iati-activities/iati-activity/location/activity-description</code></p>
+<p>This is the reference page for the XML element <code>activity-description</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A description that qualifies the activity taking place at the location. This should not duplicate information provided in the main activity description, and should typically be used to distinguish between activities at multiple locations within a single iati-activity record.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>activity-description</code> within a <code>location</code> of an <code>iati-activity</code>.:</p>
+<p><code><pre>  &lt;location ref="AF-KAN"&gt;
+   &lt;location-reach code="1" /&gt;
+   &lt;location-id vocabulary="G1" code="1453782" /&gt;
+   &lt;name&gt;
+  &lt;narrative&gt;Location name&lt;/narrative&gt;
+   &lt;/name&gt;
+   &lt;description&gt;
+  &lt;narrative&gt;Location description&lt;/narrative&gt;
+   &lt;/description&gt;
+   &lt;activity-description&gt;
+  &lt;narrative&gt;A description that qualifies the activity taking place at the location.&lt;/narrative&gt;
+   &lt;/activity-description&gt;
+   &lt;administrative vocabulary="G1" level="1" code="1453782" /&gt;
+   &lt;point srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
+    &lt;pos&gt;31.616944 65.716944&lt;/pos&gt;
+   &lt;/point&gt;
+   &lt;exactness code="1"/&gt;
+   &lt;location-class code="2"/&gt;
+   &lt;feature-designation code="ADMF"/&gt;
+  &lt;/location&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element.</p>
+</p>
+<p id="id2">
+<h3>1.04</h3>
+<p>The <code>activity-description</code> element was introduced in 1.04.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1390">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/location/activity-description.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

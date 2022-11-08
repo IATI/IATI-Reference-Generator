@@ -1,0 +1,53 @@
+<div class="body" role="main">
+<p id="default-finance-type">
+<h1>default-finance-type</h1>
+<p><code>iati-activities/iati-activity/default-finance-type</code></p>
+<p>This is the reference page for the XML element <code>default-finance-type</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The type of finance (e.g. grant, loan, debt relief, etc). This
+the default value for all transactions in the activity report;
+it can be overridden by individual transactions.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-default-finance-type-code">
+<dt>@code</dt>
+<dd><p>A code from the OECD DAC CRS “Type of finance” codelist</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/FinanceType/"><span>FinanceType codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>default-finance-type</code>  for an <code>iati-activity</code>.</p>
+
+<p>The <code>@code</code> attribute declares a valid code (<em>110</em>) from the <em>FinanceType</em> codelist.</p>
+
+<p><code><pre>  &lt;default-finance-type code="110" /&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>Freetext is <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">no longer allowed</a>  within this element.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L511">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/default-finance-type.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

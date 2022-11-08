@@ -1,0 +1,79 @@
+<div class="body" role="main">
+<p id="iati-ruleset-spec">
+<h1>IATI Ruleset Spec</h1>
+<p>An IATI Ruleset is a JSON document. The structure is described below.</p>
+<p>A <a href="https://github.com/IATI/IATI-Rulesets/blob/master/schema.json">JSON schema</a> is availible to test that the structure of a Ruleset is correct.</p>
+<p>Each JSON document has the form.:</p>
+<code><pre>{
+    "CONTEXT": {
+        "RULE_NAME": {
+            "cases": CASE_DICT_ARRAY
+        }
+    }
+
+}
+</pre></code>
+
+<p>Where <code>CONTEXT</code> is some xpath expression. This will be used to select the XML elements that the contained rules will be tested against.
+<code>RULE_NAME</code> is one of rule names listed below
+<code>CASE_DICT</code> is a dictionary who’s contents depends on <code>RULE_NAME</code>
+<code>CASE_DICT_ARRAY</code> is an array of case dictionaries. The contents of each dictionary depends on the <code>RULE_NAME</code></p>
+<p>The possible keys in a case dictionary are:</p>
+<dl>
+<dt><code>condition</code></dt>
+<dd>An xpath string. If this evaluates to True, the rule will be ignored.</dd>
+<dt><code>paths</code></dt>
+<dd>An array of xpath strings. These are evaluated to give a list of elements that the named rule then operates on.</dd>
+<dt><code>less</code></dt>
+<dd>A string containing the xpath of the value that should be smaller</dd>
+<dt><code>more</code></dt>
+<dd>A string containing the xpath of the value that should be larger</dd>
+<dt><code>regex</code></dt>
+<dd>A string containing a perl style regular expression</dd>
+<dt><code>sum</code></dt>
+<dd>A number.</dd>
+</dl>
+<p id="rule-names">
+<h2>Rule Names</h2>
+<p>Rule names are listed in bold, along with a description and what keys must be in the case dictionary.</p>
+<dl>
+<dt>no_more_than_one</dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code></p>
+<p>There must be no more than one element described by the given paths.</p>
+</dd>
+<dt>atleast_one</dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code></p>
+<p>There must be at least one element described by the given paths.</p>
+</dd>
+<dt>dependent</dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code></p>
+<p>If one of the provided paths exists, they must all exist.</p>
+</dd>
+<dt>sum</dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code>, <code>sum</code></p>
+<p>The numerical sum of the values of elements matched by <code>paths</code> must match the value for the <code>sum</code> key</p>
+</dd>
+<dt>date_order</dt>
+<dd><p>Keys: <code>condition</code>, <code>less</code>, <code>more</code></p>
+<p>The date matched by <code>less</code> must not be after the date matched by <code>more</code>. If either of these dates is not found, the rule is ignored.</p>
+</dd>
+<dt>regex_matches</dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code>, <code>regex</code></p>
+<p>The provided <code>regex</code> must match the text of all elements matched by <code>paths</code></p>
+</dd>
+<dt>regex_no_matches</dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code>, <code>regex</code></p>
+<p>The provided <code>regex</code> must match the text of none of the elements matched by <code>paths</code></p>
+</dd>
+<dt>startswith</dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code>, <code>start</code></p>
+<p>The text of the each element matched by <code>paths</code> must start with the text of the element matched by <code>start</code></p>
+</dd>
+<dt>unique</dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code></p>
+<p>The text of each of the elements described by <code>paths</code> must be unique</p>
+</dd>
+</dl>
+</p>
+</p>
+</div>

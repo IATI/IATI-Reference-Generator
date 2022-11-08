@@ -1,0 +1,58 @@
+<div class="body" role="main">
+<p id="description">
+<h1>description</h1>
+<p><code>iati-activities/iati-activity/description</code></p>
+<p>This is the reference page for the XML element <code>description</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A longer, human-readable description.  May be repeated for
+different languages.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-description-type">
+<dt>@type</dt>
+<dd><p>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/DescriptionType/"><span>DescriptionType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-description-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>description</code> of an <code>iati-activity</code>, with all possible <code>DescriptionType</code> codes.
+Note - it is optional to include all <code>DescriptionType</code>:</p>
+<p><code><pre>  &lt;description type="1"&gt;General activity description text.  Long description of the activity with no particular structure.&lt;/description&gt;
+  &lt;description type="2"&gt;Objectives for the activity, for example from a logical framework.&lt;/description&gt;
+  &lt;description type="3"&gt;Statement of groups targeted to benefit from the activity.&lt;/description&gt;
+</pre></code>
+</p>
+<p>Additional <code>description</code> elements can be added for further <code>DescriptionType</code>
+It may be appropriate to repeat the <code>description</code> in other languages using <code>xml:lang</code> attribute.
+In this example, the language <em>en</em> has been set in the ‘’iati-activity’’ element:</p>
+<p><code><pre>  &lt;description type="1"&gt;General activity description text. Long description of the activity with no particular structure&lt;/description&gt;
+  &lt;description type="2"&gt;Objectives for the activity, for example from a logical framework.&lt;/description&gt;
+  &lt;description type="3"&gt;Statement of groups targeted to benefit from the activity.&lt;/description&gt;
+  &lt;description type="1" xml:lang="fr"&gt;Activité générale du texte de description. Longue description de l'activité sans structure particulière.&lt;/description&gt;
+  &lt;description type="2" xml:lang="fr"&gt;Objectifs de l'activité, par exemple à partir d'un cadre logique.&lt;/description&gt;
+  &lt;description type="3" xml:lang="fr"&gt;Déclaration de groupes ciblés pour bénéficier de l'activité.&lt;/description&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-common.xsd#L36">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/description.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

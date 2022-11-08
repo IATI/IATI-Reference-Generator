@@ -1,0 +1,96 @@
+<div class="body" role="main">
+<p id="loan-terms">
+<h1>loan-terms</h1>
+<p><code>iati-activities/iati-activity/crs-add/loan-terms</code></p>
+<p>This is the reference page for the XML element <code>loan-terms</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Loan repayment terms and interest rates</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-crs-add-loan-terms-rate-1">
+<dt>@rate-1</dt>
+<dd><p>Interest Rate. If an ODA loan with variable
+interest rate, report the variable rate here and
+the reference fixed rate as rate-2</p>
+<p>Enter the rate without the percentage sign.</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-crs-add-loan-terms-rate-2">
+<dt>@rate-2</dt>
+<dd><p>Second Interest Rate.  If an ODA loan with
+variable interest rate, report the variable rate
+as rate-1 and the reference fixed rate here</p>
+<p>Enter the rate without the percentage sign.</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>The <code>loan-terms</code> element acts as a container for other elements.</p>
+
+<p>Example usage of <code>loan-terms</code> in context of <code>crs-add</code> element.</p>
+
+
+<p>The <code>@rate-1</code> attribute  declares an example value of <em>4</em>.</p>
+<p>The <code>@rate-2</code> attribute declares an example value of <em>3</em>.</p>
+
+<p><code><pre>  &lt;crs-add&gt;
+   &lt;other-flags code="1" significance="1" /&gt;
+<span>   &lt;loan-terms rate-1="4" rate-2="3"&gt;
+</span>    &lt;repayment-type code="1" /&gt;
+    &lt;repayment-plan code="4" /&gt;
+    &lt;commitment-date iso-date="2013-09-01"/&gt;
+    &lt;repayment-first-date iso-date="2014-01-01" /&gt;
+    &lt;repayment-final-date iso-date="2020-12-31" /&gt;
+<span>   &lt;/loan-terms&gt;
+</span>   &lt;loan-status year="2014" currency="GBP" value-date="2013-05-24"&gt;
+     &lt;interest-received&gt;200000&lt;/interest-received&gt;
+     &lt;principal-outstanding&gt;1500000&lt;/principal-outstanding&gt;
+     &lt;principal-arrears&gt;0&lt;/principal-arrears&gt;
+     &lt;interest-arrears&gt;0&lt;/interest-arrears&gt;
+   &lt;/loan-status&gt;
+   &lt;channel-code&gt;21039&lt;/channel-code&gt;
+  &lt;/crs-add&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+
+<p>New in 1.03</p>
+<p>Added the optional <code>crs-add</code> element and its child elements</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L2485">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/crs-add/loan-terms.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="repayment-type/">repayment-type</a></li>
+<li><a href="repayment-plan/">repayment-plan</a></li>
+<li><a href="commitment-date/">commitment-date</a></li>
+<li><a href="repayment-first-date/">repayment-first-date</a></li>
+<li><a href="repayment-final-date/">repayment-final-date</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

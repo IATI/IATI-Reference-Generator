@@ -1,0 +1,80 @@
+<div class="body" role="main">
+<p id="country-budget-items">
+<h1>country-budget-items</h1>
+<p><code>iati-activities/iati-activity/country-budget-items</code></p>
+<p>This is the reference page for the XML element <code>country-budget-items</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>This item encodes the alignment of activities with both the
+functional and administrative classifications used in the
+recipient country’s Chart of Accounts. This applies to both
+on- and off-budget activities.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-country-budget-items-vocabulary">
+<dt>@vocabulary</dt>
+<dd><p>An IATI code for the common functional classification or
+country system (This allows for common codes,
+country-specific, or any other classification agreed
+between countries and donors).</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/BudgetIdentifierVocabulary/"><span>BudgetIdentifierVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>country-budget-items</code> for an <code>iati-activity</code>.</p>
+
+<p>This element is a parent for other child elements.</p>
+
+
+<p>The <code>@vocabulary</code> attribute declares a valid code (<em>2</em>) from the <em>BudgetIdentifierVocabulary</em> codelist.</p>
+
+<p><code><pre>&lt;country-budget-items vocabulary="2"&gt;
+    ...
+&lt;/country-budget-items&gt;
+</pre></code>
+</p>
+<p>Full example with all child elements:</p>
+<p><code><pre><span>&lt;country-budget-items vocabulary="2"&gt;
+</span>        &lt;budget-item code="1.1.1"&gt;
+                &lt;description&gt;
+                        &lt;narrative&gt;Description text&lt;/narrative&gt;
+                &lt;/description&gt;
+        &lt;/budget-item&gt;
+<span>&lt;/country-budget-items&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+<p>This is a new element, introduced in version 1.03 of the standard.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1700">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/country-budget-items.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="budget-item/">budget-item</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

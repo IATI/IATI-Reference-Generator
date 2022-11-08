@@ -1,0 +1,67 @@
+<div class="body" role="main">
+<p id="participating-org">
+<h1>participating-org</h1>
+<p><code>iati-activities/iati-activity/participating-org</code></p>
+<p>This is the reference page for the XML element <code>participating-org</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>An organisation (including the reporting organisation)
+involved with the activity.  May be a donor, fund, agency,
+etc.  Specifying the @ref and @role attributes is
+strongly recommended.  May contain the organisation name as
+content.</p>
+<p>For the value of the @type attribute, see
+<a href="/en/iati-standard/203/codelists/organisation-type">http://iatistandard.org/codelists/organisation-type</a></p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-participating-org-ref">
+<dt>@ref</dt>
+<dd><p>Machine-readable identification string for the business
+object being described.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-participating-org-type">
+<dt>@type</dt>
+<dd><p>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/OrganisationType/"><span>OrganisationType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-participating-org-role">
+<dt>@role</dt>
+<dd><p>A code describing the organisation’s role in the activity
+(donor, agency, etc.).</p>
+<p>See <a href="/en/iati-standard/203/codelists/organisation_role">http://iatistandard.org/codelists/organisation_role</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/OrganisationRole/"><span>OrganisationRole codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-participating-org-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example that describes three <code>participating-org</code> using the <code>OrganisationRole</code> codes <em>Funding</em>, <em>Extending</em> and <em>Implementing</em>:</p>
+<p><code><pre>  &lt;participating-org ref="BB-BBB-123456789" role="Funding" type="40"&gt;Agency B&lt;/participating-org&gt;
+  &lt;participating-org ref="CC-CCC-123456789" role="Extending" type="10"&gt;Agency C&lt;/participating-org&gt;
+  &lt;participating-org ref="AA-AAA-123456789" role="Implementing" type="21"&gt;Agency A&lt;/participating-org&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L205">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/participating-org.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

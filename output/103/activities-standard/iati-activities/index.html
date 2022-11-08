@@ -1,0 +1,73 @@
+<div id="content" role="main">
+
+<header>
+<h1>IATI Activities</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;iati-activities&gt;&lt;/iati-activities&gt;</h2><p><h3>From the schema</h3><p>
+        Top-level list of one or more IATI activity records.
+      </p><table><tbody><tr><td>@version</td><td>
+            A number indicating the IATI specification version in use.
+          </td></tr><tr><td>@generated-datetime</td><td>
+            A date/time stamp for when this file was generated.  This
+            is not necessarily the last-updated date for the
+            individual activity records in it.  Uses ISO 8601 date
+            format, e.g. "2010-03-12T18:45:00+01:00".  Use of this
+            attribute is highly recommended, to allow recipients to
+            know when a file has been updated.
+          </td></tr><tr><td>@linked-data-default</td><td>
+            IATI publishers are not obliged to publish their own
+            Linked Data.  However, if a publisher chooses to publish
+            linked data about their IATI activities then allowing them
+            to declare where this data is published would support
+            discovery of it, and any additional information they may
+            choose to publish as Linked Data alongside it.
+            
+            This attribute is URI path upon which an activity
+            identifier can be appended to get a dereferenceable URI
+            for any activity contained within a file.
+            
+            Where a publisher declares using one of these properties
+            that authoritative linked data is accessible for an
+            activity then consuming applications that are generating
+            Linked Data from an IATI XML file should assert an
+            owl:sameAs relationship to the relevant URI.
+          </td></tr></tbody></table> </p><!--schema wrap--></p>
+<h2 id="iati_activities">IATI Activities</h2>
+
+<!-- EDIT1 SECTION "IATI Activities" [1-52] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+Example that uses version 1.03, and was generated on 5th September 2013:
+</p><pre>    <span><span>&lt;iati-activities</span> <span>version</span>=<span>"1.03"</span> <span>generated-datetime</span>=<span>"2013-09-05T00:00:00"</span><span>&gt;</span></span>
+       ....
+    <span><span>&lt;/iati-activities<span>&gt;</span></span></span></pre>
+<p>
+With the optional linked-data-default attribute, introduced in decimal upgrade 1.02
+</p><pre>    <span><span>&lt;iati-activities</span> <span>version</span>=<span>"1.02"</span> <span>generated-datetime</span>=<span>"2013-09-05T00:00:00"</span> <span>linked-data-default</span>=<span>""</span><span>&gt;</span></span>
+       ....
+    <span><span>&lt;/iati-activities<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [53-523] -->
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="section102">1.02</h4>
+<p>
+<p>
+Introduced the @linked-data-default attribute on iati-activities element
+</p>
+</p>
+<h4 id="section101">1.01</h4>
+<p>
+<p>
+See previous version on the IATI Standard <a href="http://wiki.iatistandard.org/standard/documentation/1.0/iati-activities" rel="nofollow" title="http://wiki.iatistandard.org/standard/documentation/1.0/iati-activities"> wiki</a> and <a href="/en/iati-standard/101/activities-standard/container-elements/file-header/" rel="nofollow" title="http://iatistandard.org/101/activities-standard/container-elements/file-header/"> website</a>
+</p>
+</p>
+<!-- EDIT3 SECTION "Changelog" [524-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1387 -->
+
+</div>

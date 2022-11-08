@@ -1,0 +1,75 @@
+<div class="body" role="main">
+<p id="value">
+<h1>value</h1>
+<p><code>iati-organisations/iati-organisation/total-budget/value</code></p>
+<p>This is the reference page for the XML element <code>value</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The total value of the organisation’s aid budget for
+this period.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur once and only once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-total-budget-value-currency">
+<dt>@currency</dt>
+<dd><p>A three letter ISO 4217 code for the original currency of the
+amount. This is required for all currency amounts unless
+the iati-organisation/@default-currency attribute is
+specified.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/Currency/"><span>Currency codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-organisations-iati-organisation-total-budget-value-value-date">
+<dt>@value-date</dt>
+<dd><p>The date to be used for determining the exchange rate for
+currency conversions.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>value</code> of <code>total-budget</code> for an <code>iati-organisation</code>.</p>
+
+<p>An example date is declared in the <code>@value-date</code> attribute.</p>
+<p>This example date format conform to the <em>xsd:date</em> standard - for most cases <em>YYYY-MM-DD</em> is sufficient.</p>
+
+
+<p>This example declares a <em>Currency</em> code <em>USD</em>, using the <code>@currency</code> attribute.</p>
+<p>Note: A <code>Currency</code> code should only be declared if different to <code>@default-currency</code> in the <code>iati-organisation</code> element.</p>
+
+<p><code><pre>  &lt;total-budget&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+<span>   &lt;value currency="USD" value-date="2014-01-01"&gt;250000000&lt;/value&gt;
+</span>   &lt;budget-line ref="1234"&gt;
+	&lt;value currency="USD" value-date="2014-01-01"&gt;200000000&lt;/value&gt;
+	&lt;narrative&gt;Budget Line&lt;/narrative&gt;
+   &lt;/budget-line&gt;
+  &lt;/total-budget&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+<p>Currency values are now allowed to be declared as decimals instead of integers.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-organisations-schema.xsd#L177">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/organisation-standard/iati-organisations/iati-organisation/total-budget/value.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+<meta content="2" name="order"/></div>

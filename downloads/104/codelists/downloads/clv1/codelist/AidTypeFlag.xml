@@ -1,0 +1,22 @@
+<codelist name="AidTypeFlag" date-last-modified="2022-07-25T19:39:56.838642+00:00" version="" xml:lang="en">
+  <AidTypeFlag>
+    <code>1</code>
+    <name>Free standing technical cooperation</name>
+    <language>en</language>
+  </AidTypeFlag>
+  <AidTypeFlag>
+    <code>2</code>
+    <name>Programme-based approach</name>
+    <language>en</language>
+  </AidTypeFlag>
+  <AidTypeFlag>
+    <code>3</code>
+    <name>Investment project</name>
+    <language>en</language>
+  </AidTypeFlag>
+  <AidTypeFlag>
+    <code>4</code>
+    <name>Associated financing</name>
+    <language>en</language>
+  </AidTypeFlag>
+</codelist>

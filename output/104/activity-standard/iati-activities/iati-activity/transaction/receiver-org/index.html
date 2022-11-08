@@ -1,0 +1,83 @@
+<div class="body" role="main">
+<p id="receiver-org">
+<h1>receiver-org</h1>
+<p><code>iati-activities/iati-activity/transaction/receiver-org</code></p>
+<p>This is the reference page for the XML element <code>receiver-org</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The organisation receiving the money from the
+transaction (if omitted, then the receiver
+organisation is the reporting organisation).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-transaction-receiver-org-ref">
+<dt>@ref</dt>
+<dd><p>Machine-readable identification string for the business
+object being described.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-transaction-receiver-org-receiver-activity-id">
+<dt>@receiver-activity-id</dt>
+<dd><p>If the funds are being provided to another activity
+that is reported to IATI, this should record the
+unique IATI activity identifier for that activity.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>The full name of the organisation receiving the financial <code>transaction</code>
+(providing in the case of loan and interest repayments).:</p>
+<p><code><pre>&lt;receiver-org&gt;Agency A&lt;/receiver-org&gt;
+</pre></code>
+</p>
+<p>The unique Organisation Identifier for the <code>receiver-org</code>.:</p>
+<p><code><pre>&lt;receiver-org ref="AA-AAA-123456789"&gt;Agency A&lt;/receiver-org&gt;
+</pre></code>
+</p>
+<p>If the funds are being provided from another reported <code>iati-activity</code>, the unique <code>iati-identifier</code> is included:</p>
+<p><code><pre>&lt;receiver-org ref="AA-AAA-123456789" receiver-activity-id="AA-AAA-123456789-1234"&gt;Agency A&lt;/receiver-org&gt;
+</pre></code>
+</p>
+<p>Full example:</p>
+<p><code><pre>  &lt;transaction ref="1234"&gt;
+   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;  
+   &lt;description&gt;Transaction description text&lt;/description&gt;
+   &lt;transaction-type code="IF" /&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" ref="BB-BBB-123456789"&gt;Agency B&lt;/provider-org&gt;
+<span>   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" ref="AA-AAA-123456789"&gt;Agency A&lt;/receiver-org&gt;
+</span>   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;disbursement-channel code="1" /&gt;
+  &lt;/transaction&gt;
+</pre></code>
+</p>
+<p>Full example with additional elements which can override the default value set in <code>iati-activity</code>:</p>
+<p><code><pre>  &lt;transaction ref="1234"&gt;
+   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;   
+   &lt;description&gt;Transaction description text&lt;/description&gt;
+   &lt;transaction-type code="IF" /&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" ref="BB-BBB-123456789"&gt;Agency B&lt;/provider-org&gt;
+<span>   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" ref="AA-AAA-123456789"&gt;Agency A&lt;/receiver-org&gt;
+</span>   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;flow-type code="20" /&gt;
+   &lt;finance-type code="111" /&gt;
+   &lt;aid-type code="A02" /&gt;   
+   &lt;tied-status code="5" /&gt;
+   &lt;disbursement-channel code="1" /&gt;
+  &lt;/transaction&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L716">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/transaction/receiver-org.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

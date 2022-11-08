@@ -1,0 +1,41 @@
+<div id="content" role="main">
+
+<header>
+<h1>Geocoding</h1>
+</header><!-- .entry-header -->
+<p>
+<p>This page is currently flagged for review. We are undertaking an update of the information we publish about the IATI Standard, and the content here has not yet been checked.</p>
+<p>(Note: the markup described in this section is not yet in use for most phase one pilots.)</p>
+<p>To specify the actual location of aid work, rather than the jurisdiction of the partner country, IATI uses the target-location element, as in the following example:<br/>
+<code><br/>
+&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</code></p>
+<p>...</p>
+<p>&lt;target-location code=”GH-AH”&gt;Ashanti Region, Ghana&lt;/target-location&gt;</p>
+<p>...</p>
+<p>&lt;/iati-activity&gt;<br/>
+</p>
+<p>The code attribute by default specifies an ISO 3166-2 region code, such as “GH-AH” for the Ashanti region of Ghana. To use a different coding system, specify the vocabulary attribute:</p>
+<p><code><br/>
+&lt;target-location code=”GH02”</code></p>
+<p>vocabulary=”FIPS”&gt;Ashanti Region, Ghana&lt;/target-location&gt;<br/>
+</p>
+<p>A separate option for specifying a location is the gis attribute, which contains the comma-separated decimal latitude and longitude of a specific point on the earth’s surface:</p>
+<p><code><br/>
+&lt;target-location gis=”9.4075,-0.853333”/&gt;<br/>
+</code></p>
+<p>This element specifies that the aid will be targeted at a location of 9.4075 degrees latitude (9° 24.45’ N) and -0.853333 degrees longitude (0° 59.20’ W).  Future IATI releases may also include support for outlines of geographical areas (such as circles and polygons).  The gis attribute is especially useful for plotting aid activities on maps.</p>
+<p>Finally, the target-location element may contain free-form text describing a location, with or without the code and gis attributes:</p>
+<p><code><br/>
+&lt;target-location&gt;Tamale&lt;/target-location&gt;<br/>
+</code></p>
+<p>All three methods may be combined where appropriate:</p>
+<p><code><br/>
+&lt;target-location code=”GH-NP” gis=”9.4075,-0.853333”&gt;Tamale&lt;/target-location&gt;<br/>
+</code></p>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-2457 -->
+<!-- #comments -->
+
+</div>

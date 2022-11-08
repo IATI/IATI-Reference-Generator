@@ -1,0 +1,6 @@
+code,name,description,category,url
+1,Parent,An activity that contains sub-activities (sub-components),,
+2,Child,A sub-activity (sub-component) of a larger activity (the parent),,
+3,Sibling,A sub-activity (sub-component) related to another sub-activity of the same parent,,
+4,Co-funded,An activity that receives funding from more than one organisation,,
+5,Third Party,A report by another organisation on the same activity (excluding activities reported as part of financial transactions - eg. provider-activity-id - or a co-funded activity using code = 4),,

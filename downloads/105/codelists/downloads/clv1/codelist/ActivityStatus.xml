@@ -1,0 +1,32 @@
+<codelist name="ActivityStatus" date-last-modified="2022-07-25T19:39:29.624087+00:00" version="" xml:lang="en">
+  <ActivityStatus>
+    <code>1</code>
+    <name>Pipeline/identification</name>
+    <language>en</language>
+  </ActivityStatus>
+  <ActivityStatus>
+    <code>2</code>
+    <name>Implementation</name>
+    <language>en</language>
+  </ActivityStatus>
+  <ActivityStatus>
+    <code>3</code>
+    <name>Finalisation</name>
+    <language>en</language>
+  </ActivityStatus>
+  <ActivityStatus>
+    <code>4</code>
+    <name>Closed</name>
+    <language>en</language>
+  </ActivityStatus>
+  <ActivityStatus>
+    <code>5</code>
+    <name>Cancelled</name>
+    <language>en</language>
+  </ActivityStatus>
+  <ActivityStatus>
+    <code>6</code>
+    <name>Suspended</name>
+    <language>en</language>
+  </ActivityStatus>
+</codelist>

@@ -1,0 +1,57 @@
+<div id="content" role="main">
+
+<header>
+<h1>Location</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;location&gt;&lt;/location&gt;</h2><p><h3>From the schema</h3><p>
+        A geographical location.
+      </p><table><tbody><tr><td>@percentage</td><td>
+        The percentage of the budget allocated to this item.  Content
+        must be a positive real number between 0 and 100, with no
+        percentage sign.
+      </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /location</h3><ul><li>location has a name</li><!--<li>exists($this/name)</li>--><li>percentages of locations  sum to 100</li><!--<li>sum($this/@percentage[. castable as xs:integer]) = 100</li>--><li>Must be on: <a href="/en/iati-standard/203/codelists/country">Country Codelist</a></li><li>Must be on: <a href="/en/iati-standard/203/codelists/geographical_precision">Geographical Precision Codelist</a></li><li>Must be on: <a href="/en/iati-standard/203/codelists/gazetteer_agency">Gazetteer Agency Codelist</a></li><li>Must be on: <a href="/en/iati-standard/203/codelists/location_type">Location Type Codelist</a></li></ul></p>
+<h2 id="location">Location</h2>
+
+<!-- EDIT1 SECTION "Location" [1-45] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The location element is used a contain various other elements
+</p><pre>    <span><span>&lt;location<span>&gt;</span></span></span>
+       ....
+    <span><span>&lt;/location<span>&gt;</span></span></span></pre>
+<p>
+If more than one location is reported, percentage of activity commitment allocated to this location (if available).
+</p><pre>    <span><span>&lt;location</span> <span>percentage</span>=<span>"85&gt;</span></span>
+       ....
+    <span><span>&lt;/location<span>&gt;</span></span></span>
+    <span><span>&lt;location</span> <span>percentage</span>=<span>"15&gt;</span></span>
+       ....
+    <span><span>&lt;/location<span>&gt;</span></span></span></pre>
+<p>
+Example from UNOPS:
+</p>
+<pre><span><span>&lt;location<span>&gt;</span></span></span>
+      <span><span>&lt;name<span>&gt;</span></span></span>Herat<span><span>&lt;/name<span>&gt;</span></span></span>
+      <span><span>&lt;coordinates</span> <span>latitude</span>=<span>"34.341944400000003000"</span> <span>longitude</span>=<span>"62.203055599999971000"</span> <span>precision</span>=<span>"2"</span> <span>/&gt;</span></span>
+      <span><span>&lt;location-type</span> <span>code</span>=<span>"PPL"</span> <span>/&gt;</span></span>
+      <span><span>&lt;administrative</span> <span>country</span>=<span>"AF"</span><span>&gt;</span></span>Afghanistan, Herat, Injil<span><span>&lt;/administrative<span>&gt;</span></span></span>
+    <span><span>&lt;/location<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [46-755] -->
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="section103">1.03</h4>
+<p>
+<p>
+Where used, the @percentage attribute is now designated as a decimal value and no longer as a positive Integer
+</p>
+</p>
+<!-- EDIT3 SECTION "Changelog" [756-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1467 -->
+
+</div>

@@ -1,0 +1,24 @@
+<div class="body" role="main">
+<p id="error-api">
+<h1>Error API</h1>
+<p>The error API returns data about any problems that the Datastore encountered while attempting to process datasets. The data can be retrieved in either JSON or plain text format.</p>
+<p>The following information is provided:</p>
+<ul>
+<li><strong>datestamp</strong>: When the error occurred.</li>
+<li><strong>resource_url</strong>: The URL of the errored resource/dataset.</li>
+<li><strong>msg</strong>: What error message was returned.</li>
+<li><strong>traceback</strong>: A detailed traceback of the error. Useful if you are a developer. Please include this if you need to report any errors to us.</li>
+<li><strong>logger</strong>: The logger that reported the error.</li>
+</ul>
+<p id="api-1-error-dataset">
+<h2>api/1/error/dataset</h2>
+<p>Retrieves an unordered list of all datasets which encountered errors when parsed by the Datastore.</p>
+<p>A plain text format is also available by appending <cite>.log</cite>: <a href="http://datastore.iatistandard.org/api/1/error/dataset.log">http://datastore.iatistandard.org/api/1/error/dataset.log</a></p>
+</p>
+<p id="api-1-error-dataset-dataset-id">
+<h2>api/1/error/dataset/&lt;dataset-id&gt;</h2>
+<p>Retrieves detailed information about the error encountered with your specified dataset.</p>
+<p>A plain text format is also available but appending <cite>.log</cite> before <cite>/dataset</cite>, i.e. <cite>api/1/error/dataset.log/&lt;dataset-id&gt;</cite>.</p>
+</p>
+</p>
+</div>

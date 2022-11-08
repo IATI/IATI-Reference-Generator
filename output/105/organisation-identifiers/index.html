@@ -1,0 +1,73 @@
+<div class="body" role="main">
+<p id="organisation-identifiers">
+<h1>Organisation Identifiers</h1>
+<p>The <strong>IATI standard</strong> allows for the recording of information on all <em>organisations</em> that participate in any part of the lifecycle of an aid activity: inter alia donors, beneficiaries, extending and implementing agencies.</p>
+<p>Crucial to this, is a common process through which to identify and declare identifiers for these organisations.</p>
+<p id="introduction">
+<h2>Introduction</h2>
+<p><em>Organisational identifiers</em> have two uses in IATI.</p>
+<p>In the <strong>IATI organisation standard</strong>:</p>
+<ul>
+<li>They are used to identify organisations as reporting organisations (<code>reporting-org</code>), as receiving budgets (<code>recipient-org</code>), and of course as an <code>iati-organisation</code>.</li>
+<li>They form the <code>iati-identifier</code> - used to declare a globally unique identifier for the specific <code>iati-organisation</code></li>
+</ul>
+<p>In the <strong>IATI activity standard</strong>:</p>
+<ul>
+<li>They are used to identify organisations as reporting organisations (<code>reporting-org</code>), receiving funds (<code>receiver-org</code>), providing funds (<code>provider-org</code>), or otherwise involved in <code>iati-activities</code> (using <code>participating-org</code>)</li>
+<li>They form the basis of the <code>iati-identifier</code> - used to declare a globally unique activity identifier for the specific <code>iati-activity</code>  - composed of the reporting organisation Organisation ID, and an Activity ID.</li>
+</ul>
+</p>
+<p id="two-components-of-iati-organisation-identifiers">
+<h2>Two components of IATI Organisation Identifiers</h2>
+
+<p>The two components of <strong>IATI Organisation Identifiers</strong></p>
+<p>The <strong>IATI Organisational Identifier</strong> scheme is based on re-using existing known identifiers for an <em>organisation</em>.</p>
+<p>Identifier strings consist of two components:</p>
+<ol>
+<li>The <strong>namespace code</strong> - a code that creates and maintains a given organisational identifier registry</li>
+<li>The <strong>base identifier</strong> – re-use of an existing identifier from that namespace/registry</li>
+</ol>
+<p>1 and 2 are separated by a dash <code>-</code>.</p>
+<p>The namespace code (1) may contain a dash <code>-</code>.</p>
+</p>
+<p id="worked-example">
+<h2>Worked example</h2>
+<p><code>GB-COH</code> is the <strong>namespace code</strong> to the UK Companies Registrar which issues numerical company identifiers to legally constituted limited companies in the United Kingdom of Great Britain and Northern Ireland:</p>
+<ul>
+<li><a href="http://www.companieshouse.gov.uk/">Companies House.</a>.</li>
+</ul>
+<p><code>06368740</code> is the company number (base identifier) issued to Development Initiatives Poverty Research Limited.</p>
+<ul>
+<li><a href="http://data.companieshouse.gov.uk/doc/company/06368740">Development Initiatives Poverty Research Limited record on Companies House.</a>.</li>
+</ul>
+<p>Combining these we get an <strong>IATI Organisational Identifier</strong> of: <code>GB-COH-06368740</code></p>
+</p>
+<p id="organisation-registration-agencies">
+<h2>Organisation Registration Agencies</h2>
+<p>To assist with creating and de-referencing <strong>IATI Organisation Identifiers</strong>, the codelist <a href="../codelists/OrganisationRegistrationAgency/"><span>Organisation Registration Agency</span></a> is available.</p>
+<p>This codelist provides the <strong>namespace</strong> codes for a number of Registration Agencies.  This list is non-embedded in the <strong>IATI Standard</strong>, which means changes and additions may be made at short notice, outside of published decimal and integer upgrade schedules. If a Registation Agency that you wish to use is not on this list, please contact <a href="mailto:support%40iatistandard.org">support<span>@</span>iatistandard<span>.</span>org</a>.</p>
+</p>
+<p id="guidance-on-selecting-an-organisation-registration-agencies-namespace">
+<h2>Guidance on selecting an Organisation Registration Agencies (namespace)</h2>
+<p>An <strong>IATI Organisation Identifier</strong> should:</p>
+<ul>
+<li><strong>Use an existing registration number/identifier</strong> that has been given to an organisation by an official registry of organisations (for example, a national company registrar, or drawn from a government register of charities). Registries that provide machine readable access to the data about organisations are generally preferred over those that do not (subject to (3) below).</li>
+<li><strong>Use a namespace/registry code from the existing IATI list of namespaces and registration agency codes</strong>. This is currently available as <a href="../codelists/OrganisationRegistrationAgency/"><span>a codelist</span></a>. If no existing code is available then you should contact IATI Support with details of the registration agency you wish to re-use a code from in order to have a code set up.</li>
+<li><strong>Where an organisation has multiple registration numbers, prefer those identifiers which uniquely pick out the organisation itself, rather than properties of the organisation</strong>. For example, a VAT/Tax registration number describes that an entity is registered for tax, but may not map directly onto a single legal entity – as – for example – groups of companies may share a VAT registration number. For this reason, an identifier such as <code>GB-COH-123456</code> would be preferred to <code>GB-VAT-987765</code>.</li>
+<li><strong>Where an organisation is not identified in an official national registry, but it is identified on the (deprecated since v1.04 of the standard) ``OrganisationIdentifier`` codelist, these codes should be used as given.</strong>.</li>
+<li><strong>Where none of the above provide an appropriate identifier, third-parties may provide appropriate lists of organisations</strong>.  Consult with IATI Support to identify appropriate identifier lists.</li>
+<li><strong>Where no other identifiers are held or available</strong>, please contact IATI support.</li>
+</ul>
+<p>If you are unsure of which registration agency to prefer, please consult IATI Support. If no authoritative registration agency information is currently collected (e.g. internal identifiers and supplier numbers are recorded, but no external identifiers) IATI publishers are encouraged to identify opportunities to collect an authoritative public identifier.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Once determined, the <strong>IATI Organisational Identifier</strong> can be used:</p>
+<ul>
+<li><strong>IATI organisation standard</strong>: as the <code>iati-identifier</code>, in the <code>@ref</code> attribute of <code>reporting-org</code> and <code>recipient-org-budget/recipient-org</code>.</li>
+<li><strong>IATI activity standard</strong>: in the <code>@ref</code> attribute of <code>reporting-org</code> and <code>participating-org</code>, and should be used in <code>@ref</code> attribute of <code>transaction/provider-org</code> and <code>transaction/recipient-org</code>.</li>
+</ul>
+<p>The string value name within any organisational identifier XML tag is provided for convenience of consuming applications only, and should not be treated as definitive.</p>
+</p>
+</p>
+<meta content="3" name="order"/></div>

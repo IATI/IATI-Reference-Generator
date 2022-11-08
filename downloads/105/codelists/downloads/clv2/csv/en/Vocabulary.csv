@@ -1,0 +1,11 @@
+code,name,description,category,url
+ADT,AidData,,,
+COFOG,Classification of the Functions of Government (UN),,,http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4
+DAC,OECD Development Assistance Committee,,,http://www.oecd.org/dac/stats/dacandcrscodelists.htm
+DAC-3,OECD Development Assistance Committee 3 digit codes,,,http://www.oecd.org/dac/stats/dacandcrscodelists.htm
+ISO,International Organization for Standardization,,,
+NACE,Statistical classification of economic activities in the European Community,,,http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=NACE_REV2&StrLanguageCode=EN
+NTEE,National Taxonomy for Exempt Entities (USA),,,http://nccs.urban.org/classification/NTEE.cfm
+RO,Reporting Organisation (i.e. maintained by the organisation referred to in the <reporting-org> element.,,,
+RO2,Reporting Organisation (2) - where reporting organisations have more than one vocabulary that they wish to reference,,,
+WB,World Bank,,,

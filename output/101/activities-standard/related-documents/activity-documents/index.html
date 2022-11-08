@@ -1,0 +1,39 @@
+<div id="content" role="main">
+
+<header>
+<h1>Activity Documents</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;document-link&gt;&lt;/document-link&gt;</h2><p><h3>From the schema</h3><p>
+        A categorized link to an external document.
+      </p><table><tbody><tr><td>@url</td><td>
+            The target URL of the external document, e.g. "http://www.example.org/doc.html".
+          </td></tr><tr><td>@format</td><td>
+            The MIME type of the external document,
+            e.g. "application/pdf".  A partial list of MIME types
+            appears at <a href="../../../codelists/file_format/" rel="nofollow">http://iatistandard.org/101/codelists/file_format</a>
+</td></tr><tr><td>@language</td><td>
+            The ISO 639 language code for the target document, e.g. "en".
+          </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /document-link/@format</h3><ul><li>Must be on: <a href="../../../codelists/file_format/">File Format Codelist</a></li><li>Must be on: <a href="../../../codelists/document_category/">Document Category Codelist</a></li></ul></p>
+<h2 id="document_link">Document Link</h2>
+
+<!-- EDIT1 SECTION "Document Link" [1-50] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+A web address where the document can be downloaded can be declared through the url attribute:
+</p>
+<pre>    <span><span>&lt;document-link</span> <span>url</span>=<span>"http://www.aidtransparency.net/wp-content/uploads/2009/06/Summary-IATI-Standard-Version-1-Final.doc"</span><span>&gt;</span></span></pre>
+<p>
+Additionally, the Internet Media Type (“MIME type”) of the document linked to, as defined and maintained by the Internet Assigned Numbers Authority can be declared via the format attribute:
+</p>
+<pre>    <span><span>&lt;document-link</span> <span>format</span>=<span>"application/msword"</span> <span>url</span>=<span>"http://www.aidtransparency.net/wp-content/uploads/2009/06/Summary-IATI-Standard-Version-1-Final.doc"</span><span>&gt;</span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [51-] -->
+</p>
+
+</p><!-- .entry-content -->
+<!-- #post-1459 -->
+
+</div>

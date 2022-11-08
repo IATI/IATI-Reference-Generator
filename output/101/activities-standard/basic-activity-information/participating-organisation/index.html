@@ -1,0 +1,54 @@
+<div id="content" role="main">
+
+<header>
+<h1>Participating Organisation</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;participating-org&gt;&lt;/participating-org&gt;</h2><p><h3>From the schema</h3><p> Can occur: Min = 0, Max = Unlimited</p><p>
+        An organisation (including the reporting organisation)
+        involved with the activity.  May be a donor, fund, agency,
+        etc.  Specifying the @identifier and @role attributes is
+        strongly recommended.  May contain the organisation name as
+        content.
+
+        For the value of the @type attribute, see
+        <a href="/en/iati-standard/101/codelists/organisation-type" rel="nofollow">http://iatistandard.org/101/codelists/organisation-type</a>
+
+        For the value of the @ref attribute, see the list of
+        officially-registered organizations at
+        <a href="../../../codelists/organisation/" rel="nofollow">http://iatistandard.org/101/codelists/organisation</a>
+</p><table><tbody><tr><td>@ref</td><td>
+        Machine-readable identification string for the business
+        object being described.
+      </td></tr><tr><td>@type</td><td>
+        Free text describing the type of thing being referenced.
+      </td></tr><tr><td>@role</td><td>
+            A code describing the organisation's role in the activity
+            (donor, agency, etc.).
+
+            See <a href="../../../codelists/organisation_role/" rel="nofollow">http://iatistandard.org/101/codelists/organisation_role</a>
+</td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p><!--schema wrap--></p><p><h3>Compliance1 compliance test(s) for /participating-org/*</h3><ul><li>activity has a participating-org with role Implementing</li><!--<li>exists($this[@role="Implementing"]/@iso-date)</li>--><li>activity has an Accountable participating-org</li><!--<li>exists($this[@role = "Accountable"])</li>--><li>activity has an Extending participating-org</li><!--<li>exists($this[@role = "Extending"])</li>--></ul></p><p><h3>Standard compliance test(s) for /participating-org/@ref</h3><ul><li>Must be on: <a href="/en/iati-standard/101/codelists/organisation_identifier">Organisation Identifier Codelist</a></li><li>Must be on: <a href="../../../codelists/organisation_role/">Organisation Role Codelist</a></li><li>Must be on: <a href="../../../codelists/organisation_type/">Organisation Type Codelist</a></li></ul></p>
+<h2 id="participating_organisation">Participating Organisation</h2>
+
+<!-- EDIT1 SECTION "Participating Organisation" [1-63] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+This example from Cafod declares two participating organisations in the activity.  Caford as the Funding organisation, with a reference to the Charity Commission.  The Implementing organisation is not referenced:
+</p><pre><span><span>&lt;participating-org</span> <span>role</span>=<span>"Funding"</span> <span>ref</span>=<span>"GB-CHC-285776"</span><span>&gt;</span></span>CAFOD<span><span>&lt;/participating-org<span>&gt;</span></span></span>
+<span><span>&lt;participating-org</span> <span>role</span>=<span>"Implementing"</span><span>&gt;</span></span>Caritas Africa<span><span>&lt;/participating-org<span>&gt;</span></span></span></pre>
+
+This example from DfID declares three participating organisations, all with a different role. The type of organisation (10 = Government) is also declared for two.
+<pre><span><span>&lt;participating-org</span> <span>ref</span>=<span>"GB"</span> <span>type</span>=<span>"10"</span> <span>role</span>=<span>"Funding"</span><span>&gt;</span></span>UNITED KINGDOM<span><span>&lt;/participating-org<span>&gt;</span></span></span>
+<span><span>&lt;participating-org</span> <span>ref</span>=<span>"GB-1"</span> <span>type</span>=<span>"10"</span> <span>role</span>=<span>"Extending"</span><span>&gt;</span></span>Department for International Development<span><span>&lt;/participating-org<span>&gt;</span></span></span>
+<span><span>&lt;participating-org</span> <span>ref</span>=<span>"22000"</span> <span>role</span>=<span>"Implementing"</span><span>&gt;</span></span>Donor country-based NGO<span><span>&lt;/participating-org<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [64-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1393 -->
+
+</div>

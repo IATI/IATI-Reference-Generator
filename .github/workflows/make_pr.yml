@@ -1,0 +1,33 @@
+name: Update the IATI Reference and make a PR
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: "Build and PR"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y install libxml2-dev libxslt-dev libxslt1-dev python3-dev python3-lxml
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -r requirements.txt
+
+      - name: Build
+        run: |
+          ./build.sh
+
+      - name: Create a PR
+        uses: peter-evans/create-pull-request@v3

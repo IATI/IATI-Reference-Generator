@@ -1,0 +1,52 @@
+<codelist name="Vocabulary" date-last-modified="2022-07-25T19:39:29.934218+00:00" version="" xml:lang="en">
+  <Vocabulary>
+    <code>ADT</code>
+    <name>AidData</name>
+    <language>en</language>
+  </Vocabulary>
+  <Vocabulary>
+    <code>COFOG</code>
+    <name>Classification of the Functions of Government (UN)</name>
+    <language>en</language>
+  </Vocabulary>
+  <Vocabulary>
+    <code>DAC</code>
+    <name>OECD Development Assistance Committee</name>
+    <language>en</language>
+  </Vocabulary>
+  <Vocabulary>
+    <code>DAC-3</code>
+    <name>OECD Development Assistance Committee 3 digit codes</name>
+    <language>en</language>
+  </Vocabulary>
+  <Vocabulary>
+    <code>ISO</code>
+    <name>International Organization for Standardization</name>
+    <language>en</language>
+  </Vocabulary>
+  <Vocabulary>
+    <code>NACE</code>
+    <name>Statistical classification of economic activities in the European Community</name>
+    <language>en</language>
+  </Vocabulary>
+  <Vocabulary>
+    <code>NTEE</code>
+    <name>National Taxonomy for Exempt Entities (USA)</name>
+    <language>en</language>
+  </Vocabulary>
+  <Vocabulary>
+    <code>RO</code>
+    <name>Reporting Organisation (i.e. maintained by the organisation referred to in the &lt;reporting-org&gt; element.</name>
+    <language>en</language>
+  </Vocabulary>
+  <Vocabulary>
+    <code>RO2</code>
+    <name>Reporting Organisation (2) - where reporting organisations have more than one vocabulary that they wish to reference</name>
+    <language>en</language>
+  </Vocabulary>
+  <Vocabulary>
+    <code>WB</code>
+    <name>World Bank</name>
+    <language>en</language>
+  </Vocabulary>
+</codelist>

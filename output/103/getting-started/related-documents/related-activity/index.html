@@ -1,0 +1,41 @@
+<div id="content" role="main">
+
+<header>
+<h1>Related Activity</h1>
+</header><!-- .entry-header -->
+<p>
+<p>This page is currently flagged for review. We are undertaking an update of the information we publish about the IATI Standard, and the content here has not yet been checked.</p>
+<h3>Relationships</h3>
+<p>This section describe relationships to other activities and to broader initiatives.</p>
+<h3>Related activities</h3>
+<p>The financial transactions described above provide one type of link among activities, by tracing the flow of funds, by there are other types of connections that do not necessarily involve exchanging funds.  To represent these relationships, IATI uses the related-activity element:<br/>
+<code><br/>
+&lt;related-activity ref=”ACME:activities:67890” type=”Parent”/&gt;<br/>
+</code><br/>
+This example states that a different activity, “ACME:activities:67890”, is the parent activity of the one currently being described.  The allowed values for the type attribute appear in the IATI Related Activity Type code list:</p>
+<ul>
+<li><strong>Parent</strong>: the referenced activity is the parent (a superset) of the current activity.</li>
+<li><strong>Child</strong>: the referenced activity is a sub-component of the current activity.</li>
+<li><strong>Sibling</strong>: the referenced activity is a sub-component of a common parent activity.</li>
+</ul>
+<p>As with other IATI markup, this element may be repeated as necessary:<br/>
+<code><br/>
+&lt;related-activity ref=”ACME:activities:67890” type=”Parent”/&gt;</code></p>
+<p>&lt;related-activity ref=”ACME:activities:11111” type=”Sibling”/&gt;</p>
+<p>&lt;related-activity ref=”ACME:activities:22222” type=”Sibling”/&gt;<br/>
+</p>
+<h3>Other related initiatives</h3>
+<p>An activity may also have relationships to intiatives that are not aid activities in themselves, but are still useful for classifying and grouping activities.  For example, the United Nations Office for the Coordination of Humanitarian Affairs (UN-OCHA) issues appeals for aid after humanitarian disasters such as the 2010 Haiti earthquake, and agencies initiate projects under the umbrella of those appeals.</p>
+<p>To specify that an activity is related to an appeal or other initiative (such as a special G8 or UN initiative), use the related-initiative element:<br/>
+<code><br/>
+&lt;related-initiative ref=”OCHA:haiti2010”</code></p>
+<p>type=”appeal”&gt;Haiti 2010 appeal&lt;/related-initiative&gt;<br/>
+<br/>
+As with all elements using a ref or code attribute, the human-readable content (“Haiti 2010 appeal”) is optional.</p>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-2468 -->
+<!-- #comments -->
+
+</div>

@@ -1,0 +1,61 @@
+<div class="body" role="main">
+<p id="finance-type">
+<h1>finance-type</h1>
+<p><code>iati-activities/iati-activity/transaction/finance-type</code></p>
+<p>This is the reference page for the XML element <code>finance-type</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Optional element to override the top-level
+default-finance-type element on a
+transaction-by-transaction basis, if needed.</p>
+<p>For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/finance_type">http://iatistandard.org/codelists/finance_type</a></p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-transaction-finance-type-code">
+<dt>@code</dt>
+<dd><p>Machine readable code for the entity being described. The value should
+be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/FinanceType/"><span>FinanceType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-transaction-finance-type-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>finance-type</code> in context of <code>transaction</code> element.</p>
+<p>Example declaring the <code>FinanceType</code> code <em>111</em> (<em>Subsidies to national private investors</em>):</p>
+<p>The <code>finance-type</code> element can override the <code>default-finance-type</code> value set in <code>iati-activity</code>:</p>
+<p><code><pre>  &lt;transaction ref="1234"&gt;
+   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;   
+   &lt;description&gt;Transaction description text&lt;/description&gt;
+   &lt;transaction-type code="IF" /&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" ref="BB-BBB-123456789"&gt;Agency B&lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" ref="AA-AAA-123456789"&gt;Agency A&lt;/receiver-org&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;flow-type code="20" /&gt;
+<span>   &lt;finance-type code="111" /&gt;
+</span>   &lt;aid-type code="A02" /&gt;   
+   &lt;tied-status code="5" /&gt;
+   &lt;disbursement-channel code="1" /&gt;
+  &lt;/transaction&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L773">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/transaction/finance-type.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

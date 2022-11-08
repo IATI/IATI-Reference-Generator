@@ -1,0 +1,31 @@
+<div class="body" role="main">
+<p id="notes-about-iati-python-code">
+<h1>Notes about IATI Python Code</h1>
+<p id="python2-vs-python3">
+<h2>Python2 vs Python3</h2>
+<p>All current IATI code is Python 3 or Node JS. However, some tools that have been flagged for review as a part of the Technical Stock Take remain in Python 2 (either on Github, or as deployed) while decisions on future tool-sets are pending.</p>
+</p>
+<p id="common-dependencies">
+<h2>Common Dependencies</h2>
+<p>A lot of our software has dependencies in common:</p>
+<ul>
+<li>lxml, a fast XML toolkit that uses C libraries</li>
+<li>Flask as the web framework</li>
+<li>Jinja as the templating engine (including for use with Sphinx)</li>
+<li>py.test - a no-boilerplate testing framework (although some code also uses nosetest and plain unit test)</li>
+</ul>
+</p>
+<p id="pinned-dependencies">
+<h2>Pinned Dependencies</h2>
+<p>We pin all our dependencies (including dependencies of dependencies) to an exact version in requirements.txt. This makes deployment more deterministic and reproducible. It also means that we can use requires.io to track out of date dependencies.</p>
+</p>
+<p id="virtualenv">
+<h2>virtualenv</h2>
+<p>In order to install multiple version of the same dependency for different projects, we use <a href="https://virtualenv.pypa.io/en/latest/">virtualenv</a>.</p>
+</p>
+<p id="python-packages">
+<h2>Python Packages</h2>
+<p>Currently most of our Python code is standalone scripts rather than python packages (ie. with a setup.py and installable with pip). The two current packages are IATI-Rulesets and iati-datastore, but versioning information in these is not maintained (as the preferred installation method is via GitHub).</p>
+</p>
+</p>
+</div>

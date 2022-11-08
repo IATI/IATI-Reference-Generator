@@ -1,0 +1,85 @@
+<codelist name="Vocabulary" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>
+            <narrative>Vocabulary</narrative>
+        </name>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>ADT</code>
+            <name>
+                <narrative>AidData</narrative>
+                <narrative xml:lang="fr">AidData</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>COFOG</code>
+            <name>
+                <narrative>Classification of the Functions of Government (UN)</narrative>
+                <narrative xml:lang="fr">COFOG (UN)</narrative>
+            </name>
+            <url>http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4</url>
+        </codelist-item>
+        <codelist-item>
+            <code>DAC</code>
+            <name>
+                <narrative>OECD Development Assistance Committee</narrative>
+                <narrative xml:lang="fr">OCDE Comit&#233; d'aide au d&#233;veloppement</narrative>
+            </name>
+            <url>http://www.oecd.org/dac/stats/dacandcrscodelists.htm</url>
+        </codelist-item>
+        <codelist-item>
+            <code>DAC-3</code>
+            <name>
+                <narrative>OECD Development Assistance Committee 3 digit codes</narrative>
+                <narrative xml:lang="fr">OCDE Comit&#233; d'aide au d&#233;veloppement 3 digit codes</narrative>
+            </name>
+            <url>http://www.oecd.org/dac/stats/dacandcrscodelists.htm</url>
+        </codelist-item>
+        <codelist-item>
+            <code>ISO</code>
+            <name>
+                <narrative>International Organization for Standardization</narrative>
+                <narrative xml:lang="fr">Organisation internationale de normalisation</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>NACE</code>
+            <name>
+                <narrative>Statistical classification of economic activities in the European Community</narrative>
+                <narrative xml:lang="fr">Nomenclature statistique des activit&#233;s &#233;conomiques dans la Communaut&#233; europ&#233;enne</narrative>
+            </name>
+            <url>http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&amp;StrNom=NACE_REV2&amp;StrLanguageCode=EN</url>
+        </codelist-item>
+        <codelist-item>
+            <code>NTEE</code>
+            <name>
+                <narrative>National Taxonomy for Exempt Entities (USA)</narrative>
+                <narrative xml:lang="fr">National Taxonomy for Exempt Entities (USA)</narrative>
+            </name>
+            <url>http://nccs.urban.org/classification/NTEE.cfm</url>
+        </codelist-item>
+        <codelist-item>
+            <code>RO</code>
+            <name>
+                <narrative>Reporting Organisation (i.e. maintained by the organisation referred to in the &lt;reporting-org&gt; element.</narrative>
+                <narrative xml:lang="fr">Organisation d&#233;clarante (i.e. maintained by the organisation referred to in the &lt;reporting-org&gt; element.</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>RO2</code>
+            <name>
+                <narrative>Reporting Organisation (2) - where reporting organisations have more than one vocabulary that they wish to reference</narrative>
+                <narrative xml:lang="fr">Organisation d&#233;clarante (2) - dans le cas o&#249; les organisations d&#233;clarantes ont plus d'un vocabulaire qu'ils souhaitent faire r&#233;f&#233;rence</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>WB</code>
+            <name>
+                <narrative>World Bank</narrative>
+                <narrative xml:lang="fr">Banque mondiale</narrative>
+            </name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

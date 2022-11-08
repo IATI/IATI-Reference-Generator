@@ -1,0 +1,53 @@
+<div id="content" role="main">
+
+<header>
+<h1>Forecast</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;forecast&gt;&lt;/forecast&gt;</h2><p><h3>From the schema</h3><p>
+              A container to hold separate forecasts for each of
+              the years specified
+            </p><table><tbody><tr><td>@year</td><td>
+                      The calendar year that the forward spend covers
+                    </td></tr><tr><td>@currency</td><td>
+        A three letter ISO 4217 code for the original currency of the 
+        amount.
+        This is required for all currency amounts unless the
+        iati-activity/@default-currency attribute is specified.
+
+        Currency codes are listed at
+        <a href="/en/iati-standard/203/codelists/currency" rel="nofollow">http://iatistandard.org/codelists/currency</a>
+</td></tr><tr><td>@value-date</td><td>
+        The date that this value was set (to allow historical
+        currency conversion).  The date must be in ISO 8601
+        format (YYYY-MM-DD).
+      </td></tr></tbody></table> </p><!--schema wrap--></p>
+<h2 id="forecast">Forecast</h2>
+
+<!-- EDIT1 SECTION "Forecast" [1-65] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<pre>&lt;fss extraction-date="2013-05-31" priority="true" phaseout-year="2016"&gt;
+    &lt;forecast year="2014" value-date="2013-07-03" currency="GBP"&gt;10000&lt;/forecast&gt;
+    &lt;forecast year="2015" currency="GBP"&gt;20000&lt;/forecast&gt;
+&lt;/fss&gt;
+  </pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [66-322] -->
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="section103">1.03</h4>
+<p>
+<p>
+New in 1.03  <br/>
+
+Added the optional fss element and its child elements
+</p>
+</p>
+<!-- EDIT3 SECTION "Changelog" [323-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-3790 -->
+
+</div>

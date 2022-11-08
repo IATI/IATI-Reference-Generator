@@ -1,0 +1,56 @@
+<div class="body" role="main">
+<p id="interest-received">
+<h1>interest-received</h1>
+<p><code>iati-activities/iati-activity/crs-add/loan-status/interest-received</code></p>
+<p>This is the reference page for the XML element <code>interest-received</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Interest received during the reporting year</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>The text in this element must be of type xsd:decimal.</p>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>interest-received</code> within <code>loan-status</code> in context of <code>crs-add</code> element.</p>
+<p><code><pre>  &lt;crs-add&gt;
+   &lt;other-flags code="1" significance="1" /&gt;
+   &lt;loan-terms rate-1="4" rate-2="3"&gt;
+    &lt;repayment-type code="1" /&gt;
+    &lt;repayment-plan code="4" /&gt;
+    &lt;commitment-date iso-date="2013-09-01"/&gt;
+    &lt;repayment-first-date iso-date="2014-01-01" /&gt;
+    &lt;repayment-final-date iso-date="2020-12-31" /&gt;
+   &lt;/loan-terms&gt;
+   &lt;loan-status year="2014" currency="GBP" value-date="2013-05-24"&gt;
+<span>     &lt;interest-received&gt;200000&lt;/interest-received&gt;
+</span>     &lt;principal-outstanding&gt;1500000&lt;/principal-outstanding&gt;
+     &lt;principal-arrears&gt;0&lt;/principal-arrears&gt;
+     &lt;interest-arrears&gt;0&lt;/interest-arrears&gt;
+   &lt;/loan-status&gt;
+  &lt;/crs-add&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+
+<p>New in 1.03</p>
+<p>Added the optional <code>crs-add</code> element and its child elements</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L2222">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/crs-add/loan-status/interest-received.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

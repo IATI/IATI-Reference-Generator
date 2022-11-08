@@ -1,0 +1,34 @@
+<div id="content" role="main">
+
+<header>
+<h1>Budget</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;budget&gt;&lt;/budget&gt;</h2><p><h3>From the schema</h3><p>
+        The value of the aid activity's budget for each financial year
+        as in the original project document.
+      </p><table><tbody><tr><td>@type</td><td>
+        Free text describing the type of thing being referenced.
+      </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /budget/@type</h3><ul><li></li><li>Must be on: <a href="/en/iati-standard/203/codelists/budget_type">Budget Type Codelist</a></li><li>budget period-end has iso-date</li><!--<li>exists($this/@iso-date)</li>--><li>budget period-start has iso-date</li><!--<li>exists($this/@iso-date)</li>--><li>budget has period-start and period-end</li><!--<li>exists($this/period-start) and exists($this/period-end)</li>--><li>budget period-start earlier than period-end</li><!--<li>$this/period-start/@iso-date le $this/period-end/@iso-date</li>--><li>Must be on: <a href="/en/iati-standard/203/codelists/currency">Currency Codelist</a></li></ul></p>
+<h2 id="budget">Budget</h2>
+
+<!-- EDIT1 SECTION "Budget" [1-42] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The budget element acts as a container for budget details.
+</p>
+<p>
+At this level, the attribute “type” should be used to declare whether the budget is an Original (code 1) or Revised (code 2).   If omitted Original is assumed:
+</p>
+<pre>    <span><span>&lt;budget</span> <span>type</span>=<span>"1"</span><span>&gt;</span></span>
+    ....
+    <span><span>&lt;/budget<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [43-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1461 -->
+
+</div>

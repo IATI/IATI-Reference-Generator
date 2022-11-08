@@ -1,0 +1,83 @@
+<div class="body" role="main">
+<p id="category">
+<h1>category</h1>
+<p><code>iati-organisations/iati-organisation/document-link/category</code></p>
+<p>This is the reference page for the XML element <code>category</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>IATI Document Category Code</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur at least once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-document-link-category-code">
+<dt>@code</dt>
+<dd><p>An IATI code defining the category of the document.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/DocumentCategory/"><span>DocumentCategory codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example  usage of <code>category</code> of a <code>document-link</code> in an <code>iati-organisation</code>.</p>
+
+
+<p>This examples declares the <code>DocumentCategory</code> code <em>B01</em>, using the <code>@code</code> attribute.</p>
+
+<p><code><pre> &lt;document-link format="application/vnd.oasis.opendocument.text" url="http://www.example.org/docs/report_en.odt"&gt;
+  &lt;title&gt;
+   &lt;narrative&gt;Annual Report 2013&lt;/narrative&gt;	   
+  &lt;/title&gt;
+<span>  &lt;category code="B01" /&gt;
+</span>  &lt;language code="en" /&gt;
+  &lt;document-date iso-date="2014-02-05" /&gt;
+  &lt;recipient-country code="AF"&gt;
+    &lt;narrative&gt;Afghanistan&lt;/narrative&gt;
+   &lt;/recipient-country&gt;
+ &lt;/document-link&gt;
+</pre></code>
+</p>
+
+<p>The <code>category</code> element can be repeated in any <code>document-link</code>.</p>
+<p>Example declaring multiple <code>DocumentCategory</code> codes for the same <code>document-link</code>:</p>
+
+<p><code><pre>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http://www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Annual Report 2013&lt;/narrative&gt;	   
+    &lt;narrative xml:lang="fr"&gt;Rapport annuel 2013&lt;/narrative&gt;
+   &lt;/title&gt;
+<span>   &lt;category code="B01" /&gt;
+</span><span>   &lt;category code="B02" /&gt;
+</span><span>   &lt;category code="B03" /&gt;
+</span>   &lt;language code="en" /&gt;
+   &lt;document-date iso-date="2014-02-05" /&gt;
+   &lt;recipient-country code="AF"&gt;
+    &lt;narrative&gt;Afghanistan&lt;/narrative&gt;
+   &lt;/recipient-country&gt;
+  &lt;/document-link&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>Freetext is <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">no longer allowed</a>  within this element.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-organisations-schema.xsd#L768">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/organisation-standard/iati-organisations/iati-organisation/document-link/category.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+<meta content="1" name="order"/></div>

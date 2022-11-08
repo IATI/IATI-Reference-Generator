@@ -1,0 +1,82 @@
+<div id="content" role="main">
+
+<header>
+<h1>Record Header</h1>
+</header><!-- .entry-header -->
+<p>
+<h3>Definitions</h3>
+<p>The Organisations Standard allows publishers to report on information for multiple organisations: a government agency may report on behalf of other agencies; an INGO may report on behalf of its national associates; a private company may report on behalf of its subsidiaries. The Record Header, the iati-organisation element, indicates the start of a report on a single organisation’s information.<br/>
+</p>
+<table>
+<tr>
+<td><strong>last-updated-datetime</strong></td>
+<td>The date (and optionally time) the data in this record was last updated.</td>
+</tr>
+<tr>
+<td><strong>default-language</strong></td>
+<td>This field allows a default language for an entire organisation report. In most cases all the information for an organisation will be provided in the same language. If this omitted it is necessary to specify the language used in all text fields throughout this record.</td>
+</tr>
+<tr>
+<td><strong>default-currency</strong></td>
+<td>The default currency for an entire organisation report. In most cases, all financial figures will be provided using the same currency. If omitted it is necessary to specify a currency for each reported monetary value.</td>
+</tr>
+</table>
+<h3>Example Usage</h3>
+<pre> 
+
+  ..
+  
+  ..
+  
+  ..
+
+</pre>
+<h3>Structure</h3>
+<table>
+<tr>
+<th>Item</th>
+<th>Format</th>
+<th>XML</th>
+<th>Occurs</th>
+</tr>
+<tr>
+<td>iati-organisation</td>
+<td></td>
+<td>iati-organisation</td>
+<td>1..*</td>
+</tr>
+<tr>
+<td>   last-updated-datetime</td>
+<td><a href="http://iatistandard.org/guides/dates">DateTime</a></td>
+<td>iati-organisation/@last-updated-datetime</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   default-language</td>
+<td><a href="/en/iati-standard/203/codelists/language">Language Code</a></td>
+<td>iati-organisation/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   default-currency</td>
+<td><a href="/en/iati-standard/203/codelists/currency">Currency Code</a></td>
+<td>iati-organisation/@default-currency</td>
+<td>0..1</td>
+</tr>
+</table>
+<h3>Usage &amp; Compliance</h3>
+<p>There <strong>MUST</strong> be at least one occurrence of this element in the file. </p>
+<ul>
+<li> The <em>last-updated-datetime</em> is not mandatory but is <strong>recommended</strong> for full compliance.
+</li><li> If <em>default-language</em> is present it <strong>MUST</strong> be a valid code from the <a href="/en/iati-standard/203/codelists/language">codelist</a>.
+</li><li> If <em>default-language</em> is omitted it is necessary to specify the language code for all text fields throughout the record.
+</li><li> If <em>default-currency</em> is present it <strong>MUST</strong> be a valid code from the <a href="/en/iati-standard/203/codelists/currency">codelist</a>.
+</li><li> If <em>default-currency</em> is omitted it is necessary to specify the currency code for all monetary value fields throughout the record.
+</li></ul>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1596 -->
+<!-- #comments -->
+
+</div>

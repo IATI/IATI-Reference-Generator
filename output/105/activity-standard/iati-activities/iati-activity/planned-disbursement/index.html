@@ -1,0 +1,63 @@
+<div class="body" role="main">
+<p id="planned-disbursement">
+<h1>planned-disbursement</h1>
+<p><code>iati-activities/iati-activity/planned-disbursement</code></p>
+<p>This is the reference page for the XML element <code>planned-disbursement</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The planned disbursement element should only be used to report
+specific planned cash transfers. These should be reported for
+a specific date or a meaningfully predictable period. These
+transactions should be reported in addition to budgets - which
+are typically annual breakdowns of the total activity
+commitment.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-planned-disbursement-updated">
+<dt>@updated</dt>
+<dd><p>The date on which this line of information was last
+updated. Previous updates for the same period should also
+be reported.</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>The <code>planned-disbursement</code> element acts as a container for other sub elements:</p>
+<p><code><pre><span>  &lt;planned-disbursement updated="2014-01-01"&gt;
+</span>   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
+<span>  &lt;/planned-disbursement&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.05</h3>
+<p>A description was added to this element</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L1571">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/planned-disbursement.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="period-start/">period-start</a></li>
+<li><a href="period-end/">period-end</a></li>
+<li><a href="value/">value</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

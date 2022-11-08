@@ -1,0 +1,58 @@
+<div class="body" role="main">
+<p id="gazetteer-entry">
+<h1>gazetteer-entry</h1>
+<p><code>iati-activities/iati-activity/location/gazetteer-entry</code></p>
+<p>This is the reference page for the XML element <code>gazetteer-entry</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Deprecated since 1.04</p>
+<p>Identifier for this location’s entry in a geographical
+gazetteer, such as GEOnet.  The entry identifier is the
+element content.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-location-gazetteer-entry-gazetteer-ref">
+<dt>@gazetteer-ref</dt>
+<dd><p>Deprecated since 1.04</p>
+<p>Reference to the gazetteer containing the entry.</p>
+<p>See <a href="/en/iati-standard/203/codelists/gazetteer_agency">http://iatistandard.org/codelists/gazetteer_agency</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/GazetteerAgency/"><span>GazetteerAgency codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p><em>NB: this element is deprecated in version 1.04</em></p>
+<p>Example for the <strong>Herat region of Afghanistan</strong> - which has an ID of <strong>1140026</strong> on <a href="http://www.geonames.org/">geonames.org</a>.</p>
+<p>To find Herat on geonames.org you would create a link like this: <a href="http://www.geonames.org/1140026/">http://www.geonames.org/1140026/</a></p>
+<p>The IATI gazeteer-ref for geonames is <code>GEO</code>, so the element would look like:</p>
+<p><code><pre>&lt;location&gt;
+  ....
+  &lt;gazetteer-entry gazeteer-ref="GEO"&gt;1140026&lt;/gazetteer-entry&gt;
+  ....
+&lt;/location&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.04</h3>
+
+<p>Deprecated in 1.04</p>
+<p>The location/location-id element which identifies both gazetteer and administrative area vocabularies and codes should be used instead.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1137">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/location/gazetteer-entry.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

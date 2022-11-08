@@ -1,0 +1,120 @@
+<div class="body" role="main">
+<p id="changelog">
+<h1><a href="#id4">2.02 Changelog</a></h1>
+<p>Changes / additions to IATI Standard for version 2.02</p>
+<p>Note: Version 2.02 was released on Monday 7th December 2015.</p>
+<p id="contents">
+<p>Contents</p>
+<ul>
+<li><a href="#changelog" id="id4">2.02 Changelog</a><ul>
+<li><a href="#schema-changes" id="id5">Schema Changes</a><ul>
+<li><a href="#activities-schema" id="id6">Activities schema</a></li>
+<li><a href="#organisation-schema" id="id7">Organisation schema</a></li>
+</ul>
+</li>
+<li><a href="#documentation-changes" id="id8">Documentation Changes</a><ul>
+<li><a href="#new-overview-pages" id="id9">New overview pages</a></li>
+<li><a href="#amended-and-new-documentation-elsewhere-on-the-reference-site" id="id10">Amended and new documentation elsewhere on the reference site</a></li>
+</ul>
+</li>
+<li><a href="#codelist-changes" id="id11">Codelist Changes</a><ul>
+<li><a href="#codelist-schema" id="id12">Codelist schema</a></li>
+<li><a href="#new-codelists" id="id13">New Codelists</a></li>
+<li><a href="#updated-codelists" id="id14">Updated Codelists</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</p>
+<p id="schema-changes">
+<h2><a href="#id5">Schema Changes</a></h2>
+<p>A full diff of all schema changes in 2.02 can be found in the <a href="https://github.com/IATI/IATI-Schemas/compare/version-2.01...version-2.02#files_bucket">IATI GitHub</a></p>
+<p id="activities-schema">
+<h3><a href="#id6">Activities schema</a></h3>
+<p>Addition of @humanitarian attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/">iati-activity</a> element. (<a href="http://support.iatistandard.org/entries/106937796-Humanitarian-Flag">Discussion</a>)</p>
+<p>Addition of @activity-id attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/participating-org/">participating-org</a> element. (<a href="http://support.iatistandard.org/entries/82377659-Add-activity-id-attribute-to-participating-org-element">Discussion</a>)</p>
+<p>Addition of @vocabulary-uri attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/recipient-region/">recipient-region</a> element. (<a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">Discussion</a>)</p>
+<p>Addition of @vocabulary-uri attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/sector/">sector</a> element. (<a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/humanitarian-scope/">humanitarian-scope</a> was added (<a href="http://support.iatistandard.org/entries/105778163-Humanitarian-Emergencies-and-Appeals">Discussion</a>)</p>
+<p>Addition of @vocabulary-uri attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/policy-marker/">policy-marker</a> element. (<a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">Discussion</a>)</p>
+<p>The occurrence rule for the @significance attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/policy-marker/">policy-marker</a> element was amended. (<a href="http://support.iatistandard.org/entries/105777943-Humanitarian-Policy-Markers">Discussion</a>)</p>
+<p>Addition of @status attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/budget/">budget</a> element. (<a href="http://support.iatistandard.org/entries/21150501-Budgets-and-tentativeness">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/planned-disbursement/provider-org/">provider-org</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/planned-disbursement/">planned-disbursement</a>) was added (<a href="http://support.iatistandard.org/entries/29665337-Add-provider-org-and-receiver-org-to-planned-disbursement-element">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/planned-disbursement/receiver-org/">receiver-org</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/planned-disbursement/">planned-disbursement</a>) was added (<a href="http://support.iatistandard.org/entries/29665337-Add-provider-org-and-receiver-org-to-planned-disbursement-element">Discussion</a>)</p>
+<p>The definition for the element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/planned-disbursement/period-start/">period-start</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/planned-disbursement/">planned-disbursement</a>) was amended (<a href="http://support.iatistandard.org/entries/29665337-Add-provider-org-and-receiver-org-to-planned-disbursement-element">Discussion</a>)</p>
+<p>The definition for the element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/planned-disbursement/period-end/">period-end</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/planned-disbursement/">planned-disbursement</a>) was amended (<a href="http://support.iatistandard.org/entries/29665337-Add-provider-org-and-receiver-org-to-planned-disbursement-element">Discussion</a>)</p>
+<p>Addition of @humanitarian attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/transaction/">transaction</a> element. (<a href="http://support.iatistandard.org/entries/106937796-Humanitarian-Flag">Discussion</a>)</p>
+<p>Addition of @type attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/transaction/provider-org">provider-org</a> element (itself a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/transaction/">transaction</a>). (<a href="http://support.iatistandard.org/entries/81683876-provider-receiver-og-adding-type">Discussion</a>)</p>
+<p>Addition of @type attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/transaction/receiver-org">receiver-org</a> element (itself a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/transaction/">transaction</a>). (<a href="http://support.iatistandard.org/entries/81683876-provider-receiver-og-adding-type">Discussion</a>)</p>
+<p>Addition of @vocabulary-uri attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/transaction/sector/">transaction/sector</a> element. (<a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">Discussion</a>)</p>
+<p>Addition of @vocabulary-uri attribute within the <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/transaction/region/">transaction/region</a> element. (<a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/document-link/document-date">document-date</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/document-link/">document-link</a>) was added (<a href="http://support.iatistandard.org/entries/92707776-Document-Dates">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/">result/indicator</a>) was added (<a href="http://support.iatistandard.org/entries/79784435-Results-Require-unambiguous-indicator-reference">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/period/target/location">location</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">result/indicator/period/target/</a>) was added (<a href="http://support.iatistandard.org/entries/79499149-Support-disaggregation-of-performance-data">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/period/target/dimension">dimension</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">result/indicator/period/target/</a>) was added (<a href="http://support.iatistandard.org/entries/79499149-Support-disaggregation-of-performance-data">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/location">location</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">result/indicator/period/actual/</a>) was added (<a href="http://support.iatistandard.org/entries/79499149-Support-disaggregation-of-performance-data">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/dimension">dimension</a> (a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">result/indicator/period/actual/</a>) was added (<a href="http://support.iatistandard.org/entries/79499149-Support-disaggregation-of-performance-data">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/crs-add/channel-code/">channel-code</a> a sub-element of <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/crs-add/">crs-add/</a>) was added (<a href="http://support.iatistandard.org/entries/83678719-DAC-Channel-of-Delivery">Discussion</a>)</p>
+</p>
+<p id="organisation-schema">
+<h3><a href="#id7">Organisation schema</a></h3>
+<p>Addition of @status attribute within the <a href="/en/iati-standard/202/organisation-standard/iati-organisations/iati-organisation/total-budget/">total-budget</a> element. (<a href="http://support.iatistandard.org/entries/21150501-Budgets-and-tentativeness">Discussion</a>)</p>
+<p>Addition of @status attribute within the <a href="/en/iati-standard/202/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/">recipient-org-budget</a> element. (<a href="http://support.iatistandard.org/entries/21150501-Budgets-and-tentativeness">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/">recipient-region-budget</a> was added (<a href="http://support.iatistandard.org/entries/79323113-Org-Standard-recipient-region-budget">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/organisation-standard/iati-organisations/iati-organisation/total-expenditure/">total-expenditure</a> was added (<a href="http://support.iatistandard.org/entries/83404469-Add-Total-Expenditure-Element-To-Organisation-File">Discussion</a>)</p>
+<p>The element <a href="/en/iati-standard/202/organisation-standard/iati-organisations/iati-organisation/document-link/document-date">document-date</a> (a sub-element of <a href="h/organisation-standard/iati-organisations/iati-organisation/document-link/">document-link</a>) was added (<a href="http://support.iatistandard.org/entries/92707776-Document-Dates">Discussion</a>)</p>
+</p>
+</p>
+<p id="documentation-changes">
+<h2><a href="#id8">Documentation Changes</a></h2>
+<p id="new-overview-pages">
+<h3><a href="#id9">New overview pages</a></h3>
+<p>The following overview pages have been added:</p>
+<ul>
+<li><a href="/en/iati-standard/203/activity-standard/overview/humanitarian-reporting/">Humanitarian reporting</a></li>
+<li><a href="/en/iati-standard/203/activity-standard/overview/self-defined-vocabularies/">Seld-defined vocabularies</a></li>
+</ul>
+</p>
+<p id="amended-and-new-documentation-elsewhere-on-the-reference-site">
+<h3><a href="#id10">Amended and new documentation elsewhere on the reference site</a></h3>
+<p>A full diff of all documentation changes in 2.02 can be found in the <a href="https://github.com/IATI/IATI-Extra-Documentation/compare/version-2.01...version-2.02#files_bucket">IATI GitHub</a></p>
+</p>
+</p>
+<p id="codelist-changes">
+<h2><a href="#id11">Codelist Changes</a></h2>
+<p>A full diff of all <strong>embedded</strong> codelist changes in 2.02 can be found in the <a href="https://github.com/IATI/IATI-Codelists/compare/version-2.01...version-2.02#files_bucket">IATI GitHub</a></p>
+<p id="codelist-schema">
+<h3><a href="#id12">Codelist schema</a></h3>
+<p>Within the raw codelist XML definitions, each <code>codelist-item</code> now supports the addition of <code>status</code>, <code>activation-date</code> and <code>withdrawal-date</code> attributes. (<a href="http://support.iatistandard.org/entries/106345386-Add-a-withdrawn-flag-to-code-names-to-indicate-deprecation">Discussion</a>)</p>
+</p>
+<p id="new-codelists">
+<h3><a href="#id13">New Codelists</a></h3>
+<p>Embedded:</p>
+<ul>
+<li><a href="/en/iati-standard/203/codelists/BudgetStatus/">Budget status</a> (<a href="http://support.iatistandard.org/entries/21150501-Budgets-and-tentativeness">Discussion</a>)</li>
+</ul>
+<p>Non-Embedded:</p>
+<ul>
+<li><a href="/en/iati-standard/203/codelists/HumanitarianScopeType/">Humanitarians Scope Type</a> (<a href="http://support.iatistandard.org/entries/105778163-Humanitarian-Emergencies-and-Appeals">Discussion</a>)</li>
+<li><a href="/en/iati-standard/203/codelists/HumanitarianScopeVocabulary/">Humanitarian Scope Vocabulary</a> (<a href="http://support.iatistandard.org/entries/105778163-Humanitarian-Emergencies-and-Appeals">Discussion</a>)</li>
+<li><a href="/en/iati-standard/203/codelists/IndicatorVocabulary/">Indicator Vocabulary</a> (<a href="http://support.iatistandard.org/entries/79784435-Results-Require-unambiguous-indicator-reference">Discussion</a>)</li>
+<li><a href="/en/iati-standard/203/codelists/CRSChannelCode/">CRSChannel Code</a> (<a href="http://support.iatistandard.org/entries/83678719-DAC-Channel-of-Delivery">Discussion</a>)</li>
+</ul>
+</p>
+<p id="updated-codelists">
+<h3><a href="#id14">Updated Codelists</a></h3>
+<p>Embedded:</p>
+<ul>
+<li>Added code 11 (Incoming Commitments) to <a href="/en/iati-standard/203/codelists/TransactionType/">Transaction Type</a> (<a href="http://support.iatistandard.org/entries/82769745-Add-Incoming-Commitment-to-the-Transaction-Type-codelist">discussion</a>)</li>
+<li>Added code 99 (Reporting Organisation) to <a href="/en/iati-standard/203/codelists/RegionVocabulary/">Region Vocabulary</a> (<a href="http://support.iatistandard.org/entries/82936169-Allow-Organisations-To-Use-Their-Own-Internally-Defined-Regions-">discussion</a>)</li>
+<li>Added codes 7 (SDG Goal), 8 (SDG Target), 9 (SDG Indicator), 10 (Humanitarian Global Clusters (Inter-Agency Standing Committee)) to <a href="/en/iati-standard/203/codelists/SectorVocabulary/">Sector Vocabulary</a> (discussion <a href="http://support.iatistandard.org/entries/105792233-Make-sector-vocabulary-codelist-SDG-ready-">post 1</a> and <a href="http://support.iatistandard.org/entries/106937886-Humanitarian-Clusters">post 2</a>)</li>
+</ul>
+<p>Non-Embedded:</p>
+<ul>
+<li>Added code ‘2.02’ to <a href="/en/iati-standard/203/codelists/Version/">Version</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

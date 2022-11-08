@@ -1,0 +1,98 @@
+<div class="body" role="main">
+<p id="recipient-region-budget">
+<h1>recipient-region-budget</h1>
+<p><code>iati-organisations/iati-organisation/recipient-region-budget</code></p>
+<p>This is the reference page for the XML element <code>recipient-region-budget</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The recipient-region-budget element allows for the reporting of forward
+looking budgets where the organisation maintains region-wide, rather than
+or in addition to country-specific budgets. The recommendation is that,
+where and when possible, the organisation’s total annual planned budget
+for each of the next three financial years is reported for each recipient
+region. This must NOT include an aggregation of budgets reported in the
+recipient-country-budget element. It is strongly recommended that
+publishers report to existing defined regions wherever possible. The
+status explains whether the budget being reported is indicative or has
+been formally committed. The value should appear within the BudgetStatus
+codelist. If the @status attribute is not present, the budget is assumed
+to be indicative.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-recipient-region-budget-status">
+<dt>@status</dt>
+<dd><p>The status explains whether the budget being reported is indicative or has
+been formally committed. The value should appear within the BudgetStatus
+codelist. If the @status attribute is not present, the budget is assumed
+to be indicative.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/BudgetStatus/"><span>BudgetStatus codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example of <code>recipient-region-budget</code> for an <code>iati-organisation</code>.</p>
+
+
+<p>This element is a parent for other child elements.</p>
+
+<p><code><pre>&lt;recipient-region-budget status="1"&gt;
+...
+&lt;/recipient-region-budget&gt;
+</pre></code>
+</p>
+
+<p>Full example with all child elements.</p>
+
+<p><code><pre>  &lt;recipient-region-budget status="2"&gt;
+   &lt;recipient-region vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" /&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;25000000&lt;/value&gt;
+   &lt;budget-line ref="1234"&gt;
+    &lt;value currency="USD" value-date="2014-01-01"&gt;2000000&lt;/value&gt;
+    &lt;narrative xml:lang="en"&gt;Budget Line&lt;/narrative&gt;
+   &lt;/budget-line&gt;
+  &lt;/recipient-region-budget&gt;
+</pre></code>
+</p>
+
+<p>The <code>recipient-region-budget</code> element can be repeated in any <code>iati-organisation</code>.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.02</h3>
+<p>The optional <code>recipient-region-budget</code> element was <a href="http://support.iatistandard.org/entries/79323113-Org-Standard-recipient-region-budget">added</a>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-organisations-schema.xsd#L386">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="recipient-region/">recipient-region</a></li>
+<li><a href="period-start/">period-start</a></li>
+<li><a href="period-end/">period-end</a></li>
+<li><a href="value/">value</a></li>
+<li><a href="budget-line/">budget-line</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="5" name="order"/></div>

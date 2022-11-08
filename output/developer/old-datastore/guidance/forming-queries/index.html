@@ -1,0 +1,65 @@
+<div class="body" role="main">
+<p id="forming-queries">
+<h1>Forming Queries</h1>
+<p>You can query the Datastore by building queries from filters. The identified data can then be output in an <a href="data-formats.rst#xml">XML</a>, <a href="data-formats.rst#json">JSON</a> or <a href="data-formats.rst#csv">CSV</a> format depending on your needs.</p>
+<p id="basic-query">
+<h2>Basic Query</h2>
+<p>A basic query will undertake no filtering, allowing you to access all the data in the Datastore.</p>
+<p>Example: Query the Datastore, undertaking no filtering.</p>
+<ul>
+<li>XML: <a href="http://datastore.iatistandard.org/api/1/access/activity.xml">http://datastore.iatistandard.org/api/1/access/activity.xml</a></li>
+<li>JSON: <a href="http://datastore.iatistandard.org/api/1/access/activity.json">http://datastore.iatistandard.org/api/1/access/activity.json</a></li>
+<li>CSV: <a href="http://datastore.iatistandard.org/api/1/access/activity.csv">http://datastore.iatistandard.org/api/1/access/activity.csv</a></li>
+</ul>
+</p>
+<p id="use-a-filter">
+<h2>Use a Filter</h2>
+<p>You can build Datastore queries by using filters. This allows you to access information about only the activities that are relevant to your needs.</p>
+<p>Example: Query for activities that provide benefit to Uganda (UG).</p>
+<ul>
+<li>XML: <a href="http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=UG">http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=UG</a></li>
+<li>JSON: <a href="http://datastore.iatistandard.org/api/1/access/activity.json?recipient-country=UG">http://datastore.iatistandard.org/api/1/access/activity.json?recipient-country=UG</a></li>
+<li>CSV: <a href="http://datastore.iatistandard.org/api/1/access/activity.csv?recipient-country=UG">http://datastore.iatistandard.org/api/1/access/activity.csv?recipient-country=UG</a></li>
+</ul>
+<p>The <cite>recipient-country</cite> filter returns activities with your specified value from the IATI <a href="/en/iati-standard/203/codelists/Country/">Country codelist</a> – in this case, UG (Uganda).</p>
+</p>
+<p id="selecting-multiple-values">
+<h2>Selecting multiple Values</h2>
+<p>You can request data matching multiple values for each filter by using the <cite>|</cite> operator. This acts as an <cite>or</cite>.</p>
+<p>Example: Query for activities that provide benefit to Bangladesh (BD) <strong>or</strong> Honduras (HN) <strong>or</strong> Madagascar (MG).</p>
+<ul>
+<li>XML: <a href="http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=BD|HN|MG">http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=BD|HN|MG</a></li>
+<li>JSON: <a href="http://datastore.iatistandard.org/api/1/access/activity.json?recipient-country=BD|HN|MG">http://datastore.iatistandard.org/api/1/access/activity.json?recipient-country=BD|HN|MG</a></li>
+<li>CSV: <a href="http://datastore.iatistandard.org/api/1/access/activity.csv?recipient-country=BD|HN|MG">http://datastore.iatistandard.org/api/1/access/activity.csv?recipient-country=BD|HN|MG</a></li>
+</ul>
+</p>
+<p id="combining-filters">
+<h2>Combining Filters</h2>
+<p>You can combine multiple filters to further restrict the requested data by using the <cite>&amp;</cite> operator. This acts as an <cite>and</cite>.</p>
+<p>Example: Query for activities that are classified using the <a href="/en/iati-standard/203/codelists/Sector/">DAC Sector Code</a> for Teacher Training (11130) <strong>and</strong> are published by the UK Department for International Development (GB-GOV-1).</p>
+<ul>
+<li>XML: <a href="http://datastore.iatistandard.org/api/1/access/activity.xml?sector=11130&amp;iati-identifier=GB-GOV-1">http://datastore.iatistandard.org/api/1/access/activity.xml?sector=11130&amp;iati-identifier=GB-GOV-1</a></li>
+<li>JSON: <a href="http://datastore.iatistandard.org/api/1/access/activity.json?sector=11130&amp;iati-identifier=GB-GOV-1">http://datastore.iatistandard.org/api/1/access/activity.json?sector=11130&amp;iati-identifier=GB-GOV-1</a></li>
+<li>CSV: <a href="http://datastore.iatistandard.org/api/1/access/activity.csv?sector=11130&amp;iati-identifier=GB-GOV-1">http://datastore.iatistandard.org/api/1/access/activity.csv?sector=11130&amp;iati-identifier=GB-GOV-1</a></li>
+</ul>
+<p>The <cite>iati-identifier</cite> filter returns activities with your specified IATI <a href="/en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/">Organisation Identifier</a> – in this case, DFID (GB-GOV-1).</p>
+</p>
+<p id="pagination">
+<h2>Pagination</h2>
+<p>IATI has a lot of published data. The Datastore can return a lot of data for some queries.  Because of this, the Datastore returns 50 activities at a time by default. Each set of activities represent a ‘page’. This process is referred to as <em>pagination</em>.</p>
+<p>You can use the <cite>limit</cite> filter to change the maximum number of returned activities, and <cite>offset</cite> to change which activity to start with.</p>
+<p>Example: View 20 activities benefiting Honduras (HN), starting with the 23rd activity.</p>
+<ul>
+<li>XML: <a href="http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=HN&amp;limit=20&amp;offset=23">http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=HN&amp;limit=20&amp;offset=23</a></li>
+<li>JSON: <a href="http://datastore.iatistandard.org/api/1/access/activity.json?recipient-country=HN&amp;limit=20&amp;offset=23">http://datastore.iatistandard.org/api/1/access/activity.json?recipient-country=HN&amp;limit=20&amp;offset=23</a></li>
+<li>CSV: <a href="http://datastore.iatistandard.org/api/1/access/activity.csv?recipient-country=HN&amp;limit=20&amp;offset=23">http://datastore.iatistandard.org/api/1/access/activity.csv?recipient-country=HN&amp;limit=20&amp;offset=23</a></li>
+</ul>
+<p>The Datastore will return a 404 error page when you specify an <cite>offset</cite> greater than the number of returned activities.</p>
+<p>You can return all activities, no matter how many there are, by adding <cite>&amp;stream=True</cite> to your filter. This will override any other pagination options.</p>
+</p>
+<p id="more-information">
+<h2>More Information</h2>
+<p>For in-depth detail of all the available filters, see the <a href="../reference/data-api.rst">Reference</a>.</p>
+</p>
+</p>
+</div>

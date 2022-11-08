@@ -1,0 +1,50 @@
+<div id="content" role="main">
+
+<header>
+<h1>Participating Organisations</h1>
+</header><!-- .entry-header -->
+<p>
+<p>This page is currently flagged for review. We are undertaking an update of the information we publish about the IATI Standard, and the content here has not yet been checked.</p>
+<h3>Reporting and participating organizations</h3>
+<p>Every activity description has a single reporting organization, represented by the element reporting-org in the previous examples:<br/>
+<code><br/>
+&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</code></p>
+<p>&lt;reporting-org ref=”ACME”&gt;ACME Foundation&lt;/reporting-org&gt;</p>
+<p>...</p>
+<p>&lt;/iati-activity&gt;<br/>
+</p>
+<p>This is the document’s author, the organization that’s responsible for the accuracy, completeness, and timeliness of the information in the activity report — in other words, this element fills the same function as a byline in a newspaper story.</p>
+<p>The reporting organization is not necessarily involved in the aid activity itself, though in practice it often will be a donor or appealing agency.  It is possible that more than one organization will publish reports on the same activity — for example, a donor, an implementing agency, a beneficiary, and an independent aid database might all publish reports about the same activity.  Unique identifiers for activities and financial transactions will make it possible to identify duplicate information in different reports, but it is still up to the data user to decide how to handle that duplicate information, and which sources should have the priority.</p>
+<p>There is a second element, participating-org, that can list each organization participating in the activity, together with its role, as in the following example:<br/>
+<code><br/>
+&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</code></p>
+<p>...</p>
+<p>&lt;participating-org ref=”ACME” role=”Implementing”/&gt;</p>
+<p>&lt;participating-org ref=”ABC” role=”Funding”/&gt;</p>
+<p>&lt;participating-org ref=”XYZ” role=”Funding”/&gt;</p>
+<p>&lt;/iati-activity&gt;<br/>
+</p>
+<p>In this example, the organization with the identifier “ACME” is an implementing agency, while the organizations with the identifiers “ABC” and “XYZ” are donors contributing funds to the activity.  As with reporting-org, participating-org can optionally include the name of the organization:<br/>
+<code><br/>
+&lt;participating-org ref=”ABC” role=”Funding”&gt;ABC Fund&lt;/participating-org&gt;<br/>
+</code></p>
+<p>If the reporting organization is also participating (as will often be the case), then it must be listed twice:<br/>
+<code><br/>
+&lt;reporting-org ref=”ACME”/&gt;</code></p>
+<p>&lt;participating-org ref=”ACME” role=”Implementing”/&gt;<br/>
+</p>
+<p>To date, IATI has defined four roles in its Organisation Role code list:</p>
+<ul>
+<li><strong>Funding</strong>: an organization providing money or in-kind funding for an activity.</li>
+<li><strong>Extending</strong>: the subunit of the funding country or organization, financing the activity from its own budget (e.g. a government agency or department).</li>
+<li><strong>Implementing</strong>: an intermediary organization between the one controlling the activity and the ultimate beneficiary.</li>
+<li><strong>Beneficiary</strong>: an organization receiving funding for this activity and ultimately carrying it out.</li>
+</ul>
+<p>Note that these roles do not define which organization has actually initiated and planned the activity.  For development aid, the activity lead will often be a funding or extending organization, such as a national government, national aid agency, or private foundation.  For humanitarian aid, the activity lead may actually be an implementing or beneficiary organization, such as a UN agency or NGO, which plans the activity and then appeals for funding from multiple donors.</p>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-2441 -->
+<!-- #comments -->
+
+</div>

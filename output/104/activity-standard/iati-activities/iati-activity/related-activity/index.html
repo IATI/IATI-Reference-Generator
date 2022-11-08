@@ -1,0 +1,65 @@
+<div class="body" role="main">
+<p id="related-activity">
+<h1>related-activity</h1>
+<p><code>iati-activities/iati-activity/related-activity</code></p>
+<p>This is the reference page for the XML element <code>related-activity</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Another IATI activity related to this one.  The ‘type’
+attribute describes the type of relationship (e.g. parent,
+sibling).  This does not need to be used to express funding
+relationships, since those are covered in individual
+transactions.</p>
+<p>For the value of the @type attribute, see
+<a href="/en/iati-standard/203/codelists/related_activity_type">http://iatistandard.org/codelists/related_activity_type</a></p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-related-activity-ref">
+<dt>@ref</dt>
+<dd><p>Machine-readable identification string for the business
+object being described.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-related-activity-type">
+<dt>@type</dt>
+<dd><p>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/RelatedActivityType/"><span>RelatedActivityType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-related-activity-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>related-activity</code> with <code>RelatedActivityType</code> code <em>1</em> and <code>ref</code> for another <code>iati-activity</code>: <em>AA-AAA-123456789-6789</em>:</p>
+<p><code><pre>  &lt;related-activity ref="AA-AAA-123456789-6789" type="1" /&gt;
+</pre></code>
+</p>
+<p>Multiple <code>related-activity</code> can be declared:</p>
+<p><code><pre>  &lt;related-activity ref="AA-AAA-123456789-6789" type="1" /&gt;
+  &lt;related-activity ref="AA-AAA-123456789-XYZ" type="3" /&gt;
+</pre></code>
+</p>
+<p>Additionally, a text title of the specific related <code>iati-activity</code> can be provided:</p>
+<p><code><pre>&lt;related-activity ref="AA-AAA-123456789-ABC" type="3"&gt;Related activity name&lt;/related-activity&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1251">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/related-activity.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

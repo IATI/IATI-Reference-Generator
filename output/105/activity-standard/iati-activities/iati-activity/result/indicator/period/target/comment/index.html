@@ -1,0 +1,87 @@
+<div class="body" role="main">
+<p id="comment">
+<h1>comment</h1>
+<p><code>iati-activities/iati-activity/result/indicator/period/target/comment</code></p>
+<p>This is the reference page for the XML element <code>comment</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A human-readable comment associated with a piece of aid information.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-indicator-period-target-comment-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of ‘’comment’’ for ‘’target’’:</p>
+<p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
+   &lt;title&gt;Result 1 title&lt;/title&gt;
+   &lt;description&gt;Result 1 description text&lt;/description&gt;
+   &lt;indicator measure="1" ascending="1"&gt;
+     &lt;title&gt;Indicator 1 title&lt;/title&gt;
+     &lt;description&gt;Indicator 1 description text&lt;/description&gt;
+     &lt;baseline year="2012" value="10"&gt;
+      &lt;comment&gt;Baseline comment text&lt;/comment&gt;
+     &lt;/baseline&gt;
+     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+       &lt;period-end iso-date="2013-03-31" /&gt;
+       &lt;target value="10"&gt;
+<span>        &lt;comment&gt;Target comment text&lt;/comment&gt; 
+</span>       &lt;/target&gt;
+       &lt;actual value="11"&gt;
+        &lt;comment&gt;Actual comment text&lt;/comment&gt; 
+       &lt;/actual&gt;
+     &lt;/period&gt;
+   &lt;/indicator&gt;
+  &lt;/result&gt;
+</pre></code>
+</p>
+<p>It may be appropriate to repeat the <code>comment</code> in other languages using <code>xml:lang</code> attribute.
+In this example, the language <em>en</em> has been set in the ‘’iati-activity’’ element:</p>
+<p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
+   &lt;title&gt;Result 1 title&lt;/title&gt;
+   &lt;title xml:lang="fr"&gt;Result 1 titre&lt;/title&gt;
+   &lt;description&gt;Result 1 description text&lt;/description&gt;
+   &lt;description xml:lang="fr"&gt;Result 1 texte de description&lt;/description&gt;
+   &lt;indicator measure="1" ascending="1"&gt;
+    &lt;title&gt;Indicator 1 title&lt;/title&gt;
+    &lt;title xml:lang="fr"&gt;Indicator 1 titre&lt;/title&gt;
+    &lt;description&gt;Indicator 1 description text&lt;/description&gt;
+    &lt;description xml:lang="fr"&gt;Indicator 1 texte de description&lt;/description&gt;
+    &lt;baseline year="2012" value="10"&gt;
+     &lt;comment&gt;Baseline comment text&lt;/comment&gt;
+     &lt;comment xml:lang="fr"&gt;Baseline comment texte&lt;/comment&gt; 
+    &lt;/baseline&gt;
+    &lt;period&gt; 
+     &lt;period-start iso-date="2013-01-01"/&gt; 
+     &lt;period-end iso-date="2013-03-31"/&gt;
+     &lt;target value="10"&gt;
+<span>      &lt;comment&gt;Target comment text&lt;/comment&gt;
+</span><span>      &lt;comment xml:lang="fr"&gt;Target comment texte&lt;/comment&gt; 
+</span>     &lt;/target&gt;
+     &lt;actual value="11"&gt;
+      &lt;comment&gt;Actual comment text&lt;/comment&gt;
+      &lt;comment xml:lang="fr"&gt;Actual comment texte&lt;/comment&gt;     
+     &lt;/actual&gt;
+    &lt;/period&gt; 
+   &lt;/indicator&gt;
+  &lt;/result&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-common.xsd#L53">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/result/indicator/period/target/comment.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

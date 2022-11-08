@@ -1,0 +1,159 @@
+<div id="content" role="main">
+
+<header>
+<h1>Transactions</h1>
+</header><!-- .entry-header -->
+<p>
+<p>This page is currently flagged for review. We are undertaking an update of the information we publish about the IATI Standard, and the content here has not yet been checked.</p>
+<h3>Aid type information</h3>
+<p>There are four elements that specify different attributes of an aid activity:</p>
+<ul>
+<li><strong>default-flow-type</strong> — the nature of the assistance provided (e.g. official direct assistance, private NGO funding).</li>
+<li><strong>default-aid-type</strong> — the type of aid supplied (e.g. budget support, pooled funds).</li>
+<li><strong>default-finance-type</strong> — the type of financing supplied (e.g. debt relief).</li>
+<li><strong>default-tied-status</strong> — indication of whether the aid is tied to the purchase of specific goods or services.</li>
+<li><strong>collaboration-type</strong> — indication of whether the project is bilateral or multilateral.</li>
+</ul>
+<p>The first four elements provide a default value for all of the financial transactions in an activity report.  When necessary, they can be overridden for individual transactions using the transaction/flow-type, transaction/aid-type, transaction/finance-type, and transaction/tied-status elements. Here is an example of the default aid type information elements in use:</p>
+<p><code><br/>
+&lt;activity&gt;</code></p>
+<p>...</p>
+<p>&lt;default-flow-type code=”10”&gt;Official Direct Assistance&lt;/default-code-type&gt;</p>
+<p>&lt;default-aid-type code=”A01”&gt;General Budget Support&lt;/default-aid-type&gt;</p>
+<p>&lt;default-finance-type code=”810”&gt;Bank Bonds&lt;/default-finance-type&gt;</p>
+<p>&lt;default-tied-status code=”05”&gt;Untied&lt;/default-tied-status&gt;</p>
+<p>...</p>
+<p>&lt;/activity&gt;<br/>
+</p>
+<p>The human-readable content is optional (but helpful), and has no fixed format; it is also permissible to use only the raw codes:</p>
+<p><code><br/>
+&lt;activity&gt;</code></p>
+<p>...</p>
+<p>&lt;default-flow-type code=”10”/&gt;</p>
+<p>&lt;default-aid-type code=”A01”/&gt;</p>
+<p>&lt;default-finance-type code=”810”/&gt;</p>
+<p>&lt;default-tied-status code=”05”/&gt;</p>
+<p>...</p>
+<p>&lt;/activity&gt;<br/>
+</p>
+<p>Unlike the other four, collaboration-type has no bearing on individual financial transactions, and can be specified only at the top level.  It is most useful for major development activities funded by national donors, and specifies whether projects are bilateral (involving just one donor country and the recipient), multilateral (involving multiple donor countries), and so on (see the Collaboration Type code list for details):</p>
+<p><code><br/>
+&lt;collaboration-type code=”1”&gt;Bilateral&lt;/collaboration-type&gt;<br/>
+</code></p>
+<p>These elements use codes from the following lists:</p>
+<ul>
+<li>IATI Flow Type code list for default-flow-type (and transaction/flow-type).</li>
+<li>IATI Aid Type code list for default-aid-type (and transaction/aid-type).</li>
+<li>IATI Finance Type code list for default-finance-type (and transaction/finance-type).</li>
+<li>IATI Tied Status code list for default-tied-status (and transaction/tied-status).</li>
+<li>IATI Collaboration Type code list for collaboration-type.</li>
+</ul>
+<h3>Financial information</h3>
+<p>Financial information is at the heart of IATI — in many ways, it is the most important information about an aid activity, since it allows agencies, national governments, and others with planning future activities.</p>
+<p>At the activity level, IATI supports both aggregate financial information for the entire activity in the total-cost element, and records of individual inflows and outflows of money, both planned and actual, in the budget-planned and transaction elements.</p>
+<p>To understand how IATI handles financial values, it is useful to start with the total-cost element.  The total-cost element specifies the budgeted cost of the activity over its entire lifetime, and appears at the top level of an activity record:</p>
+<p><code><br/>
+&lt;total-cost currency=”EUR” value-date=”2010-03-31”&gt;2000000&lt;/total-cost&gt;<br/>
+</code></p>
+<p>There are three important pieces of information here:</p>
+<ul>
+<li>The currency attribute provides the ISO 4217 code for the currency of the financial value, such as “USD” for US dollars, or “EUR” for Euros.  This attribute is required unless the file specifies a default-currency attribute on the parent activity element — in that case, the default currency applies to any financial element that does not have its own currency attribute.</li>
+<li>The required value-date attribute provides an historical reference date for converting the amount to different currencies.  For example, if an aid agency announced a project costing USD 500,000 on March 31, 2010, the exchange rate on that date should be used to calculate the equivalent value in other currencies (such as Euros or Pounds Sterling).</li>
+<li>The content of the element gives the total amount as an integer.  It must include all required zeros (no abbreviations such as “M” or “B”), and include no commas or decimal places: in other words, “2000000” is acceptable, while “2M”, “2,000,000”, and “2000000.00” are not.  IATI does not track fractional amounts, such as pennies.</li>
+</ul>
+<h3>Financial transactions</h3>
+<p>The transaction element lists money flowing into or out of an aid activity (possibly from or to another activity).  Transactions are critical for tracking the flow of money across different activities and avoiding duplicate counting; for example, if Activity A gives €1,000,000 for Somalia to Activity B, Activity B gives Somalia €1,000,000 to Activity C, and Activity C spends €1,000,000 on a development project in Somalia, it must be possible to count that as only €1,000,000 in aid money for Somalia, not €3,000,000.  To help accomplish this goal, IATI uses three kinds of unique identifiers:</p>
+<ul>
+<li><strong>Transaction identifiers</strong>: when Activity A disburses €1,000,000 to Activity B, Activity A should use the same identifier for its outgoing transaction as Activity B uses for its incoming transaction, so that users know there are not two separate disbursements.</li>
+<li><strong>Activity identifiers</strong>: When Activity A gives money to Activity B, the outgoing transaction in the Activity A report includes Activity B’s identifier, and the incoming transaction in Activity B’s report includes Activity A’s identifier.</li>
+<li><strong>Organization identifiers</strong>: In addition to the activity, the transactions also identify the organization that is making the payment.</li>
+</ul>
+<p>Here is an example of a £100,000 disbursement from the fictitious ACME Foundation to the fictitious ACE Agency, from ACME’s perspective:<br/>
+<code><br/>
+&lt;transaction flow=”outgoing” ref=”ACME:transactions:12345”&gt;</code></p>
+<p>&lt;value currency=”GBP” value-date=”2010-03-15”&gt;100000&lt;/value&gt;</p>
+<p>&lt;transaction-date type=”announced” iso-date=”2010-03-01”/&gt;</p>
+<p>&lt;transaction-date type=”committed” iso-date=”2010-03-15”/&gt;</p>
+<p>&lt;transaction-type code=”D”&gt;disbursement&lt;/transaction-type&gt;</p>
+<p>&lt;provider-org ref=”ACME”&gt;ACME Foundation&lt;/provider-org&gt;</p>
+<p>&lt;receiver-org ref=”ACE”&gt;ACE Agency&lt;/receiver-org&gt;</p>
+<p>&lt;receiver-activity ref=”ACE:activities:12345”/&gt;</p>
+<p>&lt;/transaction&gt;<br/>
+</p>
+<p>This markup describes transaction “ACME:transactions:12345”, stating that ACME committed ₤100,000 to ACE’s aid activity “ACE:activities:12345” through the activity currently being described.  The disbursement was announced on 1 March 2010, and a legally-binding commitment was signed on 15 March 2010, which should also be used as the reference date for converting to other currencies.  The money is going into ACE’s activity “ACE:activities:12345”.</p>
+<p>Here is the same transaction from the perspective of ACE’s activity “ACE:activities:12345”:</p>
+<p><code><br/>
+&lt;transaction flow=”incoming” ref=”ACME:transactions:12345”&gt;</code></p>
+<p>&lt;value currency=”GBP” value-date=”2010-03-15”&gt;100000&lt;/value&gt;</p>
+<p>&lt;transaction-date type=”announced” iso-date=”2010-03-01”/&gt;</p>
+<p>&lt;transaction-date type=”committed” iso-date=”2010-03-15”/&gt;</p>
+<p>&lt;transaction-type code=”C”&gt;commitment&lt;/transaction-type&gt;</p>
+<p>&lt;provider-org ref=”ACME”&gt;ACME Foundation&lt;/provider-org&gt;</p>
+<p>&lt;receiver-org ref=”ACE”&gt;ACE Agency&lt;/receiver-org&gt;</p>
+<p>&lt;provider-activity ref=”ACME:1011-12”/&gt;</p>
+<p>&lt;/transaction&gt;<br/>
+</p>
+<p>Most of the content is the same, except that for ACE’s activity, this is an incoming transaction (as specified by the flow attribute), and the provider-activity element specifies the activity that is providing the money (ACME’s), rather than its own activity that is receiving it.</p>
+<p>The transaction-type element uses the IATI Transaction Type code list, which currently contains the following codes:</p>
+<ul>
+<li><strong>C: commitment</strong> — a firm written obligation from the donor.</li>
+<li><strong>D: disbursement</strong> — a transfer of funds from one organization to another.</li>
+<li><strong>E: expenditure</strong> — a final outlay of funds on goods or services for an activity.</li>
+<li><strong>LR: loan repayment</strong> — a final outlay of funds against the principal of a loan.</li>
+<li><strong>IR: interest repayment</strong> — a final outlay of funds against the interest of a loan.</li>
+</ul>
+<p>A transaction may additionally contain the elements flow-type, aid-type, finance-type, and tied-status.  These have the same meaning and content as the default-flow-type, default-aid-type, default-finance-type, and default-tied-status elements for the activity as a whole (described above), but can be used to override any of the defaults for a specific transaction.  For example, the following specifies that a specific transaction is tied:<br/>
+<code><br/>
+&lt;transaction flow=”outgoing” ref=”ACME:transactions:67890”&gt;</code></p>
+<p>&lt;value value-date=”2010-10-01”&gt;500000&lt;/value&gt;</p>
+<p>&lt;tied-status code=”04”&gt;tied&lt;/tied-status&gt;</p>
+<p>...</p>
+<p>&lt;/transaction&gt;<br/>
+</p>
+<h3>Planned expenditures</h3>
+<p>The budget-planned element lists the planned future expenditures for an activity.  This element has many similarities to transaction:<br/>
+<code><br/>
+&lt;budget-planned period=”annual”&gt;</code></p>
+<p>&lt;value value-date=”2010-10-01”&gt;1500000&lt;/value&gt;</p>
+<p>&lt;period-start iso-date=”2011-04-01”/&gt;</p>
+<p>&lt;period-end iso-date=”2012-03-31”/&gt;</p>
+<p>&lt;receiver-org ref=”ACE”/&gt;</p>
+<p>&lt;/budget-planned&gt;<br/>
+</p>
+<p>The period attribute specifies an accounting period; allowed values are “annual”, “quarterly”, and “monthly”.  The period-start and period-end elements provide the actual start and end dates of the period — in this example, the organization’s fiscal year begins on 1 April and ends on 31 March.  The value and receiver-org elements are the same as in transaction.</p>
+<p>Note that there is no flow attribute, because IATI activity reports include only planned outgoing disbursements — the budget-planned element is meant to give an indication of how much an activity is planning to expend or disburse in the medium term, beyond the current commitment period.  Any money which has been firmly commited should appear in a transaction element instead.  There is also no receiver-activity element (though, as in transaction, receiver-org has an optional attribute receiver-activity-id to include the receiving organization’s internal identifier).</p>
+<p>The budget-planned element should be repeated for each receiving organization and accounting period for which planning information is available:</p>
+<p><code><br/>
+&lt;budget-planned period=”quarterly”&gt;</code></p>
+<p>&lt;value currency=”GBP” value-date=”2010-10-01”&gt;175000&lt;/value&gt;</p>
+<p>&lt;period-start iso-date=”2011-04-01”/&gt;</p>
+<p>&lt;period-end iso-date=”2011-06-30”/&gt;</p>
+<p>&lt;receiver-org ref=”ACE”/&gt;</p>
+<p>&lt;/budget-planned&gt;</p>
+<p>&lt;budget-planned period=”quarterly”&gt;</p>
+<p>&lt;value currency=”GBP” value-date=”2010-10-01”&gt;300000&lt;/value&gt;</p>
+<p>&lt;period-start iso-date=”2011-07-01”/&gt;</p>
+<p>&lt;period-end iso-date=”2011-09-30”/&gt;</p>
+<p>&lt;receiver-org ref=”ACE”/&gt;</p>
+<p>&lt;/budget-planned&gt;</p>
+<p>&lt;budget-planned period=”quarterly”&gt;</p>
+<p>&lt;value currency=”GBP” value-date=”2010-10-01”&gt;150000&lt;/value&gt;</p>
+<p>&lt;period-start iso-date=”2011-10-01”/&gt;</p>
+<p>&lt;period-end iso-date=”2011-12-31”/&gt;</p>
+<p>&lt;receiver-org ref=”ACE”/&gt;</p>
+<p>&lt;/budget-planned&gt;</p>
+<p>&lt;budget-planned period=”quarterly”&gt;</p>
+<p>&lt;value currency=”GBP” value-date=”2010-10-01”&gt;100000&lt;/value&gt;</p>
+<p>&lt;period-start iso-date=”2012-01-01”/&gt;</p>
+<p>&lt;period-end iso-date=”2012-03-31”/&gt;</p>
+<p>&lt;receiver-org ref=”ACE”/&gt;</p>
+<p>&lt;/budget-planned&gt;<br/>
+</p>
+<p>In this example, the activity has budgeted a ₤175,000 disbursement to ACE in Q1, a ₤300,000 disbursement in Q2, a ₤150,000 disbursement in Q3, and a ₤100,000 disbursement in Q4, but has not yet made a legally-binding commitment to provide the money.</p>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-2437 -->
+<!-- #comments -->
+
+</div>

@@ -1,0 +1,85 @@
+<div class="body" role="main">
+<p id="budget">
+<h1>budget</h1>
+<p><code>iati-activities/iati-activity/budget</code></p>
+<p>This is the reference page for the XML element <code>budget</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The value of the aid activity’s budget for each financial year
+as in the original project document.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-budget-type">
+<dt>@type</dt>
+<dd><p>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/BudgetType/"><span>BudgetType codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>The <code>budget</code> element acts as a container for other sub elements.</p>
+
+<p>The attribute <code>type</code> should declare the relevant <code>BudgetType</code> code.</p>
+<p>If omitted, then <code>BudgetType</code> code <em>1</em> (<em>Original</em>) is assumed:</p>
+
+<p>Example <code>budget</code> for a single year:</p>
+
+<p><code><pre><span>  &lt;budget type="1"&gt;
+</span>   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
+<span>  &lt;/budget&gt;
+</span></pre></code>
+</p>
+
+<p>Example <code>budget</code> over multiple years</p>
+<p>Note: multiple budgets are expressed by repeating the <code>budget</code> element.</p>
+
+<p><code><pre><span>  &lt;budget type="1"&gt;
+</span>   &lt;period-start iso-date="2012-01-01" /&gt;
+   &lt;period-end iso-date="2012-12-31" /&gt;
+   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;
+<span>  &lt;/budget&gt;
+</span><span>  &lt;budget type="1"&gt;
+</span>   &lt;period-start iso-date="2013-01-01" /&gt;
+   &lt;period-end iso-date="2013-12-31" /&gt;
+   &lt;value currency="EUR" value-date="2013-01-01"&gt;2000&lt;/value&gt;
+<span>  &lt;/budget&gt;
+</span><span>  &lt;budget type="2"&gt;
+</span>   &lt;period-start iso-date="2013-01-01" /&gt;
+   &lt;period-end iso-date="2013-12-31"/&gt;
+   &lt;value currency="EUR" value-date="2013-01-01"&gt;2500&lt;/value&gt;  
+<span>  &lt;/budget&gt;
+</span><span>  &lt;budget type="1"&gt;
+</span>   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
+<span>  &lt;/budget&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1529">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/budget.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="period-start/">period-start</a></li>
+<li><a href="period-end/">period-end</a></li>
+<li><a href="value/">value</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

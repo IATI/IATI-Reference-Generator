@@ -1,0 +1,74 @@
+<div class="body" role="main">
+<p id="recipient-country-budget">
+<h1>recipient-country-budget</h1>
+<p><code>iati-organisations/iati-organisation/recipient-country-budget</code></p>
+<p>This is the reference page for the XML element <code>recipient-country-budget</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The recipient-country-budget element allows for the reporting of
+forward looking budgets for each country in which the organisation
+operates. The recommendation is that, where and when possible, the
+organisation’s total annual planned budget for each of the next
+three financial years is reported for each recipient country.
+It is strongly recommended that the start and end of the reported
+financial years match those of the recipient country’s
+budgetary/planning cycle.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example of <code>recipient-country-budget</code> for an <code>iati-organisation</code>.</p>
+
+
+<p>This element is a parent for other child elements.</p>
+
+<p><code><pre>&lt;recipient-country-budget&gt;
+...
+&lt;/recipient-country-budget&gt;
+</pre></code>
+</p>
+
+<p>Full example with all child elements.</p>
+
+<p><code><pre><span>  &lt;recipient-country-budget&gt;
+</span>   &lt;recipient-country code="AF" /&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;25000000&lt;/value&gt;
+   &lt;budget-line ref="1234"&gt;
+	&lt;value currency="USD" value-date="2014-01-01"&gt;2000000&lt;/value&gt;
+	&lt;narrative&gt;Budget Line&lt;/narrative&gt;
+   &lt;/budget-line&gt;
+<span>  &lt;/recipient-country-budget&gt;
+</span></pre></code>
+</p>
+
+<p>The <code>recipient-country-budget</code> element can be repeated in any <code>iati-organisation</code>.</p>
+
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-organisations-schema.xsd#L357">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="recipient-country/">recipient-country</a></li>
+<li><a href="period-start/">period-start</a></li>
+<li><a href="period-end/">period-end</a></li>
+<li><a href="value/">value</a></li>
+<li><a href="budget-line/">budget-line</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="5" name="order"/></div>

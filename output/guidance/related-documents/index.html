@@ -1,0 +1,129 @@
+<div class="body" role="main">
+<p id="related-documents">
+<h1>Related documents</h1>
+<p>Further information about an organisation or activity can be provided by using the <strong>document-link</strong> element. This link can be added to several places, including the organisation file. It can be attached to each activity, and at multiple points within a result element.</p>
+<p>A publisher may want to add more detail about their work, such as the organisation’s annual report, the <a href="/en/iati-standard/203/activity-standard/overview/conditions/">conditions</a> <em>(new guidance coming soon)</em> attached to any funding, or a report on the results or impact the activity.</p>
+<p id="where-can-related-documents-can-be-added">
+<h2>Where can related documents can be added?</h2>
+<ul>
+<li>Each document-link needs to contain a URL to a publicly accessible webpage or document.</li>
+<li>The URL must begin with either ‘<a href="http://">http://</a>’ or ‘<a href="https://">https://</a>’.</li>
+<li>If documents are available in other languages and stored separately, these should be added as additional document-link elements.</li>
+<li>Including the <a href="/en/iati-standard/203/codelists/FileFormat/">file-format</a> attribute helps to inform users about what to expect from the document.</li>
+<li>A number of donors require their grantees to publish specific documents.</li>
+</ul>
+</p>
+<p id="technical-guidance-summary">
+<h2>Technical guidance summary</h2>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Location</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/document-link/">organisation file</a></td>
+<td>Provides further information about the organisation or its work (e.g. their annual report or a work plan for a particular country).</td>
+<td>There must be a URL for the external document or webpage.
+The document-link must include a title, format, and category.
+</td>
+<td>A recipient country that is the focus of the document or webpage can be specified.
+A description of the document can also be added.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/">activity file</a></td>
+<td>Links to further information about the activity.</td>
+<td>There must be a URL for the external document or webpage.
+The document-link must include a title, format, and category.
+</td>
+<td>The description should specify what the document is about and why it has been included.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The locations below were introduced at version 2.03 of the IATI Standard:</strong></p>
+<table border="1">
+<colgroup>
+<col width="14%"/>
+<col width="43%"/>
+<col width="43%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Location</th>
+<th>Use</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/document-link/">result</a></td>
+<td>A link to an online, publicly accessible webpage or document expanding on the result.</td>
+<td>The document or webpage should link to the specific result being reported, or to a results frame.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/">indicator</a></td>
+<td>A link to an online, publicly accessible webpage or document expanding on the result indicator.</td>
+<td>The document or webpage should link to the specific results indicator being reported.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">baseline</a></td>
+<td>A link to an online, publicly accessible webpage or document expanding on the indicator’s baseline.</td>
+<td>The document or webpage should link to the specific indicator baseline being reported.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">period-target</a> and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">period-actual</a></td>
+<td>A link to an online, publicly accessible webpage or document expanding on period-target or period-actual.</td>
+<td>The document or webpage should link to the specific target or actual figures being reported.</td>
+</tr>
+</tbody>
+</table>
+<p>What a document-link should include</p>
+<table border="1">
+<colgroup>
+<col width="14%"/>
+<col width="43%"/>
+<col width="43%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/title/">title</a></td>
+<td>Short title of the document or webpage.</td>
+<td>This must be included once and only once for each document-link.
+The title can be provided in multiple languages.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/description/">description</a></td>
+<td>Description of the document, including any instructions on where to find relevant information.</td>
+<td>This element must occur no more than once for each document-link.
+The description can be provided in multiple languages.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/category/">category</a></td>
+<td>Specifies the type of document or webpage.</td>
+<td>At least one category must be published for each document-link.
+The code must be on the <a href="/en/iati-standard/203/codelists/DocumentCategory/">document category</a> codelist.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/language/">language</a></td>
+<td>Specifies the language of the document or webpage.</td>
+<td>The code must be on the <a href="/en/iati-standard/203/codelists/Language/">language</a> codelist.
+If the document is available in multiple languages, the document-link element can be repeated with a different language code selected.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/document-date/">document-date</a></td>
+<td>The date of publication or last updating</td>
+<td>Must be in the format: YYYY-MM-DD, e.g. 2018-03-16.</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<meta content="Related documents" name="title"/><meta content="Further information about an organisation or activity can be provided by using the **document-link** element." name="description"/><meta content="activity, organisation" name="guidance_type"/><meta content="September 19, 2019" name="date"/></div>

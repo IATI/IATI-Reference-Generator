@@ -1,0 +1,33 @@
+<div id="content" role="main">
+
+<header>
+<h1>Period end</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;period-end&gt;&lt;/period-end&gt;</h2><p><h3>From the schema</h3><p>
+                          The end of the reporting period
+                        </p><p> This element is of the type "dateType" as described in the <a href="/reference_downloads/archive/downloads/1.02/iati-common.xsd">IATI Common schema</a></p><p><p>
+        A date.  The ISO 8601 date goes into the @iso-date attribute.
+        The content may be free-form text.
+      </p><table border="1"><tbody><tr><td>name</td><td>type</td><td>use</td></tr><tr><td>@iso-date</td><td>xsd:date</td><td>optional</td></tr></tbody></table> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /budget/period-end</h3><ul><li>budget period-end has iso-date</li><!--<li>exists($this/@iso-date)</li>--><li>planned-disbursement period-end has an iso-date</li><!--<li>exists($this/@iso-date)</li>--></ul></p>
+<h2 id="period_end">Period End</h2>
+
+<!-- EDIT1 SECTION "Period End" [1-46] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+For this element, an ISO 8601 code for the end date of the reporting period (yyyy-mm-dd) is required:
+</p>
+<pre><span><span>&lt;period-end</span> <span>iso-date</span>=<span>"2011-12-31"</span><span>/&gt;</span></span></pre>
+<p>
+Where a precise date cannot be provided, freetext can be stated:
+</p>
+<pre><span><span>&lt;period-end<span>&gt;</span></span></span>Last quarter 2011<span><span>&lt;/period-end<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [47-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-2292 -->
+
+</div>

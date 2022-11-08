@@ -1,0 +1,70 @@
+<div class="body" role="main">
+<p id="structure-of-data">
+<h1>Structure of data</h1>
+<p>Raw data results of XML and JSON queries to the Datastore API have added metadata. This lets you see information about your query.</p>
+<p>The following information is given in the metadata for your query:</p>
+<ul>
+<li><strong>generated-datetime</strong>: This shows the time the query was run.</li>
+<li><strong>ok</strong>: This returns True when a query is successful.</li>
+<li><strong>total-count</strong>: This shows the number of activities that match your query.</li>
+<li><strong>limit</strong>: This shows the maximum number of activities you will see per page (see <a href="../guidance/forming-queries.rst#pagination">Pagination</a>).</li>
+<li><strong>start</strong>: This refers to the offset value (see <a href="../guidance/forming-queries.rst#pagination">Pagination</a>).</li>
+<li><strong>iati-extra: [version]</strong>: This shows the version of the IATI standard for each returned activity. Activities returned will not necessarily be at the same version.</li>
+</ul>
+<p id="xml">
+<h2>XML</h2>
+<p>The XML data is structured in the following way:</p>
+<p><code><pre>&lt;result xmlns:iati-extra="http://datastore.iatistandard.org/ns"&gt;
+    &lt;ok&gt;True&lt;/ok&gt;
+    &lt;iati-activities generated-datetime="2017-10-10T13:45:31.218204"&gt;
+        &lt;query&gt;
+            &lt;total-count&gt;717482&lt;/total-count&gt;
+            &lt;start&gt;0&lt;/start&gt;
+            &lt;limit&gt;50&lt;/limit&gt;
+        &lt;/query&gt;
+        &lt;iati-activity xmlns:example="http://example.com/example" iati-extra:version="2.01" last-updated-datetime="2015-11-10T10:53:36Z" xml:lang="en" default-currency="EUR"&gt;
+            &lt;!-- …IATI ACTIVITY DATA HERE… --&gt;
+        &lt;/iati-activity&gt;
+       &lt;!-- …OTHER ACTIVITIES… --&gt;
+    &lt;/iati-activities&gt;
+&lt;/result&gt;
+</pre></code>
+</p>
+</p>
+<p id="json">
+<h2>JSON</h2>
+<p>The JSON data is structured in the following way:</p>
+<p><code><pre>{
+    "iati-activities": [
+        "iati-activity": {
+            […IATI ACTIVITY DATA HERE…]
+            "iati-extra:version": "1.03"
+        },
+        […OTHER ACTIVITIES…]
+    ],
+    "limit": 50,
+    "ok": true,
+    "start": 0,
+    "total-count": 717482
+}
+</pre></code>
+</p>
+</p>
+<p id="csv">
+<h2>CSV</h2>
+<p>CSV data does not include metadata. It also has a very different structure to XML and JSON since it cannot directly represent nested information.</p>
+<p>CSV files are returned as rows and columns which are structured by your selections.</p>
+<p>There are three potential output formats:</p>
+<ul>
+<li>Activity (<a href="http://datastore.iatistandard.org/api/1/access/activity.csv">http://datastore.iatistandard.org/api/1/access/activity.csv</a>) - each row contains a unique activity. Financial information is aggregated. Budget information is excluded. Other potentially repeating fields (such as sectors) are reported in a single cell, delimited by semi-colons.</li>
+<li>Transaction (<a href="http://datastore.iatistandard.org/api/1/access/transaction.csv">http://datastore.iatistandard.org/api/1/access/transaction.csv</a>) - each row contains a unique financial transaction. The parent activity identifier and other activity-level fields are repeated for each transaction.</li>
+<li>Budget (<a href="http://datastore.iatistandard.org/api/1/access/budget.csv">http://datastore.iatistandard.org/api/1/access/budget.csv</a>) - each row contains a budget-period entry. Transaction data is not included. The parent activity identifier and other activity-level fields are repeated for each budget line.</li>
+</ul>
+<p>Each of these three formats may have rows expanded to allow analysis of percentage splits between <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">Sectors</a> and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-country/">Countries</a>.</p>
+<ul>
+<li>Sector (replace <cite>.csv</cite> with <cite>/by_sector.csv</cite>) – each <a href="http://datastore.iatistandard.org/api/1/access/activity/by_sector.csv">Activity</a>, <a href="http://datastore.iatistandard.org/api/1/access/transaction/by_sector.csv">Transaction</a> or <a href="http://datastore.iatistandard.org/api/1/access/budget/by_sector.csv">Budget</a> row is repeated for each separate Sector reported. The corresponding percentage for the sector split is reported in a separate column.</li>
+<li>Country (replace <cite>.csv</cite> with <cite>/by_country.csv</cite>)  – each <a href="http://datastore.iatistandard.org/api/1/access/activity/by_country.csv">Activity</a>, <a href="http://datastore.iatistandard.org/api/1/access/transaction/by_country.csv">Transaction</a> or <a href="http://datastore.iatistandard.org/api/1/access/budget/by_country.csv">Budget</a> row is repeated for each separate Country reported. The corresponding percentage for the sector split is reported in a separate column.</li>
+</ul>
+</p>
+</p>
+</div>

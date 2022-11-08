@@ -1,0 +1,63 @@
+<div class="body" role="main">
+<p id="category">
+<h1>category</h1>
+<p><code>iati-activities/iati-activity/document-link/category</code></p>
+<p>This is the reference page for the XML element <code>category</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>IATI Document Category Code</p>
+<p>For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/document_category">http://iatistandard.org/codelists/document_category</a></p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-document-link-category-code">
+<dt>@code</dt>
+<dd><p>Machine readable code for the entity being described. The value should
+be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/DocumentCategory/"><span>DocumentCategory codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-document-link-category-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example declaring the <code>DocumentCategory</code> code <em>A01</em>:</p>
+
+<p><code><pre>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;Project report 2013&lt;/title&gt;
+<span>   &lt;category code="A01" /&gt;
+</span>   &lt;language code="en" /&gt;
+  &lt;/document-link&gt;
+</pre></code>
+</p>
+
+<p>Example declaring multiple <code>DocumentCategory</code> codes for the same <code>document-link</code>:</p>
+
+<p><code><pre>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;Project report 2013&lt;/title&gt;
+<span>   &lt;category code="A01" /&gt;
+</span><span>   &lt;category code="A02" /&gt;
+</span><span>   &lt;category code="A03" /&gt;
+</span>   &lt;language code="en" /&gt;
+  &lt;/document-link&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-common.xsd#L128">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/document-link/category.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

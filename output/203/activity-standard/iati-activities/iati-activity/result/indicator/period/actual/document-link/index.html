@@ -1,0 +1,128 @@
+<div class="body" role="main">
+<p id="document-link">
+<h1>document-link</h1>
+<p><code>iati-activities/iati-activity/result/indicator/period/actual/document-link</code></p>
+<p>This is the reference page for the XML element <code>document-link</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A link to an online, publicly accessible web page or document expanding on the result.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-indicator-period-actual-document-link-url">
+<dt>@url</dt>
+<dd><p>The target URL of the external document, e.g. “<a href="http://www.example.org/doc.odt">http://www.example.org/doc.odt</a>”.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-result-indicator-period-actual-document-link-format">
+<dt>@format</dt>
+<dd><p>An IANA code for the MIME type of the document being referenced, e.g. “application/pdf”.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../../../../codelists/FileFormat/"><span>FileFormat codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>document-link</code> in a <code>actual</code> in a <code>period</code> in a <code>indicator</code> in a <code>result</code> element.</p>
+
+<p>This element is a parent for other child elements.</p>
+
+
+<p>The <code>@format</code> attribute declares a valid code (<em>application/vnd.oasis.opendocument.text</em>) from the <em>FileFormat</em> codelist.</p>
+<p>The <code>@url</code> attribute provides the document location.</p>
+
+<p><code><pre>&lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_actual_en.odt"&gt;
+...
+&lt;/document-link&gt;
+</pre></code>
+</p>
+
+<p>Full example with all child elements:</p>
+
+<p><code><pre>     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+      &lt;period-end iso-date="2013-03-31" /&gt;
+      &lt;target value="10"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+        &lt;narrative&gt;Target comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_target_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Target Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period target&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/target&gt;
+      &lt;actual value="11"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+         &lt;narrative&gt;Actual comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_actual_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Actual Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period actual&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/actual&gt;
+     &lt;/period&gt;
+</pre></code>
+</p>
+
+<p>The <code>document-link</code> element can be repeated in any <code>result</code> element.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.03</h3>
+<p>The optional <code>document-link</code> element was <a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895">added</a>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1889">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/document-link.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="title/">title</a></li>
+<li><a href="description/">description</a></li>
+<li><a href="category/">category</a></li>
+<li><a href="language/">language</a></li>
+<li><a href="document-date/">document-date</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

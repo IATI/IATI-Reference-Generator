@@ -1,0 +1,129 @@
+<div class="body" role="main">
+<p id="participating-org">
+<h1>participating-org</h1>
+<p><code>iati-activities/iati-activity/participating-org</code></p>
+<p>This is the reference page for the XML element <code>participating-org</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>An organisation involved with the activity. May be a donor, fund, agency, etc. Specifying the @ref identifier is strongly recommended. May contain the organisation name as narrative.</p>
+<p>If the reporting organisation plays a role in the activity it should be repeated here. One organisation may play more than one role (eg, funding and implementing): in such a case each role should be reported and the name of the organisation repeated.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur at least once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-participating-org-ref">
+<dt>@ref</dt>
+<dd><p>Machine-readable identification string for the organisation issuing the report. Must be in the format {RegistrationAgency}-{RegistrationNumber} where {RegistrationAgency} is a valid code in the Organisation Registration Agency code list and {RegistrationNumber} is a valid identifier issued by the {RegistrationAgency}. If this is not present then the narrative MUST contain the name of the organisation.</p>
+<p>This value must be of type xsd:string.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L1283">1.8.1</a>: The participating-org identifier should not start or end with spaces or newlines.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L1270">1.8.13</a>: The receiver-org identifier must not contain any of the symbols /, &amp;, | or ?.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L1252">6.10.1</a>: The participating organisation must have an identifier or a narrative.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-participating-org-type">
+<dt>@type</dt>
+<dd><p>The type of organisation issuing the report. See IATI codelist for values.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/OrganisationType/"><span>OrganisationType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-participating-org-role">
+<dt>@role</dt>
+<dd><p>An IATI code describing the organisation’s role in the activity (donor, agency, etc.).</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/OrganisationRole/"><span>OrganisationRole codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-participating-org-activity-id">
+<dt>@activity-id</dt>
+<dd><p>A valid activity identifier published by the participating organisation which points to the activity that it has published to IATI that describes its role in this activity.</p>
+<p>This value must be of type xsd:string.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L1292">1.9.1</a>: The participating-org activity identifier should not start or end with spaces or newlines.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-participating-org-crs-channel-code">
+<dt>@crs-channel-code</dt>
+<dd><p>Under CRS++ Reporting Directives this code identifies the implementing agency. Codes ending in ‘00’ are generic and are similar to the OrganisationType code.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/CRSChannelCode/"><span>CRSChannelCode codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>participating-org</code> in an <code>iati-activity</code>.</p>
+
+<p>An example organisation <code>@ref</code> of <em>BB-BBB-123456789</em> is declared.</p>
+<p>The <code>@role</code> attribute declares a valid code (<em>2</em>) from the <em>OrganisationRole</em> codelist.</p>
+<p>The <code>@type</code> attribute declares a valid code (<em>40</em>) from the <em>OrganisationType</em> codelist.</p>
+<p>The <code>@activity-id</code> attribute declares an IATI activity identifier.</p>
+<p>The <code>@crs-channel-code</code> attribute declares the CRS Channel Code for the participating organisation.</p>
+
+<p><code><pre>&lt;participating-org ref="BB-BBB-123456789" role="2" type="40" activity-id="BB-BBB-123456789-1234"&gt;
+        &lt;narrative&gt;Name of Agency B&lt;/narrative&gt;
+&lt;/participating-org&gt;
+</pre></code>
+</p>
+<p>As demonstrated in the the above example, it is strongly recommended that the name of the organisation is provided (using the narrative child element) in addition to a valid organisation identifier. Where an organisation identifier is not present the name (using the narrative child element) is mandatory.</p>
+
+<p>The <code>participating-org</code> element can be repeated in any <code>iati-activity</code>.</p>
+<p>In this example, three <code>participating-org</code> are declared.</p>
+
+<p><code><pre>  &lt;participating-org ref="BB-BBB-123456789" role="1" type="40" activity-id="BB-BBB-123456789-1234"&gt;
+   &lt;narrative&gt;Name of Agency B&lt;/narrative&gt;
+  &lt;/participating-org&gt;
+  &lt;participating-org ref="CC-CCC-123456789" role="2" type="10" activity-id="CC-CCC-123456789-1234"&gt;
+   &lt;narrative&gt;Name of Agency C&lt;/narrative&gt;
+  &lt;/participating-org&gt;
+  &lt;participating-org ref="AA-AAA-123456789" role="3" type="21" activity-id="AA-AAA-123456789-1234" crs-channel-code="000000"&gt;
+   &lt;narrative&gt;Name of Agency A&lt;/narrative&gt;
+   &lt;narrative xml:lang="fr"&gt;Nom de l'agence A&lt;/narrative&gt;
+  &lt;/participating-org&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id5">
+<h3>2.03</h3>
+
+<p>The definition of the <code>@ref</code> attribute was <a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851">updated</a>.</p>
+<p>The <code>@crs-channel-code</code> attribute was <a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857">added</a>.</p>
+
+</p>
+<p id="id6">
+<h3>2.02</h3>
+
+<p>The <code>activity-id</code> attribute was <a href="http://support.iatistandard.org/entries/82377659-Add-activity-id-attribute-to-participating-org-element">added</a>.</p>
+
+</p>
+<p id="id7">
+<h3>2.01</h3>
+<p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element.</p>
+
+<p>The <code>OrganisationRole</code> codelist was changed to numeric codes</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L250">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/participating-org.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

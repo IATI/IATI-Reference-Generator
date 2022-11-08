@@ -1,0 +1,78 @@
+<div class="body" role="main">
+<p id="iati-codelist-management">
+<h1>IATI codelist management</h1>
+<p>The IATI codelists are key to making IATI data from different publishers comparable. Codelists contain a list of values and each value is assigned a code, e.g. the country Uganda has the code ‘UG’. All codes are alphanumeric and case sensitive. Codes help reduce the amount of human error when entering data and having set values helps with data analysis.</p>
+<p>Over time, Codelists need to be updated when codes need to be added, removed, or changed. We use GitHub as a tool to manage our Codelists, and you are able to track the changes. By managing Codelists in GitHub, we have the ability to track very minor changes and to ‘tag’ major releases.</p>
+<p>The structure of the codelists themselves is governed by a schema that is versioned and maintained in the GitHub repository for each version of the standard. e.g. for v2.03: <a href="https://github.com/IATI/IATI-Codelists/blob/version-2.03/codelist.xsd">https://github.com/IATI/IATI-Codelists/blob/version-2.03/codelist.xsd</a></p>
+<p>There are <strong>four types</strong> of Codelist in IATI: Core, Non-Core, Replicated, and External. Each of these are managed in a different way:</p>
+<p id="embedded-codelists-core">
+<h2>Embedded Codelists - Core</h2>
+<p>Core Codelists contain conforming values for a particular <strong>decimal Version</strong> of the IATI Standard, the contents of which are managed by the IATI Technical Team. Core Codelists contain codes that involve functional logic that impacts the way in which the Standard is interpreted and processed.</p>
+<p>These are Codelists that are core to IATI: changing them has a big on impact on all those publishing and using IATI data.</p>
+<p>Embedded codelists are  managed via GitHub at: <a href="https://github.com/IATI/IATI-Codelists/">https://github.com/IATI/IATI-Codelists/</a></p>
+<p><strong>Modification Schedule: Embedded Codelists - Core</strong></p>
+<p>Codes in Core Codelists may be:</p>
+<ul>
+<li>Added - at a Minor or Major Upgrade, through the applicable consultation process</li>
+<li>Modified - at a Minor or Major Upgrade, through the applicable consultation process</li>
+<li>Withdrawn - at a Minor or Major Upgrade, through the applicable consultation process</li>
+<li>Removed - at a Major Upgrade, through the applicable consultation process</li>
+</ul>
+<p>See more information about the IATI Upgrade process here: <a href="/en/iati-standard/upgrades/upgrade-changelogs/">http://reference.iatistandard.org/upgrades/</a></p>
+<p>Examples of Core Codelists include: Transaction Type, Organisation Type.</p>
+</p>
+<p id="non-embedded-codelists-non-core">
+<h2>Non-Embedded Codelists - Non-Core</h2>
+<p>Non-Core Codelist values are not version specific. The contents of the codelist which are managed by the IATI Technical Team. Non-Core Codelists contain codes that qualify data, not processes.</p>
+<p>These Codelists usually provide lookup information, e.g. Description Type, Geographic Location, Indicator Vocabularies. An addition or modification has a minor impact on the sense and use of the data.</p>
+<p>Non-Core Codelists are managed via GitHub at: <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded">https://github.com/IATI/IATI-Codelists-NonEmbedded</a></p>
+<p><strong>Modification Schedule: Non-Embedded Codelists - Non-Core</strong></p>
+<p>Codes in Non-Core Codelists may be:</p>
+<ul>
+<li>Added - at any point in time, subject to applicable notification and/or consultation via <a href="https://discuss.iatistandard.org/c/standard-management/non-embedded-codelist-amendments">IATI Discuss</a></li>
+<li>Modified - at any point in time, subject to applicable notification and/or consultation via <a href="https://discuss.iatistandard.org/c/standard-management/non-embedded-codelist-amendments">IATI Discuss</a></li>
+<li>Withdrawn - at any point in time, subject to applicable notification and/or consultation via <a href="https://discuss.iatistandard.org/c/standard-management/non-embedded-codelist-amendments">IATI Discuss</a></li>
+<li>Removed - at a Major Upgrade, through the applicable consultation process via <a href="https://discuss.iatistandard.org/c/standard-management/non-embedded-codelist-amendments">IATI Discuss</a></li>
+</ul>
+<p>Examples of Non-Core Codelists include: Sector Vocabulary, Condition Type, Result Type.</p>
+</p>
+<p id="non-embedded-codelists-replicated">
+<h2>Non-Embedded Codelists - Replicated</h2>
+<p>Replicated Codelist values are not version specific. The contents are generally managed by a third-party organisation. In exceptional circumstances an additional code can be added. The IATI Technical Team maintains a corresponding copy in a document that conforms to the Codelist Schema.</p>
+<p><strong>Modification Schedule: Non-Embedded Codelists - Replicated</strong></p>
+<p>Codes in Replicated Codelists may be:</p>
+<ul>
+<li>Added - at any point in time, subject to applicable notification by the third-party</li>
+<li>Modified - at any point in time, subject to applicable notification by the third-party</li>
+<li>Withdrawn - at any point in time, subject to applicable notification by the third-party</li>
+<li>Removed - never</li>
+</ul>
+<p>Examples of Replicated Codelists include: DAC 5-Digit, Organisation Registration Agency</p>
+</p>
+<p id="non-embedded-codelists-external">
+<h2>Non-Embedded Codelists - External</h2>
+<p>External Codelists are a collection of codes managed by a third-party organisation. The IATI Technical Team does not maintain a corresponding copy in a document that conforms to the Codelist Schema. A URL to the codelist will be added to the relevant Non-Core codelist vocabulary e.g. the <a href="/en/iati-standard/203/codelists/AidTypeVocabulary/">Aid Type Vocabulary</a> codelist contains codes for and links to:</p>
+<ul>
+<li><a href="/en/iati-standard/203/codelists/AidType/">OECD DAC (aid type)</a> which is a replicated codelist</li>
+<li><a href="/en/iati-standard/203/codelists/EarmarkingCategory/">Earmarking Category</a> which is a replicated codelist</li>
+<li>Earmarking Modality which is an external codelist</li>
+</ul>
+<p>Please note that the managers of external codelists can update and remove codes according to their own processes.</p>
+</p>
+<p id="changing-codelist-type">
+<h2>Changing Codelist Type</h2>
+<p>A Codelist may have its type changed. Any change either from or to Codelist Type Core or Non-Core requires a version upgrade and will be subject to consultation.</p>
+<p>Proposals to change a codelist between External and Replicated should be posted in IATI Discuss under the <a href="https://discuss.iatistandard.org/c/standard-management/third-party-codelists">Third Party Codelist</a> category. A use case for the change is required, which should include either the need to add an additional code or how the change aligns with IATI’s strategic plan. The change will be subject to consultation, with final decision held by the IATI Technical Team.</p>
+</p>
+<p id="code-status-addition-and-withdrawal-dates">
+<h2>Code status, addition and withdrawal dates</h2>
+<p>All new codes added to codelist from the release of version 2.02 (December 2015) will feature <code>status="active"</code> and <code>activation-date</code> attributes in the underlying GitHub source code repositories.  Similarly, codes withdrawn from the release of version 2.02 (December 2015) will feature <code>status="withdrawn"</code> and <code>withdrawal-date</code> attributes.</p>
+</p>
+<p id="complete-vs-incomplete-codelists">
+<h2>Complete vs Incomplete Codelists</h2>
+<p>Some codelists, such as the ISO country codes, are not ‘complete’ lists of all possible values that might be used. In the case of countries, publishers may use extra user defined codes (such as ‘XK’ for Kosovo) or valid historical values that are not on our maintained list.</p>
+<p>For other codelists, such as the <a href="/en/iati-standard/203/codelists/DescriptionType/">Description Type</a> codelist, if the value is not on the codelist the data doesn’t make any sense - it is invalid. This is an example of a ‘complete’ codelist.</p>
+<p>We distinguish between these two types of codelists by the use of an xml attribute: <code>complete="1"</code></p>
+</p>
+</p>
+</div>

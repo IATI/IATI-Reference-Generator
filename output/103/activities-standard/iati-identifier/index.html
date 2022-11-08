@@ -1,0 +1,43 @@
+<div id="content" role="main">
+
+<header>
+<h1>IATI Identifier</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;iati-identifier&gt;&lt;/iati-identifier&gt;</h2><p><h3>From the schema</h3><p>
+        A globally unique identifier for this activity. This should be
+        in the form of the IATI Organisation Identifier (for the
+        reporting organisation) concatenated to that organisation's
+        activity identifier. (NB. Two or more reporting organisations
+        may publish information on the same activity. To
+        cross-reference these reports the other-identifier element
+        should be used.)
+      </p> </p><!--schema wrap--></p><p><h3>Compliance1 compliance test(s) for /iati-identifier</h3><ul><li>iati-identifier starts with the reporting-organisation ref </li><!--<li>starts-with($this,concat($doc/reporting-org/@ref,"-"))
+        </li>--><li>iati-identifier has no leading or trailing whitespace</li><!--<li>string($this) eq normalize-space($this)
+        </li>--></ul></p></p>
+<h2 id="iati_identifier">IATI Identifier</h2>
+
+<!-- EDIT1 SECTION "IATI Identifier" [1-51] -->
+<h3 id="notes">Notes</h3>
+<p>
+<p>
+This is a globally unique identifier for this activity. <br/>
+
+This is a concatenation of the unique organisation identifier (for the reporting organisation) and the organisation's activity identifier.
+</p>
+</p>
+<!-- EDIT2 SECTION "Notes" [52-266] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The example below is for an Oxfam (identified by <abbr title="Gigabyte">GB</abbr>-CHC-202918) activity, with their internal unique ref. of HECA91
+</p><pre><span><span>&lt;iati-identifier<span>&gt;</span></span></span>GB-CHC-202918-HECA91<span><span>&lt;/iati-identifier<span>&gt;</span></span></span></pre>
+<p>
+This example is illustrated from the World Bank (44000):
+</p>
+<pre><span><span>&lt;iati-identifier<span>&gt;</span></span></span>44000-P002999<span><span>&lt;/iati-identifier<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT3 SECTION "Example Usage" [267-] --> </p>
+
+</div>

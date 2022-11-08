@@ -1,0 +1,55 @@
+<div class="body" role="main">
+<p id="old-datastore-deprecated">
+<h1>Old Datastore (Deprecated)</h1>
+<p>Between now and 22 March 2021 users can choose to either use existing API calls to return data from the old Datastore, or use a Redirect version from the Old Datastore to the new Datastore. By using this version, existing API calls will be redirected and return data from the new Datastore. After 22 March 2021, the old Datastore will be deprecated and all queries to the Old Datastore will automatically be redirected to corresponding queries on the new Datastore.</p>
+<p>The Redirect Version of the Old Datastore is hosted at <a href="http://datastoreredirect.iatistandard.org">http://datastoreredirect.iatistandard.org</a>. Redirects may be tested by replacing “datastore.iatistandard.org” in previous queries with “datastoreredirect.iatistandard.org.” For example <a href="http://datastore.iatistandard.org/api/1/access/activity.csv">http://datastore.iatistandard.org/api/1/access/activity.csv</a> would become <a href="http://datastoreredirect.iatistandard.org/api/1/access/activity.csv">http://datastoreredirect.iatistandard.org/api/1/access/activity.csv</a>.</p>
+<p>The Datastore stores all activity data available on the IATI Registry, allowing you to query it all in one place. This data can be accessed in spreadsheet format, or in more technical formats through a standard interface (API). Please be aware that this product is considered to be in alpha (<a href="#alpha-status">see below</a>).</p>
+<ul>
+<li><a href="guidance.rst">Guidance</a></li>
+<li><a href="reference.rst">Reference</a></li>
+</ul>
+<p id="iati-datastore-csv-query-builder">
+<h2>IATI Datastore CSV Query Builder</h2>
+<p>You can perform many common queries using the <a href="http://datastore.iatistandard.org/query/">IATI Datastore CSV Query Builder</a>. This tool generates a Datastore query in spreadsheet (CSV) format based on the fields that you select.</p>
+</p>
+<p id="overview">
+<h2>Overview</h2>
+<p>The Datastore has three APIs:</p>
+<ul>
+<li><a href="reference/data-api.rst">Data API</a>: Allows you to make queries which can output IATI data in your chosen format (CSV, XML or JSON).</li>
+<li><a href="reference/metadata-api.rst">Metadata API</a>: Allows you to find information about datasets that are contained within the Datastore.</li>
+<li><a href="reference/error-api.rst">Error API</a>: Allows you to see information about datasets that could not be successfully imported into the Datastore.</li>
+</ul>
+<p>Anyone can access the Datastore – just build a query and data will be returned.</p>
+</p>
+<p id="alpha-status">
+<h2>Alpha Status</h2>
+<p>Please be aware that the Datastore is in alpha. This means that it may exhibit unexpected behaviour or return unexpected results. This product is intended for user testing and feedback only and should not be considered a stable product. The Datastore is not feature complete.</p>
+<p>Current known issues include:</p>
+<ul>
+<li>Invalid publisher data causing problems with data import</li>
+<li>Registry failure causing problems with data import</li>
+</ul>
+<p>In the meantime, we welcome code contributions from our open source community via <a href="https://github.com/IATI/IATI-Datastore">GitHub</a>.</p>
+</p>
+<p id="quick-start">
+<h2>Quick Start</h2>
+<p>The Data API is the most commonly used API. The following examples will get you started.</p>
+<p><strong>Example 1: A simple query to return data for a given country</strong></p>
+<p>This URL returns all available IATI activities in Somalia using the <cite>recipient-country</cite> filter:</p>
+<p><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=SO">http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=SO</a></p>
+<p>Values for filters come from the relevant IATI codelist. In this case, <cite>SO</cite> is the value for Somalia on the Country codelist.</p>
+<p><strong>Example 2: A more complex query</strong></p>
+<p>This URL returns all available IATI activities in multiple countries using the <cite>recipient-country</cite> filter – in this case, Ethopia, Somalia and Kenya – reported by multiple reporting organisation types using the <cite>reporting-org.type</cite> filter – in this case, international, national and regional NGOs:</p>
+<p><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=ET|SO|KE&amp;reporting-org.type=21|22|23">http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=ET|SO|KE&amp;reporting-org.type=21|22|23</a></p>
+</p>
+<p id="next-steps">
+<h2>Next Steps</h2>
+<p>The Datastore can do much more than is shown here.</p>
+<ul>
+<li>See the <a href="guidance.rst">Guidance</a> for a more detailed guide on querying the Datastore.</li>
+<li>For in-depth documentation, see the <a href="reference.rst">Reference</a>.</li>
+</ul>
+</p>
+</p>
+</div>

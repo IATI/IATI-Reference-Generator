@@ -1,0 +1,47 @@
+<div id="content" role="main">
+
+<header>
+<h1>Collaboration Type</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;collaboration-type&gt;&lt;/collaboration-type&gt;</h2><p><h3>From the schema</h3><p>
+        The type of collaboration involved in the project's
+        disbursements, e.g. "bilateral" or "multilateral".
+
+        For the value of the @code attribute, see
+        <a href="/en/iati-standard/203/codelists/collaboration_type" rel="nofollow">http://iatistandard.org/codelists/collaboration_type</a>
+</p><p> This element is of the type "codeReqType" as described in the <a href="/reference_downloads/archive/downloads/1.03/iati-common.xsd">IATI Common schema</a></p><p><p>
+        Data type for an element that refers to an object that must
+        have a code.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@code</td><td>required</td><td>
+        Machine-readable code for the entity being described.
+      </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /collaboration-type/@code</h3><ul><li>Must be on: <a href="/en/iati-standard/203/codelists/collaboration_type">Collaboration Type Codelist</a></li></ul></p>
+<h2 id="collaboration_type">Collaboration Type</h2>
+
+<!-- EDIT1 SECTION "Collaboration Type" [1-55] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The code can be declared:
+</p>
+<pre><span><span>&lt;collaboration-type</span> <span>code</span>=<span>"1"</span><span>/&gt;</span></span></pre>
+
+Additionally, a description of this code can be declared
+
+
+<pre><span><span>&lt;collaboration-type</span> <span>code</span>=<span>"1"</span><span>&gt;</span></span>Bilateral<span><span>&lt;/collaboration-type<span>&gt;</span></span></span></pre>
+
+Where this description differs to the default language of the activity, then this should be declared - example of Dutch:
+
+
+<pre><span><span>&lt;collaboration-type</span> <span>code</span>=<span>"1"</span> <span>xml:lang</span>=<span>"nl"</span><span>&gt;</span></span>Bilateraal<span><span>&lt;/collaboration-type<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [56-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1408 -->
+
+</div>

@@ -1,0 +1,76 @@
+<div class="body" role="main">
+<p id="expense-line">
+<h1>expense-line</h1>
+<p><code>iati-organisations/iati-organisation/total-expenditure/expense-line</code></p>
+<p>This is the reference page for the XML element <code>expense-line</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A breakdown of the total expenditure into sub-totals.
+The breakdown is determined by the reporting
+organisation and described in the narrative. The period
+covered is the same as that covered by the parent
+total-expenditure element. The sum of expenditure-line
+values does not have to equal the value given in the
+parent element.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-total-expenditure-expense-line-ref">
+<dt>@ref</dt>
+<dd><p>An internal reference for this expenditure line taken
+from the reporting organisation’s own system. Optional.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>expense-line</code> for <code>total-expenditure</code> of an <code>iati-organisation</code>.</p>
+
+<p>An example <code>@ref</code> attribute is included.</p>
+
+<p><code><pre>  &lt;total-expenditure&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;250000000&lt;/value&gt;
+<span>   &lt;expense-line ref="1234"&gt;
+</span>     &lt;value currency="USD" value-date="2014-01-01"&gt;200000000&lt;/value&gt;
+     &lt;narrative xml:lang="en"&gt;Expense Line&lt;/narrative&gt;
+<span>   &lt;/expense-line&gt;
+</span> &lt;/total-expenditure&gt;
+</pre></code>
+</p>
+
+<p>The <code>expense-line</code> element can be repeated in any <code>total-expenditure</code>.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.02</h3>
+<p>The optional <code>total-expenditure</code> element was <a href="http://support.iatistandard.org/entries/83404469-Add-Total-Expenditure-Element-To-Organisation-File">added</a>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-organisations-schema.xsd#L715">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="value/">value</a></li>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="3" name="order"/></div>

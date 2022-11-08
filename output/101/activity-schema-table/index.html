@@ -1,0 +1,2352 @@
+<div id="content-table" role="main">
+
+<header>
+<h1>Activity schema table</h1>
+</header><!-- .entry-header -->
+<p>
+<table border="0" cellpadding="0" cellspacing="0" dir="ltr" id="tblMain">
+<tbody>
+<tr>
+<td dir="ltr">Section</td>
+<td dir="ltr">Item</td>
+<td dir="ltr">Definition</td>
+<td dir="ltr">Data Format</td>
+<td dir="ltr">XML</td>
+<td dir="ltr">Occur</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/iati-activities">iati-activities</a></td>
+<td></td>
+<td>Top-level list of one or more IATI activity records.</td>
+<td></td>
+<td dir="ltr">iati-activities</td>
+<td dir="ltr">..</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>version</td>
+<td>A number indicating the IATI specification version in use.</td>
+<td>Decimal</td>
+<td dir="ltr">iati-activities/@version</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>generated-datetime</td>
+<td>A date/time stamp for when this file was generated. This<br/>
+is not necessarily the last-updated date for the<br/>
+individual activity records in it. Uses ISO 8601 date<br/>
+format, e.g. “2010-03-12T18:45:00+01:00″. Use of this<br/>
+attribute is highly recommended, to allow recipients to<br/>
+know when a file has been updated.</td>
+<td>DateTime</td>
+<td dir="ltr">iati-activities/@generated-datetime</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/iati-activity">iati-activity</a></td>
+<td></td>
+<td>Top-level element for a single IATI activity report.</td>
+<td></td>
+<td dir="ltr">iati-activity</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>version</td>
+<td>A number indicating the IATI specification version in use.<br/>
+Defaults to “1.0″ if not specified. It is required to<br/>
+specify this attribute if the document is using features<br/>
+specific to an IATI specification other than the initial<br/>
+1.0 version.</td>
+<td>Decimal</td>
+<td dir="ltr">iati-activity/@version</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>last-updated-datetime</td>
+<td>The last date/time that the data for this specific<br/>
+activity was updated. This date must change whenever the<br/>
+value of any field changes.</td>
+<td>DateTime</td>
+<td dir="ltr">iati-activity/@last-updated-datetime</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">iati-activity/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>default-currency</td>
+<td>Default ISO 4217 currency code for all financial values in<br/>
+this activity report. See
+http://iatistandard.org/codelists/currency</td>
+<td>Text</td>
+<td dir="ltr">iati-activity/@default-currency</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>hierarchy</td>
+<td>Shortcut to show whether this is a parent or child<br/>
+activity, without having to evaluate related-activity<br/>
+elements.</td>
+<td>Text</td>
+<td dir="ltr">iati-activity/@hierarchy</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/activity-website">activity-website</a></td>
+<td></td>
+<td>A link to a web site providing more information about the aid<br/>
+activity. Multiple versions of the link may appear for<br/>
+different languages.</td>
+<td></td>
+<td dir="ltr">activity-website</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>xsd:anyURI</td>
+<td dir="ltr">activity-website/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/reporting-org">reporting-org</a></td>
+<td></td>
+<td>The organisation issuing a report (not necessarily involved in<br/>
+the organisation or activity being described). May be a<br/>
+donor, fund, agency, etc. Specifying the @identifier and<br/>
+@role attributes is strongly recommended. May contain the<br/>
+organisation name as content.For the value of the @type attribute, see<br/>
+http://iatistandard.org/codelists/organisation-typeFor the value of the @ref attribute, see the list of<br/>
+officially-registered organizations at
+http://iatistandard.org/codelists/organisation</td>
+<td></td>
+<td dir="ltr">reporting-org</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">reporting-org/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>ref</td>
+<td>Machine-readable identification string for the business<br/>
+object being described.</td>
+<td>Text</td>
+<td dir="ltr">reporting-org/@ref</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">reporting-org/@type</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">reporting-org/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/participating-org">participating-org</a></td>
+<td></td>
+<td>An organisation (including the reporting organisation)<br/>
+involved with the activity. May be a donor, fund, agency,<br/>
+etc. Specifying the @identifier and @role attributes is<br/>
+strongly recommended. May contain the organisation name as<br/>
+content.For the value of the @type attribute, see<br/>
+http://iatistandard.org/codelists/organisation-typeFor the value of the @ref attribute, see the list of<br/>
+officially-registered organizations at
+http://iatistandard.org/codelists/organisation</td>
+<td></td>
+<td dir="ltr">participating-org</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">participating-org/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>ref</td>
+<td>Machine-readable identification string for the business<br/>
+object being described.</td>
+<td>Text</td>
+<td dir="ltr">participating-org/@ref</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">participating-org/@type</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>role</td>
+<td>A code describing the organisation’s role in the activity<br/>
+(donor, agency, etc.).See http://iatistandard.org/codelists/organisation_role</td>
+<td>Text</td>
+<td dir="ltr">participating-org/@role</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">participating-org/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/recipient-country">recipient-country</a></td>
+<td></td>
+<td>A partner country that will benefit from this activity. This<br/>
+element is primarily for administrative and geopolitical<br/>
+purposes. If a specific country is not known, the activity<br/>
+report can use the recipient-region element instead. For<br/>
+geographical location, use the location element.For the value of the @code attribute, see
+http://iatistandard.org/codelists/country</td>
+<td></td>
+<td dir="ltr">recipient-country</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">recipient-country/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">recipient-country/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>percentage</td>
+<td>The percentage of the project allocated to this country,<br/>
+if known. Content must be a positive integer between 1<br/>
+and 100, with no percentage sign.</td>
+<td>Integer</td>
+<td dir="ltr">recipient-country/@percentage</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">recipient-country/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/recipient-region">recipient-region</a></td>
+<td></td>
+<td>A geopolitical region (above the country level) that will<br/>
+benefit from this activity. This element is primarily for<br/>
+administrative and geopolitical purposes. If the specific<br/>
+country/-ies are known, the activity report can use the<br/>
+recipient-country element instead. For geographical location,<br/>
+use the location element.For the value of the @code attribute, see
+http://iatistandard.org/codelists/region</td>
+<td></td>
+<td dir="ltr">recipient-region</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">recipient-region/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">recipient-region/@code</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>percentage</td>
+<td>The percentage of the project allocated to this<br/>
+geopolitical region, if known. Content must be a positive<br/>
+integer between 1 and 100, with no percentage sign.</td>
+<td>Integer</td>
+<td dir="ltr">recipient-region/@percentage</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">recipient-region/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/collaboration-type">collaboration-type</a></td>
+<td></td>
+<td>The type of collaboration involved in the project’s<br/>
+disbursements, e.g. “bilateral” or “multilateral”.For the value of the @code attribute, see
+http://iatistandard.org/codelists/collaboration_type</td>
+<td></td>
+<td dir="ltr">collaboration-type</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">collaboration-type/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">collaboration-type/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">collaboration-type/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/default-flow-type">default-flow-type</a></td>
+<td></td>
+<td>The type of assistance provided, e.g. Official Development<br/>
+Assistance (ODA). Type types will be defined by IATI.For the value of the @code attribute, see
+http://iatistandard.org/codelists/flow_type</td>
+<td></td>
+<td dir="ltr">default-flow-type</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">default-flow-type/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">default-flow-type/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">default-flow-type/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/default-aid-type">default-aid-type</a></td>
+<td></td>
+<td>The type of aid being supplied (budget support, debt relief,<br/>
+etc.). This element specifies a default for all the<br/>
+activity’s financial transactions; it can be overridden at the<br/>
+individual transaction level.For the value of the @code attribute, see
+http://iatistandard.org/codelists/aid_type</td>
+<td></td>
+<td dir="ltr">default-aid-type</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">default-aid-type/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">default-aid-type/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">default-aid-type/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/default-finance-type">default-finance-type</a></td>
+<td></td>
+<td>The type of finance (e.g. debt relief). The types will be<br/>
+defined by IATI. This the default value for all transactions<br/>
+in the activity report; it can be overridded by individual<br/>
+transactions.For the value of the @code attribute, see
+http://iatistandard.org/codelists/finance_type</td>
+<td></td>
+<td dir="ltr">default-finance-type</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">default-finance-type/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">default-finance-type/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">default-finance-type/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/iati-identifier">iati-identifier</a></td>
+<td></td>
+<td>IATI identifierThis element contains the official IATI identifier for an<br/>
+entity (activity or organisation). It must appear only once<br/>
+in the XML file, and is guaranteed unique across all entities<br/>
+of the same type (there will never be two organisations or<br/>
+activities with the same IATI identifier).</td>
+<td></td>
+<td dir="ltr">iati-identifier</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">iati-identifier/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/other-identifier">other-identifier</a></td>
+<td></td>
+<td>An alternative, non-IATI identifier for the activity. This<br/>
+identifier is not guaranteed to be unique or persistent (it<br/>
+depends on the owner organisation’s policies, not IATI’s).</td>
+<td></td>
+<td dir="ltr">other-identifier</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">other-identifier/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>owner-ref</td>
+<td>An identifier for the owner of this identifier, in URI<br/>
+format.See the list of officially-registered organizations at
+http://iatistandard.org/codelists/organisation</td>
+<td>Text</td>
+<td dir="ltr">other-identifier/@owner-ref</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>owner-name</td>
+<td>Free text providing a human-readable name for the owner<br/>
+of this identifier.</td>
+<td>Text</td>
+<td dir="ltr">other-identifier/@owner-name</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/title">title</a></td>
+<td></td>
+<td>A short, human-readable title. May be repeated for different<br/>
+languages.</td>
+<td></td>
+<td dir="ltr">title</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">title/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">title/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/description">description</a></td>
+<td></td>
+<td>A longer, human-readable description. May be repeated for<br/>
+different languages.</td>
+<td></td>
+<td dir="ltr">description</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">description/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">description/@type</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">description/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/sector">sector</a></td>
+<td></td>
+<td>Sector code and name. For the value of the @code attribute,<br/>
+see http://iatistandard.org/codelists/sector</td>
+<td></td>
+<td dir="ltr">sector</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">sector/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">sector/@code</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>vocabulary</td>
+<td>An identifier for the vocabulary in use, to segment<br/>
+sectors into different vocabularies (e.g. DAC, OCHA) to<br/>
+aid with comparison and classification. If omitted,<br/>
+assume DAC.See http://iatistandard.org/codelists/vocabulary</td>
+<td>Text</td>
+<td dir="ltr">sector/@vocabulary</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>percentage</td>
+<td>The percentage of the project allocated to this sector, if<br/>
+known. Content must be a positive integer between 1 and<br/>
+100, with no percentage sign. Percentages are comparable<br/>
+only across sectors in the same vocabulary.</td>
+<td>Integer</td>
+<td dir="ltr">sector/@percentage</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">sector/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/activity-date">activity-date</a></td>
+<td></td>
+<td>Planned starting date for the activity in ISO 8601 date<br/>
+format, e.g. “2010-10-01″. For the value of the @type<br/>
+attribute, see
+http://iatistandard.org/codelists/activity_date_type</td>
+<td></td>
+<td dir="ltr">activity-date</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>Text</td>
+<td dir="ltr">activity-date/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">activity-date/@type</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>iso-date</td>
+<td>An activity milestone date in ISO 8601 date format,<br/>
+e.g. “2010-12-01″.</td>
+<td>Text</td>
+<td dir="ltr">activity-date/@iso-date</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">activity-date/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/activity-status">activity-status</a></td>
+<td></td>
+<td>The current status of the project (e.g. “planned”), using a<br/>
+list defined by IATI. For the value of the @code attribute,<br/>
+see http://iatistandard.org/codelists/activity_status</td>
+<td></td>
+<td dir="ltr">activity-status</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that can<br/>
+have a code as well as human-readable text in different<br/>
+languages (e.g. a country or status).</td>
+<td>mixed</td>
+<td dir="ltr">activity-status/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">activity-status/@code</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">activity-status/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/contact-info">contact-info</a></td>
+<td></td>
+<td>Contact information for the project. Specify whatever is<br/>
+available.</td>
+<td></td>
+<td dir="ltr">contact-info</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>organisation</td>
+<td>The organisation to contact for more information about the<br/>
+activity.</td>
+<td></td>
+<td dir="ltr">contact-info/organisation</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Plain text content with no special attributes (e.g. xml:lang),<br/>
+though extended attributes are still allowed.</td>
+<td>mixed</td>
+<td dir="ltr">contact-info/organisation/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>person-name</td>
+<td>The name of the contact person at the organisation.</td>
+<td></td>
+<td dir="ltr">contact-info/person-name</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Plain text content with no special attributes (e.g. xml:lang),<br/>
+though extended attributes are still allowed.</td>
+<td>mixed</td>
+<td dir="ltr">contact-info/person-name/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>telephone</td>
+<td>The contact telephone number, if available. May be<br/>
+repeated for multiple numbers.</td>
+<td></td>
+<td dir="ltr">contact-info/telephone</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">contact-info/telephone/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>email</td>
+<td>The contact email address, if available. May be<br/>
+repeated for multiple addresses.</td>
+<td></td>
+<td dir="ltr">contact-info/email</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Plain text content with no special attributes (e.g. xml:lang),<br/>
+though extended attributes are still allowed.</td>
+<td>mixed</td>
+<td dir="ltr">contact-info/email/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>mailing-address</td>
+<td>The contact mailing address, if available.</td>
+<td></td>
+<td dir="ltr">contact-info/mailing-address</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">contact-info/mailing-address/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/default-tied-status">default-tied-status</a></td>
+<td></td>
+<td>Specify whether the aid is untied, tied, or partially tied,<br/>
+using a code list created by IATI. The content is free text<br/>
+that can optionally provide more detail. For the value of the<br/>
+@code attribute, see
+http://iatistandard.org/codelists/tied_status</td>
+<td></td>
+<td dir="ltr">default-tied-status</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">default-tied-status/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">default-tied-status/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">default-tied-status/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/policy-marker">policy-marker</a></td>
+<td></td>
+<td>A policy or theme addressed by the activity. A text<br/>
+description of the theme appears in the content, and a formal<br/>
+identifier appears in the @ref attribute. The @vocabulary<br/>
+attribute can also help to segment the markers into separate<br/>
+vocabularies. This element can be repeated for each policy<br/>
+marker. For the value of the @code attribute, see
+http://iatistandard.org/codelists/policy_marker</td>
+<td></td>
+<td dir="ltr">policy-marker</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">policy-marker/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">policy-marker/@code</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>vocabulary</td>
+<td>An identifier for the vocabulary in use, to segment codes<br/>
+into different vocabularies (e.g. Rio, Environment) to aid<br/>
+with comparison and classification.See http://iatistandard.org/codelists/vocabulary</td>
+<td>Text</td>
+<td dir="ltr">policy-marker/@vocabulary</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>significance</td>
+<td>The significance of the policy marker for this activity<br/>
+(e.g. principal or significant), from a list defined by<br/>
+IATI. If a marker is not significant, the policy-marker<br/>
+element will not be present.See http://iatistandard.org/codelists/policy_significance</td>
+<td>Text</td>
+<td dir="ltr">policy-marker/@significance</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">policy-marker/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/location">location</a></td>
+<td></td>
+<td>A geographical location.</td>
+<td></td>
+<td dir="ltr">location</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>percentage</td>
+<td>The percentage of the activity budget allocated to this location.</td>
+<td>Integer</td>
+<td dir="ltr">location/@percentage</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>location-type</td>
+<td>The type of location (e.g. “PCL” for a political<br/>
+entity), from an IATI-defined subset of the UCPD/Aiddata<br/>
+code list.See http://iatistandard.org/codelists/location_type</td>
+<td></td>
+<td dir="ltr">location/location-type</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">location/location-type/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">location/location-type/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">location/location-type/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>name</td>
+<td>The human-readable name for the location. May be<br/>
+repeated in different languages.</td>
+<td></td>
+<td dir="ltr">location/name</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">location/name/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">location/name/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>description</td>
+<td>A human-readable description of the location.</td>
+<td></td>
+<td dir="ltr">location/description</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">location/description/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">location/description/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>administrative</td>
+<td>Administrative geographical information (e.g. city,<br/>
+subdivision, country). The content is a human-readable<br/>
+name for the location, while the attributes contain<br/>
+various levels of machine-readable ISO 3166-1 and UNSALB<br/>
+geographical codes.</td>
+<td></td>
+<td dir="ltr">location/administrative</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">location/administrative/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>country</td>
+<td>The ISO 3166-1 alpha2 code for the country<br/>
+(e.g. “GB” for the United Kingdom).For the @code attribute, see
+http://iatistandard.org/codelists/country</td>
+<td>Text</td>
+<td dir="ltr">location/administrative/@country</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>adm1</td>
+<td>The UNSALB level-one administrative code for a<br/>
+subdivision of a country.See http://iatistandard.org/codelists/admin1</td>
+<td>Text</td>
+<td dir="ltr">location/administrative/@adm1</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>adm2</td>
+<td>The UNSALB level-two administrative code for a<br/>
+subdivision of a country.See http://iatistandard.org/codelists/admin2</td>
+<td>Text</td>
+<td dir="ltr">location/administrative/@adm2</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>coordinates</td>
+<td>Geodetic coordinates for the location (latitude, longitude).</td>
+<td></td>
+<td dir="ltr">location/coordinates</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>latitude</td>
+<td>The decimal latitude (north is positive), e.g. “45.5″<br/>
+for 45.5 degrees north (45 degrees 30 minutes).</td>
+<td>Decimal</td>
+<td dir="ltr">location/coordinates/@latitude</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>longitude</td>
+<td>The decimal longitude (east is positive), e.g. “-75.5″<br/>
+for 75.5 degrees west (74 degrees 30 minutes).</td>
+<td>Decimal</td>
+<td dir="ltr">location/coordinates/@longitude</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>precision</td>
+<td>An IATI-defined subset of UCPD precision codes for<br/>
+the location (e.g. “2″ for within 25 km of the<br/>
+specified latitude/longitude).See http://iatistandard.org/codelists/geographical_precision</td>
+<td>Text</td>
+<td dir="ltr">location/coordinates/@precision</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>gazetteer-entry</td>
+<td>Identifier for this location’s entry in a geographical<br/>
+gazetteer, such as GEOnet. The entry identifier is the<br/>
+element content.</td>
+<td></td>
+<td dir="ltr">location/gazetteer-entry</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">location/gazetteer-entry/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>gazetteer-ref</td>
+<td>Reference to the gazetteer containing the entry.See http://iatistandard.org/codelists/gazetteer_agency</td>
+<td>Text</td>
+<td dir="ltr">location/gazetteer-entry/@gazetteer-ref</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/transaction">transaction</a></td>
+<td></td>
+<td>Committed or actual money flowing in or out of an aid<br/>
+activity.The @ref attribute allows uniquely identifying a<br/>
+transaction, to match it up with the corresponding in- or<br/>
+outflow in a different activity.</td>
+<td></td>
+<td dir="ltr">transaction</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>ref</td>
+<td>Machine-readable identification string for the business<br/>
+object being described.</td>
+<td>Text</td>
+<td dir="ltr">transaction/@ref</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value</td>
+<td>The amount of the contribution (or its value, if in<br/>
+kind).</td>
+<td></td>
+<td dir="ltr">transaction/value</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>xsd:integer</td>
+<td dir="ltr">transaction/value/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>currency</td>
+<td>An ISO 639 code for the original currency of the amount.<br/>
+This is required for all currency amounts unless the<br/>
+iati-activity/@default-currency attribute is specified.Currency codes are listed at
+http://iatistandard.org/codelists/currency</td>
+<td>Text</td>
+<td dir="ltr">transaction/value/@currency</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value-date</td>
+<td>The date that this value was set (to allow historical<br/>
+currency conversion). The date must be in ISO 8601<br/>
+format (YYYY-MM-DD).</td>
+<td>Text</td>
+<td dir="ltr">transaction/value/@value-date</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>description</td>
+<td>A human-readable description of the transaction.</td>
+<td></td>
+<td dir="ltr">transaction/description</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">transaction/description/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">transaction/description/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>transaction-type</td>
+<td>The type of the transaction (e.g. commitment,<br/>
+disbursement, expenditure, etc.). The @ref attribute<br/>
+contains a code defined by IATI, and the content is an<br/>
+optional free-text description of the type.For the value of the @code attribute, see
+http://iatistandard.org/codelists/transaction_type</td>
+<td></td>
+<td dir="ltr">transaction/transaction-type</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">transaction/transaction-type/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">transaction/transaction-type/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">transaction/transaction-type/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>provider-org</td>
+<td>The organisation providing the money for the<br/>
+transaction (if omitted, the provider organisation is<br/>
+the reporting organisation).For the value of the @ref attribute, see the list of<br/>
+officially-registered organizations at
+http://iatistandard.org/codelists/organisation</td>
+<td></td>
+<td dir="ltr">transaction/provider-org</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">transaction/provider-org/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>ref</td>
+<td>Machine-readable identification string for the business<br/>
+object being described.</td>
+<td>Text</td>
+<td dir="ltr">transaction/provider-org/@ref</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>provider-activity-id</td>
+<td>The internal identifier used by the provider for<br/>
+its activity that provides the funds for this<br/>
+transaction (*not* the IATI activity identifier).</td>
+<td>Text</td>
+<td dir="ltr">transaction/provider-org/@provider-activity-id</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>receiver-org</td>
+<td>The organisation receiving the money from the<br/>
+transaction (if omitted, then the receiver<br/>
+organisation is the reporting organisation).For the value of the @ref attribute, see the list of<br/>
+officially-registered organizations at
+http://iatistandard.org/codelists/organisation</td>
+<td></td>
+<td dir="ltr">transaction/receiver-org</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">transaction/receiver-org/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>ref</td>
+<td>Machine-readable identification string for the business<br/>
+object being described.</td>
+<td>Text</td>
+<td dir="ltr">transaction/receiver-org/@ref</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>receiver-activity-id</td>
+<td>The internal identifier used by the receiver<br/>
+organisation for its activity that receives the<br/>
+funds from this transaction (not to be confused<br/>
+with the IATI identifier for the target activity).</td>
+<td>Text</td>
+<td dir="ltr">transaction/receiver-org/@receiver-activity-id</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>transaction-date</td>
+<td>A milestone date for this transaction (such as the<br/>
+decision date, disbursement date, etc.).</td>
+<td></td>
+<td dir="ltr">transaction/transaction-date</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">transaction/transaction-date/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>iso-date</td>
+<td>The ISO 8601 version of the transaction date.</td>
+<td>Text</td>
+<td dir="ltr">transaction/transaction-date/@iso-date</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>flow-type</td>
+<td>Optional element to override the top-level<br/>
+default-flow-type element.For the value of the @code attribute, see
+http://iatistandard.org/codelists/flow_type</td>
+<td></td>
+<td dir="ltr">transaction/flow-type</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">transaction/flow-type/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">transaction/flow-type/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">transaction/flow-type/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>aid-type</td>
+<td>Optional element to override the top-level<br/>
+default-aid-type element (debt relief, etc.) on a<br/>
+transaction-by-transaction basis if needed.For the value of the @code attribute, see
+http://iatistandard.org/codelists/aid_type</td>
+<td></td>
+<td dir="ltr">transaction/aid-type</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">transaction/aid-type/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">transaction/aid-type/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">transaction/aid-type/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>finance-type</td>
+<td>Optional element to override the top-level<br/>
+default-finance-type element on a<br/>
+transaction-by-transaction basis, if needed.For the value of the @code attribute, see
+http://iatistandard.org/codelists/finance_type</td>
+<td></td>
+<td dir="ltr">transaction/finance-type</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">transaction/finance-type/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">transaction/finance-type/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">transaction/finance-type/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>tied-status</td>
+<td>Optional element to override the top-level<br/>
+default-tied-status element (pooled, etc.) on a<br/>
+transaction-by-transaction basis if needed.For the value of the @code attribute, see
+http://iatistandard.org/codelists/tied_status</td>
+<td></td>
+<td dir="ltr">transaction/tied-status</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">transaction/tied-status/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">transaction/tied-status/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">transaction/tied-status/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>disbursement-channel</td>
+<td>The channel through which the funds will flow for this<br/>
+transaction, from an IATI code list.</td>
+<td></td>
+<td dir="ltr">transaction/disbursement-channel</td>
+<td dir="ltr">..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">transaction/disbursement-channel/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">transaction/disbursement-channel/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">transaction/disbursement-channel/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/result">result</a></td>
+<td></td>
+<td>A measurable result of aid work.</td>
+<td></td>
+<td dir="ltr">result</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">result/@type</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>aggregation-status</td>
+<td>Boolean flag indicating whether the data in the result set<br/>
+are suitable for aggregation.</td>
+<td>Boolean</td>
+<td dir="ltr">result/@aggregation-status</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>title</td>
+<td>A short, human-readable title. May be repeated for different<br/>
+languages.</td>
+<td></td>
+<td dir="ltr">result/title</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">result/title/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">result/title/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>description</td>
+<td>A longer, human-readable description. May be repeated for<br/>
+different languages.</td>
+<td></td>
+<td dir="ltr">result/description</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">result/description/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">result/description/@type</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">result/description/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>indicator</td>
+<td>The indicator(s) that meet the results. There can be<br/>
+multiple indicators for each result.</td>
+<td></td>
+<td dir="ltr">result/indicator</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>measure</td>
+<td>The type of measurement for the indicator value<br/>
+e.g. unit, percentage, NDP.</td>
+<td>Text</td>
+<td dir="ltr">result/indicator/@measure</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>ascending</td>
+<td>True if the indicator improves from small to large<br/>
+(e.g. clinics built); false if it improves from<br/>
+large to small (e.g. cases of a disease). Defaults<br/>
+to true if omitted.</td>
+<td>Boolean</td>
+<td dir="ltr">result/indicator/@ascending</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>title</td>
+<td>A short, human-readable title. May be repeated for different<br/>
+languages.</td>
+<td></td>
+<td dir="ltr">result/indicator/title</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">result/indicator/title/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">result/indicator/title/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>description</td>
+<td>A longer, human-readable description. May be repeated for<br/>
+different languages.</td>
+<td></td>
+<td dir="ltr">result/indicator/description</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">result/indicator/description/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">result/indicator/description/@type</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">result/indicator/description/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>baseline</td>
+<td>The baseline value for the indicator</td>
+<td></td>
+<td dir="ltr">result/indicator/baseline</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>year</td>
+<td>The year the baseline value was taken</td>
+<td>Integer</td>
+<td dir="ltr">result/indicator/baseline/@year</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value</td>
+<td>The baseline value.</td>
+<td>Text</td>
+<td dir="ltr">result/indicator/baseline/@value</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>comment</td>
+<td>A human-readable comment associated with a piece of aid information.</td>
+<td></td>
+<td dir="ltr">result/indicator/baseline/comment</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">result/indicator/baseline/comment/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">result/indicator/baseline/comment/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>period</td>
+<td>The period covered for the results<br/>
+reported. Multiple periods can be reported for a<br/>
+single indicator.</td>
+<td></td>
+<td dir="ltr">result/indicator/period</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>period-start</td>
+<td>The start of the reporting period</td>
+<td></td>
+<td dir="ltr">result/indicator/period/period-start</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>A date. The ISO 8601 date goes into the @iso-date attribute.<br/>
+The content may be free-form text.</td>
+<td>mixed</td>
+<td dir="ltr">result/indicator/period/period-start/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>Text</td>
+<td dir="ltr">result/indicator/period/period-start/@iso-date</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>period-end</td>
+<td>The end of the reporting period</td>
+<td></td>
+<td dir="ltr">result/indicator/period/period-end</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>A date. The ISO 8601 date goes into the @iso-date attribute.<br/>
+The content may be free-form text.</td>
+<td>mixed</td>
+<td dir="ltr">result/indicator/period/period-end/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>Text</td>
+<td dir="ltr">result/indicator/period/period-end/@iso-date</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>target</td>
+<td>The target milestone for this period</td>
+<td></td>
+<td dir="ltr">result/indicator/period/target</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value</td>
+<td>The target value.</td>
+<td>Text</td>
+<td dir="ltr">result/indicator/period/target/@value</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>comment</td>
+<td>A human-readable comment associated with a piece of aid information.</td>
+<td></td>
+<td dir="ltr">result/indicator/period/target/comment</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">result/indicator/period/target/comment/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">result/indicator/period/target/comment/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>actual</td>
+<td>A record of the achieved result for this period.</td>
+<td></td>
+<td dir="ltr">result/indicator/period/actual</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value</td>
+<td>The actual measure.</td>
+<td>Text</td>
+<td dir="ltr">result/indicator/period/actual/@value</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>comment</td>
+<td>A human-readable comment associated with a piece of aid information.</td>
+<td></td>
+<td dir="ltr">result/indicator/period/actual/comment</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">result/indicator/period/actual/comment/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">result/indicator/period/actual/comment/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/conditions">conditions</a></td>
+<td></td>
+<td>Conditions attached to the activity.</td>
+<td></td>
+<td dir="ltr">conditions</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>attached</td>
+<td>A yes/no (1/0) value stating whether there are conditions<br/>
+attached to the activity.</td>
+<td>Boolean</td>
+<td dir="ltr">conditions/@attached</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>condition</td>
+<td>Description of one condition attached to the activity.</td>
+<td></td>
+<td dir="ltr">conditions/condition</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">conditions/condition/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">conditions/condition/@type</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/budget">budget</a></td>
+<td></td>
+<td>The value of the aid activity’s budget for each financial year<br/>
+as in the original project document.</td>
+<td></td>
+<td dir="ltr">budget</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">budget/@type</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>period-start</td>
+<td>The starting date for the budget period, in ISO 8601<br/>
+format (e.g. 2010-04-01 for 1 April 2010). This element<br/>
+must be present.</td>
+<td></td>
+<td dir="ltr">budget/period-start</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>A date. The ISO 8601 date goes into the @iso-date attribute.<br/>
+The content may be free-form text.</td>
+<td>mixed</td>
+<td dir="ltr">budget/period-start/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>Text</td>
+<td dir="ltr">budget/period-start/@iso-date</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>period-end</td>
+<td>The ending date for the budget period, in ISO 8601<br/>
+format (e.g. 2011-03-31 for 31 March 2011). This<br/>
+element must be present.</td>
+<td></td>
+<td dir="ltr">budget/period-end</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>A date. The ISO 8601 date goes into the @iso-date attribute.<br/>
+The content may be free-form text.</td>
+<td>mixed</td>
+<td dir="ltr">budget/period-end/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>Text</td>
+<td dir="ltr">budget/period-end/@iso-date</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value</td>
+<td>The total value of the organisation’s aid budget for<br/>
+this period. This element is required.</td>
+<td></td>
+<td dir="ltr">budget/value</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>xsd:integer</td>
+<td dir="ltr">budget/value/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>currency</td>
+<td>An ISO 639 code for the original currency of the amount.<br/>
+This is required for all currency amounts unless the<br/>
+iati-activity/@default-currency attribute is specified.Currency codes are listed at
+http://iatistandard.org/codelists/currency</td>
+<td>Text</td>
+<td dir="ltr">budget/value/@currency</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value-date</td>
+<td>The date that this value was set (to allow historical<br/>
+currency conversion). The date must be in ISO 8601<br/>
+format (YYYY-MM-DD).</td>
+<td>Text</td>
+<td dir="ltr">budget/value/@value-date</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/planned-disbursement">planned-disbursement</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td dir="ltr">planned-disbursement</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>updated</td>
+<td>The date on which this line of information was last<br/>
+updated. Previous updates for the same period should also<br/>
+be reported.</td>
+<td>Text</td>
+<td dir="ltr">planned-disbursement/@updated</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>period-start</td>
+<td>The starting date for the disbursement period, in ISO 8601<br/>
+format (e.g. 2010-04-01 for 1 April 2010). This element<br/>
+must be present.</td>
+<td></td>
+<td dir="ltr">planned-disbursement/period-start</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>A date. The ISO 8601 date goes into the @iso-date attribute.<br/>
+The content may be free-form text.</td>
+<td>mixed</td>
+<td dir="ltr">planned-disbursement/period-start/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>Text</td>
+<td dir="ltr">planned-disbursement/period-start/@iso-date</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>period-end</td>
+<td>The ending date for the disbursement period, in ISO 8601<br/>
+format (e.g. 2011-03-31 for 31 March 2011). This<br/>
+element must be present.</td>
+<td></td>
+<td dir="ltr">planned-disbursement/period-end</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>A date. The ISO 8601 date goes into the @iso-date attribute.<br/>
+The content may be free-form text.</td>
+<td>mixed</td>
+<td dir="ltr">planned-disbursement/period-end/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>Text</td>
+<td dir="ltr">planned-disbursement/period-end/@iso-date</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value</td>
+<td>The amount to be disbursed in the specified currency.</td>
+<td></td>
+<td dir="ltr">planned-disbursement/value</td>
+<td dir="ltr">0..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>xsd:integer</td>
+<td dir="ltr">planned-disbursement/value/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>currency</td>
+<td>An ISO 639 code for the original currency of the amount.<br/>
+This is required for all currency amounts unless the<br/>
+iati-activity/@default-currency attribute is specified.Currency codes are listed at
+http://iatistandard.org/codelists/currency</td>
+<td>Text</td>
+<td dir="ltr">planned-disbursement/value/@currency</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value-date</td>
+<td>The date that this value was set (to allow historical<br/>
+currency conversion). The date must be in ISO 8601<br/>
+format (YYYY-MM-DD).</td>
+<td>Text</td>
+<td dir="ltr">planned-disbursement/value/@value-date</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/related-activity">related-activity</a></td>
+<td></td>
+<td>XX.XX Related ActivityAnother IATI activity related to this one. The ‘type’<br/>
+attribute describes the type of relationship (e.g. parent,<br/>
+sibling). This does not need to be used to express funding<br/>
+relationships, since those are covered in individual<br/>
+transactions.For the value of the @type attribute, see
+http://iatistandard.org/codelists/related_activity_type</td>
+<td></td>
+<td dir="ltr">related-activity</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">related-activity/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>ref</td>
+<td>Machine-readable identification string for the business<br/>
+object being described.</td>
+<td>Text</td>
+<td dir="ltr">related-activity/@ref</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>type</td>
+<td>Free text describing the type of thing being referenced.</td>
+<td>Text</td>
+<td dir="ltr">related-activity/@type</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">related-activity/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/document-link">document-link</a></td>
+<td></td>
+<td>A categorized link to an external document.</td>
+<td></td>
+<td dir="ltr">document-link</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>url</td>
+<td>The target URL of the external document, e.g. “http://www.example.org/doc.html”.</td>
+<td>xsd:anyURI</td>
+<td dir="ltr">document-link/@url</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>format</td>
+<td>The MIME type of the external document,<br/>
+e.g. “application/pdf”. A partial list of MIME types<br/>
+appears at http://iatistandard.org/codelists/file_format</td>
+<td>Text</td>
+<td dir="ltr">document-link/@format</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>language</td>
+<td>The ISO 639 language code for the target document, e.g. “en”.</td>
+<td>xsd:language</td>
+<td dir="ltr">document-link/@language</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>title</td>
+<td>A short, human-readable title. May be repeated for different<br/>
+languages.</td>
+<td></td>
+<td dir="ltr">document-link/title</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that may contain human-readable text<br/>
+in different languages.</td>
+<td>mixed</td>
+<td dir="ltr">document-link/title/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">document-link/title/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>category</td>
+<td>A category into which this document falls, using the<br/>
+IATI document category code list. Must be specified at<br/>
+least once, and may be repeated for multiple categories.For the value of the @code attribute, see
+http://iatistandard.org/codelists/document_category</td>
+<td></td>
+<td dir="ltr">document-link/category</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td>Data type for an element that refers to an object that must<br/>
+have a code.</td>
+<td>mixed</td>
+<td dir="ltr">document-link/category/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>code</td>
+<td>Machine-readable code for the entity being described.</td>
+<td>Text</td>
+<td dir="ltr">document-link/category/@code</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td></td>
+<td dir="ltr">document-link/category/@xml:lang</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td dir="ltr"><a href="http://iatistandard.org/activity-docs/legacy-data">legacy-data</a></td>
+<td></td>
+<td>Hold a single name=value pair of legacy data. This element is<br/>
+*not* for adding new data types; instead, it holds the<br/>
+original (non-IATI) value or code for an existing data type.</td>
+<td></td>
+<td dir="ltr">legacy-data</td>
+<td dir="ltr">1..*</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td></td>
+<td></td>
+<td>mixed</td>
+<td dir="ltr">legacy-data/text()</td>
+<td dir="ltr"></td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>name</td>
+<td>The original field name.</td>
+<td>Text</td>
+<td dir="ltr">legacy-data/@name</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>value</td>
+<td>The original field value.</td>
+<td>Text</td>
+<td dir="ltr">legacy-data/@value</td>
+<td dir="ltr">1..1</td>
+</tr>
+<tr>
+<td dir="ltr"></td>
+<td>iati-equivalent</td>
+<td>The name of the equivalent IATI element (if available).</td>
+<td>xsd:NMTOKEN</td>
+<td dir="ltr">legacy-data/@iati-equivalent</td>
+<td dir="ltr">0..1</td>
+</tr>
+<tr>
+<td colspan="7" dir="ltr">
+<pre>      International Aid Transparency Initiative: Activity-Information Schema
+
+      Release 1.01, 2010-11-08
+
+      NOTE: the xml.xsd and iati-common.xsd schemas must be in the
+      same directory as this one.
+
+      This W3C XML Schema defines an XML document type for information
+      about one or more aid-related activities, following the standard
+      published at http://iatistandard.org/
+
+      This document type may be extended with additional elements and
+      attributes, but they must belong to an explicit XML namespace.</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-3383 -->
+<!-- #comments -->
+
+</div>

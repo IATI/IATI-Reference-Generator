@@ -1,0 +1,104 @@
+<div class="body" role="main">
+<p id="dimension">
+<h1>dimension</h1>
+<p><code>iati-activities/iati-activity/result/indicator/period/actual/dimension</code></p>
+<p>This is the reference page for the XML element <code>dimension</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A category used for disaggregating the result by gender, age, etc.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-indicator-period-actual-dimension-name">
+<dt>@name</dt>
+<dd><p>Freetext description of a category being disaggregated.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-result-indicator-period-actual-dimension-value">
+<dt>@value</dt>
+<dd><p>Description of the value being disaggregated.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example of <code>dimension</code> in context of an <code>actual</code> element (as part of a parent <code>result</code>/<code>indicator</code> element).</p>
+
+<p>This example declares <code>@name</code> as <em>sex</em>, with a <code>@value</code> of <em>female</em>:</p>
+
+<p><code><pre>&lt;dimension name="sex" value="female" /&gt;
+</pre></code>
+</p>
+
+<p>The <code>dimension</code> element can be repeated within any <code>actual</code> element:</p>
+
+<p><code><pre>     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+      &lt;period-end iso-date="2013-03-31" /&gt;
+      &lt;target value="10"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+        &lt;narrative&gt;Target comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_target_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Target Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period target&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/target&gt;
+      &lt;actual value="11"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+         &lt;narrative&gt;Actual comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_actual_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Actual Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period actual&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/actual&gt;
+     &lt;/period&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.02</h3>
+<p>The optional <code>dimension</code> element was <a href="http://support.iatistandard.org/entries/79499149-Support-disaggregation-of-performance-data">added</a>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L2531">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/dimension.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

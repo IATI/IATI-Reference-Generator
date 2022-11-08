@@ -1,0 +1,556 @@
+<div class="body" role="main">
+<p id="how-to-publish-humanitarian-data">
+<h1>How to publish humanitarian data</h1>
+<p>Version 2.03 of the IATI Standard contains a number of new and enhanced elements and attributes. These, along with the humanitarian flag attribute introduced at v2.02, allow publishers to mark their activities as humanitarian. This guidance has been developed with the humanitarian community and is intended to help with the alignment and import of humanitarian IATI data into UN OCHA’s Financial Tracking Service (FTS), as well as meeting Grand Bargain transparency commitments.</p>
+<p>It is up to each publisher to determine whether an activity should be categorised as humanitarian and whether the activity is partially or wholly humanitarian. These distinctions can then be included in an organisation’s IATI data using the humanitarian elements and attributes described below.</p>
+<p>In the event of any rapid onset or other emergency it is recommended that publishers update and re-publish humanitarian activities on a daily or at least a weekly basis in order that the most up-to-date information is continually available to data users.</p>
+<p id="how-to-use-the-humanitarian-elements-and-attributes">
+<h2>How to use the humanitarian elements and attributes:</h2>
+<p>Please see the guidance below on the seven areas in which humanitarian data can be published in IATI activity files.</p>
+<ol>
+<li>Identifying humanitarian activities - humanitarian flag</li>
+<li>Using humanitarian OECD DAC 5-digit sector codes</li>
+<li>Humanitarian scope - GLIDE codes and UN Humanitarian Response Plan (HRP)</li>
+<li>Publishing humanitarian budgets - budget-not-provided attribute</li>
+<li>Identifying local actors - participating organisation types</li>
+<li>Linking to Humanitarian Global Clusters</li>
+<li>Classifying contributions: earmarking, cash and / or vouchers - Aid Type</li>
+</ol>
+<p><strong>Note: It is up to each organisation to decide on the humanitarian elements and attributes to be included in their data.</strong></p>
+</p>
+<p id="identifying-humanitarian-activities">
+<h2>1) Identifying humanitarian activities</h2>
+<p>The primary way of identifying humanitarian activities is by including the humanitarian flag at activity level.</p>
+<table border="1">
+<colgroup>
+<col width="50%"/>
+<col width="50%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Humanitarian Flag (IATI Standard version 2.02, 2.03)</td>
+<td>Attribute (boolean)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;iati-activity humanitarian="1"&gt;
+</pre></code>
+</p>
+<p>This is a yes/no flag which indicates that an activity relates entirely or partially to humanitarian aid. Each flag must have either the value <strong>1 = humanitarian</strong> or <strong>0 = development</strong>.</p>
+<p>Activities with the humanitarian flag set to 1, can be either wholly or partially humanitarian.</p>
+<p><strong>Identifying humanitarian transactions</strong></p>
+<p>The humanitarian flag can also be added to transactions.</p>
+<p>The humanitarian flag at transaction level should only be used if the transactions can be separated into humanitarian and development components. In this case, each transaction should be given a humanitarian flag of value <strong>1 = humanitarian</strong> or <strong>0 = development</strong>.</p>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;transaction ref="1234" humanitarian="0"&gt;
+&lt;transaction ref="2345" humanitarian="1"&gt;
+</pre></code>
+</p>
+</p>
+<p id="using-humanitarian-oecd-dac-5-digit-sector-codes">
+<h2>2) Using humanitarian OECD DAC 5-digit sector codes</h2>
+<table border="1">
+<colgroup>
+<col width="50%"/>
+<col width="50%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Sector</td>
+<td>Element</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;sector vocabulary="1" code="72010" /&gt;
+</pre></code>
+</p>
+<p>Every activity reported to IATI must include at least one sector element. IATI recommends that sector vocabulary 1, the OECD DAC 5-digit sector codelist is used. These sector codes cover a wide range of humanitarian and development work. For further guidance on sectors see: <a href="../activity-thematic-focus/"><span>Activity Thematic Focus (Sectors)</span></a>.</p>
+<p>Specific humanitarian <a href="/en/iati-standard/203/codelists/sector">5 digit DAC sector codes</a> currently range from 72010 to 74020 and 93010 to 93018. The humanitarian code or codes that best describe the activity, or humanitarian component(s) of an activity taking place can be added to any IATI activity marked with the ‘humanitarian’ flag.</p>
+<p>Multiple sector codes can be used. If an activity has both a humanitarian and development component at least two sector codes are needed. For example, this could be reported as 60% of the funding going to the OECD DAC sector code ‘emergency food and assistance’ (72040) and 40% going to ‘basic nutrition’ (12240):</p>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;sector vocabulary="1" code="72040" percentage="60" /&gt;
+&lt;sector vocabulary="1" code="12240" percentage="40" /&gt;
+</pre></code>
+</p>
+</p>
+<p id="humanitarian-scope">
+<h2>3) Humanitarian scope</h2>
+<table border="1">
+<colgroup>
+<col width="50%"/>
+<col width="50%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Humanitarian-scope</td>
+<td>Element</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;humanitarian-scope type="1" vocabulary="1-2" code="EQ-2015-000048-NPL"&gt;
+  &lt;narrative&gt;Nepal Earthquake April 2015&lt;narrative&gt;
+&lt;/humanitarian-scope&gt;
+</pre></code>
+</p>
+<p><code><pre>&lt;humanitarian-scope type="2" vocabulary="2-1" code="FNPL15"&gt;
+  &lt;narrative&gt;Nepal Earthquake Flash Appeal 2015&lt;/narrative&gt;
+&lt;/humanitarian-scope&gt;
+</pre></code>
+</p>
+<p>The ‘humanitarian-scope’ element can be used to identify the specific emergency and/or appeal that an IATI activity is in response to. Where possible, publishers should use a recognised code to identify both the emergency and appeal.</p>
+<ul>
+<li>Emergencies (type 1) should have a corresponding GLIDE number (vocabulary 1-2)</li>
+<li>Appeals (type 2) should have a corresponding Plan Code provided by UN OCHA (vocabulary 2-1). An additional vocabulary (99) can be used where publishers wish to identify a plan specified by other humanitarian agencies.</li>
+</ul>
+<p><strong>Linking to an emergency (vocabulary 1-2)</strong></p>
+<p>Emergencies can be uniquely identified by their ‘GLIDE number’.</p>
+<p>Each emergency registered on <a href="https://glidenumber.net/glide/public/search/search.jsp">GLIDE</a> has its own unique code which is year and country specific. The format for these codes is: [Emergency Type] + [Year] + [Number] + [Country].</p>
+<p>If an activity covers a complex emergency that is multi year and/or multi country, multiple GLIDE references should be included. These should be added by reporting multiple humanitarian-scope elements.</p>
+<p><strong>Linking to an appeal (vocabulary 2-1)</strong></p>
+<p>Appeals can be identified by their ‘Plan code’ and often consist of flash appeals and humanitarian response plans (HRPs). These codes are created by UN OCHA for use in their Financial Tracking Service (FTS).</p>
+<p>Each appeal has its own unique plan code which covers one country, or one region, for one year.</p>
+<p>If no recognised code to identify the emergency or appeal is available, publishers can use vocabulary code ‘99’ to declare a code from another public list. A URL for the public list and a description of the emergency or appeal should be provided: For example:</p>
+<p><code><pre>&lt;humanitarian-scope type="1" vocabulary="99" code="5" vocabulary-uri="http://www.example.com/appeals.html"&gt;
+      &lt;narrative&gt;Mali Refugee Crisis 2013&lt;/narrative&gt;
+&lt;/humanitarian-scope&gt;
+</pre></code>
+</p>
+<p>For relevant guidance on use of the humanitarian-scope element to identify COVID-19 related activities see <a href="../covid-19/"><span>COVID-19 related data</span></a>.</p>
+</p>
+<p id="publishing-humanitarian-budgets">
+<h2>4) Publishing humanitarian budgets</h2>
+<table border="1">
+<colgroup>
+<col width="50%"/>
+<col width="50%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Budget-not-provided (2.03+)</td>
+<td>Attribute</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;iati-activity humanitarian="1" budget-not-provided="3"&gt;
+</pre></code>
+</p>
+<p>This attribute can be used to explain why an activity does not contain any <a href="../activity-budgets/"><span>activity budget</span></a> elements. It must only be used when no budget elements are reported.</p>
+<p>Activities related to rapid onset emergencies often do not have an established budget. The budget-not-provided codelist provides three reasons why no budget is reported. In the case of humanitarian emergencies, <a href="/en/iati-standard/203/codelists/budgetnotprovided">Rapid Onset Emergency</a> (code 3), should be used.</p>
+<p>Humanitarian activities, with expected transaction spend, which are not rapid onset emergencies should have a reported budget.</p>
+</p>
+<p id="identifying-local-actors">
+<h2>5) Identifying local actors</h2>
+<table border="1">
+<colgroup>
+<col width="50%"/>
+<col width="50%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Participating-org / type</td>
+<td>Attribute</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;participating-org ref="CC-CCC-123456789" role="4" type="24"&gt;
+  &lt;narrative&gt;Organisation Name&lt;/narrative&gt;
+&lt;/participating-org&gt;
+</pre></code>
+</p>
+<p>The <a href="/en/iati-standard/203/codelists/organisationtype">organisation type</a> attribute identifies the type of each organisation that is participating in an activity, for example:</p>
+<ul>
+<li>International NGO = Oxfam GB</li>
+<li>National NGO = Seatini (Uganda)</li>
+<li>Regional NGO = African Center for Economic Transformation (ACET)</li>
+</ul>
+<p>With the rising importance of enabling more locally led humanitarian responses and for the purposes of tracking commitments around localising aid to partner country-based NGOs, a new organisation type (24 - Partner Country based NGO) was added in v2.03. The NGO organisation types available in IATI are listed below. Please note that some are pending descriptions.</p>
+<p><strong>Organisation types available for NGOs</strong></p>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="42%"/>
+<col width="42%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>21</td>
+<td>International NGO</td>
+<td> </td>
+</tr>
+<tr><td>22</td>
+<td>National NGO</td>
+<td> </td>
+</tr>
+<tr><td>23</td>
+<td>Regional NGOs</td>
+<td> </td>
+</tr>
+<tr><td>24</td>
+<td>Partner Country based NGO</td>
+<td>Local and National NGO / CSO based in aid/assistance recipient country</td>
+</tr>
+</tbody>
+</table>
+<p>The name and type of an organisation receiving funds should also be added to each transaction, using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/receiver-org">receiver-org element</a>. See the <a href="../financial-transactions/"><span>Financial Transactions</span></a> page for further guidance.</p>
+</p>
+<p id="linking-to-humanitarian-global-clusters">
+<h2>6) Linking to Humanitarian Global Clusters</h2>
+<table border="1">
+<colgroup>
+<col width="50%"/>
+<col width="50%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Sector</td>
+<td>Element</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;sector vocabulary="10" code="4" percentage="50" /&gt;
+&lt;sector vocabulary="10" code="7" percentage="50" /&gt;
+</pre></code>
+</p>
+<p>The <a href="https://www.humanitarianresponse.info/en/about-clusters/what-is-the-cluster-approach">humanitarian response clusters</a> are established by groups of humanitarian organisations to support coordination in a crisis response. Each cluster is formed of organisations (including both UN agencies and NGOs) tackling a main area of humanitarian action, e.g. water, health or logistics. The groups are designated by the Inter-Agency Standing Committee (IASC) and have clear responsibilities for coordination in emergencies.</p>
+<p>Humanitarian Global Clusters can be specified in IATI data using the sector element. These can be provided alongside the OECD 5-digit DAC sector codes. The page <a href="../activity-thematic-focus/"><span>Activity Thematic Focus (Sectors)</span></a> contains specific guidance on how to use sectors in IATI.</p>
+<p>Multiple clusters can be added as long as a percentage split is included. The percentage split details the share of expected funding going to the particular cluster. All percentages from the same vocabulary must add up to 100%.</p>
+<p>The Humanitarian Global Clusters can be provided using vocabulary 10 (according to the <a href="/en/iati-standard/203/codelists/sectorvocabulary">sector vocabulary codelist</a>). The codes can be downloaded by following the links on the vocabulary page. IATI does not maintain a separate list of the codes.</p>
+</p>
+<p id="classifying-contributions-earmarking-cash-and-or-vouchers">
+<h2>7) Classifying contributions: earmarking, cash and / or vouchers</h2>
+<table border="1">
+<colgroup>
+<col width="50%"/>
+<col width="50%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Default-aid-type</td>
+<td>Element</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;default-aid-type vocabulary="1" code="CO1" /&gt;
+&lt;default-aid-type vocabulary="2" code="4" /&gt;
+&lt;default-aid-type vocabulary="4" code="1" /&gt;
+</pre></code>
+</p>
+<table border="1">
+<colgroup>
+<col width="50%"/>
+<col width="50%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Transaction / aid-type</td>
+<td>Element</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example:</strong></p>
+<p><code><pre>&lt;aid-type vocabulary="1" code="CO1" /&gt;
+&lt;aid-type vocabulary="2" code="4" /&gt;
+&lt;aid-type vocabulary="4" code="1" /&gt;
+</pre></code>
+</p>
+<p>The aid-type elements can be used to add classifications to activities and their transactions. In v2.03, IATI added the ability to provide specific humanitarian classifications including the level of earmarking and whether or not funding is being provided via cash and / or vouchers.</p>
+<p>These classifications should be declared alongside the use of the OECD DAC aid type categories ( <a href="/en/iati-standard/203/codelists/aidtypevocabulary">vocabulary 1</a>) e.g. budget support or debt relief. When using the aid type elements, the default-aid-type applies to the whole activity, but can be overridden within a single transaction. See the page <a href="../activity-classifications/"><span>Additional Activity Classifications</span></a> for further guidance.</p>
+<p><strong>Declaring earmarked contributions</strong></p>
+<p>Part of the <a href="https://interagencystandingcommittee.org/about-the-grand-bargain">Grand Bargain commitment</a> is to reduce the earmarking of donor contributions. To measure this, two new classification systems of earmarking modalities have been included in IATI. These appear in the form of <a href="/en/iati-standard/203/codelists/aidtypevocabulary">Aid Type Vocabularies</a> 2 and 3.</p>
+<p>The Earmarking Category codes (vocabulary 2) are:</p>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="42%"/>
+<col width="42%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>1</td>
+<td>Unearmarked</td>
+<td>Any or all of the Earmarking Modality code A, B or C.</td>
+</tr>
+<tr><td>2</td>
+<td>Softly Earmarked</td>
+<td>Any or all of the Earmarking Modality code A, B or C.</td>
+</tr>
+<tr><td>3</td>
+<td>Earmarked</td>
+<td>Any or all of the Earmarking Modality code G or H.</td>
+</tr>
+<tr><td>4</td>
+<td>Tightly Earmarked</td>
+<td>Any or all of the Earmarking Modality code I, J or K.</td>
+</tr>
+</tbody>
+</table>
+<p>A breakdown of each category can be found in the <a href="https://reliefweb.int/sites/reliefweb.int/files/resources/Grand_Bargain_final_22_May_FINAL-2.pdf">Earmarking Modality</a> codelist (vocabulary 3, see Annex 1).</p>
+<p><strong>Declaring cash and voucher assistance</strong></p>
+<p>The <a href="https://interagencystandingcommittee.org/about-the-grand-bargain">Grand Bargain commitment</a> also asked signatories to increase the use of cash and voucher assistance. Transactions can be classified as being part of a cash and / or voucher programme, using the aid-type element at the transaction level. Definitions of the codes have been aligned with the <a href="https://www.calpnetwork.org/library">CaLP Glossary</a>.</p>
+<p>Each transaction should only have one aid-type per vocabulary. Transactions should be disaggregated by cash transfer and voucher modalities.</p>
+<p>The <a href="/en/iati-standard/203/codelists/cashandvouchermodalities">Cash and Voucher Modalities</a> codes (vocabulary 4) are:</p>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="42%"/>
+<col width="42%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Code</th>
+<th>Name</th>
+<th>Description (shortened)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>1</td>
+<td>Cash Transfer</td>
+<td>The provision of assistance in the form of money - either physical currency or e-cash - to recipients (individuals, households or communities).</td>
+</tr>
+<tr><td>2</td>
+<td>Voucher</td>
+<td>A paper, token or e-voucher that can be exchanged for a set quantity or value of goods or services.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="humanitarian-elements-and-attributes-to-use-at-activity-level">
+<h2>Humanitarian elements and attributes to use at activity level</h2>
+<table border="1">
+<colgroup>
+<col width="34%"/>
+<col width="6%"/>
+<col width="26%"/>
+<col width="19%"/>
+<col width="15%"/>
+</colgroup>
+<tbody valign="top">
+<tr><td>Element</td>
+<td>Attribute</td>
+<td>Use</td>
+<td>Rules</td>
+<td>Guidance</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities">iati-activities</a></td>
+<td>@version</td>
+<td>A <a href="/en/iati-standard/203/codelists/version">number</a>
+indicating the IATI specification version in use.</td>
+<td>This element must appear only once for each activity.</td>
+<td>Version 2.03 or higher is needed for data to contain
+all humanitarian elements.</td>
+</tr>
+<tr><td rowspan="2"><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity">iati-activity</a></td>
+<td>@humanitarian</td>
+<td>A yes/no flag which indicates that this activity relates entirely or partially
+to humanitarian aid.</td>
+<td> </td>
+<td>Available values:
+1 = humanitarian
+0 = development
+</td>
+</tr>
+<tr><td>@budget-not-provided</td>
+<td>A <a href="/en/iati-standard/203/codelists/budgetnotprovided">code</a>
+indicating the reason why this activity does not contain any budget elements.</td>
+<td>The attribute must only be used when no budget elements are present.</td>
+<td>In the case of humanitarian emergencies, code 3: Rapid
+Onset Emergency, should be used.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org">participating-org</a></td>
+<td>@type</td>
+<td>Specifies the <a href="/en/iati-standard/203/codelists/organisationtype">type</a>
+of organisation involved in the activity.</td>
+<td> </td>
+<td>Where possible, in country organisations should be
+identified.</td>
+</tr>
+<tr><td rowspan="2"><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector">sector</a></td>
+<td>@vocabulary</td>
+<td>Specifies the <a href="/en/iati-standard/203/codelists/sectorvocabulary">vocabulary</a>
+the sector code is from.</td>
+<td>Sector must either be reported here or for every transaction.
+If multiple sectors are reported, then each vocabulary’s percentage
+must add up to 100%.
+</td>
+<td>It is recommended that vocabulary 1: OECD DAC 5-digit
+codes is used.
+In humanitarian contexts, vocabulary 10: Humanitarian
+Global Clusters (Inter-Agency Standing Committee) should
+also be used.
+</td>
+</tr>
+<tr><td>@code</td>
+<td>Specifies the code from a particular vocabulary.</td>
+<td> </td>
+<td>DAC-5 digit humanitarian codes are those between 72010
+and 74020 inclusive.</td>
+</tr>
+<tr><td rowspan="3"><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/humanitarian-scope">humanitarian-scope</a></td>
+<td>@type</td>
+<td>A <a href="/en/iati-standard/203/codelists/humanitarianscopetype">code</a>
+for the type of event or action being classified.</td>
+<td> </td>
+<td>Available values:
+1 = emergency
+2 = appeal
+</td>
+</tr>
+<tr><td>@vocabulary</td>
+<td>A code for a recognised vocabulary identifying the emergency or appeal.</td>
+<td> </td>
+<td>Most emergencies and appeals use:
+1-2 = Glide
+2-1 = Humanitarian Plan
+</td>
+</tr>
+<tr><td>@code</td>
+<td>Specifies the code from a particular vocabulary.</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr><td rowspan="2"><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/default-aid-type">default-aid-type</a></td>
+<td>@vocabulary</td>
+<td>A <a href="/en/iati-standard/203/codelists/aidtypevocabulary">code</a>
+for a recognised vocabulary identifying the type of default aid.</td>
+<td>Each activity should only contain one code from each aid type vocabulary
+(this is to be a rule at the next major upgrade).</td>
+<td>It is recommended that the OECD aid type codes are used.
+Additional humanitarian vocabularies are:
+2 = Earmarking category
+3 = Earmarking modality
+4 = Cash and voucher modalities
+</td>
+</tr>
+<tr><td>@code</td>
+<td>Specifies the code from a particular vocabulary.</td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="humanitarian-elements-and-attributes-to-use-at-transaction-level">
+<h2>Humanitarian elements and attributes to use at transaction level</h2>
+<table border="1">
+<colgroup>
+<col width="37%"/>
+<col width="4%"/>
+<col width="25%"/>
+<col width="14%"/>
+<col width="20%"/>
+</colgroup>
+<tbody valign="top">
+<tr><td>Element</td>
+<td>Attribute</td>
+<td>Use</td>
+<td>Rules</td>
+<td>Guidance</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction">transaction</a></td>
+<td>@humanitarian</td>
+<td>A flag to indicate that the transaction relates to humanitarian aid.</td>
+<td> </td>
+<td>If the entire activity relates to humanitarian aid this should be reported
+using <a href="mailto:iati-activity/%40humanitarian">iati-activity/<span>@</span>humanitarian</a>, rather than for each transaction.
+Values available:
+1 = Humanitarian
+0 = Development
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/transaction-type">transaction-type</a></td>
+<td>@code</td>
+<td>Specifies the <a href="/en/iati-standard/203/codelists/transactiontype">type</a>
+of financial transaction e.g. pledge, commitment or disbursement.</td>
+<td>This must be included once for each transaction.</td>
+<td>Transaction types 12: Outgoing Pledge and 13: Incoming Pledge were added to
+allow the publication of pledges in humanitarian contexts.</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/provider-org">provider-org</a>
+and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/receiver-org">receiver-org</a></td>
+<td>@type</td>
+<td>Specified the <a href="/en/iati-standard/203/codelists/organisationtype">type</a>
+of organisation providing or receiving the funds.</td>
+<td> </td>
+<td>Where possible, in country organisations should be identified.</td>
+</tr>
+<tr><td rowspan="2"><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type">aid-type</a></td>
+<td>@vocabulary</td>
+<td>A <a href="/en/iati-standard/203/codelists/aidtypevocabulary">code</a> for a
+recognised vocabulary identifying the type of default aid.</td>
+<td>Each transaction should only contain one code from
+each aid type vocabulary (this is to be a rule at
+the next major upgrade).</td>
+<td>It is recommended that the OECD aid type codes are used.
+Additional humanitarian vocabularies are:
+2 = Earmarking category
+3 = Earmarking modality
+4 = Cash and voucher modalities
+</td>
+</tr>
+<tr><td>@code</td>
+<td>Specifies the code from a particular vocabulary.</td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="humanitarian-reporting-should-include">
+<h2>Humanitarian reporting should include</h2>
+<p><strong>Please note:</strong></p>
+<p>When using the IATI Activity Standard to declare humanitarian related activities the following should be considered:</p>
+<ul>
+<li>It is recommended that at least <code>iati-activity/@humanitarian</code> attribute and the humanitarian-scope element should be used for each humanitarian related activity.</li>
+<li>If an emergency is not defined on any of the lists included on the <a href="/en/iati-standard/203/codelists/humanitarianscopevocabulary">Humanitarian Scope Vocabulary</a> list then a publisher can declare their own values using code ‘99’. It is recommended that the title of an emergency is constructed using the format  [location of event] + [type of event] + [month of event] + [year of event].  For example, ‘Nepal Earthquake April 2015’.</li>
+</ul>
+</p>
+</p>
+<meta content="Humanitarian reporting" name="title"/><meta content="Please read detailed publishing guidance on how to use the humanitarian elements and attributes." name="description"/><meta content="activity" name="guidance_type"/><meta content="February 17, 2021" name="date"/></div>

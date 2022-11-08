@@ -1,0 +1,44 @@
+<div id="content" role="main">
+
+<header>
+<h1>Commitment Date</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;commitment-date&gt;&lt;/commitment-date&gt;</h2><p><h3>From the schema</h3><p>
+                    Commitment date.The date must be in ISO 8601
+                    format (YYYY-MM-DD).
+                  </p><p> This element is of the type "dateType" as described in the <a href="/reference_downloads/archive/downloads/1.03/iati-common.xsd">IATI Common schema</a></p><p><p>
+        A date.  The ISO 8601 date goes into the @iso-date attribute.
+        The content may be free-form text.
+      </p><table border="1"><tbody><tr><td>name</td><td>type</td><td>use</td></tr><tr><td>@iso-date</td><td>xsd:date</td><td>optional</td></tr></tbody></table> </p> </p><!--schema wrap--></p>
+<h2 id="commitment_date">Commitment Date</h2>
+
+<!-- EDIT1 SECTION "Commitment Date" [1-51] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<pre>&lt;crs-add&gt;
+
+  &lt;loan-terms rate-1="" rate-2=""&gt; 
+    &lt;commitment-date iso-date=""&gt;&lt;/commitment-date&gt;
+  &lt;/loan-terms&gt;
+ 
+&lt;/crs-add&gt;</pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [52-221] -->
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="section103">1.03</h4>
+<p>
+<p>
+New in 1.03  <br/>
+
+Added the optional crs-add element and its child elements
+</p>
+</p>
+<!-- EDIT3 SECTION "Changelog" [222-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-3799 -->
+
+</div>

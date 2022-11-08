@@ -1,0 +1,98 @@
+<div id="content" role="main">
+
+<header>
+<h1>Contact Info</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;contact-info&gt;&lt;/contact-info&gt;</h2><p><h3>From the schema</h3><p>
+        Contact information for the project.  Specify whatever is
+        available.  You may repeat this element for each contact
+        person.
+      </p><table><tbody><tr><td>@type</td><td>
+        Free text describing the type of thing being referenced.
+      </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p><!--schema wrap--></p>
+<h2 id="contact_info">Contact Info</h2>
+
+<!-- EDIT1 SECTION "Contact Info" [1-48] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+This element is a container for other sub elements:
+</p><pre>    <span><span>&lt;contact-info</span> <span>type</span>=<span>"1"</span><span>&gt;</span></span>
+       ....
+    <span><span>&lt;/contact-info<span>&gt;</span></span></span></pre>
+<p>
+This example from DfID, contains the Organisation, telephone, email and mailing address for the activity.  
+</p><pre>&lt;contact-info type="1"&gt;
+&lt;person-name&gt;A Smith&lt;/person-name&gt;
+&lt;organisation&gt;Department for International Development&lt;/organisation&gt;
+&lt;telephone&gt;+44 (0) 1355 84 3132&lt;/telephone&gt;
+&lt;email&gt;enquiry@dfid.gov.uk&lt;/email&gt;
+&lt;mailing-address&gt;
+Public Enquiry Point, Abercrombie House, Eaglesham Road, East Kilbride, Glasgow G75 8EA
+&lt;/mailing-address&gt;
+&lt;website&gt;https://www.gov.uk/government/organisations/department-for-international-development&lt;/website&gt;
+&lt;/contact-info&gt;</pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [49-782] -->
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="section103">1.03</h4>
+<p>
+<p>
+Added the optional contact-info/website element
+</p>
+<p>
+Added the optional contact-info/@type attribute
+</p>
+<p>
+Changed the following subelements of contact-info to allow multiple-language versions explicitly (no change to parsing; purely semantic):
+</p>
+<ul>
+<li><p> organisation</p>
+</li>
+<li><p> person-name</p>
+</li>
+<li><p> job-title</p>
+</li>
+<li><p> mailing-address</p>
+</li>
+</ul>
+</p>
+<!-- EDIT3 SECTION "Changelog" [783-] -->
+<h3>Elements</h3>
+<table>
+<tbody>
+<tr>
+<td rowspan="8"><strong>Activity Contacts</strong></td>
+<td><a href="../../standard/organisation/">Organisation</a></td>
+</tr>
+<tr>
+<td><a href="person-name/">Person name</a></td>
+</tr>
+<tr>
+<td><a href="job-title/">Job Title</a></td>
+</tr>
+<tr>
+<td><a href="website/">Website</a></td>
+</tr>
+<tr>
+<td><a href="telephone/">Telephone</a></td>
+</tr>
+<tr>
+<td><a href="email/">Email</a></td>
+</tr>
+<tr>
+<td><a href="mailing-address/">Mailing Address</a></td>
+</tr>
+</tbody>
+</table>
+ 							</p>
+
+</p><!-- .entry-content -->
+<!-- #post-1429 -->
+
+</div>
