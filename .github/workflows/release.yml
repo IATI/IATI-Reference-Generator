@@ -1,0 +1,72 @@
+name: Make_Release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: "Build and Release"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y install libxml2-dev libxslt-dev libxslt1-dev python3-dev python3-lxml
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -r requirements.txt
+
+      - name: Build
+        run: |
+          ./build.sh
+
+      - name: "Determine tag"
+        run: |
+          last_tag=`git describe --tags $(git rev-list --tags --max-count=1)`
+          next_tag="${last_tag%.*}.$((${last_tag##*.}+1))"
+          echo "RELEASE_TAG=$next_tag" >> $GITHUB_ENV
+
+      - name: "Create incremental release"
+        uses: "actions/github-script@v6"
+        with:
+          script: |
+            const fs = require('fs');
+
+            try {
+              const release = await github.rest.repos.createRelease({
+                draft: true,
+                generate_release_notes: true,
+                name: process.env.RELEASE_TAG,
+                owner: context.repo.owner,
+                prerelease: false,
+                repo: context.repo.repo,
+                tag_name: process.env.RELEASE_TAG,
+              });
+              await github.rest.repos.uploadReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.data.id,
+                name: 'downloads.zip',
+                data: fs.readFileSync("downloads.zip"),
+              });
+              await github.rest.repos.uploadReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: release.data.id,
+                name: 'output.zip',
+                data: fs.readFileSync("output.zip"),
+              });
+            } catch (error) {
+              core.error(error.message);
+              core.setFailed(error.message);
+            }
