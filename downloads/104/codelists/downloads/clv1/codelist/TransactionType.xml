@@ -1,4 +1,4 @@
-<codelist name="TransactionType" date-last-modified="2022-11-09T14:01:10.101238+00:00" version="" xml:lang="en">
+<codelist name="TransactionType" date-last-modified="2022-11-09T14:11:02.915480+00:00" version="" xml:lang="en">
   <TransactionType>
     <code>C</code>
     <name>Commitment</name>

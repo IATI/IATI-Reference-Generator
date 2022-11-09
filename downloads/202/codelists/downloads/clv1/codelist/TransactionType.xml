@@ -1,4 +1,4 @@
-<codelist name="TransactionType" date-last-modified="2022-11-09T13:59:50.575320+00:00" version="" xml:lang="en">
+<codelist name="TransactionType" date-last-modified="2022-11-09T14:09:30.662786+00:00" version="" xml:lang="en">
   <TransactionType>
     <code>1</code>
     <name>Incoming Funds</name>

@@ -1,4 +1,4 @@
-<codelist name="LoanRepaymentPeriod" date-last-modified="2022-11-09T14:01:10.098623+00:00" version="" xml:lang="en">
+<codelist name="LoanRepaymentPeriod" date-last-modified="2022-11-09T14:11:02.921825+00:00" version="" xml:lang="en">
   <LoanRepaymentPeriod>
     <code>1</code>
     <name>Annual</name>

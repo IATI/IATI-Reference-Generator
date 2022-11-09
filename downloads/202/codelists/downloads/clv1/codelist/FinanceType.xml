@@ -1,4 +1,4 @@
-<codelist name="FinanceType" date-last-modified="2022-11-09T13:59:50.577640+00:00" version="" xml:lang="en">
+<codelist name="FinanceType" date-last-modified="2022-11-09T14:09:30.936756+00:00" version="" xml:lang="en">
   <FinanceType>
     <code>1</code>
     <name>GNI: Gross National Income</name>
