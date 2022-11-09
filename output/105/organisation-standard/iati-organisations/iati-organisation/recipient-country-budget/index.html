@@ -1,0 +1,68 @@
+<div class="body" role="main">
+<p id="recipient-country-budget">
+<h1>recipient-country-budget</h1>
+<p><code>iati-organisations/iati-organisation/recipient-country-budget</code></p>
+<p>This is the reference page for the XML element <code>recipient-country-budget</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The recipient-country-budget element allows for the reporting of
+forward looking budgets for each country in which the organisation
+operates. The recommendation is that, where and when possible, the
+organisation’s total annual planned budget for each of the next
+three financial years is reported for each recipient country.
+It is strongly recommended that the start and end of the reported
+financial years match those of the recipient country’s
+budgetary/planning cycle.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example of <code>recipient-country-budget</code> for a single <code>recipient-country</code> <em>AA</em>.</p>
+<p>Periods are stated using <code>period-start</code> and <code>period-end</code>, with dates in ISO 8601 format (YYYY-MM-DD).</p>
+<p>This example <code>recipient-country-budget</code> is reported for years <em>2014, *2015</em> and <em>2016</em>.</p>
+<p>The <code>value</code> example includes a <code>currency</code> of <em>USD</em> - which differs from that set as <code>default-currency</code> in <code>iati-organisation</code>.</p>
+<p>The <code>value-date</code> is reported in ISO 8601 format (YYYY-MM-DD).</p>
+<p>Note: multiple budgets are expressed by repeating the <code>recipient-country-budget</code> element.</p>
+
+<p><code><pre><span>  &lt;recipient-country-budget&gt;
+</span>   &lt;recipient-country code="AA"&gt;Country Name&lt;/recipient-country&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;25000000&lt;/value&gt;
+<span>  &lt;/recipient-country-budget&gt;
+</span><span>  &lt;recipient-country-budget&gt;
+</span>   &lt;recipient-country code="AA"&gt;Country Name&lt;/recipient-country&gt;
+   &lt;period-start iso-date="2015-01-01" /&gt;
+   &lt;period-end iso-date="2015-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;30000000&lt;/value&gt;
+<span>  &lt;/recipient-country-budget&gt;
+</span><span>  &lt;recipient-country-budget&gt;
+</span>   &lt;recipient-country code="AA"&gt;Country Name&lt;/recipient-country&gt;
+   &lt;period-start iso-date="2016-01-01" /&gt;
+   &lt;period-end iso-date="2016-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;35000000&lt;/value&gt;
+<span>  &lt;/recipient-country-budget&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-organisations-schema.xsd#L225">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/organisation-standard/iati-organisations/iati-organisation/recipient-country-budget.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="recipient-country/">recipient-country</a></li>
+<li><a href="period-start/">period-start</a></li>
+<li><a href="period-end/">period-end</a></li>
+<li><a href="value/">value</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="5" name="order"/></div>

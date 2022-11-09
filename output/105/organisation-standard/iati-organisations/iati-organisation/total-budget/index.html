@@ -1,0 +1,60 @@
+<div class="body" role="main">
+<p id="total-budget">
+<h1>total-budget</h1>
+<p><code>iati-organisations/iati-organisation/total-budget</code></p>
+<p>This is the reference page for the XML element <code>total-budget</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The total-budget element allows for the reporting of the organisation’s
+own budget. The recommendation is that, where and when possible, the
+organisation’s total annual planned budget for each of the next three
+years is reported.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example of <code>total-budget</code> for a single <code>iati-organisation</code>.</p>
+<p>Periods are stated using <code>period-start</code> and <code>period-end</code>, with dates in ISO 8601 format (YYYY-MM-DD).</p>
+<p>This example <code>total-budget</code> is reported for years <em>2014, *2015</em> and <em>2016</em>.</p>
+<p>The <code>value</code> example includes a <code>currency</code> of <em>USD</em> - which differs from that set as <code>default-currency</code> in <code>iati-organisation</code>.</p>
+<p>The <code>value-date</code> is reported in ISO 8601 format (YYYY-MM-DD).</p>
+<p>Note: multiple budgets are expressed by repeating the <code>total-budget</code> element.</p>
+
+<p><code><pre><span>  &lt;total-budget&gt;
+</span>   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;250000000&lt;/value&gt;
+<span>  &lt;/total-budget&gt;
+</span><span>  &lt;total-budget&gt;
+</span>   &lt;period-start iso-date="2015-01-01" /&gt;
+   &lt;period-end iso-date="2015-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;300000000&lt;/value&gt;
+<span>  &lt;/total-budget&gt;
+</span><span>  &lt;total-budget&gt;
+</span>   &lt;period-start iso-date="2016-01-01" /&gt;
+   &lt;period-end iso-date="2016-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;350000000&lt;/value&gt;
+<span>  &lt;/total-budget&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-organisations-schema.xsd#L126">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/organisation-standard/iati-organisations/iati-organisation/total-budget.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="period-start/">period-start</a></li>
+<li><a href="period-end/">period-end</a></li>
+<li><a href="value/">value</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="3" name="order"/></div>

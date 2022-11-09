@@ -1,0 +1,61 @@
+<div id="content" role="main">
+
+<header>
+<h1>Transaction Provider</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;provider-org&gt;&lt;/provider-org&gt;</h2><p><h3>From the schema</h3><p> Can occur: Min = 0, Max = Unlimited</p><p>
+                The organisation providing the money for the
+                transaction (if omitted, the provider organisation is
+                the reporting organisation).
+
+                For the value of the @ref attribute, see the list of
+                officially-registered organizations at
+                <a href="../../../codelists/organisation/" rel="nofollow">http://iatistandard.org/101/codelists/organisation</a>
+</p><table><tbody><tr><td>@ref</td><td>
+        Machine-readable identification string for the business
+        object being described.
+      </td></tr><tr><td>@provider-activity-id</td><td>
+                    The internal identifier used by the provider for
+                    its activity that provides the funds for this
+                    transaction (*not* the IATI activity identifier).
+                  </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /transaction/provider-org/@provider-activity-id</h3><ul><li>Must be on: <a href="/en/iati-standard/101/codelists/organisation_identifier">Organisation Identifier Codelist</a></li></ul></p>
+<h2 id="provider_org">Provider Org</h2>
+
+<!-- EDIT1 SECTION "Provider Org" [1-49] -->
+<h3 id="notes">Notes</h3>
+<p>
+<p>
+The unique organisation identifier for the provider organisation. Some large organisations already have existing codes assigned through the OECD. For those organisations where no code exists, the organisation can generate their own code for IATI use in the format of [country-registration] - [company-registration number]. (e.g. the organisation identifier for DIPR is: <abbr title="Gigabyte">GB</abbr>-COH-06368740.)
+</p>
+</p>
+<h4 id="additional_notes">Additional notes</h4>
+<p>
+<p>
+Organisation IDs: It is now recommended that organisation ids are built to a convention, so the schema declaration that @ref must be on a codelist is out of date. A change to the schema must occur through our change control process. As such this is flagged for change.
+</p>
+</p>
+<!-- EDIT2 SECTION "Notes" [50-748] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The full name of the organisation making the financial transaction (receiving in the case of loan and interest repayments).:
+</p>
+<pre>    <span><span>&lt;provider-org<span>&gt;</span></span></span>DFID<span><span>&lt;/provider-org<span>&gt;</span></span></span></pre>
+<p>
+The unique Organisation Identifier for the provider.:
+</p>
+<pre>    <span><span>&lt;provider-org</span> <span>ref</span>=<span>"GB-1"</span><span>&gt;</span></span>DFID<span><span>&lt;/provider-org<span>&gt;</span></span></span></pre>
+<p>
+If the funds are being provided from another reported activity, this must record the unique activity identifier for that activity:
+</p>
+<pre>    <span><span>&lt;provider-org</span> <span>provider-activity-id</span>=<span>"GB-1-10538"</span><span>/&gt;</span></span></pre>
+</p>
+<!-- EDIT3 SECTION "Example Usage" [749-] -->
+</p>
+
+</p><!-- .entry-content -->
+<!-- #post-1439 -->
+
+</div>

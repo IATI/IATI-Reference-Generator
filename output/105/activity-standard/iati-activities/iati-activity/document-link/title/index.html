@@ -1,0 +1,57 @@
+<div class="body" role="main">
+<p id="title">
+<h1>title</h1>
+<p><code>iati-activities/iati-activity/document-link/title</code></p>
+<p>This is the reference page for the XML element <code>title</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A short, human-readable title.  May be repeated for different
+languages.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-document-link-title-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example usage of <code>title</code> in context of <code>document-link</code> element:</p>
+
+<p><code><pre>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+<span>   &lt;title&gt;Project report 2013&lt;/title&gt;
+</span>   &lt;category code="A01" /&gt;
+   &lt;language code="en" /&gt;
+  &lt;/document-link&gt;
+</pre></code>
+</p>
+
+<p>It may be appropriate to repeat the <code>title</code> in other languages using <code>xml:lang</code> attribute.</p>
+
+<p>In this example, the language <code>en</code> has been set in the ‘’iati-activity’’ element.</p>
+
+<p>Note: This relates to the language of the text in the XML.</p>
+
+<p><code><pre>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;Project report 2013&lt;/title&gt;
+<span>   &lt;title xml:lang="fr"&gt;Rapport de projet 2013&lt;/title&gt; 
+</span>   &lt;category code="A01" /&gt;
+   &lt;language code="en" /&gt;
+  &lt;/document-link&gt;  
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-common.xsd#L27">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/document-link/title.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

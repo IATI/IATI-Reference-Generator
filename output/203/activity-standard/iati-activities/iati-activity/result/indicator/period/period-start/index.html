@@ -1,0 +1,86 @@
+<div class="body" role="main">
+<p id="period-start">
+<h1>period-start</h1>
+<p><code>iati-activities/iati-activity/result/indicator/period/period-start</code></p>
+<p>This is the reference page for the XML element <code>period-start</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The start of the reporting period.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur once and only once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<p id="iati-activities-iati-activity-result-indicator-period-period-start-iso-date">@iso-date</p>
+<dd>
+<p class=""><p>This attribute is required.</p>
+<p>This value must be of type xsd:date.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L1543">8.6.1</a>: The start date of the indicator period must be before the end date of the indicator period.</p>
+</p></dd>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>period-start</code> within <code>period</code>, in context of an <code>indicator</code> in a <code>result</code> element.</p>
+
+<p>An example date is declared in the <code>@iso-date</code> attribute.</p>
+<p>This example date format conform to the <em>xsd:date</em> standard - for most cases <em>YYYY-MM-DD</em> is sufficient.</p>
+
+<p><code><pre>     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+      &lt;period-end iso-date="2013-03-31" /&gt;
+      &lt;target value="10"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+        &lt;narrative&gt;Target comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_target_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Target Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period target&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/target&gt;
+      &lt;actual value="11"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+         &lt;narrative&gt;Actual comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_actual_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Actual Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period actual&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/actual&gt;
+     &lt;/period&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1821">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result/indicator/period/period-start.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

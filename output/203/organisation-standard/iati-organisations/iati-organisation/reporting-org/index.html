@@ -1,0 +1,104 @@
+<div class="body" role="main">
+<p id="reporting-org">
+<h1>reporting-org</h1>
+<p><code>iati-organisations/iati-organisation/reporting-org</code></p>
+<p>This is the reference page for the XML element <code>reporting-org</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The organisation issuing the report.
+May be a primary source (reporting on its own activity as
+donor, implementing agency, etc) or a secondary source
+(reporting on the activities of another organisation).</p>
+<p>Specifying the @ref attribute is mandatory.
+May contain the organisation name as content.</p>
+<p>All activities in an activity xml file must contain the same
+@ref AND this @ref must be the same as the iati-identifier
+recorded in the registry publisher record of the account under
+which this file is published.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur once and only once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-reporting-org-ref">
+<dt>@ref</dt>
+<dd><p>Machine-readable identification string for the organisation issuing the report. Must be in the format {RegistrationAgency}-{RegistrationNumber} where {RegistrationAgency} is a valid code in the Organisation Registration Agency code list and {RegistrationNumber} is a valid identifier issued by the {RegistrationAgency}.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L1192">1.18.1</a>: The reporting-org identifier should not start or end with spaces or newlines.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L1123">1.18.8</a>: The reporting organisation id must start with an approved agency code.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L1155">1.18.13</a>: The reporting-org identifier must not contain any of the symbols /, &amp;, | or ?.</p>
+</dd>
+</dl>
+<dl id="iati-organisations-iati-organisation-reporting-org-type">
+<dt>@type</dt>
+<dd><p>The type of organisation issuing the report. See IATI codelist for values.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/OrganisationType/"><span>OrganisationType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-organisations-iati-organisation-reporting-org-secondary-reporter">
+<dt>@secondary-reporter</dt>
+<dd><p>A flag indicating that the reporting organisation of this activity is acting as a secondary reporter. A secondary reporter is one that reproduces data on the activities of an organisation for which it is not directly responsible. This does not include a publisher officially assigned as a proxy to report on behalf of another.</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>reporting-org</code> for an <code>iati-organisation</code>.</p>
+
+<p>An example organisation <code>@ref</code> of <em>AA-AAA-123456789</em> is declared.</p>
+<p>The <code>@type</code> attribute declares a valid code (<em>40</em>) from the <em>OrganisationType</em> codelist.</p>
+<p>The optional <code>@secondary-reporter</code> boolean is included, for illustration.</p>
+
+<p><code><pre>  &lt;reporting-org ref="AA-AAA-123456789" type="40" secondary-reporter="0"&gt;
+   &lt;narrative&gt;Organisation name&lt;/narrative&gt;
+   &lt;narrative xml:lang="fr"&gt;Nom de l'organisme&lt;/narrative&gt;
+  &lt;/reporting-org&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id4">
+<h3>2.03</h3>
+
+<p>The definition of the <code>@ref</code> attributed was <a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851/">updated</a>.</p>
+<p>The definition of the <code>@secondary-reporter</code> attributed was <a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846">updated</a>.</p>
+
+</p>
+<p id="id5">
+<h3>2.01</h3>
+
+<p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element.</p>
+
+</p>
+<p id="id6">
+<h3>1.04</h3>
+
+<p>The <code>@secondary-reporter</code> attribute was introduced in 1.04.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-common.xsd#L74">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/organisation-standard/iati-organisations/iati-organisation/reporting-org.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="2" name="order"/></div>

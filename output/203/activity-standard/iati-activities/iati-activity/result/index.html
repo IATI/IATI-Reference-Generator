@@ -1,0 +1,192 @@
+<div class="body" role="main">
+<p id="result">
+<h1>result</h1>
+<p><code>iati-activities/iati-activity/result</code></p>
+<p>This is the reference page for the XML element <code>result</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A container for reporting outputs, outcomes, impacts and other results that stem directly from the activity. This may be repeated for each type of result reported.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-type">
+<dt>@type</dt>
+<dd><p>An IATI code for the type of result being reported.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/ResultType/"><span>ResultType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-result-aggregation-status">
+<dt>@aggregation-status</dt>
+<dd><p>Boolean flag indicating whether the data in the result set are suitable for aggregation.</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>result</code> for an <code>iati-activity</code>.</p>
+
+<p>This element is a parent for other child elements.</p>
+
+
+<p>The <code>@type</code> attribute declares a valid code (<em>1</em>) from the <em>ResultType</em> codelist.</p>
+<p>The <code>@aggregation-status</code> <em>1</em> boolean is included, for illustration of suitability for aggregation.</p>
+
+<p><code><pre>&lt;result type="1" aggregation-status="1"&gt;
+                ...
+&lt;/result&gt;
+</pre></code>
+</p>
+
+<p>Full example with all child elements:</p>
+
+<p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Result title&lt;/narrative&gt;
+   &lt;/title&gt;
+   &lt;description&gt;
+    &lt;narrative&gt;Result description text&lt;/narrative&gt;
+   &lt;/description&gt;
+   &lt;!--result-document-link example starts--&gt;
+   &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_en.odt"&gt;
+    &lt;title&gt;
+     &lt;narrative&gt;Results Report 2013&lt;/narrative&gt;
+    &lt;/title&gt;
+    &lt;description&gt;
+      &lt;narrative&gt;Report of results&lt;/narrative&gt;
+    &lt;/description&gt;
+    &lt;category code="A01" /&gt;
+    &lt;language code="en" /&gt;
+    &lt;document-date iso-date="2014-02-05" /&gt;
+   &lt;/document-link&gt;
+&lt;!--result-document-link example ends--&gt;
+&lt;!--result-reference starts--&gt;
+   &lt;reference vocabulary="99" code="B1" vocabulary-uri="http://example.com/indicators.html" /&gt;
+&lt;!--result-reference ends--&gt;
+&lt;!--result-indicator starts--&gt;
+   &lt;indicator measure="1" ascending="1" aggregation-status="1"&gt;
+     &lt;title&gt;
+      &lt;narrative&gt;Indicator title&lt;/narrative&gt;
+     &lt;/title&gt;
+     &lt;description&gt;
+      &lt;narrative&gt;Indicator description text&lt;/narrative&gt;
+     &lt;/description&gt;
+     &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_indicator_en.odt"&gt;
+      &lt;title&gt;
+       &lt;narrative&gt;Results Indicator Report 2013&lt;/narrative&gt;
+      &lt;/title&gt;
+      &lt;description&gt;
+        &lt;narrative&gt;Report of results indicator&lt;/narrative&gt;
+      &lt;/description&gt;
+      &lt;category code="A01" /&gt;
+      &lt;language code="en" /&gt;
+      &lt;document-date iso-date="2014-02-05" /&gt;
+     &lt;/document-link&gt;
+     &lt;reference vocabulary="1" code="3429" /&gt;
+     &lt;reference vocabulary="7" code="861" /&gt;
+     &lt;reference vocabulary="99" code="B1" indicator-uri="http://example.com/indicators.html" /&gt;
+&lt;!--result-baseline starts--&gt;
+     &lt;baseline year="2012" iso-date="2012-01-01" value="10"&gt;
+      &lt;location ref="AF-KAN" /&gt;
+      &lt;location ref="KH-PNH" /&gt;
+      &lt;dimension name="sex" value="female" /&gt;
+      &lt;dimension name="age" value="adult" /&gt;
+      &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_baseline_en.odt"&gt;
+       &lt;title&gt;
+        &lt;narrative&gt;Results Baseline Report 2013&lt;/narrative&gt;
+       &lt;/title&gt;
+       &lt;description&gt;
+         &lt;narrative&gt;Report of results baseline&lt;/narrative&gt;
+       &lt;/description&gt;
+       &lt;category code="A01" /&gt;
+       &lt;language code="en" /&gt;
+       &lt;document-date iso-date="2014-02-05" /&gt;
+      &lt;/document-link&gt;
+      &lt;comment&gt;
+       &lt;narrative&gt;Baseline comment text&lt;/narrative&gt;
+      &lt;/comment&gt;
+     &lt;/baseline&gt;
+     &lt;!--result-baseline ends--&gt;
+     &lt;!--result-period starts--&gt;
+     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+      &lt;period-end iso-date="2013-03-31" /&gt;
+      &lt;target value="10"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+        &lt;narrative&gt;Target comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_target_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Target Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period target&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/target&gt;
+      &lt;actual value="11"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+         &lt;narrative&gt;Actual comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_actual_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Actual Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period actual&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/actual&gt;
+     &lt;/period&gt;
+     &lt;!--result-period ends--&gt;
+   &lt;/indicator&gt;
+   &lt;!--result-indicator ends--&gt;
+  &lt;/result&gt;
+</pre></code>
+</p>
+
+<p>The <code>result</code> element can be repeated in any <code>iati-activity</code>.</p>
+
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1685">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="title/">title</a></li>
+<li><a href="description/">description</a></li>
+<li><a href="document-link/">document-link</a></li>
+<li><a href="reference/">reference</a></li>
+<li><a href="indicator/">indicator</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

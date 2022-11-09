@@ -1,0 +1,52 @@
+<div class="body" role="main">
+<p id="period-start">
+<h1>period-start</h1>
+<p><code>iati-organisations/iati-organisation/total-budget/period-start</code></p>
+<p>This is the reference page for the XML element <code>period-start</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The start of the budget period.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur once and only once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<p id="iati-organisations-iati-organisation-total-budget-period-start-iso-date">@iso-date</p>
+<dd>
+<p class=""><p>This attribute is required.</p>
+<p>This value must be of type xsd:date.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L1140">7.5.3</a>: Budget Period must not be longer than one year.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L1104">8.6.3</a>: The start of the period must be before the end of the period.</p>
+</p></dd>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>period-start</code> of <code>total-budget</code> for an <code>iati-organisation</code>.</p>
+
+<p>An example date is declared in the <code>@iso-date</code> attribute.</p>
+<p>This example date format conform to the <em>xsd:date</em> standard - for most cases <em>YYYY-MM-DD</em> is sufficient.</p>
+
+<p><code><pre>  &lt;total-budget&gt;
+<span>   &lt;period-start iso-date="2014-01-01" /&gt;
+</span>   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;250000000&lt;/value&gt;
+   &lt;budget-line ref="1234"&gt;
+	&lt;value currency="USD" value-date="2014-01-01"&gt;200000000&lt;/value&gt;
+	&lt;narrative&gt;Budget Line&lt;/narrative&gt;
+   &lt;/budget-line&gt;
+  &lt;/total-budget&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-organisations-schema.xsd#L149">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/organisation-standard/iati-organisations/iati-organisation/total-budget/period-start.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+<meta content="0" name="order"/></div>

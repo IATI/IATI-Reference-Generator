@@ -1,0 +1,85 @@
+<div class="body" role="main">
+<p id="recipient-region">
+<h1>recipient-region</h1>
+<p><code>iati-activities/iati-activity/recipient-region</code></p>
+<p>This is the reference page for the XML element <code>recipient-region</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A geopolitical region (above the country level) that will
+benefit from this activity.  This element is primarily for
+administrative and geopolitical purposes.  If the specific
+country/-ies are known, the activity report can use the
+recipient-country element instead. For geographical location,
+use the location element.</p>
+<p>For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/region">http://iatistandard.org/codelists/region</a></p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-recipient-region-code">
+<dt>@code</dt>
+<dd><p>Machine readable code for the entity being described. The value should
+be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/Region/"><span>Region codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-recipient-region-vocabulary">
+<dt>@vocabulary</dt>
+<dd><p>The vocabulary from which the region code is drawn. If it
+is not present 1 - ‘OECD DAC’ is assumed.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/RegionVocabulary/"><span>RegionVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-recipient-region-percentage">
+<dt>@percentage</dt>
+<dd><p>The percentage of the budget allocated to this item.  Content
+must be a positive decimal number between 0 and 100, with no
+percentage sign. In version 1.03 of the IATI Standard this
+value became designated as a decimal value and no longer
+as a positive integer.</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-recipient-region-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>recipient-region</code> with relevant <code>Region</code> code.
+The optional <code>RegionVocabulary</code> is also be declared</p>
+<p><code><pre>  &lt;recipient-region code="498" vocabulary="1" /&gt;
+</pre></code>
+</p>
+<p>When multiple <code>recipient-region</code> are declared, then the <code>percentage</code> values should sum to 100% for the specific <code>iati-activity</code>:</p>
+<p><code><pre>  &lt;recipient-region code="498" percentage="50" vocabulary="1" /&gt;
+  &lt;recipient-region code="289" percentage="50" vocabulary="1" /&gt;
+</pre></code>
+</p>
+<p>Additionally, the name of the <code>Region</code> can also be declared:</p>
+<p><code><pre>&lt;recipient-region code="289"&gt;South of Sahara, regional&lt;recipient-region&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+<p>Where used, the <code>percentage</code> attribute is now designated as a decimal value and no longer as a positive Integer</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L273">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/recipient-region.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

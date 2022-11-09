@@ -1,0 +1,46 @@
+<div class="body" role="main">
+<p id="iati-identifier">
+<h1>iati-identifier</h1>
+<p><code>iati-activities/iati-activity/iati-identifier</code></p>
+<p>This is the reference page for the XML element <code>iati-identifier</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A globally unique identifier for the activity.</p>
+<p>This MUST be prefixed with EITHER the current IATI
+organisation identifier for the reporting organisation
+(reporting-org/@ref) OR a previous identifier reported in
+other-identifier, and suffixed with the organisation’s own
+activity identifier. The prefix and the suffix should be
+separated by a hyphen “-“.</p>
+<p>Once an activity has been reported to IATI its identifier MUST
+NOT be changed in subsequent updates.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>The text in this element must be of type xsd:string.</p>
+<p>This element must occur once and only once (within each parent element).</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L8">1.1.3</a>: The activity identifier must be different to the organisation identifier of the reporting organisation.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L26">1.1.21</a>: The activity identifier should begin with your IATI organisation identifier (either the current IATI Organisation identifier for the reporting organisation or a previous version included in other-identifier element) followed by a unique string for the activity separated by a hyphen</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L250">1.3.1</a>: The iati-identifier should not start or end with spaces or newlines.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L223">1.3.13</a>: The iati-identifier must not contain any of the symbols /, &amp;, | or ?.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>iati-identifier</code> of an <code>iati-activity</code>.</p>
+
+<p>Example uses a concatenation of the <code>reporting-org</code> identifier <em>AA-AAA-123456789</em> and the internal activity identifier <em>ABC123</em>.</p>
+
+<p><code><pre>  &lt;iati-identifier&gt;AA-AAA-123456789-ABC123&lt;/iati-identifier&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L225">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/iati-identifier.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

@@ -1,0 +1,70 @@
+<div id="content" role="main">
+
+<header>
+<h1>File Header</h1>
+</header><!-- .entry-header -->
+<p>
+<h3>Definitions</h3>
+
+<table>
+<tbody>
+<tr>
+<td><strong>iati-version</strong></td>
+<td>The version of the IATI Standard that has been used to compile this file. If omitted the current version is assumed.</td>
+</tr>
+<tr>
+<td><strong>generated-datetime</strong></td>
+<td>The date and time this file was generated.</td>
+</tr>
+</tbody>
+</table>
+<h3>Example Usage</h3>
+<pre>
+  ..</pre>
+<h3>Structure</h3>
+<table>
+<tbody>
+<tr>
+<th>Item</th>
+<th>Format</th>
+<th>XML</th>
+<th>Occurs</th>
+</tr>
+<tr>
+<td>iati-organisations</td>
+<td></td>
+<td>iati-organisations</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>   iati-version</td>
+<td>Decimal</td>
+<td>iati-organisations/@version</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   generated-datetime</td>
+<td>DateTime</td>
+<td>iati-organisations/@generated-datetime</td>
+<td>0..1</td>
+</tr>
+</tbody>
+</table>
+<h3>Usage &amp; Compliance</h3>
+<p>This element is <strong>mandatory</strong>. If not present it will not be possible to submit this file to the IATI Registry.</p>
+<ul>
+<li>If the <em>iati-version</em>is missing, it is assumed that the file has been generated using the current version.</li>
+<li>The <em>generated-datetime</em> is not mandatory, but is <strong>recommended</strong> for full compliance.</li>
+</ul>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1527 -->
+<!-- #comments -->
+<p>
+<p>
+					Last updated on 16 December 2012. 				  </p>
+<!--<p class="fl">Last updated: 1 April 2011   
+					<p class="fr"></p>	-->
+</p>
+</div>

@@ -1,0 +1,52 @@
+<div id="content" role="main">
+
+<header>
+<h1>Recipient Country</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;recipient-country&gt;&lt;/recipient-country&gt;</h2><p><h3>From the schema</h3><p> Can occur: Min = 0, Max = Unlimited</p><p>
+        A partner country that will benefit from this activity.  This
+        element is primarily for administrative and geopolitical
+        purposes.  If a specific country is not known, the activity
+        report can use the recipient-region element instead. For
+        geographical location, use the location element.
+
+        For the value of the @code attribute, see
+        <a href="../../../codelists/country/" rel="nofollow">http://iatistandard.org/101/codelists/country</a>
+</p><table><tbody><tr><td>@code</td><td>
+        Machine-readable code for the entity being described.
+      </td></tr><tr><td>@percentage</td><td>
+            The percentage of the project allocated to this country,
+            if known.  Content must be a positive integer between 1
+            and 100, with no percentage sign.
+          </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /recipient-country/*</h3><ul><li>percentages of countries sum to 100</li><!--<li>sum($this/@percentage[. castable as xs:integer]) = 100 </li>--><li>Must be on: <a href="../../../codelists/country/">Country Codelist</a></li></ul></p>
+<h2 id="recipient_country">Recipient Country</h2>
+
+<!-- EDIT1 SECTION "Recipient Country" [1-54] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+Recipient country can be declared just through the relevant code:
+</p><pre><span><span>&lt;recipient-country</span> <span>code</span>=<span>"CG"</span><span>/&gt;</span></span></pre>
+
+Additionally, the name of the country can also be declared.
+<pre><span><span>&lt;recipient-country</span> <span>code</span>=<span>"CG"</span><span>&gt;</span></span>Democratic Republic of Congo<span><span>&lt;/recipient-country<span>&gt;</span></span></span></pre>
+
+Where the name of the country is declared in a language other than the default, it is good practice to cite this:
+<pre> <span><span>&lt;recipient-country</span> <span>code</span>=<span>"CG"</span> <span>xml:lang</span>=<span>"fr"</span><span>&gt;</span></span>Republique Democratique du Congo<span><span>&lt;/recipient-country<span>&gt;</span></span></span></pre>
+
+When multiple countries are declared, then the percentages should equal 100% for that activity
+
+
+<pre><span><span>&lt;recipient-country</span> <span>code</span>=<span>"CG"</span> <span>percentage</span>=<span>"60"</span><span>/&gt;</span></span>
+<span><span>&lt;recipient-country</span> <span>code</span>=<span>"AO"</span> <span>percentage</span>=<span>"40"</span><span>/&gt;</span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [55-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1400 -->
+
+</div>

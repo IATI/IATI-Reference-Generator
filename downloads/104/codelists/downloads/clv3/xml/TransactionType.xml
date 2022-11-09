@@ -1,0 +1,100 @@
+<codelist name="TransactionType" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>
+            <narrative>Transaction Type</narrative>
+        </name>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>C</code>
+            <name>
+                <narrative>Commitment</narrative>
+            </name>
+            <description>
+                <narrative>A firm written obligation by the donor to provide resources of a specified amount under specified financial terms and conditions and for specified purposes for the benefit of the recipient</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>D</code>
+            <name>
+                <narrative>Disbursement</narrative>
+            </name>
+            <description>
+                <narrative>The amount placed at the disposal of a recipient country or agency (in the case of internal development-related expenditures, the outlay of funds)</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>E</code>
+            <name>
+                <narrative>Expenditure</narrative>
+            </name>
+            <description>
+                <narrative>The outlay by the implementing agency on goods and services for the activity</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>IF</code>
+            <name>
+                <narrative>Incoming Funds</narrative>
+            </name>
+            <description>
+                <narrative>Funds received from an external funding source (eg a donor).</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>IR</code>
+            <name>
+                <narrative>Interest Repayment</narrative>
+            </name>
+            <description>
+                <narrative>The actual amount of interest repaid, including fees.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>LR</code>
+            <name>
+                <narrative>Loan Repayment</narrative>
+            </name>
+            <description>
+                <narrative>The actual amount of principal (amortisation) repaid, including any arrears.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>R</code>
+            <name>
+                <narrative>Reimbursement</narrative>
+            </name>
+            <description>
+                <narrative>A disbursement that covers funds already spent by the recipient, as agreed in the terms of the loan or grant.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>QP</code>
+            <name>
+                <narrative>Purchase of Equity</narrative>
+            </name>
+            <description>
+                <narrative>The use of an activity's funds to purchase equity in a business.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>QS</code>
+            <name>
+                <narrative>Sale of Equity</narrative>
+            </name>
+            <description>
+                <narrative>The flow of funds into an activity from the sale of equity.</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>CG</code>
+            <name>
+                <narrative>Credit Guarantee</narrative>
+            </name>
+            <description>
+                <narrative>A commitment made by a funding organisation to underwrite a loan or line of credit entered into by a third party.</narrative>
+            </description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

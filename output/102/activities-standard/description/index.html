@@ -1,0 +1,37 @@
+<div id="content" role="main">
+
+<header>
+<h1>Description</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;description&gt;&lt;/description&gt;</h2><p><h3>From the schema</h3><p> Can occur: Min = 0, Max = Unlimited</p><p>
+        A longer, human-readable description.  May be repeated for
+        different languages.
+      </p><table><tbody><tr><td>@type</td><td>
+        Free text describing the type of thing being referenced.
+      </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /description/@type</h3><ul><li>Must be on: <a href="/en/iati-standard/203/codelists/description_type">Description Type Codelist</a></li></ul></p>
+<h2 id="description">Description</h2>
+
+<!-- EDIT1 SECTION "Description" [1-47] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+Below is a General description (type=“1”) of an activity in English.<br/>
+
+It may be appropriate to repeat this description in other languages.<br/>
+
+This also assumes that English has NOT been declared as the default language for this activity in the &lt;iati-activity&gt; element. If it had been, it is recommended not to re-declare the language attribute again.
+</p>
+<pre><span><span>&lt;description</span> <span>type</span>=<span>"1"</span> <span>xml:lang</span>=<span>"en"</span><span>&gt;</span></span>
+Description text
+<span><span>&lt;/description<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [48-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1406 -->
+
+</div>

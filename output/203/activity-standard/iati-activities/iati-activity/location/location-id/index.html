@@ -1,0 +1,98 @@
+<div class="body" role="main">
+<p id="location-id">
+<h1>location-id</h1>
+<p><code>iati-activities/iati-activity/location/location-id</code></p>
+<p>This is the reference page for the XML element <code>location-id</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A unique code describing the location according to a recognised gazetteer or administrative boundary repository. Administrative areas should only be reported here if the location being defined is the administrative area itself. For describing the administrative area/s within which a more specific location falls the location/administrative element should be used.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-location-location-id-code">
+<dt>@code</dt>
+<dd><p>A code from the gazetteer or administrative boundary repository specified by the vocabulary</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-location-location-id-vocabulary">
+<dt>@vocabulary</dt>
+<dd><p>An IATI code for a recognised gazetteer or administrative boundary repository.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/GeographicVocabulary/"><span>GeographicVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>location-id</code> within a <code>location</code> of an <code>iati-activity</code>..</p>
+
+<p>The <code>@vocabulary</code> attribute declares a valid code (<em>G1</em>) from the <em>GeographicVocabulary</em> codelist.</p>
+<p>An example value of <em>1453782</em> from that vocabulary is declared in the <code>@code</code> attribute.</p>
+
+<p><code><pre>  &lt;location ref="AF-KAN"&gt;
+   &lt;location-reach code="1" /&gt;
+   &lt;location-id vocabulary="G1" code="1453782" /&gt;
+   &lt;name&gt;
+  &lt;narrative&gt;Location name&lt;/narrative&gt;
+   &lt;/name&gt;
+   &lt;description&gt;
+  &lt;narrative&gt;Location description&lt;/narrative&gt;
+   &lt;/description&gt;
+   &lt;activity-description&gt;
+  &lt;narrative&gt;A description that qualifies the activity taking place at the location.&lt;/narrative&gt;
+   &lt;/activity-description&gt;
+   &lt;administrative vocabulary="G1" level="1" code="1453782" /&gt;
+   &lt;point srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
+    &lt;pos&gt;31.616944 65.716944&lt;/pos&gt;
+   &lt;/point&gt;
+   &lt;exactness code="1"/&gt;
+   &lt;location-class code="2"/&gt;
+   &lt;feature-designation code="ADMF"/&gt;
+  &lt;/location&gt;
+</pre></code>
+</p>
+<p>Note: If the <em>GeographicVocabulary</em> <em>G2</em> (<em>Open Street Map</em>) is used, then the <code>@code</code> value should be of the form &lt;OSM element&gt;/&lt;OSM identifier&gt;</p>
+<p>The OSM element will be a node, way or relation.</p>
+
+<p>Examples:</p>
+
+<ul>
+<li>node/1234567</li>
+<li>way/1234567</li>
+<li>relation/1234567</li>
+</ul>
+<p><code><pre>&lt;location-id vocabulary="G2" code="node/25524229" /&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>Freetext is <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">no longer allowed</a>  within this element.</p>
+</p>
+<p id="id2">
+<h3>1.04</h3>
+
+<p>New in 1.04</p>
+<p>The location-id element was introduced in 1.04 to replace the gazetteer-entry element which was deprecated in 1.04</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1349">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/location/location-id.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

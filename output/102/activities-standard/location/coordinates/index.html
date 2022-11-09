@@ -1,0 +1,42 @@
+<div id="content" role="main">
+
+<header>
+<h1>Coordinates</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;coordinates&gt;&lt;/coordinates&gt;</h2><p><h3>From the schema</h3><p>
+              Geodetic coordinates for the location (latitude, longitude).
+            </p><table><tbody><tr><td>@latitude</td><td>
+                  The decimal latitude (north is positive), e.g. "45.5"
+                  for 45.5 degrees north (45 degrees 30 minutes).
+                </td></tr><tr><td>@longitude</td><td>
+                  The decimal longitude (east is positive), e.g. "-75.5"
+                  for 75.5 degrees west (74 degrees 30 minutes).
+                </td></tr><tr><td>@precision</td><td>
+                  An IATI-defined subset of UCPD precision codes for
+                  the location (e.g. "2" for within 25 km of the
+                  specified latitude/longitude).
+
+                  See <a href="/en/iati-standard/203/codelists/geographical_precision" rel="nofollow">http://iatistandard.org/codelists/geographical_precision</a>
+</td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /location/coordinates/@latitude</h3><ul><li>Must be on: <a href="/en/iati-standard/203/codelists/geographical_precision">Geographical Precision Codelist</a></li></ul></p>
+<h2 id="coordinates">Coordinates</h2>
+
+<!-- EDIT1 SECTION "Coordinates" [1-48] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+UNOPS example, with co-ordinates set to a precision of “near exact location” (code 2):
+</p><pre><span><span>&lt;location<span>&gt;</span></span></span>
+      <span><span>&lt;name<span>&gt;</span></span></span>Herat<span><span>&lt;/name<span>&gt;</span></span></span>
+      <span><span>&lt;coordinates</span> <span>latitude</span>=<span>"34.341944400000003000"</span> <span>longitude</span>=<span>"62.203055599999971000"</span> <span>precision</span>=<span>"2"</span> <span>/&gt;</span></span>
+      <span><span>&lt;location-type</span> <span>code</span>=<span>"PPL"</span> <span>/&gt;</span></span>
+      <span><span>&lt;administrative</span> <span>country</span>=<span>"AF"</span><span>&gt;</span></span>Afghanistan, Herat, Injil<span><span>&lt;/administrative<span>&gt;</span></span></span>
+    <span><span>&lt;/location<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [49-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-2280 -->
+
+</div>

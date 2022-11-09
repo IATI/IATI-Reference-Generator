@@ -1,0 +1,126 @@
+<div class="body" role="main">
+<p id="transaction">
+<h1>transaction</h1>
+<p><code>iati-activities/iati-activity/transaction</code></p>
+<p>This is the reference page for the XML element <code>transaction</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Transactions recording committed or actual funds flowing in or
+out of an aid activity.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L823">3.7.1</a>: Recipient country or recipient region should be declared for either the activity or for all transactions.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L841">3.7.2</a>: Recipient country or recipient region should be declared for either the activity or for all transactions.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-transaction-ref">
+<dt>@ref</dt>
+<dd><p>An internal reference linking this transaction back to the publisher’s financial management system.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-transaction-humanitarian">
+<dt>@humanitarian</dt>
+<dd><p>A process flag to indicate that this transaction relates entirely or partially to humanitarian aid. If the entire activity relates to humanitarian aid this should be reported using iati-activity/@humanitarian, rather than for each transaction.</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>transaction</code> in an <code>iati-activity</code>.</p>
+
+<p>This element is a parent for other child elements.</p>
+
+
+<p>An example <code>@ref</code> of <em>1234</em> is declared.</p>
+
+<p><code><pre>&lt;transaction ref="1234"&gt;
+....
+&lt;/transaction&gt;
+</pre></code>
+</p>
+
+<p>An example which would denote this as a humanitarian transaction i.e. with the <code>@humanitarian</code> element set to ‘1’.</p>
+
+<p><code><pre>&lt;transaction ref="1234"&gt;
+....
+&lt;/transaction&gt;
+</pre></code>
+</p>
+
+<p>Full example with all child elements:</p>
+
+<p><code><pre>  &lt;transaction ref="1234" humanitarian="1"&gt;
+   &lt;transaction-type code="1" /&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;
+   &lt;description&gt;
+    &lt;narrative&gt;Transaction description text&lt;/narrative&gt;
+   &lt;/description&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" type="10" ref="BB-BBB-123456789"&gt;
+    &lt;narrative&gt;Agency B&lt;/narrative&gt;
+   &lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" type="23" ref="AA-AAA-123456789"&gt;
+    &lt;narrative&gt;Agency A&lt;/narrative&gt;
+   &lt;/receiver-org&gt;
+   &lt;disbursement-channel code="1" /&gt;
+   &lt;sector vocabulary="2" code="111" /&gt;
+   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   &lt;recipient-country code="TM" /&gt;
+   &lt;recipient-region code="616" vocabulary="1" /&gt;
+   &lt;flow-type code="10" /&gt;
+   &lt;finance-type code="110" /&gt;
+   &lt;aid-type code="A01" vocabulary="1" /&gt;
+   &lt;aid-type code="1" vocabulary="2" /&gt;
+   &lt;tied-status code="3" /&gt;
+  &lt;/transaction&gt;
+</pre></code>
+</p>
+
+<p>The <code>transaction</code> element can be repeated in any <code>iati-activity</code>.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id3">
+<h3>2.02</h3>
+
+<p>The <code>humanitarian</code> attribute was <a href="http://support.iatistandard.org/entries/106937796-Humanitarian-Flag">added</a>.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L954">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/transaction.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="transaction-type/">transaction-type</a></li>
+<li><a href="transaction-date/">transaction-date</a></li>
+<li><a href="value/">value</a></li>
+<li><a href="description/">description</a></li>
+<li><a href="provider-org/">provider-org</a></li>
+<li><a href="receiver-org/">receiver-org</a></li>
+<li><a href="disbursement-channel/">disbursement-channel</a></li>
+<li><a href="sector/">sector</a></li>
+<li><a href="recipient-country/">recipient-country</a></li>
+<li><a href="recipient-region/">recipient-region</a></li>
+<li><a href="flow-type/">flow-type</a></li>
+<li><a href="finance-type/">finance-type</a></li>
+<li><a href="aid-type/">aid-type</a></li>
+<li><a href="tied-status/">tied-status</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

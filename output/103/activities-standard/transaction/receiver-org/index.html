@@ -1,0 +1,72 @@
+<div id="content" role="main">
+
+<header>
+<h1>Receiver Organisation</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;receiver-org&gt;&lt;/receiver-org&gt;</h2><p><h3>From the schema</h3><p> Can occur: Min = 0, Max = Unlimited</p><p>
+              The organisation receiving the money from the
+              transaction (if omitted, then the receiver
+              organisation is the reporting organisation).
+
+              For the value of the @ref attribute, see the list of
+              officially-registered organizations at
+              <a href="/en/iati-standard/203/codelists/organisation" rel="nofollow">http://iatistandard.org/codelists/organisation</a>
+</p><table><tbody><tr><td>@ref</td><td>
+        Machine-readable identification string for the business
+        object being described.
+      </td></tr><tr><td>@receiver-activity-id</td><td>
+                  If the funds are being provided to another activity 
+                  that is reported to IATI, this should record the 
+                  unique IATI activity identifier for that activity.
+                </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /transaction/receiver-org/@ref</h3><ul><li>Must be on: <a href="/en/iati-standard/203/codelists/organisation_identifier">Organisation Identifier Codelist</a></li></ul></p>
+<h2 id="receiver_org">Receiver Org</h2>
+
+<!-- EDIT1 SECTION "Receiver Org" [1-48] -->
+<h3 id="notes">Notes</h3>
+<p>
+<p>
+The unique organisation identifier for the receiver organisation. Some large organisations already have existing codes assigned through the OECD. For those organisations where no code exsits, the organisation can generate their own code for IATI use in the format of country-registration company-registration number. (e.g. the organisation identifier for DIPR is: <abbr title="Gigabyte">GB</abbr>-COH-06368740.)
+</p>
+</p>
+<h4 id="additional_notes">Additional notes</h4>
+<p>
+<p>
+Organisation IDs: It is now recommended that organisation ids are built to a convention, so the schema declaration that @ref must be on a codelist is out of date. A change to the schema must occur through our change control process. As such this is flagged for change.
+</p>
+</p>
+<!-- EDIT2 SECTION "Notes" [49-740] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The full name of the organisation receiving the financial transaction (receiving in the case of loan and interest repayments).:
+</p>
+<pre><span><span>&lt;transaction<span>&gt;</span></span></span>
+  ....
+    <span><span>&lt;receiver-org<span>&gt;</span></span></span>Ministere du Plan, RDC<span><span>&lt;/receiver-org<span>&gt;</span></span></span>
+  ...
+<span><span>&lt;/transaction<span>&gt;</span></span></span></pre>
+<p>
+The unique Organisation Identifier for the receiver.:
+</p>
+<pre><span><span>&lt;transaction<span>&gt;</span></span></span>
+  ....
+    <span><span>&lt;receiver-org</span> <span>ref</span>=<span>"GB-1"</span><span>&gt;</span></span>DFID<span><span>&lt;/receiver-org<span>&gt;</span></span></span>
+  ...
+<span><span>&lt;/transaction<span>&gt;</span></span></span></pre>
+<p>
+If the funds are being provided to another reported activity, this must record the unique activity identifier for that activity:
+</p>
+<pre><span><span>&lt;transaction<span>&gt;</span></span></span>
+  ....
+    <span><span>&lt;receiver-org</span> <span>receiver-activity-id</span>=<span>"CG-3-1440"</span><span>/&gt;</span></span>
+  ...
+<span><span>&lt;/transaction<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT3 SECTION "Example Usage" [741-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1441 -->
+
+</div>

@@ -1,0 +1,64 @@
+<div class="body" role="main">
+<p id="target">
+<h1>target</h1>
+<p><code>iati-activities/iati-activity/result/indicator/period/target</code></p>
+<p>This is the reference page for the XML element <code>target</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The target milestone for this period</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-indicator-period-target-value">
+<dt>@value</dt>
+<dd><p>The target value.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>target</code> within <code>period</code>, in context of an <code>indicator</code> in a <code>result</code> element.</p>
+<p>Example usage of <code>target</code> value of <em>10</em></p>
+<p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
+   &lt;title&gt;Result 1 title&lt;/title&gt;
+   &lt;description&gt;Result 1 description text&lt;/description&gt;
+   &lt;indicator measure="1" ascending="1"&gt;
+     &lt;title&gt;Indicator 1 title&lt;/title&gt;
+     &lt;description&gt;Indicator 1 description text&lt;/description&gt;
+     &lt;baseline year="2012" value="10"&gt;
+      &lt;comment&gt;Baseline comment text&lt;/comment&gt;
+     &lt;/baseline&gt;
+     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+       &lt;period-end iso-date="2013-03-31" /&gt;
+<span>       &lt;target value="10"&gt;
+</span>        &lt;comment&gt;Target comment text&lt;/comment&gt; 
+<span>       &lt;/target&gt;
+</span>       &lt;actual value="11"&gt;
+        &lt;comment&gt;Actual comment text&lt;/comment&gt; 
+       &lt;/actual&gt;
+     &lt;/period&gt;
+   &lt;/indicator&gt;
+  &lt;/result&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L1383">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/result/indicator/period/target.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="comment/">comment</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

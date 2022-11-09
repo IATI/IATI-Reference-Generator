@@ -1,0 +1,86 @@
+<div class="body" role="main">
+<p id="language">
+<h1>language</h1>
+<p><code>iati-activities/iati-activity/document-link/language</code></p>
+<p>This is the reference page for the XML element <code>language</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The ISO 639-1 language code in which target document is
+written, e.g. “en”. Can be repeated to describe
+multi-lingual documents.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-document-link-language-code">
+<dt>@code</dt>
+<dd><p>ISO 639-1 language code</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value should be on the <a href="../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example usage of <code>language</code> of a <code>document-link</code> in an <code>iati-activity</code>.</p>
+
+
+<p>The <code>@language</code> attribute declares a valid code (<em>en</em>) from the <em>Language</em> codelist.</p>
+<p>Note: This specifies the language of the document being linked to.</p>
+
+<p><code><pre>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Project Report 2013&lt;/narrative&gt;	   
+    &lt;narrative xml:lang="fr"&gt;Rapport de projet 2013&lt;/narrative&gt;
+   &lt;/title&gt;
+   &lt;category code="A01" /&gt;
+<span>   &lt;language code="en" /&gt;
+</span>  &lt;/document-link&gt;
+</pre></code>
+</p>
+
+<p>In some cases, a <code>document-link</code> may be in multiple languages.  This is expressed by repeating the <code>language</code> element.</p>
+
+<p><code><pre>&lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report.odt"&gt;
+        &lt;title&gt;
+                &lt;narrative&gt;Project Report 2013&lt;/narrative&gt;
+                &lt;narrative xml:lang="fr"&gt;Rapport de projet 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;category code="A01" /&gt;
+<span>        &lt;language code="en" /&gt;
+</span><span>        &lt;language code="fr" /&gt;
+</span>&lt;/document-link&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>Freetext is <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">no longer allowed</a>  within this element.</p>
+
+<p>In 2.01 this element usage rules were changed, to allow it to be repeated.</p>
+
+</p>
+<p id="id2">
+<h3>1.02</h3>
+<p>Addition of a <code>@language</code> element as a child of the <code>document-link</code> element:
+document-link/language/text() (0..1) - The ISO 639 code for the language
+of the document</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L2366">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/document-link/language.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

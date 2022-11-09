@@ -1,0 +1,71 @@
+<div class="body" role="main">
+<p id="document-link">
+<h1>document-link</h1>
+<p><code>iati-organisations/iati-organisation/document-link</code></p>
+<p>This is the reference page for the XML element <code>document-link</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A categorized link to an external document.</p>
+<p>The schema states that this element must have at least 1 subelement.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-document-link-url">
+<dt>@url</dt>
+<dd><p>The target URL of the external document, e.g. “<a href="http://www.example.org/doc.odt">http://www.example.org/doc.odt</a>”.</p>
+<p>This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+<dl id="iati-organisations-iati-organisation-document-link-format">
+<dt>@format</dt>
+<dd><p>The MIME type of the external document,
+e.g. “application/pdf”.  A list of MIME types
+appears at <a href="/en/iati-standard/203/codelists/file_format">http://iatistandard.org/codelists/file_format</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/FileFormat/"><span>FileFormat codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example <code>document-link</code> with <code>FileFormat</code> <em>application/vnd.oasis.opendocument.text</em>.</p>
+<p>The <code>DocumentCategory</code> is declared as <em>B01</em>.</p>
+
+<p>Note: <code>DocumentCategory</code> codes with the <em>B</em> <code>DocumentCategory-category</code> prefix are recommended within the <strong>IATI organisation standard</strong> <code>document-link</code> element.</p>
+
+<p><code><pre><span>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+</span>   &lt;category code="B01" /&gt;
+   &lt;language code="en" /&gt;
+   &lt;title&gt;Annual Report 2013&lt;/title&gt;
+<span>  &lt;/document-link&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.02</h3>
+<p>Removed language attribute from, and introduced an new <code>language</code> child element to, the <code>document-link</code> element.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-common.xsd#L119">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/organisation-standard/iati-organisations/iati-organisation/document-link.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="title/">title</a></li>
+<li><a href="category/">category</a></li>
+<li><a href="language/">language</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="6" name="order"/></div>

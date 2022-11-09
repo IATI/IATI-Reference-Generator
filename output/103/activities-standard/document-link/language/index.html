@@ -1,0 +1,58 @@
+<div id="content" role="main">
+
+<header>
+<h1>Language</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;language&gt;&lt;/language&gt;</h2><p><h3>From the schema</h3><p>
+                The ISO 639 language code for the target document, e.g. "en".
+           </p><p> This element is of the type "codeType" as described in the <a href="/reference_downloads/archive/downloads/1.03/iati-common.xsd">IATI Common schema</a></p><p><p>
+        Data type for an element that refers to an object that can
+        have a code as well as human-readable text in different
+        languages (e.g. a country or status).
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@code</td><td>optional</td><td>
+        Machine-readable code for the entity being described.
+      </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p> </p><!--schema wrap--></p>
+<h2 id="language">Language</h2>
+
+<!-- EDIT1 SECTION "Language" [1-45] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+This is a new element for version 1.02.  Previously, this was an attribute.
+</p>
+<p>
+The code should be declared in any usage of this element:
+</p>
+<pre>    <span><span>&lt;language</span> <span>code</span>=<span>"en"</span> <span>/&gt;</span></span>
+    <span><span>&lt;language</span> <span>code</span>=<span>"fr"</span> <span>/&gt;</span></span></pre>
+<p>
+Additionally, a text description of the code can be provided:
+</p>
+<pre>    <span><span>&lt;language</span> <span>code</span>=<span>"fr"</span> <span>xml:lang</span>=<span>"en"</span><span>&gt;</span></span>French<span><span>&lt;/language<span>&gt;</span></span></span>
+    <span><span>&lt;language</span> <span>code</span>=<span>"fr"</span> <span>xml:lang</span>=<span>"fr"</span><span>&gt;</span></span>Francais<span><span>&lt;/language<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [46-477] -->
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="section102">1.02</h4>
+<p>
+<p>
+Addition of a language element as a child of the document-link element: document-link/language/text() (0..1) - The ISO 639 code for the language of the document
+</p>
+</p>
+<h4 id="section101">1.01</h4>
+<p>
+<p>
+This element did not exist
+</p>
+</p>
+<!-- EDIT3 SECTION "Changelog" [478-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-3617 -->
+
+</div>

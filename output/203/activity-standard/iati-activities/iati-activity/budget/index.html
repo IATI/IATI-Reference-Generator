@@ -1,0 +1,92 @@
+<div class="body" role="main">
+<p id="budget">
+<h1>budget</h1>
+<p><code>iati-activities/iati-activity/budget</code></p>
+<p>This is the reference page for the XML element <code>budget</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The value of the activity’s budget for each financial quarter or year over the lifetime of the activity. The purpose of this element is to provide predictability for recipient planning on an annual basis. The status explains whether the budget being reported is indicative or has been formally committed. The value should appear within the BudgetStatus codelist. If the @status attribute is not present, the budget is assumed to be indicative. The sum of budgets may or may not match the sum of commitments, depending on a publisher’s business model and legal frameworks.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-budget-type">
+<dt>@type</dt>
+<dd><p>Whether this is the original budget (prepared when the original commitment was made) or has subsequently been revised</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/BudgetType/"><span>BudgetType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-budget-status">
+<dt>@status</dt>
+<dd><p>The status explains whether the budget being reported is indicative or has been formally committed. The value should appear within the BudgetStatus codelist. If the @status attribute is not present, the budget is assumed to be indicative.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/BudgetStatus/"><span>BudgetStatus codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>budget</code> for an <code>iati-activity</code>.</p>
+
+<p>This element is a parent for other child elements.</p>
+
+
+<p>The <code>@type</code> attribute declares a valid code (<em>1</em>) from the <em>BudgetType</em> codelist.</p>
+<p>The <code>@status</code> attribute declares a valid code (<em>1</em>) from the <em>BudgetStatus</em> codelist.</p>
+
+<p><code><pre>&lt;budget type="1" status="1"&gt;
+...
+&lt;/budget&gt;
+</pre></code>
+</p>
+
+<p>Note: If the @type attribute is omitted, then <em>BudgetType</em> code <em>1</em> (Original) is assumed.</p>
+<p>Similarly, if the @status attribute is omitted, then <em>BudgetStatus</em> code <em>1</em> (Indicative) is assumed.</p>
+
+
+<p>Full example with all child elements:</p>
+
+<p><code><pre>  &lt;budget type="1" status="1"&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
+  &lt;/budget&gt;
+</pre></code>
+</p>
+
+<p>The <code>budget</code> element can be repeated in any <code>iati-activity</code>.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p>27/02/2018</p>
+<p>The <code>budget</code> definition was updated as a <a href="https://discuss.iatistandard.org/t/proposal-update-of-budget-element-description-text-in-activity-standard/1216">bug fix</a>.</p>
+<p id="id1">
+<h3>2.02</h3>
+<p>The <code>status</code> attribute was <a href="http://support.iatistandard.org/entries/21150501-Budgets-and-tentativeness">added</a>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L2000">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/budget.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="period-start/">period-start</a></li>
+<li><a href="period-end/">period-end</a></li>
+<li><a href="value/">value</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

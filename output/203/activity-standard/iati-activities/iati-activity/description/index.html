@@ -1,0 +1,85 @@
+<div class="body" role="main">
+<p id="description">
+<h1>description</h1>
+<p><code>iati-activities/iati-activity/description</code></p>
+<p>This is the reference page for the XML element <code>description</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A longer, human-readable description containing a
+meaningful description of the activity. May be repeated
+for different languages.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur at least once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-description-type">
+<dt>@type</dt>
+<dd><p>The type of description being provided. This is not
+required if only one general description of the activity
+is reported.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/DescriptionType/"><span>DescriptionType codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>description</code> of an <code>iati-activity</code>.</p>
+
+<p>The <code>@type</code> attribute declares a valid code (<em>en</em>) from the <em>DescriptionType</em> codelist.</p>
+
+<p><code><pre>&lt;description type="1"&gt;
+   &lt;narrative&gt;General activity description text.  Long description of the activity with no particular structure.&lt;/narrative&gt;
+&lt;/description&gt;
+</pre></code>
+</p>
+
+<p>The <code>description</code> element can be repeated in any <code>iati-activity</code>.</p>
+<p>In this example, three different <code>description</code> are declared.</p>
+<p>Note - it is optional to include all <code>DescriptionType</code>.</p>
+
+<p><code><pre>  &lt;description type="1"&gt;
+   &lt;narrative&gt;General activity description text.  Long description of the activity with no particular structure.&lt;/narrative&gt;
+   &lt;narrative xml:lang="fr"&gt;Activité générale du texte de description. Longue description de l'activité sans structure particulière.&lt;/narrative&gt;
+  &lt;/description&gt;
+  &lt;description type="2"&gt;
+   &lt;narrative&gt;Objectives for the activity, for example from a logical framework.&lt;/narrative&gt;
+   &lt;narrative xml:lang="fr"&gt;Objectifs de l'activité, par exemple à partir d'un cadre logique.&lt;/narrative&gt;
+  &lt;/description&gt;
+  &lt;description type="3"&gt;
+   &lt;narrative&gt;Statement of groups targeted to benefit from the activity.&lt;/narrative&gt;
+   &lt;narrative xml:lang="fr"&gt;Déclaration de groupes ciblés pour bénéficier de l'activité.&lt;/narrative&gt;
+  &lt;/description&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+
+<p>Freetext is no longer allowed with this element.  It should now be declared with the new child <code>narrative</code> element.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L102">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/description.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

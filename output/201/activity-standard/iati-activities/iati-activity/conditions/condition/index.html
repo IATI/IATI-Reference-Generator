@@ -1,0 +1,78 @@
+<div class="body" role="main">
+<p id="condition">
+<h1>condition</h1>
+<p><code>iati-activities/iati-activity/conditions/condition</code></p>
+<p>This is the reference page for the XML element <code>condition</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The text of a specific condition attached to the
+activity. Organisation-wide terms and conditions that
+apply to all activities should not be reported here, but
+in either iati-organisation/document-link or
+iati-activity-document-link</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-conditions-condition-type">
+<dt>@type</dt>
+<dd><p>An IATI code defining the type of condition.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/ConditionType/"><span>ConditionType codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>condition</code> child element of <code>conditions</code> of an <code>iati-activity</code>.</p>
+
+<p>The <code>@type</code> attribute declares a valid code (<em>1</em>) from the <em>ConditionType</em> codelist.</p>
+
+<p><code><pre>  &lt;conditions attached="1"&gt;
+<span>   &lt;condition type="1"&gt;
+</span>    &lt;narrative&gt;Conditions text&lt;/narrative&gt;
+    &lt;narrative xml:lang="fr"&gt;Conditions texte&lt;/narrative&gt;
+<span>   &lt;/condition&gt;
+</span>  &lt;/conditions&gt;
+</pre></code>
+</p>
+
+<p>The <code>condition</code> element can be repeated in any <code>conditions</code> of an <code>iati-activity</code>.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element.</p>
+</p>
+<p id="id2">
+<h3>1.04</h3>
+
+<p>It was always the intention of the standard that a condition could be specified in different languages but the schema has never allowed it.</p>
+<p>This has now been fixed.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L1892">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/conditions/condition.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

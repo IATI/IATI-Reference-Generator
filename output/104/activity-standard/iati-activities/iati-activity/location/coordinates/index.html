@@ -1,0 +1,73 @@
+<div class="body" role="main">
+<p id="coordinates">
+<h1>coordinates</h1>
+<p><code>iati-activities/iati-activity/location/coordinates</code></p>
+<p>This is the reference page for the XML element <code>coordinates</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Deprecated since 1.04</p>
+<p>Geodetic coordinates for the location (latitude, longitude).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-location-coordinates-latitude">
+<dt>@latitude</dt>
+<dd><p>Deprecated since 1.04</p>
+<p>The decimal latitude (north is positive), e.g. “45.5”
+for 45.5 degrees north (45 degrees 30 minutes).</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-location-coordinates-longitude">
+<dt>@longitude</dt>
+<dd><p>Deprecated since 1.04</p>
+<p>The decimal longitude (east is positive), e.g. “-75.5”
+for 75.5 degrees west (74 degrees 30 minutes).</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-location-coordinates-precision">
+<dt>@precision</dt>
+<dd><p>Deprecated since 1.04</p>
+<p>An IATI-defined subset of UCPD precision codes for
+the location (e.g. “2” for within 25 km of the
+specified latitude/longitude).</p>
+<p>See <a href="/en/iati-standard/203/codelists/geographical_precision">http://iatistandard.org/codelists/geographical_precision</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/GeographicalPrecision/"><span>GeographicalPrecision codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p><em>NB: this element is deprecated in version 1.04</em></p>
+<p>UNOPS example, with co-ordinates set to a precision of “near exact location” (code 2):</p>
+<p><code><pre>&lt;location&gt;
+      &lt;name&gt;Herat&lt;/name&gt;
+      &lt;coordinates latitude="34.341944400000003000" longitude="62.203055599999971000" precision="2" /&gt;
+      &lt;location-type code="PPL" /&gt;
+      &lt;administrative country="AF"&gt;Afghanistan, Herat, Injil&lt;/administrative&gt;
+ &lt;/location&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.04</h3>
+
+<p>Deprecated in 1.04</p>
+<p>The location/coordinates element was deprecated in 1.04. Coordinates can now be specified in the location/point element instead.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1089">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/location/coordinates.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

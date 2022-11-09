@@ -1,0 +1,57 @@
+<div id="content" role="main">
+
+<header>
+<h1>Activity Date</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;activity-date&gt;&lt;/activity-date&gt;</h2><p><h3>From the schema</h3><p>
+        The planned and actual start and completion dates of the 
+        activity. Start dates may reflect either the commencement of 
+        funding, planning or physical activity. End dates should, 
+        wherever possible, reflect the ending of physical activity. 
+        Dates should be in ISO 8601 date YYYY-MM-DD format, e.g. 
+        2010-10-01. 
+        
+        For the value of the @type attribute, see
+        <a href="/en/iati-standard/203/codelists/activity_date_type" rel="nofollow">http://iatistandard.org/codelists/activity_date_type</a>
+
+        The text content may contain a general date text (e.g. 2011Q1)
+        for recording less specific dates such as month, quarter, or
+        year.
+      </p><table><tbody><tr><td>@type</td><td>
+        Free text describing the type of thing being referenced.
+      </td></tr><tr><td>@iso-date</td><td>
+                An activity milestone date in ISO 8601 date format,
+                e.g. "2010-12-01".
+              </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Compliance1 compliance test(s) for /activity-date/*</h3><ul><li>end-actual has earlier start-actual</li><!--<li>
+            $this[@type='start-actual']/@iso-date lt  $this[@type='end-actual']/@iso-date
+        </li>--><li>end-planed has earlier start-planned</li><!--<li>
+            $this[@type='start-planned']/@iso-date lt $this[@type='end-planned']/@iso-date
+        </li>--><li>implemented activity has an actual end date</li><!--<li>
+            $this[@type='end-actual']
+        </li>--><li>activity has start and end planned dates</li><!--<li>exists($this[@type="start-planned"]/@iso-date) and exists($this[@type="end-planned"]/@iso-date)</li>--><li>activity with implementation status has start date</li><!--<li>exists($this[@type="start-actual"]/@iso-date)</li>--><li>activity has a start-planned date</li><!--<li>exists($this[@type="start-planned"]/@iso-date)</li>--><li>activity has a end-planned date</li><!--<li>exists($this[@type="end-planned"]/@iso-date)</li>--></ul></p><p><h3>Standard compliance test(s) for /activity-date/@type</h3><ul><li>Must be on: <a href="/en/iati-standard/203/codelists/activity_date_type">Activity Date Type Codelist</a></li></ul></p>
+<h2 id="activity_date">Activity Date</h2>
+
+<!-- EDIT1 SECTION "Activity Date" [1-50] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+Example of an activity with one each of the four activity date types.
+</p><pre><span><span>&lt;activity-date</span> <span>type</span>=<span>"start-planned"</span> <span>iso-date</span>=<span>"2009-12-31"</span><span>&gt;</span></span>2006-04-01<span><span>&lt;/activity-date<span>&gt;</span></span></span>
+<span><span>&lt;activity-date</span> <span>type</span>=<span>"start-actual"</span> <span>iso-date</span>=<span>"2009-12-31"</span><span>&gt;</span></span>2007-01-01<span><span>&lt;/activity-date<span>&gt;</span></span></span>
+<span><span>&lt;activity-date</span> <span>type</span>=<span>"end-planned"</span> <span>iso-date</span>=<span>"2009-12-31"</span><span>&gt;</span></span>2009-12-31<span><span>&lt;/activity-date<span>&gt;</span></span></span>
+<span><span>&lt;activity-date</span> <span>type</span>=<span>"end-actual"</span> <span>iso-date</span>=<span>"2009-12-31"</span><span>&gt;</span></span>2009-12-31<span><span>&lt;/activity-date<span>&gt;</span></span></span></pre>
+
+In some cases, not all dates are known, depending on the status of the activity:
+
+
+<pre>    <span><span>&lt;activity-date</span> <span>type</span>=<span>"start-actual"</span> <span>iso-date</span>=<span>"2010-03-01"</span><span>/&gt;</span></span>
+    <span><span>&lt;activity-date</span> <span>type</span>=<span>"end-planned"</span> <span>iso-date</span>=<span>"2013-03-30"</span><span>/&gt;</span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [51-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1421 -->
+
+</div>

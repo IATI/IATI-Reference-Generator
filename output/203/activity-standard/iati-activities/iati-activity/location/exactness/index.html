@@ -1,0 +1,77 @@
+<div class="body" role="main">
+<p id="exactness">
+<h1>exactness</h1>
+<p><code>iati-activities/iati-activity/location/exactness</code></p>
+<p>This is the reference page for the XML element <code>exactness</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Defines whether the location represents the most distinct point reasonably possible for this type of activity or is an approximation due to lack of more detailed information.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-location-exactness-code">
+<dt>@code</dt>
+<dd><p>A code from the Geographic Exactness Codelist.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/GeographicExactness/"><span>GeographicExactness codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>exactness</code> within a <code>location</code> of an <code>iati-activity</code>.</p>
+
+<p>The <code>@code</code> attribute declares a valid code (<em>1</em>) from the <em>GeographicExactness</em> codelist.</p>
+
+<p><code><pre>  &lt;location ref="AF-KAN"&gt;
+   &lt;location-reach code="1" /&gt;
+   &lt;location-id vocabulary="G1" code="1453782" /&gt;
+   &lt;name&gt;
+  &lt;narrative&gt;Location name&lt;/narrative&gt;
+   &lt;/name&gt;
+   &lt;description&gt;
+  &lt;narrative&gt;Location description&lt;/narrative&gt;
+   &lt;/description&gt;
+   &lt;activity-description&gt;
+  &lt;narrative&gt;A description that qualifies the activity taking place at the location.&lt;/narrative&gt;
+   &lt;/activity-description&gt;
+   &lt;administrative vocabulary="G1" level="1" code="1453782" /&gt;
+   &lt;point srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
+    &lt;pos&gt;31.616944 65.716944&lt;/pos&gt;
+   &lt;/point&gt;
+   &lt;exactness code="1"/&gt;
+   &lt;location-class code="2"/&gt;
+   &lt;feature-designation code="ADMF"/&gt;
+  &lt;/location&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>Freetext is <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">no longer allowed</a>  within this element.</p>
+</p>
+<p id="id2">
+<h3>1.04</h3>
+
+<p>New in 1.04</p>
+<p>This is used as a replacement for the deprecated <a href="mailto:location/coordinates/%40precision">location/coordinates/<span>@</span>precision</a> attribute</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1460">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/location/exactness.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

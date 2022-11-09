@@ -1,0 +1,57 @@
+<div id="content" role="main">
+
+<header>
+<h1>Organisation Identifier</h1>
+</header><!-- .entry-header -->
+<p>
+<h3>Definitions</h3>
+<p>The organisation-identifier element uniquely identifies the organisation being reported.<br/>
+</p>
+<table>
+<tr>
+<td><strong>iati-identifier-text</strong></td>
+<td>A unique identifier for the organisation that is consistent with <a href="../../getting-started/organisation-data/organisation-identifiers/">IATI’s rules for identifying organisations</a>.</td>
+</tr>
+</table>
+<h3>Example Usage</h3>
+<pre> 
+
+  ..
+  US-EIN-12345
+  ..
+
+</pre>
+<h3>Structure</h3>
+<table>
+<tr>
+<th>Item</th>
+<th>Format</th>
+<th>XML</th>
+<th>Occurs</th>
+</tr>
+<tr>
+<td>iati-identifier</td>
+<td></td>
+<td>iati-identifier</td>
+<td>1..1</td>
+</tr>
+<tr>
+<td>   iati-identifier-text</td>
+<td>see <a href="../../getting-started/organisation-data/organisation-identifiers/">IATI Rules for Organisation Identifiers</a>.</td>
+<td>iati-identifier/text()</td>
+<td>1..1</td>
+</tr>
+</table>
+<h3>Usage &amp; Compliance</h3>
+<p>This element is <strong>mandatory</strong>.</p>
+<ul>
+<li> The <em>iati-identifier-text</em> is <strong>mandatory</strong>.
+</li><li> The format of <em>iati-identifier-text</em> <strong>MUST</strong> comply with <a href="../../getting-started/organisation-data/organisation-identifiers/">IATI Rules for Organisation Identifiers</a>.
+</li></ul>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1525 -->
+<!-- #comments -->
+
+</div>

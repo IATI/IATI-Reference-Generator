@@ -1,0 +1,78 @@
+<div class="body" role="main">
+<p id="narrative">
+<h1>narrative</h1>
+<p><code>iati-activities/iati-activity/participating-org/narrative</code></p>
+<p>This is the reference page for the XML element <code>narrative</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The free text name or description of the item being described. This can
+be repeated in multiple languages.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>The text in this element must be of type xsd:string.</p>
+<p>This element may occur any number of times.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L1048">6.10.1</a>: The participating organisation must have an identifier or a narrative.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-participating-org-narrative-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 639-1 code specifying the language of text in this element. If a default language is specified in the iati-activity element it does not have to be repeated here.</p>
+<p>This value should be on the <a href="../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>The <code>narrative</code> child element can be used to declare freetext for the <code>participant-org</code> element.</p>
+<p><code><pre>  &lt;participating-org ref="BB-BBB-123456789" role="1" type="40" activity-id="BB-BBB-123456789-1234"&gt;
+<span>   &lt;narrative&gt;Name of Agency B&lt;/narrative&gt;
+</span>  &lt;/participating-org&gt;
+  &lt;participating-org ref="CC-CCC-123456789" role="2" type="10" activity-id="CC-CCC-123456789-1234"&gt;
+<span>   &lt;narrative&gt;Name of Agency C&lt;/narrative&gt;
+</span>  &lt;/participating-org&gt;	  
+  &lt;participating-org ref="AA-AAA-123456789" role="3" type="21" activity-id="AA-AAA-123456789-1234"&gt;
+<span>   &lt;narrative&gt;Name of Agency A&lt;/narrative&gt;
+</span>   &lt;narrative xml:lang="fr"&gt;Nom de l'agence A&lt;/narrative&gt;	 	
+  &lt;/participating-org&gt;
+</pre></code>
+</p>
+
+<p>The <code>narrative</code> element can be repeated for any language additional to the default language set in <code>iati-activity</code>, by using the <code>@xml:lang</code> attribute.</p>
+
+
+<p>One example illustrated below:</p>
+
+<p><code><pre>  &lt;participating-org ref="BB-BBB-123456789" role="1" type="40" activity-id="BB-BBB-123456789-1234"&gt;
+   &lt;narrative&gt;Name of Agency B&lt;/narrative&gt;
+  &lt;/participating-org&gt;
+  &lt;participating-org ref="CC-CCC-123456789" role="2" type="10" activity-id="CC-CCC-123456789-1234"&gt;
+   &lt;narrative&gt;Name of Agency C&lt;/narrative&gt;
+  &lt;/participating-org&gt;	  
+  &lt;participating-org ref="AA-AAA-123456789" role="3" type="21" activity-id="AA-AAA-123456789-1234"&gt;
+   &lt;narrative&gt;Name of Agency A&lt;/narrative&gt;
+<span>   &lt;narrative xml:lang="fr"&gt;Nom de l'agence A&lt;/narrative&gt;	 	
+</span>  &lt;/participating-org&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id2">
+<h3>2.01</h3>
+
+<p>The <code>narrative</code> element was introduced in 2.01.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-common.xsd#L27">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/participating-org/narrative.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

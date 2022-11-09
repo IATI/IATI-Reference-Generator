@@ -1,0 +1,104 @@
+<div class="body" role="main">
+<p id="iati-organisation">
+<h1>iati-organisation</h1>
+<p><code>iati-organisations/iati-organisation</code></p>
+<p>This is the reference page for the XML element <code>iati-organisation</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Top-level element for a single IATI organisation report.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur at least once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-last-updated-datetime">
+<dt>@last-updated-datetime</dt>
+<dd><p>The last date/time that the data for this specific
+organisation was updated.  This date must change whenever
+the value of any field changes.</p>
+<p>This value must be of type xsd:dateTime.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L1004">11.4.1</a>: The last updated datetime of the organisation must not be in the future.</p>
+</dd>
+</dl>
+<dl id="iati-organisations-iati-organisation-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 639-1 code specifying the default language used in
+narrative elements throughout the activity. If this is not
+declared then the xml:lang attribute MUST be specified for
+each narrative element.</p>
+<p>This value should be on the <a href="../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L1021">4.5.1</a>: The organisation should specify a default language, or the language should be specified for each narrative element.</p>
+</dd>
+</dl>
+<dl id="iati-organisations-iati-organisation-default-currency">
+<dt>@default-currency</dt>
+<dd><p>Default ISO 4217 currency code for all financial values in
+this activity report. If this is not declared then the
+currency attribute MUST be specified for all monetary
+values.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../codelists/Currency/"><span>Currency codelist</span></a>.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L1032">7.8.2</a>: The financial value must have a specified currency, or the organisation must declare a default currency.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of  <code>iati-organisation</code>.</p>
+
+<p>This element is a parent for other child elements.</p>
+
+
+<p>This example provides a dateTime of <em>2014-09-10T07:15:37Z</em>  for the <code>@last-updated-datetime</code> attribute.</p>
+<p>A dateTime in UTC time is indicated by adding a <em>Z</em> behind the time</p>
+<p>This example dateTime format conforms to the <em>xsd:dateTime</em> standard.</p>
+
+
+<p>The <code>@xml:lang</code> attribute declares a valid code (<em>en</em>) from the <em>Language</em> codelist.</p>
+<p>The <code>@default-currency</code> attribute declares a valid code (<em>EUR</em>) from the <em>Currency</em> codelist.</p>
+
+<p><code><pre> &lt;iati-organisation default-currency="EUR" last-updated-datetime="2014-09-10T07:15:37Z" xml:lang="en"&gt;
+</pre></code>
+</p>
+<p>The <code>iati-organisation</code> element acts as a container for other sub-elements.  It is closed as follows:</p>
+<p><code><pre> &lt;/iati-organisation&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id4">
+<h3>2.01</h3>
+
+<p>The <code>version</code> attribute was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">removed</a></p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-organisations-schema.xsd#L62">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/organisation-standard/iati-organisations/iati-organisation.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="organisation-identifier/">organisation-identifier</a></li>
+<li><a href="name/">name</a></li>
+<li><a href="reporting-org/">reporting-org</a></li>
+<li><a href="total-budget/">total-budget</a></li>
+<li><a href="recipient-org-budget/">recipient-org-budget</a></li>
+<li><a href="recipient-region-budget/">recipient-region-budget</a></li>
+<li><a href="recipient-country-budget/">recipient-country-budget</a></li>
+<li><a href="total-expenditure/">total-expenditure</a></li>
+<li><a href="document-link/">document-link</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

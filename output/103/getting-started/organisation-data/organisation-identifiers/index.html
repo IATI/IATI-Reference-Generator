@@ -1,0 +1,56 @@
+<div id="content" role="main">
+
+<header>
+<h1>Organisation Identifiers</h1>
+</header><!-- .entry-header -->
+<p>
+<p>This guidance <a href="https://docs.google.com/document/d/1o6ecOvr0_WA-hSLJ71dFw7cpYeC-fwGagkemty6fCbA/edit">draws from a paper</a> presented, discussed and consulted upon at the TAG meeting in May 2012. However, this is currently draft guidance – subject to confirmation by the Technical Advisory Group.</p>
+<p>The IATI standard allows for the recording of information on all organisations that participate in any part of the lifecycle of an aid activity: inter alia donors, beneficiaries, extending and implementing agencies.</p>
+<h3>Introduction</h3>
+<p>Organisational identifiers have two uses in IATI.</p>
+<ul>
+<li>They are used to identify organisations reporting activities, receiving funds, providing funds, or otherwise involved in activities</li>
+<li>They form the basis of Activity Identifiers, who are composed of the reporting organisation Organisation ID, and an Activity ID.</li>
+</ul>
+<h3>Two components of IATI Org Identifiers</h3>
+<p id="attachment_3322"><a href="/media/original_images/Organisational-ID-Diagrams.png"><img alt="" height="238" src="/media/original_images/Organisational-ID-Diagrams.png" title="Organisational ID Diagrams" width="397"/></a><p>The two components of IATI Organisation Identifiers</p></p>
+<p>The IATI Organisational Identifier scheme is based on re-using existing known identifiers for an organisation. Identifier strings consist of two components:</p>
+<ol>
+<li>The <strong>namespace code</strong> (a code that identifies a given organisational identifier registry)</li>
+<li>The <strong>base identifier</strong> – re-use of an existing identifier from that namespace/registry</li>
+</ol>
+<p>(1) and (2) are separated by a dash ‘-’.</p>
+<p>The namespace code (1) may contain a dash ‘-’.</p>
+<h3>Worked example</h3>
+<p>GB-COH is the <a href="https://docs.google.com/spreadsheet/ccc?key=0AnWngmdQt3stdFppMWdkcXJqVTRWTk9menR1N0FXNGc#gid=0">namespace code given by IATI Support</a> to the UK Companies Registrar which issues numerical company identifiers to legally constituted limited companies in the United Kingdom of Great Britain and Northern Ireland. 06368740 is the company number (base identifier) issued to Development Initiatives Poverty Research Limited. Combining these we get an IATI Organisational Identifier of: GB-COH-06368740</p>
+<h3>Sub-units</h3>
+<p>Where a registration scheme includes or allows separate identifiers for sub-units (e.g. is able to refer to departments within an organisation), then these may be included following a second ‘-’ delimiter. (e.g. GB-COH-06368740-AidInfo)</p>
+<h3>Replacement considerations</h3>
+<p>Where an existing base identifier contains ‘-’ (dash) then this should be replaced with ‘_’ (underscore).</p>
+<h3>Guidance on selecting the namespace or registration agency to use</h3>
+<p>An organisational identifier should:</p>
+<ol>
+<li><strong>Use an existing registration number/identifier</strong> that has been given to an organisation by an official registry of organisations (for example, a national company registrar, or drawn from a government register of charities). Registries that provide machine readable access to the data about organisations are generally preferred over those that do not (subject to (3) below).</li>
+<li><strong>Use a namespace/registry code from the existing IATI list of namespaces and registration agency codes</strong>. This is currently available at <a href="http://bit.ly/iati-org-reg">http://bit.ly/iati-org-reg</a> If no existing code is available then you should contact IATI Support with details of the registration agency you wish to re-use a code from in order to have a code set up. This list is currently maintained by the IATI secretariat over the short-term, with the hope that the wider open data community will adopt and develop a shared list of registration agency namespace codes in future.</li>
+<li><strong>Where an organisation has multiple registration numbers, prefer those identifiers which uniquely pick out the organisation itself, rather than properties of the organisation</strong>. For example, a VAT/Tax registration number describes that an entity is registered for tax, but may not map directly onto a single legal entity – as – for example – groups of companies may share a VAT registration number. For this reason, an identifier such as GB-COH-123456 would be preferred to GB-VAT-987765. If you are unsure of which registration agency to prefer, please consult IATI Support. If no authoritative registration agency information is currently collected (e.g. internal identifiers and supplier numbers are recorded, but no external identifiers) IATI publishers are encouraged to identify opportunities to collect an authoritative public identifier.</li>
+<li><strong>Where an organisation is not identified in an official national registry, but it is identified in one of the recognised IATI Bi-lateral, Multi-lateral or INGO code lists, these codes should be used</strong>. Multi-lateral and INGO numerical codes from these lists should be prefixed with DAC- The bi-lateral list (e.g. GB-1) will be deprecated in a future update of the standard and replaced with an official DAC provided code-list. In the meantime, non-prefixed bi-lateral code list values from IATIStandard.org can be used.</li>
+<li><strong>Where none of the above provide an appropriate identifier, third-parties may provide appropriate lists of organisations</strong>. Consult with IATI Support to identify appropriate identifier lists.</li>
+<li><strong>Where no other identifiers are held or available, agree a registry code under ALT- with IATI Support for your organisation and use IDs within this namespace</strong>. For example, if Development Initiatives were to only have internal supplier database identifiers for organisations, it could use codes of the form MISC-DEVINIT-123456. It would register MISC-DEVINIT with IATI Support, and ideally would provide some sort of reconciliation service to return the names and any additional information held that relates to each organisation ID.</li>
+<li><strong>Where no identifier is held, make use of the @type attribute</strong> to indicate the type of organisation (using the Organisation Type code list) and do not provide a @ref value.</li>
+</ol>
+<h3>Replacement patterns</h3>
+<p>Where an existing base identifier contains ‘-’ (dash) then this should be replaced with ‘_’ (underscore).</p>
+<p>Once determined, the organisational identity can be used in the @ref attribute of reporting-org and participating-org, and should be used in @ref attribute of transaction/provider-org and transaction/recipient-org.</p>
+<p>The string value name within any organisational identifier XML tag is provided for convenience of consuming applications only, and should not be treated as definitive.</p>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1647 -->
+<!-- #comments -->
+<p>
+<p>
+					Last updated on May 7, 2014. 				  </p>
+<!--<p class="fl">Last updated: April 22, 2011   
+					<p class="fr"></p>	-->
+</p>
+</div>

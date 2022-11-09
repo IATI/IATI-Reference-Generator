@@ -1,0 +1,11 @@
+code,name,description,category,url
+1,Fonds entrants,Fonds reçus pour être utilisés dans le cadre de l'activité et qui peuvent provenir d'une source externe ou interne.,,
+2,Engagement,"Une obligation ferme et écrite d'un donateur ou d'un fournisseur d'offrir au bénéficiaire un financement d'un montant établi, conformément à des modalités précises, dans un but explicite.",,
+3,Décaissement,Fonds sortants mis à la disposition d'un gouvernement ou d'une organisation bénéficiaire ou fonds transférés entre deux activités faisant l'objet de déclarations distinctes.,,
+4,Dépenses,Fonds sortants dépensés pour acquérir des biens et services pour l'activité.,,
+5,Paiements d’intérêts,"Le montant réel des intérêts payés en lien avec un prêt ou une marge de crédit, y compris les frais.",,
+6,Remboursement du prêt,"Le montant réel du capital remboursé (amortissement), y compris les arriérés, le cas échéant.",,
+7,Remboursement,"Un type de décaissement qui couvre des fonds qui ont déjà été dépensés par le bénéficiaire, conformément aux modalités de la subvention ou du prêt",,
+8,Achat d'équité,Fonds sortants qui sont utilisés pour acquérir de l'équité dans une entreprise,,
+9,Vente d'équité,Fonds reçus en lien avec la vente d'équité,,
+10,Caution,Engagement pris par une organisation de financement pour garantir un prêt ou une marge de crédit contractés par une tierce partie.,,

@@ -1,0 +1,119 @@
+<div class="body" role="main">
+<p id="transaction">
+<h1>transaction</h1>
+<p><code>iati-activities/iati-activity/transaction</code></p>
+<p>This is the reference page for the XML element <code>transaction</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Committed or actual money flowing in or out of an aid
+activity.The @ref attribute allows uniquely identifying a
+transaction, to match it up with the corresponding in- or
+outflow in a different activity.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-transaction-ref">
+<dt>@ref</dt>
+<dd><p>Machine-readable identification string for the business
+object being described.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>The <code>transaction</code> element acts as a container for other sub elements.</p>
+<p>At the <code>transaction</code> level, the attribute <code>ref</code> can be used to describe reference to this <code>transaction</code> in another system:</p>
+<p><code><pre>&lt;transaction ref="1234"&gt;
+....
+&lt;/transaction&gt;
+</pre></code>
+</p>
+<p>Example <code>transaction</code>:</p>
+<p><code><pre><span>  &lt;transaction ref="1234"&gt;
+</span>   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;  
+   &lt;description&gt;Transaction description text&lt;/description&gt;
+   &lt;transaction-type code="IF" /&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" ref="BB-BBB-123456789"&gt;Agency B&lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" ref="AA-AAA-123456789"&gt;Agency A&lt;/receiver-org&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;disbursement-channel code="1" /&gt;
+<span>  &lt;/transaction&gt;
+</span></pre></code>
+</p>
+<p>Full example with additional elements which can override the default value set in <code>iati-activity</code>:</p>
+<p><code><pre><span>  &lt;transaction ref="1234"&gt;
+</span>   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;   
+   &lt;description&gt;Transaction description text&lt;/description&gt;
+   &lt;transaction-type code="IF" /&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" ref="BB-BBB-123456789"&gt;Agency B&lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" ref="AA-AAA-123456789"&gt;Agency A&lt;/receiver-org&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;flow-type code="20" /&gt;
+   &lt;finance-type code="111" /&gt;
+   &lt;aid-type code="A02" /&gt;   
+   &lt;tied-status code="5" /&gt;
+   &lt;disbursement-channel code="1" /&gt;
+<span>  &lt;/transaction&gt;
+</span></pre></code>
+</p>
+<p>An <code>iati-activity</code> can have multiple <code>transaction</code> elements.</p>
+<p><code><pre><span>  &lt;transaction ref="ABC"&gt;
+</span>   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;
+   &lt;description&gt;Description text&lt;/description&gt;
+   &lt;description xml:lang="fr"&gt;Texte de description&lt;/description&gt;
+   &lt;transaction-type code="C" /&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234" ref="BB-BBB-123456789"&gt;Agency B&lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="CC-CCC-123456789-1234" ref="CC-CCC-123456789"&gt;Agency C&lt;/receiver-org&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;flow-type code="10" /&gt;
+   &lt;finance-type code="110" /&gt;
+   &lt;aid-type code="A01" /&gt;   
+   &lt;tied-status code="3" /&gt;
+   &lt;disbursement-channel code="1" /&gt;   
+<span>  &lt;/transaction&gt;
+</span><span>  &lt;transaction ref="1234"&gt;
+</span>   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;
+   &lt;description&gt;Description text&lt;/description&gt;
+   &lt;description xml:lang="fr"&gt;Texte de description&lt;/description&gt;
+   &lt;transaction-type code="IF" /&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" ref="BB-BBB-123456789"&gt;Agency B&lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" ref="AA-AAA-123456789"&gt;Agency A&lt;/receiver-org&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;flow-type code="10" /&gt;
+   &lt;finance-type code="110" /&gt;
+   &lt;aid-type code="A01" /&gt;
+   &lt;tied-status code="3" /&gt;
+   &lt;disbursement-channel code="1" /&gt;
+<span>  &lt;/transaction&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L651">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/transaction.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="value/">value</a></li>
+<li><a href="description/">description</a></li>
+<li><a href="transaction-type/">transaction-type</a></li>
+<li><a href="provider-org/">provider-org</a></li>
+<li><a href="receiver-org/">receiver-org</a></li>
+<li><a href="transaction-date/">transaction-date</a></li>
+<li><a href="flow-type/">flow-type</a></li>
+<li><a href="finance-type/">finance-type</a></li>
+<li><a href="aid-type/">aid-type</a></li>
+<li><a href="tied-status/">tied-status</a></li>
+<li><a href="disbursement-channel/">disbursement-channel</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

@@ -1,0 +1,62 @@
+<codelist name="TransactionType" date-last-modified="2022-07-25T19:39:29.940185+00:00" version="" xml:lang="en">
+  <TransactionType>
+    <code>C</code>
+    <name>Commitment</name>
+    <language>en</language>
+    <description>A firm written obligation by the donor to provide resources of a specified amount under specified financial terms and conditions and for specified purposes for the benefit of the recipient</description>
+  </TransactionType>
+  <TransactionType>
+    <code>D</code>
+    <name>Disbursement</name>
+    <language>en</language>
+    <description>The amount placed at the disposal of a recipient country or agency (in the case of internal development-related expenditures, the outlay of funds)</description>
+  </TransactionType>
+  <TransactionType>
+    <code>E</code>
+    <name>Expenditure</name>
+    <language>en</language>
+    <description>The outlay by the implementing agency on goods and services for the activity</description>
+  </TransactionType>
+  <TransactionType>
+    <code>IF</code>
+    <name>Incoming Funds</name>
+    <language>en</language>
+    <description>Funds received (whether from an external source or through internal accounting) for specific use on this activity.</description>
+  </TransactionType>
+  <TransactionType>
+    <code>IR</code>
+    <name>Interest Repayment</name>
+    <language>en</language>
+    <description>The actual amount of interest repaid, including fees.</description>
+  </TransactionType>
+  <TransactionType>
+    <code>LR</code>
+    <name>Loan Repayment</name>
+    <language>en</language>
+    <description>The actual amount of principal (amortisation) repaid, including any arrears.</description>
+  </TransactionType>
+  <TransactionType>
+    <code>R</code>
+    <name>Reimbursement</name>
+    <language>en</language>
+    <description>A disbursement that covers funds already spent by the recipient, as agreed in the terms of the loan or grant.</description>
+  </TransactionType>
+  <TransactionType>
+    <code>QP</code>
+    <name>Purchase of Equity</name>
+    <language>en</language>
+    <description>The use of an activity's funds to purchase equity in a business.</description>
+  </TransactionType>
+  <TransactionType>
+    <code>QS</code>
+    <name>Sale of Equity</name>
+    <language>en</language>
+    <description>The flow of funds into an activity from the sale of equity.</description>
+  </TransactionType>
+  <TransactionType>
+    <code>CG</code>
+    <name>Credit Guarantee</name>
+    <language>en</language>
+    <description>A commitment made by a funding organisation to underwrite a loan or line of credit entered into by a third party.</description>
+  </TransactionType>
+</codelist>

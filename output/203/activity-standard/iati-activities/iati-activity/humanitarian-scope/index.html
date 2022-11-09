@@ -1,0 +1,112 @@
+<div class="body" role="main">
+<p id="humanitarian-scope">
+<h1>humanitarian-scope</h1>
+<p><code>iati-activities/iati-activity/humanitarian-scope</code></p>
+<p>This is the reference page for the XML element <code>humanitarian-scope</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Classification of emergencies, appeals and other humanitarian
+events and actions.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-humanitarian-scope-type">
+<dt>@type</dt>
+<dd><p>A code for the type of event or action being classified.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value should be on the <a href="../../../../codelists/HumanitarianScopeType/"><span>HumanitarianScopeType codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-humanitarian-scope-vocabulary">
+<dt>@vocabulary</dt>
+<dd><p>A code for a recognised vocabulary of terms classifying the
+event or action.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value should be on the <a href="../../../../codelists/HumanitarianScopeVocabulary/"><span>HumanitarianScopeVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-humanitarian-scope-vocabulary-uri">
+<dt>@vocabulary-uri</dt>
+<dd><p>A u.r.i. for the vocabulary specified which provides access to
+the list of codes and descriptions.</p>
+<p>This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-humanitarian-scope-code">
+<dt>@code</dt>
+<dd><p>A code for the event or action from the vocabulary specified.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>humanitarian-scope</code> of an <code>iati-activity</code>.</p>
+
+<p>The <code>@type</code> attribute declares a valid code (<em>1</em>) from the <em>HumanitarianScopeType</em> codelist.</p>
+<p>The <code>@vocabulary</code> attribute declares a valid code (<em>1-2</em>) from the <em>HumanitarianScopeVocabulary</em> codelist.</p>
+<p>The <code>@code</code> attribute declares a valid code (<em>EQ-2015-000048-NPL</em>) from the specified vocabulary.</p>
+
+<p><code><pre>&lt;humanitarian-scope type="1" vocabulary="1-2" code="EQ-2015-000048-NPL"&gt;
+...
+&lt;/humanitarian-scope&gt;
+</pre></code>
+</p>
+<p>If a publisher uses a vocabulary of 99 (i.e. ‘Reporting Organisation’), then the <code>@vocabulary-uri</code> attribute should also be used, for example:</p>
+<p><code><pre>&lt;humanitarian-scope type="1" vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="5"&gt;
+  &lt;narrative&gt;Nepal Earthquake (April 2015)&lt;/narrative&gt;
+&lt;/humanitarian-scope&gt;
+</pre></code>
+</p>
+
+<p>The <code>humanitarian-scope</code> element can be repeated in any <code>iati-activity</code>.</p>
+
+<p><code><pre>  &lt;humanitarian-scope type="1" vocabulary="1-2" code="EQ-2015-000048-NPL"&gt;
+ 	  &lt;narrative&gt;Nepal Earthquake April 2015&lt;/narrative&gt;
+    &lt;narrative xml:lang="fr"&gt; Népal Earthquake Avril 2015&lt;/narrative&gt;
+  &lt;/humanitarian-scope&gt;
+  &lt;humanitarian-scope type="1" vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1"&gt;
+   &lt;narrative xml:lang="en"&gt;Nepal Earthquake April 2015&lt;/narrative&gt;
+  &lt;/humanitarian-scope&gt;
+</pre></code>
+</p>
+
+<p>If a vocabulary is not on the <em>HumanitarianScopeVocabulary</em> codelist, then the value of <em>99</em> (<em>Reporting Organisation</em>) should be declared.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.03</h3>
+<p>The definition of the <code>@vocabulary-uri</code> was <a href="https://discuss.iatistandard.org/t/guidance-on-u-r-i-usage-for-publisher-s-own-vocabularies-included-2-03/850">updated</a>.</p>
+</p>
+<p id="id2">
+<h3>2.02</h3>
+<p>The <code>humanitarian-scope</code> element was <a href="http://support.iatistandard.org/entries/105778163-Humanitarian-Emergencies-and-Appeals">added</a>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L817">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/humanitarian-scope.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

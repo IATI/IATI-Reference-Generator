@@ -1,0 +1,55 @@
+<div id="content" role="main">
+
+<header>
+<h1>Transaction Type</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;transaction-type&gt;&lt;/transaction-type&gt;</h2><p><h3>From the schema</h3><p>
+                The type of the transaction (e.g. commitment,
+                disbursement, expenditure, etc.).  The @ref attribute
+                contains a code defined by IATI, and the content is an
+                optional free-text description of the type.
+
+                For the value of the @code attribute, see
+                <a href="/en/iati-standard/203/codelists/transaction_type" rel="nofollow">http://iatistandard.org/codelists/transaction_type</a>
+</p><p> This element is of the type "codeReqType" as described in the <a href="/reference_downloads/archive/downloads/1.02/iati-common.xsd">IATI Common schema</a></p><p><p>
+        Data type for an element that refers to an object that must
+        have a code.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@code</td><td>required</td><td>
+        Machine-readable code for the entity being described.
+      </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /transaction/transaction-type/@code</h3><ul><li>Must be on: <a href="/en/iati-standard/203/codelists/transaction_type">Transaction Type Codelist</a></li></ul></p>
+<h2 id="transaction_type">Transaction Type</h2>
+
+<!-- EDIT1 SECTION "Transaction Type" [1-53] -->
+<h3 id="notes">Notes</h3>
+<p>
+<p>
+This provides the code for the transaction type. There are seven of these: C - Commitment, D - Disbursement, E - Expenditure, IF - Incoming funds, IR - Interest Repayment, LR - Loan Repayment, and R - Reimbursement.
+</p>
+</p>
+<!-- EDIT2 SECTION "Notes" [54-287] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The code should be declared in any usage of this element:
+</p>
+<pre>    <span><span>&lt;transaction-type</span> <span>code</span>=<span>"C"</span><span>/&gt;</span></span></pre>
+<p>
+Additionally, a text description of the code can be provided:
+</p>
+<pre>    <span><span>&lt;transaction-type</span> <span>code</span>=<span>"C"</span><span>&gt;</span></span>Commitment<span><span>&lt;/transaction-type<span>&gt;</span></span></span></pre>
+<p>
+Where this text description is in a language that differs from the default, then this should be declared accordingly:
+</p>
+<pre>    <span><span>&lt;transaction-type</span> <span>code</span>=<span>"C"</span> <span>xml:lang</span>=<span>"en"</span><span>&gt;</span></span>Commitment<span><span>&lt;/transaction-type<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT3 SECTION "Example Usage" [288-] -->
+</p>
+
+</p><!-- .entry-content -->
+<!-- #post-1437 -->
+
+</div>

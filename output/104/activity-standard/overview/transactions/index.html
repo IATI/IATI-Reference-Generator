@@ -1,0 +1,45 @@
+<div class="body" role="main">
+<p id="transaction">
+<h1>Transaction</h1>
+<p id="definition">
+<h2>Definition</h2>
+<p>The <strong>IATI activity standard</strong> enables <code>transaction</code> information to be published.</p>
+<p>The <code>transaction</code> data is a core component to IATI, detailing the flow of monies between organisations.</p>
+</p>
+<p id="considerations">
+<h2>Considerations</h2>
+<p>When using the <strong>IATI activity standard</strong> to declare <em>transaction</em>, the following should be considered:</p>
+<ul>
+<li>Every <code>iati-activity</code> should contain at least one <code>transaction</code>. However, this may not always be possible for early-stage activities, for example.</li>
+<li>Every <code>transaction</code> must contain a <code>transaction-date</code> , <code>value</code>, <code>value-date</code> and <code>transaction-type</code>.</li>
+<li>For every <code>transaction</code> a type contained on the <code>TransactionType</code> codelist is required,</li>
+<li><dl>
+<dt>There are several types of transactions. The most common are:</dt>
+<dd><ul>
+<li>Commitment - the total agreed budget for the activity.</li>
+<li>Disbursement - the amount transferred to another organisation in the aid delivery chain (e.g. a partner organisation being funded).</li>
+<li>Expenditure - the outlay on goods and services and project overheads.</li>
+<li>Incoming funds - the funds received from a funding source (e.g. a donor).</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt>The <code>value</code> of a transaction can be positive or negative, and contain decimals. It must not contain comma seperators (eg: 3,000):</dt>
+<dd><ul>
+<li>example: <code>3000</code> or <code>3000.00</code> or <code>-3000</code> is acceptable. <code>3,000</code> is not.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>Both the <code>transaction-date</code> and <code>value-date</code> must be in ISO 8601 format (YYYY-MM-DD), eg: 2014-03-21.</li>
+<li>Neither of <code>transaction-date</code> and <code>value-date</code> can be in the “future”.  A <code>transaction</code> always describes something that has taken place.</li>
+<li>A <code>transaction</code> can be declared in any currency on the <code>Currency</code> codelist.</li>
+<li>A <code>transaction</code> can also include <code>finance-type</code> , <code>flow-type</code> , <code>aid-type</code> and/or <code>tied-status</code> information.</li>
+<li><code>Currency</code> , <code>finance-type</code> , <code>flow-type</code> , <code>aid-type</code> and <code>tied-status</code> can be set as defaults in the <code>iati-activity</code> element.  There is no requirement to restate these within a <code>transaction</code> if they are the same.</li>
+<li>A <code>transaction</code> can also contain information on the source and destination organisation.  When describing these the <code>provider-org</code> and <code>receiver-org</code> should be used.  Ideally, the unique organisation identifier would be included.</li>
+<li>Where possible, it is recommended that a <code>transaction</code> includes the <code>provider-activity-id</code> and/or <code>receiver-activity-id</code> to refernce the <code>iati-activity</code> from which funds flow from/to.</li>
+</ul>
+</p>
+</p>
+</div>

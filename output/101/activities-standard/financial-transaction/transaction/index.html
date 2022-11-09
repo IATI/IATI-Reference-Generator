@@ -1,0 +1,38 @@
+<div id="content" role="main">
+
+<header>
+<h1>Transaction</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;transaction&gt;&lt;/transaction&gt;</h2><p><h3>From the schema</h3><p>
+        Committed or actual money flowing in or out of an aid
+        activity.The @ref attribute allows uniquely identifying a
+        transaction, to match it up with the corresponding in- or
+        outflow in a different activity.
+      </p><table><tbody><tr><td>@ref</td><td>
+        Machine-readable identification string for the business
+        object being described.
+      </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /transaction/aid-type/@code</h3><ul><li>Must be on: <a href="../../../codelists/aid_type/">Aid Type Codelist</a></li><li>Must be on: <a href="../../../codelists/disbursement_channel/">Disbursement Channel Codelist</a></li><li>Must be on: <a href="../../../codelists/finance_type/">Finance Type Codelist</a></li><li>Must be on: <a href="../../../codelists/flow_type/">Flow Type Codelist</a></li><li>Must be on: <a href="/en/iati-standard/101/codelists/organisation_identifier">Organisation Identifier Codelist</a></li><li>Must be on: <a href="/en/iati-standard/101/codelists/organisation_identifier">Organisation Identifier Codelist</a></li><li>Must be on: <a href="../../../codelists/tied_status/">Tied Status Codelist</a></li><li>Must be on: <a href="../../../codelists/transaction_type/">Transaction Type Codelist</a></li><li>value-date required</li><!--<li>exists($this/@value-date)</li>--><li>Must be on: <a href="../../../codelists/currency/">Currency Codelist</a></li></ul></p>
+<h2 id="transaction">Transaction</h2>
+
+<!-- EDIT1 SECTION "Transaction" [1-49] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The budget element acts as a container for transaction details.
+</p>
+<p>
+At this level, the attribute “ref” can be used to describe reference to this transaction in another system:
+</p>
+<pre>    <span><span>&lt;transaction</span> <span>ref</span>=<span>"200304678"</span><span>&gt;</span></span>
+    ....
+    <span><span>&lt;/transaction<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [50-] -->
+</p>
+
+</p><!-- .entry-content -->
+<!-- #post-3327 -->
+
+</div>

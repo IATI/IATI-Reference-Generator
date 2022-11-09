@@ -1,0 +1,174 @@
+<div class="body" role="main">
+<p id="indicator">
+<h1>indicator</h1>
+<p><code>iati-activities/iati-activity/result/indicator</code></p>
+<p>This is the reference page for the XML element <code>indicator</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The indicator(s) that meet the results. There can be multiple indicators for each result.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur at least once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-indicator-measure">
+<dt>@measure</dt>
+<dd><p>An IATI code defining the unit of measure in which the value is reported.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/IndicatorMeasure/"><span>IndicatorMeasure codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-result-indicator-ascending">
+<dt>@ascending</dt>
+<dd><p>A boolean describing the behaviour of the indicator.
+It is “true” if the indicator improves from small to large (e.g. clinics built); false if it improves from large to small (e.g. cases of a disease).</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-result-indicator-aggregation-status">
+<dt>@aggregation-status</dt>
+<dd><p>Boolean flag indicating whether the data in the result set are suitable for aggregation.</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>indicator</code>  in a <code>result</code> of an <code>iati-activity</code>.</p>
+
+<p>This element is a parent for other child elements.  It is also contained within a <code>result</code> element.</p>
+
+
+<p>The <code>@measure</code> attribute declares a valid code (<em>1</em>) from the <em>IndicatorMeasure</em> codelist.</p>
+<p>The <code>@ascending</code> boolean of <em>1</em> also declares that the data is asscending.</p>
+<p>The <code>@aggregation-status</code> <em>1</em> boolean is included, for illustration of suitability for aggregation.</p>
+
+<p><code><pre>   &lt;indicator measure="1" ascending="1" aggregation-status="1"&gt;
+     &lt;title&gt;
+      &lt;narrative&gt;Indicator title&lt;/narrative&gt;
+     &lt;/title&gt;
+     &lt;description&gt;
+      &lt;narrative&gt;Indicator description text&lt;/narrative&gt;
+     &lt;/description&gt;
+     &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_indicator_en.odt"&gt;
+      &lt;title&gt;
+       &lt;narrative&gt;Results Indicator Report 2013&lt;/narrative&gt;
+      &lt;/title&gt;
+      &lt;description&gt;
+        &lt;narrative&gt;Report of results indicator&lt;/narrative&gt;
+      &lt;/description&gt;
+      &lt;category code="A01" /&gt;
+      &lt;language code="en" /&gt;
+      &lt;document-date iso-date="2014-02-05" /&gt;
+     &lt;/document-link&gt;
+     &lt;reference vocabulary="1" code="3429" /&gt;
+     &lt;reference vocabulary="7" code="861" /&gt;
+     &lt;reference vocabulary="99" code="B1" indicator-uri="http://example.com/indicators.html" /&gt;
+&lt;!--result-baseline starts--&gt;
+     &lt;baseline year="2012" iso-date="2012-01-01" value="10"&gt;
+      &lt;location ref="AF-KAN" /&gt;
+      &lt;location ref="KH-PNH" /&gt;
+      &lt;dimension name="sex" value="female" /&gt;
+      &lt;dimension name="age" value="adult" /&gt;
+      &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_baseline_en.odt"&gt;
+       &lt;title&gt;
+        &lt;narrative&gt;Results Baseline Report 2013&lt;/narrative&gt;
+       &lt;/title&gt;
+       &lt;description&gt;
+         &lt;narrative&gt;Report of results baseline&lt;/narrative&gt;
+       &lt;/description&gt;
+       &lt;category code="A01" /&gt;
+       &lt;language code="en" /&gt;
+       &lt;document-date iso-date="2014-02-05" /&gt;
+      &lt;/document-link&gt;
+      &lt;comment&gt;
+       &lt;narrative&gt;Baseline comment text&lt;/narrative&gt;
+      &lt;/comment&gt;
+     &lt;/baseline&gt;
+     &lt;!--result-baseline ends--&gt;
+     &lt;!--result-period starts--&gt;
+     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+      &lt;period-end iso-date="2013-03-31" /&gt;
+      &lt;target value="10"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+        &lt;narrative&gt;Target comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_target_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Target Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period target&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/target&gt;
+      &lt;actual value="11"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+         &lt;narrative&gt;Actual comment text&lt;/narrative&gt;
+       &lt;/comment&gt;
+       &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_period_actual_en.odt"&gt;
+        &lt;title&gt;
+         &lt;narrative&gt;Results Period Actual Report 2013&lt;/narrative&gt;
+        &lt;/title&gt;
+        &lt;description&gt;
+          &lt;narrative&gt;Report of results period actual&lt;/narrative&gt;
+        &lt;/description&gt;
+        &lt;category code="A01" /&gt;
+        &lt;language code="en" /&gt;
+        &lt;document-date iso-date="2014-02-05" /&gt;
+       &lt;/document-link&gt;
+      &lt;/actual&gt;
+     &lt;/period&gt;
+     &lt;!--result-period ends--&gt;
+   &lt;/indicator&gt;
+</pre></code>
+</p>
+
+<p>The <code>indicator</code> element can be repeated in any <code>result</code> of an <code>iati-activity</code>.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.03</h3>
+<p>The optional attribute <code>@aggregation-status</code> was <a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874">added</a>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1730">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result/indicator.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="title/">title</a></li>
+<li><a href="description/">description</a></li>
+<li><a href="document-link/">document-link</a></li>
+<li><a href="reference/">reference</a></li>
+<li><a href="baseline/">baseline</a></li>
+<li><a href="period/">period</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

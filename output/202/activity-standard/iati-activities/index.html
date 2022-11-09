@@ -1,0 +1,100 @@
+<div class="body" role="main">
+<p id="iati-activities">
+<h1>iati-activities</h1>
+<p><code>iati-activities</code></p>
+<p>This is the reference page for the XML element <code>iati-activities</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Top-level list of one or more IATI activity records.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-version">
+<dt>@version</dt>
+<dd><p>A number indicating the IATI specification version in use.
+This is mandatory and must be a valid version.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../codelists/Version/"><span>Version codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-generated-datetime">
+<dt>@generated-datetime</dt>
+<dd><p>A date/time stamp for when this file was generated. This
+is not necessarily the last-updated date for the
+individual activity records in it. Use of this attribute
+is highly recommended, to allow recipients to know when a
+file has been updated.</p>
+<p>This value must be of type xsd:dateTime.</p>
+</dd>
+</dl>
+<dl id="iati-activities-linked-data-default">
+<dt>@linked-data-default</dt>
+<dd><p>If a publisher chooses to publish linked data about their
+IATI activities then allowing them to declare where this
+data is published would support discovery of it, and any
+additional information they may choose to publish as
+Linked Data alongside it.</p>
+<p>This attribute is a URI path upon which an activity
+identifier can be appended to get a differentiable URI
+for any activity contained within a file.</p>
+<p>Where a publisher declares using one of these properties
+that authoritative linked data is accessible for an
+activity then consuming applications that are generating
+Linked Data from an IATI XML file should assert an
+owl:sameAs relationship to the relevant URI.</p>
+<p>This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>iati-activities</code>.</p>
+
+<p>This element is a parent for other all other elements of the <strong>IATI Activity Standard</strong>.</p>
+
+
+<p>This example provides a dateTime of <em>2014-09-10T07:15:37Z</em>  for the <code>@generated-datetime</code> attribute.</p>
+<p>A dateTime in UTC time is indicated by adding a <em>Z</em> behind the time</p>
+<p>This example date time format conforms to the <em>xsd:dateTime</em> standard.</p>
+
+
+<p>The <code>@version</code> attribute declares a valid code (<em>2.x</em>) from the <em>Version</em> codelist.</p>
+<p>The optional <code>@linked-data-default</code> attribute is also included.</p>
+
+<p><code><pre>&lt;iati-activities generated-datetime="2014-09-10T07:15:37Z" version="2.02" linked-data-default="http://data.example.org/"&gt;
+</pre></code>
+</p>
+<p>The <code>iati-activities</code> element acts as a container for other sub-elements.  It is closed as follows:</p>
+<p><code><pre>&lt;/iati-activities&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.02</h3>
+<p>Introduced the <code>@linked-data-default</code> attribute on <code>iati-activities</code> element</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L28">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="iati-activity/">iati-activity</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="0" name="order"/></div>

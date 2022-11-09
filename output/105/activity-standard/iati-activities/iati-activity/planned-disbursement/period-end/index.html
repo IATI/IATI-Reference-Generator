@@ -1,0 +1,43 @@
+<div class="body" role="main">
+<p id="period-end">
+<h1>period-end</h1>
+<p><code>iati-activities/iati-activity/planned-disbursement/period-end</code></p>
+<p>This is the reference page for the XML element <code>period-end</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The ending date for the disbursement period, in ISO 8601
+format (e.g. 2011-03-31 for 31 March 2011).  This
+element must be present.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-planned-disbursement-period-end-iso-date">
+<dt>@iso-date</dt>
+<dd><p>The ISO 8601 date.</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+<p><code>period-start/@iso-date</code> must be before or the same as <code>period-end/@iso-date</code></p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>period-end</code> in context of <code>planned-disbursement</code> element.</p>
+<p>A date in ISO 8601 format (YYYY-MM-DD) for the <code>period-end</code> date of the reporting period is required:</p>
+<p><code><pre>  &lt;planned-disbursement updated="2014-01-01"&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+<span>   &lt;period-end iso-date="2014-12-31" /&gt;
+</span>   &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
+  &lt;/planned-disbursement&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L1593">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/planned-disbursement/period-end.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

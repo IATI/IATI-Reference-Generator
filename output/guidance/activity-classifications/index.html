@@ -1,0 +1,153 @@
+<div class="body" role="main">
+<p id="additional-activity-classifications">
+<h1>Additional activity classifications</h1>
+<p>There are many kinds of humanitarian and development financing, each of these can be classified. Funding can come in different <a href="/en/iati-standard/203/codelists/FinanceType/">finance types</a> (including grants, loans, bonds) and <a href="/en/iati-standard/203/codelists/AidTypeVocabulary/">aid types</a> (such as specific project support, core support, pooled funding). It can also come from different types of donors (e.g. as official development assistance from governments, or private development finance from development banks or philanthropic foundations). Organisations publishing data may also want to specify whether an activity or transaction concerns a particular policy area, such as gender equality or disability.</p>
+<p>Using the IATI Standard, publishers can assign different classifications to their data as well detailing an activity’s <a href="../activity-thematic-focus/"><span>thematic focus</span></a>. These help users to understand what type of financing it is and how it can be used. As money flows from one organisation to another, these classifications might change. For example, finance from a donor may be untied, then later become tied to a specific purpose as it flows down through multiple implementing partners.</p>
+<p>The classification categories used in IATI are aligned, where possible, with those used by other internationally recognised data standards or initiatives, such as the <a href="https://www.oecd.org/dac/">OECD DAC</a> and the <a href="https://www.agendaforhumanity.org/initiatives/3861">Grand Bargain</a>.</p>
+<p>Please note that all classifications in IATI are optional. Activities should include only classifications that are relevant. Some donors require their grantees to publish certain classifications in their activities.</p>
+<p>Classifications covered in IATI include:</p>
+<ul>
+<li><a href="/en/iati-standard/203/codelists/AidTypeVocabulary/">Aid-type</a></li>
+<li><a href="/en/iati-standard/203/codelists/CollaborationType/">Collaboration-type</a></li>
+<li><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/disbursement-channel/">Disbursement-channel</a></li>
+<li><a href="/en/iati-standard/203/codelists/FinanceType/">Finance-type</a></li>
+<li><a href="/en/iati-standard/203/codelists/FlowType/">Flow-type</a></li>
+<li><a href="/en/iati-standard/203/codelists/PolicyMarkerVocabulary/">Policy-marker</a></li>
+<li><a href="/en/iati-standard/203/codelists/TiedStatus/">Tied-status</a></li>
+</ul>
+<p id="what-classification-information-can-be-published">
+<h2>What classification information can be published?</h2>
+<ul>
+<li>An activity can have multiple policy-marker attributes. Unlike the element <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">sector</a>, percentages do not need to be added to each policy-marker.</li>
+<li>The classifications of default-finance-type, default-flow-type, default-aid-type and default-tied-status apply to the whole IATI-activity. These can be overridden within a single transaction.</li>
+<li>If an entire activity is wholly tied, partially tied or untied, it is recommended the appropriate default-tied-status code is used.</li>
+<li>When used at transaction level, tied-status should be published for outgoing and incoming commitments only.</li>
+<li>If an iati-activity has more than one tied status it is recommended that the published commitment(s) are split into the relevant tied, untied and/or partially-tied amounts and tied-status is published at transaction level.</li>
+<li>All IATI classifications are optional. Not all classifications may be applicable to an activity.</li>
+</ul>
+</p>
+<p id="technical-guidance-summary">
+<h2>Technical guidance summary</h2>
+<p>Classifications that cover the whole activity:</p>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/policy-marker/">policy-marker</a></td>
+<td>A policy or theme addressed by the activity.</td>
+<td>The <a href="/en/iati-standard/203/codelists/PolicySignificance/">significance</a> attribute must be present if OECD <a href="/en/iati-standard/203/codelists/PolicyMarker/">policy marker</a> codes are used.</td>
+<td>It is recommended that the OECD <a href="/en/iati-standard/203/codelists/PolicyMarker/">policy marker</a> codes are used, codes from additional vocabularies can also be added
+If no codelist is declared, the OECD <a href="/en/iati-standard/203/codelists/PolicyMarker/">policy marker</a> codelist is presumed.
+If vocabulary 99 (reporting-org) is used, a link to the codelist using the @vocabulary-uri attribute should be included; there must also be a description of the code in the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/policy-marker/narrative/">narrative</a> element. This helps ensure that users can understand the meaning of the code.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/collaboration-type/">collaboration-type</a></td>
+<td>Describes what type of organisation is providing the funds (e.g. bilateral or multilateral).</td>
+<td>This element must be published no more than once.</td>
+<td> </td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/default-flow-type/">default-flow-type</a></td>
+<td>DAC/CRS distinction between ODA (official development assistance) and other types of resource flow.</td>
+<td>This element must be published no more than once.</td>
+<td> </td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/default-finance-type/">default-finance-type</a></td>
+<td>DAC/CRS distinction between ODA (official development assistance) and other types of resource flow.</td>
+<td>This element must be published no more than once.</td>
+<td> </td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/default-aid-type/">default-aid-type</a></td>
+<td>The type of aid being supplied (e.g. project-type intervention, budget support or debt relief).</td>
+<td> </td>
+<td>It is recommended that the OECD <a href="/en/iati-standard/203/codelists/AidType/">aid type</a> codes are used, codes from additional vocabularies can also be added.
+If no vocabulary is declared, OECD aid type is presumed.
+Each activity should only contain one code from each <a href="/en/iati-standard/203/codelists/AidTypeVocabulary/">aid type vocabulary</a>.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/default-tied-status/">default-tied-status</a></td>
+<td>Specifies where the activity’s commitments are untied, tied, or partially tied.</td>
+<td>This element must be published no more than once.</td>
+<td>If an activity’s commitments are a combination of tied, partially tied or untied, it is recommended that tied, partially tied and untied commitments are published as separate transactions and classified with their tied-status.</td>
+</tr>
+</tbody>
+</table>
+<p>Classifications can also be added to individual <a href="../financial-transactions/"><span>transactions</span></a>, these values override the default value published at activity level:</p>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/flow-type/">flow-type</a></td>
+<td>Optional element to override the top-level default-flow-type element on a transaction-by-transaction basis, if needed.</td>
+<td>This element must be published no more than once.</td>
+<td> </td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/finance-type/">finance-type</a></td>
+<td>Optional element to override the top-level default-finance-type element on a transaction-by-transaction basis, if needed.</td>
+<td>This element must be published no more than once.</td>
+<td> </td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type/">aid-type</a></td>
+<td>Optional element to override the top-level default-aid-type elements on a transaction-by-transaction basis, if needed.</td>
+<td> </td>
+<td>It is recommended that the OECD <a href="/en/iati-standard/203/codelists/AidType/">aid type</a> codes are used, codes from additional vocabularies can also be added.
+If no vocabulary is declared, OECD aid type is presumed.
+Each transaction should only contain one code from each <a href="/en/iati-standard/203/codelists/AidTypeVocabulary/">aid type vocabulary</a>.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/tied-status/">tied-status</a></td>
+<td>Optional element to override the top-level default-tied-type element on a transaction-by-transaction basis, if needed.</td>
+<td>This element must be published no more than once.</td>
+<td>When used at transaction level, tied-status should be published for outgoing and incoming commitments only.</td>
+</tr>
+</tbody>
+</table>
+<p>The disbursement channel can only be added to transactions, it cannot be defined at activity level:</p>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/disbursement-channel/">disbursement-channel</a></td>
+<td>This describes how the finance is given</td>
+<td>The code must be present on the <a href="/en/iati-standard/203/codelists/DisbursementChannel/">disbursement channel</a> codelist.
+This element must only be published once for each transaction.
+</td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<meta content="Additional activity classifications" name="title"/><meta content="Using the IATI Standard, publishers can assign different classifications to their data. These help users to understand what type of financing it is and how it can be used." name="description"/><meta content="activity" name="guidance_type"/><meta content="September 19, 2019" name="date"/></div>

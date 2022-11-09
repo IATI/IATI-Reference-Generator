@@ -1,0 +1,21 @@
+<div class="body" role="main">
+<p id="data-formats">
+<h1>Data Formats</h1>
+<p>All IATI data is provided by publishers in XML format. The Datastore is able to automatically convert the published data into two other formats (JSON and CSV). Each of these has a range of benefits and limitations.</p>
+<p>By default, data is filtered and output based on <a href="/en/iati-standard/203/activity-standard/overview/iati-activity/">activities</a>.</p>
+<p>When outputting data in CSV format you can instead choose to display data based on <a href="/en/iati-standard/203/activity-standard/overview/budgets/">budgets</a> or <a href="/en/iati-standard/203/activity-standard/overview/transactions/">transactions</a>.</p>
+<p id="xml">
+<h2>XML</h2>
+<p>The Datastore returns the original activity XML as published. This is <a href="../reference/structure-of-data.rst">enhanced with metadata</a> specifying the version that individual activities were published at, as well as details of the query result.</p>
+</p>
+<p id="json">
+<h2>JSON</h2>
+<p>The Datastore will convert the published XML to a JSON format. All of the originally published information is present in this alternative format. The same <a href="../reference/structure-of-data.rst">metadata</a> that is given in the XML output is available in the JSON output.</p>
+</p>
+<p id="csv">
+<h2>CSV</h2>
+<p>The Datastore will convert the published XML data into CSV format. Only a subset of published data is present. This format can be used to analyse information using spreadsheet software such as Microsoft Excel or Libreoffice Calc.</p>
+<p>Rows in a CSV file may represent individual activities, budgets or transactions depending on the output format that is selected. Each of these may be expanded by sector or country so that percentage splits may be analysed.</p>
+</p>
+</p>
+</div>

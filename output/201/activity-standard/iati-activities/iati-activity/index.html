@@ -1,0 +1,156 @@
+<div class="body" role="main">
+<p id="iati-activity">
+<h1>iati-activity</h1>
+<p><code>iati-activities/iati-activity</code></p>
+<p>This is the reference page for the XML element <code>iati-activity</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Top-level element for a single IATI activity report.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur at least once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-last-updated-datetime">
+<dt>@last-updated-datetime</dt>
+<dd><p>The last date/time that the data for this specific
+activity was updated.  This date must change whenever the
+value of any field changes.</p>
+<p>This value must be of type xsd:dateTime.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L123">11.1.1</a>: The last updated datetime of the activity must not be in the future.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 639-1 code specifying the default language used in
+narrative elements throughout the activity. If this is not
+declared then the xml:lang attribute MUST be specified for
+each narrative element.</p>
+<p>This value should be on the <a href="../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L85">4.1.1</a>: The activity should specify a default language OR the language must be specified for each narrative element.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-default-currency">
+<dt>@default-currency</dt>
+<dd><p>Default ISO 4217 alphabetic currency code for all
+financial values in this activity report. If this is not
+declared then the currency attribute MUST be specified for
+all monetary values.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../codelists/Currency/"><span>Currency codelist</span></a>.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L109">7.8.1</a>: The activity should specify a default currency OR the currency must be specified for each monetary value.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-hierarchy">
+<dt>@hierarchy</dt>
+<dd><p>The hierarchical level within the reporting organisation’s
+subdivision of its units of aid. (eg activity = 1;
+sub-activity = 2; sub-sub-activity = 3). If hierarchy is
+not reported then 1 is assumed. If multiple levels are
+reported then, to avoid double counting, financial
+transactions should only be reported at the lowest
+hierarchical level.</p>
+<p>This value must be of type xsd:int.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-linked-data-uri">
+<dt>@linked-data-uri</dt>
+<dd><p>A Linked Data URI for a given activity (overrides
+iati-activities/@linked-data-default if set)</p>
+<p>This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example of <code>iati-activity</code>.</p>
+
+<p>This element is a parent for other child elements.</p>
+
+
+<p>This example provides a dateTime of <em>2014-09-10T07:15:37Z</em>  for the <code>@last-updated-datetime</code> attribute.</p>
+<p>A dateTime in UTC time is indicated by adding a <em>Z</em> behind the time</p>
+<p>This example date time format conforms to the <em>xsd:dateTime</em> standard.</p>
+
+
+<p>The <code>@xml:lang</code> attribute declares a valid code (<em>en</em>) from the <em>Language</em> codelist.</p>
+<p>The <code>@default-currency</code> attribute declares a valid code (<em>USD</em>) from the <em>Currency</em> codelist.</p>
+
+
+<p>The optional <code>@hierarchy</code> attribute of  is set as <em>1</em></p>
+<p>The optional <code>@linked-data-uri</code> attribute  is also included.</p>
+
+<p><code><pre> &lt;iati-activity xml:lang="en" default-currency="USD" last-updated-datetime="2014-09-10T07:15:37Z" linked-data-uri="http://data.example.org/123456789" hierarchy="1"&gt;
+</pre></code>
+</p>
+<p>The <code>iati-activity</code> element acts as a container for other sub-elements.  It is closed as follows:</p>
+<p><code><pre> &lt;/iati-activity&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id4">
+<h3>2.01</h3>
+
+<p>The <code>version</code> attribute was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">removed</a>.</p>
+
+</p>
+<p id="id5">
+<h3>1.02</h3>
+
+<p>Introduced the <code>linked-data-uri</code> attribute on iati-activity element</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L83">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="iati-identifier/">iati-identifier</a></li>
+<li><a href="reporting-org/">reporting-org</a></li>
+<li><a href="title/">title</a></li>
+<li><a href="description/">description</a></li>
+<li><a href="participating-org/">participating-org</a></li>
+<li><a href="other-identifier/">other-identifier</a></li>
+<li><a href="activity-status/">activity-status</a></li>
+<li><a href="activity-date/">activity-date</a></li>
+<li><a href="contact-info/">contact-info</a></li>
+<li><a href="activity-scope/">activity-scope</a></li>
+<li><a href="recipient-country/">recipient-country</a></li>
+<li><a href="recipient-region/">recipient-region</a></li>
+<li><a href="location/">location</a></li>
+<li><a href="sector/">sector</a></li>
+<li><a href="country-budget-items/">country-budget-items</a></li>
+<li><a href="policy-marker/">policy-marker</a></li>
+<li><a href="collaboration-type/">collaboration-type</a></li>
+<li><a href="default-flow-type/">default-flow-type</a></li>
+<li><a href="default-finance-type/">default-finance-type</a></li>
+<li><a href="default-aid-type/">default-aid-type</a></li>
+<li><a href="default-tied-status/">default-tied-status</a></li>
+<li><a href="budget/">budget</a></li>
+<li><a href="planned-disbursement/">planned-disbursement</a></li>
+<li><a href="capital-spend/">capital-spend</a></li>
+<li><a href="transaction/">transaction</a></li>
+<li><a href="document-link/">document-link</a></li>
+<li><a href="related-activity/">related-activity</a></li>
+<li><a href="legacy-data/">legacy-data</a></li>
+<li><a href="conditions/">conditions</a></li>
+<li><a href="result/">result</a></li>
+<li><a href="crs-add/">crs-add</a></li>
+<li><a href="fss/">fss</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

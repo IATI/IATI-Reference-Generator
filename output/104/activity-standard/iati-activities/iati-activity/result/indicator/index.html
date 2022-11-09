@@ -1,0 +1,110 @@
+<div class="body" role="main">
+<p id="indicator">
+<h1>indicator</h1>
+<p><code>iati-activities/iati-activity/result/indicator</code></p>
+<p>This is the reference page for the XML element <code>indicator</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The indicator(s) that meet the results. There can be
+multiple indicators for each result.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-indicator-measure">
+<dt>@measure</dt>
+<dd><p>The type of measurement for the indicator value</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/IndicatorMeasure/"><span>IndicatorMeasure codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-result-indicator-ascending">
+<dt>@ascending</dt>
+<dd><p>True if the indicator improves from small to large
+(e.g. clinics built); false if it improves from
+large to small (e.g. cases of a disease). Defaults
+to true if omitted.</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>The <code>indicator</code> element acts as a container for other elements.</p>
+<p>It is also contained within a <code>result</code> element.</p>
+<p>Example usage of <code>indicator</code> in context of <code>result</code> element.</p>
+<p>Example <code>indicator</code> with the <code>IndicatorMeasure</code> code of <em>1</em> (Unit).</p>
+<p>This example also declares that the data is <code>ascending</code>, via a boolean:</p>
+<p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
+   &lt;title&gt;Result 1 title&lt;/title&gt;
+   &lt;description&gt;Result 1 description text&lt;/description&gt;
+<span>   &lt;indicator measure="1" ascending="1"&gt;
+</span>     &lt;title&gt;Indicator 1 title&lt;/title&gt;
+     &lt;description&gt;Indicator 1 description text&lt;/description&gt;
+     &lt;baseline year="2012" value="10"&gt;
+      &lt;comment&gt;Baseline comment text&lt;/comment&gt;
+     &lt;/baseline&gt;
+     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+       &lt;period-end iso-date="2013-03-31" /&gt;
+       &lt;target value="10"&gt;
+        &lt;comment&gt;Target comment text&lt;/comment&gt; 
+       &lt;/target&gt;
+       &lt;actual value="11"&gt;
+        &lt;comment&gt;Actual comment text&lt;/comment&gt; 
+       &lt;/actual&gt;
+     &lt;/period&gt;
+<span>   &lt;/indicator&gt;
+</span>  &lt;/result&gt;
+</pre></code>
+</p>
+<p>The <code>indicator</code> element can be repeated within any <code>result</code> element:</p>
+<p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
+   &lt;title&gt;Result 1 title&lt;/title&gt;
+   &lt;description&gt;Result 1 description text&lt;/description&gt;
+<span>   &lt;indicator measure="1" ascending="1"&gt;
+</span>    &lt;title&gt;Indicator 1 title&lt;/title&gt;
+    &lt;description&gt;Indicator 1 description text&lt;/description&gt;
+    &lt;baseline year="2012" value="10"/&gt;
+    &lt;period&gt; 
+     &lt;period-start iso-date="2013-01-01"/&gt; 
+     &lt;period-end iso-date="2013-03-31"/&gt; 
+     &lt;target value="10"/&gt; 
+     &lt;actual value="11"/&gt; 
+    &lt;/period&gt; 
+<span>   &lt;/indicator&gt;
+</span><span>   &lt;indicator measure="1" ascending="1"&gt;
+</span>    &lt;title&gt;Indicator 2 title&lt;/title&gt;
+    &lt;description&gt;Indicator 2 description text&lt;/description&gt;
+    &lt;baseline year="2012" value="10"/&gt;
+    &lt;period&gt;
+	 &lt;period-start iso-date="2013-04-01"/&gt;
+	 &lt;period-end iso-date="2013-06-30"/&gt;
+	 &lt;target value="11"/&gt;
+	 &lt;actual value="12"/&gt; 
+	&lt;/period&gt; 
+<span>   &lt;/indicator&gt;
+</span>  &lt;/result&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1320">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/result/indicator.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="title/">title</a></li>
+<li><a href="description/">description</a></li>
+<li><a href="baseline/">baseline</a></li>
+<li><a href="period/">period</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

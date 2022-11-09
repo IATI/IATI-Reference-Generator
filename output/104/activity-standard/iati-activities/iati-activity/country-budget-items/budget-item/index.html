@@ -1,0 +1,95 @@
+<div class="body" role="main">
+<p id="budget-item">
+<h1>budget-item</h1>
+<p><code>iati-activities/iati-activity/country-budget-items/budget-item</code></p>
+<p>This is the reference page for the XML element <code>budget-item</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Identifier for a single item in the recipient-country
+budget. If more than one identifier is reported the
+percentage share must be reported and all percentages
+should add up to 100 percent.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-country-budget-items-budget-item-code">
+<dt>@code</dt>
+<dd><p>Machine readable code for the entity being described. The value should
+be available on a related codelist.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/BudgetIdentifier/"><span>BudgetIdentifier codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-country-budget-items-budget-item-percentage">
+<dt>@percentage</dt>
+<dd><p>The percentage of the budget allocated to this item.  Content
+must be a positive decimal number between 0 and 100, with no
+percentage sign. In version 1.03 of the IATI Standard this
+value became designated as a decimal value and no longer
+as a positive integer.</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>This is a child element of <code>country-budget-items</code></p>
+<p>Example that declares <code>BudgetIdentifier</code> code <em>1.1.1</em> (<em>Executive - executive</em>):</p>
+<p><code><pre>  &lt;country-budget-items vocabulary="2"&gt;
+<span>   &lt;budget-item code="1.1.1"&gt;
+</span>    &lt;description&gt;Description text&lt;/description&gt;
+<span>   &lt;/budget-item&gt;
+</span>  &lt;/country-budget-items&gt;
+</pre></code>
+</p>
+<p>When multiple <code>budget-item</code> elements are declared within a single <code>country-budget-items</code> element, then, for each <code>vocabulary</code> used, the <code>percentage</code> values should sum 100%:</p>
+<p><code><pre>  &lt;country-budget-items vocabulary="2"&gt;
+<span>   &lt;budget-item code="1.1.1" percentage="50"&gt;
+</span>     &lt;description&gt;Description text&lt;/description&gt;
+     &lt;description xml:lang="fr"&gt;Texte de description&lt;/description&gt;
+   &lt;/budget-item&gt;
+<span>   &lt;budget-item code="1.1.2" percentage="50"&gt;
+</span>    &lt;description&gt;Description text&lt;/description&gt;
+    &lt;description xml:lang="fr"&gt;Texte de description&lt;/description&gt;
+   &lt;/budget-item&gt;
+  &lt;/country-budget-items&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.04</h3>
+<p>The @percentage attribute had been erroneously set to be required in the schema on it’s introduction in 1.03. This has now been set to ‘optional’ in the schema.</p>
+</p>
+<p id="id2">
+<h3>1.03</h3>
+<p>Added the optional country-budget-item element</p>
+</p>
+<p id="id3">
+<h3>1.02</h3>
+<p>This element did not exist</p>
+</p>
+<p id="id4">
+<h3>1.01</h3>
+<p>This element did not exist</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1216">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/country-budget-items/budget-item.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="description/">description</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

@@ -1,0 +1,109 @@
+<div class="body" role="main">
+<p id="loan-status">
+<h1>loan-status</h1>
+<p><code>iati-activities/iati-activity/crs-add/loan-status</code></p>
+<p>This is the reference page for the XML element <code>loan-status</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The status of loan and interest repayments for the most
+recently reported financial year</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-crs-add-loan-status-year">
+<dt>@year</dt>
+<dd><p>CRS Reporting Year (CRS++ Column 1)</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-crs-add-loan-status-currency">
+<dt>@currency</dt>
+<dd><p>The ISO 4217 alphabetic currency code of the value reported.
+This is required unless the iati-activity/@default-currency is
+present and applies.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/Currency/"><span>Currency codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-crs-add-loan-status-value-date">
+<dt>@value-date</dt>
+<dd><p>The date to be used for determining the exchange rate for
+currency conversions.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>loan-status</code> in context of <code>crs-add</code> element.</p>
+
+<p>This element is a parent for other child elements.</p>
+
+
+<p>This example declares the attribute <code>@year</code> as <em>2014</em>.</p>
+
+
+<p>An example date is declared in the <code>@iso-date</code> attribute.</p>
+<p>This example date format conform to the <em>xsd:date</em> standard - for most cases <em>YYYY-MM-DD</em> is sufficient.</p>
+
+
+<p>This example declares a <em>Currency</em> code <em>GBP</em>, using the <code>@currency</code> attribute.</p>
+<p>Note: A <code>Currency</code> code should only be declared if different to <code>@default-currency</code> in the <code>iati-activity</code> element.</p>
+
+<p><code><pre>  &lt;crs-add&gt;
+   &lt;other-flags code="1" significance="1" /&gt;
+   &lt;loan-terms rate-1="4" rate-2="3"&gt;
+    &lt;repayment-type code="1" /&gt;
+    &lt;repayment-plan code="4" /&gt;
+    &lt;commitment-date iso-date="2013-09-01"/&gt;
+    &lt;repayment-first-date iso-date="2014-01-01" /&gt;
+    &lt;repayment-final-date iso-date="2020-12-31" /&gt;
+   &lt;/loan-terms&gt;
+<span>   &lt;loan-status year="2014" currency="GBP" value-date="2013-05-24"&gt;
+</span>     &lt;interest-received&gt;200000&lt;/interest-received&gt;
+     &lt;principal-outstanding&gt;1500000&lt;/principal-outstanding&gt;
+     &lt;principal-arrears&gt;0&lt;/principal-arrears&gt;
+     &lt;interest-arrears&gt;0&lt;/interest-arrears&gt;
+<span>   &lt;/loan-status&gt;
+</span>   &lt;channel-code&gt;21039&lt;/channel-code&gt;
+  &lt;/crs-add&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+
+<p>New in 1.03</p>
+<p>Added the optional <code>crs-add</code> element and its child elements</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L2604">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/crs-add/loan-status.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="interest-received/">interest-received</a></li>
+<li><a href="principal-outstanding/">principal-outstanding</a></li>
+<li><a href="principal-arrears/">principal-arrears</a></li>
+<li><a href="interest-arrears/">interest-arrears</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

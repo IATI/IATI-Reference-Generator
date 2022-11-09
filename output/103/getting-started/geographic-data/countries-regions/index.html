@@ -1,0 +1,39 @@
+<div id="content" role="main">
+
+<header>
+<h1>Countries &amp; Regions</h1>
+</header><!-- .entry-header -->
+<p>
+<p>This page is currently flagged for review. We are undertaking an update of the information we publish about the IATI Standard, and the content here has not yet been checked.</p>
+<p>When a national government (for example) wants to know how much aid money is being spent in its country, it can read the jurisdictional markup.  The most common element for jurisdictional information is recipient-country, as in the following example:</p>
+<p><code><br/>
+&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</code></p>
+<p>...</p>
+<p>&lt;recipient-country code=”HT”&gt;Haiti&lt;/recipient-country&gt;</p>
+<p>...</p>
+<p>&lt;/iati-activity&gt;<br/>
+</p>
+<p>This example specifies that Haiti is the sole partner country for this aid activity.  The value of the code attribute is an ISO 3166-1 alpha2 country code (see the IATI Country code list); while the code attribute is not required by the schema, it is strongly recommended to aid in machine processing.  The country name is optional, and appears as the element’s content (the xml:lang attribute is allowed to specify the language of the name).</p>
+<p>Some activities have more than one partner country; in that case, the activity report will list all of the countries, with the percentage attribute available to specify the percentage of the total budget allocated to each country (if known):</p>
+
+<p>&lt;recipient-country code=”GH” percentage=”40”&gt;Ghana&lt;/recipient-country&gt;</p>
+<p>&lt;recipient-country code=”BF” percentage=”30”&gt;Burkina Faso&lt;/recipient-country&gt;</p>
+<p>&lt;recipient-country code=”CI” percentage=”30”&gt;Côte d’Ivoire&lt;/recipient-country&gt;<br/>
+</p>
+<p>Some activities, in their early stages, may be intended for a general geographical region such as the Middle East or West Indieis, without having (yet) selected specific partner countries.  In that case, the recipient-region element allows specifying a broader geographical region:</p>
+<p><code><br/>
+&lt;recipient-region code=”380”&gt;West Indies&lt;/recipient-region&gt;<br/>
+</code></p>
+<p>As with recipient-country, the element may repeated for multiple regions, with an optional percentage attribute:</p>
+<p><code><br/>
+&lt;recipient-region code=”380” percentage=”50”&gt;West Indies&lt;/recipient-region&gt;</code></p>
+<p>&lt;recipient-region code=”489” percentage=”50”&gt;South America&lt;/recipient-region&gt;<br/>
+</p>
+<p>For recipient-region, IATI uses regional codes defined by the OECD’s Development Assistance Committee (DAC). These codes appear in the IATI Region code list.</p>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-2459 -->
+<!-- #comments -->
+
+</div>

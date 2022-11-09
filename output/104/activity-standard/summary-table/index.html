@@ -1,0 +1,3049 @@
+<div class="body" role="main">
+<p id="activity-standard-summary-table">
+<h1>Activity Standard Summary Table</h1>
+<table border="1">
+<colgroup>
+<col width="14%"/>
+<col width="14%"/>
+<col width="14%"/>
+<col width="14%"/>
+<col width="14%"/>
+<col width="14%"/>
+<col width="14%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Section</th>
+<th>Item</th>
+<th>Description</th>
+<th>Type</th>
+<th>Codelist</th>
+<th>XML</th>
+<th>Occur</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="../iati-activities/"><span>iati-activities</span></a></td>
+<td> </td>
+<td>Top-level list of one or more IATI activity records.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>version</td>
+<td>A number indicating the IATI specification version in use.
+“1.01” should be assumed if not specified.  It is required to
+specify this attribute if the document is using features
+specific to an IATI specification other than the initial
+1.01 version.</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/@version</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>generated-datetime</td>
+<td>A date/time stamp for when this file was generated.  This
+is not necessarily the last-updated date for the
+individual activity records in it.  Uses ISO 8601 date
+format, e.g. “2010-03-12T18:45:00+01:00”.  Use of this
+attribute is highly recommended, to allow recipients to
+know when a file has been updated.</td>
+<td>xsd:dateTime</td>
+<td> </td>
+<td>iati-activities/@generated-datetime</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>linked-data-default</td>
+<td>IATI publishers are not obliged to publish their own
+Linked Data.  However, if a publisher chooses to publish
+linked data about their IATI activities then allowing them
+to declare where this data is published would support
+discovery of it, and any additional information they may
+choose to publish as Linked Data alongside it.
+This attribute is URI path upon which an activity
+identifier can be appended to get a differentiable URI
+for any activity contained within a file.
+Where a publisher declares using one of these properties
+that authoritative linked data is accessible for an
+activity then consuming applications that are generating
+Linked Data from an IATI XML file should assert an
+owl:sameAs relationship to the relevant URI.
+</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/@linked-data-default</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/"><span>iati-activity</span></a></td>
+<td> </td>
+<td>Top-level element for a single IATI activity report.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>version</td>
+<td>A number indicating the IATI specification version in use.
+“1.01” should be assumed if not specified.  It is required to
+specify this attribute if the document is using features
+specific to an IATI specification other than the initial
+1.01 version.</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/@version</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>last-updated-datetime</td>
+<td>The last date/time that the data for this specific
+activity was updated.  This date must change whenever the
+value of any field changes.</td>
+<td>xsd:dateTime</td>
+<td> </td>
+<td>iati-activities/iati-activity/@last-updated-datetime</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>default-currency</td>
+<td>Default ISO 4217 currency code for all financial values in
+this activity report.  See
+<a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a></td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Currency/"><span>Currency</span></a></td>
+<td>iati-activities/iati-activity/@default-currency</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>hierarchy</td>
+<td>The hierarchical level within the reporting organisation’s
+subdivision of its units of aid. (eg activity = 1;
+sub-activity = 2; sub-sub-activity = 3). If hierarchy is
+not reported then 1 is assumed. If multiple levels are
+reported then, to avoid double counting, financial
+transactions should only be reported at the lowest
+hierarchical level.</td>
+<td>xsd:int</td>
+<td> </td>
+<td>iati-activities/iati-activity/@hierarchy</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>linked-data-uri</td>
+<td>A Linked Data URI for a given activity (overrides
+iati-activities/@linked-data-default if set)</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/@linked-data-uri</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/reporting-org/"><span>reporting-org</span></a></td>
+<td> </td>
+<td>The organisation issuing the report.
+May be a primary source (reporting on its own activity as
+donor, implementing agency, etc) or a secondary source
+(reporting on the activities of another organisation).
+Specifying the @ref attribute is mandatory.
+May contain the organisation name as content.
+All activities in an activity xml file must contain the same
+@ref AND this @ref must be the same as the iati-identifier
+recorded in the registry publisher record of the account under
+which this file is published.
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/reporting-org</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/reporting-org/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>ref</td>
+<td>Machine-readable identification string for the business
+object being described.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/reporting-org/@ref</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/OrganisationType/"><span>Organisation Type</span></a></td>
+<td>iati-activities/iati-activity/reporting-org/@type</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>secondary-reporter</td>
+<td>If an activity is being published by a secondary publisher
+you may indicate this here. Use 1 for true, 0 for false.</td>
+<td>xsd:boolean</td>
+<td> </td>
+<td>iati-activities/iati-activity/reporting-org/@secondary-reporter</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/reporting-org/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/iati-identifier/"><span>iati-identifier</span></a></td>
+<td> </td>
+<td>The iati-identifier element is used in both Activity files and
+Organisation files, and has a slightly different meaning depending on
+where it is being used, and should not be confused.
+When used in an organisation it is a globally unique identifier for
+that organisation.
+When used in an activity it is a globally unique identifier for that
+activity.  This should be in the form of the IATI Organisation
+Identifier (for the reporting organisation) concatenated to that
+organisation’s activity identifier. (NB. Two or more reporting
+organisations may publish information on the same activity.)
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/iati-identifier</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/iati-identifier/text()</td>
+<td> </td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/other-identifier/"><span>other-identifier</span></a></td>
+<td> </td>
+<td>An alternative, non-IATI identifier for the activity.  This
+identifier is not guaranteed to be unique or persistent (it
+depends on the owner organisation’s policies, not IATI’s).
+If other-identifier is present then either @owner-ref or
+@owner-name must be present
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/other-identifier</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/other-identifier/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>owner-ref</td>
+<td>An identifier for the owner of this identifier.
+For guidance on constructing the value of the @ref
+attribute, see <a href="/en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/">http://iatistandard.org/org-ref</a></td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/other-identifier/@owner-ref</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>owner-name</td>
+<td>Free text providing a human-readable name for the owner
+of this identifier.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/other-identifier/@owner-name</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/title/"><span>title</span></a></td>
+<td> </td>
+<td>A short, human-readable title.  May be repeated for different
+languages.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/title</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/title/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/description/"><span>description</span></a></td>
+<td> </td>
+<td>A longer, human-readable description.  May be repeated for
+different languages.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/description</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/description/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/DescriptionType/"><span>Description Type</span></a></td>
+<td>iati-activities/iati-activity/description/@type</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/description/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/activity-status/"><span>activity-status</span></a></td>
+<td> </td>
+<td>The current status of the project (e.g. “planned”), using a
+list defined by IATI.  For the value of the @code attribute,
+see <a href="/en/iati-standard/203/codelists/activity_status">http://iatistandard.org/codelists/activity_status</a></td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/activity-status</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/ActivityStatus/"><span>Activity Status</span></a></td>
+<td>iati-activities/iati-activity/activity-status/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/activity-status/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/activity-date/"><span>activity-date</span></a></td>
+<td> </td>
+<td>The planned and actual start and completion dates of the
+activity. Start dates may reflect either the commencement of
+funding, planning or physical activity. End dates should,
+wherever possible, reflect the ending of physical activity.
+Dates should be in ISO 8601 date YYYY-MM-DD format, e.g.
+2010-10-01.
+For the value of the @type attribute, see
+<a href="/en/iati-standard/203/codelists/activity_date_type">http://iatistandard.org/codelists/activity_date_type</a>
+The text content may contain a general date text (e.g. 2011Q1)
+for recording less specific dates such as month, quarter, or
+year.
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/activity-date</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/activity-date/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/ActivityDateType/"><span>Activity Date Type</span></a></td>
+<td>iati-activities/iati-activity/activity-date/@type</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>An activity milestone date in ISO 8601 date format,
+e.g. “2010-12-01”.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/activity-date/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/activity-date/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/contact-info/"><span>contact-info</span></a></td>
+<td> </td>
+<td>Contact information for the activity.  Specify whatever is
+available.  You may repeat this element for each contact
+person.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/ContactType/"><span>Contact Type</span></a></td>
+<td>iati-activities/iati-activity/contact-info/@type</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/contact-info/organisation/"><span>organisation</span></a></td>
+<td>The organisation to contact for more information about the
+activity.
+This is required if content-info is included.
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info/organisation</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/contact-info/organisation/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/contact-info/person-name/"><span>person-name</span></a></td>
+<td>The name of the contact person at the organisation.
+If person-name is present then either person-name/text()
+or job-title/text() must be present
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info/person-name</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/contact-info/person-name/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/contact-info/job-title/"><span>job-title</span></a></td>
+<td>The job title of the contact person at the organisation.
+You may repeat this element for different languages.
+If person-name is present then either person-name/text()
+or job-title/text() must be present
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info/job-title</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/contact-info/job-title/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/contact-info/telephone/"><span>telephone</span></a></td>
+<td>The contact telephone number, if available.  May be
+repeated for multiple numbers.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info/telephone</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info/telephone/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/contact-info/email/"><span>email</span></a></td>
+<td>The contact email address, if available.  May be
+repeated for multiple addresses.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info/email</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/contact-info/mailing-address/"><span>mailing-address</span></a></td>
+<td>The contact mailing address, if available.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info/mailing-address</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info/mailing-address/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/contact-info/mailing-address/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/contact-info/website/"><span>website</span></a></td>
+<td>The contact web address, if available.  May be repeated
+for multiple sites.</td>
+<td>xsd:anyURI</td>
+<td> </td>
+<td>iati-activities/iati-activity/contact-info/website</td>
+<td> </td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/participating-org/"><span>participating-org</span></a></td>
+<td> </td>
+<td>An organisation (including the reporting organisation)
+involved with the activity.  May be a donor, fund, agency,
+etc.  Specifying the @ref and @role attributes is
+strongly recommended.  May contain the organisation name as
+content.
+For the value of the @type attribute, see
+<a href="/en/iati-standard/203/codelists/organisation-type">http://iatistandard.org/codelists/organisation-type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/participating-org</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/participating-org/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>ref</td>
+<td>Machine-readable identification string for the business
+object being described.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/participating-org/@ref</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/OrganisationType/"><span>Organisation Type</span></a></td>
+<td>iati-activities/iati-activity/participating-org/@type</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>role</td>
+<td>A code describing the organisation’s role in the activity
+(donor, agency, etc.).
+See <a href="/en/iati-standard/203/codelists/organisation_role">http://iatistandard.org/codelists/organisation_role</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/OrganisationRole/"><span>Organisation Role</span></a></td>
+<td>iati-activities/iati-activity/participating-org/@role</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/participating-org/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/activity-scope/"><span>activity-scope</span></a></td>
+<td> </td>
+<td>What geographical area does the activity encompass?
+eg. Global, Regional, Multi-National, National, Multiple
+(sub-national) administrative areas, etc</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/activity-scope</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/ActivityScope/"><span>Activity Scope</span></a></td>
+<td>iati-activities/iati-activity/activity-scope/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/activity-scope/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/recipient-country/"><span>recipient-country</span></a></td>
+<td> </td>
+<td>A partner country that will benefit from this activity.  This
+element is primarily for administrative and geopolitical
+purposes.  If a specific country is not known, the activity
+report can use the recipient-region element instead. For
+geographical location, use the location element.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/country">http://iatistandard.org/codelists/country</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/recipient-country</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/recipient-country/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Country/"><span>Country</span></a></td>
+<td>iati-activities/iati-activity/recipient-country/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>percentage</td>
+<td>The percentage of the budget allocated to this item.  Content
+must be a positive decimal number between 0 and 100, with no
+percentage sign. In version 1.03 of the IATI Standard this
+value became designated as a decimal value and no longer
+as a positive integer.</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/recipient-country/@percentage</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/recipient-country/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/recipient-region/"><span>recipient-region</span></a></td>
+<td> </td>
+<td>A geopolitical region (above the country level) that will
+benefit from this activity.  This element is primarily for
+administrative and geopolitical purposes.  If the specific
+country/-ies are known, the activity report can use the
+recipient-country element instead. For geographical location,
+use the location element.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/region">http://iatistandard.org/codelists/region</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/recipient-region</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/recipient-region/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Region/"><span>Region</span></a></td>
+<td>iati-activities/iati-activity/recipient-region/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>vocabulary</td>
+<td>The vocabulary from which the region code is drawn. If it
+is not present 1 - ‘OECD DAC’ is assumed.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/RegionVocabulary/"><span>Region Vocabulary</span></a></td>
+<td>iati-activities/iati-activity/recipient-region/@vocabulary</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>percentage</td>
+<td>The percentage of the budget allocated to this item.  Content
+must be a positive decimal number between 0 and 100, with no
+percentage sign. In version 1.03 of the IATI Standard this
+value became designated as a decimal value and no longer
+as a positive integer.</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/recipient-region/@percentage</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/recipient-region/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/location/"><span>location</span></a></td>
+<td> </td>
+<td>The sub-national geographical identification of the target
+locations of an activity. These can be described by gazetteer
+reference, coordinates, administrative areas or a textual
+description.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>ref</td>
+<td>An internal reference that uniquely describes the location
+in the reporting organisation’s own system.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/@ref</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>percentage</td>
+<td>Deprecated since 1.04
+If more than one location is reported, percentage of
+activity commitment allocated to this location
+(if available).
+</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/@percentage</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/location-id/"><span>location-id</span></a></td>
+<td>A unique code describing the location according to a
+recognised gazetteer or administrative boundary
+repository. Administrative areas should only be reported
+here if the location being defined is the administrative
+area itself. For describing the administrative area/s
+within which a more specific location falls the
+location/administrative element should be used.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/location-id</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/location-id/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>A code from the gazetteer or administrative boundary
+repository specified by the vocabulary</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/location-id/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>vocabulary</td>
+<td>A code for a recognised gazetteer or administrative
+boundary repository.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/GeographicVocabulary/"><span>Geographic Vocabulary</span></a></td>
+<td>iati-activities/iati-activity/location/location-id/@vocabulary</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/name/"><span>name</span></a></td>
+<td>The human-readable name for the location.  May be
+repeated in different languages.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/name</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/location/name/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/description/"><span>description</span></a></td>
+<td>A description that qualifies the location, not the
+activity.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/description</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/location/description/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/activity-description/"><span>activity-description</span></a></td>
+<td>A description that qualifies the activity taking place at
+the location. This should not duplicate information
+provided in the main activity description, and should
+typically be used to distinguish between activities at
+multiple locations within a single iati-activity record.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/activity-description</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/location/activity-description/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/administrative/"><span>administrative</span></a></td>
+<td>Coded identification of national and sub-national
+divisions according to recognised administrative
+boundary repositories. Multiple levels may be reported.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/administrative</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/administrative/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>The code for the administrative area being reported
+from the vocabulary specified.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/administrative/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>vocabulary</td>
+<td>The code for a recognised administrative boundary.
+repository</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/GeographicVocabulary/"><span>Geographic Vocabulary</span></a></td>
+<td>iati-activities/iati-activity/location/administrative/@vocabulary</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>level</td>
+<td>An integer indicating the hierarchical level being
+reported. Level 0 is the national boundary, level 1
+is the first-level administrative sub-division, etc.</td>
+<td>xsd:nonNegativeInteger</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/administrative/@level</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>country</td>
+<td>Deprecated since 1.04
+The ISO 3166-1 alpha2 code for the country
+(e.g. “GB” for the United Kingdom).
+For the @code attribute, see
+<a href="/en/iati-standard/203/codelists/country">http://iatistandard.org/codelists/country</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Country/"><span>Country</span></a></td>
+<td>iati-activities/iati-activity/location/administrative/@country</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>adm1</td>
+<td>Deprecated since 1.04
+The UNSALB level-one administrative code for a
+subdivision of a country.
+See <a href="/en/iati-standard/203/codelists/admin1">http://iatistandard.org/codelists/admin1</a>
+</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/administrative/@adm1</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>adm2</td>
+<td>Deprecated since 1.04
+The UNSALB level-two administrative code for a
+subdivision of a country.
+See <a href="/en/iati-standard/203/codelists/admin2">http://iatistandard.org/codelists/admin2</a>
+</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/administrative/@adm2</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/point/"><span>point</span></a></td>
+<td>The point element is based on a subset of the GML 3.3 Point
+element.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/point</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>srsName</td>
+<td>The name of the spatial reference system used by the
+coordinates.
+Always: <a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a>
+</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/point/@srsName</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/point/pos/"><span>pos</span></a></td>
+<td>The latitude and longitude coordinates in the
+format “lat lng”</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/point/pos</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/exactness/"><span>exactness</span></a></td>
+<td>Defines whether the location represents the most
+distinct point reasonably possible for this type of
+activity or is an approximation due to lack of more
+detailed information.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/exactness</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/exactness/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>A code from the Extactness Codelist.
+1 = Exact, 2 = Approximate</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/GeographicExactness/"><span>Geographic Exactness</span></a></td>
+<td>iati-activities/iati-activity/location/exactness/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/location-reach/"><span>location-reach</span></a></td>
+<td>Does this location describe where the activity
+takes place or where the intended beneficiaries reside?</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/location-reach</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/GeographicLocationReach/"><span>Geographic Location Reach</span></a></td>
+<td>iati-activities/iati-activity/location/location-reach/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/location/location-reach/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/location-class/"><span>location-class</span></a></td>
+<td>Whether the location refers to a structure, a populated
+place (e.g. city or village), an administrative
+division, or another topological feature
+(e.g. river, nature reserve).</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/location-class</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/location-class/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>A code from the Location Class codelist</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/GeographicLocationClass/"><span>Geographic Location Class</span></a></td>
+<td>iati-activities/iati-activity/location/location-class/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/feature-designation/"><span>feature-designation</span></a></td>
+<td>A more refined coded classification of the type of
+feature referred to by this location.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/feature-designation</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/feature-designation/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>A feature designation code form the authorised list</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/LocationType/"><span>Location Type</span></a></td>
+<td>iati-activities/iati-activity/location/feature-designation/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/coordinates/"><span>coordinates</span></a></td>
+<td>Deprecated since 1.04
+Geodetic coordinates for the location (latitude, longitude).
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/coordinates</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>latitude</td>
+<td>Deprecated since 1.04
+The decimal latitude (north is positive), e.g. “45.5”
+for 45.5 degrees north (45 degrees 30 minutes).
+</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/coordinates/@latitude</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>longitude</td>
+<td>Deprecated since 1.04
+The decimal longitude (east is positive), e.g. “-75.5”
+for 75.5 degrees west (74 degrees 30 minutes).
+</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/coordinates/@longitude</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>precision</td>
+<td>Deprecated since 1.04
+An IATI-defined subset of UCPD precision codes for
+the location (e.g. “2” for within 25 km of the
+specified latitude/longitude).
+See <a href="/en/iati-standard/203/codelists/geographical_precision">http://iatistandard.org/codelists/geographical_precision</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/GeographicalPrecision/"><span>Geographical Precision</span></a></td>
+<td>iati-activities/iati-activity/location/coordinates/@precision</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/gazetteer-entry/"><span>gazetteer-entry</span></a></td>
+<td>Deprecated since 1.04
+Identifier for this location’s entry in a geographical
+gazetteer, such as GEOnet.  The entry identifier is the
+element content.
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/gazetteer-entry</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/location/gazetteer-entry/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>gazetteer-ref</td>
+<td>Deprecated since 1.04
+Reference to the gazetteer containing the entry.
+See <a href="/en/iati-standard/203/codelists/gazetteer_agency">http://iatistandard.org/codelists/gazetteer_agency</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/GazetteerAgency/"><span>Gazetteer Agency</span></a></td>
+<td>iati-activities/iati-activity/location/gazetteer-entry/@gazetteer-ref</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/location/location-type/"><span>location-type</span></a></td>
+<td>Deprecated since 1.04
+The type of location (e.g. “PCL” for a political entity)
+from the feature designation codes maintained by the
+US National Geospatial-Intelligence Agency
+See <a href="/en/iati-standard/203/codelists/location_type">http://iatistandard.org/codelists/location_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/location/location-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/LocationType/"><span>Location Type</span></a></td>
+<td>iati-activities/iati-activity/location/location-type/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/location/location-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/sector/"><span>sector</span></a></td>
+<td> </td>
+<td>Sector code and name.  For the value of the @code attribute,
+see <a href="/en/iati-standard/203/codelists/sector">http://iatistandard.org/codelists/sector</a>
+Either the @code attribute or descriptive text content must be
+present.
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/sector</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/sector/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>The code for the sector. If the vocabulary is “DAC” or
+missing then the CRS Sector Code should be used.
+Code is not mandatory but highly recommended. Either code
+or description must be present.
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Sector/"><span>DAC 5 Digit Sector</span></a><a href="../../codelists/SectorCategory/"><span>DAC 3 Digit Sector</span></a></td>
+<td>iati-activities/iati-activity/sector/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>vocabulary</td>
+<td>The vocabulary (codelist) used for sector
+classifications. If omitted, assume DAC. “DAC” codes
+should be used wherever possible. It is also recommended
+that if a publisher has its own classification system then
+the vocabulary “RO” (Reporting Organisation’s own
+vocabulary” should be used in addition to “DAC”. NB that
+if multiple sector codes are used in multiple vocabularies
+then each vocabulary’s percentages should add up to 100%.
+See <a href="/en/iati-standard/203/codelists/vocabulary">http://iatistandard.org/codelists/vocabulary</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Vocabulary/"><span>Vocabulary</span></a></td>
+<td>iati-activities/iati-activity/sector/@vocabulary</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>percentage</td>
+<td>The percentage of the budget allocated to this item.  Content
+must be a positive decimal number between 0 and 100, with no
+percentage sign. In version 1.03 of the IATI Standard this
+value became designated as a decimal value and no longer
+as a positive integer.</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/sector/@percentage</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/sector/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/country-budget-items/"><span>country-budget-items</span></a></td>
+<td> </td>
+<td>Recipient country budget items.
+This item encodes the alignment of activities with both the
+functional and administrative classifications used in the
+recipient country’s Chart of Accounts. This applies to both
+on- and off-budget activities.
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/country-budget-items</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/country-budget-items/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>vocabulary</td>
+<td>A code for the common functional classification or country
+system (This allows for common codes, country-specific, or
+any other classification agreed between countries and
+donors).</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/BudgetIdentifierVocabulary/"><span>Budget Identifier Vocabulary</span></a></td>
+<td>iati-activities/iati-activity/country-budget-items/@vocabulary</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/country-budget-items/budget-item/"><span>budget-item</span></a></td>
+<td>Identifier for a single item in the recipient-country
+budget. If more than one identifier is reported the
+percentage share must be reported and all percentages
+should add up to 100 percent.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/country-budget-items/budget-item</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/country-budget-items/budget-item/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/BudgetIdentifier/"><span>Budget Identifier</span></a></td>
+<td>iati-activities/iati-activity/country-budget-items/budget-item/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>percentage</td>
+<td>The percentage of the budget allocated to this item.  Content
+must be a positive decimal number between 0 and 100, with no
+percentage sign. In version 1.03 of the IATI Standard this
+value became designated as a decimal value and no longer
+as a positive integer.</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/country-budget-items/budget-item/@percentage</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/country-budget-items/budget-item/description/"><span>description</span></a></td>
+<td>A longer, human-readable description.  May be repeated for
+different languages.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/country-budget-items/budget-item/description</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/country-budget-items/budget-item/description/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/DescriptionType/"><span>Description Type</span></a></td>
+<td>iati-activities/iati-activity/country-budget-items/budget-item/description/@type</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/country-budget-items/budget-item/description/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/policy-marker/"><span>policy-marker</span></a></td>
+<td> </td>
+<td>A policy or theme addressed by the activity.  A text
+description of the theme appears in the content, and a formal
+identifier appears in the @ref attribute.  The @vocabulary
+attribute can also help to segment the markers into separate
+vocabularies.  This element can be repeated for each policy
+marker.  For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/policy_marker">http://iatistandard.org/codelists/policy_marker</a></td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/policy-marker</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/policy-marker/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Policy marker code. If vocabulary is missing or “DAC” use
+the IATI Policy Marker Codelist which is based on columns
+20-23 and 28-31 of the CRS++ reporting format.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/PolicyMarker/"><span>Policy Marker</span></a></td>
+<td>iati-activities/iati-activity/policy-marker/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>vocabulary</td>
+<td>Policy vocabulary used. Default is “DAC”, but “RO” may also
+be used for publisher’s own markers.
+See <a href="/en/iati-standard/203/codelists/vocabulary">http://iatistandard.org/codelists/vocabulary</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Vocabulary/"><span>Vocabulary</span></a></td>
+<td>iati-activities/iati-activity/policy-marker/@vocabulary</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>significance</td>
+<td>The significance of the policy marker for this activity
+(e.g. principal or significant), from a list defined by
+IATI.  If a marker is not significant, the policy-marker
+element will not be present.
+See <a href="/en/iati-standard/203/codelists/policy_significance">http://iatistandard.org/codelists/policy_significance</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/PolicySignificance/"><span>Policy Significance</span></a></td>
+<td>iati-activities/iati-activity/policy-marker/@significance</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/policy-marker/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/collaboration-type/"><span>collaboration-type</span></a></td>
+<td> </td>
+<td>The type of collaboration involved in the project’s
+disbursements, e.g. “bilateral” or “multilateral”.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/collaboration_type">http://iatistandard.org/codelists/collaboration_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/collaboration-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/CollaborationType/"><span>Collaboration Type</span></a></td>
+<td>iati-activities/iati-activity/collaboration-type/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/collaboration-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/default-flow-type/"><span>default-flow-type</span></a></td>
+<td> </td>
+<td>The type of assistance provided, e.g. Official Development
+Assistance (ODA).  Type types will be defined by IATI.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/flow_type">http://iatistandard.org/codelists/flow_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/default-flow-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/FlowType/"><span>Flow Type</span></a></td>
+<td>iati-activities/iati-activity/default-flow-type/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/default-flow-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/default-finance-type/"><span>default-finance-type</span></a></td>
+<td> </td>
+<td>The type of finance (e.g. debt relief). The types will be
+defined by IATI.  This the default value for all transactions
+in the activity report; it can be overridden by individual
+transactions.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/finance_type">http://iatistandard.org/codelists/finance_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/default-finance-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/FinanceType/"><span>Finance Type</span></a></td>
+<td>iati-activities/iati-activity/default-finance-type/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/default-finance-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/default-aid-type/"><span>default-aid-type</span></a></td>
+<td> </td>
+<td>The type of aid being supplied (budget support, debt relief,
+etc.).  This element specifies a default for all the
+activity’s financial transactions; it can be overridden at the
+individual transaction level.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/aid_type">http://iatistandard.org/codelists/aid_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/default-aid-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/AidType/"><span>Aid Type</span></a></td>
+<td>iati-activities/iati-activity/default-aid-type/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/default-aid-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/default-tied-status/"><span>default-tied-status</span></a></td>
+<td> </td>
+<td>Specify whether the aid is untied, tied, or partially tied,
+using a codelist created by IATI.  The content is free text
+that can optionally provide more detail.  For the value of the
+@code attribute, see
+<a href="/en/iati-standard/203/codelists/tied_status">http://iatistandard.org/codelists/tied_status</a></td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/default-tied-status</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/TiedStatus/"><span>Tied Status</span></a></td>
+<td>iati-activities/iati-activity/default-tied-status/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/default-tied-status/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/budget/"><span>budget</span></a></td>
+<td> </td>
+<td>The value of the aid activity’s budget for each financial year
+as in the original project document.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/budget</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/BudgetType/"><span>Budget Type</span></a></td>
+<td>iati-activities/iati-activity/budget/@type</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/budget/period-start/"><span>period-start</span></a></td>
+<td>The starting date for the budget period, in ISO 8601
+format (e.g. 2010-04-01 for 1 April 2010).  This element
+must be present.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/budget/period-start</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/budget/period-start/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/budget/period-end/"><span>period-end</span></a></td>
+<td>The ending date for the budget period, in ISO 8601
+format (e.g. 2011-03-31 for 31 March 2011).  This
+element must be present.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/budget/period-end</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/budget/period-end/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/budget/value/"><span>value</span></a></td>
+<td>The total value of the organisation’s aid budget for
+this period.  This element is required.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/budget/value</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount.
+This is required for all currency amounts unless the
+<a href="mailto:iati-activity/%40default-currency">iati-activity/<span>@</span>default-currency</a> (or <a href="mailto:iati-organisation/%40default-currency">iati-organisation/<span>@</span>default-currency</a>
+for an organisation file) attribute is specified.
+Currency codes are listed at
+<a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Currency/"><span>Currency</span></a></td>
+<td>iati-activities/iati-activity/budget/value/@currency</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>value-date</td>
+<td>The date that this value was set (to allow historical
+currency conversion).  The date must be in ISO 8601
+format (YYYY-MM-DD).</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/budget/value/@value-date</td>
+<td>1..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/planned-disbursement/"><span>planned-disbursement</span></a></td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/planned-disbursement</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>updated</td>
+<td>The date on which this line of information was last
+updated. Previous updates for the same period should also
+be reported.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/planned-disbursement/@updated</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/planned-disbursement/period-start/"><span>period-start</span></a></td>
+<td>The starting date for the disbursement period, in ISO 8601
+format (e.g. 2010-04-01 for 1 April 2010).  This element
+must be present.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/planned-disbursement/period-start</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/planned-disbursement/period-start/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/planned-disbursement/period-end/"><span>period-end</span></a></td>
+<td>The ending date for the disbursement period, in ISO 8601
+format (e.g. 2011-03-31 for 31 March 2011).  This
+element must be present.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/planned-disbursement/period-end</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/planned-disbursement/period-end/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/planned-disbursement/value/"><span>value</span></a></td>
+<td>The amount to be disbursed in the specified currency.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/planned-disbursement/value</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount.
+This is required for all currency amounts unless the
+<a href="mailto:iati-activity/%40default-currency">iati-activity/<span>@</span>default-currency</a> (or <a href="mailto:iati-organisation/%40default-currency">iati-organisation/<span>@</span>default-currency</a>
+for an organisation file) attribute is specified.
+Currency codes are listed at
+<a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Currency/"><span>Currency</span></a></td>
+<td>iati-activities/iati-activity/planned-disbursement/value/@currency</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>value-date</td>
+<td>The date that this value was set (to allow historical
+currency conversion).  The date must be in ISO 8601
+format (YYYY-MM-DD).</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/planned-disbursement/value/@value-date</td>
+<td>1..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/capital-spend/"><span>capital-spend</span></a></td>
+<td> </td>
+<td>The percentage of the total commitment that is for capital
+spending</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/capital-spend</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>percentage</td>
+<td>The percentage of the budget allocated to this item.  Content
+must be a positive decimal number between 0 and 100, with no
+percentage sign. In version 1.03 of the IATI Standard this
+value became designated as a decimal value and no longer
+as a positive integer.</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/capital-spend/@percentage</td>
+<td>1..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/transaction/"><span>transaction</span></a></td>
+<td> </td>
+<td>Committed or actual money flowing in or out of an aid
+activity.The @ref attribute allows uniquely identifying a
+transaction, to match it up with the corresponding in- or
+outflow in a different activity.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>ref</td>
+<td>Machine-readable identification string for the business
+object being described.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/@ref</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/value/"><span>value</span></a></td>
+<td>The amount of the contribution (or its value, if in
+kind).</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/value</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount.
+This is required for all currency amounts unless the
+<a href="mailto:iati-activity/%40default-currency">iati-activity/<span>@</span>default-currency</a> (or <a href="mailto:iati-organisation/%40default-currency">iati-organisation/<span>@</span>default-currency</a>
+for an organisation file) attribute is specified.
+Currency codes are listed at
+<a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Currency/"><span>Currency</span></a></td>
+<td>iati-activities/iati-activity/transaction/value/@currency</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>value-date</td>
+<td>The date that this value was set (to allow historical
+currency conversion).  The date must be in ISO 8601
+format (YYYY-MM-DD).</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/value/@value-date</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/description/"><span>description</span></a></td>
+<td>A human-readable description of the transaction.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/description</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/transaction/description/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/transaction-type/"><span>transaction-type</span></a></td>
+<td>The type of the transaction (e.g. commitment,
+disbursement, expenditure, etc.).  The @ref attribute
+contains a code defined by IATI, and the content is an
+optional free-text description of the type.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/transaction_type">http://iatistandard.org/codelists/transaction_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/transaction-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/TransactionType/"><span>Transaction Type</span></a></td>
+<td>iati-activities/iati-activity/transaction/transaction-type/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/transaction/transaction-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/provider-org/"><span>provider-org</span></a></td>
+<td>The organisation providing the money for the
+transaction (if omitted, the provider organisation is
+the reporting organisation).</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/provider-org</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/provider-org/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>ref</td>
+<td>Machine-readable identification string for the business
+object being described.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/provider-org/@ref</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>provider-activity-id</td>
+<td>If the funds are being provided from the budget of
+another activity that is reported to IATI, this
+should record the unique IATI activity identifier for
+that activity.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/provider-org/@provider-activity-id</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/receiver-org/"><span>receiver-org</span></a></td>
+<td>The organisation receiving the money from the
+transaction (if omitted, then the receiver
+organisation is the reporting organisation).</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/receiver-org</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/receiver-org/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>ref</td>
+<td>Machine-readable identification string for the business
+object being described.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/receiver-org/@ref</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>receiver-activity-id</td>
+<td>If the funds are being provided to another activity
+that is reported to IATI, this should record the
+unique IATI activity identifier for that activity.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/receiver-org/@receiver-activity-id</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/transaction-date/"><span>transaction-date</span></a></td>
+<td>A milestone date for this transaction (such as the
+decision date, disbursement date, etc.).</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/transaction-date</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/transaction-date/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 version of the transaction date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/transaction-date/@iso-date</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/flow-type/"><span>flow-type</span></a></td>
+<td>Optional element to override the top-level
+default-flow-type element.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/flow_type">http://iatistandard.org/codelists/flow_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/flow-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/FlowType/"><span>Flow Type</span></a></td>
+<td>iati-activities/iati-activity/transaction/flow-type/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/transaction/flow-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/finance-type/"><span>finance-type</span></a></td>
+<td>Optional element to override the top-level
+default-finance-type element on a
+transaction-by-transaction basis, if needed.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/finance_type">http://iatistandard.org/codelists/finance_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/finance-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/FinanceType/"><span>Finance Type</span></a></td>
+<td>iati-activities/iati-activity/transaction/finance-type/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/transaction/finance-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/aid-type/"><span>aid-type</span></a></td>
+<td>Optional element to override the top-level
+default-aid-type element (debt relief, etc.) on a
+transaction-by-transaction basis if needed.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/aid_type">http://iatistandard.org/codelists/aid_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/aid-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/AidType/"><span>Aid Type</span></a></td>
+<td>iati-activities/iati-activity/transaction/aid-type/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/transaction/aid-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/tied-status/"><span>tied-status</span></a></td>
+<td>Optional element to override the top-level
+default-tied-status element (pooled, etc.) on a
+transaction-by-transaction basis if needed.
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/tied_status">http://iatistandard.org/codelists/tied_status</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/tied-status</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/TiedStatus/"><span>Tied Status</span></a></td>
+<td>iati-activities/iati-activity/transaction/tied-status/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/transaction/tied-status/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/transaction/disbursement-channel/"><span>disbursement-channel</span></a></td>
+<td>The channel through which the funds will flow for this
+transaction, from an IATI codelist.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/transaction/disbursement-channel</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/DisbursementChannel/"><span>Disbursement Channel</span></a></td>
+<td>iati-activities/iati-activity/transaction/disbursement-channel/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/transaction/disbursement-channel/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/document-link/"><span>document-link</span></a></td>
+<td> </td>
+<td>A categorized link to an external document.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/document-link</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>url</td>
+<td>The target URL of the external document, e.g. “<a href="http://www.example.org/doc.odt">http://www.example.org/doc.odt</a>”.</td>
+<td>xsd:anyURI</td>
+<td> </td>
+<td>iati-activities/iati-activity/document-link/@url</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>format</td>
+<td>The MIME type of the external document,
+e.g. “application/pdf”.  A list of MIME types
+appears at <a href="/en/iati-standard/203/codelists/file_format">http://iatistandard.org/codelists/file_format</a></td>
+<td>xsd:string</td>
+<td><a href="../../codelists/FileFormat/"><span>File Format</span></a></td>
+<td>iati-activities/iati-activity/document-link/@format</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/document-link/title/"><span>title</span></a></td>
+<td>A short, human-readable title.  May be repeated for different
+languages.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/document-link/title</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/document-link/title/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/document-link/category/"><span>category</span></a></td>
+<td>IATI Document Category Code
+For the value of the @code attribute, see
+<a href="/en/iati-standard/203/codelists/document_category">http://iatistandard.org/codelists/document_category</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/document-link/category</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/DocumentCategory/"><span>Document Category</span></a></td>
+<td>iati-activities/iati-activity/document-link/category/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/document-link/category/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/document-link/language/"><span>language</span></a></td>
+<td>The ISO 639 language code for the target document, e.g. “en”.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/document-link/language</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/document-link/language/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/document-link/language/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/activity-website/"><span>activity-website</span></a></td>
+<td> </td>
+<td>A direct link to a web site or web page providing more information
+about the specific aid activity.  Multiple links can be included.
+Multiple versions of the link may appear for different languages.
+Should not be general websites or addresses, and should include the
+http or https prefix.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/activity-website</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>xsd:anyURI</td>
+<td> </td>
+<td>iati-activities/iati-activity/activity-website/text()</td>
+<td> </td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/related-activity/"><span>related-activity</span></a></td>
+<td> </td>
+<td>Another IATI activity related to this one.  The ‘type’
+attribute describes the type of relationship (e.g. parent,
+sibling).  This does not need to be used to express funding
+relationships, since those are covered in individual
+transactions.
+For the value of the @type attribute, see
+<a href="/en/iati-standard/203/codelists/related_activity_type">http://iatistandard.org/codelists/related_activity_type</a>
+</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/related-activity</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/related-activity/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>ref</td>
+<td>Machine-readable identification string for the business
+object being described.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/related-activity/@ref</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/RelatedActivityType/"><span>Related Activity Type</span></a></td>
+<td>iati-activities/iati-activity/related-activity/@type</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/related-activity/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/conditions/"><span>conditions</span></a></td>
+<td> </td>
+<td>Conditions attached to the activity.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/conditions</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>attached</td>
+<td>A yes/no (1/0) value stating whether there are conditions
+attached to the activity.</td>
+<td>xsd:boolean</td>
+<td> </td>
+<td>iati-activities/iati-activity/conditions/@attached</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/conditions/condition/"><span>condition</span></a></td>
+<td>Description of one condition attached to the activity.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/conditions/condition</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/conditions/condition/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/ConditionType/"><span>Condition Type</span></a></td>
+<td>iati-activities/iati-activity/conditions/condition/@type</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/conditions/condition/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/result/"><span>result</span></a></td>
+<td> </td>
+<td>A measurable result of aid work.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/ResultType/"><span>Result Type</span></a></td>
+<td>iati-activities/iati-activity/result/@type</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>aggregation-status</td>
+<td>Boolean flag indicating whether the data in the result set
+are suitable for aggregation.</td>
+<td>xsd:boolean</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/@aggregation-status</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/title/"><span>title</span></a></td>
+<td>A short, human-readable title.  May be repeated for different
+languages.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/title</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/result/title/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/description/"><span>description</span></a></td>
+<td>A longer, human-readable description.  May be repeated for
+different languages.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/description</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/description/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/DescriptionType/"><span>Description Type</span></a></td>
+<td>iati-activities/iati-activity/result/description/@type</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/result/description/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/"><span>indicator</span></a></td>
+<td>The indicator(s) that meet the results. There can be
+multiple indicators for each result.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>measure</td>
+<td>The type of measurement for the indicator value</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/IndicatorMeasure/"><span>Indicator Measure</span></a></td>
+<td>iati-activities/iati-activity/result/indicator/@measure</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>ascending</td>
+<td>True if the indicator improves from small to large
+(e.g. clinics built); false if it improves from
+large to small (e.g. cases of a disease). Defaults
+to true if omitted.</td>
+<td>xsd:boolean</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/@ascending</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/title/"><span>title</span></a></td>
+<td>A short, human-readable title.  May be repeated for different
+languages.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/title</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/result/indicator/title/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/description/"><span>description</span></a></td>
+<td>A longer, human-readable description.  May be repeated for
+different languages.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/description</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/description/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>type</td>
+<td>A machine readable code describing the type of thing being referenced.
+The value should be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/DescriptionType/"><span>Description Type</span></a></td>
+<td>iati-activities/iati-activity/result/indicator/description/@type</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/result/indicator/description/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/baseline/"><span>baseline</span></a></td>
+<td>The baseline value for the indicator</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/baseline</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>year</td>
+<td>The year the baseline value was taken</td>
+<td>xsd:positiveInteger</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/baseline/@year</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>value</td>
+<td>The baseline value.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/baseline/@value</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/baseline/comment/"><span>comment</span></a></td>
+<td>A human-readable comment associated with a piece of aid information.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/baseline/comment</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/result/indicator/baseline/comment/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/period/"><span>period</span></a></td>
+<td>The period covered for the results
+reported. Multiple periods can be reported for a
+single indicator.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/period/period-start/"><span>period-start</span></a></td>
+<td>The start of the reporting period</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/period-start</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/period-start/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/period/period-end/"><span>period-end</span></a></td>
+<td>The end of the reporting period</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/period-end</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/period-end/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/period/target/"><span>target</span></a></td>
+<td>The target milestone for this period</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/target</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>value</td>
+<td>The target value.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/target/@value</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/period/target/comment/"><span>comment</span></a></td>
+<td>A human-readable comment associated with a piece of aid information.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/target/comment</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/result/indicator/period/target/comment/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/period/actual/"><span>actual</span></a></td>
+<td>A record of the achieved result for this period.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/actual</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>value</td>
+<td>The actual measure.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/actual/@value</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/result/indicator/period/actual/comment/"><span>comment</span></a></td>
+<td>A human-readable comment associated with a piece of aid information.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/result/indicator/period/actual/comment</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/result/indicator/period/actual/comment/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/legacy-data/"><span>legacy-data</span></a></td>
+<td> </td>
+<td>Hold a single name=value pair of legacy data.  This element is
+<em>not</em> for adding new data types; instead, it holds the
+original (non-IATI) value or code for an existing data type.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/legacy-data</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/legacy-data/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>name</td>
+<td>The original field name.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/legacy-data/@name</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>value</td>
+<td>The original field value.</td>
+<td>xsd:string</td>
+<td> </td>
+<td>iati-activities/iati-activity/legacy-data/@value</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>iati-equivalent</td>
+<td>The name of the equivalent IATI element (if available).</td>
+<td>xsd:NMTOKEN</td>
+<td> </td>
+<td>iati-activities/iati-activity/legacy-data/@iati-equivalent</td>
+<td>0..1</td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/crs-add/"><span>crs-add</span></a></td>
+<td> </td>
+<td>Additional items specific to CRS++ reporting.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/aidtype-flag/"><span>aidtype-flag</span></a></td>
+<td>This covers the four CRS++ fields titled:
+“Free standing technical cooperation”;
+“Programme-based approach”;
+“Investment project”;
+“Associated financing”</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/aidtype-flag</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>mixed</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/aidtype-flag/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/AidTypeFlag/"><span>Aid Type Flag</span></a></td>
+<td>iati-activities/iati-activity/crs-add/aidtype-flag/@code</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>significance</td>
+<td>Does this flag apply? If ‘false’ do not report the flag</td>
+<td>xsd:boolean</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/aidtype-flag/@significance</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-terms/"><span>loan-terms</span></a></td>
+<td>Loan repayment terms and interest rates</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>rate-1</td>
+<td>Interest Rate. If an ODA loan with variable
+interest rate, report the variable rate here and
+the reference fixed rate as rate-2
+Enter the rate without the percentage sign.
+</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/@rate-1</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>rate-2</td>
+<td>Second Interest Rate.  If an ODA loan with
+variable interest rate, report the variable rate
+as rate-1 and the reference fixed rate here
+Enter the rate without the percentage sign.
+</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/@rate-2</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-terms/repayment-type/"><span>repayment-type</span></a></td>
+<td>Type of Repayment. 1 = equal principal payments
+(EPP); 2 = annuity; 3 = lump sum; 5 = other,
+Codes are listed at
+<a href="/en/iati-standard/203/codelists/crs-repayment-type">http://iatistandard.org/codelists/crs-repayment-type</a></td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-type</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/LoanRepaymentType/"><span>Loan Repayment Type</span></a></td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-type/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-type/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-terms/repayment-plan/"><span>repayment-plan</span></a></td>
+<td>Number of repayments per annum. 1 = annual; 2 =
+semi-annual; 4 = quarterly; 12 = monthly. Codes
+are listed at
+<a href="/en/iati-standard/203/codelists/repayment-nopa">http://iatistandard.org/codelists/repayment-nopa</a>.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-plan</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>code</td>
+<td>Machine readable code for the entity being described. The value should
+be available on a related codelist.</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/LoanRepaymentPeriod/"><span>Loan Repayment Period</span></a></td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-plan/@code</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>xml:lang</td>
+<td>ISO 2 letter code specifying the language of text in this element.</td>
+<td> </td>
+<td><a href="../../codelists/Language/"><span>Language</span></a></td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-plan/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-terms/commitment-date/"><span>commitment-date</span></a></td>
+<td>Commitment date.The date must be in ISO 8601
+format (YYYY-MM-DD).</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/commitment-date</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/commitment-date/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-terms/repayment-first-date/"><span>repayment-first-date</span></a></td>
+<td>First Repayment Date. The date must be in ISO
+8601 format (YYYY-MM-DD).</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-first-date</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-first-date/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-terms/repayment-final-date/"><span>repayment-final-date</span></a></td>
+<td>Final Repayment Date. The date must be in ISO
+8601 format (YYYY-MM-DD).</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-final-date</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>iso-date</td>
+<td>The ISO 8601 date.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-terms/repayment-final-date/@iso-date</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-status/"><span>loan-status</span></a></td>
+<td>The status of loan and interest repayments for the most
+recently reported financial year</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-status</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>year</td>
+<td>CRS Reporting Year (CRS++ Column 1)</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-status/@year</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount.
+This is required for all currency amounts unless the
+<a href="mailto:iati-activity/%40default-currency">iati-activity/<span>@</span>default-currency</a> (or <a href="mailto:iati-organisation/%40default-currency">iati-organisation/<span>@</span>default-currency</a>
+for an organisation file) attribute is specified.
+Currency codes are listed at
+<a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Currency/"><span>Currency</span></a></td>
+<td>iati-activities/iati-activity/crs-add/loan-status/@currency</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>value-date</td>
+<td>The date that this value was set (to allow historical
+currency conversion).  The date must be in ISO 8601
+format (YYYY-MM-DD).</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-status/@value-date</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-status/interest-received/"><span>interest-received</span></a></td>
+<td>Interest received during the reporting year</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-status/interest-received</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-status/principal-outstanding/"><span>principal-outstanding</span></a></td>
+<td>The amount of principal owed on the loan at the
+end of the reporting year.</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-status/principal-outstanding</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-status/principal-arrears/"><span>principal-arrears</span></a></td>
+<td>Arrears of principal at the end of the
+year. Included in principal-outstanding</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-status/principal-arrears</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/crs-add/loan-status/interest-arrears/"><span>interest-arrears</span></a></td>
+<td>Arrears of interest at the end of the year</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/crs-add/loan-status/interest-arrears</td>
+<td> </td>
+</tr>
+<tr><td><a href="../iati-activities/iati-activity/fss/"><span>fss</span></a></td>
+<td> </td>
+<td>This section allows entry of data required for the OECD
+DAC Forward Spending Survey at an activity level.</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/fss</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>extraction-date</td>
+<td>The exact date when the information was collected or
+extracted from donors’ aid management systems.</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/fss/@extraction-date</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>priority</td>
+<td>True if the partner country is a priority partner country.</td>
+<td>xsd:boolean</td>
+<td> </td>
+<td>iati-activities/iati-activity/fss/@priority</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>phaseout-year</td>
+<td>If there are plans to phase out operations from the
+partner country, this column shows the projected
+year of last disbursements.</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/fss/@phaseout-year</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td><a href="../iati-activities/iati-activity/fss/forecast/"><span>forecast</span></a></td>
+<td>A container to hold separate forecasts for each of
+the years specified</td>
+<td> </td>
+<td> </td>
+<td>iati-activities/iati-activity/fss/forecast</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/fss/forecast/text()</td>
+<td> </td>
+</tr>
+<tr><td> </td>
+<td>year</td>
+<td>The calendar year that the forward spend covers</td>
+<td>xsd:decimal</td>
+<td> </td>
+<td>iati-activities/iati-activity/fss/forecast/@year</td>
+<td>1..1</td>
+</tr>
+<tr><td> </td>
+<td>currency</td>
+<td>A three letter ISO 4217 code for the original currency of the
+amount.
+This is required for all currency amounts unless the
+<a href="mailto:iati-activity/%40default-currency">iati-activity/<span>@</span>default-currency</a> (or <a href="mailto:iati-organisation/%40default-currency">iati-organisation/<span>@</span>default-currency</a>
+for an organisation file) attribute is specified.
+Currency codes are listed at
+<a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a>
+</td>
+<td>xsd:string</td>
+<td><a href="../../codelists/Currency/"><span>Currency</span></a></td>
+<td>iati-activities/iati-activity/fss/forecast/@currency</td>
+<td>0..1</td>
+</tr>
+<tr><td> </td>
+<td>value-date</td>
+<td>The date that this value was set (to allow historical
+currency conversion).  The date must be in ISO 8601
+format (YYYY-MM-DD).</td>
+<td>xsd:date</td>
+<td> </td>
+<td>iati-activities/iati-activity/fss/forecast/@value-date</td>
+<td>0..1</td>
+</tr>
+</tbody>
+</table>
+<code><pre>International Aid Transparency Initiative: Activity-Information Schema
+
+Release 1.04, 2014-05-05
+
+NOTE: the xml.xsd <span>and</span> iati-common.xsd schemas must be <span>in</span> the
+same directory as this one.
+
+This W3C XML Schema defines an XML document type for information
+about one <span>or</span> more aid-related activities, following the standard
+published at http://iatistandard.org/
+
+This document type may be extended with additional elements <span>and</span>
+attributes, but they must belong to an explicit XML namespace.
+</pre></code>
+
+</p>
+</div>

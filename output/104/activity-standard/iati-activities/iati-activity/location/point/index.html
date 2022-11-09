@@ -1,0 +1,72 @@
+<div class="body" role="main">
+<p id="point">
+<h1>point</h1>
+<p><code>iati-activities/iati-activity/location/point</code></p>
+<p>This is the reference page for the XML element <code>point</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The point element is based on a subset of the GML 3.3 Point
+element.</p>
+<p>The schema states that this element must have at least 1 subelement.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-location-point-srsname">
+<dt>@srsName</dt>
+<dd><p>The name of the spatial reference system used by the
+coordinates.</p>
+<p>Always: <a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a></p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>point</code> within context of <code>location</code></p>
+
+<p>NOTE: The @srsName currently should always be <a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a></p>
+
+<p><code><pre>  &lt;location ref="AF-KAN"&gt;
+   &lt;location-id vocabulary="G1" code="1453782" /&gt;
+   &lt;name&gt;Location name&lt;/name&gt;
+   &lt;description&gt;Location description&lt;/description&gt;
+   &lt;activity-description&gt;A description that qualifies the activity taking place at the location&lt;/activity-description&gt;
+   &lt;administrative level="1" code="1453782" vocabulary="G1" /&gt;
+<span>   &lt;point srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
+</span>    &lt;pos&gt;31.616944 65.716944&lt;/pos&gt;
+<span>   &lt;/point&gt;
+</span>   &lt;exactness code="1"/&gt;
+   &lt;location-reach code="1" /&gt;
+   &lt;location-class code="2"/&gt;
+   &lt;feature-designation code="PRNQ"/&gt;
+  &lt;/location&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.04</h3>
+
+<p>Introduced in 1.04 to align the geocoding standard with Geographic Markup Language (GML)</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L975">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/location/point.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="pos/">pos</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

@@ -1,0 +1,74 @@
+name: Update the IATI Reference, make a PR, and release
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: "Build and PR"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get -y install libxml2-dev libxslt-dev libxslt1-dev python3-dev python3-lxml
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install -r requirements.txt
+
+      - name: Build
+        run: |
+          ./build.sh
+
+      - name: Create a PR
+        uses: peter-evans/create-pull-request@v3
+
+      - name: "Determine tag"
+        run: |
+          last_tag=`git describe --tags $(git rev-list --tags) --always|egrep "${INPUT_PREV_TAG}${branch}\.[0-9]*\.[0-9]*$"|sort -V -r|head -n 1`
+          next_tag="${last_tag%.*}.$((${last_tag##*.}+1))"
+          echo "RELEASE_TAG=$next_tag" >> $GITHUB_ENV
+
+      - name: "Create incremental release"
+        uses: "actions/github-script@v5"
+        with:
+          script: |
+            const fs = require('fs');
+            const downloads = fs.readFileSync("downloads.zip");
+            const output = fs.readFileSync("output.zip");
+            try {
+              const releaseResponse = await github.rest.repos.createRelease({
+                draft: true,
+                generate_release_notes: true,
+                name: process.env.RELEASE_TAG,
+                owner: context.repo.owner,
+                prerelease: false,
+                repo: context.repo.repo,
+                tag_name: process.env.RELEASE_TAG,
+              });
+              await github.rest.repos.uploadReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: response["id"],
+                name: 'downloads.zip',
+                data: downloads,
+              });
+              await github.rest.repos.uploadReleaseAsset({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                release_id: response["id"],
+                name: 'output.zip',
+                data: output,
+              });
+            } catch (error) {
+              core.setFailed(error.message);
+            }

@@ -1,0 +1,82 @@
+<div class="body" role="main">
+<p id="activity-description">
+<h1>activity-description</h1>
+<p><code>iati-activities/iati-activity/location/activity-description</code></p>
+<p>This is the reference page for the XML element <code>activity-description</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A description that qualifies the activity taking place at
+the location. This should not duplicate information
+provided in the main activity description, and should
+typically be used to distinguish between activities at
+multiple locations within a single iati-activity record.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-location-activity-description-xml-lang">
+<dt>@xml:lang</dt>
+<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a href="../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>activity-description</code> within context of <code>location</code>:</p>
+<p><code><pre>  &lt;location ref="AF-KAN"&gt;
+   &lt;location-id vocabulary="G1" code="1453782" /&gt;
+   &lt;name&gt;Location name&lt;/name&gt;
+   &lt;description&gt;Location description&lt;/description&gt;
+<span>   &lt;activity-description&gt;A description that qualifies the activity taking place at the location&lt;/activity-description&gt;
+</span>   &lt;administrative level="1" code="1453782" vocabulary="G1" /&gt;
+   &lt;point srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
+    &lt;pos&gt;31.616944 65.716944&lt;/pos&gt;
+   &lt;/point&gt;
+   &lt;exactness code="1"/&gt;
+   &lt;location-reach code="1" /&gt;
+   &lt;location-class code="2"/&gt;
+   &lt;feature-designation code="PRNQ"/&gt;
+  &lt;/location&gt;
+</pre></code>
+</p>
+<p>It may be appropriate to repeat the <code>activity-description</code> in other languages using additional <code>language</code> elements. In this example, the language en has been set in the ‘’iati-activity’’ element:</p>
+<p><code><pre>  &lt;location ref="AF-KAN"&gt;
+   &lt;location-id vocabulary="G1" code="1453782" /&gt;
+   &lt;name&gt;Location name&lt;/name&gt;
+   &lt;name xml:lang="fr"&gt;Emplacement du nom&lt;/name&gt;   
+   &lt;description&gt;Location description&lt;/description&gt;
+   &lt;description xml:lang="fr"&gt;Description de l'emplacement&lt;/description&gt;
+   &lt;activity-description&gt;A description that qualifies the activity taking place at the location&lt;/activity-description&gt;
+<span>   &lt;activity-description xml:lang="fr"&gt;Une description qui qualifie l'activité ayant lieu à cet emplacement&lt;/activity-description&gt;
+</span>   &lt;administrative level="1" code="1453782" vocabulary="G1" /&gt;
+   &lt;point srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
+    &lt;pos&gt;31.616944 65.716944&lt;/pos&gt;
+   &lt;/point&gt;
+   &lt;exactness code="1"/&gt;
+   &lt;location-reach code="1" /&gt;
+   &lt;location-class code="2"/&gt;
+   &lt;feature-designation code="PRNQ"/&gt;
+  &lt;/location&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.04</h3>
+
+<p>New in 1.04</p>
+<p>The activity-description element was introduced in 1.04.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L886">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/location/activity-description.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

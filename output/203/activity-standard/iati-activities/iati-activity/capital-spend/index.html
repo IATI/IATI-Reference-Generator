@@ -1,0 +1,56 @@
+<div class="body" role="main">
+<p id="capital-spend">
+<h1>capital-spend</h1>
+<p><code>iati-activities/iati-activity/capital-spend</code></p>
+<p>This is the reference page for the XML element <code>capital-spend</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The percentage of the total commitment that is for capital
+spending</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-capital-spend-percentage">
+<dt>@percentage</dt>
+<dd><p>The percentage of the total commitment allocated to or planned for capital expenditure. Content must be a decimal number between 0 and 100 inclusive, with no percentage sign.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:decimal.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L651">12.2.1</a>: The percentage value must be between 0.0 and 100.0 (inclusive).</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>capital-spend</code> of an <code>iati-activity</code>.</p>
+
+<p>This example uses the <code>@percentage</code> attribute to state <em>88.8%</em> of the total commitment for the <code>iati-activity</code> is for capital expenditure.</p>
+
+<p><code><pre>  &lt;capital-spend percentage="88.8" /&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id2">
+<h3>2.03</h3>
+<p>Definition of <code>@percentage</code> attribute <a href="https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843">updated</a>.</p>
+</p>
+<p id="id3">
+<h3>1.03</h3>
+<p>This is a new element, introduced in version 1.03 of the standard</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L932">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/capital-spend.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

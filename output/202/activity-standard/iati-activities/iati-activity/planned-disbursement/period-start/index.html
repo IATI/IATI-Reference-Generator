@@ -1,0 +1,66 @@
+<div class="body" role="main">
+<p id="period-start">
+<h1>period-start</h1>
+<p><code>iati-activities/iati-activity/planned-disbursement/period-start</code></p>
+<p>This is the reference page for the XML element <code>period-start</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The exact date of the planned disbursement OR the starting date
+of the period in which this specific disbursement will be made.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur once and only once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<p id="iati-activities-iati-activity-planned-disbursement-period-start-iso-date">@iso-date</p>
+<dd>
+<p class=""><p>This attribute is required.</p>
+<p>This value must be of type xsd:date.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L1104">8.6.3</a>: The start of the period must be before the end of the period.</p>
+</p></dd>
+</p>
+<p id="usage-in-practice">
+<h2>Usage in practice</h2>
+<p>The <code>period start</code> should define when the actual transfer of funds will take place, if a specific date is known. If the specific payment date is not known, the period in which the transfer is due to take place should be described by using both <code>period-start</code> and <code>period-end</code> dates.</p>
+<p>The timeframe between <code>period-start</code> and <code>period-end</code> should not normally exceed 3 calendar months.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>period-start</code> of <code>planned-disbursement</code> for an <code>iati-activity</code>.</p>
+
+<p>An example date is declared in the <code>@iso-date</code> attribute.</p>
+<p>This example date format conform to the <em>xsd:date</em> standard - for most cases <em>YYYY-MM-DD</em> is sufficient.</p>
+
+<p><code><pre>  &lt;planned-disbursement type="1"&gt;
+<span>   &lt;period-start iso-date="2014-01-01" /&gt;
+</span>   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" type="10" ref="BB-BBB-123456789"&gt;
+    &lt;narrative&gt;Agency B&lt;/narrative&gt;
+   &lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" type="23" ref="AA-AAA-123456789"&gt;
+    &lt;narrative&gt;Agency A&lt;/narrative&gt;
+   &lt;/receiver-org&gt;
+  &lt;/planned-disbursement&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id2">
+<h3>2.02</h3>
+<p>The definition of this element was amended for clarity.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L2289">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/planned-disbursement/period-start.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

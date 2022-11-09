@@ -1,0 +1,104 @@
+<div class="body" role="main">
+<p id="location">
+<h1>location</h1>
+<p><code>iati-activities/iati-activity/location</code></p>
+<p>This is the reference page for the XML element <code>location</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The sub-national geographical identification of the target
+locations of an activity. These can be described by gazetteer
+reference, coordinates, administrative areas or a textual
+description.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-location-ref">
+<dt>@ref</dt>
+<dd><p>An internal reference that uniquely describes the location
+in the reporting organisation’s own system.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-location-percentage">
+<dt>@percentage</dt>
+<dd><p>Deprecated since 1.04</p>
+<p>If more than one location is reported, percentage of
+activity commitment allocated to this location
+(if available).</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>The <code>location</code> element is used a contain various other elements</p>
+<p><code><pre><span>  &lt;location ref="AF-KAN"&gt;
+</span>   &lt;location-id vocabulary="G1" code="1453782" /&gt;
+   &lt;name&gt;Location name&lt;/name&gt;
+   &lt;description&gt;Location description&lt;/description&gt;
+   &lt;activity-description&gt;A description that qualifies the activity taking place at the location&lt;/activity-description&gt;
+   &lt;administrative level="1" code="1453782" vocabulary="G1" /&gt;
+   &lt;point srsName="http://www.opengis.net/def/crs/EPSG/0/4326"&gt;
+    &lt;pos&gt;31.616944 65.716944&lt;/pos&gt;
+   &lt;/point&gt;
+   &lt;exactness code="1"/&gt;
+   &lt;location-reach code="1" /&gt;
+   &lt;location-class code="2"/&gt;
+   &lt;feature-designation code="PRNQ"/&gt;
+<span>  &lt;/location&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.04</h3>
+<p>Note that major changes were made to the subelements of <code>location</code> in version 1.04.</p>
+
+<p>For more information refer to:</p>
+
+<ul>
+<li>the <span>1.04 location changes overview guidance</span></li>
+<li>the <span>Activities Schema Changelog</span> (or the individual subemelement pages)</li>
+</ul>
+
+<p>The @ref attribute was introduced to provide a cross reference that a publisher can use to link back to their own internal system.</p>
+<p>The @percentage attribute was deemed unworkable and deprecated in 1.04</p>
+
+</p>
+<p id="id2">
+<h3>1.03</h3>
+<p>Where used, the @percentage attribute is now designated as a decimal
+value and no longer as a positive Integer</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L824">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/location.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="location-id/">location-id</a></li>
+<li><a href="name/">name</a></li>
+<li><a href="description/">description</a></li>
+<li><a href="activity-description/">activity-description</a></li>
+<li><a href="administrative/">administrative</a></li>
+<li><a href="point/">point</a></li>
+<li><a href="exactness/">exactness</a></li>
+<li><a href="location-reach/">location-reach</a></li>
+<li><a href="location-class/">location-class</a></li>
+<li><a href="feature-designation/">feature-designation</a></li>
+<li><a href="coordinates/">coordinates</a></li>
+<li><a href="gazetteer-entry/">gazetteer-entry</a></li>
+<li><a href="location-type/">location-type</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

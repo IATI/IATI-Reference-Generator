@@ -1,0 +1,66 @@
+<div class="body" role="main">
+<p id="related-activity">
+<h1>related-activity</h1>
+<p><code>iati-activities/iati-activity/related-activity</code></p>
+<p>This is the reference page for the XML element <code>related-activity</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Another separately reported IATI activity that is related to
+this one. The ‘type’ attribute describes the type of
+relationship: eg. parent, child, multifunded …</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-related-activity-ref">
+<dt>@ref</dt>
+<dd><p>A valid activity identifier (as defined in
+iati-activity/iati-identifier).</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L289">1.7.1</a>: The related activity identifier should not start or end with spaces or newlines.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-related-activity-type">
+<dt>@type</dt>
+<dd><p>An IATI code for the type of relationship</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/RelatedActivityType/"><span>RelatedActivityType codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>related-activity</code> of an <code>iati-activity</code>.</p>
+
+<p>The <code>@type</code> attribute declares a valid code (<em>1</em>) from the <em>RelatedActivityType</em> codelist.</p>
+<p>An example <code>@ref</code> for another <code>iati-activity</code> of <em>AA-AAA-123456789-6789</em> is provided.</p>
+
+<p><code><pre>  &lt;related-activity ref="AA-AAA-123456789-6789" type="1" /&gt;
+</pre></code>
+</p>
+
+<p>Note: multiple related activities are expressed by repeating the <code>related-activity</code> element.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id2">
+<h3>2.01</h3>
+<p>Freetext is <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">no longer allowed</a>  within this element.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L1636">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/related-activity.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

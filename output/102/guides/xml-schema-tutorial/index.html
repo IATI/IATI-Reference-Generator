@@ -1,0 +1,241 @@
+<div id="content" role="main">
+
+<header>
+<h1>XML Schema Tutorial</h1>
+</header><!-- .entry-header -->
+<p>
+
+
+
+
+
+<p><a name="h.g9a7xa51g6jj"></a><span>Table of contents</span></p>
+<p><span><a href="/">Table of contents</a></span></p>
+<p><span><a href="/">Background</a></span></p>
+<p><span><a href="/">IATI document types</a></span></p>
+<p><span><a href="/">Character Encoding</a></span></p>
+<p><span><a href="/">Conventions</a></span></p>
+<p><span><a href="/">Activities document walk-through</a></span></p>
+<p><span><a href="/">Basic structure and date/time generated</a></span></p>
+<p><span><a href="/">Top level of an activity report</a></span></p>
+<p><span><a href="/">Identifiers</a></span></p>
+<p><span><a href="/">Order</a></span></p>
+<p><span><a href="/">Reporting and participating organizations</a></span></p>
+<p><span><a href="/">Jurisdictions and Geography</a></span></p>
+<p><span><a href="/">Jurisdictions</a></span></p>
+<p><span><a href="/">Geography</a></span></p>
+<p><span><a href="/">Dates and status</a></span></p>
+<p><span><a href="/">Milestone dates</a></span></p>
+<p><span><a href="/">Implementation status</a></span></p>
+<p><span><a href="/">Categorization</a></span></p>
+<p><span><a href="/">Sectors</a></span></p>
+<p><span><a href="/">Policy Markers</a></span></p>
+<p><span><a href="/">Aid type information</a></span></p>
+<p><span><a href="/">Financial information</a></span></p>
+<p><span><a href="/">Financial transactions</a></span></p>
+<p><span><a href="/">Planned expenditures</a></span></p>
+<p><span><a href="/">Relationships</a></span></p>
+<p><span><a href="/">Related activities</a></span></p>
+<p><span><a href="/">Other related initiatives</a></span></p>
+<p><span><a href="/">Contact information</a></span></p>
+<p><span><a href="/">Adding other information</a></span></p>
+<p><span><a href="/">XML namespaces</a></span></p>
+<p><span><a href="/">Legacy data</a></span></p>
+<p><span><a href="/">Next steps</a></span></p>
+<p><span><a href="/">References and Glossary</a></span></p>
+
+<p><a name="h.ajixwaunfq9f"></a><span>Background</span></p>
+<p><span>This section provides general background information about IATI documents.</span></p>
+<p><a name="h.25qqpe-rw3hur"></a><span>IATI document types</span></p>
+<p><span>IATI has defined two XML document types:</span></p>
+
+<ol>
+<li><span>The </span><span>Organizations</span><span> document, describing a single organization (such as a donor, foundation, agency, or NGO) involved in aid work.  This document may include aggregate budget information for the organization.</span></li>
+<li><span>The </span><span>Activities</span><span> document, describing a single aid activity (such as a project or humanitarian appeal). This document may include specific budget information for the activity, including inflows and outflows of money.</span></li>
+</ol>
+
+<p><span>For example, let’s say that in 2011 the fictitious </span><span>ACME Aid Agency </span><span>were funding three projects, divided evenly between Rwanda and Burundi, each worth €500,000:</span></p>
+
+<ol>
+<li><span>The </span><span>organization </span><span>document would state that ACME has budgeted a total of €3,000,000 for aid in 2011, and would further specify that €1,500,000 was allocated for activities in Rwanda and €1,500,000 was allocated for activities in Burundi.</span></li>
+<li><span>The three </span><span>activity</span><span> documents would each state that the total budget of the activity was €1,000,000, of which €500,000 was allocated for Rwanda, and €500,000 allocated for Burundi.</span></li>
+</ol>
+
+<p><span>The formal definitions of these document types appear as two XML schemas, </span><span>iati-organizations-schema.xsd</span><span> and </span><span>iati-activities-schema.xsd</span><span>.  It is important to understand, however, that these schemas do not provide a complete definition of the IATI document types: it is possible for a document to validate against one of the schemas and still not be a conformant IATI aid document.</span></p>
+
+<p><span>Since the </span><span>activities</span><span> document type is the most widely used (and the best defined at this early stage of IATI development), this tutorial will concentrate solely on it; however, many of the points made in this tutorial also apply to the </span><span>organization</span><span> document type.</span></p>
+
+<p><a name="h.e4lqbq-2fjzpc"></a><span>Conventions</span></p>
+<p><span>Throughout this tutorial, examples may contain an ellipsis (“…”) to show that part of the expected markup has been left out for brevity or clarity.  Literal XML examples appear in </span><span>monospace type</span><span>, while XML element or attribute names mentioned inline appear in </span><span>italic type</span><span>.</span></p>
+<p><a name="h.6kbjiu-gv0mqy"></a><span>Activities document walk-through</span></p>
+<p><span>This is the main body of the tutorial, containing a walk-through of the most important parts of the IATI activities document type.</span></p>
+<p><a name="h.qbj1ma-ab19os"></a><span>Basic structure and date/time generated</span></p>
+<p><span>An activity document may include descriptions for one or more activities, like this:</span></p>
+
+<p><span>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;</span></p>
+
+<p><span>&lt;iati-activities version=”1.01”   </span></p>
+<p><span>generated-datetime=”2010-07-12T13:26:00-0400”</span><span>&gt;</span></p>
+<p><span>  &lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</span></p>
+<p><span>    &lt;!– first activity –&gt;</span></p>
+<p><span>    …</span></p>
+<p><span>  &lt;/iati-activity&gt;</span></p>
+<p><span>  &lt;iati-activity last-updated-datetime=”2010-07-01T09:00:01-04:00”&gt;</span></p>
+<p><span>    &lt;!– second activity –&gt;</span></p>
+<p><span>    …</span></p>
+<p><span>  &lt;/iati-activity&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>&lt;/iati-activities&gt;</span></p>
+
+<p><span>The top-level </span><span>iati-activities</span><span> element is a container for as many activity reports as needed, each represented by its own </span><span>iati-activity</span><span> element.  </span></p>
+
+<p><span>The </span><span>version</span><span> attribute specifies the version of the IATI specification in use (currently “1.01”).  IATI’s goal is not to introduce backward-incompatibilities into different versions of the schema, but the version number may still be useful for processing and validation.  If omitted, the version defaults to “1.0”.</span></p>
+
+<p><span>The </span><span>generated-datetime</span><span> attribute is not required by the schema, but it is strongly recommended.  It specifies when this report was generated using the extended ISO 8601 date/time format, so “2010-07-12T13:26:00-04:00” represents July 12, 2010 at 1:26:00 PM 4:00 hours before UTC/Greenwich Mean Time (in other words, North American Eastern Daylight Time).  This date/time stamp is important for processing IATI information, because the most recent data counts: if a data consumer receives a report with a </span><span>generated-datetime </span><span>value later than the one in this report, it should discard the data from this report and replace it with the data in the newer report.  Note that the </span><span>generated-datetime</span><span> should be updated </span><span>every</span><span> time a new report is generated, even if none of the information in it has changed.</span></p>
+
+<p><span>The remainder of the tutorial will focus on the individual </span><span>iati-activity</span><span> element that appears one or more times inside the </span><span>iati-activities</span><span> container element.</span></p>
+<p><a name="h.ypt3qw-fr6xuu"></a><span>Top level of an activity report</span></p>
+<p><span>Inside the </span><span>iati-activities</span><span> container appears a series of one or more </span><span>iati-activity</span><span> elements, each describing an individual aid activity (such as a development project or humanitarian appeal):</span></p>
+
+<p><span>&lt;iati-activity </span><span>last-updated-datetime=”2010-04-01T00:00:01”</span><span>&gt;</span></p>
+<p><span>&lt;iati-identifier&gt;ACME:12345&lt;/iati-identifier&gt;</span></p>
+<p><span>  &lt;reporting-organization ref=”ACME”/&gt;</span></p>
+<p><span>  &lt;title xml:lang=”en”&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>&lt;/iati-activity&gt;</span></p>
+
+<p><span>The </span><span>last-updated-datetime</span><span> attribute is not required by the schema, but it is strongly recommended.  It specifies the last time a change was made to this activity data, using the extended ISO 8601 date/time format (so that “2010-04-01T00:00:01” represents one second after midnight UTC/GMT on April 1, 2010).  This date/timestamp should change only when a field inside </span><span>iati-activity</span><span> is added, removed, or modified; if the data content is unchanged since the last report, the </span><span>last-updated-datetime</span><span> value should remain the same (though the </span><span>generated-datetime</span><span> attribute on the </span><span>iati-activities</span><span> container would still be updated).</span></p>
+<p><a name="h.1o496w-46v38t"></a><span>Identifiers</span></p>
+<p><span>The </span><span>iati-identifier</span><span> element contains a unique identifier for the activity: this identifier must remain the same in every report, no matter what other changes take place (it is what database specialists refer to as a “primary key”).  For the current IATI release, the activity identifier uses an organization identifier assigned by IATI (and specified in the IATI organisation_identifiers code list) followed by a colon (“:”) and an identifier string assigned by the organization, such as an internal project tracking number.  It is the organization’s responsibility to ensure that the part after the colon is unique among all other identifiers it assigns.  In this example, we have the fictional aid organization with the IATI identifier “ACME”, which identifiers this activity using the number “12345”, so the IATI identifier is “ACME:12345”.  (Future releases may use a different scheme, such as a URL, so that non-IATI-member organizations can also participate).</span></p>
+
+<p><span>IATI also assigns unique identifiers to financial transactions (such as contributions), organizations (such as donors), and aid initiatives (such as humanitarian appeals), so that these can be connected across multiple reports.</span></p>
+<p><a name="h.p4u4anl71tk3"></a><span>Order</span></p>
+<p><span>The order of subelements inside </span><span>iati-activity</span><span> is </span><span>not</span><span> significant: the reporting organization is free to rearrange them however desired.  The following example is functionally identical to the previous one, despite the fact that the order of elements has changed:</span></p>
+
+<p><span>&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</span></p>
+<p><span>  &lt;reporting-organization ref=”ACME”/&gt;</span></p>
+<p><span>  &lt;title xml:lang=”en”&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p><span>  &lt;iati-identifier&gt;ACME:12345&lt;/iati-identifier&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>&lt;/iati-activity&gt;</span></p>
+
+<p><span>Multiple languages</span></p>
+<p><span>The </span><span>title</span><span> element in the previous examples contains a human-readable title for the aid activity: in this case, “Sample Activity Report.”  The </span><span>xml:lang</span><span> attribute uses the ISO 639 language code “en” to specify that the title appears in English.  For organizations generating multilingual reports, the </span><span>title</span><span> element may be repeated with different values of </span><span>xml:lang</span><span>; in the following example, the title appears English, French, and Spanish:</span></p>
+
+<p><span>&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>  &lt;title </span><span>xml:lang=”en”</span><span>&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p><span>  &lt;title </span><span>xml:lang=”fr”</span><span>&gt;Rapport d’activité échantillon&lt;/title&gt;</span></p>
+<p><span>  &lt;title </span><span>xml:lang=”es”</span><span>&gt;Muestra de informe de actividades&lt;/title&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>&lt;/iati-activity&gt;</span></p>
+
+<p><span>There are many other IATI elements that may contain human-readable text, and each of these may also take the </span><span>xml:lang</span><span> attribute.  Two common examples are the </span><span>description</span><span> element and the </span><span>reporting-org</span><span> element (which may include the organization’s name as well as its identifier):</span></p>
+
+<p><span>&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01”&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>  &lt;reporting-org </span><span>xml:lang=”en”</span><span> ref=”ACME:12345”&gt;ACME </span></p>
+<p><span>    Foundation&lt;/reporting-org&gt;</span></p>
+<p><span>  &lt;title </span><span>xml:lang=”en”</span><span>&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p><span>  &lt;description </span><span>xml:lang=”en”</span><span>&gt;</span></p>
+<p><span>    This is a longer description of the sample activity.</span></p>
+<p><span>      It may have multiple paragraphs and other kinds of </span></p>
+<p><span>    information.</span></p>
+<p><span>  &lt;/description&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>&lt;/iati-activity&gt;</span></p>
+
+<p><span>It can be tedious repeating the </span><span>xml:lang </span><span>attribute for every element that contains human-readable text, especially when a report uses only a single language.  As an alternative, the </span><span>xml:lang</span><span> attribute may be specified just once for the </span><span>iati-activity</span><span> element to provide a default language for the entire activity report:</span></p>
+
+<p><span>&lt;iati-activity last-updated-datetime=”2010-04-01T00:00:01” </span><span>xml:lang=”en”</span><span>&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>  &lt;reporting-org ref=”ACME:12345”&gt;ACME Foundation&lt;/reporting-org&gt;</span></p>
+<p><span>  &lt;title&gt;Sample Activity Report&lt;/title&gt;</span></p>
+<p><span>  &lt;description&gt;</span></p>
+<p><span>    This is a longer description of the sample activity.</span></p>
+<p><span>      It may have multiple paragraphs and other kinds of </span></p>
+<p><span>    information.</span></p>
+<p><span>  &lt;/description&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>&lt;/iati-activity&gt;</span></p>
+
+<p><span>The remaining examples in this tutorial will assume that a default language has been set, and will omit the </span><span>xml:lang</span><span> attribute.</span></p>
+
+<p><a name="h.6qa23c8pjkpe"></a><span>Implementation status</span></p>
+<p><span>The </span><span>activity-status</span><span> element specifies the current status of the activity (at the time of reporting):</span></p>
+
+<p><span>&lt;activity-status code=”</span><span>02</span><span>”/&gt;</span></p>
+
+<p><span>The IATI </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2Fcodelists%2Factivity_status.html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHJDsrNJzcdxk_ErmaPKcqvGQrBGg">Activity Status</a></span><span> code list specifies the allowed numeric values for the </span><span>code</span><span> attribute:</span></p>
+
+<ol>
+<li><span>01:</span><span> pipeline/identification</span></li>
+<li><span>02: </span><span>implementation</span></li>
+<li><span>03:</span><span> completion</span></li>
+<li><span>04:</span><span> post-completion</span></li>
+<li><span>05:</span><span> cancelled</span></li>
+</ol>
+
+<p><span>Like the </span><span>activity-date</span><span> element, the </span><span>activity-status</span><span> element allows plain text content as well, to provide additional information about the status for human readers:</span></p>
+
+<p><span>&lt;activity-status code=”01”&gt;</span><span>Awaiting final budget</span><span>&lt;/activity-status&gt;</span></p>
+
+
+<p><span>The </span><span>activity-website</span><span> element simply contains a URL that represents this specific activity:</span></p>
+
+<p><span>&lt;activity-website&gt;http://example.org/acme/12345.html&lt;/activity-website&gt;</span></p>
+
+<p><span>Ideally, the URL should be a link directly to a page describing this activity (if one exists), not a general link to an aid organization’s home page.</span></p>
+<p><a name="h.eggaxji6b1oi"></a><span>Adding other information</span></p>
+<p><span>There will be situations where reporting organizations want to publish additional data that are not covered by the default IATI elements, or want to specify the data using the original formats or values to avoid information loss.  IATI provides two mechanisms for doing so:</span></p>
+
+<ol>
+<li><span>Use an XML namespace to extend the schema.</span></li>
+<li><span>Use the </span><span>legacy-data</span><span> element to provide original data values.</span></li>
+</ol>
+<p><a name="h.1is9983z4oza"></a><span>XML namespaces</span></p>
+<p><span>The first approach allows reporting organizations to invent any required markup and add it to an IATI activity report.  IATI users who don’t recognize the extended markup are required simply to ignore it, without reporting an error.  Here is an example:</span></p>
+
+<p><span>&lt;iati-activity xmlns:acme=”http://example.org/acme/ns#”&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>  &lt;acme:risk-level&gt;3&lt;/acme:risk-level&gt;</span></p>
+<p><span>  …</span></p>
+<p><span>&lt;/iati-activity&gt;</span></p>
+
+<p><span>In this example, ACME has defined its own namespace using the URL “http://example.org/acme/ns#” and mapped that to the prefix “acme”.  It then adds the new element, </span><span>acme:risk-level</span><span>, to provide information about its risk assessment for the activity.  IATI users who don’t recognize the “http://example.org/acme/ns#” namespace are required to ignore the </span><span>acme:risk</span><span> element rather than reporting an error, so the extended markup does not harm compatibility.  Users who </span><span>are</span><span> familiar with the namespace, however, can take advantage of the additional information.</span></p>
+
+<p><del><a name="h.lulw808ly921"></a></del><span>Next steps</span></p>
+<p><span>This tutorial has provided a detailed introduction to the IATI XML document format for aid activities, but it is not a complete reference guide.  To produce or use IATI data files, you should now turn to the official reference documentation available online at </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEktUL2ednsGUZmqnBD8Hnrev0uow">http://iatistandard.org/</a></span><span>.</span></p>
+
+<p><span>There is also an IATI organisation document type, which will be the subject of a future tutorial.</span></p>
+<p><a name="h.2c9os8-k60akt"></a><span>References and Glossary</span></p>
+<p><span>DAC:</span><span> the </span><span>Development Assistance Committee</span><span> of the </span><span>Organisation for Economic Co-operation and Development</span><span> (OECD).  DAC defines some aid-related code lists used by IATI. </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.oecd.org%2Fdac%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGZ9n6adESth6CZujjeenFeuoJWDQ">http://www.oecd.org/dac/</a></span></p>
+
+<p><span>IATI:</span><span> the </span><span>International Aid Transparency Initiative.</span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNEktUL2ednsGUZmqnBD8Hnrev0uow">http://iatistandard.org/</a></span></p>
+<p><span>        Schemas: </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2Fschema%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFXVZj7M5TNEq8sfRn41YsP3itD1Q">http://iatistandard.org/schema/</a></span></p>
+<p><span>        Code lists: </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fiatistandard.org%2Fcodelists%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHjpCQyQ32XQGeZmgO8mNX_XDitBQ">http://iatistandard.org/codelists/</a></span></p>
+
+<p><span>ISO 691: </span><span>Codes for the Representation of Names of Languages</span><span> (IATI uses the 2-letter abbreviations). </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.loc.gov%2Fstandards%2Fiso639-2%2Fphp%2FEnglish_list.php&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNFSGKMCPxVC0LxRZkGI_iMADz34aA">http://www.loc.gov/standards/iso639-2/php/English_list.php</a></span></p>
+
+<p><span>ISO 3166:</span><span>Codes for the representation of names of countries and their subdivisions</span><span> (IATI uses the alpha-2 country codes). </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.iso.org%2Fiso%2Fcountry_codes.htm&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNGaXjKAEjN0aOA4FM_wZ-y7l7peWQ">http://www.iso.org/iso/country_codes.htm</a></span></p>
+
+<p><span>ISO 4217:</span><span>Currency and Funds Name and Code Elements</span><span> (IATI uses the alphabetic codes): </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.iso.org%2Fiso%2Fsupport%2Ffaqs%2Ffaqs_widely_used_standards%2Fwidely_used_standards_other%2Fcurrency_codes%2Fcurrency_codes_list-1.htm&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNH2kj0LsjwgSfd2DK9jaX-NFIxNjA">http://www.iso.org/iso/support/faqs/faqs_widely_used_standards/widely_used_standards_other/currency_codes/currency_codes_list-1.htm</a></span></p>
+
+<p><span>ISO 8601:</span><span>Representation of Dates and Times </span><span>(IATI uses the W3C profile described in </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3.org%2FTR%2FNOTE-datetime&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHMST1Urxitlkn8nmMda5a8QlXcvQ">http://www.w3.org/TR/NOTE-datetime</a></span><span>)</span></p>
+
+<p><span>NGO:</span><span> a </span><span>non-governmental organization</span><span>, such as Médecins san frontières.</span></p>
+
+<p><span>XML:</span><span> the </span><span>Extensible Markup Language.</span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3.org%2FXML%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHrfygZXah13Um-G7ZVO628KBsPgw">http://www.w3.org/XML/</a></span></p>
+
+<p><span>XML Namespace:</span><span> a mechanism for extending XML vocabularies safely. </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3.org%2FTR%2FREC-xml-names%2F&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHJMGviCkTvFD0F32tV7oe4w_8gGA">http://www.w3.org/TR/REC-xml-names/</a></span></p>
+
+<p><span>XML Schema:</span><span> a formal description of the structure rules governing an XML document type. </span><span><a href="http://www.google.com/url?q=http%3A%2F%2Fwww.w3.org%2FXML%2FSchema.html&amp;sa=D&amp;sntz=1&amp;usg=AFQjCNHvYvvkLt2HjSMYpm3gfe4KYJt30g">http://www.w3.org/XML/Schema.html</a></span></p>
+
+
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-892 -->
+<!-- #comments -->
+
+</div>

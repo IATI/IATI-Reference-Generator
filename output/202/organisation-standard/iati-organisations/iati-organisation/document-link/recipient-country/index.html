@@ -1,0 +1,94 @@
+<div class="body" role="main">
+<p id="recipient-country">
+<h1>recipient-country</h1>
+<p><code>iati-organisations/iati-organisation/document-link/recipient-country</code></p>
+<p>This is the reference page for the XML element <code>recipient-country</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The recipient country that is the focus of the document.
+May be repeated for multiple countries.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-organisations-iati-organisation-document-link-recipient-country-code">
+<dt>@code</dt>
+<dd><p>ISO 3166-1 alpha-2 code for the country.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value should be on the <a href="../../../../../codelists/Country/"><span>Country codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+
+<p>Example usage of <code>recipient-country</code> of a <code>document-link</code> in an <code>iati-organisation</code>.</p>
+
+
+<p>The <code>@code</code> attribute declares a valid code (<em>AF</em>) from the <em>Country</em> codelist.</p>
+
+<p><code><pre> &lt;document-link format="application/vnd.oasis.opendocument.text" url="http://www.example.org/docs/report_en.odt"&gt;
+  &lt;title&gt;
+   &lt;narrative&gt;Annual Report 2013&lt;/narrative&gt;	   
+  &lt;/title&gt;
+  &lt;category code="B01" /&gt;
+  &lt;language code="en" /&gt;
+  &lt;document-date iso-date="2014-02-05" /&gt;
+<span>  &lt;recipient-country code="AF"&gt;
+</span>    &lt;narrative&gt;Afghanistan&lt;/narrative&gt;
+   &lt;/recipient-country&gt;
+ &lt;/document-link&gt;
+</pre></code>
+</p>
+
+<p>The <code>recipient-country</code> element can be repeated in any <code>document-link</code>.</p>
+<p>Example declaring multiple <code>recipient-country</code> elements for the same <code>document-link</code>:</p>
+
+<p><code><pre>  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http://www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Country Report 2013&lt;/narrative&gt;	   
+    &lt;narrative xml:lang="fr"&gt;Rapport Pays 2013&lt;/narrative&gt;
+   &lt;/title&gt;
+   &lt;category code="B01" /&gt;
+   &lt;language code="en" /&gt;
+<span>   &lt;document-date iso-date="2014-02-05" /&gt;
+</span><span>   &lt;recipient-country code="AF"&gt;
+</span><span>    &lt;narrative&gt;Afghanistan&lt;/narrative&gt;
+</span>   &lt;/recipient-country&gt;
+   &lt;recipient-country code="AX" /&gt;
+   &lt;recipient-country code="AL" /&gt;
+  &lt;/document-link&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+
+<p>The <code>recipient-country</code> element was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">added</a> as a child element of <code>document-link</code>.</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-organisations-schema.xsd#L824">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/organisation-standard/iati-organisations/iati-organisation/document-link/recipient-country.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+<meta content="5" name="order"/></div>

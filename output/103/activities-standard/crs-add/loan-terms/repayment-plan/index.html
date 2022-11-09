@@ -1,0 +1,51 @@
+<div id="content" role="main">
+
+<header>
+<h1>Repayment Plan</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;repayment-plan&gt;&lt;/repayment-plan&gt;</h2><p><h3>From the schema</h3><p>
+                    Number of repayments per annum. 1 = annual; 2 =
+                    semi-annual; 4 = quarterly; 12 = monthly. Codes
+                    are listed at
+                    <a href="/en/iati-standard/203/codelists/repayment-nopa" rel="nofollow">http://iatistandard.org/codelists/repayment-nopa</a>.
+                  </p><p> This element is of the type "codeType" as described in the <a href="/reference_downloads/archive/downloads/1.03/iati-common.xsd">IATI Common schema</a></p><p><p>
+        Data type for an element that refers to an object that can
+        have a code as well as human-readable text in different
+        languages (e.g. a country or status).
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@code</td><td>optional</td><td>
+        Machine-readable code for the entity being described.
+      </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p> </p><!--schema wrap--></p>
+<h2 id="repayment_plan">Repayment Plan</h2>
+
+<!-- EDIT1 SECTION "Repayment Plan" [1-71] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<pre>&lt;crs-add&gt;
+
+  &lt;loan-terms rate-1="" rate-2=""&gt; 
+    &lt;repayment-plan code=""&gt;&lt;/repayment-plan&gt;
+  &lt;/loan-terms&gt;
+ 
+&lt;/crs-add&gt;</pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [72-235] -->
+<h3 id="changelog">Changelog</h3>
+
+<h4 id="section103">1.03</h4>
+<p>
+<p>
+New in 1.03  <br/>
+
+Added the optional crs-add element and its child elements
+</p>
+</p>
+<!-- EDIT3 SECTION "Changelog" [236-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-3796 -->
+
+</div>

@@ -1,0 +1,35 @@
+<div class="body" role="main">
+<p id="classifications">
+<h1>Classifications</h1>
+<p id="definition">
+<h2>Definition</h2>
+<p>Within the <strong>IATI activity standard</strong> it is expected that <em>classifications</em> information is provided for any <code>iati-activity</code></p>
+<p>Namely:</p>
+<ul>
+<li><code>sector</code> - the thematic catgory (or set of categories) an <code>iati-activity</code> operates with</li>
+</ul>
+<p>Additionally, the following classifications enable the publication of various codes (often associated with CRS++ reporting)</p>
+<ul>
+<li><code>policy-marker</code></li>
+<li><code>collaboration-type</code></li>
+<li><code>default-finance-type</code></li>
+<li><code>default-flow-type</code></li>
+<li><code>default-aid-type</code></li>
+<li><code>default-tied-status</code></li>
+</ul>
+</p>
+<p id="considerations">
+<h2>Considerations</h2>
+<p>When using the <strong>IATI activity standard</strong> to declare <em>documents</em>, the following should be considered:</p>
+<ul>
+<li>An <code>iati-activity</code> can have singlular or multiple <code>sector</code></li>
+<li>When multiple <code>sector</code> are described, then a <code>@percentage</code> should be declared for each. All reported sectors from the same vocabulary should add up to 100%.</li>
+<li>A <code>vocabulary</code> can be declared when describing a <code>sector</code>.  This must be on the <code>Vocabulary</code> codelist.</li>
+<li>If no <code>vocabulary</code> is declared, then the <a href="../../../codelists/Sector/"><span>DAC 5 digit codelist</span></a> is assumed.</li>
+<li>A <code>reporting-org</code> can declare their own <code>vocabulary</code>, via using the <em>RO</em> (Reporting Org) <code>Vocabulary</code> code.</li>
+<li>Multiple or singular <code>policy-marker</code> can also be described.  Unlike <code>sector</code>, there is no <code>@percentage attribute</code> to add.</li>
+<li>The classifications of <code>default-finance-type</code>, <code>default-flow-type</code>, <code>default-aid-type</code> and <code>default-tied-status</code> apply to the whole <code>iati-activity</code>.  These can be overridden within a single <code>transaction</code> via using any of <code>finance-type</code> , <code>flow-type</code> , <code>aid-type</code> and/or <code>tied-status</code>.</li>
+</ul>
+</p>
+</p>
+</div>

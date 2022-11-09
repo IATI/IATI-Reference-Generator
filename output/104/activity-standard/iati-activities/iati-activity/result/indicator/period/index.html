@@ -1,0 +1,60 @@
+<div class="body" role="main">
+<p id="period">
+<h1>period</h1>
+<p><code>iati-activities/iati-activity/result/indicator/period</code></p>
+<p>This is the reference page for the XML element <code>period</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The period covered for the results
+reported. Multiple periods can be reported for a
+single indicator.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>period</code> in context of an <code>indicator</code> in a <code>result</code> element.</p>
+<p>A date in ISO 8601 format (YYYY-MM-DD) is required for the <code>period-start</code> and <code>period-end</code> dates of the reporting <code>period</code>:</p>
+<p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
+   &lt;title&gt;Result 1 title&lt;/title&gt;
+   &lt;description&gt;Result 1 description text&lt;/description&gt;
+   &lt;indicator measure="1" ascending="1"&gt;
+     &lt;title&gt;Indicator 1 title&lt;/title&gt;
+     &lt;description&gt;Indicator 1 description text&lt;/description&gt;
+     &lt;baseline year="2012" value="10"&gt;
+      &lt;comment&gt;Baseline comment text&lt;/comment&gt;
+     &lt;/baseline&gt;
+<span>     &lt;period&gt;
+</span>      &lt;period-start iso-date="2013-01-01" /&gt;
+       &lt;period-end iso-date="2013-03-31" /&gt;
+       &lt;target value="10"&gt;
+        &lt;comment&gt;Target comment text&lt;/comment&gt; 
+       &lt;/target&gt;
+       &lt;actual value="11"&gt;
+        &lt;comment&gt;Actual comment text&lt;/comment&gt; 
+       &lt;/actual&gt;
+<span>     &lt;/period&gt;
+</span>   &lt;/indicator&gt;
+  &lt;/result&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1359">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/result/indicator/period.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="period-start/">period-start</a></li>
+<li><a href="period-end/">period-end</a></li>
+<li><a href="target/">target</a></li>
+<li><a href="actual/">actual</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

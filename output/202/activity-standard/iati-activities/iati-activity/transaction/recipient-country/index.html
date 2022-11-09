@@ -1,0 +1,94 @@
+<div class="body" role="main">
+<p id="recipient-country">
+<h1>recipient-country</h1>
+<p><code>iati-activities/iati-activity/transaction/recipient-country</code></p>
+<p>This is the reference page for the XML element <code>recipient-country</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A country that will benefit from this transaction.
+If a specific country is not known the recipient-region
+element should be used instead.</p>
+<p>If transaction/recipient-country AND/OR
+transaction/recipient-region are used THEN ALL
+transaction elements MUST contain a recipient-country
+or recipient-region element AND
+(iati-activity/recipient-country AND
+iati-activity/recipient-region MUST NOT be used)</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L647">3.6.2</a>: Recipient countries or regions must only be declared at activity level OR for all transactions.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-transaction-recipient-country-code">
+<dt>@code</dt>
+<dd><p>ISO 3166-1 alpha-2 code for the country.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value should be on the <a href="../../../../../codelists/Country/"><span>Country codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>recipient-country</code> of <code>transaction</code> in an <code>iati-activity</code>.</p>
+
+<p>The <code>@code</code> attribute declares a valid code (<em>AF</em>) from the <em>Country</em> codelist.</p>
+
+<p><code><pre>&lt;recipient-country code="AF" /&gt;
+</pre></code>
+</p>
+<p>Full example:</p>
+<p><code><pre>  &lt;transaction ref="1234" humanitarian="1"&gt;
+   &lt;transaction-type code="1" /&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;   
+   &lt;description&gt;
+    &lt;narrative&gt;Transaction description text&lt;/narrative&gt;
+   &lt;/description&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" type="10" ref="BB-BBB-123456789"&gt;
+    &lt;narrative&gt;Agency B&lt;/narrative&gt;
+   &lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" type="23" ref="AA-AAA-123456789"&gt;
+    &lt;narrative&gt;Agency A&lt;/narrative&gt;
+   &lt;/receiver-org&gt;
+   &lt;disbursement-channel code="1" /&gt;
+   &lt;sector vocabulary="2" code="111" /&gt;
+   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+<span>   &lt;recipient-country code="TM" /&gt;
+</span>   &lt;recipient-region code="616" vocabulary="1" /&gt;   
+   &lt;flow-type code="10" /&gt;
+   &lt;finance-type code="110" /&gt;
+   &lt;aid-type code="A01" /&gt;   
+   &lt;tied-status code="3" /&gt;
+  &lt;/transaction&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id2">
+<h3>2.01</h3>
+<p>The <code>sector</code> element was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">added</a> as a child element of <code>transaction</code>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1256">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/transaction/recipient-country.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

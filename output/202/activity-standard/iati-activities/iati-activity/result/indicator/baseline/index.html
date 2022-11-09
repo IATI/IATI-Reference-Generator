@@ -1,0 +1,103 @@
+<div class="body" role="main">
+<p id="baseline">
+<h1>baseline</h1>
+<p><code>iati-activities/iati-activity/result/indicator/baseline</code></p>
+<p>This is the reference page for the XML element <code>baseline</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The baseline value for the indicator</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-result-indicator-baseline-year">
+<dt>@year</dt>
+<dd><p>The year the baseline value was taken (yyyy)</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:positiveInteger.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-result-indicator-baseline-value">
+<dt>@value</dt>
+<dd><p>The baseline value.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example of <code>baseline</code> in context of an <code>indicator</code> in a <code>result</code> element.</p>
+
+<p>This example declares <code>@year</code> as <em>2012</em>, with a <code>@value</code> of <em>10</em>:</p>
+
+<p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Result title&lt;/narrative&gt;    
+   &lt;/title&gt;
+   &lt;description&gt;
+    &lt;narrative&gt;Result description text&lt;/narrative&gt;   
+   &lt;/description&gt;
+   &lt;indicator measure="1" ascending="1"&gt;
+     &lt;title&gt;
+      &lt;narrative&gt;Indicator title&lt;/narrative&gt;   		 
+     &lt;/title&gt;
+     &lt;description&gt;
+      &lt;narrative&gt;Indicator description text&lt;/narrative&gt;
+     &lt;/description&gt;
+     &lt;reference vocabulary="1" code="3429" /&gt;
+     &lt;reference vocabulary="7" code="861" /&gt;
+     &lt;reference vocabulary="99" code="B1" indicator-uri="http://example.com/indicators.html" /&gt;     
+<span>     &lt;baseline year="2012" value="10"&gt;
+</span>      &lt;comment&gt;
+       &lt;narrative&gt;Baseline comment text&lt;/narrative&gt;
+      &lt;/comment&gt;
+<span>     &lt;/baseline&gt;
+</span>     &lt;period&gt;
+      &lt;period-start iso-date="2013-01-01" /&gt;
+      &lt;period-end iso-date="2013-03-31" /&gt;
+      &lt;target value="10"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+        &lt;narrative&gt;Target comment text&lt;/narrative&gt;			
+       &lt;/comment&gt; 
+      &lt;/target&gt;
+      &lt;actual value="11"&gt;
+       &lt;location ref="AF-KAN" /&gt;
+       &lt;location ref="KH-PNH" /&gt;
+       &lt;dimension name="sex" value="female" /&gt;
+       &lt;dimension name="age" value="adult" /&gt;
+       &lt;comment&gt;
+         &lt;narrative&gt;Actual comment text&lt;/narrative&gt;
+       &lt;/comment&gt; 
+      &lt;/actual&gt;
+     &lt;/period&gt;
+   &lt;/indicator&gt;
+  &lt;/result&gt;
+</pre></code>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1902">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/result/indicator/baseline.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="comment/">comment</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

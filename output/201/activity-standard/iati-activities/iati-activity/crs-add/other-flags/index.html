@@ -1,0 +1,88 @@
+<div class="body" role="main">
+<p id="other-flags">
+<h1>other-flags</h1>
+<p><code>iati-activities/iati-activity/crs-add/other-flags</code></p>
+<p>This is the reference page for the XML element <code>other-flags</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>This covers the four CRS++ columns titled:
+“Free standing technical cooperation”;
+“Programme-based approach”;
+“Investment project”;
+“Associated financing”</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-crs-add-other-flags-code">
+<dt>@code</dt>
+<dd><p>An IATI code describing the equivalent CRS++ columns</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/CRSAddOtherFlags/"><span>CRSAddOtherFlags codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-crs-add-other-flags-significance">
+<dt>@significance</dt>
+<dd><p>A boolean indicating whether the flag applies. If ‘false’ do not report the flag</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:boolean.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>other-flags</code> of <code>crs-add</code> for an <code>iati-activity</code>.</p>
+
+<p>The <code>@code</code> attribute declares a valid code (<em>1</em>) from the <em>CRSAddOtherFlags</em> codelist.</p>
+
+
+<p>A <code>@significance</code> boolean of <em>1</em> indicates that this flag is reported.</p>
+
+<p><code><pre>  &lt;crs-add&gt;
+<span>   &lt;other-flags code="1" significance="1" /&gt;
+</span>   &lt;loan-terms rate-1="4" rate-2="3"&gt;
+    &lt;repayment-type code="1" /&gt;
+    &lt;repayment-plan code="4" /&gt;
+    &lt;commitment-date iso-date="2013-09-01"/&gt;
+    &lt;repayment-first-date iso-date="2014-01-01" /&gt;
+    &lt;repayment-final-date iso-date="2020-12-31" /&gt;
+   &lt;/loan-terms&gt;
+   &lt;loan-status year="2014" currency="GBP" value-date="2013-05-24"&gt;
+     &lt;interest-received&gt;200000&lt;/interest-received&gt;
+     &lt;principal-outstanding&gt;1500000&lt;/principal-outstanding&gt;
+     &lt;principal-arrears&gt;0&lt;/principal-arrears&gt;
+     &lt;interest-arrears&gt;0&lt;/interest-arrears&gt;
+   &lt;/loan-status&gt;
+  &lt;/crs-add&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>The element <code>aid-type-flag</code> has been <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">renamed</a>.</p>
+<p>The associated codelist <em>AidTypeFlag</em> has been renamed as <em>CRSAddOtherFlags</em></p>
+</p>
+<p id="id2">
+<h3>1.03</h3>
+
+<p>New in 1.03</p>
+<p>Added the optional <code>crs-add</code> element and its child elements</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L2063">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/crs-add/other-flags.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

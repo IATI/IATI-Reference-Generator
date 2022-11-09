@@ -1,0 +1,45 @@
+<div id="content" role="main">
+
+<header>
+<h1>Record Header</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;iati-activity&gt;&lt;/iati-activity&gt;</h2><p><h3>From the schema</h3><p>
+        Top-level element for a single IATI activity report.
+      </p><table><tbody><tr><td>@version</td><td>
+            A number indicating the IATI specification version in use.
+            Defaults to "1.0" if not specified.  It is required to
+            specify this attribute if the document is using features
+            specific to an IATI specification other than the initial
+            1.0 version.
+          </td></tr><tr><td>@last-updated-datetime</td><td>
+            The last date/time that the data for this specific
+            activity was updated.  This date must change whenever the
+            value of any field changes.
+          </td></tr><tr><td>@xml:lang</td><td>XML language attribute</td></tr><tr><td>@default-currency</td><td>
+            Default ISO 4217 currency code for all financial values in
+            this activity report.  See
+            <a href="../../../codelists/currency/" rel="nofollow">http://iatistandard.org/101/codelists/currency</a>
+</td></tr><tr><td>@hierarchy</td><td>
+            Shortcut to show whether this is a parent or child
+            activity, without having to evaluate related-activity
+            elements.
+          </td></tr></tbody></table> </p><!--schema wrap--></p>
+<h2 id="iati_activity">IATI Activity</h2>
+
+<!-- EDIT1 SECTION "IATI Activity" [1-49] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+This example declares that the activity has a default language of English (en) and a default currency of US dollars.  It was last updated on the 31st March 2012, and has a hierarchy value of 1.
+</p><pre> <span><span>&lt;iati-activity</span> <span>xml:lang</span>=<span>"en"</span> <span>default-currency</span>=<span>"USD"</span> <span>last-updated-datetime</span>=<span>"2012-03-31T01:01:01"</span> <span>hierarchy</span>=<span>"1"</span><span>&gt;</span></span>
+       ....
+ <span><span>&lt;/iati-activity<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [50-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1381 -->
+
+</div>

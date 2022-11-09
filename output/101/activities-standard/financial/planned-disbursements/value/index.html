@@ -1,0 +1,45 @@
+<div id="content" role="main">
+
+<header>
+<h1>Value</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;value&gt;&lt;/value&gt;</h2><p><h3>From the schema</h3><p>
+                The amount of the contribution (or its value, if in
+                kind).
+              </p><p> This element is of the type "currencyType" as described in the <a href="/reference_downloads/archive/downloads/1.01/iati-common.xsd">IATI Common schema (Version 1.01)</a></p><p><p>
+        Data type for an element containing a currency value.
+      </p><table border="1"><tbody><tr><th>name</th><th>type</th><th>use</th></tr><tr><td>currency</td><td>xsd:string</td><td>optional</td></tr><tr><td>value-date</td><td>xsd:date</td><td>required</td></tr></tbody></table> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /budget/value</h3><ul><li>Must be on: <a href="../../../../codelists/currency/">Currency Codelist</a></li><li>Must be on: <a href="../../../../codelists/currency/">Currency Codelist</a></li><li>value-date required</li><!--<li>exists($this/@value-date)</li>--><li>Must be on: <a href="../../../../codelists/currency/">Currency Codelist</a></li></ul></p>
+<p><h3>Standard compliance test(s) for /budget/value</h3><ul><li>Must be on: <a href="../../../../codelists/currency/">Currency Codelist</a></li><li>Must be on: <a href="../../../../codelists/currency/">Currency Codelist</a></li><li>value-date required</li><!--<li>exists($this/@value-date)</li>--><li>Must be on: <a href="../../../../codelists/currency/">Currency Codelist</a></li></ul></p>
+<h2 id="value">Value</h2>
+
+<!-- EDIT1 SECTION "Value" [1-41] -->
+<h3 id="notes">Notes</h3>
+<p>
+<p>
+The monetary value of the transaction in the specified currency – negative for repayments or reduced/cancelled commitments.
+</p>
+</p>
+<!-- EDIT2 SECTION "Notes" [42-184] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The total value for the specified period should be declared as a positive integer:
+</p>
+<pre><span><span>&lt;value</span> <span>value-date</span>=<span>"2010-10-01"</span><span>&gt;</span></span>700000<span><span>&lt;/value<span>&gt;</span></span></span></pre>
+<p>
+A date of value for currency conversions should also be provided as yyyy-mm-dd:
+</p>
+<pre><span><span>&lt;value</span> <span>value-date</span>=<span>"2010-10-01"</span><span>&gt;</span></span>700000<span><span>&lt;/value<span>&gt;</span></span></span></pre>
+<p>
+The ISO 4217 code for the currency in which the project is denominated should be declared, only if different to default currency
+</p>
+<pre><span><span>&lt;value</span> <span>currency</span>=<span>"GBP"</span> <span>value-date</span>=<span>"2010-10-01"</span><span>&gt;</span></span>700000<span><span>&lt;/value<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT3 SECTION "Example Usage" [185-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-2294 -->
+
+</div>

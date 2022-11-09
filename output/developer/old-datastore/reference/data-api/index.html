@@ -1,0 +1,222 @@
+<div class="body" role="main">
+<p id="data-api">
+<h1>Data API</h1>
+<p>The following filters are available, which enable you to construct a query for the data that you are looking for.</p>
+<p id="available-filters">
+<h2>Available filters</h2>
+<p id="iati-identifier">
+<h3>iati-identifier</h3>
+<p>Returns activities matching your specified <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/iati-identifier/">IATI Identifier</a> value.  In practice, no more than one activity should be returned as each activity should contain a unique <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/iati-identifier/">IATI Identifier</a> value.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>iati-identifier: String denoting an individual IATI activity ID</dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?iati-identifier=NL-KVK-41177206-C-002350">iati-identifier=NL-KVK-41177206-C-002350</a></dd>
+</dl>
+</p>
+<p id="recipient-country">
+<h3>recipient-country</h3>
+<p>Returns activities where the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-country/">recipient-country</a> element has a @code attribute value that matches your specified ISO country code.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>recipient-country: 2-digit ISO country code that appears on the <a href="/en/iati-standard/203/codelists/Country/">country codelist</a></dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-country=SS">recipient-country=SS</a></dd>
+</dl>
+</p>
+<p id="recipient-region">
+<h3>recipient-region</h3>
+<p>Returns activities where the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-region/">recipient-region</a> element has a @code attribute value that matches your specified region code.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>recipient-region: A region code that appears in a recipient region <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/recipient-region/">@code attribute</a></dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?recipient-region=298">recipient-region=298</a></dd>
+</dl>
+</p>
+<p id="reporting-org">
+<h3>reporting-org</h3>
+<p>Returns activities where the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/">reporting-org</a> element has a @ref attribute value that matches your specified <a href="/en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/">Organisation identifier</a> string.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>reporting-org: Organisation identifier string.</dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?reporting-org=NL-KVK-41177206">reporting-org=NL-KVK-41177206</a></dd>
+</dl>
+</p>
+<p id="reporting-org-type">
+<h3>reporting-org.type</h3>
+<p>Returns activities where the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/">reporting-org</a> element has a @type attribute value that matches your specified value.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>recipient-org.type: 2-digit value that appears on the <a href="/en/iati-standard/203/codelists/OrganisationType/">organisation type codelist</a></dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?reporting-org.type=10">reporting-org.type=10</a></dd>
+</dl>
+</p>
+<p id="sector">
+<h3>sector</h3>
+<p>Returns activities where the <a href="/en/iati-standard/203/codelists/Sector/">sector</a> element has a @code attribute value that matches your specified sector code.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>sector: A sector code that appears on a sector’s <a href="/en/iati-standard/202/activity-standard/iati-activities/iati-activity/sector/">@code attribute</a></dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?sector=11110">sector=11110</a></dd>
+</dl>
+</p>
+<p id="policy-marker">
+<h3>policy-marker</h3>
+<p>Returns activities where a <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/policy-marker/">policy-marker</a> element has a @code attribute value that matches your specified policy-marker value.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>policy-marker: 1-digit value that appears on the <a href="/en/iati-standard/203/codelists/PolicyMarker/">policy marker codelist</a></dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?policy-marker=1">policy-marker=1</a></dd>
+</dl>
+</p>
+<p id="participating-org">
+<h3>participating-org</h3>
+<p>Returns activities where the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/">participating-org</a> element has a @ref attribute value that matches your specified participating-org identification string.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>participating-org: Identification string for the organisation who is participating</dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?participating-org=NL-KVK-41177206">participating-org=NL-KVK-41177206</a></dd>
+</dl>
+</p>
+<p id="participating-org-role">
+<h3>participating-org.role</h3>
+<p>Returns activities where the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/">participating-org</a> element has a @role attribute value that matches your specified value.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>participating-org.role: 1-digit value that appears on the organisation role codelist</dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?participating-org.role=1">participating-org.role=1</a></dd>
+</dl>
+</p>
+<p id="related-activity">
+<h3>related-activity</h3>
+<p>Returns activities where the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/related-activity/">related-activity</a> element has a @ref attribute value that matches your specified <a href="/en/iati-standard/203/activity-standard/overview/iati-identifier/">IATI activity identifier</a> string.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>related-activity: String denoting an <a href="/en/iati-standard/203/activity-standard/overview/iati-identifier/">IATI activity identifier</a></dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?related-activity=US-7-GB-10-e76c5505">related-activity=US-7-GB-10-e76c5505</a></dd>
+</dl>
+</p>
+<p id="transaction">
+<h3>transaction</h3>
+<p>Returns activities containing at least one <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/">transaction element</a> where the @ref attribute matches your given string.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>transaction: String denoting a <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/">transaction @ref attribute</a></dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?transaction=15458">transaction=15458</a></dd>
+</dl>
+</p>
+<p id="transaction-provider-org">
+<h3>transaction_provider-org</h3>
+<p>Returns activities containing at least one <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/">transaction element</a> where the provider-org element has a @ref attribute value that matches your specified organisation identifier string.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>transaction_provider-org: <a href="/en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/">Organisation identifier string</a> for the organisation issuing who provided transaction funds</dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?transaction_provider-org=GB-1">transaction_provider-org=GB-1</a></dd>
+</dl>
+</p>
+<p id="transaction-provider-org-provider-activity-id">
+<h3>transaction_provider-org.provider-activity-id</h3>
+<p>Returns activities containing at least one <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/">transaction element</a> where the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/provider-org/">provider-activity-id</a> element matches your specified <a href="/en/iati-standard/203/activity-standard/overview/iati-identifier/">IATI activity identifier</a> string.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>transaction_provider-org.provider-activity-id: String denoting an <a href="/en/iati-standard/203/activity-standard/overview/iati-identifier/">IATI activity identifier</a></dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?transaction_provider-org.provider-activity-id=GB-1-202505">transaction_provider-org.provider-activity-id=GB-1-202505</a></dd>
+</dl>
+</p>
+<p id="transaction-receiver-org">
+<h3>transaction_receiver-org</h3>
+<p>Returns activities containing at least one <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/">transaction element</a> where funds have been transferred to an organisation with your specified <a href="/en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/">Organisation identifier</a> string.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>transaction_receiver-org: <a href="/en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/">Organisation identifier string</a> for the organisation issuing who received transaction funds</dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?transaction_receiver-org=GB-CHC-1108464">transaction_receiver-org=GB-CHC-1108464</a></dd>
+</dl>
+</p>
+<p id="transaction-receiver-org-receiver-activity-id">
+<h3>transaction_receiver-org.receiver-activity-id</h3>
+<p>Returns activities containing at least one <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/">transaction element</a> where the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/receiver-org/">receiver-org</a>
+element has an @receiver-activity-id attribute that matches your specified <a href="/en/iati-standard/203/activity-standard/overview/iati-identifier/">IATI activity identifier string</a>.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>transaction_receiver-org.receiver-activity-id: String denoting an <a href="/en/iati-standard/203/activity-standard/overview/iati-identifier/">IATI activity identifier</a></dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?transaction_receiver-org.receiver-activity-id=GB-CHC-1099776-B8">transaction_receiver-org.receiver-activity-id=GB-CHC-1099776-B8</a></dd>
+</dl>
+</p>
+<p id="start-date">
+<h3>start-date</h3>
+<p>Returns activities where the value of an <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-date/">@activity-date attribute</a> within an <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-date">@activity-date</a> element (with <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-date/">@type</a> equivalent to start-planned or start-actual) is chronologically before or after your specified query value.</p>
+<p>To return activities before your specified date, use ‘start-date__lt’
+To return activities after your specified date use ‘start-date__gt’</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>start-date: ISO format date (YYYY-MM-DD).</dd>
+<dt>Example API calls:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?start-date__lt=2015-01-01">start-date__lt=2015-01-01</a>
+<a href="http://datastore.iatistandard.org/api/1/access/activity.xml?start-date__gt=2015-01-01">start-date__gt=2015-01-01</a></dd>
+</dl>
+</p>
+<p id="end-date">
+<h3>end-date</h3>
+<p>Returns activities where the value of an <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-date/">@activity-date attribute</a> within an <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-date">@activity-date</a> element (with <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-date/">@type</a> equivalent to end-planned or end-actual) is chronologically before or after your specified query value.</p>
+<p>To return activities before your specified date, use ‘end-date__lt’
+To return activities after your specified date use ‘end-date__gt’</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>end-date: ISO format date (YYYY-MM-DD).</dd>
+<dt>Example API calls:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?start-date__lt=2015-01-01">end-date__lt=2015-01-01</a>
+<a href="http://datastore.iatistandard.org/api/1/access/activity.xml?start-date__gt=2015-01-01">end-date__gt=2015-01-01</a></dd>
+</dl>
+</p>
+<p id="last-change">
+<h3>last-change</h3>
+<p>Returns activities where the observed last change the of an activity is chronologically before or after your specified query value. This information is provided by Datastore update processes, rather than the actual IATI data.</p>
+<p>To return activities before your specified date use ‘last-change__lt’
+To return activities after your specified date use ‘last-change__gt’</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>last-change: ISO format date (YYYY-MM-DD).</dd>
+<dt>Example API calls:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?last-change__lt=2009-01-01">last-change__lt=2009-01-01</a>
+<a href="http://datastore.iatistandard.org/api/1/access/activity.xml?last-change__gt=2009-01-01">last-change__gt=2009-01-01</a></dd>
+</dl>
+</p>
+<p id="last-updated-datetime">
+<h3>last-updated-datetime</h3>
+<p>Returns activities where the @last-updated-datetime attribute of an activity is chronologically before or after your specified query value.</p>
+<p>To return activities before your specified date use ‘last-updated-datetime__lt’
+To return activities after your specified date use ‘last-updated-datetime__gt’</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>last-updated-datetime: ISO format date (YYYY-MM-DD).</dd>
+<dt>Example API calls:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?last-updated-datetime__lt=2015-01-01">last-updated-datetime__lt=2015-01-01</a>
+<a href="http://datastore.iatistandard.org/api/1/access/activity.xml?last-updated-datetime__gt=2010-01-01">last-updated-datetime__gt=2010-01-01</a></dd>
+</dl>
+</p>
+<p id="registry-dataset">
+<h3>registry-dataset</h3>
+<p>Returns activities contained within your specified registry dataset.</p>
+<dl>
+<dt>Parameters:</dt>
+<dd>registry-dataset: string name of the specified registry dataset</dd>
+<dt>Example API call:</dt>
+<dd><a href="http://datastore.iatistandard.org/api/1/access/activity.xml?registry-dataset=dfid-af">registry-dataset=dfid-af</a></dd>
+</dl>
+</p>
+</p>
+</p>
+</div>

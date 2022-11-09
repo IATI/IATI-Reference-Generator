@@ -1,0 +1,162 @@
+<div class="body" role="main">
+<p id="example-usage-xml">
+<h1>Example Usage XML</h1>
+<p id="definition">
+<h2>Definition</h2>
+<p>This page presents <em>example usage XML</em> for the <strong>IATI organisation standard</strong>.</p>
+</p>
+<p id="considerations">
+<h2>Considerations</h2>
+<p>This is a <em>example usage XML</em> and not intended to reflect any real organisations or entities.</p>
+<p>Extracts from this example are used throughout this documentation.</p>
+<p>Comments markup is optional and intended to supplement the documentation:</p>
+<p><code><pre>  &lt;!--organisation-identifier ends--&gt;
+  &lt;!--name starts--&gt;
+</pre></code>
+</p>
+</p>
+<p id="download-example-usage-file">
+<h2>Download Example Usage File</h2>
+<p>The <em>example usage XML</em> file can be <a href="https://raw.githubusercontent.com/IATI/IATI-Extra-Documentation/version-2.01/en/organisation-standard/organisation-standard-example-annotated.xml">downloaded</a>.</p>
+</p>
+<p id="example-usage-file-in-full">
+<h2>Example Usage File (in full)</h2>
+<p>Full XML example usage of the <strong>IATI organisation standard</strong>:</p>
+<p><code><pre>&lt;iati-organisations generated-datetime="2014-09-10T07:15:37Z" version="2.01"&gt;
+ &lt;!--iati-organisation starts--&gt;
+ &lt;iati-organisation default-currency="EUR" last-updated-datetime="2014-09-10T07:15:37Z" xml:lang="en"&gt;
+  &lt;!--organisation-identifier starts--&gt;
+  &lt;organisation-identifier&gt;AA-AAA-123456789&lt;/organisation-identifier&gt;
+  &lt;!--organisation-identifier ends--&gt;
+  &lt;!--name starts--&gt;
+  &lt;name&gt;
+	  &lt;narrative&gt;Organisation name&lt;/narrative&gt;
+	  &lt;narrative xml:lang="fr"&gt;Nom de l'organisme&lt;/narrative&gt;
+  &lt;/name&gt;
+  &lt;!--name ends--&gt;
+  &lt;!--reporting-org starts--&gt;
+  &lt;reporting-org ref="AA-AAA-123456789" type="40" secondary-reporter="0"&gt;
+	  &lt;narrative&gt;Organisation name&lt;/narrative&gt;
+	  &lt;narrative xml:lang="fr"&gt;Nom de l'organisme&lt;/narrative&gt;	  
+  &lt;/reporting-org&gt;
+  &lt;!--reporting-org ends--&gt;
+  &lt;!--total-budget starts--&gt;
+  &lt;total-budget&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;250000000&lt;/value&gt;
+   &lt;budget-line ref="1234"&gt;
+	&lt;value currency="USD" value-date="2014-01-01"&gt;200000000&lt;/value&gt;
+	&lt;narrative&gt;Budget Line&lt;/narrative&gt;
+   &lt;/budget-line&gt;
+  &lt;/total-budget&gt;
+  &lt;!--total-budget ends--&gt;
+  &lt;!--recipient-org-budget starts--&gt;
+  &lt;recipient-org-budget&gt;
+   &lt;recipient-org ref="AA-ABC-1234567"&gt;
+    &lt;narrative&gt;Org Name&lt;/narrative&gt;   
+   &lt;/recipient-org&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;2500000&lt;/value&gt;
+   &lt;budget-line ref="1234"&gt;
+	&lt;value currency="USD" value-date="2014-01-01"&gt;2000000&lt;/value&gt;
+	&lt;narrative&gt;Budget Line&lt;/narrative&gt;
+   &lt;/budget-line&gt;
+  &lt;/recipient-org-budget&gt;
+  &lt;!--recipient-org-budget ends--&gt;
+  &lt;!--recipient-country-budget starts--&gt;
+  &lt;recipient-country-budget&gt;
+   &lt;recipient-country code="AF" /&gt;
+   &lt;period-start iso-date="2014-01-01" /&gt;
+   &lt;period-end iso-date="2014-12-31" /&gt;
+   &lt;value currency="USD" value-date="2014-01-01"&gt;25000000&lt;/value&gt;
+   &lt;budget-line ref="1234"&gt;
+	&lt;value currency="USD" value-date="2014-01-01"&gt;2000000&lt;/value&gt;
+	&lt;narrative&gt;Budget Line&lt;/narrative&gt;
+   &lt;/budget-line&gt;
+  &lt;/recipient-country-budget&gt;
+  &lt;!--recipient-country-budget ends--&gt;
+  &lt;!--document-link starts--&gt;
+  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Annual Report 2013&lt;/narrative&gt;	   
+   &lt;/title&gt;
+   &lt;category code="B01" /&gt;
+   &lt;language code="en" /&gt;
+   &lt;recipient-country code="AF"&gt;
+    &lt;narrative&gt;Afghanistan&lt;/narrative&gt;
+   &lt;/recipient-country&gt;
+  &lt;/document-link&gt;
+  &lt;!--document-link ends--&gt;
+  &lt;!--document-link-title starts--&gt;
+  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Annual Report 2013&lt;/narrative&gt;
+    &lt;narrative xml:lang="fr"&gt;Rapport annuel 2013&lt;/narrative&gt;    	   
+   &lt;/title&gt;
+   &lt;category code="B01" /&gt;
+   &lt;language code="en" /&gt;
+   &lt;recipient-country code="AF"&gt;
+    &lt;narrative&gt;Afghanistan&lt;/narrative&gt;
+   &lt;/recipient-country&gt;
+  &lt;/document-link&gt;
+  &lt;!--document-link-title ends--&gt;  
+  &lt;!--document-link-lang starts--&gt;
+  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_fr.odt"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Annual Report 2013&lt;/narrative&gt;	   
+    &lt;narrative xml:lang="fr"&gt;Rapport annuel 2013&lt;/narrative&gt;
+   &lt;/title&gt;
+   &lt;category code="B01" /&gt;
+   &lt;language code="fr" /&gt;
+   &lt;recipient-country code="AF"&gt;
+    &lt;narrative&gt;Afghanistan&lt;/narrative&gt;
+   &lt;/recipient-country&gt;
+  &lt;/document-link&gt;
+  &lt;!--document-link-lang ends--&gt;
+  &lt;!--multi-cat-document-link starts--&gt;
+  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Annual Report 2013&lt;/narrative&gt;	   
+    &lt;narrative xml:lang="fr"&gt;Rapport annuel 2013&lt;/narrative&gt;
+   &lt;/title&gt;
+   &lt;category code="B01" /&gt;
+   &lt;category code="B02" /&gt;
+   &lt;category code="B03" /&gt;
+   &lt;language code="en" /&gt;
+   &lt;recipient-country code="AF"&gt;
+    &lt;narrative&gt;Afghanistan&lt;/narrative&gt;
+   &lt;/recipient-country&gt;
+  &lt;/document-link&gt;
+  &lt;!--multi-cat-document-link ends--&gt;
+  &lt;!--multi-country-document-link starts--&gt;
+  &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
+   &lt;title&gt;
+    &lt;narrative&gt;Country Report 2013&lt;/narrative&gt;	   
+    &lt;narrative xml:lang="fr"&gt;Rapport Pays 2013&lt;/narrative&gt;
+   &lt;/title&gt;
+   &lt;category code="B01" /&gt;
+   &lt;language code="en" /&gt;
+   &lt;recipient-country code="AF"&gt;
+    &lt;narrative&gt;Afghanistan&lt;/narrative&gt;
+   &lt;/recipient-country&gt;
+   &lt;recipient-country code="AX" /&gt;
+   &lt;recipient-country code="AL" /&gt;
+  &lt;/document-link&gt;
+  &lt;!--multi-country-document-link ends--&gt;
+ &lt;/iati-organisation&gt;
+ &lt;!--iati-organisation ends--&gt;
+&lt;/iati-organisations&gt;
+&lt;!--iati-organisations ends--&gt;
+</pre></code>
+</p>
+</p>
+<p id="further-guidance">
+<h2>Further guidance</h2>
+<ul>
+<li><a href="../iati-organisations/"><span>IATI organisation standard - reference pages</span></a></li>
+</ul>
+</p>
+</p>
+<meta content="2" name="order"/></div>

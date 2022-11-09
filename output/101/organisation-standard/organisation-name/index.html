@@ -1,0 +1,76 @@
+<div id="content" role="main">
+
+<header>
+<h1>Organisation Name</h1>
+</header><!-- .entry-header -->
+<p>
+<h3>Definitions</h3>
+<p>This is the human-readable name of the organisation. It may be repeated in different languages for reporting organisations with multilingual requirements.<br/>
+</p>
+<table>
+<tr>
+<td><strong>language</strong></td>
+<td>The language in which the organisation name is reported</td>
+</tr>
+<tr>
+<td><strong>name-text</strong></td>
+<td>The name of the organisation</td>
+</tr>
+</table>
+<h3>Example Usage</h3>
+<p>The example below shows the name reported in the default language, and a second language. </p>
+<pre> 
+
+  ..
+  Organisation Name
+  Nom de l'organisation
+  ..
+
+</pre>
+<h3>Structure</h3>
+<table>
+<tr>
+<th>Item</th>
+<th>Format</th>
+<th>XML</th>
+<th>Occurs</th>
+</tr>
+<tr>
+<td>name</td>
+<td></td>
+<td>name</td>
+<td>0..*</td>
+</tr>
+<tr>
+<td>   language</td>
+<td>Language Code</td>
+<td>name/@xml:lang</td>
+<td>0..1</td>
+</tr>
+<tr>
+<td>   name-text</td>
+<td>Text</td>
+<td>name/text()</td>
+<td>1..1</td>
+</tr>
+</table>
+<h3>Usage &amp; Compliance</h3>
+<p>The element is not mandatory, but is <strong>recommended</strong>.</p>
+<p>For each instance of the element:</p>
+<ul>
+<li> If the <em>default-language</em> has not been specified in the <a href="../record-header/">Record Header</a>, <em>language</em> is <strong>mandatory</strong>.
+</li><li>  If <em>language</em> is present it <strong>must</strong> be a valid code from the <a href="../../codelists/language/">codelist</a>.
+</li><li> The <em>name-text</em> is <strong>mandatory</strong>.
+</li></ul>
+</p><!-- .entry-content -->
+<footer>
+</footer><!-- .entry-meta -->
+<!-- #post-1529 -->
+<!-- #comments -->
+<p>
+<p>
+					Last updated on 16 December 2012. 				  </p>
+<!--<p class="fl">Last updated: 1 April 2011   
+					<p class="fr"></p>	-->
+</p>
+</div>

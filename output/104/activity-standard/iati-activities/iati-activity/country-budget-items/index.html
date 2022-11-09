@@ -1,0 +1,80 @@
+<div class="body" role="main">
+<p id="country-budget-items">
+<h1>country-budget-items</h1>
+<p><code>iati-activities/iati-activity/country-budget-items</code></p>
+<p>This is the reference page for the XML element <code>country-budget-items</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Recipient country budget items.</p>
+<p>This item encodes the alignment of activities with both the
+functional and administrative classifications used in the
+recipient country’s Chart of Accounts. This applies to both
+on- and off-budget activities.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-country-budget-items-vocabulary">
+<dt>@vocabulary</dt>
+<dd><p>A code for the common functional classification or country
+system (This allows for common codes, country-specific, or
+any other classification agreed between countries and
+donors).</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/BudgetIdentifierVocabulary/"><span>BudgetIdentifierVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>The <code>country-budget-items</code> element acts as a container for other sub elements.</p>
+<p>Example <code>country-budget-items</code> that declares <code>BudgetIdentifierVocabulary</code> code <em>2</em> (<em>Country Chart of Accounts</em>):</p>
+<p><code><pre>&lt;country-budget-items vocabulary="2"&gt;
+            ...
+&lt;/country-budget-items&gt;
+</pre></code>
+</p>
+<p>Full example:</p>
+<p><code><pre><span>  &lt;country-budget-items vocabulary="2"&gt;
+</span>   &lt;budget-item code="1.1.1"&gt;
+    &lt;description&gt;Description text&lt;/description&gt;
+   &lt;/budget-item&gt;
+<span>  &lt;/country-budget-items&gt;
+</span></pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+</p>
+<p id="id1">
+<h2>Changelog</h2>
+<p id="id2">
+<h3>1.03</h3>
+<p>This is a new element, introduced in version 1.03 of the standard</p>
+</p>
+<p id="id3">
+<h3>1.02</h3>
+<p>This element did not exist</p>
+</p>
+<p id="id4">
+<h3>1.01</h3>
+<p>This element did not exist</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1203">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/country-budget-items.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="budget-item/">budget-item</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

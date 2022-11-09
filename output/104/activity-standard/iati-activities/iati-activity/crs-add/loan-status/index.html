@@ -1,0 +1,97 @@
+<div class="body" role="main">
+<p id="loan-status">
+<h1>loan-status</h1>
+<p><code>iati-activities/iati-activity/crs-add/loan-status</code></p>
+<p>This is the reference page for the XML element <code>loan-status</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>The status of loan and interest repayments for the most
+recently reported financial year</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-crs-add-loan-status-year">
+<dt>@year</dt>
+<dd><p>CRS Reporting Year (CRS++ Column 1)</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-crs-add-loan-status-currency">
+<dt>@currency</dt>
+<dd><p>A three letter ISO 4217 code for the original currency of the
+amount.
+This is required for all currency amounts unless the
+<a href="mailto:iati-activity/%40default-currency">iati-activity/<span>@</span>default-currency</a> (or <a href="mailto:iati-organisation/%40default-currency">iati-organisation/<span>@</span>default-currency</a>
+for an organisation file) attribute is specified.</p>
+<p>Currency codes are listed at
+<a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/Currency/"><span>Currency codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-crs-add-loan-status-value-date">
+<dt>@value-date</dt>
+<dd><p>The date that this value was set (to allow historical
+currency conversion).  The date must be in ISO 8601
+format (YYYY-MM-DD).</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>The <code>loan-status</code> element acts as a container for other elements.</p>
+<p>Example usage of <code>loan-status</code> in context of <code>crs-add</code> element.</p>
+<p>Example declares <code>year</code> as <em>2014</em>.</p>
+<p>A date in ISO 8601 format (YYYY-MM-DD) is required for <code>value-date</code> date of the reporting <code>period</code>:</p>
+<p>The ISO 4217 code for the <code>currency</code> in which the <code>loan-status</code> is denominated should be declared using the <code>Currency</code> codelist, but only if different to <code>default-currency</code> in the <code>iati-activity</code> element.</p>
+<p><code><pre>  &lt;crs-add&gt;
+   &lt;aidtype-flag code="1" significance="1" /&gt;
+   &lt;loan-terms rate-1="4" rate-2="3"&gt;
+    &lt;repayment-type code="1" /&gt;
+    &lt;repayment-plan code="4" /&gt;
+    &lt;commitment-date iso-date="2013-09-01"/&gt;
+    &lt;repayment-first-date iso-date="2014-01-01" /&gt;
+    &lt;repayment-final-date iso-date="2020-12-31" /&gt;
+   &lt;/loan-terms&gt;
+<span>   &lt;loan-status year="2014" currency="GBP" value-date="2013-05-24"&gt;
+</span>     &lt;interest-received&gt;200000&lt;/interest-received&gt;
+     &lt;principal-outstanding&gt;1500000&lt;/principal-outstanding&gt;
+     &lt;principal-arrears&gt;0&lt;/principal-arrears&gt;
+     &lt;interest-arrears&gt;0&lt;/interest-arrears&gt;
+<span>   &lt;/loan-status&gt;
+</span>  &lt;/crs-add&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+
+<p>New in 1.03</p>
+<p>Added the optional <code>crs-add</code> element and its child elements</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1730">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/crs-add/loan-status.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="interest-received/">interest-received</a></li>
+<li><a href="principal-outstanding/">principal-outstanding</a></li>
+<li><a href="principal-arrears/">principal-arrears</a></li>
+<li><a href="interest-arrears/">interest-arrears</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

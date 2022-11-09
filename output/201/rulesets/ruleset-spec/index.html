@@ -1,0 +1,222 @@
+<div class="body" role="main">
+<p id="iati-ruleset-spec-js-edition">
+<h1>IATI Ruleset Spec - JS Edition</h1>
+<p>An IATI Ruleset is a JSON document. The structure is described below.</p>
+<p>This specification is used by the IATI Validator starting with <a href="https://github.com/IATI/js-validator-api/releases/tag/v2.0.1">version 2</a>. See <a href="https://github.com/IATI/js-validator-api">Validator API</a> for more information on the programmatic use of the rules.</p>
+<p>A <a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/schema.json">JSON schema</a> is available to test that the structure of a Ruleset is correct.</p>
+<p>Each JSON document has the form:</p>
+<code><pre>{
+    "CONTEXT": {
+        "RULE_NAME": {
+            "cases": CASE_DICT_ARRAY
+        }
+    }
+
+}
+</pre></code>
+
+<p>Where <code>CONTEXT</code> is an xpath expression. This will be used to select the XML elements that the contained rules will be tested against.</p>
+<ul>
+<li><code>RULE_NAME</code> is one of rule names listed below</li>
+<li><code>CASE_DICT</code> is a dictionary where the contents depend on <code>RULE_NAME</code></li>
+<li><code>CASE_DICT_ARRAY</code> is an array of case dictionaries. The contents of each dictionary depend on the <code>RULE_NAME</code></li>
+</ul>
+<p>The possible keys in a case dictionary are:</p>
+<dl>
+<dt><code>condition</code></dt>
+<dd><p>An xpath string</p>
+<p>If this evaluates to False, the rule will be ignored</p>
+</dd>
+</dl>
+<p><code>idCondition</code></p>
+<dd>
+<p class=""><p>If this evaluates to False, the rule will be ignored</p>
+<p>NOT_EXISTING_ORG_ID - Checks that values in <code>paths</code> are NOT an existing Publisher Organisation ID from the Registry</p>
+<p>NOT_EXISTING_ORG_ID_PREFIX - Checks that values in <code>paths</code> are NOT prefixed with an existing Publisher Organisation ID from the Registry</p>
+</p></dd>
+<dl>
+<dt><code>eval</code></dt>
+<dd><p>An xpath string</p>
+<p>Can evaluate to True or False</p>
+</dd>
+<dt><code>paths</code></dt>
+<dd><p>An array of xpath strings</p>
+<p>These are evaluated to give a list of elements that the named rule then operates upon</p>
+</dd>
+<dt><code>less</code></dt>
+<dd>A string containing the xpath of the smaller value (or older value when working with dates)</dd>
+<dt><code>more</code></dt>
+<dd>A string containing the xpath of the larger value (or more recent value when working with dates)</dd>
+<dt><code>regex</code></dt>
+<dd>A string containing a perl style regular expression</dd>
+<dt><code>sum</code></dt>
+<dd>A number that is the expected sum</dd>
+<dt><code>excluded</code></dt>
+<dd><p>An array of xpath strings</p>
+<p>Evaluate which elements should not coexist with other elements</p>
+</dd>
+<dt><code>date</code></dt>
+<dd>A string containing the xpath to a date</dd>
+<dt><code>start</code></dt>
+<dd>A string containing the xpath to a start date</dd>
+<dt><code>end</code></dt>
+<dd>A string containing the xpath to an end date</dd>
+<dt><code>one</code></dt>
+<dd>A string containing the xpath of something that must exist or <code>all</code> must be followed</dd>
+<dt><code>all</code></dt>
+<dd>A string containing the condition that must be met for all elements if <code>one</code> is not met</dd>
+<dt><code>foreach</code></dt>
+<dd>An xpath string to group the loop by and evalute each <code>do</code> with the substituted result</dd>
+<dt><code>do</code></dt>
+<dd><p>An array of rules</p>
+<p>To evaluate with <code>foreach</code></p>
+<p>Available rules include: <code>strict_sum</code>, <code>if_then</code>, <code>atleast_one</code>, <code>no_more_than_one</code></p>
+</dd>
+<dt><code>subs</code></dt>
+<dd>An array of keys where the value matched in <code>foreach</code> should be substituded for the <code>$1</code> values in the <code>do</code> cases</dd>
+<dt><code>prefix</code></dt>
+<dd><p>An array of xpath strings</p>
+<p>The matches of which, contain the possible prefixes for a path</p>
+<p>If set to “ORG-ID-PREFIX” for startsWith, checks against provided list of prefixes in <code>idSets.ORG-ID-PREFIX</code></p>
+<p><code>idSets</code> are passed to the Rule evaluation code</p>
+</dd>
+</dl>
+<p id="rule-names">
+<h2>Rule Names</h2>
+<dl>
+<dt><strong>Rule names are listed in bold</strong></dt>
+<dd><p>Keys: The keys for each rule are then listed. They are listed in <strong>snake-case</strong>/<strong>camel-case</strong>. The JS validator can handle either <strong>snake-case</strong> or <strong>camel-case</strong>.</p>
+<p>Followed by a brief description of the rule’s function</p>
+</dd>
+<dt><strong>no_more_than_one</strong>/<strong>noMoreThanOne</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code></p>
+<p>There must be no more than one element described by the given paths</p>
+</dd>
+<dt><strong>atleast_one</strong>/<strong>atLeastOne</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code></p>
+<p>There must be at least one element described by the given paths</p>
+</dd>
+<dt><strong>only_one_of</strong>/<strong>onlyOneOf</strong></dt>
+<dd><p>Keys: <code>excluded</code>, <code>paths</code></p>
+<p>If there’s a match of the elements in <code>excluded</code>, there must not be any matches in <code>paths</code>, if there are no matches in <code>excluded</code>, there must be exactly one element from <code>paths</code></p>
+</dd>
+<dt><strong>one_or_all</strong>/<strong>oneOrAll</strong></dt>
+<dd><p>Keys: <code>one</code>, <code>all</code></p>
+<p><code>one</code> must exist otherwise <code>all</code> other attributes or elements must exist</p>
+</dd>
+<dt><strong>dependent</strong>/<strong>NOT IMPLEMENTED IN JS</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code></p>
+<p>If one of the provided paths exists, they must all exist</p>
+</dd>
+<dt><strong>sum</strong>/<strong>sum</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code>, <code>sum</code></p>
+<p>The numerical sum of the values of elements matched by <code>paths</code> must match the value for the <code>sum</code> key</p>
+</dd>
+<dt><strong>date_order</strong>/<strong>dateOrder</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>less</code>, <code>more</code></p>
+<p>The date matched by <code>less</code> must not be after the date matched by <code>more</code></p>
+<p>If they are equal, the are valid</p>
+<p>If either of these dates is not found, the rule is ignored</p>
+<p><a href="/en/guidance/standard-guidance/activity-dates-status/">Guidance - Activity dates and status</a></p>
+</dd>
+<dt><strong>date_now</strong>/<strong>dateNow</strong></dt>
+<dd><p>Keys: <code>date</code></p>
+<p>The <code>date</code> must not be after the current date</p>
+</dd>
+<dt><strong>time_limit</strong>/<strong>timeLimit</strong></dt>
+<dd><p>Keys: <code>start</code>, <code>end</code></p>
+<p>The difference between the <code>start</code> date and the <code>end</code> date must not be greater than a year</p>
+</dd>
+<dt><strong>between_dates</strong>/<strong>betweenDates</strong></dt>
+<dd><p>Keys: <code>date</code>, <code>start</code>, <code>end</code></p>
+<p>The <code>date</code> must be between the <code>start</code> and <code>end</code> dates</p>
+</dd>
+<dt><strong>regex_matches</strong>/<strong>regexMatches</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>idCondition</code>, <code>paths</code>, <code>regex</code></p>
+<p>The provided <code>regex</code> must match the text of all elements matched by <code>paths</code></p>
+<p><code>idCondition</code> is also an optional parameter</p>
+</dd>
+<dt><strong>regex_no_matches</strong>/<strong>regexNoMatches</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code>, <code>regex</code></p>
+<p>The provided <code>regex</code> must match the text of none of the elements matched by <code>paths</code></p>
+</dd>
+<dt><strong>startswith</strong>/<strong>startsWith</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>idCondition</code>, <code>paths</code>, <code>start</code>, <code>separator</code></p>
+<p>The text of each element matched by <code>paths</code> must start with the text of one of the elements matched by <code>prefix</code> (or a list of prefixed provided in <code>idSets</code>) with an optional <code>separator</code> in between <code>prefix</code> <code>separator</code> <code>pathMatchText</code></p>
+<p><code>idCondition</code> is also an optional parameter</p>
+</dd>
+<dt><strong>unique</strong>/<strong>unique</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>paths</code></p>
+<p>The text of each of the elements described by <code>paths</code> must be unique</p>
+</dd>
+<dt><strong>if_then</strong>/<strong>ifThen</strong></dt>
+<dd><p>Keys: <code>condition</code>, <code>cases</code>, <code>if</code>, <code>then</code>, <code>paths</code></p>
+<p>If the condition evaluated in <code>if</code> is true, then <code>then</code> must resolve to true as well</p>
+<p><code>paths</code> can be defined to provide additional context data in the output if a rule fails, but had no bearing on the pass/fail of the rule</p>
+</dd>
+<dt><strong>loop</strong>/<strong>loop</strong></dt>
+<dd><p>Keys: <code>foreach</code>, <code>do</code>, <code>cases</code>, <code>subs</code></p>
+<p>All elements in <code>foreach</code> are evaluated under the rules inside <code>do</code></p>
+</dd>
+<dt><strong>strict_sum</strong>/<strong>strictSum</strong></dt>
+<dd><p>Keys: <code>paths</code>, <code>sum</code></p>
+<p>The decimal sum of the values of elements matched by <code>paths</code> must match the value for the <code>sum</code> key</p>
+</dd>
+<dt><strong>no_spaces</strong>/<strong>noSpaces</strong></dt>
+<dd><p>Keys: <code>paths</code></p>
+<p>The text of each of the elements described by <code>paths</code> should not start or end with spaces or newlines</p>
+</dd>
+</dl>
+</p>
+<p id="rule-example">
+<h2>Rule Example</h2>
+<p><code><pre>{
+    "/iati-activities/iati-activity": {
+        "atleast_one": {
+            "cases": [
+                {
+                    "paths": ["iati-identifier"],
+                    "ruleInfo": {
+                        "id": "6.11.1",
+                        "severity": "error",
+                        "category": "information",
+                        "message": "The activity must have a planned start date or an actual start date.",
+                        "link": {
+                            "url": "https://iatistandard.org/en/guidance/standard-guidance/activity-dates-status/"
+                        }
+                    }
+                }
+            ]
+        },
+        "range": {
+            "cases": [
+                {
+                    "paths": ["capital-spend/@percentage"],
+                    "min": 0.0,
+                    "max": 100.0,
+                    "ruleInfo": {
+                        "id": "12.2.1",
+                        "severity": "error",
+                        "category": "financial",
+                        "message": "The percentage value must be between 0.0 and 100.0 (inclusive).",
+                        "link": {
+                            "path": "activity-standard/iati-activities/iati-activity/capital-spend/"
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}
+</pre></code>
+</p>
+<p>Here we have a context: <code>/iati-activities/iati-activity</code>, with a two named rules <cite>atleast_one</cite> and <cite>range</cite> which is applied in a number of cases - here just one each, with a single path each.</p>
+<p>The <code>ruleInfo</code> object includes metadata about the rule which is used in the <a href="https://github.com/IATI/js-validator-api">Validator API</a>.</p>
+<p>The <code>link</code> object can contain 2 possible keys which represent the Guidance Links for the rule:</p>
+<ul>
+<li><code>url</code> is a full URL to the guidance</li>
+<li><code>path</code> is the path to be added to the end of the reference documentation url for the version of standard. (e.g. <code>https://iatistandard.org/en/iati-standard/{version}/{path}</code>)</li>
+</ul>
+</p>
+</p>
+</div>

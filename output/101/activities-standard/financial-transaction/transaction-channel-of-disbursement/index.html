@@ -1,0 +1,44 @@
+<div id="content" role="main">
+
+<header>
+<h1>Transaction Channel of Disbursement</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;disbursement-channel&gt;&lt;/disbursement-channel&gt;</h2><p><h3>From the schema</h3><p>
+                The channel through which the funds will flow for this
+                transaction, from an IATI code list.
+              </p><p> This element is of the type "codeReqType" as described in the <a href="/reference_downloads/archive/downloads/1.01/iati-common.xsd">IATI Common schema (Version 1.01)</a></p><p><p>
+        Data type for an element that refers to an object that must
+        have a code.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@code</td><td>required</td><td>
+        Machine-readable code for the entity being described.
+      </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /transaction/disbursement-channel/@code</h3><ul><li>Must be on: <a href="../../../codelists/disbursement_channel/">Disbursement Channel Codelist</a></li></ul></p>
+<h2 id="disbursement_channel">Disbursement Channel</h2>
+
+<!-- EDIT1 SECTION "Disbursement Channel" [1-57] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The code should be declared in any usage of this element:
+</p>
+<pre>    <span><span>&lt;disbursement-channel</span> <span>code</span>=<span>"1"</span><span>/&gt;</span></span></pre>
+<p>
+Additionally, a text description of the code can be provided:
+</p>
+<pre>    <span><span>&lt;disbursement-channel</span> <span>code</span>=<span>"1"</span><span>&gt;</span></span>Cash to treasury<span><span>&lt;/disbursement-channel-code<span>&gt;</span></span></span></pre>
+<p>
+Where this text description is in a language that differs from the default, then this should be declared accordingly:
+</p>
+<pre><span><span>&lt;disbursement-channel</span> <span>code</span>=<span>"1"</span> <span>xml:lang</span>=<span>"en"</span><span>&gt;</span></span>Cash to treasury<span><span>&lt;/disbursement-channel-code<span>&gt;</span></span></span>
+ </pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [58-] -->
+</p>
+
+</p><!-- .entry-content -->
+<!-- #post-1455 -->
+
+</div>

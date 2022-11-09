@@ -1,0 +1,44 @@
+<div class="body" role="main">
+<p id="iati-organisation">
+<h1>IATI Organisation</h1>
+<p id="definition">
+<h2>Definition</h2>
+<p>Within the <strong>IATI organisation standard</strong>. the <code>iati-organisation</code> is the building block to describe organisations.</p>
+
+<p>An <code>iati-organisation</code> represents a distinct grouping of information that reports various facts about an organisation.</p>
+
+
+<p>For each <code>iati-organisation</code> described, the following are expected as a minium:</p>
+
+<ul>
+<li><code>iati-identifier</code> is the unique reference for the organisation.</li>
+<li><code>name</code> - a human-readable name of the organisation.</li>
+</ul>
+</p>
+<p id="considerations">
+<h2>Considerations</h2>
+<p>When using the <strong>IATI organisation standard</strong> to declare an <em>iati-organisation</em>, the following should be considered:</p>
+<ul>
+<li>Every <code>iati-organisation</code> must use a globally unique <code>iati-identifier</code></li>
+<li>The <code>iati-identifier</code> should have no leading or trailing whitespace.</li>
+<li>It is recommended that no forward slashes (/) or spaces should be contained within the <code>iati-identifier</code>.</li>
+<li><dl>
+<dt>It is recommended to avoid spaces and non-ascii characters.  For example:</dt>
+<dd><ul>
+<li><code>AA-AAA-123456789</code> is preferable to <code>AA-AAA 123456789</code>.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li>A default language and <code>default-currency</code> can be set for any <code>iati-organisation</code>.  This can be overridden in subsequent elements.</li>
+<li>The <code>last-updated-datetime</code> date must change whenever the value of any field within the associated <code>iati-organisation</code> are updated.</li>
+<li>The <code>name</code> can be repeated for different languages.</li>
+<li>The free-text instance of <code>name</code> should avoid use of text in CAPITALS, where possible.</li>
+</ul>
+</p>
+<p id="further-guidance">
+<h2>Further Guidance</h2>
+<p>Please also consider and refer to the <a href="../../../organisation-identifiers/"><span>Organisation Identifiers guidance</span></a> when constructing an appropriate identifier.</p>
+</p>
+</p>
+</div>

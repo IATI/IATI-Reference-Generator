@@ -1,0 +1,67 @@
+<div id="content" role="main">
+
+<header>
+<h1>General / Detailed Sector</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;sector&gt;&lt;/sector&gt;</h2><p><h3>From the schema</h3><p> Can occur: Min = 0, Max = Unlimited</p><p>
+        Sector code and name.  For the value of the @code attribute,
+        see <a href="../../../codelists/sector/" rel="nofollow">http://iatistandard.org/101/codelists/sector</a>
+</p><table><tbody><tr><td>@code</td><td>
+        Machine-readable code for the entity being described.
+      </td></tr><tr><td>@vocabulary</td><td>
+            An identifier for the vocabulary in use, to segment
+            sectors into different vocabularies (e.g. DAC, OCHA) to
+            aid with comparison and classification.  If omitted,
+            assume DAC.
+
+            See <a href="../../../codelists/vocabulary/" rel="nofollow">http://iatistandard.org/101/codelists/vocabulary</a>
+</td></tr><tr><td>@percentage</td><td>
+            The percentage of the project allocated to this sector, if
+            known.  Content must be a positive integer between 1 and
+            100, with no percentage sign.  Percentages are comparable
+            only across sectors in the same vocabulary.
+          </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /sector/*</h3><ul><li>percentages of sectors in every vocabulary including the default vocabulary 
+            sum to 100</li><!--<li> every $vocabulary in distinct-values($doc/sector/@vocabulary) satisfies (if
+            (count($doc/sector[@vocabulary=$vocabulary]) > 1) then
+            sum($doc/sector[@vocabulary=$vocabulary]/@percentage[. castable as xs:integer]) =
+            100 else true()) and (if (count($doc/sector[empty(@vocabulary)]) > 1) then
+            sum($doc/sector[empty(@vocabulary)]/@percentage[. castable as xs:integer]) = 100
+            else true()) </li>--><li>Must be on: <a href="../../../codelists/sector/">Sector Codelist</a></li><li>Must be on: <a href="../../../codelists/sector/">Sector Codelist</a></li><li>Must be on: <a href="../../../codelists/vocabulary/">Vocabulary Codelist</a></li></ul></p>
+<h2 id="sector">Sector</h2>
+
+<!-- EDIT1 SECTION "Sector" [1-43] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+A code for the sector can be declared:
+</p>
+<pre><span><span>&lt;sector</span> <span>code</span>=<span>"13040"</span><span>/&gt;</span></span></pre>
+<p>
+Additionally, a text description for the code can be provided:
+</p>
+<pre><span><span>&lt;sector</span> <span>code</span>=<span>"13040"</span><span>&gt;</span></span>STD control including HIV/AIDS<span><span>&lt;/sector<span>&gt;</span></span></span></pre>
+<p>
+The vocabulary attribute can be used to declare which code reference list is in use.  If this is omitted, then IATI assumes the DAC vocabulary.
+</p><pre><span><span>&lt;sector</span> <span>vocabulary</span>=<span>"WB"</span> <span>code</span>=<span>"BC"</span><span>&gt;</span></span>Central government administration<span><span>&lt;/sector<span>&gt;</span></span></span></pre>
+<p>
+If the specific vocabulary in use is not on the vocabulary codelist, then the value of RO (Reporting Organisation) can be used:
+</p><pre><span><span>&lt;sector</span> <span>vocabulary</span>=<span>"RO"</span><span>&gt;</span></span>Education<span><span>&lt;/sector<span>&gt;</span></span></span></pre>
+
+When multiple sectors are in use in the same activity, then the percentage attribute should be used - the total of all percentages within the same activity should total 100.
+<pre><span><span>&lt;sector</span> <span>code</span>=<span>"13040"</span> <span>percentage</span>=<span>"60"</span><span>&gt;</span></span>STD control including HIV/AIDS<span><span>&lt;/sector<span>&gt;</span></span></span>
+<span><span>&lt;sector</span> <span>code</span>=<span>"12220"</span> <span>percentage</span>=<span>"40"</span><span>&gt;</span></span>Basic health care<span><span>&lt;/sector<span>&gt;</span></span></span></pre>
+<p>
+Should a description be used that is different to the default language set for the activity, then this should be declared as follows:
+</p>
+<pre><span><span>&lt;sector</span> <span>code</span>=<span>"13040"</span> <span>xml:lang</span>=<span>"en"</span><span>&gt;</span></span>STD control including HIV/AIDS<span><span>&lt;/sector<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [44-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1419 -->
+
+</div>

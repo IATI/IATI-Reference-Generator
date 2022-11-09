@@ -1,0 +1,114 @@
+<div class="body" role="main">
+<p id="headlines">
+<h1><a href="#id1">2.01 Headlines</a></h1>
+<p>The changes / additions to IATI Standard for version 2.01 represent a number of actions for those publishing and using IATI data.</p>
+<p>This page provides a headline checklist of the core “breaking” changes, linking to further guidance and information.  Alongside these, there are <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">several changes to elements and codelists</a> - this document serves to provide a starter point.</p>
+<p id="contents">
+<p>Contents</p>
+<ul>
+<li><a href="#headlines" id="id1">2.01 Headlines</a><ul>
+<li><a href="#mandatory-changes" id="id2">Mandatory changes</a><ul>
+<li><a href="#standard-wide" id="id3">Standard wide</a></li>
+<li><a href="#activity-standard" id="id4">Activity standard</a></li>
+<li><a href="#organisation-standard" id="id5">Organisation standard</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</p>
+<p id="mandatory-changes">
+<h2><a href="#id2">Mandatory changes</a></h2>
+<p>For those moving from version 1.0x to 2.01 of the IATI Standard, the following changes must be observed.</p>
+<p id="standard-wide">
+<h3><a href="#id3">Standard wide</a></h3>
+<p>The following changes are “breaking” changes from 1.0x and 2.01, in both the <strong>IATI Activity</strong> and <strong>IATI Organisation</strong> standards:</p>
+<table border="1">
+<colgroup>
+<col width="18%"/>
+<col width="36%"/>
+<col width="45%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Change</th>
+<th>1.0x</th>
+<th>2.01</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Element Order</td>
+<td>Elements could be presented in any order.</td>
+<td>Elements must be presented in a <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">strict order in both the Activity and Organisation standards</a>.</td>
+</tr>
+<tr><td><strong>Mandatory Fields</strong></td>
+<td>There were a limited number of mandatory elements.</td>
+<td>There are more mandatory elements in both the <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">Activity</a>  and <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">Organisation</a>  standard.</td>
+</tr>
+<tr><td><strong>Using free text</strong></td>
+<td>Free text could be added to any element.</td>
+<td>The way in which free text is reported has been changed to standardise multilingual reporting. <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">This requires formatting changes to all text fields</a>.  In addition, this impacts on the ways in which multilingual <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">translations are handled across the standard</a>..</td>
+</tr>
+<tr><td><strong>Descriptive text for codes</strong></td>
+<td>Fields defined by codes allow for accompanying descriptions.</td>
+<td>With the exception of countries and regions, the <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">descriptions associated with codes can no longer be reported</a> .</td>
+</tr>
+<tr><td><strong>Date formatting</strong></td>
+<td>Date formatting was less strict.</td>
+<td><a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">Date formatting is strictly observed</a> ..  A date must be a expressed in a valid <em>xsd:date</em> format.  Datetimes should be a valid <em>xsd:dateTime</em>.</td>
+</tr>
+<tr><td><strong>Organisation Identifier</strong></td>
+<td>The organisation identifier used for the publishing organisation was not validated.</td>
+<td>The organisation identifier used for the publishing organisation must be prefixed with a <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">valid Organisation Registration Agency code</a> .</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="activity-standard">
+<h3><a href="#id4">Activity standard</a></h3>
+<p>The following “breaking” changes apply specifically to the <strong>IATI Activity Standard</strong></p>
+<table border="1">
+<colgroup>
+<col width="18%"/>
+<col width="36%"/>
+<col width="45%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Change</th>
+<th>1.0x</th>
+<th>2.01</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>Language Neutral Codelists</strong></td>
+<td>The codes for Organisation role; Type of Activity Date; Transaction Type; Sector Vocabulary; Gazetteer Agency were alpha characters, derived from English language words.</td>
+<td>The codes for Organisation role; Type of Activity Date; Transaction Type; Sector Vocabulary; Gazetteer Agency have to be changed to numeric, <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">making them language neutral</a>.</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="organisation-standard">
+<h3><a href="#id5">Organisation standard</a></h3>
+<p>The following “breaking” changes apply specifically to the <strong>IATI Organisation Standard</strong></p>
+<table border="1">
+<colgroup>
+<col width="18%"/>
+<col width="36%"/>
+<col width="45%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Change</th>
+<th>1.0x</th>
+<th>2.01</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><strong>Renamed Element</strong></td>
+<td>A mandatory element named iati-identifier was in use.</td>
+<td>The iati-identifier element is now organisation-identifier.  <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">This must be renamed</a>.</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+</p>
+</div>

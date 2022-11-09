@@ -1,0 +1,143 @@
+<div class="body" role="main">
+<p id="activity-thematic-focus-sectors">
+<h1>Activity thematic focus (sectors)</h1>
+<p>Each activity published to IATI must provide details of the thematic focus of the activity. The themes must be explained in code, and then further details can be provided in a written description. For example, an activity could be to do with ‘health’ and the description is that the activity is a vaccination programme. Or an activity could be to do with ‘education’ and the description is that the activity is training community leaders to tackle gender inequality in their communities.</p>
+<p>The purpose of an activity must be provided by declaring a code in the &lt;sector&gt; element at either <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">activity</a> or <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/sector/">transaction</a> level. A mix of codes from different <a href="/en/iati-standard/203/codelists/SectorVocabulary/">sector vocabularies</a> can be used. For example, an activity can contain its publisher’s internal sector classifications alongside the <a href="/en/iati-standard/203/codelists/Sector/">OECD DAC 5-digit</a> sector codes.</p>
+<p>IATI recommends choosing a code from the OECD DAC 5-digit sector codelist. Where possible, the activity should use specific codes rather than codes that cover general areas (for more details see <a href="/en/iati-standard/203/activity-standard/overview/country-budget-alignment/">here</a>).  For example, an activity can include multiple codes such as ‘basic health care’ (12220) and ‘women’s equality organisations and institutions’ (15170), instead of the very general ‘multisector aid’ (43010).</p>
+<p>The OECD DAC 5-digit codes cover a wide range of humanitarian and development work. This then allows data users to compare and analyse all the data in IATI, as data can be searched and filtered by these sector codes.</p>
+<dd>
+<p class="">More thematic data can be added to activities by attaching references to the Sustainable Development Goals (SDGs). For additional guidance on how to publish data for the SDGs, see <a href="../sdg-guidance/"><span>here</span></a>.</p></dd>
+<p id="using-multiple-sector-codes">
+<h2>Using multiple sector codes</h2>
+<p>Where more than one sector code is used from a vocabulary, a percentage for each different sector code must be included. If the activity has only one sector, it is presumed that 100% of the funding is going to that sector. A sector can also be specified from multiple vocabularies.</p>
+<p>When multiple sectors from the same vocabulary are published, the percentage for each must add up to 100%.</p>
+<p>For example, if 100% of the expected funding is going on teacher training, it can be published using the 5-digit DAC codelist. This can also be published against a publisher’s internal classification e.g. Primary schools work’ (A1):</p>
+<p><code><pre>&lt;sector vocabulary="1" code="11130" percentage="100" /&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" percentage="100" &gt;
+  &lt;narrative&gt;Internal classification - primary schools work&lt;/narrative&gt;
+&lt;/sector&gt;
+</pre></code>
+</p>
+<p>However, if the activity can be split between two DAC sector codes, this can be published as 50% of the funding going to the DAC sector code ‘teacher training’ (11130) and 50% to ‘primary education’ (11220). In this example both DAC sector codes fit into the publisher’s internal classification, primary schools work’ (A1):</p>
+<p><code><pre>&lt;sector vocabulary="1" code="11130" percentage="50" /&gt;
+&lt;sector vocabulary="1" code="11220" percentage="50" /&gt;
+&lt;sector vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" percentage="100" &gt;
+  &lt;narrative&gt;Internal classification - primary schools work&lt;/narrative&gt;
+&lt;/sector&gt;
+</pre></code>
+</p>
+<p>The above example shows thematic (sector) information being published at an activity level. This information could instead be published at transaction level, with each transaction containing one sector code. However, this should be consistent across <strong>all</strong> activities published by an organisation i.e. publishing all sector information at <strong>either</strong> activity level <strong>or</strong> for all transactions.</p>
+<p>IATI also recommends publishers provide thematic (sectors) information and <a href="../countries-regions/"><span>geographic (countries and regions)</span></a> information at the same level. This should be consistent across <strong>all</strong> activities published by an organisation i.e. publishing either at activity level or for all transactions.</p>
+<p><strong>Rules for publishing sectors:</strong></p>
+<ol>
+<li>Every activity must have at least one sector code.</li>
+<li>Sector codes must be published at <strong>either</strong> activity level <strong>or</strong> once for each transaction.</li>
+<li>If multiple sectors from the same vocabulary are published at activity level, the sectors must be given a percentage.</li>
+<li>The percentage of the sectors within a vocabulary must add up to 100%.</li>
+</ol>
+</p>
+<p id="what-sector-information-can-be-published">
+<h2>What sector information can be published?</h2>
+<p>Sector codes must only be used at either activity or transaction level.</p>
+<p><strong>At activity level</strong>:</p>
+<ul>
+<li>Multiple sectors can be specified from the same <a href="/en/iati-standard/203/codelists/SectorVocabulary/">vocabulary</a>.</li>
+<li>When multiple sectors from the same vocabulary are described, a percentage must be declared for each. All published sectors from the same vocabulary must add up to 100%.</li>
+<li>If no <a href="/en/iati-standard/203/codelists/SectorVocabulary/">vocabulary</a> is declared, then the <a href="/en/iati-standard/203/codelists/Sector/">OECD DAC 5-digit</a> codelist is assumed.</li>
+<li>A publisher can declare their own <a href="/en/iati-standard/203/codelists/SectorVocabulary/">vocabulary</a> by using the 98 or 99 (Reporting Org) vocabulary code.</li>
+<li>When using vocabulary codes 98 or 99, a narrative must be added to describe the sector code being used. The narrative should <strong>not</strong> be included for any other vocabulary codes.</li>
+</ul>
+<p><strong>At transaction level:</strong></p>
+<ul>
+<li>Every <a href="../financial-transactions/"><span>transaction</span></a> must have a sector code.</li>
+<li>Only one sector code from each vocabulary must be used.</li>
+<li>If no <a href="/en/iati-standard/203/codelists/SectorVocabulary/">vocabulary</a> is declared, then the <a href="/en/iati-standard/203/codelists/Sector/">OECD DAC 5-digit</a> codelist is assumed.</li>
+<li>A publisher can declare their own vocabulary by using the 98 or 99 (Reporting Org) vocabulary code.</li>
+<li>When using vocabulary codes 98 or 99, a narrative must be added to describe the sector code being used.</li>
+<li>It is recommended that the same narrative is used for the same self-defined sector codes within a dataset.</li>
+</ul>
+</p>
+<p id="technical-guidance-summary-activity-level">
+<h2>Technical guidance summary: activity level</h2>
+<table border="1">
+<colgroup>
+<col width="16%"/>
+<col width="28%"/>
+<col width="28%"/>
+<col width="28%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">sector</a></td>
+<td>Specifies the purpose of the activity.
+Sector codes can come from <a href="/en/iati-standard/203/codelists/SectorVocabulary/">multiple vocabularies</a>, including an organisation’s internal list.
+</td>
+<td>Sector must either be published here or for every transaction.
+If multiple sectors are published, then each vocabulary’s percentage must add up to 100%.
+If <a href="/en/iati-standard/203/codelists/SectorVocabulary/">sector vocabulary</a> 98 or 99 is used, the narrative element must be included.
+</td>
+<td>It is recommended that <a href="/en/iati-standard/203/codelists/Sector/">OECD DAC 5-digit</a> codes are used. Other codes can be added in addition to this.
+If no codelist is declared, the OECD DAC 5-digit codelist is presumed.
+If vocabulary 98 or 99 (reporting org) is used, it is strongly recommended that a link to the codelist is included. This helps ensure that users can understand the meaning of the code.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/narrative/">narrative</a></td>
+<td>A description of the sector.</td>
+<td> </td>
+<td>The narrative should only be used when vocabularies 98 or 99 are used. It is recommended that the narrative used for the same self-defined sector codes is consistent within a dataset.
+The narrative can be repeated in multiple languages.
+If the language differs from the default language, the language should be declared using the language attribute.
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+<p id="technical-guidance-summary-transaction-level">
+<h2>Technical guidance summary: transaction level</h2>
+<p>If thematic (sector) data is published at transaction level it must be included for every <a href="../financial-transactions/"><span>transaction</span></a>. If included here it must not be published at activity level.</p>
+<table border="1">
+<colgroup>
+<col width="24%"/>
+<col width="25%"/>
+<col width="25%"/>
+<col width="25%"/>
+</colgroup>
+<thead valign="bottom">
+<tr><th>Element</th>
+<th>Use</th>
+<th>Rules</th>
+<th>Guidance</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/sector/">sector</a></td>
+<td>Specifies the purpose of the activity.
+Sector codes can come from <a href="/en/iati-standard/203/codelists/SectorVocabulary/">multiple vocabularies</a>, including an organisation’s internal list.
+</td>
+<td>Sector must either be published here or must be published at the activity level.
+Multiple sectors can be published, but there must only be one code from each <a href="/en/iati-standard/203/codelists/SectorVocabulary/">sector vocabulary</a>.
+</td>
+<td>It is recommended that an <a href="/en/iati-standard/203/codelists/Sector/">OECD DAC 5-digit</a> code is used. Other codes can be added in addition to this.
+If no codelist is declared, the OECD DAC 5-digit codelist is presumed.
+If the <a href="/en/iati-standard/203/codelists/SectorVocabulary/">sector vocabulary</a> 98 or 99 is used, the narrative element should be included.
+</td>
+</tr>
+<tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/sector/narrative/">narrative</a></td>
+<td>A description of the sector.</td>
+<td> </td>
+<td>The narrative should only be used when vocabularies 98 or 99 are used.
+The narrative can be repeated in multiple languages.
+If the language differs from the default language, the language should be declared using the language attribute.
+</td>
+</tr>
+</tbody>
+</table>
+</p>
+</p>
+<meta content="Activity thematic focus (sectors)" name="title"/><meta content="Each activity published to IATI must provide details of the thematic focus of the activity. The themes must be explained in code, and then further details can be provided in a written description." name="description"/><meta content="activity" name="guidance_type"/><meta content="September 19, 2019" name="date"/></div>

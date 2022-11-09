@@ -1,0 +1,68 @@
+<div class="body" role="main">
+<p id="namespaces-extensions">
+<h1>Namespaces &amp; Extensions</h1>
+<p id="adding-other-information">
+<h2>Adding other information</h2>
+<p>There will be situations where reporting organisations want to publish additional data that are not covered by the default IATI elements, or want to specify the data using the original formats or values to avoid information loss.  IATI provides two mechanisms for doing so:</p>
+<ul>
+<li>Use an XML namespace to extend the schema.</li>
+<li>Use the legacy-data element to provide original data values.</li>
+</ul>
+</p>
+<p id="xml-namespaces">
+<h2>XML namespaces</h2>
+<p>The first approach allows reporting organisations to invent any required markup and add it to an IATI activity report.  IATI users who don’t recognise the extended markup are required simply to ignore it, without reporting an error.  Here is an example:</p>
+<p><code><pre>&lt;iati-activity xmlns:acme="http://example.org/acme/ns#"&gt;
+
+...
+
+  &lt;acme:risk-level&gt;3&lt;/acme:risk-level&gt;
+
+...
+
+&lt;/iati-activity&gt;
+</pre></code>
+</p>
+<p>In this example, ACME has defined its own namespace using the URL <code>http://example.org/acme/ns#</code> and mapped that to the prefix <code>acme</code>.  It then adds the new element, <code>acme:risk-level</code>, to provide information about its risk assessment for the activity.  IATI users who don’t recognise the <code>http://example.org/acme/ns#</code> namespace are required to ignore the <code>acme:risk element</code> rather than reporting an error, so the extended markup does not harm compatibility.  Users who are familiar with the namespace, however, can take advantage of the additional information.</p>
+</p>
+<p id="adding-xml-namespaces-in-versions-2-0x">
+<h2>Adding XML namespaces in versions 2.0x</h2>
+<p>Please note: elements must occur in the order they are specified in the Schema.  When adding XML namespaces in versions 2.0x of the IATI standard, they should be placed as the last element.  At the activity level, they must only be included at the end of the activity (before &lt;/iati-activity&gt;).  If added as a subelement, the namespace element must be placed as the last subelement. Example:</p>
+<ol>
+<li>XML namespace at activity level</li>
+</ol>
+<p><code><pre>&lt;iati-activity xmlns:acme="http://example.org/acme/ns#"&gt;
+
+...
+
+  &lt;/fss&gt;
+  &lt;acme:risk-level&gt;3&lt;/acme:risk-level&gt;
+
+...
+
+&lt;/iati-activity&gt;
+</pre></code>
+</p>
+<ol start="2">
+<li>XML namespace as a subelement within transaction</li>
+</ol>
+<p><code><pre>&lt;iati-activity xmlns:acme="http://example.org/acme/ns#"&gt;
+
+...
+
+  &lt;transaction&gt;
+
+...
+
+    &lt;/value&gt;
+    &lt;acme:risk-level&gt;3&lt;/acme:risk-level&gt;
+  &lt;/transaction&gt;
+
+...
+
+&lt;/iati-activity&gt;
+</pre></code>
+</p>
+</p>
+</p>
+<meta content="5" name="order"/></div>

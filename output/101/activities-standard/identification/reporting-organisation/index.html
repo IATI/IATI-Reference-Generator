@@ -1,0 +1,43 @@
+<div id="content" role="main">
+
+<header>
+<h1>Reporting Organisation</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;reporting-org&gt;&lt;/reporting-org&gt;</h2><p><h3>From the schema</h3><p> Can occur: Min = 0, Max = Unlimited</p><p>
+        The organisation issuing a report (not necessarily involved in
+        the organisation or activity being described).  May be a
+        donor, fund, agency, etc.  Specifying the @identifier and
+        @role attributes is strongly recommended.  May contain the
+        organisation name as content.
+
+        For the value of the @type attribute, see
+        <a href="/en/iati-standard/101/codelists/organisation-type" rel="nofollow">http://iatistandard.org/101/codelists/organisation-type</a>
+
+        For the value of the @ref attribute, see the list of
+        officially-registered organizations at
+        <a href="../../../codelists/organisation/" rel="nofollow">http://iatistandard.org/101/codelists/organisation</a>
+</p><table><tbody><tr><td>@ref</td><td>
+        Machine-readable identification string for the business
+        object being described.
+      </td></tr><tr><td>@type</td><td>
+        Free text describing the type of thing being referenced.
+      </td></tr></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /reporting-org/@ref</h3><ul><li>Must be on: <a href="/en/iati-standard/101/codelists/organisation_identifier">Organisation Identifier Codelist</a></li><li>Must be on: <a href="../../../codelists/organisation_type/">Organisation Type Codelist</a></li></ul></p>
+<h2 id="reporting_organisation">Reporting Organisation</h2>
+
+<!-- EDIT1 SECTION "Reporting Organisation" [1-58] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+The example below is for Oxfam (identified by <abbr title="Gigabyte">GB</abbr>-CHC-202918), with a type declared as International NGO (code 21)
+</p><pre>    <span><span>&lt;reporting-org</span> <span>ref</span>=<span>"GB-CHC-202918"</span> <span>type</span>=<span>"21"</span><span>&gt;</span></span>Oxfam GB<span><span>&lt;/reporting-org<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [59-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1389 -->
+
+</div>

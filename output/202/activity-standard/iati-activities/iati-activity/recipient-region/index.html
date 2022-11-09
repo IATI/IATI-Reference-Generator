@@ -1,0 +1,142 @@
+<div class="body" role="main">
+<p id="recipient-region">
+<h1>recipient-region</h1>
+<p><code>iati-activities/iati-activity/recipient-region</code></p>
+<p>This is the reference page for the XML element <code>recipient-region</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A supranational geopolitical region that will benefit from
+this activity. For sub-national geographical location, use the
+location element.</p>
+<p>Multiple countries and regions can be reported, in which case
+the percentage attribute MUST be used to specify the share of
+total commitments across all reported countries and regions.
+Recipient-region must not be used merely to describe the
+region of a country reported in recipient-country, but ONLY if
+the region is a recipient IN ADDITION to the country.</p>
+<p>Region can also be reported at transaction rather than
+activity level. If transaction/recipient-country AND/OR
+transaction/recipient-region are used THEN ALL transaction
+elements MUST contain a recipient-country and/or
+recipient-region element AND iati-activity/recipient-region
+and iati-activity/recipient-region MUST NOT be used AND each
+transaction MUST only contain one recipient-country or
+recipient-region.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L697">3.1.1</a>: When multiple recipient countries are declared, each must have a percentage.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L711">3.1.4</a>: When a single recipient country is declared, the percentage must either be omitted, or set to 100.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L333">3.4.1</a>: When multiple recipient countries or regions are declared, each must have a percentage.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L360">3.4.4</a>: When a single recipient region in a vocabulary is declared, the percentage must either be omitted, or set to 100.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L647">3.6.2</a>: Recipient countries or regions must only be declared at activity level OR for all transactions.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L665">3.7.1</a>: Recipient country or recipient region should be declared for either the activity or for all transactions.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L683">3.7.2</a>: Recipient country or recipient region should be declared for either the activity or for all transactions.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-recipient-region-code">
+<dt>@code</dt>
+<dd><p>Either an OECD DAC or UN region code. Codelist is
+determined by vocabulary attribute.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/Region/"><span>Region codelist</span></a>, if the relevant vocabulary is used.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-recipient-region-vocabulary">
+<dt>@vocabulary</dt>
+<dd><p>An IATI code for the vocabulary from which the region code
+is drawn. If it is not present 1 - ‘OECD DAC’ is assumed.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../codelists/RegionVocabulary/"><span>RegionVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-recipient-region-vocabulary-uri">
+<dt>@vocabulary-uri</dt>
+<dd><p>If the vocabulary is 99 (reporting organisation), the URI
+where this internal vocabulary is defined.</p>
+<p>This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-recipient-region-percentage">
+<dt>@percentage</dt>
+<dd><p>The percentage of total commitments or total activity
+budget allocated to this region. Content must be a
+positive decimal number between 0 and 100, with no
+percentage sign. Percentages for all reported countries
+and regions MUST add up to 100%</p>
+<p>This value must be of type xsd:decimal.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L387">3.4.2</a>: Percentage values for recipient countries or regions, must add up to 100%.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L491">12.1.2</a>: The region percentage value must be 0.0 or positive.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>recipient-region</code> of an <code>iati-activity</code>.</p>
+
+<p>The <code>@code</code> attribute declares a valid code (<em>489</em>) from the <em>Region</em> codelist.</p>
+<p>The optional <code>@vocabulary</code> attribute declares a valid code (<em>1</em>) from the <em>RegionVocabulary</em> codelist.</p>
+
+<p><code><pre>&lt;recipient-region code="489" vocabulary="1" /&gt;
+</pre></code>
+</p>
+<p>If a publisher uses a vocabulary of 99 (i.e. ‘Reporting Organisation’), then the <code>@vocabulary-uri</code> attribute should also be used, for example:</p>
+<p><code><pre>&lt;recipient-region code="A1" vocabulary="99" vocabulary-uri="http://example.com/vocab.html" /&gt;
+</pre></code>
+</p>
+<p>Please note, if using your own vocabulary (i.e. code 99), it is recommended that this is used in addition to the DAC OECD region vocabulary (code 1).</p>
+
+<p>The <code>recipient-region</code> element can be repeated in any <code>iati-activity</code>.</p>
+
+
+<p>When multiple <code>recipient-region</code> are declared, then the <code>@percentage</code> values should sum to 100% per vocabulary for the specific <code>iati-activity</code>.</p>
+
+<p><code><pre>&lt;recipient-region code="489" vocabulary="1" percentage="50" /&gt;
+&lt;recipient-region code="389" vocabulary="1" percentage="50" /&gt;
+</pre></code>
+</p>
+
+<p>When both the <code>recipient-region</code> and <code>recipient-country</code> are declared, then the <code>@percentage</code> values should sum to 100% per region vocabulary for the specific <code>iati-activity</code>.</p>
+
+<p><code><pre>&lt;recipient-country code="AF" percentage="50" /&gt;
+&lt;recipient-region code="489" vocabulary="1" percentage="50" /&gt;
+&lt;recipient-region code="A1" vocabulary="99" percentage="50" vocabulary-uri="http://example.com/vocab.html" /&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id10">
+<h3>2.02</h3>
+<p>The <code>vocabulary-uri</code> attribute was <a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">added</a>.</p>
+</p>
+<p id="id11">
+<h3>2.01</h3>
+<p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element, but only in particular use-cases.</p>
+</p>
+<p id="id12">
+<h3>1.03</h3>
+<p>Where used, the <code>@percentage</code> attribute is now designated as a decimal value and no longer as a positive Integer</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L375">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/recipient-region.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

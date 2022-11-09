@@ -1,0 +1,39 @@
+<div id="content" role="main">
+
+<header>
+<h1>Activity Title</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;title&gt;&lt;/title&gt;</h2><p><h3>From the schema</h3><p>
+        A short, human-readable title.  May be repeated for different
+        languages.
+      </p><p> This element is of the type "textType" as described in the <a href="/reference_downloads/archive/downloads/1.01/iati-common.xsd">IATI Common schema (Version 1.01)</a></p><p><p>
+        Data type for an element that may contain human-readable text
+        in different languages.
+      </p><table border="1"><tbody></tbody></table><p>This element also references "textAtts"</p><p><p>
+        Attribute group for elements containing free text content.
+      </p><table border="1"><tbody><tr><th>value</th><th>use</th><th>description</th></tr><tr><td>@xml:lang</td><td>optional</td><td><a href="http://www.w3.org/XML/1998/namespace">http://www.w3.org/XML/1998/namespace</a></td></tr></tbody></table> </p> </p> </p><!--schema wrap--></p><p><h3>Compliance1 compliance test(s) for /title</h3><ul><li>title has 50 characters or more</li><!--<li>string-length($this) gt 50</li>--></ul></p></p>
+<h2 id="title">Title</h2>
+
+<!-- EDIT1 SECTION "Title" [1-41] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+When default language has been declared in the &lt;iati-activity&gt; element then this will suffice:
+</p><pre>    <span><span>&lt;title<span>&gt;</span></span></span>Grant Performance Report<span><span>&lt;/title<span>&gt;</span></span></span></pre>
+<p>
+If a default langage has NOT been declared in the &lt;iati-activity&gt; element, then a language must be specified
+</p><pre>    <span><span>&lt;title</span> <span>xml:lang</span>=<span>"en"</span><span>&gt;</span></span>Grant Performance Report<span><span>&lt;/title<span>&gt;</span></span></span></pre>
+<p>
+A title may be repeated in many languages. This example assumes a default language of English has previously been declared:
+</p><pre>    <span><span>&lt;title<span>&gt;</span></span></span>Grant Performance Report<span><span>&lt;/title<span>&gt;</span></span></span>
+    <span><span>&lt;title</span> <span>xml:lang</span>=<span>"es"</span><span>&gt;</span></span>Grant Informe sobre los resultados<span><span>&lt;/title<span>&gt;</span></span></span>
+    <span><span>&lt;title</span> <span>xml:lang</span>=<span>"fr"</span><span>&gt;</span></span>Rapport sur le rendement de subvention<span><span>&lt;/title<span>&gt;</span></span></span></pre>
+<p>
+It is good practice to provide activity titles in the language(s) spoken in the country(ies) where the activity take place, or is aimed at.
+</p>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [42-] --> </p>
+
+</div>

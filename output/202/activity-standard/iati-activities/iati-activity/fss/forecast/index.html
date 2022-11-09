@@ -1,0 +1,85 @@
+<div class="body" role="main">
+<p id="forecast">
+<h1>forecast</h1>
+<p><code>iati-activities/iati-activity/fss/forecast</code></p>
+<p>This is the reference page for the XML element <code>forecast</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A container to hold separate forecasts for each of the
+years specified Text() holds the forecast value for each
+year.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>The text in this element must be of type xsd:decimal.</p>
+<p>This element may occur any number of times.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-fss-forecast-year">
+<dt>@year</dt>
+<dd><p>The calendar year that the forward spend covers</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-fss-forecast-currency">
+<dt>@currency</dt>
+<dd><p>The ISO 4217 alphabetic currency code of the value reported.
+This is required unless the iati-activity/@default-currency is
+present and applies.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/Currency/"><span>Currency codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-fss-forecast-value-date">
+<dt>@value-date</dt>
+<dd><p>The date to be used for determining the exchange rate for
+currency conversions.</p>
+<p>This value must be of type xsd:date.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example of <code>forecast</code> for the <code>fss</code> of an <code>iati-activity</code>.</p>
+
+<p>An example date is declared in the <code>@value-date</code> attribute.</p>
+<p>This example date format conform to the <em>xsd:date</em> standard - for most cases <em>YYYY-MM-DD</em> is sufficient.</p>
+
+
+<p>This example declares the attribute <code>@year</code> as <em>2014</em>.</p>
+
+
+<p>This example declares a <em>Currency</em> code <em>GBP</em>, using the <code>@currency</code> attribute.</p>
+<p>Note: A <em>Currency</em> code should only be declared if different to <code>@default-currency</code> in the <code>iati-activity</code> element.</p>
+
+<p><code><pre>  &lt;fss extraction-date="2014-05-06" priority="1" phaseout-year="2016"&gt;
+<span>   &lt;forecast year="2014" value-date="2013-07-03" currency="GBP"&gt;10000&lt;/forecast&gt;
+</span>  &lt;/fss&gt;
+</pre></code>
+</p>
+
+<p>Note: multiple forecasts are expressed by repeating the <code>forecast</code> element.</p>
+
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+
+<p>New in 1.03</p>
+<p>Added the optional <code>fss</code> element and its child elements</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L2683">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/fss/forecast.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>

@@ -1,0 +1,43 @@
+<div id="content" role="main">
+
+<header>
+<h1>Other Identifier</h1>
+</header><!-- .entry-header -->
+<p>
+<p>
+<p><h2>&lt;other-identifier&gt;&lt;/other-identifier&gt;</h2><p><h3>From the schema</h3><p>
+        An alternative, non-IATI identifier for the activity.  This
+        identifier is not guaranteed to be unique or persistent (it
+        depends on the owner organisation's policies, not IATI's).
+
+        If other-identifier is present then either @owner-ref or
+        @owner-name must be present
+      </p><table><tbody><tr><td>@owner-ref</td><td>
+            An identifier for the owner of this identifier, in URI
+            format.
+
+            See the list of officially-registered organizations at
+            <a href="/en/iati-standard/203/codelists/organisation" rel="nofollow">http://iatistandard.org/codelists/organisation</a>
+</td></tr><tr><td>@owner-name</td><td>
+            Free text providing a human-readable name for the owner
+            of this identifier.
+          </td></tr></tbody></table> </p><!--schema wrap--></p><p><h3>Standard compliance test(s) for /other-identifier/@owner-ref</h3><ul><li>Must be on: <a href="/en/iati-standard/203/codelists/organisation_identifier">Organisation Identifier Codelist</a></li></ul></p>
+<h2 id="other_identifier">Other Identifier</h2>
+
+<!-- EDIT1 SECTION "Other Identifier" [1-52] -->
+<h3 id="example_usage">Example Usage</h3>
+<p>
+<p>
+Example of an identifier internal to an organisation:
+</p><pre>    <span><span>&lt;other-identifier<span>&gt;</span></span></span>AFG033<span><span>&lt;/other-identifier<span>&gt;</span></span></span></pre>
+<p>
+Example of an identifier which is declared as being owned by DfID (ref <abbr title="Gigabyte">GB</abbr>-1):
+</p>
+<pre>    <span><span>&lt;other-identifier</span> <span>owner-ref</span>=<span>"GB-1"</span> <span>owner-name</span>=<span>"DFID"</span><span>&gt;</span></span>105838-1<span><span>&lt;/other-identifier<span>&gt;</span></span></span></pre>
+</p>
+<!-- EDIT2 SECTION "Example Usage" [53-] --> </p>
+
+</p><!-- .entry-content -->
+<!-- #post-1417 -->
+
+</div>

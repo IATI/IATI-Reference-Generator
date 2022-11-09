@@ -1,0 +1,64 @@
+<div class="body" role="main">
+<p id="comment">
+<h1>comment</h1>
+<p><code>iati-activities/iati-activity/result/indicator/baseline/comment</code></p>
+<p>This is the reference page for the XML element <code>comment</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A human-readable comment associated with a piece of aid information.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element must occur no more than once (within each parent element).</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>comment</code> for <code>baseline</code>:</p>
+<p><code><pre>     &lt;baseline year="2012" iso-date="2012-01-01" value="10"&gt;
+      &lt;location ref="AF-KAN" /&gt;
+      &lt;location ref="KH-PNH" /&gt;
+      &lt;dimension name="sex" value="female" /&gt;
+      &lt;dimension name="age" value="adult" /&gt;
+      &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_baseline_en.odt"&gt;
+       &lt;title&gt;
+        &lt;narrative&gt;Results Baseline Report 2013&lt;/narrative&gt;
+       &lt;/title&gt;
+       &lt;description&gt;
+         &lt;narrative&gt;Report of results baseline&lt;/narrative&gt;
+       &lt;/description&gt;
+       &lt;category code="A01" /&gt;
+       &lt;language code="en" /&gt;
+       &lt;document-date iso-date="2014-02-05" /&gt;
+      &lt;/document-link&gt;
+      &lt;comment&gt;
+       &lt;narrative&gt;Baseline comment text&lt;/narrative&gt;
+      &lt;/comment&gt;
+     &lt;/baseline&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>2.01</h3>
+<p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-common.xsd#L66">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result/indicator/baseline/comment.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

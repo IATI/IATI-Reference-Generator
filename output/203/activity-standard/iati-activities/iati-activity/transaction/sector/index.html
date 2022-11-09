@@ -1,0 +1,132 @@
+<div class="body" role="main">
+<p id="sector">
+<h1>sector</h1>
+<p><code>iati-activities/iati-activity/transaction/sector</code></p>
+<p>This is the reference page for the XML element <code>sector</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>A recognised code, from a recognised vocabulary, classifying the purpose of this transaction.</p>
+<p>If this element is used then ALL transaction elements should contain a transaction/sector element and iati-activity/sector should NOT be used.</p>
+<p>This element can be used multiple times, but only one sector can be reported per vocabulary.</p>
+</p>
+<p id="rules">
+<h2>Rules</h2>
+<p>This element may occur any number of times.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L68">6.2.2</a>: Each activity must have a specified sector, either at activity level OR for all transactions.</p>
+<p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L786">6.6.2</a>: Sectors must only be declared at activity level OR for all transactions.</p>
+</p>
+<p id="attributes">
+<h2>Attributes</h2>
+<dl id="iati-activities-iati-activity-transaction-sector-vocabulary">
+<dt>@vocabulary</dt>
+<dd><p>An IATI code for the vocabulary (codelist) used for sector classifications. If omitted, OECD DAC 5-digit Purpose Codes are assumed.</p>
+<p>It is recommended that OECD DAC 5-digit Purpose Codes are used wherever possible. It is also recommended that if a publisher has its own classification system or systems, then the vocabularies 99 or 98 (Reporting Organisation’s own vocabularies) should be used in addition to the DAC codes.</p>
+<p>Note that at transaction level, only one sector per vocabulary can be reported.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/SectorVocabulary/"><span>SectorVocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-transaction-sector-vocabulary-uri">
+<dt>@vocabulary-uri</dt>
+<dd><p>The URI where this vocabulary is defined. If the vocabulary is 99 or 98 (reporting organisation), the URI where this internal vocabulary is defined. While this is an optional field it is STRONGLY RECOMMENDED that all publishers use it to ensure that the meaning of their codes are fully understood by data users.</p>
+<p>This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-transaction-sector-code">
+<dt>@code</dt>
+<dd><p>The code for the sector.</p>
+<p>This attribute is required.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a href="../../../../../codelists/Sector/"><span>Sector codelist</span></a>, if the relevant vocabulary is used.</p>
+<p>This value must be on the <a href="../../../../../codelists/SectorCategory/"><span>SectorCategory codelist</span></a>, if the relevant vocabulary is used.</p>
+<p>This value must be on the <a href="../../../../../codelists/UNSDG-Goals/"><span>UNSDG-Goals codelist</span></a>, if the relevant vocabulary is used.</p>
+<p>This value must be on the <a href="../../../../../codelists/UNSDG-Targets/"><span>UNSDG-Targets codelist</span></a>, if the relevant vocabulary is used.</p>
+</dd>
+</dl>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example <code>sector</code> of a <code>transaction</code> within an <code>iati-activity</code>.</p>
+
+<p>The <code>@vocabulary</code> attribute declares a valid code (<em>2</em>) from the <em>SectorVocabulary</em> codelist.</p>
+<p>An example value <em>111</em> from this vocabulary is declared with the <code>@code</code> attribute.</p>
+
+<p><code><pre>&lt;sector vocabulary="2" code="111" /&gt;
+</pre></code>
+</p>
+
+<p>The <code>sector</code> element can be repeated in any <code>transaction</code>.</p>
+
+
+<p>The <code>vocabulary</code> is used to declare which <code>SectorVocabulary</code> classification list is in use. If this is omitted, then IATI assumes a <em>SectorVocabulary</em> of <em>1</em> (OECD DAC CRS Purpose Codes (5 digit)).</p>
+
+
+<p>If a vocabulary is not on the <em>SectorVocabulary</em> codelist, then the value of <em>99</em> or <em>98</em> (Reporting Organisation) should be declared.</p>
+
+
+<p>If a publisher uses a vocabulary of 98 or 99 (i.e. ‘Reporting Organisation’), then the <code>@vocabulary-uri</code> attribute should also be used, for example:</p>
+
+<p><code><pre>&lt;sector vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" /&gt;
+</pre></code>
+</p>
+<p>Full example:</p>
+<p><code><pre>  &lt;transaction ref="1234" humanitarian="1"&gt;
+   &lt;transaction-type code="1" /&gt;
+   &lt;transaction-date iso-date="2012-01-01" /&gt;
+   &lt;value currency="EUR" value-date="2012-01-01"&gt;1000&lt;/value&gt;
+   &lt;description&gt;
+    &lt;narrative&gt;Transaction description text&lt;/narrative&gt;
+   &lt;/description&gt;
+   &lt;provider-org provider-activity-id="BB-BBB-123456789-1234AA" type="10" ref="BB-BBB-123456789"&gt;
+    &lt;narrative&gt;Agency B&lt;/narrative&gt;
+   &lt;/provider-org&gt;
+   &lt;receiver-org receiver-activity-id="AA-AAA-123456789-1234" type="23" ref="AA-AAA-123456789"&gt;
+    &lt;narrative&gt;Agency A&lt;/narrative&gt;
+   &lt;/receiver-org&gt;
+   &lt;disbursement-channel code="1" /&gt;
+   &lt;sector vocabulary="2" code="111" /&gt;
+   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   &lt;recipient-country code="TM" /&gt;
+   &lt;recipient-region code="616" vocabulary="1" /&gt;
+   &lt;flow-type code="10" /&gt;
+   &lt;finance-type code="110" /&gt;
+   &lt;aid-type code="A01" vocabulary="1" /&gt;
+   &lt;aid-type code="1" vocabulary="2" /&gt;
+   &lt;tied-status code="3" /&gt;
+  &lt;/transaction&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id3">
+<h3>2.03</h3>
+<p>The definition of the <code>@vocabulary-uri</code> was <a href="https://discuss.iatistandard.org/t/guidance-on-u-r-i-usage-for-publisher-s-own-vocabularies-included-2-03/850">updated</a>.</p>
+</p>
+<p id="id4">
+<h3>2.02</h3>
+<p>The <code>@vocabulary-uri</code> attribute was <a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">added</a>.</p>
+</p>
+<p id="id5">
+<h3>2.01</h3>
+<p>The <code>sector</code> element was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">added</a> as a child element of <code>transaction</code>.</p>
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1124">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/transaction/sector.rst">Extra Documentation</a></li>
+</ul>
+</p>
+<p id="subelements">
+<h2>Subelements</h2>
+<p>
+<ul>
+<li><a href="narrative/">narrative</a></li>
+</ul>
+</p>
+</p>
+</p>
+</div>

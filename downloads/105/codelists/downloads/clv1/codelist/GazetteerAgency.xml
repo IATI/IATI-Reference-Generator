@@ -1,0 +1,17 @@
+<codelist name="GazetteerAgency" date-last-modified="2022-07-25T19:39:29.908887+00:00" version="" xml:lang="en">
+  <GazetteerAgency>
+    <code>GEO</code>
+    <name>Geonames.org</name>
+    <language>en</language>
+  </GazetteerAgency>
+  <GazetteerAgency>
+    <code>NGA</code>
+    <name>National Geospatial-Intelligence Agency</name>
+    <language>en</language>
+  </GazetteerAgency>
+  <GazetteerAgency>
+    <code>OSM</code>
+    <name>Open Street Map</name>
+    <language>en</language>
+  </GazetteerAgency>
+</codelist>

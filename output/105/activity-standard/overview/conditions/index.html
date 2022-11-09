@@ -1,0 +1,25 @@
+<div class="body" role="main">
+<p id="conditions">
+<h1>Conditions</h1>
+<p id="definition">
+<h2>Definition</h2>
+<p>Within the <strong>IATI activity standard</strong> conditions that relate to an <code>iati-activity</code> can be described:</p>
+<ul>
+<li><code>conditions</code> - a container element to declare whether <code>condition</code> are attached.</li>
+<li><code>condition</code> - the specific statement around a condition.</li>
+</ul>
+</p>
+<p id="considerations">
+<h2>Considerations</h2>
+<p>When using the <strong>IATI activity standard</strong> to declare <em>conditions</em>, the following should be considered:</p>
+<ul>
+<li>An <code>iati-activity</code> does not require a <code>conditions</code> statement, if none are relevant.</li>
+<li>However, it is also valid to declare that no <code>conditions</code> are attached to a specific <code>iati-activity</code> via the <code>attached</code> attribute.</li>
+<li>For every <code>condition</code> a relevant <code>ConditionType</code> code is expected.</li>
+<li>When multiple <code>condition</code> exist, these can be presented separately within the same <code>conditions</code> element.</li>
+<li>The same <code>condition</code> can be presented in different languages via separate <code>condition</code> elements, using <code>xml:lang</code>.</li>
+<li>The free-text to describe the condition should avoid jargon</li>
+</ul>
+</p>
+</p>
+</div>

@@ -1,0 +1,53 @@
+<div class="body" role="main">
+<p id="principal-arrears">
+<h1>principal-arrears</h1>
+<p><code>iati-activities/iati-activity/crs-add/loan-status/principal-arrears</code></p>
+<p>This is the reference page for the XML element <code>principal-arrears</code>.</p>
+<p id="definition">
+<h2>Definition</h2>
+<p>Arrears of principal at the end of the
+year. Included in principal-outstanding</p>
+<p>The text in this element must be of type xsd:decimal.</p>
+</p>
+<p id="example-usage">
+<h2>Example Usage</h2>
+<p>Example usage of <code>principle-arrears</code> within <code>loan-status</code> in context of <code>crs-add</code> element.</p>
+<p><code><pre>  &lt;crs-add&gt;
+   &lt;aidtype-flag code="1" significance="1" /&gt;
+   &lt;loan-terms rate-1="4" rate-2="3"&gt;
+    &lt;repayment-type code="1" /&gt;
+    &lt;repayment-plan code="4" /&gt;
+    &lt;commitment-date iso-date="2013-09-01"/&gt;
+    &lt;repayment-first-date iso-date="2014-01-01" /&gt;
+    &lt;repayment-final-date iso-date="2020-12-31" /&gt;
+   &lt;/loan-terms&gt;
+   &lt;loan-status year="2014" currency="GBP" value-date="2013-05-24"&gt;
+     &lt;interest-received&gt;200000&lt;/interest-received&gt;
+     &lt;principal-outstanding&gt;1500000&lt;/principal-outstanding&gt;
+<span>     &lt;principal-arrears&gt;0&lt;/principal-arrears&gt;
+</span>     &lt;interest-arrears&gt;0&lt;/interest-arrears&gt;
+   &lt;/loan-status&gt;
+  &lt;/crs-add&gt;
+</pre></code>
+</p>
+</p>
+<p id="changelog">
+<h2>Changelog</h2>
+<p id="id1">
+<h3>1.03</h3>
+
+<p>New in 1.03</p>
+<p>Added the optional <code>crs-add</code> element and its child elements</p>
+
+</p>
+</p>
+<p id="developer-tools">
+<h2>Developer tools</h2>
+<p>Find the source of this documentation on github:</p>
+<ul>
+<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1754">Schema</a></li>
+<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/crs-add/loan-status/principal-arrears.rst">Extra Documentation</a></li>
+</ul>
+</p>
+</p>
+</div>
