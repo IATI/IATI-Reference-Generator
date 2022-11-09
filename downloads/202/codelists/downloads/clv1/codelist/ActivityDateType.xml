@@ -1,4 +1,4 @@
-<codelist name="ActivityDateType" date-last-modified="2022-07-25T19:38:38.619811+00:00" version="" xml:lang="en">
+<codelist name="ActivityDateType" date-last-modified="2022-11-09T13:29:21.703513+00:00" version="" xml:lang="en">
   <ActivityDateType>
     <code>1</code>
     <name>Planned start</name>

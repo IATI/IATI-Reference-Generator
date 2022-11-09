@@ -33,6 +33,17 @@
 </pre></code>
 </p>
 </p>
+<p id="finding-distinct-iati-identifiers">
+<h2>Finding distinct IATI identifiers</h2>
+<p>Find duplicate IATI identifiers in a group of iati-activities</p>
+<p><code><pre>//iati-activities/iati-activity[iati-identifier = preceding-sibling::iati-activity/iati-identifier]/iati-identifier
+</pre></code>
+</p>
+<p>Return the XML of activities found to be duplicate by identifier (only the duplicates, not the originals)</p>
+<p><code><pre>//iati-activities/iati-activity[iati-identifier = preceding-sibling::iati-activity/iati-identifier]
+</pre></code>
+</p>
+</p>
 <p id="dates">
 <h2>Dates</h2>
 <p>Smallest start date</p>

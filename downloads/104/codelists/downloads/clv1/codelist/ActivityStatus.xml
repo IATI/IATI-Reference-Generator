@@ -1,4 +1,4 @@
-<codelist name="ActivityStatus" date-last-modified="2022-07-25T19:39:56.376796+00:00" version="" xml:lang="en">
+<codelist name="ActivityStatus" date-last-modified="2022-11-09T13:30:40.233900+00:00" version="" xml:lang="en">
   <ActivityStatus>
     <code>1</code>
     <name>Pipeline/identification</name>

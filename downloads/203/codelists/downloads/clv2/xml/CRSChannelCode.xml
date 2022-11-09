@@ -647,8 +647,8 @@
         <codelist-item status="active" activation-date="2020-01-01">
             <code>30020</code>
             <category>31000</category>
-            <name>Global Energy Efficiency and Renewable Energy Fund</name>
-            <name xml:lang="fr">Global Energy Efficiency and Renewable Energy Fund</name>
+            <name>Global Energy Efficiency and Renewable Energy Fund II</name>
+            <name xml:lang="fr">Global Energy Efficiency and Renewable Energy Fund II</name>
         </codelist-item>
         <codelist-item status="active">
             <code>31000</code>
@@ -691,6 +691,12 @@
             <category>31000</category>
             <name>Coalition for Epidemic Preparedness Innovations</name>
             <name xml:lang="fr">Coalition pour les innovations en mati&#232;re de pr&#233;paration</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>31007</code>
+            <category>32000</category>
+            <name>Drugs for Neglected Diseases initative</name>
+            <name xml:lang="fr">Initiative m&#233;dicaments contres les maladies n&#233;glig&#233;es</name>
         </codelist-item>
         <codelist-item status="active">
             <code>32000</code>
@@ -735,19 +741,19 @@
         </codelist-item>
         <codelist-item status="active" activation-date="2020-01-01">
             <code>41104</code>
-            <category>41100</category>
+            <category>41300</category>
             <name>Economic Commission for Latin America and the Caribbean</name>
             <name xml:lang="fr">Commission &#233;conomique pour l'Am&#233;rique latine et les Cara&#239;bes</name>
         </codelist-item>
         <codelist-item status="active" activation-date="2020-01-01">
             <code>41105</code>
-            <category>41100</category>
+            <category>41300</category>
             <name>Economic and Social Commission for Western Asia</name>
             <name xml:lang="fr">Commission &#233;conomique et sociale pour l'Asie occidentale</name>
         </codelist-item>
         <codelist-item status="active" activation-date="2020-01-01">
             <code>41106</code>
-            <category>41100</category>
+            <category>41300</category>
             <name>Economic and Social Commission for Asia and the Pacific</name>
             <name xml:lang="fr">Commission &#233;conomique et sociale pour l'Asie et le Pacifique</name>
         </codelist-item>
@@ -855,7 +861,7 @@
         </codelist-item>
         <codelist-item status="active" activation-date="2020-01-01">
             <code>41128</code>
-            <category>41100</category>
+            <category>41300</category>
             <name>United Nations Office on Drugs and Crime</name>
             <name xml:lang="fr">Office des Nations Unies contre la drogue et le crime</name>
         </codelist-item>
@@ -1029,7 +1035,7 @@
         </codelist-item>
         <codelist-item status="active" activation-date="2020-01-01">
             <code>41306</code>
-            <category>41100</category>
+            <category>41300</category>
             <name>Universal Postal Union</name>
             <name xml:lang="fr">Union postale universelle</name>
         </codelist-item>
@@ -1117,6 +1123,12 @@
             <name>Technology Bank&#160;for&#160;Least&#160;Developed Countries</name>
             <name xml:lang="fr">Banque de Technologies en faveur des Pays les Moins Avanc&#233;s</name>
         </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>41321</code>
+            <category>41300</category>
+            <name>World Health Organisation - Strategic Preparedness and Response Plan</name>
+            <name xml:lang="fr">Organisation mondiale de la sant&#233; - Plan strat&#233;gique de pr&#233;paration et d'intervention</name>
+        </codelist-item>
         <codelist-item status="active" activation-date="2020-01-01">
             <code>41400</code>
             <category>41000</category>
@@ -1128,6 +1140,18 @@
             <category>41400</category>
             <name>UN-Multi Partner Trust Fund Office</name>
             <name xml:lang="fr">UN-Multi Partner Trust Fund Office</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>41402</code>
+            <category>41400</category>
+            <name>Joint Sustainable Development Goals Fund</name>
+            <name xml:lang="fr">Fonds conjoint des objectifs de d&#233;veloppement durable</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>41403</code>
+            <category>41400</category>
+            <name>COVID-19 Response and Recovery Multi-Partner Trust Fund</name>
+            <name xml:lang="fr">COVID-19 Response and Recovery Multi-Partner Trust Fund</name>
         </codelist-item>
         <codelist-item status="active" activation-date="2020-01-01">
             <code>41500</code>
@@ -1160,6 +1184,24 @@
             <name xml:lang="fr">Canaux de l'ONU existants non inclus dans la norme I du cadre de reporting du cube de l'ONU</name>
             <description>Canaux existants de l'ONU non inclus dans la norme I - entit&#233; des Nations Unies - du cadre de reporting du cube de donn&#233;es de l'ONU</description>
             <description xml:lang="fr"/>
+        </codelist-item>
+        <codelist-item status="withdrawn" activation-date="2021-01-01">
+            <code>41700</code>
+            <category>41000</category>
+            <name>UN entities, non-core contributions</name>
+            <name xml:lang="fr">Entit&#233;s des Nations Unies, contributions autres que de base</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>41701</code>
+            <category>41700</category>
+            <name>International Labour Organisation - non-core</name>
+            <name xml:lang="fr">International Labour Organisation - non-core</name>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>41702</code>
+            <category>41700</category>
+            <name>World Health Organisation - non-core</name>
+            <name xml:lang="fr">World Health Organisation - non-core</name>
         </codelist-item>
         <codelist-item status="active">
             <code>42000</code>
@@ -1386,13 +1428,13 @@
         <codelist-item status="active" activation-date="2009-01-01">
             <code>46016</code>
             <category>46000</category>
-            <name>European Bank for Reconstruction and Development &#8211; technical co-operation and special funds (ODA-eligible countries only)</name>
+            <name>European Bank for Reconstruction and Development - technical co-operation and special funds (ODA-eligible countries only)</name>
             <name xml:lang="fr">Banque europ&#233;enne pour la reconstruction et le d&#233;veloppement - coop&#233;ration technique et fonds sp&#233;ciaux (pays &#233;ligibles &#224; l'APD)</name>
         </codelist-item>
         <codelist-item status="active" activation-date="2009-01-01">
             <code>46017</code>
             <category>46000</category>
-            <name>European Bank for Reconstruction and Development &#8211; technical co-operation and special funds (all EBRD countries of operations)</name>
+            <name>European Bank for Reconstruction and Development - technical co-operation and special funds (all EBRD countries of operations)</name>
             <name xml:lang="fr">Banque europ&#233;enne pour la reconstruction et le d&#233;veloppement - coop&#233;ration technique et fonds sp&#233;ciaux (tous pays)</name>
         </codelist-item>
         <codelist-item status="active" activation-date="2009-01-01">
@@ -2301,6 +2343,12 @@
             <name>World Organisation for Animal Health</name>
             <name xml:lang="fr">Organisation mondiale de la sant&#233; animale</name>
         </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>47149</code>
+            <category>47000</category>
+            <name>International Commission on Missing Persons</name>
+            <name xml:lang="fr">Commission internationale pour les personnes disparues</name>
+        </codelist-item>
         <codelist-item status="active" activation-date="2017-01-01">
             <code>47400</code>
             <category>47000</category>
@@ -2371,7 +2419,7 @@
             <name>Banks (deposit taking corporations)</name>
             <name xml:lang="fr">Banques (institutions de d&#233;p&#244;ts)</name>
         </codelist-item>
-        <codelist-item status="withdrawn" activation-date="2016-01-01">
+        <codelist-item status="withdrawn" activation-date="2016-01-01" withdrawal-date="2016-12-31">
             <code>61002</code>
             <category>61000</category>
             <name>Private exporter in provider country</name>

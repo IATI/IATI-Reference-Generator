@@ -1,4 +1,4 @@
-<codelist name="ConditionType" date-last-modified="2022-07-25T19:38:39.051337+00:00" version="" xml:lang="en">
+<codelist name="ConditionType" date-last-modified="2022-11-09T13:29:22.144056+00:00" version="" xml:lang="en">
   <ConditionType>
     <code>1</code>
     <name>Policy</name>
