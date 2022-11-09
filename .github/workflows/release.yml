@@ -58,14 +58,14 @@ jobs:
               await github.rest.repos.uploadReleaseAsset({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                release_id: response["id"],
+                release_id: releaseResponse["id"],
                 name: 'downloads.zip',
                 data: downloads,
               });
               await github.rest.repos.uploadReleaseAsset({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                release_id: response["id"],
+                release_id: releaseResponse["id"],
                 name: 'output.zip',
                 data: output,
               });
