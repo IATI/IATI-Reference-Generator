@@ -34,6 +34,7 @@ jobs:
 
       - name: "Determine tag"
         run: |
+          git pull --tags
           last_tag=`git describe --tags --always $(git rev-list --tags --max-count=1)`
           next_tag="${last_tag%.*}.$((${last_tag##*.}+1))"
           echo "RELEASE_TAG=$next_tag" >> $GITHUB_ENV
