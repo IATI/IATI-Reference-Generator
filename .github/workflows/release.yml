@@ -31,7 +31,7 @@ jobs:
           ./build.sh
 
       - name: Create a PR in case submodules have updated
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
 
       - name: "Determine tag"
         run: |
