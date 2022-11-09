@@ -35,7 +35,7 @@ jobs:
       - name: "Determine tag"
         run: |
           last_tag=`git describe --tags $(git rev-list --tags) --always|egrep "${INPUT_PREV_TAG}${branch}\.[0-9]*\.[0-9]*$"|sort -V -r|head -n 1`
-          next_tag="${last_tag%.*}.$((${last_tag##*.}+1))"
+          next_tag="v${last_tag%.*}.$((${last_tag##*.}+1))"
           echo "RELEASE_TAG=$next_tag" >> $GITHUB_ENV
 
       - name: "Create incremental release"
