@@ -1,72 +1,74 @@
 <div class="body" role="main">
-<p id="changes">
+<section id="changes">
 <h1>1.04 changes</h1>
 <p>Changes / Additions to IATI Standard for version 1.04</p>
-<p id="schema-changes">
+<section id="schema-changes">
 <h2>Schema Changes</h2>
 <p>A full diff of all schema changes in 1.04 can be found in github at <a href="https://github.com/IATI/IATI-Schemas/compare/version-1.03...version-1.04#files_bucket">https://github.com/IATI/IATI-Schemas/compare/version-1.03…version-1.04#files_bucket</a></p>
-<p id="activities-schema">
+<section id="activities-schema">
 <h3>Activities schema</h3>
 <ul>
-<li>Added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/reporting-org">reporting-org/@secondary-reporter</a> attribute (<a href="http://support.iatistandard.org/entries/28509756-Add-secondary-publisher-info">discussion</a>)</li>
-<li><a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/country-budget-items/budget-item">country-budget-items/budget-item/@percentage</a> is now optional rather than required (<a href="http://support.iatistandard.org/entries/49964613-Bug-Fix-make-budget-item-percentage-optional">discussion</a>)</li>
-<li>Added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/conditions/condition">conditions/condition/@xml:lang</a> attribute. (<a href="http://support.iatistandard.org/entries/28296716-Condition-is-missing-a-language-attribute">discussion</a>)</li>
-<li>Made a number of changes to the <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location">iati-activities/iati-activity/location</a> element (<a href="http://support.iatistandard.org/entries/30343967-Summary-of-Geocoding-Changes">discussion</a>)<ul>
-<li>added <code>location/@ref</code> attribute</li>
-<li>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/location-reach">location/location-reach</a> element</li>
-<li>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/location-id">location/location-id</a> element</li>
-<li>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/activity-description">location/activity-description</a> element</li>
-<li><a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/administrative">location/administrative</a> gets new attributes:  <code>@level</code>, <code>@vocabulary</code>, <code>@code</code>, <code>@xml:lang</code></li>
-<li><a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/administrative">location/administrative</a> has the following attributes deprecated: <code>@country</code>, <code>@adm1</code>, <code>@adm2</code></li>
-<li>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/point">location/point</a> element</li>
-<li>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/exactness">location/exactness</a> element</li>
-<li>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/location-class">location/location-class</a> element</li>
-<li>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/feature-designation">location/feature-designation</a> element</li>
-<li>deprecated <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/gazetteer-entry">location/gazetteer-entry</a> element</li>
-<li>deprecated <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/coordinates">location/coordinates</a> element</li>
-<li>deprecated <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/location-type">location/location-type</a> element</li>
+<li><p>Added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/reporting-org">reporting-org/@secondary-reporter</a> attribute (<a href="http://support.iatistandard.org/entries/28509756-Add-secondary-publisher-info">discussion</a>)</p></li>
+<li><p><a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/country-budget-items/budget-item">country-budget-items/budget-item/@percentage</a> is now optional rather than required (<a href="http://support.iatistandard.org/entries/49964613-Bug-Fix-make-budget-item-percentage-optional">discussion</a>)</p></li>
+<li><p>Added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/conditions/condition">conditions/condition/@xml:lang</a> attribute. (<a href="http://support.iatistandard.org/entries/28296716-Condition-is-missing-a-language-attribute">discussion</a>)</p></li>
+<li><p>Made a number of changes to the <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location">iati-activities/iati-activity/location</a> element (<a href="http://support.iatistandard.org/entries/30343967-Summary-of-Geocoding-Changes">discussion</a>)</p>
+<ul>
+<li><p>added <code>location/@ref</code> attribute</p></li>
+<li><p>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/location-reach">location/location-reach</a> element</p></li>
+<li><p>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/location-id">location/location-id</a> element</p></li>
+<li><p>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/activity-description">location/activity-description</a> element</p></li>
+<li><p><a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/administrative">location/administrative</a> gets new attributes:  <code>@level</code>, <code>@vocabulary</code>, <code>@code</code>, <code>@xml:lang</code></p></li>
+<li><p><a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/administrative">location/administrative</a> has the following attributes deprecated: <code>@country</code>, <code>@adm1</code>, <code>@adm2</code></p></li>
+<li><p>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/point">location/point</a> element</p></li>
+<li><p>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/exactness">location/exactness</a> element</p></li>
+<li><p>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/location-class">location/location-class</a> element</p></li>
+<li><p>added <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/feature-designation">location/feature-designation</a> element</p></li>
+<li><p>deprecated <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/gazetteer-entry">location/gazetteer-entry</a> element</p></li>
+<li><p>deprecated <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/coordinates">location/coordinates</a> element</p></li>
+<li><p>deprecated <a href="/en/iati-standard/104/activity-standard/iati-activities/iati-activity/location/location-type">location/location-type</a> element</p></li>
 </ul>
 </li>
-<li>Some documentation has been altered slightly</li>
-<li>The order that some elements are listed has changed, as this order is now used to populate the website (<a href="https://github.com/IATI/IATI-Schemas/commit/853dc481802817f1add7c7993feae5cfe08f2c06">commit</a>)</li>
+<li><p>Some documentation has been altered slightly</p></li>
+<li><p>The order that some elements are listed has changed, as this order is now used to populate the website (<a href="https://github.com/IATI/IATI-Schemas/commit/853dc481802817f1add7c7993feae5cfe08f2c06">commit</a>)</p></li>
 </ul>
-</p>
-</p>
-<p id="codelist-changes">
+</section>
+</section>
+<section id="codelist-changes">
 <h2>Codelist Changes</h2>
 <p>In 1.04 the idea of Embedded and Non-Embedded codelists was introduced. See <a href="/en/iati-standard/upgrades/how-we-manage-the-standard/codelist-management/">codelist-management</a> for more information.</p>
 <p>A <a href="https://github.com/IATI/IATI-Codelists/blob/version-1.04/mapping.xml">codelist mapping file</a> describing the mapping between codelists and xml elements, was introduced. (<a href="http://support.iatistandard.org/entries/27805388-Mapping-between-codelists-and-schemas">discussion</a>)</p>
-<p id="new-codelists">
+<section id="new-codelists">
 <h3>New Codelists</h3>
 <p>Embedded:</p>
 <ul>
-<li><a href="/en/iati-standard/104/codelists/GeographicExactness">GeographicExactness</a></li>
-<li><a href="/en/iati-standard/104/codelists/GeographicLocationClass">GeographicLocationClass</a></li>
-<li><a href="/en/iati-standard/104/codelists/GeographicLocationReach">GeographicLocationReach</a></li>
-<li><a href="/en/iati-standard/104/codelists/GeographicVocabulary">GeographicVocabulary</a></li>
+<li><p><a href="/en/iati-standard/104/codelists/GeographicExactness">GeographicExactness</a></p></li>
+<li><p><a href="/en/iati-standard/104/codelists/GeographicLocationClass">GeographicLocationClass</a></p></li>
+<li><p><a href="/en/iati-standard/104/codelists/GeographicLocationReach">GeographicLocationReach</a></p></li>
+<li><p><a href="/en/iati-standard/104/codelists/GeographicVocabulary">GeographicVocabulary</a></p></li>
 </ul>
 <p>Non-Embedded:</p>
 <ul>
-<li><a href="/en/iati-standard/104/codelists/OrganisationRegistrationAgency">OrganisationRegistrationAgency</a> (was previously a Google Doc)</li>
+<li><p><a href="/en/iati-standard/104/codelists/OrganisationRegistrationAgency">OrganisationRegistrationAgency</a> (was previously a Google Doc)</p></li>
 </ul>
-</p>
-<p id="updated-codelists">
+</section>
+<section id="updated-codelists">
 <h3>Updated Codelists</h3>
 <p>Embedded:</p>
 <ul>
-<li>Added <code>9</code> (Other) to <a href="/en/iati-standard/104/codelists/ResultType">ResultType</a> (<a href="http://support.iatistandard.org/entries/24090113-Suggestion-Add-other-or-undefined-to-Result-type-codelist">discussion</a>)</li>
-<li>Added <code>NACE</code> to <a href="/en/iati-standard/104/codelists/Vocabulary">Vocabulary</a> (<a href="http://support.iatistandard.org/entries/29678047-Add-NACE-Codes-as-a-Vocabulary-for-Sector?page=1#post_25391443">discussion</a>)</li>
-<li>The categories of <a href="/en/iati-standard/104/codelists/BudgetIdentifierSector">BudgetIdentifierSector</a> have been described differently. No codes have changed.</li>
-<li>The “Agency Level” (<code>B</code>) category of <a href="/en/iati-standard/104/codelists/DocumentCategory">DocumentCategory</a> has been renamed to “Organisation Level” for consistency. (<a href="https://github.com/IATI/IATI-Codelists/issues/28">issue</a>)</li>
+<li><p>Added <code>9</code> (Other) to <a href="/en/iati-standard/104/codelists/ResultType">ResultType</a> (<a href="http://support.iatistandard.org/entries/24090113-Suggestion-Add-other-or-undefined-to-Result-type-codelist">discussion</a>)</p></li>
+<li><p>Added <code>NACE</code> to <a href="/en/iati-standard/104/codelists/Vocabulary">Vocabulary</a> (<a href="http://support.iatistandard.org/entries/29678047-Add-NACE-Codes-as-a-Vocabulary-for-Sector?page=1#post_25391443">discussion</a>)</p></li>
+<li><p>The categories of <a href="/en/iati-standard/104/codelists/BudgetIdentifierSector">BudgetIdentifierSector</a> have been described differently. No codes have changed.</p></li>
+<li><p>The “Agency Level” (<code>B</code>) category of <a href="/en/iati-standard/104/codelists/DocumentCategory">DocumentCategory</a> has been renamed to “Organisation Level” for consistency. (<a href="https://github.com/IATI/IATI-Codelists/issues/28">issue</a>)</p></li>
 </ul>
 <p>Non-Embedded:</p>
 <ul>
-<li><a href="/en/iati-standard/104/codelists/FileFormat">FileFormat</a> updated to include all IANA Media Types. Note that it no longer has names corresponding to the codes, as the source codelist does not have this. (<a href="http://support.iatistandard.org/entries/22915207-Additions-to-File-Format-code-list">discussion</a>)</li>
-<li><a href="/en/iati-standard/104/codelists/LocationType">LocationType</a> updated to include all US NGA Feature Designation Codes</li>
-<li><a href="/en/iati-standard/104/codelists/Sector">Sector</a> re-aligned with DAC values (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/commit/1cf0f9baa9b0eba52d9230917cab729567fe6bc8">commit</a>)</li>
-<li><a href="/en/iati-standard/104/codelists/Country">Country</a> adds deprecated ISO value, <code>AN</code> that is still in use in some IATI data (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/commit/1cf0f9baa9b0eba52d9230917cab729567fe6bc8">commit</a>)</li>
+<li><p><a href="/en/iati-standard/104/codelists/FileFormat">FileFormat</a> updated to include all IANA Media Types. Note that it no longer has names corresponding to the codes, as the source codelist does not have this. (<a href="http://support.iatistandard.org/entries/22915207-Additions-to-File-Format-code-list">discussion</a>)</p></li>
+<li><p><a href="/en/iati-standard/104/codelists/LocationType">LocationType</a> updated to include all US NGA Feature Designation Codes</p></li>
+<li><p><a href="/en/iati-standard/104/codelists/Sector">Sector</a> re-aligned with DAC values (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/commit/1cf0f9baa9b0eba52d9230917cab729567fe6bc8">commit</a>)</p></li>
+<li><p><a href="/en/iati-standard/104/codelists/Country">Country</a> adds deprecated ISO value, <code>AN</code> that is still in use in some IATI data (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/commit/1cf0f9baa9b0eba52d9230917cab729567fe6bc8">commit</a>)</p></li>
 </ul>
-</p>
-</p>
-</p>
+</section>
+</section>
+</section>
+
 </div>

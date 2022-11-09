@@ -1,153 +1,157 @@
 <div class="body" role="main">
-<p id="changelog">
-<h1><a href="#id6">2.03 Changelog</a></h1>
+<section id="changelog">
+<h1><a href="#id6" role="doc-backlink">2.03 Changelog</a></h1>
 <p>Changes / additions to IATI Standard for version 2.03</p>
 <p>Note: Version 2.03 was released on Monday 19th February 2018.</p>
-<p id="contents">
+<nav id="contents">
 <p>Contents</p>
 <ul>
-<li><a href="#changelog" id="id6">2.03 Changelog</a><ul>
-<li><a href="#schema-changes" id="id7">Schema Changes</a><ul>
-<li><a href="#activities-schema" id="id8">Activities Schema</a></li>
-<li><a href="#organisations-schema" id="id9">Organisations Schema</a></li>
-<li><a href="#activities-and-organisations-schemas" id="id10">Activities and Organisations Schemas</a></li>
+<li><p><a href="#changelog" id="id6">2.03 Changelog</a></p>
+<ul>
+<li><p><a href="#schema-changes" id="id7">Schema Changes</a></p>
+<ul>
+<li><p><a href="#activities-schema" id="id8">Activities Schema</a></p></li>
+<li><p><a href="#organisations-schema" id="id9">Organisations Schema</a></p></li>
+<li><p><a href="#activities-and-organisations-schemas" id="id10">Activities and Organisations Schemas</a></p></li>
 </ul>
 </li>
-<li><a href="#codelist-changes" id="id11">Codelist Changes</a><ul>
-<li><a href="#embedded-to-non-embedded" id="id12">Embedded to Non-Embedded:</a></li>
-<li><a href="#new-codelists" id="id13">New Codelists</a></li>
-<li><a href="#updated-codelists" id="id14">Updated Codelists</a></li>
+<li><p><a href="#codelist-changes" id="id11">Codelist Changes</a></p>
+<ul>
+<li><p><a href="#embedded-to-non-embedded" id="id12">Embedded to Non-Embedded:</a></p></li>
+<li><p><a href="#new-codelists" id="id13">New Codelists</a></p></li>
+<li><p><a href="#updated-codelists" id="id14">Updated Codelists</a></p></li>
 </ul>
 </li>
-<li><a href="#ruleset-changes" id="id15">Ruleset Changes</a></li>
+<li><p><a href="#ruleset-changes" id="id15">Ruleset Changes</a></p></li>
 </ul>
 </li>
 </ul>
-</p>
-<p id="schema-changes">
-<h2><a href="#id7">Schema Changes</a></h2>
+</nav>
+<section id="schema-changes">
+<h2><a href="#id7" role="doc-backlink">Schema Changes</a></h2>
 <p>A full diff of all schema changes in 2.03 can be found in the <a href="https://github.com/IATI/IATI-Schemas/compare/version-2.02...version-2.03#files_bucket">IATI GitHub</a>.</p>
 <p>These changes are also shown in the <a href="https://docs.google.com/spreadsheets/d/1XWnzesMvLebIVLk47OIXATfhcjESVcaGnw8SJpOuCCk/edit#gid=708614106">Final Technical Summary (spreadsheet)</a>.</p>
-<p id="activities-schema">
-<h3><a href="#id8">Activities Schema</a></h3>
+<section id="activities-schema">
+<h3><a href="#id8" role="doc-backlink">Activities Schema</a></h3>
 <ul>
-<li>Added new @crs-channel-code attribute for the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/">participating-org</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/338">#338</a>) (<a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857">discussion link</a>)</li>
-<li>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> element (as a child of the iati-activity element) (<a href="https://github.com/IATI/IATI-Schemas/issues/324">#342</a>) (<a href="https://discuss.iatistandard.org/t/non-statistical-secondary-sectors-excluded-2-03/849">discussion link</a>)</li>
-<li>Updated definition: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-country/">recipient-country</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-region/">recipient-region</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">sector</a>] @percentage attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/343">#343</a>) (<a href="https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843">discussion link</a>)</li>
-<li>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">sector</a> @vocabulary attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/344">#344</a>). The % sign was removed.</li>
-<li>Updated definition: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type/">transaction/aid-type</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/default-aid-type/">default-aid-type</a>] @code attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/345">#345</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">discussion link</a>)</li>
-<li>Added new @vocabulary attributes for elements relating to <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type/">aid-type</a> (<a href="https://github.com/IATI/IATI-Schemas/issues/346">#346</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">discussion link</a>)</li>
-<li>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/capital-spend/">capital-spend</a> @percentage attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/348">#348</a>) (<a href="https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843">discussion link</a>)</li>
-<li>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/related-activity/">related-activity</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/349">#349</a>) (<a href="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840">discussion link</a>)</li>
-<li>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/default-aid-type/">default-aid-type</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/350">#350</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">discussion link</a>)</li>
-<li>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type/">transaction/aid-type</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/351">#351</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">discussion link</a>)</li>
+<li><p>Added new @crs-channel-code attribute for the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/">participating-org</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/338">#338</a>) (<a href="https://discuss.iatistandard.org/t/crs-channels-of-delivery-included-2-03/857">discussion link</a>)</p></li>
+<li><p>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> element (as a child of the iati-activity element) (<a href="https://github.com/IATI/IATI-Schemas/issues/324">#342</a>) (<a href="https://discuss.iatistandard.org/t/non-statistical-secondary-sectors-excluded-2-03/849">discussion link</a>)</p></li>
+<li><p>Updated definition: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-country/">recipient-country</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-region/">recipient-region</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">sector</a>] @percentage attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/343">#343</a>) (<a href="https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843">discussion link</a>)</p></li>
+<li><p>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">sector</a> @vocabulary attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/344">#344</a>). The % sign was removed.</p></li>
+<li><p>Updated definition: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type/">transaction/aid-type</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/default-aid-type/">default-aid-type</a>] @code attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/345">#345</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">discussion link</a>)</p></li>
+<li><p>Added new @vocabulary attributes for elements relating to <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type/">aid-type</a> (<a href="https://github.com/IATI/IATI-Schemas/issues/346">#346</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">discussion link</a>)</p></li>
+<li><p>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/capital-spend/">capital-spend</a> @percentage attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/348">#348</a>) (<a href="https://discuss.iatistandard.org/t/boundary-values-for-percentages-included-2-03/843">discussion link</a>)</p></li>
+<li><p>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/related-activity/">related-activity</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/349">#349</a>) (<a href="https://discuss.iatistandard.org/t/hierarchies-related-activity-definition-included-2-03/840">discussion link</a>)</p></li>
+<li><p>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/default-aid-type/">default-aid-type</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/350">#350</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">discussion link</a>)</p></li>
+<li><p>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type/">transaction/aid-type</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/351">#351</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">discussion link</a>)</p></li>
 </ul>
 <p>Changes and Additions to the <strong>Result</strong> element:</p>
 <ul>
-<li>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">result/indicator/reference</a> @indicator-uri attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/347">#347</a>) (<a href="https://discuss.iatistandard.org/t/guidance-on-u-r-i-usage-for-publisher-s-own-vocabularies-included-2-03/850">discussion link</a>)</li>
-<li>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">result/indicator/baseline</a> element  (<a href="https://github.com/IATI/IATI-Schemas/issues/352">#352</a>) (<a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874">discussion link</a>)</li>
-<li>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/">result/indicator</a> @value attributes (<a href="https://github.com/IATI/IATI-Schemas/issues/353">#353</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">discussion link</a>)</li>
-<li>Updated occurrence: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">result/indicator/period/target</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">result/indicator/period/actual</a>] elements (<a href="https://github.com/IATI/IATI-Schemas/issues/354">#354</a>) (<a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data-included-2-03/871">discussion link</a>)</li>
-<li>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">result/indicator/period/target</a> @value attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/355">#355</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">discussion link</a>)</li>
-<li>Updated occurrence:  <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">result/indicator/period/actual</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/356">#356</a>) (<a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data-included-2-03/871">discussion link</a>)</li>
-<li>Updated occurrence:  <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">result/indicator/period/actual</a> @value attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/358">#358</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">discussion link</a>)</li>
-<li>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/document-link/">document-link</a> element (as a child of various <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/">result</a> elements)(<a href="https://github.com/IATI/IATI-Schemas/issues/359">#359</a>) (<a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895">discussion link</a>)</li>
-<li>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/reference/">reference</a> element (as a child of the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/">result</a> element) (<a href="https://github.com/IATI/IATI-Schemas/issues/362">#362</a>) (<a href="https://discuss.iatistandard.org/t/results-vocabulary-attribute-option-included-2-03/879">discussion link</a>)</li>
-<li>Added new @aggregation-status attribute for the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/">result/indicator</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/363">#363</a>) (<a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874">discussion link</a>)</li>
-<li>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/location/">location</a> element (as a child of the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">result/indicator/baseline</a> element) (<a href="https://github.com/IATI/IATI-Schemas/issues/365">#365</a>) (<a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874">discussion link</a>)</li>
-<li>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/dimension/">dimension</a> element (as a child of the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">result/indicator/baseline</a> element) (<a href="https://github.com/IATI/IATI-Schemas/issues/366">#366</a>) (<a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data-included-2-03/871">discussion link</a>)</li>
+<li><p>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">result/indicator/reference</a> @indicator-uri attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/347">#347</a>) (<a href="https://discuss.iatistandard.org/t/guidance-on-u-r-i-usage-for-publisher-s-own-vocabularies-included-2-03/850">discussion link</a>)</p></li>
+<li><p>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">result/indicator/baseline</a> element  (<a href="https://github.com/IATI/IATI-Schemas/issues/352">#352</a>) (<a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874">discussion link</a>)</p></li>
+<li><p>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/">result/indicator</a> @value attributes (<a href="https://github.com/IATI/IATI-Schemas/issues/353">#353</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">discussion link</a>)</p></li>
+<li><p>Updated occurrence: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">result/indicator/period/target</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">result/indicator/period/actual</a>] elements (<a href="https://github.com/IATI/IATI-Schemas/issues/354">#354</a>) (<a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data-included-2-03/871">discussion link</a>)</p></li>
+<li><p>Updated occurrence: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/">result/indicator/period/target</a> @value attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/355">#355</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">discussion link</a>)</p></li>
+<li><p>Updated occurrence:  <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">result/indicator/period/actual</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/356">#356</a>) (<a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data-included-2-03/871">discussion link</a>)</p></li>
+<li><p>Updated occurrence:  <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/">result/indicator/period/actual</a> @value attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/358">#358</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">discussion link</a>)</p></li>
+<li><p>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/document-link/">document-link</a> element (as a child of various <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/">result</a> elements)(<a href="https://github.com/IATI/IATI-Schemas/issues/359">#359</a>) (<a href="https://discuss.iatistandard.org/t/add-document-link-to-results-indicator-included-2-03/895">discussion link</a>)</p></li>
+<li><p>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/reference/">reference</a> element (as a child of the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/">result</a> element) (<a href="https://github.com/IATI/IATI-Schemas/issues/362">#362</a>) (<a href="https://discuss.iatistandard.org/t/results-vocabulary-attribute-option-included-2-03/879">discussion link</a>)</p></li>
+<li><p>Added new @aggregation-status attribute for the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/">result/indicator</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/363">#363</a>) (<a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874">discussion link</a>)</p></li>
+<li><p>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/location/">location</a> element (as a child of the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">result/indicator/baseline</a> element) (<a href="https://github.com/IATI/IATI-Schemas/issues/365">#365</a>) (<a href="https://discuss.iatistandard.org/t/results-improve-consistency-of-results-standard-included-2-03/874">discussion link</a>)</p></li>
+<li><p>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/dimension/">dimension</a> element (as a child of the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/">result/indicator/baseline</a> element) (<a href="https://github.com/IATI/IATI-Schemas/issues/366">#366</a>) (<a href="https://discuss.iatistandard.org/t/results-allow-disaggregations-of-results-data-included-2-03/871">discussion link</a>)</p></li>
 </ul>
-</p>
-<p id="organisations-schema">
-<h3><a href="#id9">Organisations Schema</a></h3>
+</section>
+<section id="organisations-schema">
+<h3><a href="#id9" role="doc-backlink">Organisations Schema</a></h3>
 <ul>
-<li>Updated definition: <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/organisation-identifier/">organisation-identifier</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/361">#361</a>) (<a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851">discussion link</a>)</li>
+<li><p>Updated definition: <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/organisation-identifier/">organisation-identifier</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/361">#361</a>) (<a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851">discussion link</a>)</p></li>
 </ul>
-</p>
-<p id="activities-and-organisations-schemas">
-<h3><a href="#id10">Activities and Organisations Schemas</a></h3>
+</section>
+<section id="activities-and-organisations-schemas">
+<h3><a href="#id10" role="doc-backlink">Activities and Organisations Schemas</a></h3>
 <ul>
-<li>Updated definition: all @xml:lang attributes (<a href="https://github.com/IATI/IATI-Schemas/issues/336">#336</a>) (<a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842">discussion link</a>)</li>
-<li>Updated definition: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/">participating-org</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/planned-disbursement/provider-org/">planned-disbursement/provider-org</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/planned-disbursement/receiver-org/">planned-disbursement/receiver-org</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/provider-org/">transaction/provider-org</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/receiver-org/">transaction/receiver-org</a>, <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/recipient-org/">recipient-org-budget/recipient-org</a>] @ref attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/339">#339</a>) (<a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851">discussion link</a>)</li>
-<li>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/">reporting-org</a> @ref attribute and <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/organisation-identifier/">iati-organisation/organisation-identifier</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/339">#339</a>) (<a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851">discussion link</a>)</li>
-<li>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/">reporting-org</a> @secondary-reporter attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/340">#340</a>) (<a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846">discussion link</a>)</li>
-<li>Updated definition: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-region/">recipient-region</a>, <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/">recipient-region-budget</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">sector</a>] @vocabulary-uri attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/341">#341</a>) (<a href="https://discuss.iatistandard.org/t/guidance-on-u-r-i-usage-for-publisher-s-own-vocabularies-included-2-03/850">discussion link</a>)</li>
-<li>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/description/">description</a> element (as a child of all <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/">document-link</a> elements) (<a href="https://github.com/IATI/IATI-Schemas/issues/357">#357</a>) (<a href="https://discuss.iatistandard.org/t/document-link-description-included-2-03/841">discussion link</a>)</li>
+<li><p>Updated definition: all @xml:lang attributes (<a href="https://github.com/IATI/IATI-Schemas/issues/336">#336</a>) (<a href="https://discuss.iatistandard.org/t/language-recommend-use-of-iso-639-1-included-2-03/842">discussion link</a>)</p></li>
+<li><p>Updated definition: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/">participating-org</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/planned-disbursement/provider-org/">planned-disbursement/provider-org</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/planned-disbursement/receiver-org/">planned-disbursement/receiver-org</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/provider-org/">transaction/provider-org</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/receiver-org/">transaction/receiver-org</a>, <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/recipient-org-budget/recipient-org/">recipient-org-budget/recipient-org</a>] @ref attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/339">#339</a>) (<a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851">discussion link</a>)</p></li>
+<li><p>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/">reporting-org</a> @ref attribute and <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/organisation-identifier/">iati-organisation/organisation-identifier</a> element (<a href="https://github.com/IATI/IATI-Schemas/issues/339">#339</a>) (<a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851">discussion link</a>)</p></li>
+<li><p>Updated definition: <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/">reporting-org</a> @secondary-reporter attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/340">#340</a>) (<a href="https://discuss.iatistandard.org/t/modify-definition-of-secondary-publisher-included-2-03/846">discussion link</a>)</p></li>
+<li><p>Updated definition: [<a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-region/">recipient-region</a>, <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/">recipient-region-budget</a>, <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">sector</a>] @vocabulary-uri attribute (<a href="https://github.com/IATI/IATI-Schemas/issues/341">#341</a>) (<a href="https://discuss.iatistandard.org/t/guidance-on-u-r-i-usage-for-publisher-s-own-vocabularies-included-2-03/850">discussion link</a>)</p></li>
+<li><p>Added new <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/description/">description</a> element (as a child of all <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/document-link/">document-link</a> elements) (<a href="https://github.com/IATI/IATI-Schemas/issues/357">#357</a>) (<a href="https://discuss.iatistandard.org/t/document-link-description-included-2-03/841">discussion link</a>)</p></li>
 </ul>
-</p>
-</p>
-<p id="codelist-changes">
-<h2><a href="#id11">Codelist Changes</a></h2>
+</section>
+</section>
+<section id="codelist-changes">
+<h2><a href="#id11" role="doc-backlink">Codelist Changes</a></h2>
 <p>A full diff of all <strong>embedded</strong> codelist changes in 2.03 can be found in the <a href="https://github.com/IATI/IATI-Codelists/compare/version-2.02...version-2.03#files_bucket">IATI GitHub</a></p>
-<p id="embedded-to-non-embedded">
-<h3><a href="#id12">Embedded to Non-Embedded:</a></h3>
+<section id="embedded-to-non-embedded">
+<h3><a href="#id12" role="doc-backlink">Embedded to Non-Embedded:</a></h3>
 <p>Alongside 2.03, the following codelists have moved from Embedded to Non-Embedded (<a href="https://github.com/IATI/IATI-Codelists/issues/114">#114</a>) (<a href="https://discuss.iatistandard.org/t/redefine-selected-codelists-as-non-embedded-included-2-03/854">Discussion link</a>):</p>
 <ul>
-<li><a href="/en/iati-standard/203/codelists/ActivityScope">ActivityScope</a></li>
-<li><a href="/en/iati-standard/203/codelists/BudgetIdentifier">BudgetIdentifier</a></li>
-<li><a href="/en/iati-standard/203/codelists/BudgetIdentifierSector-category">BudgetIdentifierSector-category</a></li>
-<li><a href="/en/iati-standard/203/codelists/BudgetIdentifierSector">BudgetIdentifierSector</a></li>
-<li><a href="/en/iati-standard/203/codelists/BudgetIdentifierVocabulary">BudgetIdentifierVocabulary</a></li>
-<li><a href="/en/iati-standard/203/codelists/CRSAddOtherFlags">CRSAddOtherFlags</a></li>
-<li><a href="/en/iati-standard/203/codelists/ConditionType">ConditionType</a></li>
-<li><a href="/en/iati-standard/203/codelists/ContactType">ContactType</a></li>
-<li><a href="/en/iati-standard/203/codelists/DescriptionType">DescriptionType</a></li>
-<li><a href="/en/iati-standard/203/codelists/DisbursementChannel">DisbursementChannel</a></li>
-<li><a href="/en/iati-standard/203/codelists/DocumentCategory-category">DocumentCategory-category</a></li>
-<li><a href="/en/iati-standard/203/codelists/GeographicExactness">GeographicExactness</a></li>
-<li><a href="/en/iati-standard/203/codelists/GeographicLocationClass">GeographicLocationClass</a></li>
-<li><a href="/en/iati-standard/203/codelists/GeographicLocationReach">GeographicLocationReach</a></li>
-<li><a href="/en/iati-standard/203/codelists/GeographicVocabulary">GeographicVocabulary</a></li>
-<li><a href="/en/iati-standard/203/codelists/GeographicalPrecision">GeographicalPrecision</a></li>
-<li><a href="/en/iati-standard/203/codelists/IndicatorMeasure">IndicatorMeasure</a></li>
-<li><a href="/en/iati-standard/203/codelists/LoanRepaymentPeriod">LoanRepaymentPeriod</a></li>
-<li><a href="/en/iati-standard/203/codelists/LoanRepaymentType">LoanRepaymentType</a></li>
-<li><a href="/en/iati-standard/203/codelists/OrganisationType">OrganisationType</a></li>
-<li><a href="/en/iati-standard/203/codelists/OtherIdentifierType">OtherIdentifierType</a></li>
-<li><a href="/en/iati-standard/203/codelists/PolicyMarker">PolicyMarker</a></li>
-<li><a href="/en/iati-standard/203/codelists/PolicyMarkerVocabulary">PolicyMarkerVocabulary</a></li>
-<li><a href="/en/iati-standard/203/codelists/PublisherType">PublisherType</a></li>
-<li><a href="/en/iati-standard/203/codelists/RegionVocabulary">RegionVocabulary</a></li>
-<li><a href="/en/iati-standard/203/codelists/ResultType">ResultType</a></li>
-<li><a href="/en/iati-standard/203/codelists/SectorVocabulary">SectorVocabulary</a></li>
-<li><a href="/en/iati-standard/203/codelists/TiedStatus">TiedStatus</a></li>
-<li><a href="/en/iati-standard/203/codelists/VerificationStatus">VerificationStatus</a></li>
+<li><p><a href="/en/iati-standard/203/codelists/ActivityScope">ActivityScope</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/BudgetIdentifier">BudgetIdentifier</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/BudgetIdentifierSector-category">BudgetIdentifierSector-category</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/BudgetIdentifierSector">BudgetIdentifierSector</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/BudgetIdentifierVocabulary">BudgetIdentifierVocabulary</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/CRSAddOtherFlags">CRSAddOtherFlags</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/ConditionType">ConditionType</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/ContactType">ContactType</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/DescriptionType">DescriptionType</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/DisbursementChannel">DisbursementChannel</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/DocumentCategory-category">DocumentCategory-category</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/GeographicExactness">GeographicExactness</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/GeographicLocationClass">GeographicLocationClass</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/GeographicLocationReach">GeographicLocationReach</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/GeographicVocabulary">GeographicVocabulary</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/GeographicalPrecision">GeographicalPrecision</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/IndicatorMeasure">IndicatorMeasure</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/LoanRepaymentPeriod">LoanRepaymentPeriod</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/LoanRepaymentType">LoanRepaymentType</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/OrganisationType">OrganisationType</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/OtherIdentifierType">OtherIdentifierType</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/PolicyMarker">PolicyMarker</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/PolicyMarkerVocabulary">PolicyMarkerVocabulary</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/PublisherType">PublisherType</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/RegionVocabulary">RegionVocabulary</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/ResultType">ResultType</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/SectorVocabulary">SectorVocabulary</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/TiedStatus">TiedStatus</a></p></li>
+<li><p><a href="/en/iati-standard/203/codelists/VerificationStatus">VerificationStatus</a></p></li>
 </ul>
-</p>
-<p id="new-codelists">
-<h3><a href="#id13">New Codelists</a></h3>
+</section>
+<section id="new-codelists">
+<h3><a href="#id13" role="doc-backlink">New Codelists</a></h3>
 <p><strong>Non-Embedded:</strong></p>
 <ul>
-<li>Added <a href="/en/iati-standard/203/codelists/AidTypeVocabulary">AidTypeVocabulary</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/185">#185</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">Discussion link</a>)</li>
-<li>Added <a href="/en/iati-standard/203/codelists/BudgetNotProvided">BudgetNotProvided</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/184">#184</a>) (<a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845">Discussion link</a>)</li>
-<li>Added <a href="/en/iati-standard/203/codelists/ResultVocabulary">ResultVocabulary</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists/issues/181">#181</a>) (<a href="https://discuss.iatistandard.org/t/results-vocabulary-attribute-option-included-2-03/879">Discussion link</a>)</li>
-<li>Added <a href="/en/iati-standard/203/codelists/TagVocabulary">TagVocabulary</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/178">#178</a>) (<a href="https://discuss.iatistandard.org/t/non-statistical-secondary-sectors-excluded-2-03/849">Discussion link</a>)</li>
+<li><p>Added <a href="/en/iati-standard/203/codelists/AidTypeVocabulary">AidTypeVocabulary</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/185">#185</a>) (<a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">Discussion link</a>)</p></li>
+<li><p>Added <a href="/en/iati-standard/203/codelists/BudgetNotProvided">BudgetNotProvided</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/184">#184</a>) (<a href="https://discuss.iatistandard.org/t/add-budget-exempt-attribute-and-codelist-included-2-03/845">Discussion link</a>)</p></li>
+<li><p>Added <a href="/en/iati-standard/203/codelists/ResultVocabulary">ResultVocabulary</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists/issues/181">#181</a>) (<a href="https://discuss.iatistandard.org/t/results-vocabulary-attribute-option-included-2-03/879">Discussion link</a>)</p></li>
+<li><p>Added <a href="/en/iati-standard/203/codelists/TagVocabulary">TagVocabulary</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/178">#178</a>) (<a href="https://discuss.iatistandard.org/t/non-statistical-secondary-sectors-excluded-2-03/849">Discussion link</a>)</p></li>
 </ul>
-</p>
-<p id="updated-codelists">
-<h3><a href="#id14">Updated Codelists</a></h3>
+</section>
+<section id="updated-codelists">
+<h3><a href="#id14" role="doc-backlink">Updated Codelists</a></h3>
 <p><strong>Embedded:</strong></p>
 <ul>
-<li>Added codes: 12 ‘Outgoing Pledge’ and 13 ‘Incoming Pledge’ to <a href="/en/iati-standard/203/codelists/TransactionType">TransactionType</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists/issues/112">#112</a>) (<a href="https://discuss.iatistandard.org/t/transactiontype-codes-included-2-03/852">Discussion link</a>).</li>
+<li><p>Added codes: 12 ‘Outgoing Pledge’ and 13 ‘Incoming Pledge’ to <a href="/en/iati-standard/203/codelists/TransactionType">TransactionType</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists/issues/112">#112</a>) (<a href="https://discuss.iatistandard.org/t/transactiontype-codes-included-2-03/852">Discussion link</a>).</p></li>
 </ul>
 <p><strong>Non-Embedded:</strong></p>
 <ul>
-<li>Added codes: 11 ‘Local Government’, 24 ‘Partner Country based NGO’, 71 ‘Private Sector in Provider Country’, 71 ‘Private Sector in Aid Recipient Country’, 73 ‘Private Sector in Third Country’ and 90 ‘Other’ to <a href="/en/iati-standard/203/codelists/OrganisationType">OrganisationType</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists/issues/113">#113</a>) (<a href="https://discuss.iatistandard.org/t/organisation-type-codes-additions-included-2-03/858">Discussion link</a>)</li>
-<li>Added codes: 3 ‘Nominal’, 4 ‘Ordinal’ and 5 ‘Qualitative’ to <a href="/en/iati-standard/203/codelists/IndicatorMeasure">IndicatorMeasure</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/179">#179</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">Discussion link</a>)</li>
-<li>Added Code 2.03 to <a href="/en/iati-standard/203/codelists/Version">Version</a> (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/238">#238</a>)</li>
+<li><p>Added codes: 11 ‘Local Government’, 24 ‘Partner Country based NGO’, 71 ‘Private Sector in Provider Country’, 71 ‘Private Sector in Aid Recipient Country’, 73 ‘Private Sector in Third Country’ and 90 ‘Other’ to <a href="/en/iati-standard/203/codelists/OrganisationType">OrganisationType</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists/issues/113">#113</a>) (<a href="https://discuss.iatistandard.org/t/organisation-type-codes-additions-included-2-03/858">Discussion link</a>)</p></li>
+<li><p>Added codes: 3 ‘Nominal’, 4 ‘Ordinal’ and 5 ‘Qualitative’ to <a href="/en/iati-standard/203/codelists/IndicatorMeasure">IndicatorMeasure</a> Codelist (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/179">#179</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">Discussion link</a>)</p></li>
+<li><p>Added Code 2.03 to <a href="/en/iati-standard/203/codelists/Version">Version</a> (<a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/issues/238">#238</a>)</p></li>
 </ul>
 <dd>
 </dd>
-</p>
-</p>
-<p id="ruleset-changes">
-<h2><a href="#id15">Ruleset Changes</a></h2>
+</section>
+</section>
+<section id="ruleset-changes">
+<h2><a href="#id15" role="doc-backlink">Ruleset Changes</a></h2>
 <p>A full diff of all Ruleset changes in 2.03 can be found in the <a href="https://github.com/IATI/IATI-Codelists/compare/version-2.02...version-2.03#files_bucket">IATI GitHub</a></p>
 <ul>
-<li>Added rule: reference element (<a href="https://github.com/IATI/IATI-Rulesets/issues/48">#48</a>) (<a href="https://discuss.iatistandard.org/t/results-vocabulary-attribute-option-included-2-03/879">Discussion link</a>)</li>
-<li>Added rules: result @value presence - quantitative (<a href="https://github.com/IATI/IATI-Rulesets/issues/51">#51</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">Discussion link</a>)</li>
-<li>Added rules: result @value presence - qualitative  (<a href="https://github.com/IATI/IATI-Rulesets/issues/52">#52</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">Discussion link</a>)</li>
+<li><p>Added rule: reference element (<a href="https://github.com/IATI/IATI-Rulesets/issues/48">#48</a>) (<a href="https://discuss.iatistandard.org/t/results-vocabulary-attribute-option-included-2-03/879">Discussion link</a>)</p></li>
+<li><p>Added rules: result @value presence - quantitative (<a href="https://github.com/IATI/IATI-Rulesets/issues/51">#51</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">Discussion link</a>)</p></li>
+<li><p>Added rules: result @value presence - qualitative  (<a href="https://github.com/IATI/IATI-Rulesets/issues/52">#52</a>) (<a href="https://discuss.iatistandard.org/t/results-represent-more-than-quantitative-data-included-2-03/872">Discussion link</a>)</p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

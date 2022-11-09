@@ -1,23 +1,22 @@
 <div class="body" role="main">
-<p id="tied-status">
+<section id="tied-status">
 <h1>tied-status</h1>
 <p><code>iati-activities/iati-activity/transaction/tied-status</code></p>
 <p>This is the reference page for the XML element <code>tied-status</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Optional element to override the top-level
 default-tied-status element on a
 transaction-by-transaction basis if needed.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur no more than once (within each parent element).</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-transaction-tied-status-code">
-<dt>@code</dt>
-<dd><p>An IATI code interpreting the usage of Columns 36-38
+<dt>@code</dt><dd><p>An IATI code interpreting the usage of Columns 36-38
 of the CRS++ reporting format. (Amount tied, Amount
 partially untied, Amount tied)</p>
 <p>This attribute is required.</p>
@@ -25,8 +24,8 @@ partially untied, Amount tied)</p>
 <p>This value must be on the <a href="../../../../../codelists/TiedStatus/"><span>TiedStatus codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>tied-status</code> of a <code>transaction</code> in an <code>iati-activity</code>.</p>
 
@@ -50,7 +49,7 @@ partially untied, Amount tied)</p>
    &lt;/receiver-org&gt;
    &lt;disbursement-channel code="1" /&gt;
    &lt;sector vocabulary="2" code="111" /&gt;
-   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="TM" /&gt;
    &lt;recipient-region code="616" vocabulary="1" /&gt;   
    &lt;flow-type code="10" /&gt;
@@ -60,21 +59,22 @@ partially untied, Amount tied)</p>
 </span>  &lt;/transaction&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>2.01</h3>
 <p>Freetext is <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">no longer allowed</a>  within this element.</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1398">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/transaction/tied-status.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1398">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/transaction/tied-status.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

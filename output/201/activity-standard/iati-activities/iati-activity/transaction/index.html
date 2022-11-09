@@ -1,30 +1,29 @@
 <div class="body" role="main">
-<p id="transaction">
+<section id="transaction">
 <h1>transaction</h1>
 <p><code>iati-activities/iati-activity/transaction</code></p>
 <p>This is the reference page for the XML element <code>transaction</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Transactions recording committed or actual funds flowing in or
 out of an aid activity.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element may occur any number of times.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L665">3.7.1</a>: Recipient country or recipient region should be declared for either the activity or for all transactions.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L683">3.7.2</a>: Recipient country or recipient region should be declared for either the activity or for all transactions.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-transaction-ref">
-<dt>@ref</dt>
-<dd><p>An internal reference linking this transaction back to the
+<dt>@ref</dt><dd><p>An internal reference linking this transaction back to the
 publisher’s financial management system.</p>
 <p>This value must be of type xsd:string.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>transaction</code> in an <code>iati-activity</code>.</p>
 
@@ -56,7 +55,7 @@ publisher’s financial management system.</p>
    &lt;/receiver-org&gt;
    &lt;disbursement-channel code="1" /&gt;
    &lt;sector vocabulary="2" code="111" /&gt;
-   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="AF" /&gt;
    &lt;recipient-region code="456" vocabulary="1" /&gt;   
    &lt;flow-type code="10" /&gt;
@@ -69,16 +68,16 @@ publisher’s financial management system.</p>
 
 <p>The <code>transaction</code> element can be repeated in any <code>iati-activity</code>.</p>
 
-</p>
-<p id="developer-tools">
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L905">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/transaction.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L905">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/transaction.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
@@ -98,6 +97,7 @@ publisher’s financial management system.</p>
 <li><a href="tied-status/">tied-status</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

@@ -1,36 +1,33 @@
 <div class="body" role="main">
-<p id="recipient-region">
+<section id="recipient-region">
 <h1>recipient-region</h1>
 <p><code>iati-organisations/iati-organisation/recipient-region-budget/recipient-region</code></p>
 <p>This is the reference page for the XML element <code>recipient-region</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The supranational geographic region where funds have been allocated.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur once and only once (within each parent element).</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-organisations-iati-organisation-recipient-region-budget-recipient-region-vocabulary">
-<dt>@vocabulary</dt>
-<dd><p>An IATI code for the vocabulary from which the region code is
+<dt>@vocabulary</dt><dd><p>An IATI code for the vocabulary from which the region code is
 drawn. If it is not present, code 1 (‘OECD DAC’) is assumed.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../../codelists/RegionVocabulary/"><span>RegionVocabulary codelist</span></a>.</p>
 </dd>
 </dl>
 <dl id="iati-organisations-iati-organisation-recipient-region-budget-recipient-region-vocabulary-uri">
-<dt>@vocabulary-uri</dt>
-<dd><p>If the vocabulary is 99 (reporting organisation), the URI
+<dt>@vocabulary-uri</dt><dd><p>If the vocabulary is 99 (reporting organisation), the URI
 where this internal vocabulary is defined.</p>
 <p>This value must be of type xsd:anyURI.</p>
 </dd>
 </dl>
 <dl id="iati-organisations-iati-organisation-recipient-region-budget-recipient-region-code">
-<dt>@code</dt>
-<dd><p>Either an OECD DAC, UN region code or (if code ‘99’ Reporting
+<dt>@code</dt><dd><p>Either an OECD DAC, UN region code or (if code ‘99’ Reporting
 organisation is selected for recipient-region/@vocabulary) a
 code from your internal vocabulary. The codelist is determined
 by vocabulary attribute. The value in recipient-region/@code
@@ -40,8 +37,8 @@ code 1 (‘OECD DAC’) is used.</p>
 <p>This value must be on the <a href="../../../../../codelists/Region/"><span>Region codelist</span></a>, if the relevant vocabulary is used.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>recipient-region</code> in context of <code>recipient-region-budget</code> element:</p>
 
@@ -54,7 +51,8 @@ code 1 (‘OECD DAC’) is used.</p>
 <p>If a publisher uses a vocabulary of 99 (i.e. ‘Reporting Organisation’), then the <code>@vocabulary-uri</code> attribute should also be used, for example:
 .. code-block:: xml</p>
 <dd>
-<p class="">&lt;recipient-region code=”A1” vocabulary=”99” vocabulary-uri=”<a href="http://example.com/vocab.html">http://example.com/vocab.html</a>” /&gt;</p></dd>
+<p class=""><p>&lt;recipient-region code=”A1” vocabulary=”99” vocabulary-uri=”<a href="http://example.com/vocab.html">http://example.com/vocab.html</a>” /&gt;</p>
+</p></dd>
 <p>Example of <code>recipient-region</code> in context of a complete <code>recipient-region-budget</code> element:</p>
 <p><code><pre>  &lt;recipient-region-budget status="2"&gt;
 <span>   &lt;recipient-region vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" /&gt;
@@ -68,29 +66,30 @@ code 1 (‘OECD DAC’) is used.</p>
   &lt;/recipient-region-budget&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>2.02</h3>
 <p>The optional <code>recipient-region-budget</code> element was <a href="http://support.iatistandard.org/entries/79323113-Org-Standard-recipient-region-budget">added</a>.</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-organisations-schema.xsd#L405">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-organisations-schema.xsd#L405">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/organisation-standard/iati-organisations/iati-organisation/recipient-region-budget/recipient-region.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="0" name="order"/></div>

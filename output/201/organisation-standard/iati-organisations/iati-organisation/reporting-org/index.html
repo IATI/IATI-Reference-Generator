@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="reporting-org">
+<section id="reporting-org">
 <h1>reporting-org</h1>
 <p><code>iati-organisations/iati-organisation/reporting-org</code></p>
 <p>This is the reference page for the XML element <code>reporting-org</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The organisation issuing the report.
 May be a primary source (reporting on its own activity as
@@ -15,16 +15,15 @@ May contain the organisation name as content.</p>
 @ref AND this @ref must be the same as the iati-identifier
 recorded in the registry publisher record of the account under
 which this file is published.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur once and only once (within each parent element).</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-organisations-iati-organisation-reporting-org-ref">
-<dt>@ref</dt>
-<dd><p>Machine-readable identification string for the organisation issuing the report. Must be in the format {RegistrationAgency}-{RegistrationNumber} where {RegistrationAgency} is a valid code in the RegistrationAgency code list and {RegistrationNumber } is a valid identifier issued by the {RegistrationAgency}</p>
+<dt>@ref</dt><dd><p>Machine-readable identification string for the organisation issuing the report. Must be in the format {RegistrationAgency}-{RegistrationNumber} where {RegistrationAgency} is a valid code in the RegistrationAgency code list and {RegistrationNumber } is a valid identifier issued by the {RegistrationAgency}</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L988">1.18.1</a>: The reporting-org identifier should not start or end with spaces or newlines.</p>
@@ -33,24 +32,22 @@ which this file is published.</p>
 </dd>
 </dl>
 <dl id="iati-organisations-iati-organisation-reporting-org-type">
-<dt>@type</dt>
-<dd><p>The type of organisation issuing the report. See IATI codelist for values.</p>
+<dt>@type</dt><dd><p>The type of organisation issuing the report. See IATI codelist for values.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../codelists/OrganisationType/"><span>OrganisationType codelist</span></a>.</p>
 </dd>
 </dl>
 <dl id="iati-organisations-iati-organisation-reporting-org-secondary-reporter">
-<dt>@secondary-reporter</dt>
-<dd><p>A flag indicating that the reporting organisation is a
+<dt>@secondary-reporter</dt><dd><p>A flag indicating that the reporting organisation is a
 secondary publisher: publishing data for which it is not
 directly responsible. This flag must not be reported by
 primary source publishers</p>
 <p>This value must be of type xsd:boolean.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>reporting-org</code> for an <code>iati-organisation</code>.</p>
 
@@ -64,35 +61,36 @@ primary source publishers</p>
 <span>  &lt;/reporting-org&gt;
 </span></pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id4">
+<section id="id4">
 <h3>2.01</h3>
 <p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element.</p>
-</p>
-<p id="id5">
+</section>
+<section id="id5">
 <h3>1.04</h3>
 
 <p>The <code>@secondary-publisher</code> attribute was introduced in 1.04.</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-common.xsd#L81">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/organisation-standard/iati-organisations/iati-organisation/reporting-org.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-common.xsd#L81">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/organisation-standard/iati-organisations/iati-organisation/reporting-org.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="2" name="order"/></div>

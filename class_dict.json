@@ -1,15 +1,7 @@
 {
     "203": {
-        "div": {
-            "section": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml",
-            "line-block": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/schema",
-            "line": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/schema",
-            "highlight-xml": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight-default": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result/indicator/period/period-start",
-            "highlight-json": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/ruleset-spec"
+        "section": {
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml"
         },
         "h1": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml"
@@ -21,9 +13,7 @@
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "p": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml",
-            "first": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "last": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml"
         },
         "ul": {
             "simple": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml",
@@ -40,13 +30,24 @@
         "strong": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml"
         },
+        "div": {
+            "clearer": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml",
+            "line-block": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/schema",
+            "line": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/schema",
+            "highlight-xml|notranslate": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight-default|notranslate": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table",
+            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities",
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result/indicator/period/period-start",
+            "highlight-json|notranslate": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/ruleset-spec"
+        },
         "em": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/schema"
         },
         "span": {
             "doc": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/schema",
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "c": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "cm": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
             "nt": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
             "na": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
             "s": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml",
@@ -63,19 +64,14 @@
             "xref|std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/CollaborationType",
             "std|std-ref": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/CollaborationType",
             "problematic": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency",
-            "s2": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/ruleset-spec"
+            "s2": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/ruleset-spec",
+            "w": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/rulesets/ruleset-spec"
         },
         "pre": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/example-xml"
         },
         "table": {
-            "docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "colgroup": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "col": {
-            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "docutils|align-default": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "thead": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
@@ -100,10 +96,10 @@
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "code": {
-            "docutils|literal": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities"
+            "docutils|literal|notranslate": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dl": {
-            "docutils": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities"
+            "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dt": {
             "None": "IATI-Standard-SSOT-version-2.03/docs/en/_build/dirhtml/activity-standard/iati-activities"
@@ -128,16 +124,8 @@
         }
     },
     "202": {
-        "div": {
-            "section": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml",
-            "line-block": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/schema",
-            "line": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/schema",
-            "highlight-xml": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight-default": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities",
-            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result/indicator/period/period-start",
-            "highlight-json": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/rulesets/ruleset-spec"
+        "section": {
+            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml"
         },
         "h1": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml"
@@ -149,9 +137,7 @@
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "p": {
-            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml",
-            "first": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "last": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml"
         },
         "ul": {
             "simple": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml",
@@ -168,13 +154,24 @@
         "strong": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml"
         },
+        "div": {
+            "clearer": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml",
+            "line-block": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/schema",
+            "line": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/schema",
+            "highlight-xml|notranslate": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight-default|notranslate": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table",
+            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities",
+            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result/indicator/period/period-start",
+            "highlight-json|notranslate": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/rulesets/ruleset-spec"
+        },
         "em": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/schema"
         },
         "span": {
             "doc": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/schema",
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "c": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "cm": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
             "nt": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
             "na": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
             "s": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml",
@@ -191,19 +188,14 @@
             "xref|std|std-ref": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/CollaborationType",
             "std|std-ref": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/CollaborationType",
             "problematic": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency",
-            "s2": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/rulesets/ruleset-spec"
+            "s2": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/rulesets/ruleset-spec",
+            "w": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/rulesets/ruleset-spec"
         },
         "pre": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/example-xml"
         },
         "table": {
-            "docutils": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "colgroup": {
-            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "col": {
-            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "docutils|align-default": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "thead": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
@@ -225,10 +217,10 @@
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "code": {
-            "docutils|literal": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities"
+            "docutils|literal|notranslate": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dl": {
-            "docutils": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities"
+            "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dt": {
             "None": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml/activity-standard/iati-activities"
@@ -253,16 +245,8 @@
         }
     },
     "201": {
-        "div": {
-            "section": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml",
-            "line-block": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/schema",
-            "line": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/schema",
-            "highlight-xml": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight-default": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities",
-            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result/indicator/period/period-start",
-            "highlight-json": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/rulesets/ruleset-spec"
+        "section": {
+            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml"
         },
         "h1": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml"
@@ -274,9 +258,7 @@
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "p": {
-            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml",
-            "first": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "last": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml"
         },
         "ul": {
             "simple": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml",
@@ -293,13 +275,24 @@
         "strong": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml"
         },
+        "div": {
+            "clearer": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml",
+            "line-block": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/schema",
+            "line": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/schema",
+            "highlight-xml|notranslate": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight-default|notranslate": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table",
+            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities",
+            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/result/indicator/period/period-start",
+            "highlight-json|notranslate": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/rulesets/ruleset-spec"
+        },
         "em": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/schema"
         },
         "span": {
             "doc": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/schema",
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "c": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "cm": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
             "nt": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
             "na": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
             "s": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml",
@@ -316,19 +309,14 @@
             "xref|std|std-ref": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/CollaborationType",
             "std|std-ref": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/CollaborationType",
             "problematic": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency",
-            "s2": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/rulesets/ruleset-spec"
+            "s2": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/rulesets/ruleset-spec",
+            "w": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/rulesets/ruleset-spec"
         },
         "pre": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/example-xml"
         },
         "table": {
-            "docutils": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "colgroup": {
-            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "col": {
-            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "docutils|align-default": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "thead": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
@@ -350,10 +338,10 @@
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "code": {
-            "docutils|literal": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities"
+            "docutils|literal|notranslate": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dl": {
-            "docutils": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities"
+            "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dt": {
             "None": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml/activity-standard/iati-activities"
@@ -378,15 +366,8 @@
         }
     },
     "105": {
-        "div": {
-            "section": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml",
-            "line-block": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema",
-            "line": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema",
-            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard",
-            "highlight-xml": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight-default": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/activity-date"
+        "section": {
+            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml"
         },
         "h1": {
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml"
@@ -398,9 +379,7 @@
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "p": {
-            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml",
-            "first": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "last": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml"
         },
         "h2": {
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml"
@@ -408,13 +387,23 @@
         "strong": {
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml"
         },
+        "div": {
+            "clearer": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml",
+            "line-block": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema",
+            "line": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema",
+            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard",
+            "highlight-xml|notranslate": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight-default|notranslate": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table",
+            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/activity-date"
+        },
         "em": {
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema"
         },
         "span": {
             "doc": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema",
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "c": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "cm": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
             "nt": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
             "na": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
             "s": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml",
@@ -436,9 +425,7 @@
         },
         "ul": {
             "simple": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema",
-            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard",
-            "first|last": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/dates",
-            "first|last|simple": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/codelists-guides/codelist-api"
+            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard"
         },
         "li": {
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema",
@@ -459,13 +446,7 @@
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/example-xml"
         },
         "table": {
-            "docutils": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "colgroup": {
-            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "col": {
-            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "docutils|align-default": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "thead": {
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table"
@@ -484,11 +465,11 @@
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "code": {
-            "docutils|literal": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities"
+            "docutils|literal|notranslate": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dl": {
-            "docutils": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities",
-            "first|docutils": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/dates"
+            "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities",
+            "simple": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/overview/dates"
         },
         "dt": {
             "None": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/activity-standard/iati-activities"
@@ -516,15 +497,8 @@
         }
     },
     "104": {
-        "div": {
-            "section": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml",
-            "line-block": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema",
-            "line": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema",
-            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard",
-            "highlight-xml": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "highlight-default": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/activity-date"
+        "section": {
+            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml"
         },
         "h1": {
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml"
@@ -536,9 +510,7 @@
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists/OrganisationRegistrationAgency"
         },
         "p": {
-            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml",
-            "first": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table",
-            "last": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml"
         },
         "h2": {
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml"
@@ -546,13 +518,23 @@
         "strong": {
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml"
         },
+        "div": {
+            "clearer": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml",
+            "line-block": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema",
+            "line": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema",
+            "toctree-wrapper|compound": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard",
+            "highlight-xml|notranslate": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "highlight-default|notranslate": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table",
+            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities/iati-activity/activity-date"
+        },
         "em": {
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema"
         },
         "span": {
             "doc": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema",
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
-            "c": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
+            "cm": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
             "nt": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
             "na": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
             "s": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml",
@@ -574,8 +556,7 @@
         },
         "ul": {
             "simple": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema",
-            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard",
-            "first|last": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/dates"
+            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard"
         },
         "li": {
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema",
@@ -596,13 +577,7 @@
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/example-xml"
         },
         "table": {
-            "docutils": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "colgroup": {
-            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table"
-        },
-        "col": {
-            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table"
+            "docutils|align-default": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "thead": {
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table"
@@ -621,11 +596,11 @@
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/summary-table"
         },
         "code": {
-            "docutils|literal": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities"
+            "docutils|literal|notranslate": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities"
         },
         "dl": {
-            "docutils": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities",
-            "first|docutils": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/dates"
+            "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities",
+            "simple": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/overview/dates"
         },
         "dt": {
             "None": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/activity-standard/iati-activities"
@@ -948,10 +923,10 @@
             "None": "IATI-Standard-SSOT-version-1.03/103.new/changelog"
         },
         "img": {
-            "size-full|wp-image-1234|": "IATI-Standard-SSOT-version-1.03/103.new/codelists",
+            "size-full|wp-image-1234": "IATI-Standard-SSOT-version-1.03/103.new/codelists",
             "alignright|size-full|wp-image-3233": "IATI-Standard-SSOT-version-1.03/103.new/old-standard-tables",
             "alignright|size-full|wp-image-3281": "IATI-Standard-SSOT-version-1.03/103.new/old-standard-tables",
-            "size-full|wp-image-3322|": "IATI-Standard-SSOT-version-1.03/103.new/getting-started/organisation-data/organisation-identifiers",
+            "size-full|wp-image-3322": "IATI-Standard-SSOT-version-1.03/103.new/getting-started/organisation-data/organisation-identifiers",
             "None": "IATI-Standard-SSOT-version-1.03/103.new/get-involved",
             "alignright|wp-image-1345": "IATI-Standard-SSOT-version-1.03/103.new/get-involved"
         },
@@ -1330,10 +1305,10 @@
         },
         "img": {
             "size-full|wp-image-2800": "IATI-Standard-SSOT-version-1.02/102.new/governance",
-            "size-full|wp-image-1234|": "IATI-Standard-SSOT-version-1.02/102.new/codelists",
+            "size-full|wp-image-1234": "IATI-Standard-SSOT-version-1.02/102.new/codelists",
             "alignright|size-full|wp-image-3233": "IATI-Standard-SSOT-version-1.02/102.new/old-standard-tables",
             "alignright|size-full|wp-image-3281": "IATI-Standard-SSOT-version-1.02/102.new/old-standard-tables",
-            "size-full|wp-image-3322|": "IATI-Standard-SSOT-version-1.02/102.new/guides/organisation-data/organisation-identifiers",
+            "size-full|wp-image-3322": "IATI-Standard-SSOT-version-1.02/102.new/guides/organisation-data/organisation-identifiers",
             "None": "IATI-Standard-SSOT-version-1.02/102.new/get-involved",
             "alignright|wp-image-1345": "IATI-Standard-SSOT-version-1.02/102.new/get-involved"
         },
@@ -1673,7 +1648,7 @@
         },
         "img": {
             "None": "IATI-Standard-SSOT-version-1.01/101.new",
-            "size-full|wp-image-1234|": "IATI-Standard-SSOT-version-1.01/101.new/codelists",
+            "size-full|wp-image-1234": "IATI-Standard-SSOT-version-1.01/101.new/codelists",
             "alignright|size-full|wp-image-3233": "IATI-Standard-SSOT-version-1.01/101.new/old-standard-tables",
             "alignright|size-full|wp-image-3281": "IATI-Standard-SSOT-version-1.01/101.new/old-standard-tables"
         },
@@ -1784,11 +1759,8 @@
         }
     },
     "guidance": {
-        "div": {
-            "section": "IATI-Guidance/en/_build/dirhtml",
-            "highlight-xml": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "highlight": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "None": "IATI-Guidance/en/_build/dirhtml/activity-budgets"
+        "section": {
+            "None": "IATI-Guidance/en/_build/dirhtml"
         },
         "h1": {
             "None": "IATI-Guidance/en/_build/dirhtml"
@@ -1797,20 +1769,16 @@
             "headerlink": "IATI-Guidance/en/_build/dirhtml",
             "reference|external": "IATI-Guidance/en/_build/dirhtml",
             "reference|internal": "IATI-Guidance/en/_build/dirhtml/activity-classifications",
-            "footnote-reference": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "fn-backref": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "footnote-reference|brackets": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "None": "IATI-Guidance/en/_build/dirhtml/covid-19",
             "reference|internal|image-reference": "IATI-Guidance/en/_build/dirhtml/understanding-results"
         },
         "p": {
-            "None": "IATI-Guidance/en/_build/dirhtml",
-            "first": "IATI-Guidance/en/_build/dirhtml/activity-classifications",
-            "last": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
+            "None": "IATI-Guidance/en/_build/dirhtml"
         },
         "ul": {
             "simple": "IATI-Guidance/en/_build/dirhtml",
-            "None": "IATI-Guidance/en/_build/dirhtml/activity-dates-status",
-            "first|last": "IATI-Guidance/en/_build/dirhtml/related-data",
-            "first|last|simple": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
+            "None": "IATI-Guidance/en/_build/dirhtml/activity-dates-status"
         },
         "li": {
             "None": "IATI-Guidance/en/_build/dirhtml"
@@ -1818,34 +1786,38 @@
         "span": {
             "None": "IATI-Guidance/en/_build/dirhtml",
             "doc": "IATI-Guidance/en/_build/dirhtml/activity-classifications",
+            "fn-bracket": "IATI-Guidance/en/_build/dirhtml/covid-19",
             "nt": "IATI-Guidance/en/_build/dirhtml/covid-19",
             "na": "IATI-Guidance/en/_build/dirhtml/covid-19",
             "s": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "label": "IATI-Guidance/en/_build/dirhtml/covid-19",
             "pre": "IATI-Guidance/en/_build/dirhtml/humanitarian",
-            "c": "IATI-Guidance/en/_build/dirhtml/self-defined-vocabularies"
+            "cm": "IATI-Guidance/en/_build/dirhtml/self-defined-vocabularies"
+        },
+        "div": {
+            "clearer": "IATI-Guidance/en/_build/dirhtml",
+            "highlight-xml|notranslate": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "highlight": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "None": "IATI-Guidance/en/_build/dirhtml/activity-budgets"
         },
         "h2": {
             "None": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
         },
         "table": {
-            "colwidths-given|docutils": "IATI-Guidance/en/_build/dirhtml/activity-classifications",
-            "docutils|footnote": "IATI-Guidance/en/_build/dirhtml/covid-19",
-            "docutils": "IATI-Guidance/en/_build/dirhtml/humanitarian"
+            "docutils|align-default": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
         },
         "colgroup": {
             "None": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
         },
         "col": {
-            "None": "IATI-Guidance/en/_build/dirhtml/activity-classifications",
-            "label": "IATI-Guidance/en/_build/dirhtml/covid-19"
+            "None": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
         },
         "thead": {
             "None": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
         },
         "tr": {
             "row-odd": "IATI-Guidance/en/_build/dirhtml/activity-classifications",
-            "row-even": "IATI-Guidance/en/_build/dirhtml/activity-classifications",
-            "None": "IATI-Guidance/en/_build/dirhtml/covid-19"
+            "row-even": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
         },
         "th": {
             "head": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
@@ -1854,8 +1826,7 @@
             "None": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
         },
         "td": {
-            "None": "IATI-Guidance/en/_build/dirhtml/activity-classifications",
-            "label": "IATI-Guidance/en/_build/dirhtml/covid-19"
+            "None": "IATI-Guidance/en/_build/dirhtml/activity-classifications"
         },
         "strong": {
             "None": "IATI-Guidance/en/_build/dirhtml/covid-19"
@@ -1866,11 +1837,15 @@
         "em": {
             "None": "IATI-Guidance/en/_build/dirhtml/covid-19"
         },
+        "aside": {
+            "footnote-list|brackets": "IATI-Guidance/en/_build/dirhtml/covid-19",
+            "footnote|brackets": "IATI-Guidance/en/_build/dirhtml/covid-19"
+        },
         "ol": {
             "arabic|simple": "IATI-Guidance/en/_build/dirhtml/humanitarian"
         },
         "code": {
-            "docutils|literal": "IATI-Guidance/en/_build/dirhtml/humanitarian"
+            "docutils|literal|notranslate": "IATI-Guidance/en/_build/dirhtml/humanitarian"
         },
         "blockquote": {
             "None": "IATI-Guidance/en/_build/dirhtml/activity-budgets"
@@ -1882,8 +1857,7 @@
             "docutils": "IATI-Guidance/en/_build/dirhtml/sdg-guidance"
         },
         "dl": {
-            "first|docutils": "IATI-Guidance/en/_build/dirhtml/related-data",
-            "docutils": "IATI-Guidance/en/_build/dirhtml/sub-national-locations"
+            "simple": "IATI-Guidance/en/_build/dirhtml/related-data"
         },
         "dt": {
             "None": "IATI-Guidance/en/_build/dirhtml/related-data"
@@ -1893,18 +1867,8 @@
         }
     },
     "upgrades": {
-        "div": {
-            "section": "IATI-Upgrades/en/_build/dirhtml",
-            "toctree-wrapper|compound": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard",
-            "contents|topic": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "highlight-xml": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "highlight": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
-            "first|last|highlight-xml": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "last|highlight-xml": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-04/location-summary",
-            "line-block": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-05",
-            "line": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-05",
-            "first|line-block": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-03/1-03-changes"
+        "section": {
+            "None": "IATI-Upgrades/en/_build/dirhtml"
         },
         "h1": {
             "None": "IATI-Upgrades/en/_build/dirhtml"
@@ -1919,9 +1883,7 @@
         },
         "p": {
             "None": "IATI-Upgrades/en/_build/dirhtml",
-            "first": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
-            "last": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
-            "topic-title|first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+            "topic-title": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
         },
         "span": {
             "doc": "IATI-Upgrades/en/_build/dirhtml",
@@ -1939,29 +1901,35 @@
         "h2": {
             "None": "IATI-Upgrades/en/_build/dirhtml"
         },
+        "div": {
+            "clearer": "IATI-Upgrades/en/_build/dirhtml",
+            "toctree-wrapper|compound": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard",
+            "highlight-xml|notranslate": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "highlight": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
+            "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/decimal-upgrade-to-2-03/2-03-changes",
+            "line-block": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-05",
+            "line": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/v1-upgrades/decimal-upgrade-to-1-05"
+        },
         "strong": {
             "None": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard"
         },
         "ul": {
             "simple": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard",
-            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
-            "first|last|simple": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating",
-            "first": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+            "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
         },
         "li": {
             "None": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard",
             "toctree-l1": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01"
         },
         "code": {
-            "docutils|literal": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/codelist-management"
+            "docutils|literal|notranslate": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/codelist-management"
         },
         "ol": {
             "arabic|simple": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process",
-            "first|last|loweralpha": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process"
+            "loweralpha|simple": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process"
         },
         "dl": {
-            "first|docutils": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process",
-            "docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+            "simple": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process"
         },
         "dt": {
             "None": "IATI-Upgrades/en/_build/dirhtml/how-we-manage-the-standard/upgrade-process"
@@ -1973,8 +1941,7 @@
             "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
         },
         "table": {
-            "colwidths-given|docutils": "IATI-Upgrades/en/_build/dirhtml/guidance-updates",
-            "docutils": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01"
+            "docutils|align-default": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
         },
         "colgroup": {
             "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
@@ -2001,6 +1968,9 @@
         "img": {
             "None": "IATI-Upgrades/en/_build/dirhtml/guidance-updates"
         },
+        "nav": {
+            "contents": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
+        },
         "h3": {
             "None": "IATI-Upgrades/en/_build/dirhtml/upgrade-changelogs/integer-upgrade-to-2-01/migrating"
         },
@@ -2018,15 +1988,8 @@
         }
     },
     "developer": {
-        "div": {
-            "section": "IATI-Developer-Documentation/_build/dirhtml",
-            "toctree-wrapper|compound": "IATI-Developer-Documentation/_build/dirhtml",
-            "None": "IATI-Developer-Documentation/_build/dirhtml/codelist-api",
-            "button|docutils|container": "IATI-Developer-Documentation/_build/dirhtml/software-deprecation-process",
-            "highlight-xquery": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "highlight": "IATI-Developer-Documentation/_build/dirhtml/xquery",
-            "highlight-json": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api",
-            "highlight-xml": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/structure-of-data"
+        "section": {
+            "None": "IATI-Developer-Documentation/_build/dirhtml"
         },
         "h1": {
             "None": "IATI-Developer-Documentation/_build/dirhtml"
@@ -2041,12 +2004,21 @@
         },
         "ul": {
             "simple": "IATI-Developer-Documentation/_build/dirhtml",
-            "None": "IATI-Developer-Documentation/_build/dirhtml",
-            "first|last": "IATI-Developer-Documentation/_build/dirhtml/ssot"
+            "None": "IATI-Developer-Documentation/_build/dirhtml"
         },
         "li": {
             "None": "IATI-Developer-Documentation/_build/dirhtml",
             "toctree-l1": "IATI-Developer-Documentation/_build/dirhtml"
+        },
+        "div": {
+            "toctree-wrapper|compound": "IATI-Developer-Documentation/_build/dirhtml",
+            "clearer": "IATI-Developer-Documentation/_build/dirhtml",
+            "None": "IATI-Developer-Documentation/_build/dirhtml/codelist-api",
+            "button|docutils|container": "IATI-Developer-Documentation/_build/dirhtml/software-deprecation-process",
+            "highlight-xquery|notranslate": "IATI-Developer-Documentation/_build/dirhtml/xquery",
+            "highlight": "IATI-Developer-Documentation/_build/dirhtml/xquery",
+            "highlight-json|notranslate": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/metadata-api",
+            "highlight-xml|notranslate": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/structure-of-data"
         },
         "ol": {
             "arabic|simple": "IATI-Developer-Documentation/_build/dirhtml/codelist-api"
@@ -2062,6 +2034,7 @@
             "na": "IATI-Developer-Documentation/_build/dirhtml/xquery",
             "o": "IATI-Developer-Documentation/_build/dirhtml/xquery",
             "s1": "IATI-Developer-Documentation/_build/dirhtml/xquery",
+            "w": "IATI-Developer-Documentation/_build/dirhtml/xquery",
             "k": "IATI-Developer-Documentation/_build/dirhtml/xquery",
             "mi": "IATI-Developer-Documentation/_build/dirhtml/xquery",
             "nv": "IATI-Developer-Documentation/_build/dirhtml/xquery",
@@ -2071,7 +2044,7 @@
             "pre": "IATI-Developer-Documentation/_build/dirhtml/ssot",
             "doc": "IATI-Developer-Documentation/_build/dirhtml/community-about",
             "s": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/structure-of-data",
-            "c": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/structure-of-data"
+            "cm": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/structure-of-data"
         },
         "h3": {
             "None": "IATI-Developer-Documentation/_build/dirhtml/codelist-api"
@@ -2086,8 +2059,7 @@
             "None": "IATI-Developer-Documentation/_build/dirhtml/xquery"
         },
         "dl": {
-            "first|docutils": "IATI-Developer-Documentation/_build/dirhtml/ssot",
-            "docutils": "IATI-Developer-Documentation/_build/dirhtml/old-datastore/reference/data-api"
+            "simple": "IATI-Developer-Documentation/_build/dirhtml/ssot"
         },
         "dt": {
             "None": "IATI-Developer-Documentation/_build/dirhtml/ssot"
@@ -2096,16 +2068,10 @@
             "None": "IATI-Developer-Documentation/_build/dirhtml/ssot"
         },
         "code": {
-            "docutils|literal": "IATI-Developer-Documentation/_build/dirhtml/ssot"
+            "docutils|literal|notranslate": "IATI-Developer-Documentation/_build/dirhtml/ssot"
         },
         "table": {
-            "docutils": "IATI-Developer-Documentation/_build/dirhtml/software-versioning"
-        },
-        "colgroup": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/software-versioning"
-        },
-        "col": {
-            "None": "IATI-Developer-Documentation/_build/dirhtml/software-versioning"
+            "docutils|align-default": "IATI-Developer-Documentation/_build/dirhtml/software-versioning"
         },
         "thead": {
             "None": "IATI-Developer-Documentation/_build/dirhtml/software-versioning"

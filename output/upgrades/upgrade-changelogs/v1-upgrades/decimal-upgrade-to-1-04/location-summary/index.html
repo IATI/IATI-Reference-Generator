@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="location-summary-of-changes-in-iati-standard-version-1-04">
+<section id="location-summary-of-changes-in-iati-standard-version-1-04">
 <h1>Location: summary of changes in IATI Standard version 1.04</h1>
 <p><strong>See also:</strong>
 <a href="https://docs.google.com/spreadsheets/d/1lr1sKwxCKKER4_eDTK254ivAOtpDCqh4k7Ki-y1XZn4/edit#gid=0">Overview table of changes</a></p>
-<p id="overview">
+<section id="overview">
 <h2>Overview</h2>
 <p>In order to improve the quality and effectiveness of geolocation data a
 number of enhancements were made in the upgrade to <a href="/en/iati-standard/upgrades/upgrade-changelogs/decimal-upgrade-to-1-04/">version 1.04</a> of the
@@ -15,8 +15,8 @@ identify any possible changes (see Table 1 below)</p>
 <p>2. Review the new location elements introduced in version 1.04 to
 determine what additional location information could be published (see
 Table 2 below)</p>
-</p>
-<p id="a-note-on-deprecation">
+</section>
+<section id="a-note-on-deprecation">
 <h2>A note on deprecation</h2>
 <p>Some elements and attributes have been deprecated in version 1.04 of the
 IATI Standard. You are strongly advised to no longer use those elements
@@ -27,15 +27,15 @@ may still contain deprecated elements. Publishers may incorporate other
 changes introduced in version 1.04, without making specific changes to
 their location data elements.</p>
 <p>However, for those publishers using the location element it is advised to read this guidance and attempt to update data accordingly.</p>
-</p>
-<p id="deletion-of-deprecated-items">
+</section>
+<section id="deletion-of-deprecated-items">
 <h2>Deletion of Deprecated items</h2>
 <p>It is the intention of the IATI Secretariat to remove deprecated items
 from the IATI Standard at each integer upgrade. Therefore those items
 deprecated in version(s) 1.x of the IATI Standard will be removed in
 version(s) 2.x</p>
-</p>
-<p id="a-note-on-codelist-values-and-text-names">
+</section>
+<section id="a-note-on-codelist-values-and-text-names">
 <h2>A note on codelist values and (text) names</h2>
 <p>Whilst versions 1.0x of the IATI Standard allow for codes to be
 accompanied by a (text) name, this has not been included in this
@@ -50,38 +50,30 @@ codes, hence the guidance here is to utilise:</p>
 </p>
 <p>For this reason, this guidance note omits details on use of (text) names
 for code values.</p>
-</p>
-<p id="table-1-comparison-of-location-elements-between-versions-1-01-1-02-1-03-and-1-04">
+</section>
+<section id="table-1-comparison-of-location-elements-between-versions-1-01-1-02-1-03-and-1-04">
 <h2>Table 1: Comparison of location elements between versions 1.01/1.02/1.03 and 1.04</h2>
 <p>(Click on Element* name link for official IATI Standard V1.04
 definition and examples)</p>
-<table border="1">
-<colgroup>
-<col width="17%"/>
-<col width="17%"/>
-<col width="17%"/>
-<col width="17%"/>
-<col width="17%"/>
-<col width="17%"/>
-</colgroup>
-<thead valign="bottom">
-<tr><th><strong>Element*</strong></th>
-<th><strong>Attributes</strong></th>
-<th><strong>In Use</strong> <strong>V1.03</strong></th>
-<th><strong>In Use</strong> <strong>V1.04</strong></th>
-<th><strong>Description of Change &amp;</strong> <strong>Publisher Action Required (if any)</strong></th>
-<th><strong>Example XML</strong></th>
+<table>
+<thead>
+<tr><th><p><strong>Element*</strong></p></th>
+<th><p><strong>Attributes</strong></p></th>
+<th><p><strong>In Use</strong> <strong>V1.03</strong></p></th>
+<th><p><strong>In Use</strong> <strong>V1.04</strong></p></th>
+<th><p><strong>Description of Change &amp;</strong> <strong>Publisher Action Required (if any)</strong></p></th>
+<th><p><strong>Example XML</strong></p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/">location</a></td>
-<td> </td>
+<td></td>
 <td>Y</td>
 <td>Y</td>
 <td>No change</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@ref</td>
 <td>N</td>
 <td>Y</td>
@@ -92,17 +84,17 @@ Check if useful to include.</td>
 ….
 &lt;/location&gt;</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@percentage</td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Should no longer be used.
 Consensus is that splitting activity costs pro rata is not feasible.
 </td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/105/activity-standard/iati-activities/iati-activity/location/location-type/">location-type</a></td>
-<td> </td>
+<td></td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated.
@@ -110,36 +102,36 @@ Remove and replace with new location/location-class and
 location/feature-designation elements.</td>
 <td>n/a</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@code</td>
 <td>Y</td>
 <td>N</td>
 <td>As above</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@xml:lang</td>
 <td>Y</td>
 <td>N</td>
 <td>As above</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/name/">name</a></td>
-<td> </td>
+<td></td>
 <td>Y</td>
 <td>Y</td>
 <td>No change</td>
 <td>&lt;name&gt;Location name&lt;/name&gt;</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@xml:lang</td>
 <td>Y</td>
 <td>Y</td>
 <td>As above</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/description/">description</a></td>
-<td> </td>
+<td></td>
 <td>Y</td>
 <td>Y</td>
 <td>Partially changed.
@@ -152,15 +144,15 @@ information provided here is still correct for the new definitions.
 </td>
 <td>&lt;description&gt;Location description&lt;/description&gt;</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@xml:lang</td>
 <td>Y</td>
 <td>Y</td>
 <td>As above.</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/administrative/">administrative</a></td>
-<td> </td>
+<td></td>
 <td>Y</td>
 <td>Y</td>
 <td>Partially changed.
@@ -178,43 +170,43 @@ example with multiple administrative elements:
 &lt;administrative vocabulary=”GADM” level=”3” code=”771”&gt;Kigoma Bangwe&lt;/administrative&gt;
 </td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@country</td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Should no longer be used.</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@adm1</td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Should no longer be used.</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@adm2</td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Should no longer be used.</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@code</td>
 <td>N</td>
 <td>Y</td>
 <td>New. The code for the administrative area being reported from the
 vocabulary specified</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@level</td>
 <td>N</td>
 <td>Y</td>
 <td>New. A number defining a subdivision within a hierarchical system of administrative areas. The precise system for defining the particular meaning of each @level value is determined by the @vocabulary being used.</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@vocabulary</td>
 <td>N</td>
 <td>Y</td>
@@ -222,18 +214,18 @@ vocabulary specified</td>
 the new IATI
 <a href="/en/iati-standard/203/codelists/GeographicVocabulary/">Geographic Vocabulary</a>
 code list.</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@xml:lang</td>
 <td>N</td>
 <td>Y</td>
 <td>New. The language of the description [only if different from default
 language]</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/105/activity-standard/iati-activities/iati-activity/location/coordinates/">coordinates</a></td>
-<td> </td>
+<td></td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Should no longer be used.
@@ -244,29 +236,29 @@ Point element
 </td>
 <td>n/a</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@latitude</td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Remove and replace with new location/point/pos</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@longitude</td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Remove and replace with new location/point/pos</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@precision</td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Remove and replace with new location/exactness</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/105/activity-standard/iati-activities/iati-activity/location/gazetteer-entry/">gazetteer-entry</a></td>
-<td> </td>
+<td></td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Should no longer be used.
@@ -276,50 +268,42 @@ administrative area vocabularies and codes.
 </td>
 <td>n/a</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@gazeteer-ref</td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Should no longer be used.
 Remove and replace with the new <a href="mailto:location/location-id/%40vocabulary">location/location-id/<span>@</span>vocabulary</a></td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>(text)</td>
 <td>Y</td>
 <td>N</td>
 <td>Deprecated. Should no longer be used.
 Remove and replace with the new <a href="mailto:location/location-id/%40code">location/location-id/<span>@</span>code</a></td>
-<td> </td>
+<td></td>
 </tr>
 </tbody>
 </table>
-</p>
-<p id="table-2-new-location-elements-introduced-in-version-1-04">
+</section>
+<section id="table-2-new-location-elements-introduced-in-version-1-04">
 <h2>Table 2: New location elements, introduced in version 1.04</h2>
 <p>(Click on Element* name link for official IATI Standard V1.04
 definition and examples)</p>
-<table border="1">
-<colgroup>
-<col width="17%"/>
-<col width="17%"/>
-<col width="17%"/>
-<col width="17%"/>
-<col width="17%"/>
-<col width="17%"/>
-</colgroup>
-<thead valign="bottom">
-<tr><th><strong>Element</strong></th>
-<th><strong>Attributes</strong></th>
-<th><strong>In Use</strong> <strong>V1.03</strong></th>
-<th><strong>In Use</strong> <strong>V1.04</strong></th>
-<th><strong>Element Description</strong></th>
-<th><strong>Example XML</strong></th>
+<table>
+<thead>
+<tr><th><p><strong>Element</strong></p></th>
+<th><p><strong>Attributes</strong></p></th>
+<th><p><strong>In Use</strong> <strong>V1.03</strong></p></th>
+<th><p><strong>In Use</strong> <strong>V1.04</strong></p></th>
+<th><p><strong>Element Description</strong></p></th>
+<th><p><strong>Example XML</strong></p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-id/">location</a><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-id/">-</a><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-id/">id</a></td>
-<td> </td>
+<td></td>
 <td>N</td>
 <td>Y</td>
 <td>New. Allows for the reporting of an identifier for a location that is
@@ -336,24 +320,24 @@ should be used.
 </td>
 <td>&lt;location-id vocabulary=”G1” code=”1453782” /&gt;</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@vocabulary</td>
 <td>N</td>
 <td>Y</td>
 <td>New. A code from the new
 <a href="/en/iati-standard/203/codelists/GeographicVocabulary/">Geographic Vocabulary</a>
 code list</td>
-<td> </td>
+<td></td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@code</td>
 <td>N</td>
 <td>Y</td>
 <td>New. The location code from the specified vocabulary</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/activity-description/">activity-description</a></td>
-<td> </td>
+<td></td>
 <td>N</td>
 <td>Y</td>
 <td>New. Allows for a description of the activity taking place at a
@@ -363,32 +347,32 @@ for different languages.</td>
 <td>&lt;activity-description&gt;A description that qualifies the activity taking
 place at the location&lt;/activity-description&gt;</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>(text)</td>
 <td>N</td>
 <td>Y</td>
 <td>New. The description of the activity taking place at this location</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-reach/">location-reach</a></td>
-<td> </td>
+<td></td>
 <td>N</td>
 <td>Y</td>
 <td>New. Clarifies whether the location being described covers the activity
 itself, or the intended beneficiaries of the activity.</td>
 <td>&lt;location-reach code=”1” /&gt;</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@code</td>
 <td>N</td>
 <td>Y</td>
 <td>New. A code from the new
 <a href="/en/iati-standard/203/codelists/GeographicLocationReach/">Geographic Location Reach</a>
 code list</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/point/">point</a></td>
-<td> </td>
+<td></td>
 <td>N</td>
 <td>Y</td>
 <td>New. To align the geocoding standard with the more generic
@@ -400,17 +384,17 @@ element.</td>
 &lt;/point&gt;
 </td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@srsName</td>
 <td>N</td>
 <td>Y</td>
 <td>New. The name of the spatial reference system used by the coordinates.
 This should ALWAYS be: <a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a>
 </td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/point/pos/">pos</a></td>
-<td> </td>
+<td></td>
 <td>N</td>
 <td>Y</td>
 <td>New. The latitude and longitude coordinates expressed as decimals and
@@ -421,7 +405,7 @@ separated by a space, within a location/point element.</td>
 </td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/exactness/">exactness</a></td>
-<td> </td>
+<td></td>
 <td>N</td>
 <td>Y</td>
 <td>New. Defines whether the location represents the most distinct point
@@ -431,17 +415,17 @@ Replaces the <a href="mailto:location/coordinates/%40precision">location/coordin
 </td>
 <td>&lt;exactness code=”1”/&gt;</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@code</td>
 <td>N</td>
 <td>Y</td>
 <td>New. A code from the IATI
 <a href="/en/iati-standard/203/codelists/GeographicExactness/">Geographic Exactness</a>
 code list.</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-class/">location-class</a></td>
-<td> </td>
+<td></td>
 <td>N</td>
 <td>Y</td>
 <td>New. Replaces the existing location-type element. It clarifies whether
@@ -450,17 +434,17 @@ village), an administrative division, or another topological feature
 (e.g. river, nature reserve).</td>
 <td>&lt;location-class code=”2”/&gt;</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@code</td>
 <td>N</td>
 <td>Y</td>
 <td>New. A code from the new IATI
 <a href="/en/iati-standard/203/codelists/GeographicLocationClass/">Geographic Location Class</a>
 code list</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/feature-designation/">feature-designation</a></td>
-<td> </td>
+<td></td>
 <td>N</td>
 <td>Y</td>
 <td>New. Allows for a more refined coded classification of the type of
@@ -468,31 +452,27 @@ feature referred to by this location, making use of the USA National
 Geospatial-Intelligence Agency (NGA) list of feature designation codes.</td>
 <td>&lt;feature-designation code=”PRNQ”/&gt;</td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>@code</td>
 <td>N</td>
 <td>Y</td>
 <td>New. A feature designation code from
 <a href="/en/iati-standard/203/codelists/LocationType/">Location Type</a>
 code list</td>
-<td> </td>
+<td></td>
 </tr>
 </tbody>
 </table>
-</p>
-<p id="xml-examples">
+</section>
+<section id="xml-examples">
 <h2>XML Examples</h2>
-<table border="1">
-<colgroup>
-<col width="50%"/>
-<col width="50%"/>
-</colgroup>
-<thead valign="bottom">
-<tr><th>Version 1.03</th>
-<th>Version 1.04</th>
+<table>
+<thead>
+<tr><th><p>Version 1.03</p></th>
+<th><p>Version 1.04</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><p><code><pre>&lt;location&gt;
     &lt;name&gt;Herat&lt;/name&gt;
     &lt;description&gt;Location description&lt;/description&gt;
@@ -523,7 +503,7 @@ code list</td>
 </p>
 </td>
 </tr>
-<tr><td> </td>
+<tr><td></td>
 <td>Example multiple &lt;administrative&gt; elements:
 <p><code><pre><span>&lt;!-GADM Administrative Areas-&gt;</span>
 &lt;administrative vocabulary="GADM" level="1"
@@ -550,6 +530,7 @@ code="1600842"&gt;Kigoma&lt;/administrative&gt;
 </tr>
 </tbody>
 </table>
-</p>
-</p>
+</section>
+</section>
+
 </div>

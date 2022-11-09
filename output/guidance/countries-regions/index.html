@@ -1,5 +1,5 @@
 <div class="body" role="main">
-<p id="geography-countries-and-regions">
+<section id="geography-countries-and-regions">
 <h1>Geography - countries and regions</h1>
 <p>Each activity in IATI should specify the country (e.g. China) in which the activity is taking place, or the places that will benefit from the activity. If the country is not known, then a supra-national region or regions (e.g. East Asia) must be added.</p>
 <p>An activity may cover one or more countries and regions. There are some rules about how multiple countries and regions need to be added to an activity. Having one country per activity provides more disaggregated information, which is helpful for data users. If a country is known for 100% of the activity, then the corresponding recipient region should not also be present.</p>
@@ -16,16 +16,16 @@
 <p>The above example shows country and region information being published at activity level. This information could instead be published at transaction level, with each transaction containing either one recipient country or one recipient region. Please note that countries and regions must not be specified at both activity and transaction levels.</p>
 <p>IATI recommends that publishers provide geographic (country and region) and <a href="../activity-thematic-focus/"><span>thematic (sectors)</span></a>. information at the same level. This should be consistent across all activities published by an organisation i.e. publishing <strong>either</strong> at activity level <strong>or</strong> for all transactions.</p>
 <p>It is up to each publisher to define what they class as an activity and what their scope is e.g. global, national or within a single location). The scope of the activity should be published using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-scope/">activity-scope</a> element.</p>
-<p id="rules-for-publishing-multiple-countries-and-regions">
+<section id="rules-for-publishing-multiple-countries-and-regions">
 <h2>Rules for publishing multiple countries and regions</h2>
 <ol>
-<li>Every activity should have <strong>either</strong> a recipient country <strong>or</strong> a recipient region.</li>
-<li>This should either be published <strong>either</strong> at activity level <strong>or</strong> once for each transaction.</li>
-<li>If multiple countries and/or regions are published at activity level, the countries and regions must be given a percentage.</li>
-<li>The percentage of the counties plus regions (within a vocabulary) must add up to 100%.</li>
+<li><p>Every activity should have <strong>either</strong> a recipient country <strong>or</strong> a recipient region.</p></li>
+<li><p>This should either be published <strong>either</strong> at activity level <strong>or</strong> once for each transaction.</p></li>
+<li><p>If multiple countries and/or regions are published at activity level, the countries and regions must be given a percentage.</p></li>
+<li><p>The percentage of the counties plus regions (within a vocabulary) must add up to 100%.</p></li>
 </ol>
-</p>
-<p id="tips-for-specifying-country-and-regions">
+</section>
+<section id="tips-for-specifying-country-and-regions">
 <h2>Tips for specifying country and regions</h2>
 <ul>
 <li><p><strong>For truly global activities</strong></p>
@@ -38,57 +38,58 @@
 <p>Some activities only contain management costs. In this case they should provide the country where the expense is incurred.</p>
 </li>
 </ul>
-</p>
-<p id="what-country-and-region-information-can-be-published">
+</section>
+<section id="what-country-and-region-information-can-be-published">
 <h2>What country and region information can be published?</h2>
 <ul>
-<li>If a recipient country is known, this is preferable to publishing a recipient region.</li>
-<li>If a region is included, it must be in addition to any countries specified.</li>
-<li>There is only one <a href="/en/iati-standard/203/codelists/Country/">country codelist</a> that can be used.</li>
-<li>There are a number of <a href="/en/iati-standard/203/codelists/RegionVocabulary/">region codelists</a> that can be used, including an organisation’s internal list. These can be used simultaneously. Use of the DAC region codelist is recommended and should be included alongside other region codelists.</li>
+<li><p>If a recipient country is known, this is preferable to publishing a recipient region.</p></li>
+<li><p>If a region is included, it must be in addition to any countries specified.</p></li>
+<li><p>There is only one <a href="/en/iati-standard/203/codelists/Country/">country codelist</a> that can be used.</p></li>
+<li><p>There are a number of <a href="/en/iati-standard/203/codelists/RegionVocabulary/">region codelists</a> that can be used, including an organisation’s internal list. These can be used simultaneously. Use of the DAC region codelist is recommended and should be included alongside other region codelists.</p></li>
 </ul>
 <p>For data published at activity level:</p>
 <ul>
-<li>Multiple recipient countries and regions can be declared. Each recipient must have a percentage.</li>
-<li>The percentage of all recipient countries plus regions (within a specific region vocabulary) must add up to 100%.</li>
-<li>Multiple region vocabularies can be used. Each region vocabulary must have the same percentage share e.g. one activity can have:<ul>
-<li>Country: Uganda (UG) 80%</li>
-<li>DAC Region: Africa (298) 20%</li>
-<li>UN Region: Africa (002) 20%</li>
+<li><p>Multiple recipient countries and regions can be declared. Each recipient must have a percentage.</p></li>
+<li><p>The percentage of all recipient countries plus regions (within a specific region vocabulary) must add up to 100%.</p></li>
+<li><p>Multiple region vocabularies can be used. Each region vocabulary must have the same percentage share e.g. one activity can have:</p>
+<ul>
+<li><p>Country: Uganda (UG) 80%</p></li>
+<li><p>DAC Region: Africa (298) 20%</p></li>
+<li><p>UN Region: Africa (002) 20%</p></li>
 </ul>
 </li>
 </ul>
 <p>For data published at transaction level:</p>
 <ul>
-<li>Every transaction must have a recipient country or region.</li>
-<li>A transaction must not have more than one recipient country or region.</li>
+<li><p>Every transaction must have a recipient country or region.</p></li>
+<li><p>A transaction must not have more than one recipient country or region.</p></li>
 </ul>
-</p>
-<p id="technical-guidance-summary">
+</section>
+<section id="technical-guidance-summary">
 <h2>Technical guidance summary</h2>
 <p><strong>For geographic information published at activity level</strong></p>
 <p>If geographical data is published at activity level, it must not also be published at <a href="../financial-transactions/"><span>transaction</span></a> level.</p>
-<table border="1">
+<table>
 <colgroup>
-<col width="16%"/>
-<col width="28%"/>
-<col width="28%"/>
-<col width="28%"/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-scope/">activity-scope</a></td>
 <td>Describes the scope of the activity e.g. global, national or a single location.</td>
 <td>This must be included no more than once for each activity.
 A code must be selected from the <a href="/en/iati-standard/203/codelists/ActivityScope/">activity scope</a> codelist.
 </td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-country/">recipient-country</a></td>
 <td>Specifies in what <a href="/en/iati-standard/203/codelists/Country/">countries</a> the activity took place, or which countries benefited from the activity.</td>
@@ -106,28 +107,28 @@ A narrative element can be used to describe the recipient country or region.
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/recipient-region/">recipient-region</a></td>
 <td>Specifies in what <a href="/en/iati-standard/203/codelists/RegionVocabulary/">regions</a> the activity took place, or which regions benefited from the activity.</td>
-<td> </td>
-<td> </td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <p><strong>For geographic information published at transaction level</strong></p>
 <p>If geographical data is published at transaction level it must be included for every transaction. If included here, it must not be published also at activity level.</p>
-<table border="1">
+<table>
 <colgroup>
-<col width="16%"/>
-<col width="28%"/>
-<col width="28%"/>
-<col width="28%"/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/recipient-country/">recipient-country</a></td>
 <td>The specific <a href="/en/iati-standard/203/codelists/Country/">country</a> that will benefit from the transaction.</td>
 <td>The country must be present on the <a href="/en/iati-standard/203/codelists/Country/">country</a> codelist.
@@ -144,12 +145,13 @@ Only one recipient-country or one recipient-region must be published.
 </tr>
 </tbody>
 </table>
-</p>
-<p id="sub-national-locations">
+</section>
+<section id="sub-national-locations">
 <h2>Sub-national locations</h2>
 <p>Activities can also contain sub-national locations, these detail where an activity is happening within a country. For further details see:
 - <a href="../activity-geography/"><span>Activity geography</span></a>
 - <a href="../sub-national-locations/"><span>Sub-national-locations</span></a></p>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="Geography - countries and regions" name="title"/><meta content="Each activity in IATI should specify the country (e.g. China) in which the activity is taking place, or the places that will benefit from the activity." name="description"/><meta content="activity" name="guidance_type"/><meta content="September 19, 2019" name="date"/></div>

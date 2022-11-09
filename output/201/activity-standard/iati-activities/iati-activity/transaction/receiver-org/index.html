@@ -1,24 +1,23 @@
 <div class="body" role="main">
-<p id="receiver-org">
+<section id="receiver-org">
 <h1>receiver-org</h1>
 <p><code>iati-activities/iati-activity/transaction/receiver-org</code></p>
 <p>This is the reference page for the XML element <code>receiver-org</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The organisation receiving the money from the
 transaction (if omitted on incoming funds then the
 receiver organisation is assumed to be the reporting
 organisation).</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur no more than once (within each parent element).</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-transaction-receiver-org-ref">
-<dt>@ref</dt>
-<dd><p>Machine-readable identification string for the
+<dt>@ref</dt><dd><p>Machine-readable identification string for the
 organisation. Must be in the format {Registration
 Agency} - (Registration Number} where {Registration
 Agency} is a valid code in the Registration Agency
@@ -30,16 +29,15 @@ the name of the organisation.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-transaction-receiver-org-receiver-activity-id">
-<dt>@receiver-activity-id</dt>
-<dd><p>If outgoing funds are being provided to another
+<dt>@receiver-activity-id</dt><dd><p>If outgoing funds are being provided to another
 activity that is reported to IATI, this may, if
 possible, record the unique IATI activity identifier
 for that activity.</p>
 <p>This value must be of type xsd:string.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>receiver-org</code> of a <code>transaction</code> in an <code>iati-activity</code>.</p>
 
@@ -70,7 +68,7 @@ for that activity.</p>
 <span>   &lt;/receiver-org&gt;
 </span>   &lt;disbursement-channel code="1" /&gt;
    &lt;sector vocabulary="2" code="111" /&gt;
-   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="AF" /&gt;
    &lt;recipient-region code="456" vocabulary="1" /&gt;   
    &lt;flow-type code="10" /&gt;
@@ -80,31 +78,32 @@ for that activity.</p>
   &lt;/transaction&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>2.01</h3>
 
 <p>Freetext is no longer allowed with this element.  It should now be declared with the new child <code>narrative</code> element.</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L1015">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/transaction/receiver-org.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L1015">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/transaction/receiver-org.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

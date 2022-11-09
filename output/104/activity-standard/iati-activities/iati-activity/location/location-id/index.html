@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="location-id">
+<section id="location-id">
 <h1>location-id</h1>
 <p><code>iati-activities/iati-activity/location/location-id</code></p>
 <p>This is the reference page for the XML element <code>location-id</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>A unique code describing the location according to a
 recognised gazetteer or administrative boundary
@@ -12,26 +12,24 @@ here if the location being defined is the administrative
 area itself. For describing the administrative area/s
 within which a more specific location falls the
 location/administrative element should be used.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-location-location-id-code">
-<dt>@code</dt>
-<dd><p>A code from the gazetteer or administrative boundary
+<dt>@code</dt><dd><p>A code from the gazetteer or administrative boundary
 repository specified by the vocabulary</p>
 <p>This value must be of type xsd:string.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-location-location-id-vocabulary">
-<dt>@vocabulary</dt>
-<dd><p>A code for a recognised gazetteer or administrative
+<dt>@vocabulary</dt><dd><p>A code for a recognised gazetteer or administrative
 boundary repository.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../../codelists/GeographicVocabulary/"><span>GeographicVocabulary codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>location-id</code> within context of <code>location</code>.</p>
 
@@ -56,31 +54,32 @@ boundary repository.</p>
 <p>If the G2 vocabulary (Open Street Map) is used the code value should be of the form &lt;OSM element&gt;/&lt;OSM identifier&gt;</p>
 <p>The OSM element will be a node, way or relation. Examples:</p>
 <ul>
-<li>node/1234567</li>
-<li>way/1234567</li>
-<li>relation/1234567</li>
+<li><p>node/1234567</p></li>
+<li><p>way/1234567</p></li>
+<li><p>relation/1234567</p></li>
 </ul>
 <p><code><pre>&lt;location-id vocabulary="G2" code="node/25524229" /&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>1.04</h3>
 
 <p>New in 1.04</p>
 <p>The location-id element was introduced in 1.04 to replace the gazetteer-entry element which was deprecated in 1.04</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L835">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/location/location-id.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L835">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/location/location-id.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

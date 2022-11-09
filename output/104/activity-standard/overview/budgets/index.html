@@ -1,35 +1,36 @@
 <div class="body" role="main">
-<p id="budgets">
+<section id="budgets">
 <h1>Budgets</h1>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The monetary <em>budgets</em> assigned to a specific <code>iati-activity</code> can be described in the <strong>IATI activity standard</strong> using the following:</p>
 <ul>
-<li><code>transaction-type</code> - <code>Commitment</code> type can be used to describe the total committed budget for the duration of the activity.</li>
-<li><code>budget</code> - the value of the <code>iati-activity</code> <code>budget</code> for each financial year, as stated in the original project document.</li>
-<li><code>planned-disbursement</code> - a scheduled payment, set up against the <code>budget</code></li>
+<li><p><code>transaction-type</code> - <code>Commitment</code> type can be used to describe the total committed budget for the duration of the activity.</p></li>
+<li><p><code>budget</code> - the value of the <code>iati-activity</code> <code>budget</code> for each financial year, as stated in the original project document.</p></li>
+<li><p><code>planned-disbursement</code> - a scheduled payment, set up against the <code>budget</code></p></li>
 </ul>
 <p>Additionally, there are two areas within the <strong>IATI activity standard</strong> that allow further clarification of budgets:</p>
 <ul>
-<li><code>country-budget-item</code> - alignment of <code>iati-activity</code> with the functional and administrative classifications used in the <code>recipient-country</code> Chart of Accounts.</li>
-<li><code>capital-spend</code> - the percentage of the total commitment that is for capital spending.</li>
+<li><p><code>country-budget-item</code> - alignment of <code>iati-activity</code> with the functional and administrative classifications used in the <code>recipient-country</code> Chart of Accounts.</p></li>
+<li><p><code>capital-spend</code> - the percentage of the total commitment that is for capital spending.</p></li>
 </ul>
 <p>These all relate to the specific <code>iati-activity</code> being described.</p>
-</p>
-<p id="considerations">
+</section>
+<section id="considerations">
 <h2>Considerations</h2>
 <p>When using the <strong>IATI activity standard</strong> to declare <em>budgets</em>, the following should be considered:</p>
 <ul>
-<li>It is recommended that budgets are presented in financial years.</li>
-<li>When presenting multiple budgets, then the <code>budget</code> element should be repeated accordingly.</li>
-<li>It is expected that the financial years for <code>reporting-org</code> are described.</li>
-<li>It is possible to report periods other than years, but this is not recommended.</li>
-<li>Financial periods can be presented using the <code>period-start</code> and <code>period-end</code> dates.</li>
-<li>For <code>planned-dibursement</code> it is valid to only report the <code>period-start</code> as a single date.</li>
-<li>It is possible to report budget values in multiple currencies, overriding the default currency set in <code>iati-activity</code></li>
-<li>It is expected that budgets would be described from the <code>reporting-org</code> perspective.</li>
-<li>When declaring a <code>value-date</code> for any budget, this date must be in the past.</li>
+<li><p>It is recommended that budgets are presented in financial years.</p></li>
+<li><p>When presenting multiple budgets, then the <code>budget</code> element should be repeated accordingly.</p></li>
+<li><p>It is expected that the financial years for <code>reporting-org</code> are described.</p></li>
+<li><p>It is possible to report periods other than years, but this is not recommended.</p></li>
+<li><p>Financial periods can be presented using the <code>period-start</code> and <code>period-end</code> dates.</p></li>
+<li><p>For <code>planned-dibursement</code> it is valid to only report the <code>period-start</code> as a single date.</p></li>
+<li><p>It is possible to report budget values in multiple currencies, overriding the default currency set in <code>iati-activity</code></p></li>
+<li><p>It is expected that budgets would be described from the <code>reporting-org</code> perspective.</p></li>
+<li><p>When declaring a <code>value-date</code> for any budget, this date must be in the past.</p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

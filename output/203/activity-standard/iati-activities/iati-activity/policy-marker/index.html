@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="policy-marker">
+<section id="policy-marker">
 <h1>policy-marker</h1>
 <p><code>iati-activities/iati-activity/policy-marker</code></p>
 <p>This is the reference page for the XML element <code>policy-marker</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>A policy or theme addressed by the activity. This element was
 designed for the reporting of OECD DAC CRS policy markers
@@ -11,16 +11,15 @@ designed for the reporting of OECD DAC CRS policy markers
 the vocabulary attribute allows it use by other (including
 local) systems. This element can be repeated for each policy
 marker.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element may occur any number of times.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-policy-marker-vocabulary">
-<dt>@vocabulary</dt>
-<dd><p>An IATI code for the vocabulary to be used to define
+<dt>@vocabulary</dt><dd><p>An IATI code for the vocabulary to be used to define
 policy markers. If omitted then the OECD DAC vocabulary is
 assumed.</p>
 <p>This value must be of type xsd:string.</p>
@@ -28,15 +27,13 @@ assumed.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-policy-marker-vocabulary-uri">
-<dt>@vocabulary-uri</dt>
-<dd><p>If the vocabulary is 99 (reporting organisation), the URI
+<dt>@vocabulary-uri</dt><dd><p>If the vocabulary is 99 (reporting organisation), the URI
 where this internal vocabulary is defined.</p>
 <p>This value must be of type xsd:anyURI.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-policy-marker-code">
-<dt>@code</dt>
-<dd><p>A policy marker code from the codelist specified in the
+<dt>@code</dt><dd><p>A policy marker code from the codelist specified in the
 vocabulary.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
@@ -44,8 +41,7 @@ vocabulary.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-policy-marker-significance">
-<dt>@significance</dt>
-<dd><p>An OECD DAC CRS code indicating the significance of the policy marker
+<dt>@significance</dt><dd><p>An OECD DAC CRS code indicating the significance of the policy marker
 for this activity. This attribute MUST be used for all OECD DAC CRS
 vocabularies.</p>
 <p>This value must be of type xsd:string.</p>
@@ -53,8 +49,8 @@ vocabularies.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L1090">6.14.1</a>: When using a policy marker code for vocabulary 1, it must include a significance.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>policy-marker</code> of an <code>iati-activity</code>.</p>
 
@@ -80,37 +76,38 @@ vocabularies.</p>
 
 <p>If a vocabulary is not on the <em>PolicyMarkerVocabulary</em> codelist, then the value of <em>99</em> (<em>Reporting Organisation</em>) should be declared.</p>
 
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id2">
+<section id="id2">
 <h3>2.03</h3>
 <p>The definition of the <code>@vocabulary-uri</code> was <a href="https://discuss.iatistandard.org/t/guidance-on-u-r-i-usage-for-publisher-s-own-vocabularies-included-2-03/850">updated</a>.</p>
-</p>
-<p id="id3">
+</section>
+<section id="id3">
 <h3>2.02</h3>
 <p>The <code>vocabulary-uri</code> attribute was <a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">added</a>.</p>
-</p>
-<p id="id4">
+</section>
+<section id="id4">
 <h3>2.01</h3>
 <p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element, but only in particular use-cases.</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L869">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/policy-marker.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L869">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/policy-marker.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

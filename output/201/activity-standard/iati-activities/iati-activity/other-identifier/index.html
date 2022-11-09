@@ -1,25 +1,24 @@
 <div class="body" role="main">
-<p id="other-identifier">
+<section id="other-identifier">
 <h1>other-identifier</h1>
 <p><code>iati-activities/iati-activity/other-identifier</code></p>
 <p>This is the reference page for the XML element <code>other-identifier</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>An other identifier for the activity. This may be a publishers
 own identifier that it wishes to record with the activity.
 This element is also used to trace changes to activity
 identifiers, for example when and organisation has changed
 it’s organisation identifier.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element may occur any number of times.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-other-identifier-ref">
-<dt>@ref</dt>
-<dd><p>The identifier you wish to report.
+<dt>@ref</dt><dd><p>The identifier you wish to report.
 This can be used to report a number of different types
 of identifiers. See the OtherIdentifierType codelist
 for details and options.</p>
@@ -30,16 +29,15 @@ for details and options.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-other-identifier-type">
-<dt>@type</dt>
-<dd><p>The type of identifier being reported, taken from
+<dt>@type</dt><dd><p>The type of identifier being reported, taken from
 the OtherIdentifierType codelist.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../codelists/OtherIdentifierType/"><span>OtherIdentifierType codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>other-identifier</code> of an <code>iati-activity</code>.</p>
 
@@ -53,7 +51,7 @@ the OtherIdentifierType codelist.</p>
 <span>  &lt;/other-identifier&gt;
 </span></pre></code>
 </p>
-<p id="id3">
+<section id="id3">
 <h3>2.01</h3>
 
 <p>Freetext support of the <code>other-identifier</code> was removed.  A new <code>other-identifier/@ref</code> was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">added as a replacement</a>.</p>
@@ -67,23 +65,24 @@ the OtherIdentifierType codelist.</p>
 
 <p>The <code>owner-org</code> child element was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">added</a>.</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L508">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/other-identifier.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L508">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/other-identifier.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="owner-org/">owner-org</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

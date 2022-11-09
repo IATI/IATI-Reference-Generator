@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="recipient-country">
+<section id="recipient-country">
 <h1>recipient-country</h1>
 <p><code>iati-activities/iati-activity/recipient-country</code></p>
 <p>This is the reference page for the XML element <code>recipient-country</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>A partner country that will benefit from this activity.  This
 element is primarily for administrative and geopolitical
@@ -12,20 +12,18 @@ report can use the recipient-region element instead. For
 geographical location, use the location element.</p>
 <p>For the value of the @code attribute, see
 <a href="/en/iati-standard/203/codelists/country">http://iatistandard.org/codelists/country</a></p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-recipient-country-code">
-<dt>@code</dt>
-<dd><p>Machine readable code for the entity being described. The value should
+<dt>@code</dt><dd><p>Machine readable code for the entity being described. The value should
 be available on a related codelist.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value should be on the <a href="../../../../codelists/Country/"><span>Country codelist</span></a>.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-recipient-country-percentage">
-<dt>@percentage</dt>
-<dd><p>The percentage of the budget allocated to this item.  Content
+<dt>@percentage</dt><dd><p>The percentage of the budget allocated to this item.  Content
 must be a positive decimal number between 0 and 100, with no
 percentage sign. In version 1.03 of the IATI Standard this
 value became designated as a decimal value and no longer
@@ -34,13 +32,12 @@ as a positive integer.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-recipient-country-xml-lang">
-<dt>@xml:lang</dt>
-<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<dt>@xml:lang</dt><dd><p>ISO 2 letter code specifying the language of text in this element.</p>
 <p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>recipient-country</code> with relevant <code>Country</code> code:</p>
 <p><code><pre>  &lt;recipient-country code="AF" /&gt;
@@ -55,21 +52,22 @@ as a positive integer.</p>
 <p><code><pre>&lt;recipient-country code="AF"&gt;Afghanistan&lt;/recipient-country&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>1.03</h3>
 <p>Where used, the <code>percentage</code> attribute is now designated as a decimal value and no longer as a positive Integer</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L249">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/recipient-country.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L249">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/recipient-country.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

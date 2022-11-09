@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="sector">
+<section id="sector">
 <h1>sector</h1>
 <p><code>iati-activities/iati-activity/transaction/sector</code></p>
 <p>This is the reference page for the XML element <code>sector</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>A recognised code, from a recognised vocabulary,
 classifying the purpose of this transaction.</p>
@@ -12,18 +12,17 @@ should contain a transaction/sector element and
 iati-activity/sector should NOT be used.</p>
 <p>This element can be used multiple times, but only one
 sector can be reported per vocabulary.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element may occur any number of times.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L68">6.2.2</a>: Each activity must have a specified sector, either at activity level OR for all transactions.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L628">6.6.2</a>: Sectors must only be declared at activity level OR for all transactions.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-transaction-sector-vocabulary">
-<dt>@vocabulary</dt>
-<dd><p>An IATI code for the vocabulary (codelist) used for
+<dt>@vocabulary</dt><dd><p>An IATI code for the vocabulary (codelist) used for
 sector classifications. If omitted, OECD DAC 5-digit
 Purpose Codes are assumed.</p>
 <p>It is recommended that OECD DAC 5-digit Purpose
@@ -40,15 +39,13 @@ vocabulary can be reported.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-transaction-sector-vocabulary-uri">
-<dt>@vocabulary-uri</dt>
-<dd><p>If the vocabulary is 99 or 98 (reporting organisation), the URI
+<dt>@vocabulary-uri</dt><dd><p>If the vocabulary is 99 or 98 (reporting organisation), the URI
 where this internal vocabulary is defined.</p>
 <p>This value must be of type xsd:anyURI.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-transaction-sector-code">
-<dt>@code</dt>
-<dd><p>The code for the sector.</p>
+<dt>@code</dt><dd><p>The code for the sector.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../../codelists/Sector/"><span>Sector codelist</span></a>, if the relevant vocabulary is used.</p>
@@ -57,8 +54,8 @@ where this internal vocabulary is defined.</p>
 <p>This value must be on the <a href="../../../../../codelists/UNSDG-Targets/"><span>UNSDG-Targets codelist</span></a>, if the relevant vocabulary is used.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>sector</code> of a <code>transaction</code> within an <code>iati-activity</code>.</p>
 
@@ -99,7 +96,7 @@ where this internal vocabulary is defined.</p>
    &lt;/receiver-org&gt;
    &lt;disbursement-channel code="1" /&gt;
 <span>   &lt;sector vocabulary="2" code="111" /&gt;
-</span>   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+</span>   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="TM" /&gt;
    &lt;recipient-region code="616" vocabulary="1" /&gt;   
    &lt;flow-type code="10" /&gt;
@@ -109,33 +106,34 @@ where this internal vocabulary is defined.</p>
   &lt;/transaction&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id3">
+<section id="id3">
 <h3>2.02</h3>
 <p>The <code>vocabulary-uri</code> attribute was <a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">added</a>.</p>
-</p>
-<p id="id4">
+</section>
+<section id="id4">
 <h3>2.01</h3>
 <p>The <code>sector</code> element was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">added</a> as a child element of <code>transaction</code>.</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1191">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/transaction/sector.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1191">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/transaction/sector.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

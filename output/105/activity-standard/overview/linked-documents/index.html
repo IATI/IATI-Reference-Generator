@@ -1,36 +1,37 @@
 <div class="body" role="main">
-<p id="related-documents">
+<section id="related-documents">
 <h1>Related Documents</h1>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Within the <strong>IATI activity standard</strong> any number of links to supporting documents can be declared.</p>
 <p>The main element for this is:</p>
 <ul>
-<li><code>document-link</code> - a categorized link to an external document.</li>
+<li><p><code>document-link</code> - a categorized link to an external document.</p></li>
 </ul>
 <p>The following also enable the links from the <code>iati-activity</code> to external resources:</p>
 <ul>
-<li><code>activity-website</code>  - a website that provides more information about the specific <code>iati-activity</code></li>
-<li>linked data - declaring the path at which information on the specific <code>iati-activity</code> is available as linked-data</li>
+<li><p><code>activity-website</code>  - a website that provides more information about the specific <code>iati-activity</code></p></li>
+<li><p>linked data - declaring the path at which information on the specific <code>iati-activity</code> is available as linked-data</p></li>
 </ul>
-</p>
-<p id="considerations">
+</section>
+<section id="considerations">
 <h2>Considerations</h2>
 <p>When using the <strong>IATI activity standard</strong> to declare <em>documents</em>, the following should be considered:</p>
 <ul>
-<li>All <code>document-link</code> should be presented in the form of URLs (eg: <a href="http://example.org/exampledocument.odt">http://example.org/exampledocument.odt</a>)</li>
-<li>The URL must resolve to a valid internet address that provides direct access to the document in question.</li>
-<li>Attention should be paid by the publisher to any links that become obsolete.</li>
-<li>The same document can be presented in different languages via separate <code>document-link</code> elements.</li>
-<li>For every document presented either a <code>title</code> or <code>category</code> is expected (or both).</li>
-<li>The <code>title</code> element can be repeated for different languages, regardless of the language of the actual document.</li>
-<li>The free-text instances of <code>title</code> should avoid use of text in CAPITALS, where possible.</li>
-<li>In the <strong>IATI activity standard</strong>, documents that relate to the specific <code>iati-activity</code> would be linked to.  Organisation/agency specific documents are published via the <strong>IATI organisation standard</strong>.</li>
-<li>For document <code>category</code> in the <strong>IATI activity standard</strong>, it is expected that the <code>DocumentCategory</code> code would be have the A prefix.</li>
-<li>Using the <code>format</code> attribute helps inform what to expect from the document.</li>
-<li>Use of the <code>format</code> must be accompanied by a code on the <code>FileFormat</code> codelist.</li>
-<li>The <code>activity-website</code> should be a URL to a page or website that is specifically about the <code>iati-activity</code> - not generic information (eg: <a href="http://www.example.com/en/activity/ABC123">http://www.example.com/en/activity/ABC123</a>).</li>
+<li><p>All <code>document-link</code> should be presented in the form of URLs (eg: <a href="http://example.org/exampledocument.odt">http://example.org/exampledocument.odt</a>)</p></li>
+<li><p>The URL must resolve to a valid internet address that provides direct access to the document in question.</p></li>
+<li><p>Attention should be paid by the publisher to any links that become obsolete.</p></li>
+<li><p>The same document can be presented in different languages via separate <code>document-link</code> elements.</p></li>
+<li><p>For every document presented either a <code>title</code> or <code>category</code> is expected (or both).</p></li>
+<li><p>The <code>title</code> element can be repeated for different languages, regardless of the language of the actual document.</p></li>
+<li><p>The free-text instances of <code>title</code> should avoid use of text in CAPITALS, where possible.</p></li>
+<li><p>In the <strong>IATI activity standard</strong>, documents that relate to the specific <code>iati-activity</code> would be linked to.  Organisation/agency specific documents are published via the <strong>IATI organisation standard</strong>.</p></li>
+<li><p>For document <code>category</code> in the <strong>IATI activity standard</strong>, it is expected that the <code>DocumentCategory</code> code would be have the A prefix.</p></li>
+<li><p>Using the <code>format</code> attribute helps inform what to expect from the document.</p></li>
+<li><p>Use of the <code>format</code> must be accompanied by a code on the <code>FileFormat</code> codelist.</p></li>
+<li><p>The <code>activity-website</code> should be a URL to a page or website that is specifically about the <code>iati-activity</code> - not generic information (eg: <a href="http://www.example.com/en/activity/ABC123">http://www.example.com/en/activity/ABC123</a>).</p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

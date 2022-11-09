@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="policy-marker">
+<section id="policy-marker">
 <h1>policy-marker</h1>
 <p><code>iati-activities/iati-activity/policy-marker</code></p>
 <p>This is the reference page for the XML element <code>policy-marker</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>A policy or theme addressed by the activity.  A text
 description of the theme appears in the content, and a formal
@@ -12,12 +12,11 @@ attribute can also help to segment the markers into separate
 vocabularies.  This element can be repeated for each policy
 marker.  For the value of the @code attribute, see
 <a href="/en/iati-standard/203/codelists/policy_marker">http://iatistandard.org/codelists/policy_marker</a></p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-policy-marker-code">
-<dt>@code</dt>
-<dd><p>Policy marker code. If vocabulary is missing or “DAC” use
+<dt>@code</dt><dd><p>Policy marker code. If vocabulary is missing or “DAC” use
 the IATI Policy Marker Codelist which is based on columns
 20-23 and 28-31 of the CRS++ reporting format.</p>
 <p>This value must be of type xsd:string.</p>
@@ -25,8 +24,7 @@ the IATI Policy Marker Codelist which is based on columns
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-policy-marker-vocabulary">
-<dt>@vocabulary</dt>
-<dd><p>Policy vocabulary used. Default is “DAC”, but “RO” may also
+<dt>@vocabulary</dt><dd><p>Policy vocabulary used. Default is “DAC”, but “RO” may also
 be used for publisher’s own markers.</p>
 <p>See <a href="/en/iati-standard/203/codelists/vocabulary">http://iatistandard.org/codelists/vocabulary</a></p>
 <p>This value must be of type xsd:string.</p>
@@ -34,8 +32,7 @@ be used for publisher’s own markers.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-policy-marker-significance">
-<dt>@significance</dt>
-<dd><p>The significance of the policy marker for this activity
+<dt>@significance</dt><dd><p>The significance of the policy marker for this activity
 (e.g. principal or significant), from a list defined by
 IATI.  If a marker is not significant, the policy-marker
 element will not be present.</p>
@@ -45,13 +42,12 @@ element will not be present.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-policy-marker-xml-lang">
-<dt>@xml:lang</dt>
-<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<dt>@xml:lang</dt><dd><p>ISO 2 letter code specifying the language of text in this element.</p>
 <p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>policy-marker</code> that declares a <code>PolicyMarker</code> code <em>2</em>, with a <code>PolicySignificance</code> code of <em>3</em>.</p>
 
@@ -65,14 +61,15 @@ element will not be present.</p>
   &lt;policy-marker code="2" significance="3" vocabulary="DAC" /&gt;
 </pre></code>
 </p>
-</p>
-<p id="developer-tools">
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L583">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/policy-marker.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L583">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/policy-marker.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>
