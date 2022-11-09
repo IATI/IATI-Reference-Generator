@@ -1,35 +1,33 @@
 <div class="body" role="main">
-<p id="location">
+<section id="location">
 <h1>location</h1>
 <p><code>iati-activities/iati-activity/location</code></p>
 <p>This is the reference page for the XML element <code>location</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The sub-national geographical identification of the target
 locations of an activity. These can be described by gazetteer
 reference, coordinates, administrative areas or a textual
 description.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-location-ref">
-<dt>@ref</dt>
-<dd><p>An internal reference that uniquely describes the location
+<dt>@ref</dt><dd><p>An internal reference that uniquely describes the location
 in the reporting organisation’s own system.</p>
 <p>This value must be of type xsd:string.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-location-percentage">
-<dt>@percentage</dt>
-<dd><p>Deprecated since 1.04</p>
+<dt>@percentage</dt><dd><p>Deprecated since 1.04</p>
 <p>If more than one location is reported, percentage of
 activity commitment allocated to this location
 (if available).</p>
 <p>This value must be of type xsd:decimal.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>The <code>location</code> element is used a contain various other elements</p>
 <p><code><pre><span>  &lt;location ref="AF-KAN"&gt;
@@ -48,39 +46,39 @@ activity commitment allocated to this location
 <span>  &lt;/location&gt;
 </span></pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>1.04</h3>
 <p>Note that major changes were made to the subelements of <code>location</code> in version 1.04.</p>
 
 <p>For more information refer to:</p>
 
 <ul>
-<li>the <span>1.04 location changes overview guidance</span></li>
-<li>the <span>Activities Schema Changelog</span> (or the individual subemelement pages)</li>
+<li><p>the <span>1.04 location changes overview guidance</span></p></li>
+<li><p>the <span>Activities Schema Changelog</span> (or the individual subemelement pages)</p></li>
 </ul>
 
 <p>The @ref attribute was introduced to provide a cross reference that a publisher can use to link back to their own internal system.</p>
 <p>The @percentage attribute was deemed unworkable and deprecated in 1.04</p>
 
-</p>
-<p id="id2">
+</section>
+<section id="id2">
 <h3>1.03</h3>
 <p>Where used, the @percentage attribute is now designated as a decimal
 value and no longer as a positive Integer</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L824">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/location.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L824">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/location.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
@@ -99,6 +97,7 @@ value and no longer as a positive Integer</p>
 <li><a href="location-type/">location-type</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

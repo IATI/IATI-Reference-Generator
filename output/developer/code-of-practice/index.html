@@ -1,40 +1,41 @@
 <div class="body" role="main">
-<p id="code-of-practice">
+<section id="code-of-practice">
 <h1>Code of practice</h1>
 <p>The IATI technical team follows a code of practice when developing and maintaining software:</p>
 <ul>
-<li>We should know which code is ‘ours’: when possible, IATI code should be a part of the IATI GitHub.</li>
-<li>Projects and code should be appropriately branded. Please email the IATI technical team for branding guidelines: <a href="mailto:support%40iatistandard.org">support<span>@</span>iatistandard<span>.</span>org</a></li>
-<li>Projects and code should be in version control and present links to issue trackers and source code.</li>
-<li>Code should have a document, roadmap, estimate of resources and a licence.</li>
-<li>Projects should make use of <a href="https://semver.org">Semantic Versioning</a>.</li>
-<li>Updates to IATI code must not break existing functionality, except where permitted by semantic versioning practices.</li>
-<li>Deployed code should be on servers available to the IATI technical team.</li>
-<li>Status of software should be indicated in deployments: development, staging and live versions should be properly identified.</li>
-<li>When possible, code should log details about its usage.</li>
-<li>Developers should be able to find help and useful resources easily.</li>
-<li>We should protect our users’ privacy and ensure our code is secure.</li>
-<li>Projects should have continuous integration and testing with appropriate tools</li>
-<li>Projects should make use of appropriate tools to ensure that dependencies are updated when possible.</li>
+<li><p>We should know which code is ‘ours’: when possible, IATI code should be a part of the IATI GitHub.</p></li>
+<li><p>Projects and code should be appropriately branded. Please email the IATI technical team for branding guidelines: <a href="mailto:support%40iatistandard.org">support<span>@</span>iatistandard<span>.</span>org</a></p></li>
+<li><p>Projects and code should be in version control and present links to issue trackers and source code.</p></li>
+<li><p>Code should have a document, roadmap, estimate of resources and a licence.</p></li>
+<li><p>Projects should make use of <a href="https://semver.org">Semantic Versioning</a>.</p></li>
+<li><p>Updates to IATI code must not break existing functionality, except where permitted by semantic versioning practices.</p></li>
+<li><p>Deployed code should be on servers available to the IATI technical team.</p></li>
+<li><p>Status of software should be indicated in deployments: development, staging and live versions should be properly identified.</p></li>
+<li><p>When possible, code should log details about its usage.</p></li>
+<li><p>Developers should be able to find help and useful resources easily.</p></li>
+<li><p>We should protect our users’ privacy and ensure our code is secure.</p></li>
+<li><p>Projects should have continuous integration and testing with appropriate tools</p></li>
+<li><p>Projects should make use of appropriate tools to ensure that dependencies are updated when possible.</p></li>
 </ul>
-<p id="our-gitflow">
+<section id="our-gitflow">
 <h2>Our Gitflow</h2>
 <ol>
-<li>Repositories should contain protected main and develop branches.</li>
-<li>Bug fixes and feature work should be branched off from the dev branch.</li>
-<li>Pull requests from these branches are then made to the dev branch.</li>
-<li>Code reviews for pull requests are made in local environments.</li>
-<li>The dev branch is deployed and tested in a development environment or server.</li>
-<li>Once the feature branches have been merged, deployed and tested in the development environment, a pull request can be made from the dev branch to the main branch.</li>
-<li>The main branch is then deployed to the live environment when a GitHub Release is created.</li>
+<li><p>Repositories should contain protected main and develop branches.</p></li>
+<li><p>Bug fixes and feature work should be branched off from the dev branch.</p></li>
+<li><p>Pull requests from these branches are then made to the dev branch.</p></li>
+<li><p>Code reviews for pull requests are made in local environments.</p></li>
+<li><p>The develop branch is deployed and tested in a development environment or server.</p></li>
+<li><p>Once the feature branches have been merged, deployed and tested in the development environment, a pull request can be made from the develop branch to the main branch.</p></li>
+<li><p>The main branch is then deployed to the live environment when a GitHub Release is created.</p></li>
 </ol>
 <dd>
 <p class=""><ul>
-<li>Only the main branch should be deployed to live environments.</li>
-<li>Urgent hotfixes can have pull requests done to the main branch and this should be undertaken only by the IATI Technical Team.</li>
-<li>Content and general use reviews should be done in a development environment, built using the development branch.</li>
+<li><p>Only the main branch should be deployed to live environments.</p></li>
+<li><p>Urgent hotfixes can have pull requests done to the main branch and this should be undertaken only by the IATI Technical Team.</p></li>
+<li><p>Content and general use reviews should be done in a development environment, built using the development branch.</p></li>
 </ul>
 </p></dd>
-</p>
-</p>
+</section>
+</section>
+
 </div>

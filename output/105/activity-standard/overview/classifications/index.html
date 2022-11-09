@@ -1,38 +1,39 @@
 <div class="body" role="main">
-<p id="classifications">
+<section id="classifications">
 <h1>Classifications</h1>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Within the <strong>IATI activity standard</strong> it is expected that <em>classifications</em> information is provided for any <code>iati-activity</code></p>
 <p>Namely:</p>
 <ul>
-<li><code>sector</code> - the thematic catgory (or set of categories) an <code>iati-activity</code> operates with</li>
+<li><p><code>sector</code> - the thematic catgory (or set of categories) an <code>iati-activity</code> operates with</p></li>
 </ul>
 <p>Additionally, the following classifications enable the publication of various codes (often associated with CRS++ reporting)</p>
 <ul>
-<li><code>policy-marker</code></li>
-<li><code>collaboration-type</code></li>
-<li><code>default-finance-type</code></li>
-<li><code>default-flow-type</code></li>
-<li><code>default-aid-type</code></li>
-<li><code>default-tied-status</code></li>
+<li><p><code>policy-marker</code></p></li>
+<li><p><code>collaboration-type</code></p></li>
+<li><p><code>default-finance-type</code></p></li>
+<li><p><code>default-flow-type</code></p></li>
+<li><p><code>default-aid-type</code></p></li>
+<li><p><code>default-tied-status</code></p></li>
 </ul>
-</p>
-<p id="considerations">
+</section>
+<section id="considerations">
 <h2>Considerations</h2>
 <p>When using the <strong>IATI activity standard</strong> to declare <em>documents</em>, the following should be considered:</p>
 <ul>
-<li>An <code>iati-activity</code> can have singlular or multiple <code>sector</code></li>
-<li>When multiple <code>sector</code> are described, then a <code>@percentage</code> should be declared for each. All reported sectors from the same vocabulary should add up to 100%.</li>
-<li>A <code>vocabulary</code> can be declared when describing a <code>sector</code>.  This must be on the <code>Vocabulary</code> codelist.</li>
-<li>If no <code>vocabulary</code> is declared, then the <a href="../../../codelists/Sector/"><span>DAC 5 digit codelist</span></a> is assumed.</li>
-<li>A <code>reporting-org</code> can declare their own <code>vocabulary</code>, via using the <em>RO</em> (Reporting Org) <code>Vocabulary</code> code.</li>
-<li>Multiple or singular <code>policy-marker</code> can also be described.  Unlike <code>sector</code>, there is no <code>@percentage attribute</code> to add.</li>
-<li>The classifications of <code>default-finance-type</code>, <code>default-flow-type</code>, <code>default-aid-type</code> and <code>default-tied-status</code> apply to the whole <code>iati-activity</code>.  These can be overridden within a single <code>transaction</code> via using any of <code>finance-type</code> , <code>flow-type</code> , <code>aid-type</code> and/or <code>tied-status</code>.</li>
-<li>If an activity is either wholly “tied” or “untied” it is recommended that the appropriate <code>default-tied-status</code> code is used.</li>
-<li>If an activity is “partially tied” it is recommended that the reported commitment/s are split into “tied” and “untied” amounts and <code>tied-status</code> is reported at <code>transaction</code> level. (NB that tied status should be reported for commitments only.)</li>
-<li>When using <code>policy-marker</code> and the <code>Policy Significance</code> code <em>4</em> (Explicit primary objective) - this SHOULD ONLY be used in conjunction with <code>Policy Marker</code> code <em>9</em> (Reproductive, Maternal, Newborn and Child Health)</li>
+<li><p>An <code>iati-activity</code> can have singlular or multiple <code>sector</code></p></li>
+<li><p>When multiple <code>sector</code> are described, then a <code>@percentage</code> should be declared for each. All reported sectors from the same vocabulary should add up to 100%.</p></li>
+<li><p>A <code>vocabulary</code> can be declared when describing a <code>sector</code>.  This must be on the <code>Vocabulary</code> codelist.</p></li>
+<li><p>If no <code>vocabulary</code> is declared, then the <a href="../../../codelists/Sector/"><span>DAC 5 digit codelist</span></a> is assumed.</p></li>
+<li><p>A <code>reporting-org</code> can declare their own <code>vocabulary</code>, via using the <em>RO</em> (Reporting Org) <code>Vocabulary</code> code.</p></li>
+<li><p>Multiple or singular <code>policy-marker</code> can also be described.  Unlike <code>sector</code>, there is no <code>@percentage attribute</code> to add.</p></li>
+<li><p>The classifications of <code>default-finance-type</code>, <code>default-flow-type</code>, <code>default-aid-type</code> and <code>default-tied-status</code> apply to the whole <code>iati-activity</code>.  These can be overridden within a single <code>transaction</code> via using any of <code>finance-type</code> , <code>flow-type</code> , <code>aid-type</code> and/or <code>tied-status</code>.</p></li>
+<li><p>If an activity is either wholly “tied” or “untied” it is recommended that the appropriate <code>default-tied-status</code> code is used.</p></li>
+<li><p>If an activity is “partially tied” it is recommended that the reported commitment/s are split into “tied” and “untied” amounts and <code>tied-status</code> is reported at <code>transaction</code> level. (NB that tied status should be reported for commitments only.)</p></li>
+<li><p>When using <code>policy-marker</code> and the <code>Policy Significance</code> code <em>4</em> (Explicit primary objective) - this SHOULD ONLY be used in conjunction with <code>Policy Marker</code> code <em>9</em> (Reproductive, Maternal, Newborn and Child Health)</p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

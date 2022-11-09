@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="useful-xquery-queries">
+<section id="useful-xquery-queries">
 <h1>Useful XQuery queries</h1>
 <p>XQuery is a query language for querying XML files. This page provides some useful example queries for working with IATI data. A good graphical interface for running these queries is <a href="https://basex.org/">BaseX</a>.</p>
 <p>Many of the queries below are also valid XPath, since XPath is a subset of XQuery.</p>
-<p id="activities-missing-information">
+<section id="activities-missing-information">
 <h2>Activities missing information</h2>
 <p>Which activities are missing the Implementing Org?</p>
 <p><code><pre>//iati-activity[<span>not</span>(participating-org/@role=<span>'Implementing'</span>)]
@@ -13,8 +13,8 @@
 <p><code><pre>//iati-activity[<span>not</span>(transaction/transaction-type/@code=<span>'C'</span>)]
 </pre></code>
 </p>
-</p>
-<p id="counting-distinct-activities">
+</section>
+<section id="counting-distinct-activities">
 <h2>Counting distinct activities</h2>
 <p>Count number of activities</p>
 <p><code><pre><span>count</span>(//iati-activity)
@@ -25,37 +25,49 @@
 </pre></code>
 </p>
 <p>Percentage of activities with unique activity identifiers</p>
-<p><code><pre><span>count</span>(<span>distinct-values</span>(//iati-activity/iati-identifier)) div <span>count</span>(//iati-activity/iati-identifier) * 100
+<p><code><pre><span>count</span>(<span>distinct-values</span>(//iati-activity/iati-identifier))div<span>count</span>(//iati-activity/iati-identifier)*100
 </pre></code>
 </p>
 <p>Count distinct IATI Identifiers for a given reporting organisation</p>
 <p><code><pre><span>count</span>(<span>distinct-values</span>(//iati-activity[reporting-org/@ref=<span>'SE-6'</span>]/iati-identifier))
 </pre></code>
 </p>
-</p>
-<p id="dates">
-<h2>Dates</h2>
-<p>Smallest start date</p>
-<p><code><pre><span>min</span>(for <span>$</span>d <span>in</span> //activity-date[@type="start-planned" <span>or</span> @type="start-actual"]/@iso-date where (<span>$</span>d != <span>''</span>) return <span>xs:date</span>(<span>$</span>d))
+</section>
+<section id="finding-distinct-iati-identifiers">
+<h2>Finding distinct IATI identifiers</h2>
+<p>Find duplicate IATI identifiers in a group of iati-activities</p>
+<p><code><pre>//iati-activities/iati-activity[iati-identifier=preceding-sibling::iati-activity/iati-identifier]/iati-identifier
 </pre></code>
 </p>
+<p>Return the XML of activities found to be duplicate by identifier (only the duplicates, not the originals)</p>
+<p><code><pre>//iati-activities/iati-activity[iati-identifier=preceding-sibling::iati-activity/iati-identifier]
+</pre></code>
 </p>
-<p id="budgets">
+</section>
+<section id="dates">
+<h2>Dates</h2>
+<p>Smallest start date</p>
+<p><code><pre><span>min</span>(for <span>$</span>d<span>in</span>//activity-date[@type="start-planned"<span>or</span>@type="start-actual"]/@iso-datewhere(<span>$</span>d!=<span>''</span>)return<span>xs:date</span>(<span>$</span>d))
+</pre></code>
+</p>
+</section>
+<section id="budgets">
 <h2>Budgets</h2>
 <p>Find budgets that have start dates after a certain date
 (replace yyyymmdd with year, month, and day. e.g. 1st Sept. 2013 would be 20130901])</p>
-<p><code><pre>//budget[<span>number</span>(<span>translate</span>(period-start/@iso-date,<span>'-'</span>,<span>''</span>)) &gt; yyyymmdd]
+<p><code><pre>//budget[<span>number</span>(<span>translate</span>(period-start/@iso-date,<span>'-'</span>,<span>''</span>))&gt;yyyymmdd]
 </pre></code>
 </p>
 <p>Find the activities that have a budget with a start date after a certain date
 (append /.. )</p>
-<p><code><pre>//budget[<span>number</span>(<span>translate</span>(period-start/@iso-date,<span>'-'</span>,<span>''</span>)) &gt; yyyymmdd]/..
+<p><code><pre>//budget[<span>number</span>(<span>translate</span>(period-start/@iso-date,<span>'-'</span>,<span>''</span>))&gt;yyyymmdd]/..
 </pre></code>
 </p>
 <p>Find the iati-identifiers of budgets that have start dates after a certain date</p>
-<p><code><pre>//budget[<span>number</span>(<span>translate</span>(period-start/@iso-date,<span>'-'</span>,<span>''</span>)) &gt; yyyymmdd]/..//iati-identifier
+<p><code><pre>//budget[<span>number</span>(<span>translate</span>(period-start/@iso-date,<span>'-'</span>,<span>''</span>))&gt;yyyymmdd]/..//iati-identifier
 </pre></code>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

@@ -106,7 +106,7 @@ code,name,description,category,url,status
 30017,"SANAD Fund for Micro, Small and Medium Enterprises",,31000,,active
 30018,African Finance Corporation,,31000,,active
 30019,Currency Exchange Fund N.V.,,31000,,active
-30020,Global Energy Efficiency and Renewable Energy Fund,,31000,,active
+30020,Global Energy Efficiency and Renewable Energy Fund II,,31000,,active
 31000,Partenariats public-privé (PPP),,30000,,active
 31001,Réseau de développement mondial,,32000,,active
 31002,Alliance mondiale pour le savoir,,32000,,active
@@ -114,6 +114,7 @@ code,name,description,category,url,status
 31004,Secrétariat de l'Initiative pour la transparence dans les industries extractives,,32000,,active
 31005,Réseau parlementaire sur la Banque mondaile,,32000,,active
 31006,Coalition pour les innovations en matière de préparation,,31000,,active
+31007,Initiative médicaments contres les maladies négligées,,32000,,active
 32000,Réseaux,,30000,,active
 40000,Organisations multilatérales,,,,active
 41000,"Agence, fonds ou commission des Nations Unies (ONU)",,40000,,active
@@ -121,9 +122,9 @@ code,name,description,category,url,status
 41101,Convention sur la lutte contre la désertification,,41100,,active
 41102,Organisation de lutte contre le criquet pèlerin dans l'Est Africain,,47000,,active
 41103,Commission économique pour l'Afrique,,41100,,active
-41104,Commission économique pour l'Amérique latine et les Caraïbes,,41100,,active
-41105,Commission économique et sociale pour l'Asie occidentale,,41100,,active
-41106,Commission économique et sociale pour l'Asie et le Pacifique,,41100,,active
+41104,Commission économique pour l'Amérique latine et les Caraïbes,,41300,,active
+41105,Commission économique et sociale pour l'Asie occidentale,,41300,,active
+41106,Commission économique et sociale pour l'Asie et le Pacifique,,41300,,active
 41107,Agence internationale de l'énergie atomique (Contributions au Fonds de Coopération Technique uniquement),,41100,,active
 41108,Fonds international de développement agricole,,41100,,active
 41109,International Research and Training Institute for the Advancement of Women,,41000,,withdrawn
@@ -141,7 +142,7 @@ code,name,description,category,url,status
 41125,Institut des Nations Unies pour la formation et la recherche,,41100,,active
 41126,Service de l'action antimines des Nations Unies,,41600,,active
 41127,Bureau des Nations Unies pour la coordination de l'assistance humanitaire,,41100,,active
-41128,Office des Nations Unies contre la drogue et le crime,,41100,,active
+41128,Office des Nations Unies contre la drogue et le crime,,41300,,active
 41129,Institut de recherche des Nations Unies pour le développement social,,41100,,active
 41130,Office de secours et de travaux des Nations Unies pour les réfugiés de Palestine dans le Proche-Orient,,41100,,active
 41131,Ecole des cadres du système des Nations Unies,,41100,,active
@@ -170,7 +171,7 @@ code,name,description,category,url,status
 41303,Union internationale des télécommunications,,41300,,active
 41304,"Organisation des Nations Unies pour l’éducation, la science et la culture",,41300,,active
 41305,Organisation des Nations Unies,,41300,,active
-41306,Union postale universelle,,41100,,active
+41306,Union postale universelle,,41300,,active
 41307,Organisation mondiale de la santé - contributions obligatoires,,41300,,active
 41308,Organisation mondiale de la propriété intellectuelle,,41300,,active
 41309,Organisation météorologique mondiale,,41300,,active
@@ -185,13 +186,19 @@ code,name,description,category,url,status
 41318,Mécanisme mondial,,41600,,active
 41319,Organisation mondiale du tourisme,,41300,,active
 41320,Banque de Technologies en faveur des Pays les Moins Avancés,,41100,,active
+41321,Organisation mondiale de la santé - Plan stratégique de préparation et d'intervention,,41300,,active
 41400,Fonds communs interinstitutions des Nations Unies,,41000,,active
 41401,UN-Multi Partner Trust Fund Office,,41400,,active
+41402,Fonds conjoint des objectifs de développement durable,,41400,,active
+41403,COVID-19 Response and Recovery Multi-Partner Trust Fund,,41400,,active
 41500,Fonds thématiques uniques des Nations Unies,,41000,,active
 41501,,,41400,,active
 41502,Le Bureau des Nations Unies pour les services d'appui aux projets,,41300,,active
 41503,,,41400,,active
 41600,Canaux de l'ONU existants non inclus dans la norme I du cadre de reporting du cube de l'ONU,,41000,,active
+41700,"Entités des Nations Unies, contributions autres que de base",,41000,,withdrawn
+41701,International Labour Organisation - non-core,,41700,,active
+41702,World Health Organisation - non-core,,41700,,active
 42000,Institutions de l'Union européenne,,40000,,active
 42001,Commission européenne - partie du budget affectée au développement,,42000,,active
 42003,Commission européenne - Fonds européen de développement,,42000,,active
@@ -382,6 +389,7 @@ code,name,description,category,url,status
 47146,,,47000,,active
 47147,Facilité internationale de financement pour l'éducation,,47000,,active
 47148,Organisation mondiale de la santé animale,,47000,,active
+47149,Commission internationale pour les personnes disparues,,47000,,active
 47400,,,47000,,active
 47501,Partenariat Mondial pour l'Education,,47000,,active
 47502,,,47000,,active

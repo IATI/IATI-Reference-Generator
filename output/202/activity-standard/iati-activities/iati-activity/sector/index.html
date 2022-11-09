@@ -1,15 +1,15 @@
 <div class="body" role="main">
-<p id="sector">
+<section id="sector">
 <h1>sector</h1>
 <p><code>iati-activities/iati-activity/sector</code></p>
 <p>This is the reference page for the XML element <code>sector</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>A recognised code, from a recognised vocabulary, classifying
 the purpose of the activity. Sector MUST EITHER be reported
 here OR at transaction level for ALL transactions</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element may occur any number of times.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L411">2.1.1</a>: When multiple sectors, within a vocabulary (e.g. 1 - OECD DAC) are declared, each must have a percentage.</p>
@@ -19,12 +19,11 @@ here OR at transaction level for ALL transactions</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L628">6.6.2</a>: Sectors must only be declared at activity level OR for all transactions.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L96">6.7.2</a>: If sector is declared at transaction level, a sector must be declared for all transactions.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L582">102.1.1</a>: When a non OECD DAC sector vocabulary is used, sector vocabulary 1 - OECD DAC should also be used.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-sector-vocabulary">
-<dt>@vocabulary</dt>
-<dd><p>An IATI code for the vocabulary (see codelist) used for
+<dt>@vocabulary</dt><dd><p>An IATI code for the vocabulary (see codelist) used for
 sector classifications. If omitted, OECD DAC 5-digit
 Purpose Codes are assumed.</p>
 <p>It is recommended that OECD DAC 5-digit Purpose Codes are
@@ -45,15 +44,13 @@ EITHER transaction level OR activity level.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-sector-vocabulary-uri">
-<dt>@vocabulary-uri</dt>
-<dd><p>If the vocabulary is 99 or 98 (reporting organisation), the URI
+<dt>@vocabulary-uri</dt><dd><p>If the vocabulary is 99 or 98 (reporting organisation), the URI
 where this internal vocabulary is defined.</p>
 <p>This value must be of type xsd:anyURI.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-sector-code">
-<dt>@code</dt>
-<dd><p>The code for the sector.</p>
+<dt>@code</dt><dd><p>The code for the sector.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../codelists/Sector/"><span>Sector codelist</span></a>, if the relevant vocabulary is used.</p>
@@ -63,8 +60,7 @@ where this internal vocabulary is defined.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-sector-percentage">
-<dt>@percentage</dt>
-<dd><p>The percentage of total commitments or total activity budget to this item.
+<dt>@percentage</dt><dd><p>The percentage of total commitments or total activity budget to this item.
 Content must be a positive decimal number between 0 and
 100, with no percentage sign. All reported sectors from
 the same vocabulary MUST add up to 100%</p>
@@ -73,8 +69,8 @@ the same vocabulary MUST add up to 100%</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.02/rulesets/standard.json#L517">12.3.2</a>: The sector percentage value must be 0.0 or positive.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>sector</code> of an <code>iati-activity</code>.</p>
 
@@ -107,38 +103,39 @@ the same vocabulary MUST add up to 100%</p>
 <p><code><pre>&lt;sector vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" /&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id10">
+<section id="id10">
 <h3>2.02</h3>
 <p>The <code>vocabulary-uri</code> attribute was <a href="http://support.iatistandard.org/entries/105713163-Add-URI-attribute-to-elements-where-Reporting-organisation-vocabularies-are-used">added</a>.</p>
-</p>
-<p id="id11">
+</section>
+<section id="id11">
 <h3>2.01</h3>
 <p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element, but only in particular use-cases.</p>
-</p>
-<p id="id12">
+</section>
+<section id="id12">
 <h3>1.03</h3>
 <p>Where used, the @percentage attribute is now designated as a decimal
 value and no longer as a positive Integer</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L597">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/sector.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L597">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/sector.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

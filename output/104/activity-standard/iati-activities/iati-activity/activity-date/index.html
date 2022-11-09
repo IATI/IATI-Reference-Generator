@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="activity-date">
+<section id="activity-date">
 <h1>activity-date</h1>
 <p><code>iati-activities/iati-activity/activity-date</code></p>
 <p>This is the reference page for the XML element <code>activity-date</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The planned and actual start and completion dates of the
 activity. Start dates may reflect either the commencement of
@@ -17,20 +17,18 @@ Dates should be in ISO 8601 date YYYY-MM-DD format, e.g.
 for recording less specific dates such as month, quarter, or
 year.</p>
 <p>The text in this element must be of type xsd:string.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-activity-date-type">
-<dt>@type</dt>
-<dd><p>A machine readable code describing the type of thing being referenced.
+<dt>@type</dt><dd><p>A machine readable code describing the type of thing being referenced.
 The value should be available on a related codelist.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../codelists/ActivityDateType/"><span>ActivityDateType codelist</span></a>.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-activity-date-iso-date">
-<dt>@iso-date</dt>
-<dd><p>An activity milestone date in ISO 8601 date format,
+<dt>@iso-date</dt><dd><p>An activity milestone date in ISO 8601 date format,
 e.g. “2010-12-01”.</p>
 <p>This value must be of type xsd:date.</p>
 </dd>
@@ -42,13 +40,12 @@ e.g. “2010-12-01”.</p>
 <p><code>activity-date[@type='end-actual']/@iso-date</code> must not be in the future.</p>
 </p></dd>
 <dl id="iati-activities-iati-activity-activity-date-xml-lang">
-<dt>@xml:lang</dt>
-<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<dt>@xml:lang</dt><dd><p>ISO 2 letter code specifying the language of text in this element.</p>
 <p>This value should be on the <a href="../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example of an <code>activity-date</code> with one each of the four possible <code>ActivityDateType</code> codes:</p>
 <p>A date in ISO 8601 format (YYYY-MM-DD) is required:</p>
@@ -66,14 +63,15 @@ e.g. “2010-12-01”.</p>
 </pre></code>
 </p>
 <p>Note: In all cases, a <code>start-actual</code> or <code>end-actual</code> with a date in the <em>future</em>, is not expected.</p>
-</p>
-<p id="developer-tools">
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L438">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/activity-date.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L438">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/activity-date.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

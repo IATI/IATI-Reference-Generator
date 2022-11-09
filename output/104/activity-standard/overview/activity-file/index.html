@@ -1,43 +1,43 @@
 <div class="body" role="main">
-<p id="activity-file">
+<section id="activity-file">
 <h1>Activity file</h1>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The <em>activity file</em> contains the data defined by the <strong>IATI activity standard</strong>.</p>
 <p>It is an XML file, containing the relevant <strong>IATI activity standard</strong> fields for the publishing organisation.</p>
-</p>
-<p id="considerations">
+</section>
+<section id="considerations">
 <h2>Considerations</h2>
 <p>When using the <strong>IATI activity standard</strong> to produce an <em>iati-identifier</em>, the following should be considered:</p>
 <ul>
-<li>An IATI publisher should publish at least one activity file.</li>
-<li>An activity file should contain at least one <code>iati-activity</code></li>
-<li>It should be updated at least annually.</li>
-<li>It must be <span>well-formed XML</span>.</li>
-<li>It must validate against the relevant version of the <a href="../../../schema/"><span>**IATI activity schema**</span></a></li>
-<li>Any <em>activity file</em> must have <code>iati-activities</code> as the root element - to contain all other elements.</li>
-<li>The <code>generated-datetime</code> attribute of <code>iati-activities</code> - a date/time stamp for when the <em>activity-file</em> was generated - is highly recommended.</li>
-<li>The <code>generated-datetime</code> is declared at the <code>iati-activities</code> level.  Is not necessarily the same as the <code>last-updated-datetime</code> for the individual <code>iati-activity</code> records within it.</li>
-<li>Across a set of <em>activity files</em> published by a single organisation, individual <code>iati-activity</code>, referenced via a unique <code>iati-identifier</code>, should not be duplicated.</li>
-<li>A link to the activity file(s) should be published on the <strong>IATI Registry</strong>.</li>
-<li>Ideally, this link would be to an activity file(s) on the publisher website or open data portal.  However, third party tools are available to generate and host files on behalf of publishers.</li>
+<li><p>An IATI publisher should publish at least one activity file.</p></li>
+<li><p>An activity file should contain at least one <code>iati-activity</code></p></li>
+<li><p>It should be updated at least annually.</p></li>
+<li><p>It must be <span>well-formed XML</span>.</p></li>
+<li><p>It must validate against the relevant version of the <a href="../../../schema/"><span>**IATI activity schema**</span></a></p></li>
+<li><p>Any <em>activity file</em> must have <code>iati-activities</code> as the root element - to contain all other elements.</p></li>
+<li><p>The <code>generated-datetime</code> attribute of <code>iati-activities</code> - a date/time stamp for when the <em>activity-file</em> was generated - is highly recommended.</p></li>
+<li><p>The <code>generated-datetime</code> is declared at the <code>iati-activities</code> level.  Is not necessarily the same as the <code>last-updated-datetime</code> for the individual <code>iati-activity</code> records within it.</p></li>
+<li><p>Across a set of <em>activity files</em> published by a single organisation, individual <code>iati-activity</code>, referenced via a unique <code>iati-identifier</code>, should not be duplicated.</p></li>
+<li><p>A link to the activity file(s) should be published on the <strong>IATI Registry</strong>.</p></li>
+<li><p>Ideally, this link would be to an activity file(s) on the publisher website or open data portal.  However, third party tools are available to generate and host files on behalf of publishers.</p></li>
 <li><dl>
-<dt>When creating the <em>activity file</em> it is recommended to avoid spaces and non-ascii characters in file names and urls.  For example:</dt>
-<dd><ul>
-<li><code>iatiactivity.xml</code> is preferable to <code>IATI Activity.xml</code>.</li>
-<li><code>http://example.org/files/iatidata/iatiactivity.xml</code> is preferable to <code>http://example.org/files/iati data/IATI Activity.xml</code>.</li>
+<dt>When creating the <em>activity file</em> it is recommended to avoid spaces and non-ascii characters in file names and urls.  For example:</dt><dd><ul>
+<li><p><code>iatiactivity.xml</code> is preferable to <code>IATI Activity.xml</code>.</p></li>
+<li><p><code>http://example.org/files/iatidata/iatiactivity.xml</code> is preferable to <code>http://example.org/files/iati data/IATI Activity.xml</code>.</p></li>
 </ul>
 </dd>
 </dl>
 </li>
 </ul>
-</p>
-<p id="further-guidance">
+</section>
+<section id="further-guidance">
 <h2>Further Guidance</h2>
 <ul>
-<li>For <em>well-formed XML</em> tests, see the <a href="http://www.w3schools.com/xml/xml_validator.asp">W3C XML Validator</a></li>
-<li>The <a href="http://validator.iatistandard.org/">IATI Validator</a> tests data against the relevant version of the <strong>IATI organisation schema</strong>.</li>
+<li><p>For <em>well-formed XML</em> tests, see the <a href="http://www.w3schools.com/xml/xml_validator.asp">W3C XML Validator</a></p></li>
+<li><p>The <a href="http://validator.iatistandard.org/">IATI Validator</a> tests data against the relevant version of the <strong>IATI organisation schema</strong>.</p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

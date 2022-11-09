@@ -1,29 +1,27 @@
 <div class="body" role="main">
-<p id="budget-item">
+<section id="budget-item">
 <h1>budget-item</h1>
 <p><code>iati-activities/iati-activity/country-budget-items/budget-item</code></p>
 <p>This is the reference page for the XML element <code>budget-item</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Identifier for a single item in the recipient-country budget. If more than one identifier is reported the percentage share must be reported and all percentages should add up to 100 percent.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur at least once (within each parent element).</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-country-budget-items-budget-item-code">
-<dt>@code</dt>
-<dd><p>A code for the budget-item from the vocabulary specified.</p>
+<dt>@code</dt><dd><p>A code for the budget-item from the vocabulary specified.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../../codelists/BudgetIdentifier/"><span>BudgetIdentifier codelist</span></a>, if the relevant vocabulary is used.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-country-budget-items-budget-item-percentage">
-<dt>@percentage</dt>
-<dd><p>When multiple budget-item elements are declared within a single country-budget-items element, then, for each vocabulary used, the percentage values should sum 100%.</p>
+<dt>@percentage</dt><dd><p>When multiple budget-item elements are declared within a single country-budget-items element, then, for each vocabulary used, the percentage values should sum 100%.</p>
 <p>This value must be of type xsd:decimal.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L438">7.9.1</a>: When multiple budget items are declared, each must have a percentage.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L413">7.9.2</a>: Percentage values for budget items, should add up to 100%.</p>
@@ -31,8 +29,8 @@
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L651">12.2.1</a>: The percentage value must be between 0.0 and 100.0 (inclusive).</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>budget-item</code> within <code>country-budget-items</code> of an <code>iati-activity</code>.</p>
 
@@ -66,33 +64,34 @@
   &lt;/country-budget-items&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id5">
+<section id="id5">
 <h3>1.04</h3>
 <p>The @percentage attribute had been erroneously set to be required in the schema on it’s introduction in 1.03. This has now been set to ‘optional’ in the schema.</p>
-</p>
-<p id="id6">
+</section>
+<section id="id6">
 <h3>1.03</h3>
 <p>Added the optional country-budget-item element</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1577">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/country-budget-items/budget-item.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1577">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/country-budget-items/budget-item.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="description/">description</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

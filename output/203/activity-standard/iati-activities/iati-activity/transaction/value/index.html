@@ -1,21 +1,20 @@
 <div class="body" role="main">
-<p id="value">
+<section id="value">
 <h1>value</h1>
 <p><code>iati-activities/iati-activity/transaction/value</code></p>
 <p>This is the reference page for the XML element <code>value</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The amount of the contribution.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur once and only once (within each parent element).</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-transaction-value-currency">
-<dt>@currency</dt>
-<dd><p>A three letter ISO 4217 code for the original currency of the
+<dt>@currency</dt><dd><p>A three letter ISO 4217 code for the original currency of the
 amount. This is required for all currency amounts unless
 the iati-organisation/@default-currency attribute is
 specified.</p>
@@ -24,16 +23,15 @@ specified.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-transaction-value-value-date">
-<dt>@value-date</dt>
-<dd><p>The date to be used for determining the exchange rate for
+<dt>@value-date</dt><dd><p>The date to be used for determining the exchange rate for
 currency conversions.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:date.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L205">11.2.2</a>: The transaction value date must not be in the future.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>value</code> of a <code>transaction</code> in an <code>iati-activity</code>.</p>
 
@@ -59,7 +57,7 @@ currency conversions.</p>
    &lt;/receiver-org&gt;
    &lt;disbursement-channel code="1" /&gt;
    &lt;sector vocabulary="2" code="111" /&gt;
-   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="TM" /&gt;
    &lt;recipient-region code="616" vocabulary="1" /&gt;
    &lt;flow-type code="10" /&gt;
@@ -70,21 +68,22 @@ currency conversions.</p>
   &lt;/transaction&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id2">
+<section id="id2">
 <h3>1.03</h3>
 <p>Values are now allowed to be declared as decimals instead of integers.</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1001">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/transaction/value.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1001">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/transaction/value.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

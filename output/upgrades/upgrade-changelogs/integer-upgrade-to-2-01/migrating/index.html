@@ -1,74 +1,76 @@
 <div class="body" role="main">
-<p id="migrating-from-versions-1-x-to-version-2-01">
-<h1><a href="#id14">Migrating from versions 1.x to version 2.01</a></h1>
-<p id="contents">
+<section id="migrating-from-versions-1-x-to-version-2-01">
+<h1><a href="#id14" role="doc-backlink">Migrating from versions 1.x to version 2.01</a></h1>
+<nav id="contents">
 <p>Contents</p>
 <ul>
-<li><a href="#migrating-from-versions-1-x-to-version-2-01" id="id14">Migrating from versions 1.x to version 2.01</a><ul>
-<li><a href="#overview" id="id15">Overview</a><ul>
-<li><a href="#organisation-and-activity-identifiers" id="id16">Organisation and Activity Identifiers</a></li>
-<li><a href="#update-to-other-identifier-element" id="id17">Update to other-identifier element</a></li>
-<li><a href="#changes-introduced-between-versions-1-04-and-1-05-have-also-been-included-in-2-01" id="id18">Changes introduced between versions 1.04 and 1.05 have also been included in 2.01</a></li>
-<li><a href="#element-order" id="id19">Element Order</a></li>
-<li><a href="#mandatory-fields-in-activity-standard" id="id20">Mandatory Fields in Activity Standard</a></li>
-<li><a href="#mandatory-fields-in-organisation-standard" id="id21">Mandatory Fields in Organisation Standard</a></li>
-<li><a href="#declaring-the-version-of-the-iati-standard-being-used" id="id22">Declaring the Version of the IATI Standard being used</a></li>
-<li><a href="#using-namespaces" id="id23">Using Namespaces</a></li>
-<li><a href="#segmentation-and-file-size" id="id24">Segmentation and file size</a></li>
-<li><a href="#free-text-fields" id="id25">Free Text Fields</a></li>
-<li><a href="#handling-translations" id="id26">Handling Translations</a></li>
-<li><a href="#descriptive-text-is-no-longer-allowed-on-data-specified-by-codes-with-some-exceptions" id="id27">Descriptive text is no longer allowed on data specified by codes (with some exceptions)</a></li>
-<li><a href="#language-neutral-codelists" id="id28">Language Neutral Codelists</a></li>
-<li><a href="#allow-multiple-languages-to-be-specified-for-a-single-document-document-link" id="id29">Allow multiple languages to be specified for a single document (document-link)</a></li>
-<li><a href="#new-elements" id="id30">New Elements</a></li>
-<li><a href="#renamed-moved-and-removed-elements" id="id31">Renamed, Moved and Removed Elements</a></li>
-<li><a href="#using-recipient-region-and-recipient-country" id="id32">Using Recipient-Region and Recipient Country</a></li>
-<li><a href="#additional-elements-in-transactions-sector-recipient-country-recipient-region" id="id33">Additional elements in transactions (sector, recipient-country, recipient-region)</a></li>
-<li><a href="#additional-elements-in-organisation-documents-document-link" id="id34">Additional elements in Organisation documents (document-link)</a></li>
-<li><a href="#formatting-of-dates-and-datetimes" id="id35">Formatting of Dates (and datetimes)</a></li>
-<li><a href="#url-validation" id="id36">URL validation</a></li>
-<li><a href="#location-changes" id="id37">Location Changes</a></li>
-<li><a href="#changes-to-the-planned-disbursement-element-planned-disbursement" id="id38">Changes to the Planned Disbursement element (planned-disbursement)</a></li>
-<li><a href="#removal-of-the-type-attribute-on-some-description-elements" id="id39">Removal of the @type attribute on some description elements</a></li>
-<li><a href="#embedded-codelists-codelists-added-and-removed" id="id40">Embedded codelists - Codelists added and removed</a></li>
-<li><a href="#embedded-codelists-new-codes" id="id41">Embedded codelists - New Codes</a></li>
-<li><a href="#embedded-codelists-descriptions-of-code-values" id="id42">Embedded codelists - descriptions of code values</a></li>
-<li><a href="#non-embedded-codelists" id="id43">Non-Embedded Codelists</a></li>
-<li><a href="#update-of-schema-description-texts" id="id44">Update of Schema description texts</a></li>
-<li><a href="#tied-and-partially-tied-values" id="id45">Tied and partially tied values</a></li>
-<li><a href="#modify-guidance-on-participating-org-role-definition-of-funding-organisation" id="id46">Modify guidance on participating-org/@role : Definition of funding organisation</a></li>
+<li><p><a href="#migrating-from-versions-1-x-to-version-2-01" id="id14">Migrating from versions 1.x to version 2.01</a></p>
+<ul>
+<li><p><a href="#overview" id="id15">Overview</a></p>
+<ul>
+<li><p><a href="#organisation-and-activity-identifiers" id="id16">Organisation and Activity Identifiers</a></p></li>
+<li><p><a href="#update-to-other-identifier-element" id="id17">Update to other-identifier element</a></p></li>
+<li><p><a href="#changes-introduced-between-versions-1-04-and-1-05-have-also-been-included-in-2-01" id="id18">Changes introduced between versions 1.04 and 1.05 have also been included in 2.01</a></p></li>
+<li><p><a href="#element-order" id="id19">Element Order</a></p></li>
+<li><p><a href="#mandatory-fields-in-activity-standard" id="id20">Mandatory Fields in Activity Standard</a></p></li>
+<li><p><a href="#mandatory-fields-in-organisation-standard" id="id21">Mandatory Fields in Organisation Standard</a></p></li>
+<li><p><a href="#declaring-the-version-of-the-iati-standard-being-used" id="id22">Declaring the Version of the IATI Standard being used</a></p></li>
+<li><p><a href="#using-namespaces" id="id23">Using Namespaces</a></p></li>
+<li><p><a href="#segmentation-and-file-size" id="id24">Segmentation and file size</a></p></li>
+<li><p><a href="#free-text-fields" id="id25">Free Text Fields</a></p></li>
+<li><p><a href="#handling-translations" id="id26">Handling Translations</a></p></li>
+<li><p><a href="#descriptive-text-is-no-longer-allowed-on-data-specified-by-codes-with-some-exceptions" id="id27">Descriptive text is no longer allowed on data specified by codes (with some exceptions)</a></p></li>
+<li><p><a href="#language-neutral-codelists" id="id28">Language Neutral Codelists</a></p></li>
+<li><p><a href="#allow-multiple-languages-to-be-specified-for-a-single-document-document-link" id="id29">Allow multiple languages to be specified for a single document (document-link)</a></p></li>
+<li><p><a href="#new-elements" id="id30">New Elements</a></p></li>
+<li><p><a href="#renamed-moved-and-removed-elements" id="id31">Renamed, Moved and Removed Elements</a></p></li>
+<li><p><a href="#using-recipient-region-and-recipient-country" id="id32">Using Recipient-Region and Recipient Country</a></p></li>
+<li><p><a href="#additional-elements-in-transactions-sector-recipient-country-recipient-region" id="id33">Additional elements in transactions (sector, recipient-country, recipient-region)</a></p></li>
+<li><p><a href="#additional-elements-in-organisation-documents-document-link" id="id34">Additional elements in Organisation documents (document-link)</a></p></li>
+<li><p><a href="#formatting-of-dates-and-datetimes" id="id35">Formatting of Dates (and datetimes)</a></p></li>
+<li><p><a href="#url-validation" id="id36">URL validation</a></p></li>
+<li><p><a href="#location-changes" id="id37">Location Changes</a></p></li>
+<li><p><a href="#changes-to-the-planned-disbursement-element-planned-disbursement" id="id38">Changes to the Planned Disbursement element (planned-disbursement)</a></p></li>
+<li><p><a href="#removal-of-the-type-attribute-on-some-description-elements" id="id39">Removal of the @type attribute on some description elements</a></p></li>
+<li><p><a href="#embedded-codelists-codelists-added-and-removed" id="id40">Embedded codelists - Codelists added and removed</a></p></li>
+<li><p><a href="#embedded-codelists-new-codes" id="id41">Embedded codelists - New Codes</a></p></li>
+<li><p><a href="#embedded-codelists-descriptions-of-code-values" id="id42">Embedded codelists - descriptions of code values</a></p></li>
+<li><p><a href="#non-embedded-codelists" id="id43">Non-Embedded Codelists</a></p></li>
+<li><p><a href="#update-of-schema-description-texts" id="id44">Update of Schema description texts</a></p></li>
+<li><p><a href="#tied-and-partially-tied-values" id="id45">Tied and partially tied values</a></p></li>
+<li><p><a href="#modify-guidance-on-participating-org-role-definition-of-funding-organisation" id="id46">Modify guidance on participating-org/@role : Definition of funding organisation</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-</p>
-<p id="overview">
-<h2><a href="#id15">Overview</a></h2>
+</nav>
+<section id="overview">
+<h2><a href="#id15" role="doc-backlink">Overview</a></h2>
 <p>This is an issue by issue guide for data publishers and data users of the IATI Standard.</p>
 <p>It is aimed at people who are already familiar with the IATI Standard in it’s version 1.x form, and are looking to find out what has changed and how it may or may not affect them when creating or using data built to the 2.01 version of the IATI Standard.</p>
 <p>It is recommended that you inspect each point in turn to decide if you need to take any action.</p>
 <p>Readers of this document should not assume that the ordering of issues in the document implies a hierarchy of importance. Different data users/publishers will find some issues more relevant/important than others.</p>
-<p id="organisation-and-activity-identifiers">
-<h3><a href="#id16">Organisation and Activity Identifiers</a></h3>
+<section id="organisation-and-activity-identifiers">
+<h3><a href="#id16" role="doc-backlink">Organisation and Activity Identifiers</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>IATI organisation identifiers should:</p>
 <ul>
-<li>be globally unique</li>
-<li>be constructed from a consistent methodology</li>
-<li>be compatible with other data standards</li>
+<li><p>be globally unique</p></li>
+<li><p>be constructed from a consistent methodology</p></li>
+<li><p>be compatible with other data standards</p></li>
 </ul>
 <p>Specifically, a valid organisation identifier:</p>
 <ul>
-<li>Must start with a valid agency prefix</li>
-<li>The agency prefix MUST be a valid code in the <a href="/en/iati-standard/201/codelists/OrganisationRegistrationAgency/">IATI OrganisationRegistrationAgency codelist</a></li>
-<li>MUST only contain alphanumeric characters and hyphen, underscore, colon or period</li>
+<li><p>Must start with a valid agency prefix</p></li>
+<li><p>The agency prefix MUST be a valid code in the <a href="/en/iati-standard/201/codelists/OrganisationRegistrationAgency/">IATI OrganisationRegistrationAgency codelist</a></p></li>
+<li><p>MUST only contain alphanumeric characters and hyphen, underscore, colon or period</p></li>
 </ul>
 <p>IATI activity identifiers</p>
 <ul>
-<li>must be globally unique</li>
-<li>must be persistent</li>
-<li>must be prefixed with an organisation identifier</li>
+<li><p>must be globally unique</p></li>
+<li><p>must be persistent</p></li>
+<li><p>must be prefixed with an organisation identifier</p></li>
 </ul>
 <p>It should be recognised that IATI organisation identifiers can change over time. i.e. they CAN NOT be persistent.
 Therefore when a reporting organisation’s identifier changes, the  previous reporting organisation identifier(s) should be reported in addition to the new one.</p>
@@ -77,19 +79,21 @@ Therefore when a reporting organisation’s identifier changes, the  previous re
 <p>For information on the changes to that element see: <span>Update to other-identifier element</span></p>
 <p>In addition:</p>
 <ul>
-<li>ALL publishers of IATI data MUST have a valid organisation identifier reported in reporting-org/@ref</li>
-<li>When using the @ref attribute in participating-org/@ref, transaction/provider-org/@ref and transaction/receiver-org/@ref must be a valid organisation identifier. If you do not have one, then the narrative element may be used to describe the organisation.</li>
-<li>The reporting-org element is MANDATORY.<ul>
-<li>ALL the following rules must apply to the organisation-identifier in reporting-org/@ref</li>
-<li>It is mandatory</li>
-<li>The identifier MUST be the same as that recorded by the publisher on the IATI Registry</li>
+<li><p>ALL publishers of IATI data MUST have a valid organisation identifier reported in reporting-org/@ref</p></li>
+<li><p>When using the @ref attribute in participating-org/@ref, transaction/provider-org/@ref and transaction/receiver-org/@ref must be a valid organisation identifier. If you do not have one, then the narrative element may be used to describe the organisation.</p></li>
+<li><p>The reporting-org element is MANDATORY.</p>
+<ul>
+<li><p>ALL the following rules must apply to the organisation-identifier in reporting-org/@ref</p></li>
+<li><p>It is mandatory</p></li>
+<li><p>The identifier MUST be the same as that recorded by the publisher on the IATI Registry</p></li>
 </ul>
 </li>
-<li>The iati-identifier is MANDATORY<ul>
-<li>It MUST be globally unique among all activities published through the IATI Registry</li>
-<li>Once an activity has been reported to IATI its identifier MUST NOT be changed in subsequent updates,</li>
-<li>It MUST be prefixed with EITHER the organisation-identifier found in reporting-org/@ref OR a previous reporting-org identifier reported in <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a></li>
-<li>The identifier MUST only contain alphanumeric characters and hyphen, underscore, colon or period</li>
+<li><p>The iati-identifier is MANDATORY</p>
+<ul>
+<li><p>It MUST be globally unique among all activities published through the IATI Registry</p></li>
+<li><p>Once an activity has been reported to IATI its identifier MUST NOT be changed in subsequent updates,</p></li>
+<li><p>It MUST be prefixed with EITHER the organisation-identifier found in reporting-org/@ref OR a previous reporting-org identifier reported in <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a></p></li>
+<li><p>The identifier MUST only contain alphanumeric characters and hyphen, underscore, colon or period</p></li>
 </ul>
 </li>
 </ul>
@@ -98,8 +102,8 @@ Therefore when a reporting organisation’s identifier changes, the  previous re
 Identifier that is prefixed with a valid code on the <a href="/en/iati-standard/201/codelists/OrganisationRegistrationAgency/">IATI OrganisationRegistrationAgency codelist</a></p>
 <p>This means that a number of publishers will have to:</p>
 <ul>
-<li>Change their organisation identifier</li>
-<li>Continue to report existing activities using the same activity identifier, but also report their previous Organisation Identifier using the <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a> element.</li>
+<li><p>Change their organisation identifier</p></li>
+<li><p>Continue to report existing activities using the same activity identifier, but also report their previous Organisation Identifier using the <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a> element.</p></li>
 </ul>
 <p>In addition, if they wish to use IATI as their registration agency, they will need to agree their new identifier on the <a href="/en/iati-standard/201/codelists/IATIOrganisationIdentifier/">IATIOrganisationIdentifier codelist</a></p>
 <p>Wherever @ref is used to talk about organisations in the standard, those references must be a valid organisation identifier (as defined above).</p>
@@ -107,20 +111,19 @@ Identifier that is prefixed with a valid code on the <a href="/en/iati-standard/
 <p>This is fundamental to the creation and use of IATI data and applies throughout the IATI Standard</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>While the schema will not be able to test for valid Organisation and Activity identifiers, it is possible to machine write tests to check for some compliance. However if your data does not meet these standards then it becomes difficult for others to use.</p>
-</p>
-<p id="update-to-other-identifier-element">
-<h3><a href="#id17">Update to other-identifier element</a></h3>
+</section>
+<section id="update-to-other-identifier-element">
+<h3><a href="#id17" role="doc-backlink">Update to other-identifier element</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>In versions 1.x of the IATI Standard the other-identifier element could be used to specify an alternative, non-IATI identifier for the activity.</p>
 <p>In version 2.01 of the IATI Standard the definition of the element has changed to allow an number of types of alternative identifiers.</p>
 <dl>
-<dt>In version 2.01 of the IATI Standard the element has been re-constructed</dt>
-<dd><ul>
-<li>The @owner-ref and @owner-name attributes have been removed.</li>
-<li>New attributes other-identifier/@type and other-identifier/@ref are added</li>
-<li>The @type attribute is used to specify the type of identifier being given.</li>
-<li>The @ref attribute is used for the identifier itself.</li>
-<li>There is a child element <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/owner-org/">other-identifier/owner-org</a> where information about the organisation that crafted the identifier can be given. This field is set up so that multilingual text can be supplied,</li>
+<dt>In version 2.01 of the IATI Standard the element has been re-constructed</dt><dd><ul>
+<li><p>The @owner-ref and @owner-name attributes have been removed.</p></li>
+<li><p>New attributes other-identifier/@type and other-identifier/@ref are added</p></li>
+<li><p>The @type attribute is used to specify the type of identifier being given.</p></li>
+<li><p>The @ref attribute is used for the identifier itself.</p></li>
+<li><p>There is a child element <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/owner-org/">other-identifier/owner-org</a> where information about the organisation that crafted the identifier can be given. This field is set up so that multilingual text can be supplied,</p></li>
 </ul>
 </dd>
 </dl>
@@ -132,8 +135,8 @@ Identifier that is prefixed with a valid code on the <a href="/en/iati-standard/
 <p>To solve this, a previous reporting-org identifier can be reported in the
 <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a> element. This then allows us to require that an iati-identifier must be prefixed with:</p>
 <ul>
-<li>EITHER the organisation-identifier found in reporting-org/@ref</li>
-<li>OR a previous reporting-org identifier reported in <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a></li>
+<li><p>EITHER the organisation-identifier found in reporting-org/@ref</p></li>
+<li><p>OR a previous reporting-org identifier reported in <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a></p></li>
 </ul>
 <p>For more information see:
 <a href="http://support.iatistandard.org/entries/52824355-Version-2-01-Iteration-3-9-Organisation-and-Activity-Identifiers">Organisation and Activity Identifiers</a> proposal on the support forum.</p>
@@ -143,18 +146,18 @@ constructed, and the entire element has been re-constructed.</p>
 <p>See: <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a></p>
 <p><strong>What happens if we do not do this?</strong></p>
 <ul>
-<li>Anyone reporting other-identifier in versions 1.x of the IATI Standard will need to reconstruct the way they report the data. They can continue to report the same data, but just need to reformat it.</li>
-<li>Data users should be aware that parsing <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a> is different in 2.01.</li>
-<li>Data publishers may take advantage of the opportunities to report other types of identifier that were not previously available to them.</li>
-<li>Data may fail validation against the relevant 2.01 schema if the changes are not taken into consideration.</li>
+<li><p>Anyone reporting other-identifier in versions 1.x of the IATI Standard will need to reconstruct the way they report the data. They can continue to report the same data, but just need to reformat it.</p></li>
+<li><p>Data users should be aware that parsing <a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/other-identifier/">other-identifier</a> is different in 2.01.</p></li>
+<li><p>Data publishers may take advantage of the opportunities to report other types of identifier that were not previously available to them.</p></li>
+<li><p>Data may fail validation against the relevant 2.01 schema if the changes are not taken into consideration.</p></li>
 </ul>
-</p>
-<p id="changes-introduced-between-versions-1-04-and-1-05-have-also-been-included-in-2-01">
-<h3><a href="#id18">Changes introduced between versions 1.04 and 1.05 have also been included in 2.01</a></h3>
+</section>
+<section id="changes-introduced-between-versions-1-04-and-1-05-have-also-been-included-in-2-01">
+<h3><a href="#id18" role="doc-backlink">Changes introduced between versions 1.04 and 1.05 have also been included in 2.01</a></h3>
 <p>As 2.01 of the IATI Standard was being prepared there was a decimal upgrade to version 1.05 that ran in parallel. All changes to the Standard between version 1.04 and 1.05 have been carried over into 2.01</p>
-</p>
-<p id="element-order">
-<h3><a href="#id19">Element Order</a></h3>
+</section>
+<section id="element-order">
+<h3><a href="#id19" role="doc-backlink">Element Order</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>Data elements must be published in the order specified by the schema.</p>
 <p><strong>What is the change?</strong></p>
@@ -167,25 +170,25 @@ constructed, and the entire element has been re-constructed.</p>
 <p><strong>Example</strong></p>
 <p>Element order can be found by:</p>
 <ul>
-<li><a href="/en/iati-standard/201/schema/">inspecting the schema directly</a></li>
+<li><p><a href="/en/iati-standard/201/schema/">inspecting the schema directly</a></p></li>
 </ul>
 <p>Or via our GitHub repository:</p>
 <ul>
-<li> <a href="https://raw.githubusercontent.com/IATI/IATI-Schemas/version-2.01/iati-activities-schema.xsd">Activity schema</a></li>
-<li><a href="https://raw.githubusercontent.com/IATI/IATI-Schemas/version-2.01/iati-organisations-schema.xsd">Organisation schema</a></li>
-<li><a href="https://raw.githubusercontent.com/IATI/IATI-Schemas/version-2.01/iati-common.xsd">Common schema</a></li>
+<li><p> <a href="https://raw.githubusercontent.com/IATI/IATI-Schemas/version-2.01/iati-activities-schema.xsd">Activity schema</a></p></li>
+<li><p><a href="https://raw.githubusercontent.com/IATI/IATI-Schemas/version-2.01/iati-organisations-schema.xsd">Organisation schema</a></p></li>
+<li><p><a href="https://raw.githubusercontent.com/IATI/IATI-Schemas/version-2.01/iati-common.xsd">Common schema</a></p></li>
 </ul>
 <p>The order is also reflected in the left hand <a href="/en/iati-standard/201/">navigation of the 2.01 website</a></p>
 <p>Tables generated from the schema can be found at:</p>
 <ul>
-<li><a href="/en/iati-standard/201/activity-standard/summary-table/">Activity summary table</a></li>
-<li><a href="/en/iati-standard/201/organisation-standard/summary-table/">Organisation summary table</a></li>
+<li><p><a href="/en/iati-standard/201/activity-standard/summary-table/">Activity summary table</a></p></li>
+<li><p><a href="/en/iati-standard/201/organisation-standard/summary-table/">Organisation summary table</a></p></li>
 </ul>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Data will fail validation against the relevant 2.01 schema.</p>
-</p>
-<p id="mandatory-fields-in-activity-standard">
-<h3><a href="#id20">Mandatory Fields in Activity Standard</a></h3>
+</section>
+<section id="mandatory-fields-in-activity-standard">
+<h3><a href="#id20" role="doc-backlink">Mandatory Fields in Activity Standard</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>Certain elements are now mandatory within any iati-activity record.</p>
 <p><strong>What is the change?</strong></p>
@@ -193,70 +196,70 @@ constructed, and the entire element has been re-constructed.</p>
 mandatory by the schema.</p>
 <p>Each Activity record MUST contain:</p>
 <ul>
-<li>a valid activity identifier;  (element (iati-identifier) presence
-tested by schema - validity could be tested by software)</li>
-<li>a valid reporting organisation identifier; (element (reporting-org)
-presence tested by schema - validity could be tested by software)</li>
-<li> a funding or implementing organisation; (element (participating-org)
+<li><p>a valid activity identifier;  (element (iati-identifier) presence
+tested by schema - validity could be tested by software)</p></li>
+<li><p>a valid reporting organisation identifier; (element (reporting-org)
+presence tested by schema - validity could be tested by software)</p></li>
+<li><p> a funding or implementing organisation; (element (participating-org)
 presence tested by schema - role=funding OR implementing could be
-tested by software)</li>
-<li>a title and description; (elements (title/narrative,
-description/narrative) presence tested by schema)</li>
-<li>a start date; (element (activity-date) and attribute (iso-date)
+tested by software)</p></li>
+<li><p>a title and description; (elements (title/narrative,
+description/narrative) presence tested by schema)</p></li>
+<li><p>a start date; (element (activity-date) and attribute (iso-date)
 presence tested by schema, type=”1” could be tested by software ) an
-activity status;  (element (activity-status) presence tested by schema)</li>
-<li>a sector; (presence could be tested by software)</li>
-<li>a recipient-country or recipient-region (presence could be tested by
-software)</li>
+activity status;  (element (activity-status) presence tested by schema)</p></li>
+<li><p>a sector; (presence could be tested by software)</p></li>
+<li><p>a recipient-country or recipient-region (presence could be tested by
+software)</p></li>
 </ul>
 <p><strong>Participating organisation</strong></p>
 <ul>
-<li>At least one occurrence of iati-activity/participating-org is
-MANDATORY - enforced by the schema</li>
-<li>For each occurrence of participating-org @role is MANDATORY  -
-enforced by the schema</li>
-<li>For each occurrence of participating-org @ref or
+<li><p>At least one occurrence of iati-activity/participating-org is
+MANDATORY - enforced by the schema</p></li>
+<li><p>For each occurrence of participating-org @role is MANDATORY  -
+enforced by the schema</p></li>
+<li><p>For each occurrence of participating-org @ref or
 participating-org/narrative is MANDATORY - not enforceable by the
-schema</li>
+schema</p></li>
 </ul>
 <p>for discussion go to
 <a href="http://support.iatistandard.org/entries/41047217-Modify-participating-org-Validation-and-guidance">Validation and guidance</a> on the support forum.</p>
 <p><strong>Title</strong></p>
 <ul>
-<li>iati-activity/title is MANDATORY  - enforced by the schema</li>
-<li>It is recommended that the title contains a meaningful summary of the
-activity - not enforceable by the schema</li>
+<li><p>iati-activity/title is MANDATORY  - enforced by the schema</p></li>
+<li><p>It is recommended that the title contains a meaningful summary of the
+activity - not enforceable by the schema</p></li>
 </ul>
 <p>for discussion go to
 <a href="http://support.iatistandard.org/entries/41584666-Modify-title-validation-and-guidance">Modify title : validation and guidance</a> on the support forum.</p>
 <p><strong>Description</strong></p>
 <ul>
-<li>The iati-activity/description is MANDATORY  - enforced by the schema</li>
-<li>It is recommended that the description contains a meaningful
-description of the activity -not enforceable by the schema</li>
+<li><p>The iati-activity/description is MANDATORY  - enforced by the schema</p></li>
+<li><p>It is recommended that the description contains a meaningful
+description of the activity -not enforceable by the schema</p></li>
 </ul>
 <p>for discussion go to
 <a href="http://support.iatistandard.org/entries/41584706-Modify-description-validation-and-guidance">Modify description : validation and guidance</a> on the support forum.</p>
 <p><strong>Activity Date</strong></p>
 <ul>
-<li>At least one occurrence of iati-activity/activity-date is MANDATORY
- - enforced by the schema</li>
-<li>All activities MUST contain a start date: either planned or actual -
-not enforceable</li>
+<li><p>At least one occurrence of iati-activity/activity-date is MANDATORY
+ - enforced by the schema</p></li>
+<li><p>All activities MUST contain a start date: either planned or actual -
+not enforceable</p></li>
 </ul>
 <p>for discussion go to
 <a href="http://support.iatistandard.org/entries/41089758-Modify-activity-date-validation-and-guidance">Modify activity-date : validation and guidance</a> on the support forum.</p>
 <p><strong>Sector / Transaction Sector</strong></p>
 <ul>
-<li>Sector may now be reported at transaction level instead of activity
-level. For details see <a href="http://support.iatistandard.org/entries/52106549-Version-2-01-Iteration-2-3-7-Replicate-more-activity-level-elements-at-transaction-level">Replicate more activity-level elements at transaction level</a> on the support forum.</li>
-<li>At least one occurrence of sector OR transaction/sector is MANDATORY
-- not enforceable</li>
-<li>sector/@code OR transaction/sector/@code is MANDATORY  - enforced by
-the schema</li>
-<li>If Sector/@vocabulary is not present then the DAC 5-digit vocabulary
-is assumed</li>
-<li>Use of DAC codes (either 5-digit or 3-digit) is recommended</li>
+<li><p>Sector may now be reported at transaction level instead of activity
+level. For details see <a href="http://support.iatistandard.org/entries/52106549-Version-2-01-Iteration-2-3-7-Replicate-more-activity-level-elements-at-transaction-level">Replicate more activity-level elements at transaction level</a> on the support forum.</p></li>
+<li><p>At least one occurrence of sector OR transaction/sector is MANDATORY
+- not enforceable</p></li>
+<li><p>sector/@code OR transaction/sector/@code is MANDATORY  - enforced by
+the schema</p></li>
+<li><p>If Sector/@vocabulary is not present then the DAC 5-digit vocabulary
+is assumed</p></li>
+<li><p>Use of DAC codes (either 5-digit or 3-digit) is recommended</p></li>
 </ul>
 <p>for discussion go to
 <a href="http://support.iatistandard.org/entries/22993317-Modify-sector-validation-and-guidance">Modify sector : validation and guidance</a> on the support forum.</p>
@@ -266,15 +269,16 @@ used.</p>
 <p><strong>Budget dates</strong></p>
 <ul>
 <li><dl>
-<dt>The budget element should be repeated for each year of the activity’s</dt>
-<dd>duration - not enforceable</dd>
+<dt>The budget element should be repeated for each year of the activity’s</dt><dd><p>duration - not enforceable</p>
+</dd>
 </dl>
 </li>
-<li>If the budget element is present then<ul>
-<li>period-start/@iso-date is MANDATORY and must be a valid ISO format (enforced by the schema)</li>
-<li>period-end/@iso-date is MANDATORY and must be a valid ISO format (enforced by the schema)</li>
-<li>period-end/@iso-date must be after period-start/@iso-date (not enforceable by the schema)</li>
-<li>Each budget should cover a period no longer than 1 year (not enforceable by the schema)</li>
+<li><p>If the budget element is present then</p>
+<ul>
+<li><p>period-start/@iso-date is MANDATORY and must be a valid ISO format (enforced by the schema)</p></li>
+<li><p>period-end/@iso-date is MANDATORY and must be a valid ISO format (enforced by the schema)</p></li>
+<li><p>period-end/@iso-date must be after period-start/@iso-date (not enforceable by the schema)</p></li>
+<li><p>Each budget should cover a period no longer than 1 year (not enforceable by the schema)</p></li>
 </ul>
 </li>
 </ul>
@@ -284,9 +288,9 @@ used.</p>
 <p>The ‘occurs’ column of the <a href="/en/iati-standard/201/activity-standard/summary-table/">standard overview table</a> also indicates where both elements and attributes are required, and how often they may occur.</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Data will fail validation against the relevant 2.01 schema</p>
-</p>
-<p id="mandatory-fields-in-organisation-standard">
-<h3><a href="#id21">Mandatory Fields in Organisation Standard</a></h3>
+</section>
+<section id="mandatory-fields-in-organisation-standard">
+<h3><a href="#id21" role="doc-backlink">Mandatory Fields in Organisation Standard</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>Certain elements are now mandatory within any iati-organisation record.</p>
 <p><strong>What is the change?</strong></p>
@@ -294,45 +298,45 @@ used.</p>
 mandatory by the schema.</p>
 <p>Each Organisation record MUST contain:</p>
 <ul>
-<li>a valid organisation identifier;  (element (<a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/organisation-identifier/">organisation-identifier</a>) presence tested by schema)</li>
-<li>a name; (element (<a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/name/narrative/">name/narrative</a>) presence tested by schema)</li>
-<li>a valid reporting organisation identifier (element (<a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/reporting-org/">reporting-org</a>)
-presence tested by schema - validity could be tested by software)</li>
+<li><p>a valid organisation identifier;  (element (<a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/organisation-identifier/">organisation-identifier</a>) presence tested by schema)</p></li>
+<li><p>a name; (element (<a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/name/narrative/">name/narrative</a>) presence tested by schema)</p></li>
+<li><p>a valid reporting organisation identifier (element (<a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/reporting-org/">reporting-org</a>)
+presence tested by schema - validity could be tested by software)</p></li>
 </ul>
 <p>In addition, when other non-mandatory elements are used, the schema may dictate whether or not child elements must be present, the number of times they may occur, and the presence of attributes.  You can find the detail in the relevant <a href="/en/iati-standard/201/schema/">schema documents</a>.</p>
 <p>The ‘occurs’ column of the <a href="/en/iati-standard/201/organisation-standard/summary-table/">standard overview table</a> also indicates where both elements and attributes are required, and how often they may occur.</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Data will fail validation against the relevant 2.01 schema</p>
-</p>
-<p id="declaring-the-version-of-the-iati-standard-being-used">
-<h3><a href="#id22">Declaring the Version of the IATI Standard being used</a></h3>
+</section>
+<section id="declaring-the-version-of-the-iati-standard-being-used">
+<h3><a href="#id22" role="doc-backlink">Declaring the Version of the IATI Standard being used</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>You MUST correctly report the version of the standard you are using.</p>
 <p><strong>What is the change?</strong></p>
 <p>In the Activity Standard</p>
 <ul>
-<li>From version 2.01, the @version attribute of <a href="/en/iati-standard/201/activity-standard/iati-activities/">iati-activities</a>
-is mandatory</li>
-<li>In version 1.x the ``iati-activity``element had an @version
+<li><p>From version 2.01, the @version attribute of <a href="/en/iati-standard/201/activity-standard/iati-activities/">iati-activities</a>
+is mandatory</p></li>
+<li><p>In version 1.x the ``iati-activity``element had an @version
 attribute. This is no longer the case in version 2.01 (it has been
-removed).</li>
-<li>The values for @version must be on the <a href="/en/iati-standard/201/codelists/Version/">version codelist</a>.</li>
+removed).</p></li>
+<li><p>The values for @version must be on the <a href="/en/iati-standard/201/codelists/Version/">version codelist</a>.</p></li>
 </ul>
 <p>In the Organisation Standard</p>
 <ul>
-<li>From version 2.01, the @version attribute of <a href="/en/iati-standard/201/organisation-standard/iati-organisations/">iati-organisations</a> is mandatory</li>
-<li>In version 1.x the `iati-organisation` element had an @version
+<li><p>From version 2.01, the @version attribute of <a href="/en/iati-standard/201/organisation-standard/iati-organisations/">iati-organisations</a> is mandatory</p></li>
+<li><p>In version 1.x the `iati-organisation` element had an @version
 attribute. This is no longer the case in version 2.01 (it has been
-removed).</li>
-<li>The values for @version must be on the <a href="/en/iati-standard/201/codelists/Version/">version codelist</a>.</li>
+removed).</p></li>
+<li><p>The values for @version must be on the <a href="/en/iati-standard/201/codelists/Version/">version codelist</a>.</p></li>
 </ul>
 <p><strong>Where is this applicable?</strong></p>
 <p>In both the Organisation and Activity standards</p>
 <p><strong>Example</strong></p>
 <p>For examples see:</p>
 <ul>
-<li><a href="/en/iati-standard/201/activity-standard/iati-activities/">iati-activity example</a></li>
-<li><a href="/en/iati-standard/201/organisation-standard/iati-organisations/">iati-organisation example</a></li>
+<li><p><a href="/en/iati-standard/201/activity-standard/iati-activities/">iati-activity example</a></p></li>
+<li><p><a href="/en/iati-standard/201/organisation-standard/iati-organisations/">iati-organisation example</a></p></li>
 </ul>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>If you omit iati-activities/@version or iati-organisations/@versions the
@@ -341,9 +345,9 @@ data will fail validation against the relevant 2.01 schema.</p>
 data will fail validation against the relevant 2.01 schema.</p>
 <p>If you do not use a value for @version from the <a href="/en/iati-standard/201/codelists/Version/">version codelist</a>. data
 users may have difficulty processing your data.</p>
-</p>
-<p id="using-namespaces">
-<h3><a href="#id23">Using Namespaces</a></h3>
+</section>
+<section id="using-namespaces">
+<h3><a href="#id23" role="doc-backlink">Using Namespaces</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>Data publishers are allowed to add data using their own defined namespaces to add additional data to an IATI data file. They must do this in such a way that their data is still valid against the relevant schema.</p>
 <p><strong>What is the change?</strong></p>
@@ -354,27 +358,27 @@ users may have difficulty processing your data.</p>
 <p><strong>Example</strong></p>
 <p>For examples see:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/tests/activity-tests/should-pass/03-top-level-extensibility.xml">iati-activity example</a></li>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/tests/organisation-tests/should-pass/02-top-level-extensibility.xml">iati-organisation example</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/tests/activity-tests/should-pass/03-top-level-extensibility.xml">iati-activity example</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/tests/organisation-tests/should-pass/02-top-level-extensibility.xml">iati-organisation example</a></p></li>
 </ul>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Data will fail validation against the relevant 2.01 schema</p>
-</p>
-<p id="segmentation-and-file-size">
-<h3><a href="#id24">Segmentation and file size</a></h3>
+</section>
+<section id="segmentation-and-file-size">
+<h3><a href="#id24" role="doc-backlink">Segmentation and file size</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <ul>
-<li>In order to ensure that all all IATI-XML files can be handled by all consuming systems it is proposed that a limit of 40MB is placed on the size of any single XML file.</li>
-<li>Publishers are still encouraged to segment their data into meaningful chunks, BUT the guidance to segment by country is no longer necessarily considered to be best practice.</li>
-<li>(NB the rule that the activity iati-identifier must be unique still applies. i.e. the same activity should not be reported in two different files by the same publisher)</li>
+<li><p>In order to ensure that all all IATI-XML files can be handled by all consuming systems it is proposed that a limit of 40MB is placed on the size of any single XML file.</p></li>
+<li><p>Publishers are still encouraged to segment their data into meaningful chunks, BUT the guidance to segment by country is no longer necessarily considered to be best practice.</p></li>
+<li><p>(NB the rule that the activity iati-identifier must be unique still applies. i.e. the same activity should not be reported in two different files by the same publisher)</p></li>
 </ul>
 <p><strong>What is the change?</strong></p>
 <p>Previous guidance has been to segment data by country where possible/useful. This was an arbitrary decision.</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Files larger than 40MB are difficult for data users to use - even at 40MB this is still difficult for many users. If your files are too large it is possible that applications wanting to use your data may not be able to do so.</p>
-</p>
-<p id="free-text-fields">
-<h3><a href="#id25">Free Text Fields</a></h3>
+</section>
+<section id="free-text-fields">
+<h3><a href="#id25" role="doc-backlink">Free Text Fields</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>In version 2.01 free text is handled very differently than it is in
 versions 1.x</p>
@@ -409,14 +413,14 @@ they are still required to alter the way they report free text.</p>
 <p><strong>See also</strong></p>
 <p>Examples of how this change works can be seen on (for example):</p>
 <ul>
-<li><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/title/">activity title</a></li>
-<li><a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/name/">organisation name</a></li>
+<li><p><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/title/">activity title</a></p></li>
+<li><p><a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/name/">organisation name</a></p></li>
 </ul>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Data will fail validation against the relevant 2.01 schema</p>
-</p>
-<p id="handling-translations">
-<h3><a href="#id26">Handling Translations</a></h3>
+</section>
+<section id="handling-translations">
+<h3><a href="#id26" role="doc-backlink">Handling Translations</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>The standard wants to allow publishers to easily declare multilingual translations for text data, and for data users to be able to easily access those translations. In 2.01 the way in which this done should make it easier for data users to handle.</p>
 <p><strong>What is the change?</strong></p>
@@ -429,14 +433,14 @@ they are still required to alter the way they report free text.</p>
 <p><strong>Example</strong></p>
 <p>Examples of how this change works can be seen on (for example):</p>
 <ul>
-<li><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/title/">activity title</a></li>
-<li><a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/name/">organisation name</a></li>
+<li><p><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/title/">activity title</a></p></li>
+<li><p><a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/name/">organisation name</a></p></li>
 </ul>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Data will fail validation against the relevant 2.01 schema</p>
-</p>
-<p id="descriptive-text-is-no-longer-allowed-on-data-specified-by-codes-with-some-exceptions">
-<h3><a href="#id27">Descriptive text is no longer allowed on data specified by codes (with some exceptions)</a></h3>
+</section>
+<section id="descriptive-text-is-no-longer-allowed-on-data-specified-by-codes-with-some-exceptions">
+<h3><a href="#id27" role="doc-backlink">Descriptive text is no longer allowed on data specified by codes (with some exceptions)</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>Where published data is defined by codes, the code is authoritative, and the associated look up value should not supplied.</p>
 <p>There are two exceptions:  recipient-country and recipient-region, where descriptive text is allowed when a publishing organisation does not agree with the definition given by the ISO 3166-1 part of the ISO 3166 standard</p>
@@ -477,8 +481,8 @@ they are still required to alter the way they report free text.</p>
 </pre></code>
 </p>
 <dl>
-<dt>Here, a lookup against the relevant codelist (<a href="/en/iati-standard/201/codelists/Country/">Country</a>)</dt>
-<dd>would return a country name of ‘Kosovo’</dd>
+<dt>Here, a lookup against the relevant codelist (<a href="/en/iati-standard/201/codelists/Country/">Country</a>)</dt><dd><p>would return a country name of ‘Kosovo’</p>
+</dd>
 </dl>
 <p>If you prefer to declare a different name that differs from the ISO 3166-1 part of the ISO 3166 standard  (e.g. Kosovo (As per UNSCR 1244)) then do this:</p>
 <p><code><pre>&lt;recipient-country code="XK"&gt;
@@ -488,26 +492,26 @@ they are still required to alter the way they report free text.</p>
 </p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Data will fail validation against the relevant 2.01 schema</p>
-</p>
-<p id="language-neutral-codelists">
-<h3><a href="#id28">Language Neutral Codelists</a></h3>
+</section>
+<section id="language-neutral-codelists">
+<h3><a href="#id28" role="doc-backlink">Language Neutral Codelists</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>A number of codes on several codelists have been changed, in order to
 make them language neutral.</p>
 <p>In general:</p>
 <ul>
-<li>Codes have changed from english strings to numbers</li>
-<li>The english string now becomes the ‘name’ associated with that code</li>
-<li>Where ‘name’ information was previously available, this is moved into
-a ‘description’ field</li>
+<li><p>Codes have changed from english strings to numbers</p></li>
+<li><p>The english string now becomes the ‘name’ associated with that code</p></li>
+<li><p>Where ‘name’ information was previously available, this is moved into
+a ‘description’ field</p></li>
 </ul>
 <p><strong>Where is this applicable?</strong></p>
 <p>A list of the affected codelists, and the differences between version 1.x and 2.01 are detailed under <strong>Codelist Changes</strong> on the <a href="/en/iati-standard/upgrades/integer-upgrade-to-2-01/2-01-changes">2.01 Changes</a> page of the website.</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Data will not be referenceable against the relevant code list, making it difficult to use.</p>
-</p>
-<p id="allow-multiple-languages-to-be-specified-for-a-single-document-document-link">
-<h3><a href="#id29">Allow multiple languages to be specified for a single document (document-link)</a></h3>
+</section>
+<section id="allow-multiple-languages-to-be-specified-for-a-single-document-document-link">
+<h3><a href="#id29" role="doc-backlink">Allow multiple languages to be specified for a single document (document-link)</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>In version 1.x of the IATI Standard, you were only allowed to use one document-link/language child element per document-link parent.</p>
 <p>In version 2.x of the IATI Standard, you can specify as many document-link/language elements as you need.</p>
@@ -517,9 +521,9 @@ a ‘description’ field</li>
 <p>In recognition that some documents are multilingual</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Nothing. This change is an opportunity to produce more accurate data.</p>
-</p>
-<p id="new-elements">
-<h3><a href="#id30">New Elements</a></h3>
+</section>
+<section id="new-elements">
+<h3><a href="#id30" role="doc-backlink">New Elements</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>In version 2.01 of the IATI Standard there is a new element
 iati-activity/contact-info/department</p>
@@ -531,22 +535,22 @@ iati-organisation/recipient-org-budget/budget-line</p>
 iati-organisation/recipient-country-budget/budget-line</p>
 <p>Usage</p>
 <ul>
-<li>budget-line should be used in addition to total-budget/value,
+<li><p>budget-line should be used in addition to total-budget/value,
 recipient-org-budget/value and/or recipient-country-budget/value. NB
-that it does not replace the existing reporting guidelines</li>
-<li>budget-line/@ref as a reporting organisation reference for the budget
-line</li>
-<li>budget-line/narrative for a description of the budget line (repeated
-for multiple languages)</li>
-<li>budget-line/value</li>
+that it does not replace the existing reporting guidelines</p></li>
+<li><p>budget-line/@ref as a reporting organisation reference for the budget
+line</p></li>
+<li><p>budget-line/narrative for a description of the budget line (repeated
+for multiple languages)</p></li>
+<li><p>budget-line/value</p></li>
 </ul>
 <p><strong>See also</strong></p>
 <p>Additionally, new child elements have been introduced to the existing</p>
 <ul>
-<li>iati-activity/transaction element: Additional elements in the
-transactions</li>
-<li>iati-organisation/document-link elements: Additional elements in
-Organisation documents (document-link)</li>
+<li><p>iati-activity/transaction element: Additional elements in the
+transactions</p></li>
+<li><p>iati-organisation/document-link elements: Additional elements in
+Organisation documents (document-link)</p></li>
 </ul>
 <p><strong>Why has this been done?</strong></p>
 <p>A number of publishers have requested the facility to add department
@@ -559,9 +563,9 @@ languages.</p>
 <p>In the case of the narrative element, these are required when using
 freetext</p>
 <p>The other new elements are all optional.</p>
-</p>
-<p id="renamed-moved-and-removed-elements">
-<h3><a href="#id31">Renamed, Moved and Removed Elements</a></h3>
+</section>
+<section id="renamed-moved-and-removed-elements">
+<h3><a href="#id31" role="doc-backlink">Renamed, Moved and Removed Elements</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>In versions 1.x of the IATI Standard there is an element
 iati-organisation/iati-identifier</p>
@@ -590,9 +594,9 @@ would do so using a document-link element, and it’s child ‘category’ (usua
 <p><strong>What happens if we do not do this?</strong></p>
 <p>If elements and attributes are published with the old properties, then
 data will fail validation against the relevant 2.01 schema</p>
-</p>
-<p id="using-recipient-region-and-recipient-country">
-<h3><a href="#id32">Using Recipient-Region and Recipient Country</a></h3>
+</section>
+<section id="using-recipient-region-and-recipient-country">
+<h3><a href="#id32" role="doc-backlink">Using Recipient-Region and Recipient Country</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>From the schema (recipient-country):</p>
 <p>“Multiple countries and regions can be reported, in which case the percentage attribute MUST be used to specify the share of total commitments across all reported countries and regions.</p>
@@ -605,11 +609,11 @@ iati-activity/recipient-region MUST NOT be used AND each</p>
 recipient-region.”</p>
 <p>It should be clear that:</p>
 <ul>
-<li>recipient-region should only be used to indicate that the region as a
+<li><p>recipient-region should only be used to indicate that the region as a
 whole is a recipient, not as an added description to a named
-recipient-country</li>
-<li>if both elements are used percentages must be reported and they
-should add up to 100% across all recipient- elements</li>
+recipient-country</p></li>
+<li><p>if both elements are used percentages must be reported and they
+should add up to 100% across all recipient- elements</p></li>
 </ul>
 <p><strong>What is the change?</strong></p>
 <p>In versions 1.x of the IATI Standard, data publishers were told to
@@ -625,17 +629,17 @@ countries at BOTH activity and transaction level</p>
 <p><strong>Example</strong></p>
 <p>See:</p>
 <ul>
-<li><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/recipient-country/">Country</a></li>
-<li><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/recipient-region/">Region</a></li>
+<li><p><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/recipient-country/">Country</a></p></li>
+<li><p><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/recipient-region/">Region</a></p></li>
 </ul>
 <p><strong>See also</strong></p>
 <p>Additional elements in transactions (sector, recipient-country,
 recipient-region) below</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Nothing. This change is an opportunity to produce more accurate data.</p>
-</p>
-<p id="additional-elements-in-transactions-sector-recipient-country-recipient-region">
-<h3><a href="#id33">Additional elements in transactions (sector, recipient-country, recipient-region)</a></h3>
+</section>
+<section id="additional-elements-in-transactions-sector-recipient-country-recipient-region">
+<h3><a href="#id33" role="doc-backlink">Additional elements in transactions (sector, recipient-country, recipient-region)</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>In version 2.01 of IATI activity standard the elements of sector, recipient-country and recipient-region have been added as child elements for any transaction. Each of these elements takes the same format as when used at activity level except that the @percentage attribute is missing.</p>
 <p><strong>Where is this applicable?</strong></p>
@@ -648,9 +652,9 @@ recipient-region) below</p>
 <a href="http://support.iatistandard.org/entries/52106549-Version-2-01-Iteration-3-7-Replicate-more-activity-level-elements-at-transaction-level">Replicate more activity-level elements at transaction level</a> on the support forum.</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Nothing. This change is an opportunity to produce more accurate data.</p>
-</p>
-<p id="additional-elements-in-organisation-documents-document-link">
-<h3><a href="#id34">Additional elements in Organisation documents (document-link)</a></h3>
+</section>
+<section id="additional-elements-in-organisation-documents-document-link">
+<h3><a href="#id34" role="doc-backlink">Additional elements in Organisation documents (document-link)</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>There is now a document-link/recipient-country element ONLY in the Organisation standard. This is to allow multiple countries to be reported per document-link.</p>
 <p><strong>Where is this applicable?</strong></p>
@@ -659,9 +663,9 @@ recipient-region) below</p>
 <p>In order for organisation-level documents to be classified by country.</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Nothing. This change is an opportunity to produce more accurate data.</p>
-</p>
-<p id="formatting-of-dates-and-datetimes">
-<h3><a href="#id35">Formatting of Dates (and datetimes)</a></h3>
+</section>
+<section id="formatting-of-dates-and-datetimes">
+<h3><a href="#id35" role="doc-backlink">Formatting of Dates (and datetimes)</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>To ensure that IATI data can be utilised, dates and datetimes should be formatted in a consistent way.</p>
 <p>In version 2.01 a date should be a valid xsd:date, and a datetimes
@@ -684,29 +688,29 @@ dates need altering (re-formatting)</p>
 <p>Affected attributes:</p>
 <p>dates:</p>
 <ul>
-<li>all @iso-date attributes</li>
-<li>fss/@extraction-date attribute</li>
-<li>all @value-date attributes</li>
+<li><p>all @iso-date attributes</p></li>
+<li><p>fss/@extraction-date attribute</p></li>
+<li><p>all @value-date attributes</p></li>
 </ul>
 <p>datetimes:</p>
 <ul>
-<li>all @generated-datetime attributes</li>
-<li>all  @last-updated-datetime attributes</li>
+<li><p>all @generated-datetime attributes</p></li>
+<li><p>all  @last-updated-datetime attributes</p></li>
 </ul>
 <p><strong>Example</strong></p>
 <p>Examples of how this change works can be seen on (for example):</p>
 <ul>
 <li><ul>
-<li><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/activity-date/">&lt;Activity standard - activity date</a></li>
+<li><p><a href="/en/iati-standard/201/activity-standard/iati-activities/iati-activity/activity-date/">&lt;Activity standard - activity date</a></p></li>
 </ul>
 </li>
-<li><a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/total-budget/period-start/">&lt;Organisation standard - period start</a></li>
+<li><p><a href="/en/iati-standard/201/organisation-standard/iati-organisations/iati-organisation/total-budget/period-start/">&lt;Organisation standard - period start</a></p></li>
 </ul>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>If your dates and datetimes are not in the correct formats, schema validation will fail. If your dates already meet xsd:date and xsd:dateTime formats, then you do not to take any action.</p>
-</p>
-<p id="url-validation">
-<h3><a href="#id36">URL validation</a></h3>
+</section>
+<section id="url-validation">
+<h3><a href="#id36" role="doc-backlink">URL validation</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>In version 1.x of the IATI Standard,  the schema data type used for some
 data fields where a URL was expected was set as xsd:string.</p>
@@ -724,9 +728,9 @@ some data fields where a URL is expected is now set as xsd:anyURI</p>
 <p>To make validation of the data at the schema level easier</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Nothing UNLESS you have been publishing data that does not meet the restrictions of xsd:anyURI. URL data that was recognised as a string, but not as xsd:anyURI will now fail validation against the relevant 2.01 schema</p>
-</p>
-<p id="location-changes">
-<h3><a href="#id37">Location Changes</a></h3>
+</section>
+<section id="location-changes">
+<h3><a href="#id37" role="doc-backlink">Location Changes</a></h3>
 <p><strong>What does version 2.01 of the IATI Standard require?</strong></p>
 <p>If you are currently using a version of the IATI Standard lower than 1.04 AND report details of sub-national geographic locations, you MUST adopt all the changes specified in the upgrade from version 1.03 of the IATI Standard to version 1.04.</p>
 <p><strong>What is the change?</strong></p>
@@ -742,22 +746,22 @@ in effect, been removed)</p>
 found in the <a href="/en/iati-standard/upgrades/decimal-upgrade-to-1-04/location-summary/">location summary guide</a></p>
 <p>In version 2.01, these elements are no longer available:</p>
 <ul>
-<li>location/coordinates</li>
-<li>location/gazetteer-entry</li>
-<li>location/location-type</li>
+<li><p>location/coordinates</p></li>
+<li><p>location/gazetteer-entry</p></li>
+<li><p>location/location-type</p></li>
 </ul>
 <p>In version 2.01, these attributes are no longer available:</p>
 <ul>
-<li>location/@percentage</li>
-<li>location/administrative/@country</li>
-<li>location/administrative/@adm1</li>
-<li>location/administrative/@adm2</li>
+<li><p>location/@percentage</p></li>
+<li><p>location/administrative/@country</p></li>
+<li><p>location/administrative/@adm1</p></li>
+<li><p>location/administrative/@adm2</p></li>
 </ul>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>Data will fail validation against the relevant 2.01 schema</p>
-</p>
-<p id="changes-to-the-planned-disbursement-element-planned-disbursement">
-<h3><a href="#id38">Changes to the Planned Disbursement element (planned-disbursement)</a></h3>
+</section>
+<section id="changes-to-the-planned-disbursement-element-planned-disbursement">
+<h3><a href="#id38" role="doc-backlink">Changes to the Planned Disbursement element (planned-disbursement)</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>In versions 1.x of the IATI Standard there is a planned-disbursement/@updated attribute</p>
 <p>In version 2.01 of the IATI Standard the  planned-disbursement/@updated attribute is no longer available (it has been removed)</p>
@@ -780,31 +784,31 @@ defined end date.</p>
 <p>If you continue to use the @updated attributes your data will fail
 validation against the relevant 2.01 schema</p>
 <p>The @type attribute is optional.</p>
-</p>
-<p id="removal-of-the-type-attribute-on-some-description-elements">
-<h3><a href="#id39">Removal of the @type attribute on some description elements</a></h3>
+</section>
+<section id="removal-of-the-type-attribute-on-some-description-elements">
+<h3><a href="#id39" role="doc-backlink">Removal of the @type attribute on some description elements</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>In version 1.x of the IATI Standard all description elements have a @type attribute.</p>
 <p>In version 2.01 of the IATI Standard this is only applicable to iati-activity/description, therefore the following attributes have been removed:</p>
 <ul>
-<li>country-budget-items/budget-item/description/@type</li>
-<li>result/description/@type</li>
-<li>result/indicator/description/@type</li>
+<li><p>country-budget-items/budget-item/description/@type</p></li>
+<li><p>result/description/@type</p></li>
+<li><p>result/indicator/description/@type</p></li>
 </ul>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>If you currently use @type on any of the elements detailed above and do not change that when creating 2.01 data, your data will fail validation against the schema. Data users should be aware that if they expect to gather data from those fields they should no longer be present.</p>
-</p>
-<p id="embedded-codelists-codelists-added-and-removed">
-<h3><a href="#id40">Embedded codelists - Codelists added and removed</a></h3>
+</section>
+<section id="embedded-codelists-codelists-added-and-removed">
+<h3><a href="#id40" role="doc-backlink">Embedded codelists - Codelists added and removed</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>As part of the 2.01 IATI Standard upgrade, the Vocabulary codelist was  split into two new codelists. The following embedded codelists were added:</p>
 <ul>
-<li>Policy Marker Vocabulary</li>
-<li>Sector Vocabulary</li>
+<li><p>Policy Marker Vocabulary</p></li>
+<li><p>Sector Vocabulary</p></li>
 </ul>
 <p>and the following embedded codelists were removed:</p>
 <ul>
-<li>Vocabulary</li>
+<li><p>Vocabulary</p></li>
 </ul>
 <p><strong>See also</strong></p>
 <p><strong>Codelist Changes</strong> on the <a href="/en/iati-standard/upgrades/integer-upgrade-to-2-01/2-01-changes">2.01 Changes</a></p>
@@ -812,28 +816,28 @@ validation against the relevant 2.01 schema</p>
 <p>The Vocabulary codelist has over time become unfit for it’s original purpose as more and more elements have required their own tailored vocabulary choices. Where vocabularies are used, they are often tailored to that particular element.</p>
 <p><strong>What happens if we do not do this?</strong></p>
 <p>You will need to re-organise the way you present data using the new vocabularies. If you do not do this your data may not be useable by data users.</p>
-</p>
-<p id="embedded-codelists-new-codes">
-<h3><a href="#id41">Embedded codelists - New Codes</a></h3>
+</section>
+<section id="embedded-codelists-new-codes">
+<h3><a href="#id41" role="doc-backlink">Embedded codelists - New Codes</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>As part of the 2.01 IATI Standard upgrade, the following embedded codelists were updated.</p>
 <ul>
-<li>Aid Type Flag: Renamed to CRSADDOtherFlags codelist</li>
-<li>Activity Date Type: Amended codes</li>
-<li>Document Category: New codes</li>
-<li>Gazetteer Agency: Amended codes</li>
-<li>Organisation Role: Amended codes</li>
-<li>Policy Marker Vocabulary (was Vocabulary): Amended codes</li>
-<li>Related Activity Type: New code</li>
-<li>Sector Vocabulary (was Vocabulary): Amended codes</li>
-<li>Transaction Type: Amended codes</li>
-<li>Vocabulary: Removed / split codelist</li>
+<li><p>Aid Type Flag: Renamed to CRSADDOtherFlags codelist</p></li>
+<li><p>Activity Date Type: Amended codes</p></li>
+<li><p>Document Category: New codes</p></li>
+<li><p>Gazetteer Agency: Amended codes</p></li>
+<li><p>Organisation Role: Amended codes</p></li>
+<li><p>Policy Marker Vocabulary (was Vocabulary): Amended codes</p></li>
+<li><p>Related Activity Type: New code</p></li>
+<li><p>Sector Vocabulary (was Vocabulary): Amended codes</p></li>
+<li><p>Transaction Type: Amended codes</p></li>
+<li><p>Vocabulary: Removed / split codelist</p></li>
 </ul>
 <p><strong>See also</strong></p>
 <p><strong>Codelist Changes</strong> on the <a href="/en/iati-standard/upgrades/integer-upgrade-to-2-01/2-01-changes">2.01 Changes</a></p>
-</p>
-<p id="embedded-codelists-descriptions-of-code-values">
-<h3><a href="#id42">Embedded codelists - descriptions of code values</a></h3>
+</section>
+<section id="embedded-codelists-descriptions-of-code-values">
+<h3><a href="#id42" role="doc-backlink">Embedded codelists - descriptions of code values</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>Embedded codelist descriptions have been reviewed and updated.</p>
 <p>In some cases, description text has been added, where it was previously
@@ -846,9 +850,9 @@ missing.</p>
 <p><strong>Codelist Changes</strong> on the <a href="/en/iati-standard/upgrades/integer-upgrade-to-2-01/2-01-changes">2.01 Changes</a></p>
 <p><strong>Why has this been done?</strong></p>
 <p>It was recognised that various description texts were out-of-date or not clear.  This has been an opportunity to update these.</p>
-</p>
-<p id="non-embedded-codelists">
-<h3><a href="#id43">Non-Embedded Codelists</a></h3>
+</section>
+<section id="non-embedded-codelists">
+<h3><a href="#id43" role="doc-backlink">Non-Embedded Codelists</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>As part of the 2.01 IATI Standard upgrade, the following non-embedded codelists were created.</p>
 <p>New Non-Embedded Codelists
@@ -859,9 +863,9 @@ missing.</p>
 * OrganisationIdentifier</p>
 <p><strong>See also</strong></p>
 <p><a href="/en/iati-standard/upgrades/nonembedded-codelist-changelog/">Non-Embedded Codelist Changelog</a></p>
-</p>
-<p id="update-of-schema-description-texts">
-<h3><a href="#id44">Update of Schema description texts</a></h3>
+</section>
+<section id="update-of-schema-description-texts">
+<h3><a href="#id44" role="doc-backlink">Update of Schema description texts</a></h3>
 <p><strong>What is the change?</strong></p>
 <p>Descriptive text in the schema has been reviewed and updated.</p>
 <p>In some cases, description text has been added, where it was previously missing.</p>
@@ -871,16 +875,17 @@ missing.</p>
 <p><strong>Why has this been done?</strong></p>
 <p>It was recognised that various description texts were out-of-date or not clear.  This has been an opportunity to update these.</p>
 <p>URLs are no longer maintained in schema text in order to maintain those links more appropriately. As part of that decision, a machine readable way of mapping attributes to codelists has been created to help developers. See:<a href="http://support.iatistandard.org/entries/27805388-Mapping-between-codelists-and-schemas">Mapping between codelists and schemas</a> on the support forum.</p>
-</p>
-<p id="tied-and-partially-tied-values">
-<h3><a href="#id45">Tied and partially tied values</a></h3>
+</section>
+<section id="tied-and-partially-tied-values">
+<h3><a href="#id45" role="doc-backlink">Tied and partially tied values</a></h3>
 <p>New guidance has been added</p>
 <p>See: <a href="http://support.iatistandard.org/entries/55170393-Tied-and-partially-tied-values">Tied and partially tied values</a> on the support forum.</p>
-</p>
-<p id="modify-guidance-on-participating-org-role-definition-of-funding-organisation">
-<h3><a href="#id46">Modify guidance on participating-org/@role : Definition of funding organisation</a></h3>
+</section>
+<section id="modify-guidance-on-participating-org-role-definition-of-funding-organisation">
+<h3><a href="#id46" role="doc-backlink">Modify guidance on participating-org/@role : Definition of funding organisation</a></h3>
 <p>See: <a href="http://support.iatistandard.org/entries/41583626-Modify-guidance-on-participating-org-role-Definition-of-funding-organisation">Modify guidance on participating-org/@role : Definition of funding organisation</a> on the support forum.</p>
-</p>
-</p>
-</p>
+</section>
+</section>
+</section>
+
 </div>

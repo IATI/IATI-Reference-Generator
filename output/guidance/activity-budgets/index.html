@@ -1,24 +1,25 @@
 <div class="body" role="main">
-<p id="activity-budgets">
+<section id="activity-budgets">
 <h1>Activity budgets</h1>
 <p>Activity budgets hold the total funding expected to be spent as part of an activity. It is recommended that each activity with planned spending that is published to IATI includes one or more budgets. This allows data users to track the activity budget against the declared spend, to understand the stage of the activity.</p>
 <dd>
-<p class=""><em>If an activity</em> <strong>does not</strong> <em>expect to have any spend (disbursements or expenditure),</em> <strong>and</strong> <em>spend is being published in a sub-activity, then a budget figure should not be provided.</em></p></dd>
+<p class=""><p><em>If an activity</em> <strong>does not</strong> <em>expect to have any spend (disbursements or expenditure),</em> <strong>and</strong> <em>spend is being published in a sub-activity, then a budget figure should not be provided.</em></p>
+</p></dd>
 <p>Activity budgets should be added as soon as possible. They can then be updated over time as more or less funding comes in, or the scope of the activity changes.</p>
 <p>If an activity spans multiple years, then the budget needs to be broken down into separate years or periods. No budget must span more than 12 months. To aid data use, budgets should be broken down into quarters with the declared time periods being relevant to the reporting organisation or life cycle of the activity.</p>
-<p id="exceptions-what-to-do-if-a-budget-cant-be-published">
+<section id="exceptions-what-to-do-if-a-budget-cant-be-published">
 <h2>Exceptions (what to do if a budget can’t be published)</h2>
 <p>For some organisations, such as development finance institutions and those working in emergency situations it is not always possible to publish a budget for an activity. Or, an organisation may have other commercial or legal reasons why it cannot publish this data.</p>
 <p>In this case the attribute <a href="/en/iati-standard/203/codelists/BudgetNotProvided/">@budget-not-provided</a> (which was added at version 2.03) should be used. The attribute explains why a budget cannot be provided. This should only be used for activities in which a budget is expected i.e. those with expected or actual spend.</p>
-</p>
-<p id="publishing-budget-changes">
+</section>
+<section id="publishing-budget-changes">
 <h2>Publishing budget changes</h2>
 <p><strong>Budget element</strong></p>
 <p>When an activity budget is first published it will likely have the @type attribute code ‘original’ (1). If the budget value is later amended, this should be detailed by adding a new budget element containing the new value and @type code ‘revised’ (2). The new revised figure should be added, rather than the difference from the original to the revised budget. Further changes to the budget should be added by changing the value in the ‘revised’ budget element, and not by adding multiple ‘revised’ budgets for the same time period.</p>
 <p>A budget can have one of two status codes, either:</p>
 <ul>
-<li><strong>indicative (1):</strong> a non-binding estimate for the described budget.</li>
-<li><strong>committed (2):</strong> a binding agreement for the described budget.</li>
+<li><p><strong>indicative (1):</strong> a non-binding estimate for the described budget.</p></li>
+<li><p><strong>committed (2):</strong> a binding agreement for the described budget.</p></li>
 </ul>
 <p>When a budget changes <a href="/en/iati-standard/203/codelists/BudgetStatus/">status</a>, the status of the existing budget element should change. A new budget element should <strong>not</strong> be created.</p>
 <p>To calculate the total budget for an activity, a data user should be able to add up all the revised budget values for different time periods. If some time periods do not have a revised budget, then the original budget should be used for these periods.</p>
@@ -28,8 +29,8 @@
 <p>A budget can either be ‘committed’ (has a binding agreement for the described budget) or ‘indicative’ (is a non-binding estimate for the described budget).</p>
 <p>When a budget is committed, the value of the outgoing commitment should be detailed in a transaction. Any changes to the budget, and therefore the outgoing commitment, should be detailed by adding positive and negative outgoing commitment transactions along with the date when the change happened.</p>
 <p>This allows data users to sum all of the outgoing commitments to calculate the total amount.</p>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example usage</h2>
 <p>An activity lasts a year. The original budget was $10,000 and was later decreased by $2,000. The final total budget for the activity is $8,000. This should be published as one budget with an ‘original’ status and one with a ‘revised’ status, and two corresponding outgoing commitment transactions.</p>
 <p><code><pre>&lt;budget type="1" status="2"&gt;
@@ -61,46 +62,40 @@
 &lt;/transaction&gt;
 </pre></code>
 </p>
-</p>
-<p id="activity-budgets-should-include">
+</section>
+<section id="activity-budgets-should-include">
 <h2>Activity Budgets should include:</h2>
 <ul>
-<li>Budgets are the amount of finance expected to be spent as part of an activity.</li>
-<li>Every activity that has planned or actual spend should have a budget.</li>
-<li>It is expected that the budget is described from the perspective of the reporting organisation.</li>
-<li>If for legal, commercial or humanitarian reasons a budget cannot be provided, the @budget-not-provided attribute should be used.</li>
-<li>Only one original and one revised budget should be published for each time period.</li>
-<li>Budgets can be updated at any point.</li>
-<li>The sum of all revised budgets, or original budgets if no revised budgets are present, should provide the current total budget for an activity.</li>
-<li>Budgets must be published in periods of no longer than a year. Publishing quarterly budgets is helpful for data users.</li>
-<li>An activity’s budget periods should not overlap.</li>
-<li>Budget values should not be negative.</li>
-<li>The sum of outgoing, or incoming, commitment transactions does not have to equal the total budget for an activity. These can differ depending on the publisher’s business model and legal framework.</li>
-<li>The budget <a href="/en/iati-standard/203/codelists/BudgetStatus/">status</a> explains whether the budget being published is indicative or has been formally committed.</li>
-<li>If no status is present, the budget is assumed to be indicative.</li>
-<li>The <a href="/en/iati-standard/203/codelists/BudgetType/">type</a> describes if the budget is original or revised.</li>
-<li>If no type is present, the budget is assumed to be original.</li>
+<li><p>Budgets are the amount of finance expected to be spent as part of an activity.</p></li>
+<li><p>Every activity that has planned or actual spend should have a budget.</p></li>
+<li><p>It is expected that the budget is described from the perspective of the reporting organisation.</p></li>
+<li><p>If for legal, commercial or humanitarian reasons a budget cannot be provided, the @budget-not-provided attribute should be used.</p></li>
+<li><p>Only one original and one revised budget should be published for each time period.</p></li>
+<li><p>Budgets can be updated at any point.</p></li>
+<li><p>The sum of all revised budgets, or original budgets if no revised budgets are present, should provide the current total budget for an activity.</p></li>
+<li><p>Budgets must be published in periods of no longer than a year. Publishing quarterly budgets is helpful for data users.</p></li>
+<li><p>An activity’s budget periods should not overlap.</p></li>
+<li><p>Budget values should not be negative.</p></li>
+<li><p>The sum of outgoing, or incoming, commitment transactions does not have to equal the total budget for an activity. These can differ depending on the publisher’s business model and legal framework.</p></li>
+<li><p>The budget <a href="/en/iati-standard/203/codelists/BudgetStatus/">status</a> explains whether the budget being published is indicative or has been formally committed.</p></li>
+<li><p>If no status is present, the budget is assumed to be indicative.</p></li>
+<li><p>The <a href="/en/iati-standard/203/codelists/BudgetType/">type</a> describes if the budget is original or revised.</p></li>
+<li><p>If no type is present, the budget is assumed to be original.</p></li>
 </ul>
-</p>
-<p id="technical-guidance-summary">
+</section>
+<section id="technical-guidance-summary">
 <h2>Technical guidance summary</h2>
 <p><strong>Activity Budget Information</strong></p>
 <p>All activities should include the elements below, when publishing an activity budget.</p>
-<table border="1">
-<colgroup>
-<col width="25%"/>
-<col width="25%"/>
-<col width="25%"/>
-<col width="25%"/>
-</colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<table>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/budget/">budget</a></td>
 <td>This provides
 the financial
@@ -110,7 +105,7 @@ broken down by
 time periods
 of a year or
 less.</td>
-<td> </td>
+<td></td>
 <td>The attributes
 type (original
 or revised)
@@ -200,12 +195,13 @@ activity.</td>
 </tr>
 </tbody>
 </table>
-</p>
-<p id="organisation-budgets">
+</section>
+<section id="organisation-budgets">
 <h2>Organisation budgets</h2>
 <p>For details on organisation budgets, please see:
 - <a href="../budgets-overview/"><span>Budgets overview</span></a>
 - <a href="../organisation-budgets-spend/"><span>Organisation budgets &amp; spend</span></a></p>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="Activity budgets" name="title"/><meta content="Activity budgets hold the total funding expected to be spent as part of an activity. It is recommended that each activity with planned spending that is published to IATI includes one or more budgets." name="description"/><meta content="activity" name="guidance_type"/><meta content="September 19, 2019" name="date"/></div>

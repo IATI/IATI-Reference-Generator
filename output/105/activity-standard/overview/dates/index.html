@@ -1,47 +1,47 @@
 <div class="body" role="main">
-<p id="activity-dates">
+<section id="activity-dates">
 <h1>Activity Dates</h1>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Within the <strong>IATI activity standard</strong> several types of dates can be specified.</p>
 <p>Dates that relate directly to the <code>iati-activity</code>:</p>
 <ul>
-<li><code>activity-date</code> - the planned and actual start/end dates of the <code>iati-activity</code>.</li>
-<li><code>transaction-date</code> - the date a specific <code>transaction</code> took place.</li>
-<li><code>value-date</code> - the specific date for the <code>value</code> of a <code>budget</code> or <code>transaction</code>, which is used for currency conversion purposes.</li>
-<li><code>period-start</code> and <code>period-end</code> dates are used to describe a period of time in a <code>budget</code> , <code>planned-disbursement</code> or <code>indicator</code></li>
+<li><p><code>activity-date</code> - the planned and actual start/end dates of the <code>iati-activity</code>.</p></li>
+<li><p><code>transaction-date</code> - the date a specific <code>transaction</code> took place.</p></li>
+<li><p><code>value-date</code> - the specific date for the <code>value</code> of a <code>budget</code> or <code>transaction</code>, which is used for currency conversion purposes.</p></li>
+<li><p><code>period-start</code> and <code>period-end</code> dates are used to describe a period of time in a <code>budget</code> , <code>planned-disbursement</code> or <code>indicator</code></p></li>
 </ul>
 
 <p>Additionally, a time-sensitive (non-date) declaration works in conjunction with the <code>activity-date</code>:</p>
 
 <ul>
-<li><code>activity-status</code> - a numeric code to declare current stage of the <code>iati-activity</code>.</li>
+<li><p><code>activity-status</code> - a numeric code to declare current stage of the <code>iati-activity</code>.</p></li>
 </ul>
-</p>
-<p id="considerations">
+</section>
+<section id="considerations">
 <h2>Considerations</h2>
 <p>When using the <strong>IATI activity standard</strong> to declare <em>dates</em>, the following should be considered:</p>
 <ul>
-<li>Date format for <code>activity-date</code>, <code>period-start</code>, <code>period-end</code>, <code>transaction-date</code> and <code>value-date</code> must be in ISO 8601 (YYYY-MM-DD), eg: 2014-03-21</li>
-<li>Date format for <code>generated-datetime</code> <code>last-updated-datetime</code> must use ISO 8601 date format, e.g. “2014-03-21T18:45:00+01:00”.</li>
-<li>A start and end date must be provided - if exact dates are not known then start planned or end planned should be used</li>
-<li>Any start date should be before the end date, or the same</li>
-<li>All dates can be updated at any point</li>
+<li><p>Date format for <code>activity-date</code>, <code>period-start</code>, <code>period-end</code>, <code>transaction-date</code> and <code>value-date</code> must be in ISO 8601 (YYYY-MM-DD), eg: 2014-03-21</p></li>
+<li><p>Date format for <code>generated-datetime</code> <code>last-updated-datetime</code> must use ISO 8601 date format, e.g. “2014-03-21T18:45:00+01:00”.</p></li>
+<li><p>A start and end date must be provided - if exact dates are not known then start planned or end planned should be used</p></li>
+<li><p>Any start date should be before the end date, or the same</p></li>
+<li><p>All dates can be updated at any point</p></li>
 <li><dl>
-<dt>An <code>activity-date</code> can have four types:</dt>
-<dd><ul>
-<li>start-planned - the forecast start date for the <code>iati-activity</code> (e.g. if the <code>iati-activity</code> is in the pipeline stage or the date of the first disbursement is not known).</li>
-<li>start-actual - the actual start date for the <code>iati-activity</code> (e.g. the date of the first disbursement).</li>
-<li>end-planned - the forecast end date for the <code>iati-activity</code>.</li>
-<li>end-actual (code <em>4</em>)- the actual end date for the <code>iati-activity</code> (End dates should, wherever possible, reflect the ending of physical activity.).</li>
+<dt>An <code>activity-date</code> can have four types:</dt><dd><ul>
+<li><p>start-planned - the forecast start date for the <code>iati-activity</code> (e.g. if the <code>iati-activity</code> is in the pipeline stage or the date of the first disbursement is not known).</p></li>
+<li><p>start-actual - the actual start date for the <code>iati-activity</code> (e.g. the date of the first disbursement).</p></li>
+<li><p>end-planned - the forecast end date for the <code>iati-activity</code>.</p></li>
+<li><p>end-actual (code <em>4</em>)- the actual end date for the <code>iati-activity</code> (End dates should, wherever possible, reflect the ending of physical activity.).</p></li>
 </ul>
 </dd>
 </dl>
 </li>
-<li>The <code>activity-status</code> represents the latest stage for the activity.  It can be updated at any time.</li>
-<li>When the <code>activity-status</code> reaches <code>ActivityStatus</code> codes <em>3</em>, <em>4</em> or <em>5</em> then it is recommended that an <code>end-actual</code> date is added.</li>
-<li><code>ActivityStatus</code> code <em>6</em> indicates a temporary suspension of an activity. In this state an activity is assumed not to be <code>current</code>, but future, forward-looking budgets are still assumed to be applicable.</li>
+<li><p>The <code>activity-status</code> represents the latest stage for the activity.  It can be updated at any time.</p></li>
+<li><p>When the <code>activity-status</code> reaches <code>ActivityStatus</code> codes <em>3</em>, <em>4</em> or <em>5</em> then it is recommended that an <code>end-actual</code> date is added.</p></li>
+<li><p><code>ActivityStatus</code> code <em>6</em> indicates a temporary suspension of an activity. In this state an activity is assumed not to be <code>current</code>, but future, forward-looking budgets are still assumed to be applicable.</p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

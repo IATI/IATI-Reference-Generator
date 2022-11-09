@@ -1,44 +1,45 @@
 <div class="body" role="main">
-<p id="standard-ruleset">
+<section id="standard-ruleset">
 <h1>Standard Ruleset</h1>
 <p>The Standard Ruleset is a collection of rules that cover some of the basic requirements of the IATI Standard. It covers for example, the ordering of dates, and checks on the format of an iati-identifier.</p>
-<p id="using-the-standard-ruleset">
+<section id="using-the-standard-ruleset">
 <h2>Using the Standard Ruleset</h2>
 <p>The current Standard Ruleset is applicable to a single <code>iati-activity</code>.</p>
 <p>Each test, detailed below, can be repeated within an <code>iati-activity</code>, depending upon the scope and scale of elements of the <strong>IATI Activity Standard</strong> used.</p>
 <p>For example, an activity with a single <code>transaction</code> would only be subject to two tests (detailed below).  For each and every time a <code>transaction</code> is repeated within an <code>iati-activity</code>, these tests would be undertaken subsequently.</p>
 <p>Hence, the minimum and maximum number of tests undertaken on an <code>iati-activity</code> can fluctuate according to the content.</p>
 <p>This could also be duplicated, if the tests are run on a single <em>IATI activity file</em>, which contains multiple <code>iati-activity</code> instances.</p>
-</p>
-<p id="contents-of-the-ruleset">
+</section>
+<section id="contents-of-the-ruleset">
 <h2>Contents of the Ruleset</h2>
 <p>The ruleset consists of two types of rules:</p>
 <ul>
-<li><code>Starts with</code> - conditions around the formation of the <code>iati-identifier</code></li>
-<li><code>Date order</code> - logics around the ordering of various date elements.</li>
+<li><p><code>Starts with</code> - conditions around the formation of the <code>iati-identifier</code></p></li>
+<li><p><code>Date order</code> - logics around the ordering of various date elements.</p></li>
 </ul>
 <p>These rules are applicable to various elements:</p>
-</p>
-<p id="iati-activity">
+</section>
+<section id="iati-activity">
 <h2>//iati-activity</h2>
 <p><code>activity-date[@type='start-actual']/@iso-date</code> must be before or the same as <code>activity-date[@type='end-actual']/@iso-date</code></p>
 <p><code>activity-date[@type='start-planned']/@iso-date</code> must be before or the same as <code>activity-date[@type='end-planned']/@iso-date</code></p>
 <p><code>activity-date[@type='start-actual']/@iso-date</code> must not be in the future.</p>
 <p><code>activity-date[@type='end-actual']/@iso-date</code> must not be in the future.</p>
 <p><code>iati-identifier</code> should start with the value in <code>reporting-org/@ref</code></p>
-</p>
-<p id="transaction">
+</section>
+<section id="transaction">
 <h2>//transaction</h2>
 <p><code>transaction-date/@iso-date</code> must not be in the future.</p>
 <p><code>value/@value-date</code> must not be in the future.</p>
-</p>
-<p id="planned-disbursement">
+</section>
+<section id="planned-disbursement">
 <h2>//planned-disbursement</h2>
 <p><code>period-start/@iso-date</code> must be before or the same as <code>period-end/@iso-date</code></p>
-</p>
-<p id="result-indicator-period">
+</section>
+<section id="result-indicator-period">
 <h2>//result/indicator/period</h2>
 <p><code>period-start/@iso-date</code> must be before or the same as <code>period-end/@iso-date</code></p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

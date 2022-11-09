@@ -1,64 +1,64 @@
 <div class="body" role="main">
-<p id="geography-sub-national-locations">
+<section id="geography-sub-national-locations">
 <h1>Geography - sub-national locations</h1>
 <p>The sub-national location/s of an activity can be described in a number of ways. The primary way is through geographic coordinates. This allows data users to locate on a map all the activities happening in a particular area and build up a picture of what activities are happening where (e.g. the distribution of sustainable farming programmes). In addition, descriptions can be added, such as the name of a district and any features of the location e.g. health centre, village, administrative area. Publishing reliable location data is often very helpful for data users.</p>
 <p>The name of an activity’s location can also be included in the description element of the activity. This allows data users to find relevant activities when doing a free word search for specific location names.</p>
 <p>Details that could link to the identification of groups and compromise the safety of people should not be added. It is the responsibility of the publishing organisation to ensure that the data they publish is safe.</p>
-<p id="how-to-find-an-activitys-location">
+<section id="how-to-find-an-activitys-location">
 <h2>How to find an activity’s ‘location’</h2>
 <p>It is recommended that the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/">location</a> element is only used for an activity if some details are known about where in a country the activity will be taking place, and that these details are safe to add. The activity <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-scope/">scope</a> element should be used to detail what kind of sub-national location data can be included:</p>
 <ul>
-<li>5 sub-national: multi-first-level administrative areas</li>
-<li>6 sub-national: single first-level administrative area</li>
-<li>7 sub-national: single second-level administrative area</li>
-<li>8 Single location</li>
+<li><p>5 sub-national: multi-first-level administrative areas</p></li>
+<li><p>6 sub-national: single first-level administrative area</p></li>
+<li><p>7 sub-national: single second-level administrative area</p></li>
+<li><p>8 Single location</p></li>
 </ul>
 <p>A number of activities will not be based in a specific location, or it may not be known where within a country the many activities being contracted will take place. Security concerns may also prevent location data from being published, or may limit what location description can be provided. The location data provided should be aligned with the data provided in the activity’s scope element, e.g. the specific location, implementing partner’s office, central feature in an administrative area or a central coordinate for the region.</p>
 <p>It is then for the publisher to decide how much information and context to provide about the activity’s location using the other location elements and attributes available.</p>
 <p>If you don’t have an internal way of specifying or finding coordinates for a specific location, the website <a href="https://www.latlong.net/">Latlong.net</a> provides the central point for chosen areas. For example, users can search for the name of a district of administrative area and the coordinates for the central point will be provided. Or, it is possible to search for the coordinates to find where the activity is located.</p>
 <p>Please note that, in IATI, a user should be able to trace a donor’s activity, all the way down to the multiple implementing organisations carrying out the work. It is expected that more specific location details can be added by organisations implementing the activities, rather than their funders.</p>
-</p>
-<p id="how-to-find-an-activitys-coordinates">
+</section>
+<section id="how-to-find-an-activitys-coordinates">
 <h2>How to find an activity’s coordinates</h2>
 <p>Coordinates are published using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/point/">point</a> and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/point/pos/">pos</a> elements. The point element is always: &lt;point srsName=”<a href="http://www.opengis.net/def/crs/EPSG/0/4326">http://www.opengis.net/def/crs/EPSG/0/4326</a>”&gt;</p>
 <p>The pos element then contains the latitude coordinate (the first number), followed by the longitude coordinate (the second number) e.g. -46.7733 167.6321.</p>
 <p>Note that coordinates can refer to an ‘exact’ or an ‘approximate’ location. This should be specified using the location <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/exactness/">exactness</a> element.</p>
 <p>If you don’t already have a way to find the coordinates for an activity, there are some online platforms to help, e.g. <a href="https://www.google.com/maps/">Google Maps</a> and <a href="https://www.latlong.net/">Latlong.net</a>. To find the coordinates for an activity on Google Maps, right-click over the location of the activity and select ‘what’s here?’. The coordinates will then be presented. Alternatively, type in the coordinates and the location of the activity will be pinpointed on the map.</p>
-</p>
-<p id="recommended-information-to-be-published-within-the-location-element">
+</section>
+<section id="recommended-information-to-be-published-within-the-location-element">
 <h2>Recommended information to be published within the location element</h2>
 <ul>
-<li>The location element should only be used when sub-national location data is known.</li>
-<li>Location data should only be added when it is safe to do so. It is the publishing organisation’s responsibility to ensure that the data it publishes is safe.</li>
-<li>Due to security considerations, some publishing organisations may decide not to include location data. They may even exclude a project from their data entirely (see <a href="/en/guidance/standard-overview/preparing-your-organisation-data-publication/information-and-data-you-cant-publish-exclusions/">IATI’s Exclusion Policy Guidelines</a>).</li>
-<li>If required, location data can display a sub-national region with a central coordinate rather than an exact location.</li>
-<li>Multiple locations can be given for an individual activity. However, please note: adding multiple locations covering a large area obstructs data use.</li>
-<li>The location/s provided should relate to either the specific place or area where the activity is happening, or where the intended beneficiaries are located. This should be specified using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-reach/">location-reach</a> element.</li>
-<li>Each location should be published in a separate location element.</li>
-<li>The town or region’s name, if known, should be published in the location name element.</li>
+<li><p>The location element should only be used when sub-national location data is known.</p></li>
+<li><p>Location data should only be added when it is safe to do so. It is the publishing organisation’s responsibility to ensure that the data it publishes is safe.</p></li>
+<li><p>Due to security considerations, some publishing organisations may decide not to include location data. They may even exclude a project from their data entirely (see <a href="/en/guidance/standard-overview/preparing-your-organisation-data-publication/information-and-data-you-cant-publish-exclusions/">IATI’s Exclusion Policy Guidelines</a>).</p></li>
+<li><p>If required, location data can display a sub-national region with a central coordinate rather than an exact location.</p></li>
+<li><p>Multiple locations can be given for an individual activity. However, please note: adding multiple locations covering a large area obstructs data use.</p></li>
+<li><p>The location/s provided should relate to either the specific place or area where the activity is happening, or where the intended beneficiaries are located. This should be specified using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-reach/">location-reach</a> element.</p></li>
+<li><p>Each location should be published in a separate location element.</p></li>
+<li><p>The town or region’s name, if known, should be published in the location name element.</p></li>
 </ul>
-</p>
-<p id="technical-guidance-summary">
+</section>
+<section id="technical-guidance-summary">
 <h2>Technical guidance summary</h2>
 <p>The table below shows some of the information that should be included in location elements. The full table of all the location elements that can be published is <a href="../sub-national-locations-all/"><span>here</span></a>.</p>
-<table border="1">
+<table>
 <colgroup>
-<col width="16%"/>
-<col width="28%"/>
-<col width="28%"/>
-<col width="28%"/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/">location</a></td>
 <td>Details the geographic locations in which the activity is taking place.</td>
-<td> </td>
+<td></td>
 <td>The @ref attribute should be included; this is an internal reference for each location element.
 This can be used to link one of the activity’s <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/">results</a> to a defined location.
 </td>
@@ -68,7 +68,7 @@ This can be used to link one of the activity’s <a href="/en/iati-standard/203/
 <td>This can only be published once.
 The value must be on the <a href="/en/iati-standard/203/codelists/GeographicLocationReach/">geographic location reach</a> codelist.
 </td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/name/">name</a></td>
 <td>The name of the location.</td>
@@ -90,21 +90,21 @@ The value must be on the <a href="/en/iati-standard/203/codelists/GeographicLoca
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/exactness/">exactness</a></td>
 <td>Specifies whether the location provided is exact or approximate.</td>
 <td>This value must be on the <a href="/en/iati-standard/203/codelists/GeographicExactness/">geographic exactness</a> codelist.</td>
-<td> </td>
+<td></td>
 </tr>
 </tbody>
 </table>
-</p>
-<p id="activity-geography">
+</section>
+<section id="activity-geography">
 <h2>Activity geography</h2>
 <dl>
-<dt>Activities can also contain countries and regions in which they are happening. For further details see:</dt>
-<dd><ul>
-<li><a href="../activity-geography/"><span>Activity geography</span></a></li>
-<li><a href="../countries-regions/"><span>Countries and regions</span></a></li>
+<dt>Activities can also contain countries and regions in which they are happening. For further details see:</dt><dd><ul>
+<li><p><a href="../activity-geography/"><span>Activity geography</span></a></p></li>
+<li><p><a href="../countries-regions/"><span>Countries and regions</span></a></p></li>
 </ul>
 </dd>
 </dl>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="Geography - sub-national locations" name="title"/><meta content="The sub-national location/s of an activity can be described in a number of ways. The primary way is through geographic coordinates." name="description"/><meta content="activity" name="guidance_type"/><meta content="September 19, 2019" name="date"/></div>

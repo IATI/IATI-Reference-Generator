@@ -1,25 +1,23 @@
 <div class="body" role="main">
-<p id="forecast">
+<section id="forecast">
 <h1>forecast</h1>
 <p><code>iati-activities/iati-activity/fss/forecast</code></p>
 <p>This is the reference page for the XML element <code>forecast</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>A container to hold separate forecasts for each of
 the years specified</p>
 <p>The text in this element must be of type xsd:decimal.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-fss-forecast-year">
-<dt>@year</dt>
-<dd><p>The calendar year that the forward spend covers</p>
+<dt>@year</dt><dd><p>The calendar year that the forward spend covers</p>
 <p>This value must be of type xsd:decimal.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-fss-forecast-currency">
-<dt>@currency</dt>
-<dd><p>A three letter ISO 4217 code for the original currency of the
+<dt>@currency</dt><dd><p>A three letter ISO 4217 code for the original currency of the
 amount.
 This is required for all currency amounts unless the
 <a href="mailto:iati-activity/%40default-currency">iati-activity/<span>@</span>default-currency</a> (or <a href="mailto:iati-organisation/%40default-currency">iati-organisation/<span>@</span>default-currency</a>
@@ -31,15 +29,14 @@ for an organisation file) attribute is specified.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-fss-forecast-value-date">
-<dt>@value-date</dt>
-<dd><p>The date that this value was set (to allow historical
+<dt>@value-date</dt><dd><p>The date that this value was set (to allow historical
 currency conversion).  The date must be in ISO 8601
 format (YYYY-MM-DD).</p>
 <p>This value must be of type xsd:date.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>forecast</code> in context of <code>fss</code> element.</p>
 <p>Example declares <code>year</code> as <em>2014</em>, with a <code>value</code> of <em>10000</em>:</p>
@@ -57,24 +54,25 @@ format (YYYY-MM-DD).</p>
 </span>  &lt;/fss&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>1.03</h3>
 
 <p>New in 1.03</p>
 <p>Added the optional <code>fss</code> element and its child elements</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L1804">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/fss/forecast.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L1804">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/fss/forecast.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

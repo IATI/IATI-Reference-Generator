@@ -1,37 +1,38 @@
 <div class="body" role="main">
-<p id="activity-participants">
+<section id="activity-participants">
 <h1>Activity participants</h1>
 <p>In IATI data, each organisation publishes from its own perspective and includes details of organisations it is working with. Each publisher should be publishing the money coming into their organisation and what they are doing with it. The work they do may involve other organisations. These could be organisations from which they are receiving money from, organisations to which they are giving money, or partner organisations.</p>
 <p>There are multiple points in Organisation and Activity files that can reference the organisations a publisher is working with. They should be identified by their name, unique IATI organisation ID (referred to as an IATI Org ID) and activity IDs (also referred to as IATI Identifiers). Their role and what type of organisation they are must also be added. For guidance on how to formulate an IATI Org ID see <a href="/en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/">here</a>.</p>
 <p>It is useful for data users to know who an organisation is working with, as well as being able to trace the flow of funds up and down the delivery chain. This is enabled by publishers including the unique IATI Org IDs for the external organisations they are working with. IATI Org IDs can be added to activity data by use of the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/">participating-org</a> and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/">transaction</a> elements. It is always recommended that the IATI Organisation ID is added (if possible) and the organisation’s name.</p>
 <dd>
-<p class="">The current list of publishers can be found on the <a href="https://iatiregistry.org/publisher">IATI Registry.</a></p></dd>
-<p id="where-can-activity-participants-can-be-published">
+<p class=""><p>The current list of publishers can be found on the <a href="https://iatiregistry.org/publisher">IATI Registry.</a></p>
+</p></dd>
+<section id="where-can-activity-participants-can-be-published">
 <h2>Where can activity participants can be published?</h2>
 <p><strong>Organisation file:</strong></p>
 <p>Each organisation file must specify which organisation is publishing the file, and which organisation the data is about. In most cases, the publishing organisation is publishing data about itself. The organisation file can also include external organisations to which the publisher is providing core funding.</p>
 <ul>
-<li>In most cases, an organisation file will be from the perspective of one organisation. Guidance on publishing from the perspective of multiple organisations is coming soon.</li>
-<li>It is always recommended that the IATI Org ID and the organisation’s name is included.</li>
+<li><p>In most cases, an organisation file will be from the perspective of one organisation. Guidance on publishing from the perspective of multiple organisations is coming soon.</p></li>
+<li><p>It is always recommended that the IATI Org ID and the organisation’s name is included.</p></li>
 </ul>
-</p>
-<p id="technical-guidance-summary">
+</section>
+<section id="technical-guidance-summary">
 <h2>Technical guidance summary</h2>
-<table border="1">
+<table>
 <colgroup>
-<col width="16%"/>
-<col width="28%"/>
-<col width="28%"/>
-<col width="28%"/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/organisation-identifier/">organisation-identifier</a></td>
 <td>The IATI organisation ID (Org ID) of the organisation whose data is being published.
 This organisation may be different from the organisation publishing the file.
@@ -40,14 +41,14 @@ This organisation may be different from the organisation publishing the file.
 This must be a valid IATI Org ID.
 To publish on behalf of another organisation, the <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/">iati-organisation</a> element should be repeated.
 </td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/name/">name</a></td>
 <td>A (human-readable) name for the organisation whose data is being published.</td>
 <td>This element must be included once and only once.
 This name can be repeated in different languages.
 </td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/reporting-org/">reporting-org</a></td>
 <td>The IATI Org ID of the organisation publishing the data.</td>
@@ -70,28 +71,28 @@ If the IATI Org ID is not known, the name of the organisation must be given in t
 <p>Activity files need to specify which organisation is publishing the data.</p>
 <p>Details of participating organisations, what their roles are and who is receiving and giving the funds can also be published.</p>
 <ul>
-<li>In most cases, an organisation file will be from the perspective of one organisation. Guidance on publishing from the perspective of multiple organisations is coming soon.</li>
-<li>The role/s of the publishing should be provided (e.g. implementing and accountable).</li>
-<li>Activities can have multiple participating organisations with the same role (e.g. implementing and accountable).</li>
-<li>A participating organisation can also have multiple roles.</li>
-<li>It is always recommended that as many details as possible about an organisation which are known are added.</li>
-<li>For each transaction it is recommended that both the provider and receiver organisations are added, this includes when the reporting organisation is either the provider or the receiver. Guidance on publishing transactions is <a href="../financial-transactions/"><span>here</span></a></li>
+<li><p>In most cases, an organisation file will be from the perspective of one organisation. Guidance on publishing from the perspective of multiple organisations is coming soon.</p></li>
+<li><p>The role/s of the publishing should be provided (e.g. implementing and accountable).</p></li>
+<li><p>Activities can have multiple participating organisations with the same role (e.g. implementing and accountable).</p></li>
+<li><p>A participating organisation can also have multiple roles.</p></li>
+<li><p>It is always recommended that as many details as possible about an organisation which are known are added.</p></li>
+<li><p>For each transaction it is recommended that both the provider and receiver organisations are added, this includes when the reporting organisation is either the provider or the receiver. Guidance on publishing transactions is <a href="../financial-transactions/"><span>here</span></a></p></li>
 </ul>
-<table border="1">
+<table>
 <colgroup>
-<col width="16%"/>
-<col width="28%"/>
-<col width="28%"/>
-<col width="28%"/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/">reporting-org</a></td>
 <td>The IATI Org ID of the organisation publishing the file.</td>
 <td>This element must be included once and only once.
@@ -135,6 +136,7 @@ If the receiver-org element is missing, it is presumed that the reporting-org is
 </tr>
 </tbody>
 </table>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="Activity participants" name="title"/><meta content="In IATI data, each organisation publishes from its own perspective and includes details of organisations it is working with." name="description"/><meta content="activity, organisation" name="guidance_type"/><meta content="September 19, 2019" name="date"/></div>

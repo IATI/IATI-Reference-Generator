@@ -1,4 +1,4 @@
-<codelist name="LoanRepaymentType" date-last-modified="2022-07-25T19:39:56.521249+00:00" version="" xml:lang="en">
+<codelist name="LoanRepaymentType" date-last-modified="2022-11-09T13:11:51.020188+00:00" version="" xml:lang="en">
   <LoanRepaymentType>
     <code>1</code>
     <name>Equal Principal Payments (EPP)</name>

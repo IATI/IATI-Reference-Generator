@@ -1,23 +1,22 @@
 <div class="body" role="main">
-<p id="aid-type">
+<section id="aid-type">
 <h1>aid-type</h1>
 <p><code>iati-activities/iati-activity/transaction/aid-type</code></p>
 <p>This is the reference page for the XML element <code>aid-type</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Optional element to override the top-level default-aid-type element (debt relief, etc.) on a transaction-by-transaction basis if needed.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element may occur any number of times.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L772">107.2.1</a>: The transaction should also contain a code from the OECD DAC aid type vocabulary.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L889">107.2.2</a>: Each transaction should only contain one aid type code per aid type vocabulary (e.g. 1 - OECD DAC)</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-transaction-aid-type-code">
-<dt>@code</dt>
-<dd><p>A code from the specified vocabulary.</p>
+<dt>@code</dt><dd><p>A code from the specified vocabulary.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../../codelists/AidType/"><span>AidType codelist</span></a>, if the relevant vocabulary is used.</p>
@@ -26,15 +25,14 @@
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-transaction-aid-type-vocabulary">
-<dt>@vocabulary</dt>
-<dd><p>A code for the vocabulary aid-type classifications. If omitted the AidType (OECD DAC) codelist is assumed. The code must be a valid value in the AidTypeVocabulary codelist.</p>
+<dt>@vocabulary</dt><dd><p>A code for the vocabulary aid-type classifications. If omitted the AidType (OECD DAC) codelist is assumed. The code must be a valid value in the AidTypeVocabulary codelist.</p>
 <p>Each selected vocabulary should only be used once for each activity (iati-activity/default-aid-type) or transaction (iati-activity/transaction/aid-type). All activities and/or transactions should contain a code from the DAC Type of Aid Vocabulary. The above guidelines should be converted to rules at the next integer upgrade.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../../codelists/AidTypeVocabulary/"><span>AidTypeVocabulary codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>aid-type</code> of a <code>transaction</code> in an <code>iati-activity</code>.</p>
 
@@ -60,7 +58,7 @@
    &lt;/receiver-org&gt;
    &lt;disbursement-channel code="1" /&gt;
    &lt;sector vocabulary="2" code="111" /&gt;
-   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="TM" /&gt;
    &lt;recipient-region code="616" vocabulary="1" /&gt;
    &lt;flow-type code="10" /&gt;
@@ -75,23 +73,24 @@
 
 <p>Note: The <code>aid-type</code> element can override the <code>default-aid-type</code> value set in <code>iati-activity</code></p>
 
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id3">
+<section id="id3">
 <h3>2.03</h3>
 <p>The <code>aid-type</code> element can be reported multiple times within a <code>transaction</code> element <a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">added</a>.
 The <code>@code</code> attribute definition was <a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">updated</a>.
 The <code>@vocabulary</code> attribute was <a href="https://discuss.iatistandard.org/t/add-vocabularies-to-aid-type-included-2-03/847">added</a>.</p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1274">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/transaction/aid-type.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L1274">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/transaction/aid-type.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

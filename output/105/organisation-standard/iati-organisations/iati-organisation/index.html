@@ -1,18 +1,17 @@
 <div class="body" role="main">
-<p id="iati-organisation">
+<section id="iati-organisation">
 <h1>iati-organisation</h1>
 <p><code>iati-organisations/iati-organisation</code></p>
 <p>This is the reference page for the XML element <code>iati-organisation</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Top-level element for a single IATI organisation report.</p>
 <p>The schema states that this element must have at least 1 subelement.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-organisations-iati-organisation-version">
-<dt>@version</dt>
-<dd><p>A number indicating the IATI specification version in use.
+<dt>@version</dt><dd><p>A number indicating the IATI specification version in use.
 Defaults to “1.0” if not specified.  It is required to
 specify this attribute if the document is using features
 specific to an IATI specification other than the initial
@@ -21,29 +20,26 @@ specific to an IATI specification other than the initial
 </dd>
 </dl>
 <dl id="iati-organisations-iati-organisation-last-updated-datetime">
-<dt>@last-updated-datetime</dt>
-<dd><p>The last date/time that the data for this specific
+<dt>@last-updated-datetime</dt><dd><p>The last date/time that the data for this specific
 organisation was updated.  This date must change whenever
 the value of any field changes.</p>
 <p>This value must be of type xsd:dateTime.</p>
 </dd>
 </dl>
 <dl id="iati-organisations-iati-organisation-xml-lang">
-<dt>@xml:lang</dt>
-<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<dt>@xml:lang</dt><dd><p>ISO 2 letter code specifying the language of text in this element.</p>
 <p>This value should be on the <a href="../../../codelists/Language/"><span>Language codelist</span></a>.</p>
 </dd>
 </dl>
 <dl id="iati-organisations-iati-organisation-default-currency">
-<dt>@default-currency</dt>
-<dd><p>Default ISO 4217 currency code for all financial values in
+<dt>@default-currency</dt><dd><p>Default ISO 4217 currency code for all financial values in
 this organisation report.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../codelists/Currency/"><span>Currency codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example of <code>iati-organisation</code> with <code>last updated-datetime</code> of on 2nd September 2014.
 Language set as <em>en</em> (English) and a <code>default-currency</code> to <em>EUR</em> (Euros).
@@ -52,23 +48,23 @@ The optional <code>version</code> of <em>1.05</em> is also stated:</p>
 </pre></code>
 </p>
 <p>The <code>iati-organisation</code> element acts as a container for other sub-elements.  It is closed as follows:</p>
-<p><code><pre>  &lt;!--document-link-language starts--&gt;
+<p><code><pre>  <span>&lt;!--document-link-language starts--&gt;</span>
   &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_fr.odt"&gt;
    &lt;category code="B01" /&gt;
    &lt;language code="fr" /&gt;
    &lt;title&gt;Annual Report 2013&lt;/title&gt;
    &lt;title xml:lang="fr"&gt;Rapport annuel 2013&lt;/title&gt;
   &lt;/document-link&gt;
-  &lt;!--document-link-language ends--&gt;  
-  &lt;!--document-link-lang starts--&gt;
+  <span>&lt;!--document-link-language ends--&gt;</span>  
+  <span>&lt;!--document-link-lang starts--&gt;</span>
   &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
    &lt;category code="B01" /&gt;
    &lt;language code="en" /&gt;
    &lt;title&gt;Annual Report 2013&lt;/title&gt;
    &lt;title xml:lang="fr"&gt;Rapport annuel 2013&lt;/title&gt;
   &lt;/document-link&gt;
-  &lt;!--document-link-lang ends--&gt;
-  &lt;!--multi-cat-document-link starts--&gt;
+  <span>&lt;!--document-link-lang ends--&gt;</span>
+  <span>&lt;!--multi-cat-document-link starts--&gt;</span>
   &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
    &lt;category code="B01" /&gt;
    &lt;category code="B02" /&gt;
@@ -76,20 +72,20 @@ The optional <code>version</code> of <em>1.05</em> is also stated:</p>
    &lt;language code="en" /&gt;
    &lt;title&gt;Annual Report 2013&lt;/title&gt;
   &lt;/document-link&gt;
-  &lt;!--multi-cat-document-link ends--&gt;
+  <span>&lt;!--multi-cat-document-link ends--&gt;</span>
  &lt;/iati-organisation&gt;
 </pre></code>
 </p>
-</p>
-<p id="developer-tools">
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-organisations-schema.xsd#L62">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/organisation-standard/iati-organisations/iati-organisation.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-organisations-schema.xsd#L62">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/organisation-standard/iati-organisations/iati-organisation.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
@@ -102,6 +98,7 @@ The optional <code>version</code> of <em>1.05</em> is also stated:</p>
 <li><a href="document-link/">document-link</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>
