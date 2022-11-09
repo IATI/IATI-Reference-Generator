@@ -1,5 +1,5 @@
 <div class="body" role="main">
-<p id="financial-transactions">
+<section id="financial-transactions">
 <h1>Financial transactions</h1>
 <p>Each activity in IATI should contain a record of how the activity is being financed and how the finance is being used. Each incoming and outgoing fund is published as a transaction. Publishers can choose the type of transaction that best reflects the real flow of money in and out of their organisation. This could be incoming commitments (the promise of money) or incoming funds (the actual transfer of money).</p>
 <p>Each transaction should specify: the date on which the transaction took place, the value of the transaction, and who gave and received the money. Further details about a transaction can be included by adding <a href="../activity-classifications/"><span>classifications</span></a> to each transaction. This includes the type of finance being published, whether or not the finance is for a specific purpose and if there is a specific policy area that the finance will be targeting.</p>
@@ -21,7 +21,7 @@
 </pre></code>
 </p>
 <p>Transactions can be positive or negative. An example of a negative transaction would be money that was disbursed to a partner and is then being returned to the funder. The returned funds should be published as a disbursement transaction with a negative value, i.e. with a minus symbol in front of the figure, e.g. -1000.</p>
-<p id="example">
+<section id="example">
 <h2><strong>Example</strong></h2>
 <p>An organisation has committed $10,000 to an external organisation. Later, this commitment is dropped to $8,000. This should be published as two separate outgoing commitments. One for $10,000, followed by another for -$2,000. Please note: the provider and receiver organisations are missing from this example.</p>
 <p><code><pre>&lt;transaction&gt;
@@ -36,39 +36,39 @@
 &lt;/transaction&gt;
 </pre></code>
 </p>
-</p>
-<p id="transactions-should-include">
+</section>
+<section id="transactions-should-include">
 <h2>Transactions should include:</h2>
 <ul>
-<li>Every activity should include at least one transaction.</li>
-<li>A transaction always describes something that has already happened. Therefore, transaction and value dates must not be in the future.</li>
-<li>Each transaction can have a reference, this can be used to link a transaction to the publisher’s internal financial management system.</li>
-<li>IATI recommends that commitments and pledges are followed by the actual movement of money (incoming fund, disbursement or expenditure). For each commitment, there should be a corresponding disbursement on the date when the funds were disbursed.</li>
-<li>Dates should be in the format YYYY-MM-DD, e.g. 2018-03-16.</li>
-<li>Transaction values can contain decimals.</li>
-<li>Transaction values must not contain commas e.g. 3000 is acceptable, 3,000 is not.</li>
-<li>Transaction values can be positive or negative. Where finance is being passed up the delivery chain, this should be published as a negative transaction. E.g. if a grantee was returning $500, the provider should publish a disbursement of -$500 to the grantee.</li>
+<li><p>Every activity should include at least one transaction.</p></li>
+<li><p>A transaction always describes something that has already happened. Therefore, transaction and value dates must not be in the future.</p></li>
+<li><p>Each transaction can have a reference, this can be used to link a transaction to the publisher’s internal financial management system.</p></li>
+<li><p>IATI recommends that commitments and pledges are followed by the actual movement of money (incoming fund, disbursement or expenditure). For each commitment, there should be a corresponding disbursement on the date when the funds were disbursed.</p></li>
+<li><p>Dates should be in the format YYYY-MM-DD, e.g. 2018-03-16.</p></li>
+<li><p>Transaction values can contain decimals.</p></li>
+<li><p>Transaction values must not contain commas e.g. 3000 is acceptable, 3,000 is not.</p></li>
+<li><p>Transaction values can be positive or negative. Where finance is being passed up the delivery chain, this should be published as a negative transaction. E.g. if a grantee was returning $500, the provider should publish a disbursement of -$500 to the grantee.</p></li>
 </ul>
 <p>For each transaction it is strongly recommended that both the <strong>provider</strong> and <strong>receiver organisations</strong> are published. This includes when the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/">reporting-org</a> is either the provider or the receiver. To find the organisation ID for an organisation, please check if it is publishing via the <a href="updatelink">IATI Registry</a> or search for them using the <a href="https://org-id-finder.codeforiati.org/">org-ID finder</a>.</p>
-</p>
-<p id="technical-guidance-summary">
+</section>
+<section id="technical-guidance-summary">
 <h2>Technical guidance summary</h2>
 <p>All organisations should include the elements below when publishing a transaction.</p>
-<table border="1">
+<table>
 <colgroup>
-<col width="16%"/>
-<col width="28%"/>
-<col width="28%"/>
-<col width="28%"/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/transaction-type/">transaction-type</a></td>
 <td>Specifies the <a href="/en/iati-standard/203/codelists/TransactionType/">type</a> of financial transaction e.g. pledge, commitment or disbursement.</td>
 <td>This must be included once and only once for each transaction.</td>
@@ -79,7 +79,7 @@
 <td>This must be included once and only once for each transaction.
 Transactions must not have future dates at the time of publishing.
 </td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/value/">value</a></td>
 <td>Defines the amount of finance given, as well as the currency it’s published in and the date on which it was valued.</td>
@@ -120,14 +120,15 @@ If the receiver-org element is missing, it is presumed that the reporting-org is
 </tr>
 </tbody>
 </table>
-</p>
-<p id="contextual-information">
+</section>
+<section id="contextual-information">
 <h2>Contextual information</h2>
 <p>Thematic (sector) and geographic (country and region) details can be published either once per activity, or for each transaction. They should be published at the same level. They must not appear at both activity and transaction levels. Please see the <a href="../activity-thematic-focus/"><span>thematic</span></a> (sector) and <a href="../countries-regions/"><span>geographic</span></a> (country and region) pages for more details.</p>
-</p>
-<p id="further-classifications">
+</section>
+<section id="further-classifications">
 <h2>Further classifications</h2>
 <p>There are several classifications that can be added to a particular transaction, such as the type of finance and how It is being shared. These values override the default values published at activity level. For information on these classifications, see the <a href="../activity-classifications/"><span>activity classifications</span></a> page.</p>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="Financial transactions" name="title"/><meta content="Each activity in IATI should contain a record of how the activity is being financed and how the finance is being used. Each incoming and outgoing fund is published as a transaction." name="description"/><meta content="activity" name="guidance_type"/><meta content="September 19, 2019" name="date"/></div>

@@ -1,5 +1,5 @@
 <div class="body" role="main">
-<p id="iati-codelist-management">
+<section id="iati-codelist-management">
 <h1>IATI Codelist Management</h1>
 <p>The IATI codelists are key to making IATI data from different publishers
 comparable.</p>
@@ -14,7 +14,7 @@ the standard. e.g. for v2.02:
 <p>In managing the codelists we make a distinction between ‘embedded’ and
 ‘non-embedded’ codelists. In addition, we may refer to these lists as
 either ‘complete’ or ‘incomplete’.</p>
-<p id="embedded-codelists">
+<section id="embedded-codelists">
 <h2>Embedded Codelists</h2>
 <p>These are ‘functional’ codelists that are core to IATI. Changing them
 has a big impact on all those publishing and using IATI data. For example, adding, removing
@@ -24,23 +24,23 @@ be very disruptive.</p>
 <p>Embedded codelists are  managed via GitHub at:
 <a href="https://github.com/IATI/IATI-Codelists/">https://github.com/IATI/IATI-Codelists/</a></p>
 <ul>
-<li>Any changes to these codelists should be handled through a formal
+<li><p>Any changes to these codelists should be handled through a formal
 decimal or integer upgrade process.
 (<a href="http://dev.iatistandard.org/upgrades/">http://dev.iatistandard.org/upgrades/</a>).
-(except bug fixes - see below)</li>
-<li>Releases are tagged in line with the IATI Standard versions. This
+(except bug fixes - see below)</p></li>
+<li><p>Releases are tagged in line with the IATI Standard versions. This
 means you can grab a snapshot of e.g. everything to do with version
-1.03.</li>
-<li>There are branches for each version of the standard. These can change
+1.03.</p></li>
+<li><p>There are branches for each version of the standard. These can change
 between decimal and integer releases of the standard ONLY for bug
 fixes, typos, and translations. Users can chose to track changes to
 those branches if they like but our documentation (from v1.04
-onwards) will always track the corresponding branch.</li>
-<li>During an upgrade to the standard, the new version of a new branch is
-created for development.</li>
+onwards) will always track the corresponding branch.</p></li>
+<li><p>During an upgrade to the standard, the new version of a new branch is
+created for development.</p></li>
 </ul>
-</p>
-<p id="non-embedded-codelists">
+</section>
+<section id="non-embedded-codelists">
 <h2>Non-Embedded Codelists</h2>
 <p>These ‘non-functional’ codelists usually provide lookup information on
 e.g. currencies, languages in use, countries, etc. Often they are
@@ -49,20 +49,20 @@ minor impact on the sense and use of the data.</p>
 <p>Non-embedded codelists are managed via GitHub at:
 <a href="https://github.com/IATI/IATI-Codelists-NonEmbedded">https://github.com/IATI/IATI-Codelists-NonEmbedded</a></p>
 <ul>
-<li>We aim to make changes to these lists quickly to allow data users to
+<li><p>We aim to make changes to these lists quickly to allow data users to
 take advantage of the changes immediately. These changes can be made
-outside of a formal decimal or integer upgrade process.</li>
-<li>Releases would be tagged in line with standard but the minor changes
-will be available on the master branch of this repository.</li>
+outside of a formal decimal or integer upgrade process.</p></li>
+<li><p>Releases would be tagged in line with standard but the minor changes
+will be available on the master branch of this repository.</p></li>
 </ul>
-<p id="updates-to-non-embedded-codelists">
+<section id="updates-to-non-embedded-codelists">
 <h3>Updates to Non-embedded Codelists</h3>
 <p>Potential changes to Non-embedded Codelists may come to the team via:</p>
 <ul>
-<li>Personal requests/Support tickets</li>
-<li>Email notifications</li>
-<li>Announcements from the source organisations</li>
-<li>Automatic detection of changes to external sources compared with our own lists.</li>
+<li><p>Personal requests/Support tickets</p></li>
+<li><p>Email notifications</p></li>
+<li><p>Announcements from the source organisations</p></li>
+<li><p>Automatic detection of changes to external sources compared with our own lists.</p></li>
 </ul>
 <p>All proposals will be added to the The <a href="http://support.iatistandard.org/forums/23076626-Non-embedded-Codelist-Amendments">Non-embedded Codelist-Amendments Forum</a></p>
 <p>The IATI Technical Team hold regular team meetings once a week. All outstanding proposals will be discussed at that meeting. The IATI Technical Lead (Bill Anderson) has the ultimate responsibility for decisions taken.</p>
@@ -73,28 +73,28 @@ will be available on the master branch of this repository.</li>
 <p>At this point the technical team will:</p>
 <dd>
 <p class=""><ul>
-<li>Update the <a href="/en/iati-standard/upgrades/upgrade-changelogs/nonembedded-codelist-changelog">Non-Embedded Codelist changelog record</a></li>
-<li>Regenerate the IATI Standard Website.</li>
-<li>Mark the forum post as ‘Done’</li>
+<li><p>Update the <a href="/en/iati-standard/upgrades/upgrade-changelogs/nonembedded-codelist-changelog">Non-Embedded Codelist changelog record</a></p></li>
+<li><p>Regenerate the IATI Standard Website.</p></li>
+<li><p>Mark the forum post as ‘Done’</p></li>
 </ul>
 </p></dd>
 <p>A <span>summary of all changes to all non-emebedded</span> codelists is published on the IATI Standard website. They can also be found via the list of commits to the GitHub repository.</p>
-<p id="special-cases">
+<section id="special-cases">
 <h4>Special Cases</h4>
 <dl>
-<dt>File Format</dt>
-<dd>The IATI Technical Team will use its judgement to assess the importance of a change to the file format list and whether or not an announcement is required (i.e. the list may alter to stay inline with the external source, but announcements will not necessarily be made).</dd>
-<dt>Organisation Registration Agency</dt>
-<dd>Because there is a need to add registration agencies quickly, so that people can do their work, and because we anticipate many additions that will not be of interest to most people, we will add values to this list without making announcements. Values to be added will be agreed at the weekly team meeting.</dd>
+<dt>File Format</dt><dd><p>The IATI Technical Team will use its judgement to assess the importance of a change to the file format list and whether or not an announcement is required (i.e. the list may alter to stay inline with the external source, but announcements will not necessarily be made).</p>
+</dd>
+<dt>Organisation Registration Agency</dt><dd><p>Because there is a need to add registration agencies quickly, so that people can do their work, and because we anticipate many additions that will not be of interest to most people, we will add values to this list without making announcements. Values to be added will be agreed at the weekly team meeting.</p>
+</dd>
 </dl>
-</p>
-</p>
-</p>
-<p id="code-status-addition-and-withdrawl-dates">
+</section>
+</section>
+</section>
+<section id="code-status-addition-and-withdrawl-dates">
 <h2>Code status, addition and withdrawl dates</h2>
 <p>All new codes added to codelist from the release of version 2.02 (December 2015) will feature <code>status="active"</code> and <code>activation-date</code> attributes in the underlaying GitHub source code repositories.  Similarily, codes withdrawn from the release of version 2.02 (December 2015) will feature <code>status="withdrawn"</code> and <code>withdrawal-date</code> attributes.</p>
-</p>
-<p id="complete-vs-incomplete-codelists">
+</section>
+<section id="complete-vs-incomplete-codelists">
 <h2>Complete vs Incomplete Codelists</h2>
 <p>Some codelists, such as the ISO country codes, are not ‘complete’ lists
 of all possible values that might be used. In the case of countries,
@@ -105,6 +105,7 @@ is not on the codelist the data doesn’t make any sense - it is invalid.
 This is an example of a ‘complete’ codelist.</p>
 <p>We distinguish between these two types of codelists by the use of an xml
 attribute: <code>complete="1"</code></p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

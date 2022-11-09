@@ -1,39 +1,36 @@
 <div class="body" role="main">
-<p id="receiver-org">
+<section id="receiver-org">
 <h1>receiver-org</h1>
 <p><code>iati-activities/iati-activity/planned-disbursement/receiver-org</code></p>
 <p>This is the reference page for the XML element <code>receiver-org</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The organisation receiving the money from the planned disbursement.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur no more than once (within each parent element).</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-planned-disbursement-receiver-org-ref">
-<dt>@ref</dt>
-<dd><p>Machine-readable identification string for the organisation issuing the report. Must be in the format {RegistrationAgency}-{RegistrationNumber} where {RegistrationAgency} is a valid code in the Organisation Registration Agency code list and {RegistrationNumber} is a valid identifier issued by the {RegistrationAgency}. If this is not present then the narrative MUST contain the name of the organisation.</p>
+<dt>@ref</dt><dd><p>Machine-readable identification string for the organisation issuing the report. Must be in the format {RegistrationAgency}-{RegistrationNumber} where {RegistrationAgency} is a valid code in the Organisation Registration Agency code list and {RegistrationNumber} is a valid identifier issued by the {RegistrationAgency}. If this is not present then the narrative MUST contain the name of the organisation.</p>
 <p>This value must be of type xsd:string.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-planned-disbursement-receiver-org-receiver-activity-id">
-<dt>@receiver-activity-id</dt>
-<dd><p>If outgoing funds are being provided to another activity that is reported to IATI, this may, if possible, record the unique IATI activity identifier for that activity.</p>
+<dt>@receiver-activity-id</dt><dd><p>If outgoing funds are being provided to another activity that is reported to IATI, this may, if possible, record the unique IATI activity identifier for that activity.</p>
 <p>This value must be of type xsd:string.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-planned-disbursement-receiver-org-type">
-<dt>@type</dt>
-<dd><p>The type of organisation receiving the funds.</p>
+<dt>@type</dt><dd><p>The type of organisation receiving the funds.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../../codelists/OrganisationType/"><span>OrganisationType codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>receiver-org</code> of a <code>planned-disbursement</code> in an <code>iati-activity</code>.</p>
 
@@ -63,37 +60,38 @@
   &lt;/planned-disbursement&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>2.03</h3>
 
 <p>The definition of the <code>@ref</code> attribute was <a href="https://discuss.iatistandard.org/t/migration-of-organisationregistrationagency-codelist-to-org-id-guide-included-2-03/851">updated</a>.</p>
 
-</p>
-<p id="id2">
+</section>
+<section id="id2">
 <h3>2.02</h3>
 
 <p>The optional <code>receiver-org</code> element was <a href="http://support.iatistandard.org/entries/29665337-Add-provider-org-and-receiver-org-to-planned-disbursement-element">added</a>.</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L2148">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/planned-disbursement/receiver-org.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L2148">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/planned-disbursement/receiver-org.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

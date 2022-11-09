@@ -1,23 +1,22 @@
 <div class="body" role="main">
-<p id="administrative">
+<section id="administrative">
 <h1>administrative</h1>
 <p><code>iati-activities/iati-activity/location/administrative</code></p>
 <p>This is the reference page for the XML element <code>administrative</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Coded identification of national and sub-national
 divisions according to recognised administrative
 boundary repositories. Multiple levels may be reported.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element may occur any number of times.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-location-administrative-code">
-<dt>@code</dt>
-<dd><p>The code for the administrative area being reported
+<dt>@code</dt><dd><p>The code for the administrative area being reported
 from the vocabulary specified.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
@@ -25,8 +24,7 @@ from the vocabulary specified.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-location-administrative-vocabulary">
-<dt>@vocabulary</dt>
-<dd><p>An IATI code for a recognised administrative
+<dt>@vocabulary</dt><dd><p>An IATI code for a recognised administrative
 boundary repository.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
@@ -34,16 +32,15 @@ boundary repository.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-location-administrative-level">
-<dt>@level</dt>
-<dd><p>A number defining a subdivision within a hierarchical
+<dt>@level</dt><dd><p>A number defining a subdivision within a hierarchical
 system of administrative areas. The precise system
 for defining the particular meaning of each @level
 value is determined by the @vocabulary being used.</p>
 <p>This value must be of type xsd:nonNegativeInteger.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>administrative</code> within a <code>location</code> of an <code>iati-activity</code>.</p>
 
@@ -91,28 +88,29 @@ value is determined by the @vocabulary being used.</p>
   &lt;/location&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>2.01</h3>
 <p>Freetext is <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">no longer allowed</a>  within this element.</p>
 <p>The @county, @adm1 and @adm2 attributes were <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">removed</a>.</p>
-</p>
-<p id="id2">
+</section>
+<section id="id2">
 <h3>1.04</h3>
 
 <p>In 1.04 the @country, @adm1 and @adm2 attributes were deprecated. The new attributes replace the function of the previous ones.</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1540">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/location/administrative.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1540">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/location/administrative.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

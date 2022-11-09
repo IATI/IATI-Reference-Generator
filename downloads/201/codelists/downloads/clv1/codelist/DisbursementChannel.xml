@@ -1,4 +1,4 @@
-<codelist name="DisbursementChannel" date-last-modified="2022-11-09T13:29:46.384159+00:00" version="" xml:lang="en">
+<codelist name="DisbursementChannel" date-last-modified="2022-11-09T13:38:03.001483+00:00" version="" xml:lang="en">
   <DisbursementChannel>
     <code>1</code>
     <name>Money is disbursed through central Ministry of Finance or Treasury</name>

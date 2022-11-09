@@ -1,52 +1,52 @@
 <div class="body" role="main">
-<p id="example-usage-xml">
+<section id="example-usage-xml">
 <h1>Example Usage XML</h1>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>This page presents <em>example usage XML</em> for the <strong>IATI activity standard</strong></p>
-</p>
-<p id="considerations">
+</section>
+<section id="considerations">
 <h2>Considerations</h2>
 <p>These is <em>example usage XML</em> and not intended to reflect any real activities, organisations or entities.</p>
 <p>Extracts from these example files are used throughout this documentation.</p>
 <p>Comments markup is optional and intended to supplement the documentation:</p>
-<p><code><pre>  &lt;!--iati-identifier ends--&gt;
+<p><code><pre>  <span>&lt;!--iati-identifier ends--&gt;</span>
 
-  &lt;!--reporting-org starts--&gt;
+  <span>&lt;!--reporting-org starts--&gt;</span>
 </pre></code>
 </p>
-</p>
-<p id="download-example-usage-file">
+</section>
+<section id="download-example-usage-file">
 <h2>Download Example Usage File</h2>
 <p>The <em>example usage XML</em> file can be <a href="https://raw.githubusercontent.com/IATI/IATI-Extra-Documentation/version-2.03/en/activity-standard/activity-standard-example-annotated.xml">downloaded</a>.</p>
-</p>
-<p id="example-usage-file-in-full">
+</section>
+<section id="example-usage-file-in-full">
 <h2>Example Usage File (in full)</h2>
 <p><code><pre>&lt;iati-activities generated-datetime="2014-09-10T07:15:37Z" version="2.03" linked-data-default="http://data.example.org/"&gt;
 
- &lt;!--iati-activity starts--&gt;
+ <span>&lt;!--iati-activity starts--&gt;</span>
  &lt;iati-activity xml:lang="en" default-currency="USD" last-updated-datetime="2014-09-10T07:15:37Z" humanitarian="1" linked-data-uri="http://data.example.org/123456789" hierarchy="1" budget-not-provided="1"&gt;
 
-  &lt;!--iati-identifier starts--&gt;
+  <span>&lt;!--iati-identifier starts--&gt;</span>
   &lt;iati-identifier&gt;AA-AAA-123456789-ABC123&lt;/iati-identifier&gt;
-  &lt;!--iati-identifier ends--&gt;
+  <span>&lt;!--iati-identifier ends--&gt;</span>
 
-  &lt;!--reporting-org starts--&gt;
+  <span>&lt;!--reporting-org starts--&gt;</span>
   &lt;reporting-org ref="AA-AAA-123456789" type="40" secondary-reporter="0"&gt;
    &lt;narrative&gt;Organisation name&lt;/narrative&gt;
    &lt;narrative xml:lang="fr"&gt;Nom de l'organisme&lt;/narrative&gt;
   &lt;/reporting-org&gt;
-  &lt;!--reporting-org ends--&gt;
+  <span>&lt;!--reporting-org ends--&gt;</span>
 
-  &lt;!--title starts--&gt;
+  <span>&lt;!--title starts--&gt;</span>
   &lt;title&gt;
    &lt;narrative&gt;Activity title&lt;/narrative&gt;
    &lt;narrative xml:lang="fr"&gt;Titre de l'activité&lt;/narrative&gt;
    &lt;narrative xml:lang="es"&gt;Título de la actividad&lt;/narrative&gt;
   &lt;/title&gt;
-  &lt;!--title ends--&gt;
+  <span>&lt;!--title ends--&gt;</span>
 
-  &lt;!--description starts--&gt;
+  <span>&lt;!--description starts--&gt;</span>
   &lt;description type="1"&gt;
    &lt;narrative&gt;General activity description text.  Long description of the activity with no particular structure.&lt;/narrative&gt;
    &lt;narrative xml:lang="fr"&gt;Activité générale du texte de description. Longue description de l'activité sans structure particulière.&lt;/narrative&gt;
@@ -59,9 +59,9 @@
    &lt;narrative&gt;Statement of groups targeted to benefit from the activity.&lt;/narrative&gt;
    &lt;narrative xml:lang="fr"&gt;Déclaration de groupes ciblés pour bénéficier de l'activité.&lt;/narrative&gt;
   &lt;/description&gt;
-  &lt;!--description ends--&gt;
+  <span>&lt;!--description ends--&gt;</span>
 
-  &lt;!--participating-org starts--&gt;
+  <span>&lt;!--participating-org starts--&gt;</span>
   &lt;participating-org ref="BB-BBB-123456789" role="1" type="40" activity-id="BB-BBB-123456789-1234"&gt;
    &lt;narrative&gt;Name of Agency B&lt;/narrative&gt;
   &lt;/participating-org&gt;
@@ -72,30 +72,30 @@
    &lt;narrative&gt;Name of Agency A&lt;/narrative&gt;
    &lt;narrative xml:lang="fr"&gt;Nom de l'agence A&lt;/narrative&gt;
   &lt;/participating-org&gt;
-  &lt;!--participating-org ends--&gt;
+  <span>&lt;!--participating-org ends--&gt;</span>
 
-  &lt;!--other-identifier starts--&gt;
+  <span>&lt;!--other-identifier starts--&gt;</span>
   &lt;other-identifier ref="ABC123-XYZ" type="A1"&gt;
    &lt;owner-org ref="AA-AAA-123456789"&gt;
     &lt;narrative&gt;Organisation name&lt;/narrative&gt;
    &lt;/owner-org&gt;
   &lt;/other-identifier&gt;
-  &lt;!--other-identifier ends--&gt;
+  <span>&lt;!--other-identifier ends--&gt;</span>
 
-  &lt;!--activity-status starts--&gt;
+  <span>&lt;!--activity-status starts--&gt;</span>
   &lt;activity-status code="2" /&gt;
-  &lt;!--activity-status ends--&gt;
+  <span>&lt;!--activity-status ends--&gt;</span>
 
-  &lt;!--activity-date starts--&gt;
+  <span>&lt;!--activity-date starts--&gt;</span>
   &lt;activity-date iso-date="2012-04-15" type="1"&gt;
    &lt;narrative&gt;Planned start date of the activity&lt;/narrative&gt;
    &lt;narrative xml:lang="fr"&gt;Date prévue de début de l'activité&lt;/narrative&gt;
   &lt;/activity-date&gt;
   &lt;activity-date iso-date="2012-04-28" type="2" /&gt;
   &lt;activity-date iso-date="2015-12-31" type="3" /&gt;
-  &lt;!--activity-date ends--&gt;
+  <span>&lt;!--activity-date ends--&gt;</span>
 
-  &lt;!--contact-info starts--&gt;
+  <span>&lt;!--contact-info starts--&gt;</span>
   &lt;contact-info type="1"&gt;
    &lt;organisation&gt;
     &lt;narrative&gt;Agency A&lt;/narrative&gt;
@@ -116,23 +116,23 @@
     &lt;narrative&gt;Transparency House, The Street, Town, City, Postcode&lt;/narrative&gt;
    &lt;/mailing-address&gt;
   &lt;/contact-info&gt;
-  &lt;!--contact-info ends--&gt;
+  <span>&lt;!--contact-info ends--&gt;</span>
 
-  &lt;!--activity-scope starts--&gt;
+  <span>&lt;!--activity-scope starts--&gt;</span>
   &lt;activity-scope code="3" /&gt;
-  &lt;!--activity-scope ends--&gt;
+  <span>&lt;!--activity-scope ends--&gt;</span>
 
-  &lt;!--recipient-country starts--&gt;
+  <span>&lt;!--recipient-country starts--&gt;</span>
   &lt;recipient-country code="AF" percentage="25" /&gt;
   &lt;recipient-country code="AG" percentage="25" /&gt;
-  &lt;!--recipient-country ends--&gt;
+  <span>&lt;!--recipient-country ends--&gt;</span>
 
-  &lt;!--recipient-region starts--&gt;
+  <span>&lt;!--recipient-region starts--&gt;</span>
   &lt;recipient-region code="489" vocabulary="1" percentage="25" /&gt;
   &lt;recipient-region code="A1" vocabulary="99" vocabulary-uri="http://example.com/vocab.html" percentage="25" /&gt;
-  &lt;!--recipient-region ends--&gt;
+  <span>&lt;!--recipient-region ends--&gt;</span>
 
-  &lt;!--location-single starts--&gt;
+  <span>&lt;!--location-single starts--&gt;</span>
   &lt;location ref="AF-KAN"&gt;
    &lt;location-reach code="1" /&gt;
    &lt;location-id vocabulary="G1" code="1453782" /&gt;
@@ -153,9 +153,9 @@
    &lt;location-class code="2"/&gt;
    &lt;feature-designation code="ADMF"/&gt;
   &lt;/location&gt;
-  &lt;!--location-single ends--&gt;
+  <span>&lt;!--location-single ends--&gt;</span>
 
-  &lt;!--location-additional starts--&gt;
+  <span>&lt;!--location-additional starts--&gt;</span>
   &lt;location ref="KH-PNH"&gt;
    &lt;location-reach code="1" /&gt;
    &lt;location-id vocabulary="G1" code="1821306" /&gt;
@@ -176,26 +176,26 @@
    &lt;location-class code="2" /&gt;
    &lt;feature-designation code="ADMF" /&gt;
   &lt;/location&gt;
-  &lt;!--location-additional ends--&gt;
+  <span>&lt;!--location-additional ends--&gt;</span>
 
-  &lt;!--sector starts--&gt;
+  <span>&lt;!--sector starts--&gt;</span>
   &lt;sector vocabulary="2" code="111" percentage="50" /&gt;
   &lt;sector vocabulary="2" code="112" percentage="50" /&gt;
   &lt;sector vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" percentage="100"&gt;
     &lt;narrative&gt;A description of the sector&lt;/narrative&gt;
   &lt;/sector&gt;
-  &lt;!--sector ends--&gt;
+  <span>&lt;!--sector ends--&gt;</span>
 
-  &lt;!--tag starts--&gt;
+  <span>&lt;!--tag starts--&gt;</span>
   &lt;tag vocabulary="1" code="1"&gt;
     &lt;narrative&gt;A description of the tag&lt;/narrative&gt;
   &lt;/tag&gt;
   &lt;tag vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="T1"&gt;
     &lt;narrative&gt;A description of the tag&lt;/narrative&gt;
   &lt;/tag&gt;
-  &lt;!--tag ends--&gt;
+  <span>&lt;!--tag ends--&gt;</span>
 
-  &lt;!--country-budget-items starts--&gt;
+  <span>&lt;!--country-budget-items starts--&gt;</span>
   &lt;country-budget-items vocabulary="4"&gt;
    &lt;budget-item code="1844" percentage="50"&gt;
     &lt;description&gt;
@@ -208,9 +208,9 @@
     &lt;/description&gt;
    &lt;/budget-item&gt;
   &lt;/country-budget-items&gt;
-  &lt;!--country-budget-items ends--&gt;
+  <span>&lt;!--country-budget-items ends--&gt;</span>
 
-  &lt;!--humanitarian-scope starts--&gt;
+  <span>&lt;!--humanitarian-scope starts--&gt;</span>
   &lt;humanitarian-scope type="1" vocabulary="1-2" code="EQ-2015-000048-NPL"&gt;
  	  &lt;narrative&gt;Nepal Earthquake April 2015&lt;/narrative&gt;
     &lt;narrative xml:lang="fr"&gt; Népal Earthquake Avril 2015&lt;/narrative&gt;
@@ -218,44 +218,44 @@
   &lt;humanitarian-scope type="1" vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1"&gt;
    &lt;narrative xml:lang="en"&gt;Nepal Earthquake April 2015&lt;/narrative&gt;
   &lt;/humanitarian-scope&gt;
-  &lt;!--humanitarian-scope ends--&gt;
+  <span>&lt;!--humanitarian-scope ends--&gt;</span>
 
-  &lt;!--policy-marker starts--&gt;
+  <span>&lt;!--policy-marker starts--&gt;</span>
   &lt;policy-marker vocabulary="1" code="2" significance="3" /&gt;
   &lt;policy-marker vocabulary="1" code="9" significance="4" /&gt;
   &lt;policy-marker vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="A1" significance="3" /&gt;
-  &lt;!--policy-marker ends--&gt;
+  <span>&lt;!--policy-marker ends--&gt;</span>
 
-  &lt;!--collaboration-type starts--&gt;
+  <span>&lt;!--collaboration-type starts--&gt;</span>
   &lt;collaboration-type code="1" /&gt;
-  &lt;!--collaboration-type ends--&gt;
+  <span>&lt;!--collaboration-type ends--&gt;</span>
 
-  &lt;!--default-flow-type starts--&gt;
+  <span>&lt;!--default-flow-type starts--&gt;</span>
   &lt;default-flow-type code="10" /&gt;
-  &lt;!--default-flow-type ends--&gt;
+  <span>&lt;!--default-flow-type ends--&gt;</span>
 
-  &lt;!--default-finance-type starts--&gt;
+  <span>&lt;!--default-finance-type starts--&gt;</span>
   &lt;default-finance-type code="110" /&gt;
-  &lt;!--default-finance-type ends--&gt;
+  <span>&lt;!--default-finance-type ends--&gt;</span>
 
-  &lt;!--default-aid-type starts--&gt;
+  <span>&lt;!--default-aid-type starts--&gt;</span>
   &lt;default-aid-type code="A01" vocabulary="1" /&gt;
   &lt;default-aid-type code="1" vocabulary="2" /&gt;
-  &lt;!--default-aid-type ends--&gt;
+  <span>&lt;!--default-aid-type ends--&gt;</span>
 
-  &lt;!--default-tied-status starts--&gt;
+  <span>&lt;!--default-tied-status starts--&gt;</span>
   &lt;default-tied-status code="3" /&gt;
-  &lt;!--default-tied-status ends--&gt;
+  <span>&lt;!--default-tied-status ends--&gt;</span>
 
-  &lt;!--budget starts--&gt;
+  <span>&lt;!--budget starts--&gt;</span>
   &lt;budget type="1" status="1"&gt;
    &lt;period-start iso-date="2014-01-01" /&gt;
    &lt;period-end iso-date="2014-12-31" /&gt;
    &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
   &lt;/budget&gt;
-  &lt;!--budget ends--&gt;
+  <span>&lt;!--budget ends--&gt;</span>
 
-  &lt;!--planned-disbursement starts--&gt;
+  <span>&lt;!--planned-disbursement starts--&gt;</span>
   &lt;planned-disbursement type="1"&gt;
    &lt;period-start iso-date="2014-01-01" /&gt;
    &lt;period-end iso-date="2014-12-31" /&gt;
@@ -267,21 +267,21 @@
     &lt;narrative&gt;Agency A&lt;/narrative&gt;
    &lt;/receiver-org&gt;
   &lt;/planned-disbursement&gt;
-  &lt;!--planned-disbursement ends--&gt;
+  <span>&lt;!--planned-disbursement ends--&gt;</span>
 
-  &lt;!--planned-disbursement-single-date starts--&gt;
+  <span>&lt;!--planned-disbursement-single-date starts--&gt;</span>
   &lt;planned-disbursement type="1"&gt;
    &lt;period-start iso-date="2014-01-01" /&gt;
    &lt;period-end iso-date="2014-12-31" /&gt;
    &lt;value currency="EUR" value-date="2014-01-01"&gt;3000&lt;/value&gt;
   &lt;/planned-disbursement&gt;
-  &lt;!--planned-disbursement ends--&gt;
+  <span>&lt;!--planned-disbursement ends--&gt;</span>
 
-  &lt;!--capital-spend starts--&gt;
+  <span>&lt;!--capital-spend starts--&gt;</span>
   &lt;capital-spend percentage="88.8" /&gt;
-  &lt;!--capital-spend ends--&gt;
+  <span>&lt;!--capital-spend ends--&gt;</span>
 
-  &lt;!--transaction starts--&gt;
+  <span>&lt;!--transaction starts--&gt;</span>
   &lt;transaction ref="1234" humanitarian="1"&gt;
    &lt;transaction-type code="1" /&gt;
    &lt;transaction-date iso-date="2012-01-01" /&gt;
@@ -297,7 +297,7 @@
    &lt;/receiver-org&gt;
    &lt;disbursement-channel code="1" /&gt;
    &lt;sector vocabulary="2" code="111" /&gt;
-   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="TM" /&gt;
    &lt;recipient-region code="616" vocabulary="1" /&gt;
    &lt;flow-type code="10" /&gt;
@@ -306,9 +306,9 @@
    &lt;aid-type code="1" vocabulary="2" /&gt;
    &lt;tied-status code="3" /&gt;
   &lt;/transaction&gt;
-  &lt;!--transaction ends--&gt;
+  <span>&lt;!--transaction ends--&gt;</span>
 
-  &lt;!--document-link starts--&gt;
+  <span>&lt;!--document-link starts--&gt;</span>
   &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
    &lt;title&gt;
     &lt;narrative&gt;Project Report 2013&lt;/narrative&gt;
@@ -321,27 +321,27 @@
    &lt;language code="en" /&gt;
    &lt;document-date iso-date="2014-02-05" /&gt;
   &lt;/document-link&gt;
-  &lt;!--document-link ends--&gt;
+  <span>&lt;!--document-link ends--&gt;</span>
 
-  &lt;!--related-activity starts--&gt;
+  <span>&lt;!--related-activity starts--&gt;</span>
   &lt;related-activity ref="AA-AAA-123456789-6789" type="1" /&gt;
-  &lt;!--related-activity ends--&gt;
+  <span>&lt;!--related-activity ends--&gt;</span>
 
-  &lt;!--legacy-data starts--&gt;
+  <span>&lt;!--legacy-data starts--&gt;</span>
   &lt;legacy-data name="Project Status" value="7" iati-equivalent="activity-status" /&gt;
   &lt;legacy-data name="cost" value="1000" iati-equivalent="transaction" /&gt;
-  &lt;!--legacy-data ends--&gt;
+  <span>&lt;!--legacy-data ends--&gt;</span>
 
-  &lt;!--conditions starts--&gt;
+  <span>&lt;!--conditions starts--&gt;</span>
   &lt;conditions attached="1"&gt;
    &lt;condition type="1"&gt;
     &lt;narrative&gt;Conditions text&lt;/narrative&gt;
     &lt;narrative xml:lang="fr"&gt;Conditions texte&lt;/narrative&gt;
    &lt;/condition&gt;
   &lt;/conditions&gt;
-  &lt;!--conditions ends--&gt;
+  <span>&lt;!--conditions ends--&gt;</span>
 
-  &lt;!--result starts--&gt;
+  <span>&lt;!--result starts--&gt;</span>
   &lt;result type="1" aggregation-status="1"&gt;
    &lt;title&gt;
     &lt;narrative&gt;Result title&lt;/narrative&gt;
@@ -349,7 +349,7 @@
    &lt;description&gt;
     &lt;narrative&gt;Result description text&lt;/narrative&gt;
    &lt;/description&gt;
-   &lt;!--result-document-link example starts--&gt;
+   <span>&lt;!--result-document-link example starts--&gt;</span>
    &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_en.odt"&gt;
     &lt;title&gt;
      &lt;narrative&gt;Results Report 2013&lt;/narrative&gt;
@@ -361,11 +361,11 @@
     &lt;language code="en" /&gt;
     &lt;document-date iso-date="2014-02-05" /&gt;
    &lt;/document-link&gt;
-&lt;!--result-document-link example ends--&gt;
-&lt;!--result-reference starts--&gt;
+<span>&lt;!--result-document-link example ends--&gt;</span>
+<span>&lt;!--result-reference starts--&gt;</span>
    &lt;reference vocabulary="99" code="B1" vocabulary-uri="http://example.com/indicators.html" /&gt;
-&lt;!--result-reference ends--&gt;
-&lt;!--result-indicator starts--&gt;
+<span>&lt;!--result-reference ends--&gt;</span>
+<span>&lt;!--result-indicator starts--&gt;</span>
    &lt;indicator measure="1" ascending="1" aggregation-status="1"&gt;
      &lt;title&gt;
       &lt;narrative&gt;Indicator title&lt;/narrative&gt;
@@ -387,7 +387,7 @@
      &lt;reference vocabulary="1" code="3429" /&gt;
      &lt;reference vocabulary="7" code="861" /&gt;
      &lt;reference vocabulary="99" code="B1" indicator-uri="http://example.com/indicators.html" /&gt;
-&lt;!--result-baseline starts--&gt;
+<span>&lt;!--result-baseline starts--&gt;</span>
      &lt;baseline year="2012" iso-date="2012-01-01" value="10"&gt;
       &lt;location ref="AF-KAN" /&gt;
       &lt;location ref="KH-PNH" /&gt;
@@ -408,8 +408,8 @@
        &lt;narrative&gt;Baseline comment text&lt;/narrative&gt;
       &lt;/comment&gt;
      &lt;/baseline&gt;
-     &lt;!--result-baseline ends--&gt;
-     &lt;!--result-period starts--&gt;
+     <span>&lt;!--result-baseline ends--&gt;</span>
+     <span>&lt;!--result-period starts--&gt;</span>
      &lt;period&gt;
       &lt;period-start iso-date="2013-01-01" /&gt;
       &lt;period-end iso-date="2013-03-31" /&gt;
@@ -454,13 +454,13 @@
        &lt;/document-link&gt;
       &lt;/actual&gt;
      &lt;/period&gt;
-     &lt;!--result-period ends--&gt;
+     <span>&lt;!--result-period ends--&gt;</span>
    &lt;/indicator&gt;
-   &lt;!--result-indicator ends--&gt;
+   <span>&lt;!--result-indicator ends--&gt;</span>
   &lt;/result&gt;
-  &lt;!--result ends--&gt;
+  <span>&lt;!--result ends--&gt;</span>
 
-  &lt;!--crs-add starts--&gt;
+  <span>&lt;!--crs-add starts--&gt;</span>
   &lt;crs-add&gt;
    &lt;other-flags code="1" significance="1" /&gt;
    &lt;loan-terms rate-1="4" rate-2="3"&gt;
@@ -478,26 +478,27 @@
    &lt;/loan-status&gt;
    &lt;channel-code&gt;21039&lt;/channel-code&gt;
   &lt;/crs-add&gt;
-  &lt;!--crs-add ends--&gt;
+  <span>&lt;!--crs-add ends--&gt;</span>
 
-  &lt;!--fss starts--&gt;
+  <span>&lt;!--fss starts--&gt;</span>
   &lt;fss extraction-date="2014-05-06" priority="1" phaseout-year="2016"&gt;
    &lt;forecast year="2014" value-date="2013-07-03" currency="GBP"&gt;10000&lt;/forecast&gt;
   &lt;/fss&gt;
-  &lt;!--fss ends--&gt;
+  <span>&lt;!--fss ends--&gt;</span>
 
  &lt;/iati-activity&gt;
-  &lt;!--iati-activity ends--&gt;
+  <span>&lt;!--iati-activity ends--&gt;</span>
 
 &lt;/iati-activities&gt;
 </pre></code>
 </p>
-</p>
-<p id="further-guidance">
+</section>
+<section id="further-guidance">
 <h2>Further guidance</h2>
 <ul>
-<li><a href="../iati-activities/"><span>IATI activity standard - reference pages</span></a></li>
+<li><p><a href="../iati-activities/"><span>IATI activity standard - reference pages</span></a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="2" name="order"/></div>

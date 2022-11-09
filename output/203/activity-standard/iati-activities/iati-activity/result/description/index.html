@@ -1,17 +1,17 @@
 <div class="body" role="main">
-<p id="description">
+<section id="description">
 <h1>description</h1>
 <p><code>iati-activities/iati-activity/result/description</code></p>
 <p>This is the reference page for the XML element <code>description</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>A longer, human-readable description.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur no more than once (within each parent element).</p>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>description</code> in a <code>result</code> of an <code>iati-activity</code>.</p>
 <p><code><pre>  &lt;result type="1" aggregation-status="1"&gt;
@@ -21,7 +21,7 @@
    &lt;description&gt;
     &lt;narrative&gt;Result description text&lt;/narrative&gt;
    &lt;/description&gt;
-   &lt;!--result-document-link example starts--&gt;
+   <span>&lt;!--result-document-link example starts--&gt;</span>
    &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/result_en.odt"&gt;
     &lt;title&gt;
      &lt;narrative&gt;Results Report 2013&lt;/narrative&gt;
@@ -33,11 +33,11 @@
     &lt;language code="en" /&gt;
     &lt;document-date iso-date="2014-02-05" /&gt;
    &lt;/document-link&gt;
-&lt;!--result-document-link example ends--&gt;
-&lt;!--result-reference starts--&gt;
+<span>&lt;!--result-document-link example ends--&gt;</span>
+<span>&lt;!--result-reference starts--&gt;</span>
    &lt;reference vocabulary="99" code="B1" vocabulary-uri="http://example.com/indicators.html" /&gt;
-&lt;!--result-reference ends--&gt;
-&lt;!--result-indicator starts--&gt;
+<span>&lt;!--result-reference ends--&gt;</span>
+<span>&lt;!--result-indicator starts--&gt;</span>
    &lt;indicator measure="1" ascending="1" aggregation-status="1"&gt;
      &lt;title&gt;
       &lt;narrative&gt;Indicator title&lt;/narrative&gt;
@@ -59,7 +59,7 @@
      &lt;reference vocabulary="1" code="3429" /&gt;
      &lt;reference vocabulary="7" code="861" /&gt;
      &lt;reference vocabulary="99" code="B1" indicator-uri="http://example.com/indicators.html" /&gt;
-&lt;!--result-baseline starts--&gt;
+<span>&lt;!--result-baseline starts--&gt;</span>
      &lt;baseline year="2012" iso-date="2012-01-01" value="10"&gt;
       &lt;location ref="AF-KAN" /&gt;
       &lt;location ref="KH-PNH" /&gt;
@@ -80,8 +80,8 @@
        &lt;narrative&gt;Baseline comment text&lt;/narrative&gt;
       &lt;/comment&gt;
      &lt;/baseline&gt;
-     &lt;!--result-baseline ends--&gt;
-     &lt;!--result-period starts--&gt;
+     <span>&lt;!--result-baseline ends--&gt;</span>
+     <span>&lt;!--result-period starts--&gt;</span>
      &lt;period&gt;
       &lt;period-start iso-date="2013-01-01" /&gt;
       &lt;period-end iso-date="2013-03-31" /&gt;
@@ -126,38 +126,39 @@
        &lt;/document-link&gt;
       &lt;/actual&gt;
      &lt;/period&gt;
-     &lt;!--result-period ends--&gt;
+     <span>&lt;!--result-period ends--&gt;</span>
    &lt;/indicator&gt;
-   &lt;!--result-indicator ends--&gt;
+   <span>&lt;!--result-indicator ends--&gt;</span>
   &lt;/result&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>2.01</h3>
 <p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element.</p>
 
 <p>The @type attribute was <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">removed</a>.</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-common.xsd#L58">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result/description.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-common.xsd#L58">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/result/description.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

@@ -1,18 +1,17 @@
 <div class="body" role="main">
-<p id="iati-activity">
+<section id="iati-activity">
 <h1>iati-activity</h1>
 <p><code>iati-activities/iati-activity</code></p>
 <p>This is the reference page for the XML element <code>iati-activity</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>Top-level element for a single IATI activity report.</p>
 <p>The schema states that this element must have at least 1 subelement.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-version">
-<dt>@version</dt>
-<dd><p>A number indicating the IATI specification version in use.
+<dt>@version</dt><dd><p>A number indicating the IATI specification version in use.
 “1.01” should be assumed if not specified.  It is required to
 specify this attribute if the document is using features
 specific to an IATI specification other than the initial
@@ -21,22 +20,19 @@ specific to an IATI specification other than the initial
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-last-updated-datetime">
-<dt>@last-updated-datetime</dt>
-<dd><p>The last date/time that the data for this specific
+<dt>@last-updated-datetime</dt><dd><p>The last date/time that the data for this specific
 activity was updated.  This date must change whenever the
 value of any field changes.</p>
 <p>This value must be of type xsd:dateTime.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-xml-lang">
-<dt>@xml:lang</dt>
-<dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<dt>@xml:lang</dt><dd><p>ISO 2 letter code specifying the language of text in this element.</p>
 <p>This value should be on the <a href="../../../codelists/Language/"><span>Language codelist</span></a>.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-default-currency">
-<dt>@default-currency</dt>
-<dd><p>Default ISO 4217 currency code for all financial values in
+<dt>@default-currency</dt><dd><p>Default ISO 4217 currency code for all financial values in
 this activity report.  See
 <a href="/en/iati-standard/203/codelists/currency">http://iatistandard.org/codelists/currency</a></p>
 <p>This value must be of type xsd:string.</p>
@@ -44,8 +40,7 @@ this activity report.  See
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-hierarchy">
-<dt>@hierarchy</dt>
-<dd><p>The hierarchical level within the reporting organisation’s
+<dt>@hierarchy</dt><dd><p>The hierarchical level within the reporting organisation’s
 subdivision of its units of aid. (eg activity = 1;
 sub-activity = 2; sub-sub-activity = 3). If hierarchy is
 not reported then 1 is assumed. If multiple levels are
@@ -56,14 +51,13 @@ hierarchical level.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-linked-data-uri">
-<dt>@linked-data-uri</dt>
-<dd><p>A Linked Data URI for a given activity (overrides
+<dt>@linked-data-uri</dt><dd><p>A Linked Data URI for a given activity (overrides
 iati-activities/@linked-data-default if set)</p>
 <p>This value must be of type xsd:string.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example of <code>iati-activity</code> with <code>last updated-datetime</code> of on 6th May 2014.</p>
 <p>Language set as <em>en</em> (English) and a <code>default-currency</code> to <em>EUR</em> (Euros).</p>
@@ -77,30 +71,30 @@ iati-activities/@linked-data-default if set)</p>
 <p><code><pre> &lt;/iati-activity&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>1.02</h3>
 <p>Introduced the <code>linked-data-uri</code> attribute on iati-activity element</p>
-</p>
-<p id="id2">
+</section>
+<section id="id2">
 <h3>1.01</h3>
 <p>See previous version on the IATI Standard
 <a href="http://wiki.iatistandard.org/standard/documentation/1.0/iati-activity">wiki</a>
 and
 <a href="/en/iati-standard/101/activity-standard/container-elements/record-header/">website</a></p>
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L88">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L88">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
@@ -139,6 +133,7 @@ and
 <li><a href="fss/">fss</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

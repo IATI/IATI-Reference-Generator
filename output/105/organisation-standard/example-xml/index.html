@@ -1,35 +1,35 @@
 <div class="body" role="main">
-<p id="example-usage-xml">
+<section id="example-usage-xml">
 <h1>Example Usage XML</h1>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>This page presents <em>example usage XML</em> for the <strong>IATI organisation standard</strong>.</p>
-</p>
-<p id="considerations">
+</section>
+<section id="considerations">
 <h2>Considerations</h2>
 <p>This is a <em>example usage XML</em> and not intended to reflect any real organisations or entities.</p>
 <p>Extracts from this example are used throughout this documentation.</p>
 <p>Comments markup is optional and intended to supplement the documentation:</p>
-<p><code><pre>  &lt;!--iati-identifier ends--&gt;
-  &lt;!--name starts--&gt;
+<p><code><pre>  <span>&lt;!--iati-identifier ends--&gt;</span>
+  <span>&lt;!--name starts--&gt;</span>
 </pre></code>
 </p>
 <p>This example file can also be <a href="https://raw.githubusercontent.com/IATI/IATI-Extra-Documentation/version-1.05/en/organisation-standard/organisation-standard-example-annotated.xml">downloaded.</a>.</p>
 <p>Full XML example usage of the <strong>IATI organisation standard</strong>:</p>
 <p><code><pre>&lt;iati-organisations generated-datetime="2014-09-02T16:15:37" version="1.05"&gt;
- &lt;!--iati-organisation starts--&gt;
+ <span>&lt;!--iati-organisation starts--&gt;</span>
  &lt;iati-organisation default-currency="EUR" last-updated-datetime="2014-09-02T16:15:37" xml:lang="en" version="1.05"&gt;
-  &lt;!--reporting-org starts--&gt;
+  <span>&lt;!--reporting-org starts--&gt;</span>
   &lt;reporting-org ref="AA-AAA-123456789" type="40" secondary-reporter="0"&gt;Organisation name&lt;/reporting-org&gt;
-  &lt;!--reporting-org ends--&gt;
-  &lt;!--iati-identifier starts--&gt;
+  <span>&lt;!--reporting-org ends--&gt;</span>
+  <span>&lt;!--iati-identifier starts--&gt;</span>
   &lt;iati-identifier&gt;AA-AAA-123456789&lt;/iati-identifier&gt;
-  &lt;!--iati-identifier ends--&gt;
-  &lt;!--name starts--&gt;
+  <span>&lt;!--iati-identifier ends--&gt;</span>
+  <span>&lt;!--name starts--&gt;</span>
   &lt;name&gt;Organisation name&lt;/name&gt;
   &lt;name xml:lang="fr"&gt;Nom de l'organisme&lt;/name&gt;
-  &lt;!--name ends--&gt;
-  &lt;!--total-budget starts--&gt;
+  <span>&lt;!--name ends--&gt;</span>
+  <span>&lt;!--total-budget starts--&gt;</span>
   &lt;total-budget&gt;
    &lt;period-start iso-date="2014-01-01" /&gt;
    &lt;period-end iso-date="2014-12-31" /&gt;
@@ -45,8 +45,8 @@
    &lt;period-end iso-date="2016-12-31" /&gt;
    &lt;value currency="USD" value-date="2014-01-01"&gt;350000000&lt;/value&gt;
   &lt;/total-budget&gt;
-  &lt;!--total-budget ends--&gt;
-  &lt;!--recipient-org-budget starts--&gt;
+  <span>&lt;!--total-budget ends--&gt;</span>
+  <span>&lt;!--recipient-org-budget starts--&gt;</span>
   &lt;recipient-org-budget&gt;
    &lt;recipient-org ref="123"&gt;Example Recipient Organisation&lt;/recipient-org&gt;
    &lt;period-start iso-date="2014-01-01" /&gt;
@@ -65,8 +65,8 @@
    &lt;period-end iso-date="2016-12-31" /&gt;
    &lt;value currency="USD" value-date="2014-01-01"&gt;3500000&lt;/value&gt;
   &lt;/recipient-org-budget&gt;
-  &lt;!--recipient-org-budget ends--&gt;
-  &lt;!--recipient-country-budget starts--&gt;
+  <span>&lt;!--recipient-org-budget ends--&gt;</span>
+  <span>&lt;!--recipient-country-budget starts--&gt;</span>
   &lt;recipient-country-budget&gt;
    &lt;recipient-country code="AA"&gt;Country Name&lt;/recipient-country&gt;
    &lt;period-start iso-date="2014-01-01" /&gt;
@@ -85,31 +85,31 @@
    &lt;period-end iso-date="2016-12-31" /&gt;
    &lt;value currency="USD" value-date="2014-01-01"&gt;35000000&lt;/value&gt;
   &lt;/recipient-country-budget&gt;
-  &lt;!--recipient-country-budget ends--&gt;
-  &lt;!--document-link starts--&gt;
+  <span>&lt;!--recipient-country-budget ends--&gt;</span>
+  <span>&lt;!--document-link starts--&gt;</span>
   &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
    &lt;category code="B01" /&gt;
    &lt;language code="en" /&gt;
    &lt;title&gt;Annual Report 2013&lt;/title&gt;
   &lt;/document-link&gt;
-  &lt;!--document-link ends--&gt;
-  &lt;!--document-link-language starts--&gt;
+  <span>&lt;!--document-link ends--&gt;</span>
+  <span>&lt;!--document-link-language starts--&gt;</span>
   &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_fr.odt"&gt;
    &lt;category code="B01" /&gt;
    &lt;language code="fr" /&gt;
    &lt;title&gt;Annual Report 2013&lt;/title&gt;
    &lt;title xml:lang="fr"&gt;Rapport annuel 2013&lt;/title&gt;
   &lt;/document-link&gt;
-  &lt;!--document-link-language ends--&gt;  
-  &lt;!--document-link-lang starts--&gt;
+  <span>&lt;!--document-link-language ends--&gt;</span>  
+  <span>&lt;!--document-link-lang starts--&gt;</span>
   &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
    &lt;category code="B01" /&gt;
    &lt;language code="en" /&gt;
    &lt;title&gt;Annual Report 2013&lt;/title&gt;
    &lt;title xml:lang="fr"&gt;Rapport annuel 2013&lt;/title&gt;
   &lt;/document-link&gt;
-  &lt;!--document-link-lang ends--&gt;
-  &lt;!--multi-cat-document-link starts--&gt;
+  <span>&lt;!--document-link-lang ends--&gt;</span>
+  <span>&lt;!--multi-cat-document-link starts--&gt;</span>
   &lt;document-link format="application/vnd.oasis.opendocument.text" url="http:www.example.org/docs/report_en.odt"&gt;
    &lt;category code="B01" /&gt;
    &lt;category code="B02" /&gt;
@@ -117,19 +117,20 @@
    &lt;language code="en" /&gt;
    &lt;title&gt;Annual Report 2013&lt;/title&gt;
   &lt;/document-link&gt;
-  &lt;!--multi-cat-document-link ends--&gt;
+  <span>&lt;!--multi-cat-document-link ends--&gt;</span>
  &lt;/iati-organisation&gt;
- &lt;!--iati-organisation ends--&gt;
+ <span>&lt;!--iati-organisation ends--&gt;</span>
 &lt;/iati-organisations&gt;
-&lt;!--iati-organisations ends--&gt;
+<span>&lt;!--iati-organisations ends--&gt;</span>
 </pre></code>
 </p>
-</p>
-<p id="further-guidance">
+</section>
+<section id="further-guidance">
 <h2>Further guidance</h2>
 <ul>
-<li><a href="../iati-organisations/"><span>IATI organisation standard - reference pages</span></a></li>
+<li><p><a href="../iati-organisations/"><span>IATI organisation standard - reference pages</span></a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="3" name="order"/></div>

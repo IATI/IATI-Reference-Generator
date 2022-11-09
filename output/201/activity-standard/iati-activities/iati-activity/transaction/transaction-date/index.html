@@ -1,20 +1,20 @@
 <div class="body" role="main">
-<p id="transaction-date">
+<section id="transaction-date">
 <h1>transaction-date</h1>
 <p><code>iati-activities/iati-activity/transaction/transaction-date</code></p>
 <p>This is the reference page for the XML element <code>transaction-date</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The date on which the transaction was made or (in the
 case of commitments) agreed. The narrative content may
 contain text (e.g. 2011Q1) for accurately recording less
 specific dates such as month, quarter, or year.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur once and only once (within each parent element).</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <p id="iati-activities-iati-activity-transaction-transaction-date-iso-date">@iso-date</p>
 <dd>
@@ -22,8 +22,8 @@ specific dates such as month, quarter, or year.</p>
 <p>This value must be of type xsd:date.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.01/rulesets/standard.json#L192">11.2.1</a>: The transaction date must not be in the future.</p>
 </p></dd>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>transaction-date</code> of a <code>transaction</code> in an <code>iati-activity</code>.</p>
 
@@ -45,7 +45,7 @@ specific dates such as month, quarter, or year.</p>
    &lt;/receiver-org&gt;
    &lt;disbursement-channel code="1" /&gt;
    &lt;sector vocabulary="2" code="111" /&gt;
-   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="AF" /&gt;
    &lt;recipient-region code="456" vocabulary="1" /&gt;   
    &lt;flow-type code="10" /&gt;
@@ -55,14 +55,15 @@ specific dates such as month, quarter, or year.</p>
   &lt;/transaction&gt;
 </pre></code>
 </p>
-</p>
-<p id="developer-tools">
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L936">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/transaction/transaction-date.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-activities-schema.xsd#L936">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/transaction/transaction-date.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

@@ -1,23 +1,22 @@
 <div class="body" role="main">
-<p id="provider-org">
+<section id="provider-org">
 <h1>provider-org</h1>
 <p><code>iati-activities/iati-activity/transaction/provider-org</code></p>
 <p>This is the reference page for the XML element <code>provider-org</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>For incoming funds this is the organisation from which
 the transaction originated. If omitted on outgoing funds
 the reporting-org is assumed.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur no more than once (within each parent element).</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-transaction-provider-org-ref">
-<dt>@ref</dt>
-<dd><p>Machine-readable identification string for the
+<dt>@ref</dt><dd><p>Machine-readable identification string for the
 organisation. Must be in the format {Registration
 Agency} - (Registration Number} where {Registration
 Agency} is a valid code in the Registration Agency
@@ -29,8 +28,7 @@ the name of the organisation.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-transaction-provider-org-provider-activity-id">
-<dt>@provider-activity-id</dt>
-<dd><p>If incoming funds are being provided from the budget
+<dt>@provider-activity-id</dt><dd><p>If incoming funds are being provided from the budget
 of another activity that is reported to IATI, it if
 STRONGLY RECOMMENDED that this should record the
 provider’s unique IATI activity identifier for that
@@ -39,14 +37,13 @@ activity.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-transaction-provider-org-type">
-<dt>@type</dt>
-<dd><p>The type of organisation providing the funds.</p>
+<dt>@type</dt><dd><p>The type of organisation providing the funds.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../../codelists/OrganisationType/"><span>OrganisationType codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example usage of <code>provider-org</code> of a <code>transaction</code> in an <code>iati-activity</code>.</p>
 
@@ -82,7 +79,7 @@ activity.</p>
    &lt;/receiver-org&gt;
    &lt;disbursement-channel code="1" /&gt;
    &lt;sector vocabulary="2" code="111" /&gt;
-   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="TM" /&gt;
    &lt;recipient-region code="616" vocabulary="1" /&gt;   
    &lt;flow-type code="10" /&gt;
@@ -92,35 +89,36 @@ activity.</p>
   &lt;/transaction&gt;
 </pre></code>
 </p>
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>2.02</h3>
 <p>The attribute <code>@type</code> was <a href="http://support.iatistandard.org/entries/81683876-provider-receiver-og-adding-type">added</a>.</p>
-</p>
-<p id="id2">
+</section>
+<section id="id2">
 <h3>2.01</h3>
 
 <p>Freetext is no longer allowed with this element.  It should now be declared with the new child <code>narrative</code> element.</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1060">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/transaction/provider-org.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.02/iati-activities-schema.xsd#L1060">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.02/en/activity-standard/iati-activities/iati-activity/transaction/provider-org.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

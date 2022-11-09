@@ -1,8 +1,8 @@
 <div class="body" role="main">
-<p id="metadata-api">
+<section id="metadata-api">
 <h1>Metadata API</h1>
 <p>The metadata API returns data about the datasets that are contained within the Datastore in JSON format.  You can access this data in a number of ways:</p>
-<p id="api-1-about-dataset">
+<section id="api-1-about-dataset">
 <h2>/api/1/about/dataset</h2>
 <p>Returns the list of dataset IDs that are used to build the Datastore. Dataset IDs are based on their name in the <a href="https://iatiregistry.org/dataset">IATI Registry</a>.</p>
 <p>Example return values:</p>
@@ -17,24 +17,23 @@
 }
 </pre></code>
 </p>
-</p>
-<p id="api-1-about-dataset-dataset-id">
+</section>
+<section id="api-1-about-dataset-dataset-id">
 <h2>/api/1/about/dataset/&lt;dataset-id&gt;</h2>
 <p>Returns specific details for a given dataset ID.</p>
 <p>Contains datetimes for the last modification, last fetch and parse dates for the given dataset. The source dataset URL and the number of IATI activities contained within the dataset is also returned.</p>
 <ul>
-<li><strong>dataset</strong>: The ID of the dataset.</li>
-<li><strong>last_modified</strong>: The timestamp that the dataset was updated in the IATI Registry.</li>
-<li><strong>num_resources</strong>: The length of the resources array.</li>
+<li><p><strong>dataset</strong>: The ID of the dataset.</p></li>
+<li><p><strong>last_modified</strong>: The timestamp that the dataset was updated in the IATI Registry.</p></li>
+<li><p><strong>num_resources</strong>: The length of the resources array.</p></li>
 <li><dl>
-<dt><strong>resources</strong>: A list of metadata objects for every resource returned.</dt>
-<dd><ul>
-<li><strong>last_fetch</strong>: The timestamp that the last fetch was attempted.</li>
-<li><strong>last_parsed</strong>: The timestamp that the resource was last successfully parsed.</li>
-<li><strong>last_status_code</strong>: The HTTP status code for the last fetch.</li>
-<li><strong>last_successful_fetch</strong>: The latest timestamp that the Datastore successfully fetched the resource.</li>
-<li><strong>num_of_activities</strong>: The number of activities the Datastore has successfully parsed and stored for this resource.</li>
-<li><strong>url</strong>: The URL that the Datastore used to fetch the resource.</li>
+<dt><strong>resources</strong>: A list of metadata objects for every resource returned.</dt><dd><ul>
+<li><p><strong>last_fetch</strong>: The timestamp that the last fetch was attempted.</p></li>
+<li><p><strong>last_parsed</strong>: The timestamp that the resource was last successfully parsed.</p></li>
+<li><p><strong>last_status_code</strong>: The HTTP status code for the last fetch.</p></li>
+<li><p><strong>last_successful_fetch</strong>: The latest timestamp that the Datastore successfully fetched the resource.</p></li>
+<li><p><strong>num_of_activities</strong>: The number of activities the Datastore has successfully parsed and stored for this resource.</p></li>
+<li><p><strong>url</strong>: The URL that the Datastore used to fetch the resource.</p></li>
 </ul>
 </dd>
 </dl>
@@ -42,22 +41,23 @@
 </ul>
 <p>Example return values:</p>
 <p><code><pre>{
-    "dataset": "open_university-activities",
-    "last_modified": "2017-10-09T13:55:47.123143",
-    "num_resources": 1,
-    "resources": [
-        {
-            "last_fetch": "2017-10-10T04:27:14.196223",
-            "last_parsed": "2017-10-10T04:30:30.892844",
-            "last_status_code": 200,
-            "last_successful_fetch": "2017-10-10T04:27:14.196320",
-            "num_of_activities": 2,
-            "url": "https://aidstream.org/files/xml/open_university-activities.xml"
-        }
-    ]
+"dataset":"open_university-activities",
+"last_modified":"2017-10-09T13:55:47.123143",
+"num_resources":1,
+"resources":[
+{
+"last_fetch":"2017-10-10T04:27:14.196223",
+"last_parsed":"2017-10-10T04:30:30.892844",
+"last_status_code":200,
+"last_successful_fetch":"2017-10-10T04:27:14.196320",
+"num_of_activities":2,
+"url":"https://aidstream.org/files/xml/open_university-activities.xml"
+}
+]
 }
 </pre></code>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

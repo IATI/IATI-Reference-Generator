@@ -1,28 +1,27 @@
 <div class="body" role="main">
-<p id="narrative">
+<section id="narrative">
 <h1>narrative</h1>
 <p><code>iati-activities/iati-activity/transaction/provider-org/narrative</code></p>
 <p>This is the reference page for the XML element <code>narrative</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The name of the organisation. This can be repeated
 in multiple languages</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>The text in this element must be of type xsd:string.</p>
 <p>This element may occur any number of times.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-transaction-provider-org-narrative-xml-lang">
-<dt>@xml:lang</dt>
-<dd><p>ISO 639-1 code specifying the language of text in this element. If a default language is specified in the iati-activity element it does not have to be repeated here.</p>
+<dt>@xml:lang</dt><dd><p>ISO 639-1 code specifying the language of text in this element. If a default language is specified in the iati-activity element it does not have to be repeated here.</p>
 <p>This value should be on the <a href="../../../../../../codelists/Language/"><span>Language codelist</span></a>.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>The <code>narrative</code> child element can be used to declare freetext for the <code>provider-org</code> element of a <code>transaction</code>.</p>
 <p><code><pre>  &lt;transaction ref="1234"&gt;
@@ -40,7 +39,7 @@ in multiple languages</p>
    &lt;/receiver-org&gt;
    &lt;disbursement-channel code="1" /&gt;
    &lt;sector vocabulary="2" code="111" /&gt;
-   &lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;
+   <span>&lt;!--Note: only a recipient-region OR a recipient-country is expected--&gt;</span>
    &lt;recipient-country code="AF" /&gt;
    &lt;recipient-region code="456" vocabulary="1" /&gt;   
    &lt;flow-type code="10" /&gt;
@@ -53,23 +52,24 @@ in multiple languages</p>
 
 <p>The <code>narrative</code> element can be repeated for any language additional to the default language set in <code>iati-activity</code>, by using the <code>@xml:lang</code> attribute.  Example not shown.</p>
 
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id1">
+<section id="id1">
 <h3>2.01</h3>
 
 <p>The <code>narrative</code> element was introduced in 2.01.</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-common.xsd#L27">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/transaction/provider-org/narrative.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.01/iati-common.xsd#L27">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.01/en/activity-standard/iati-activities/iati-activity/transaction/provider-org/narrative.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

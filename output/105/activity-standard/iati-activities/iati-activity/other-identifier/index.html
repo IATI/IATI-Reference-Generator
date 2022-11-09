@@ -1,48 +1,47 @@
 <div class="body" role="main">
-<p id="other-identifier">
+<section id="other-identifier">
 <h1>other-identifier</h1>
 <p><code>iati-activities/iati-activity/other-identifier</code></p>
 <p>This is the reference page for the XML element <code>other-identifier</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>An alternative, non-IATI identifier for the activity.  This
 identifier is not guaranteed to be unique or persistent (it
 depends on the owner organisation’s policies, not IATI’s).</p>
 <p>If other-identifier is present then either @owner-ref or
 @owner-name must be present</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-other-identifier-owner-ref">
-<dt>@owner-ref</dt>
-<dd><p>An identifier for the owner of this identifier.
+<dt>@owner-ref</dt><dd><p>An identifier for the owner of this identifier.
 For guidance on constructing the value of the @ref
 attribute, see <a href="/en/guidance/publishing-data/registering-and-managing-your-organisation-account/how-to-create-your-iati-organisation-identifier/">http://iatistandard.org/org-ref</a></p>
 <p>This value must be of type xsd:string.</p>
 </dd>
 </dl>
 <dl id="iati-activities-iati-activity-other-identifier-owner-name">
-<dt>@owner-name</dt>
-<dd><p>Free text providing a human-readable name for the owner
+<dt>@owner-name</dt><dd><p>Free text providing a human-readable name for the owner
 of this identifier.</p>
 <p>This value must be of type xsd:string.</p>
 </dd>
 </dl>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>other-identifier</code> declared as having owner-name`` <em>Agency A</em>, which has an <code>owner-ref</code> of <em>AA-AAA-123456789</em>:</p>
 <p><code><pre>  &lt;other-identifier owner-name="Agency A" owner-ref="AA-AAA-123456789"&gt;ABC123-XYZ&lt;/other-identifier&gt;
 </pre></code>
 </p>
-</p>
-<p id="developer-tools">
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L358">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/other-identifier.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-1.05/iati-activities-schema.xsd#L358">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.05/en/activity-standard/iati-activities/iati-activity/other-identifier.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

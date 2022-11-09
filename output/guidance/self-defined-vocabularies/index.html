@@ -1,7 +1,7 @@
 <div class="body" role="main">
-<p id="self-defined-vocabularies">
+<section id="self-defined-vocabularies">
 <h1>Self-defined vocabularies</h1>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>For several elements in the <strong>IATI activity standard</strong> and the <strong>IATI organisation standard</strong>, the <em>vocabulary</em> for a given code can be set via the <code>@vocabulary</code> attribute:</p>
 <p>A good example of this is the <code>sector</code> element, which will typically be given a 5-digit <code>code</code> such as “11120”. However, this code only makes sense to data users if they know which sector codelist it is from.</p>
@@ -9,10 +9,10 @@
 <p>It’s important to note that if there are multiple sectors given from the same vocabulary, their <code>@percentage</code> attributes should add up to 100.</p>
 <p>Here is an example:</p>
 <p><code><pre>&lt;iati-activity&gt;
-    &lt;!-- Other elements --&gt;
+    <span>&lt;!-- Other elements --&gt;</span>
     &lt;sector vocabulary="1" code="11120" percentage="50" /&gt;
     &lt;sector vocabulary="1" code="11121" percentage="50" /&gt;
-    &lt;!-- Other elements --&gt;
+    <span>&lt;!-- Other elements --&gt;</span>
 &lt;/iati-activity&gt;
 </pre></code>
 </p>
@@ -20,24 +20,25 @@
 <p>For each of these vocabularies, there is almost always the option for a publisher to provide their own. For instance, if a publisher wants to declare that an activity is “11120” for the OECD DAC 5-digit vocabulary, but also wants to declare it as “general_education” on their own codelist, they would simply have to set the vocabulary to “Reporting Organisation” (which is usually <strong>but not always</strong> <code>"99"</code>), and then use the <code>@vocabulary-uri</code> attribute to link through to their own (machine-readable) codelist.</p>
 <p>Here is an example:</p>
 <p><code><pre>&lt;iati-activity&gt;
-    &lt;!-- Other elements --&gt;
+    <span>&lt;!-- Other elements --&gt;</span>
     &lt;sector vocabulary="99" vocabulary-uri="http://example.com/vocab.html" code="general_education" percentage="100" /&gt;
-    &lt;!-- Other elements --&gt;
+    <span>&lt;!-- Other elements --&gt;</span>
 &lt;/iati-activity&gt;
 </pre></code>
 </p>
-</p>
-<p id="considerations">
+</section>
+<section id="considerations">
 <h2>Considerations</h2>
 <p>When using the <strong>IATI activity standard</strong> to declare <em>budgets</em>, the following should be considered:</p>
 <ul>
-<li>It is very important that <code>@percentages</code> add up to 100 per vocabulary.</li>
-<li>When a publisher uses code <code>"99"</code>, or whichever other code denotes that they are using a <em>Reporting Organisation</em> provided codelist, they should provide the corresponding <code>@vocabulary-uri</code> (or equivalent) attribute.</li>
+<li><p>It is very important that <code>@percentages</code> add up to 100 per vocabulary.</p></li>
+<li><p>When a publisher uses code <code>"99"</code>, or whichever other code denotes that they are using a <em>Reporting Organisation</em> provided codelist, they should provide the corresponding <code>@vocabulary-uri</code> (or equivalent) attribute.</p></li>
 </ul>
-</p>
-<p id="pre-2-02-considerations">
+</section>
+<section id="pre-2-02-considerations">
 <h2>Pre 2.02 Considerations</h2>
 <p>Not all of the elements mentioned above exist in some previous versions of the standard, but most of them do in version 2.01, and this practice should be standard in all 2.xx versions and above.</p>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="Self-defined vocabularies" name="title"/><meta content="For several elements in the IATI activity and organisation standards, organisations can provide a code from their own codelist. For example, organisations can choose a 5-digit DAC sector code as well as a sector code they use internally." name="description"/><meta content="activity, organisation" name="guidance_type"/><meta content="December 3, 2015" name="date"/></div>

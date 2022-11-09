@@ -1,41 +1,41 @@
 <div class="body" role="main">
-<p id="codelist-api">
+<section id="codelist-api">
 <h1>Codelist API</h1>
 <p>IATI provides two machine readable ways for people to consume the codelists
 needed to create and interpret IATI data.</p>
 <p>You can:</p>
 <ol>
-<li>use the Codelist API to request a codelist via a URL</li>
-<li>from version 1.04 of the IATI standard upwards, you can work directly with our GitHub repositories</li>
+<li><p>use the Codelist API to request a codelist via a URL</p></li>
+<li><p>from version 1.04 of the IATI standard upwards, you can work directly with our GitHub repositories</p></li>
 </ol>
-<p id="api-calls">
+<section id="api-calls">
 <h2>API Calls</h2>
 <p>To download a codelist. Select your endpoint (see below) and then specify the codelist name and the format:</p>
 <p>&lt;endpoint&gt;&lt;codelist name&gt;.&lt;extension (xml/json/csv)&gt;</p>
-</p>
-<p id="codelist-mappings">
+</section>
+<section id="codelist-mappings">
 <h2>Codelist Mappings</h2>
 <p>There exists a machine readable mapping from attributes to the codelist they should be on.
 This is available on GitHub as an XML file:</p>
 <p><a href="https://github.com/IATI/IATI-Codelists/blob/version-2">https://github.com/IATI/IATI-Codelists/blob/version-2</a>.0{1,2,3}/mapping.xml</p>
 <p>It is also available as XML and JSON from the codelist API:</p>
 <p><a href="/">http://iatistandard.org</a>/{105,201}/codelists/downloads/clv{1,2,3}/mapping.{xml,json}</p>
-</p>
-<p id="endpoints">
+</section>
+<section id="endpoints">
 <h2>Endpoints</h2>
 <p>The codelists used in each version of the standard are derived from different endpoints as a result of the historical management of the codelist API. From May 2014, these are now under in-house control at IATI.</p>
 <p>Therefore anyone relying on the services at:</p>
 <ul>
-<li><a href="http://datadev.aidinfolabs.org/data/">http://datadev.aidinfolabs.org/data/</a>, or</li>
-<li><a href="http://data.aidinfolabs.org/data/">http://data.aidinfolabs.org/data/</a></li>
+<li><p><a href="http://datadev.aidinfolabs.org/data/">http://datadev.aidinfolabs.org/data/</a>, or</p></li>
+<li><p><a href="http://data.aidinfolabs.org/data/">http://data.aidinfolabs.org/data/</a></p></li>
 </ul>
 <p>is strongly advised to migrate to the new endpoints given below.</p>
 <ul>
-<li>v1.01 of the standard - used datadev - change to <a href="http://codelists102.archive.iatistandard.org/data/">http://codelists102.archive.iatistandard.org/data/</a></li>
-<li>v1.02 of the standard - used datadev - change to - <a href="http://codelists102.archive.iatistandard.org/data/">http://codelists102.archive.iatistandard.org/data/</a></li>
-<li>v1.03 of the standard - used data - change to - <a href="http://codelists103.archive.iatistandard.org/data/">http://codelists103.archive.iatistandard.org/data/</a></li>
+<li><p>v1.01 of the standard - used datadev - change to <a href="http://codelists102.archive.iatistandard.org/data/">http://codelists102.archive.iatistandard.org/data/</a></p></li>
+<li><p>v1.02 of the standard - used datadev - change to - <a href="http://codelists102.archive.iatistandard.org/data/">http://codelists102.archive.iatistandard.org/data/</a></p></li>
+<li><p>v1.03 of the standard - used data - change to - <a href="http://codelists103.archive.iatistandard.org/data/">http://codelists103.archive.iatistandard.org/data/</a></p></li>
 </ul>
-<p id="codelists-in-version-1-x-after-v1-03-e-g-v1-04-v1-05-of-the-standard">
+<section id="codelists-in-version-1-x-after-v1-03-e-g-v1-04-v1-05-of-the-standard">
 <h3>Codelists in Version 1.x after v1.03 (e.g. v1.04, v1.05) of the standard</h3>
 <p>In v1.04 of the standard a new codelist structure was introduced. See ‘Why create a new structure for codelists?’ below.</p>
 <p>We call this ‘codelist version 2 (CLv2)’. This forms the ‘single source of truth’ from which codelists in various forms can be produced.</p>
@@ -43,23 +43,23 @@ This is available on GitHub as an XML file:</p>
 <p>Data users/producers can choose which format they wish to consume via the API. To stick with the old format, use CLv1.</p>
 <p>The codelists matching the highest decimal version of the version 1.x standard will always be found using either:</p>
 <ul>
-<li><a href="/reference_downloads/203/codelists/downloads/clv1/">http://iatistandard.org/codelists/downloads/clv1/</a>, or</li>
-<li><a href="/reference_downloads/203/codelists/downloads/clv2/">http://iatistandard.org/codelists/downloads/clv2/</a></li>
+<li><p><a href="/reference_downloads/203/codelists/downloads/clv1/">http://iatistandard.org/codelists/downloads/clv1/</a>, or</p></li>
+<li><p><a href="/reference_downloads/203/codelists/downloads/clv2/">http://iatistandard.org/codelists/downloads/clv2/</a></p></li>
 </ul>
 <p>To ‘lock in’ to a particular version of the codelists (above v1.03) you may specify</p>
 <ul>
-<li><a href="/">http://iatistandard.org</a>/&lt;version&gt;/codelists/downloads/clv1/</li>
+<li><p><a href="/">http://iatistandard.org</a>/&lt;version&gt;/codelists/downloads/clv1/</p></li>
 </ul>
 <p>For example: (note: use version number without the decimal point)</p>
 <ul>
-<li><a href="/reference_downloads/104/codelists/downloads/clv1/">http://iatistandard.org/104/codelists/downloads/clv1/</a> will always return v1.04 codelists</li>
-<li><a href="/reference_downloads/105/codelists/downloads/clv1/">http://iatistandard.org/105/codelists/downloads/clv1/</a> will always return v1.05 codelists</li>
+<li><p><a href="/reference_downloads/104/codelists/downloads/clv1/">http://iatistandard.org/104/codelists/downloads/clv1/</a> will always return v1.04 codelists</p></li>
+<li><p><a href="/reference_downloads/105/codelists/downloads/clv1/">http://iatistandard.org/105/codelists/downloads/clv1/</a> will always return v1.05 codelists</p></li>
 </ul>
 <p>By locking into a specified version in this way, you can always guarantee you are getting the lists associated with that particular version of the standard, and
 not accidentally move up to a new version when a new version is released.</p>
 <p>From version 1.04 onwards, developers might also choose to work directly with GitHub to get the data (see below).</p>
-</p>
-<p id="new-codelist-version-clv3-in-version-2-01-of-the-iati-standard">
+</section>
+<section id="new-codelist-version-clv3-in-version-2-01-of-the-iati-standard">
 <h3>New Codelist version (CLv3) in Version 2.01 of the IATI Standard</h3>
 <p>Version 2.01 of the IATI Standard sees a significant change to the way multilingual text can be reported. (see <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/migrating/">http://iatistandard.org/201/upgrades/integer-upgrade-to-2-01/migrating/#handling-translations</a>)</p>
 <p>As codelists can also supply definitions and descriptions in multiple languages, we decided to bring the XML format of the codelists into line with rest of the standard.</p>
@@ -71,74 +71,76 @@ not accidentally move up to a new version when a new version is released.</p>
 <p>To compare the old style XML with the new see for example:</p>
 <p>Old style XML (CLv2):</p>
 <ul>
-<li><a href="/reference_downloads/201/codelists/downloads/clv2/xml/ActivityDateType.xml">http://iatistandard.org/201/codelists/downloads/clv2/xml/ActivityDateType.xml</a></li>
+<li><p><a href="/reference_downloads/201/codelists/downloads/clv2/xml/ActivityDateType.xml">http://iatistandard.org/201/codelists/downloads/clv2/xml/ActivityDateType.xml</a></p></li>
 </ul>
 <p>New Style XML (CLv3):</p>
 <ul>
-<li><a href="/reference_downloads/201/codelists/downloads/clv3/xml/ActivityDateType.xml">http://iatistandard.org/201/codelists/downloads/clv3/xml/ActivityDateType.xml</a></li>
+<li><p><a href="/reference_downloads/201/codelists/downloads/clv3/xml/ActivityDateType.xml">http://iatistandard.org/201/codelists/downloads/clv3/xml/ActivityDateType.xml</a></p></li>
 </ul>
-</p>
-</p>
-<p id="working-with-github-directly">
+</section>
+</section>
+<section id="working-with-github-directly">
 <h2>Working with GitHub Directly</h2>
 <p>The codelist source is now on GitHub:</p>
-<p id="core-previously-embedded-codelists">
+<section id="core-previously-embedded-codelists">
 <h3>Core (Previously Embedded) Codelists</h3>
 <p>As of version 1.04, each version of the standard has it’s own branch in this repository. Branches are named version-&lt;version-number&gt; e.g. version-1.05.
 So, for example, the version 1.05 codelists can be found at:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Codelists/tree/version-1.05/xml">https://github.com/IATI/IATI-Codelists/tree/version-1.05/xml</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Codelists/tree/version-1.05/xml">https://github.com/IATI/IATI-Codelists/tree/version-1.05/xml</a></p></li>
 </ul>
-</p>
-<p id="non-core-and-replicated-previously-non-embedded-codelists">
+</section>
+<section id="non-core-and-replicated-previously-non-embedded-codelists">
 <h3>Non-Core and Replicated (Previously Non-Embedded) Codelists</h3>
 <p>These values on these lists can change independently of IATI versions. The latest versions are always on the ‘master’ branch.</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/tree/master/xml">https://github.com/IATI/IATI-Codelists-NonEmbedded/tree/master/xml</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Codelists-NonEmbedded/tree/master/xml">https://github.com/IATI/IATI-Codelists-NonEmbedded/tree/master/xml</a></p></li>
 </ul>
 <p>This repository now uses the Codelist Version 3 format.</p>
 <p>We use this source to create all derived versions, (CSV, JSON and all forms of codelist version 1, and codelist version 2 files, as well as all the documentation on the iatistandard.org website)</p>
 <p>If you wish to use the new style XML, or are prepared to run the supplied python scripts for converting to a different format of your choice, you can fetch the codelists from GitHub directly.</p>
 <p>Developers dealing with version 1.04, 1.05 (and any subsequent version 1.x decimal versions) data with need to work with both the CLv2 format in the IATI-Codelists repository on the version-1.x branch, AND the CLv3 version of the IATI-Codelists-NonEmbedded repository (master branch)</p>
-</p>
-</p>
-<p id="why-did-we-create-a-new-structure-for-codelists-for-version-1-04">
+</section>
+</section>
+<section id="why-did-we-create-a-new-structure-for-codelists-for-version-1-04">
 <h2>Why did we create a new structure for codelists for version 1.04?</h2>
 <p>As part of our move towards creating a Single Source of Truth (SSOT) for the IATI Standard, we have started to take a different approach to codelists. See background paper previously circulated: <a href="https://docs.google.com/document/d/1oeH-8BFB__2IYF4MLnUwx2LcXZCVd5e-iYsXtQ4ViTk/edit">https://docs.google.com/document/d/1oeH-8BFB__2IYF4MLnUwx2LcXZCVd5e-iYsXtQ4ViTk/edit</a></p>
 <p>As this work progressed, it became evident that for the codelists to work in that environment we would need to make a few changes. As a result:</p>
 <ol>
-<li>The newer codelist files are more consistent:</li>
+<li><p>The newer codelist files are more consistent:</p></li>
 </ol>
 <dd>
 <p class=""><ul>
-<li>they don’t include the element name as a tag name</li>
-<li>all have language information described the same way as IATI XML.</li>
+<li><p>they don’t include the element name as a tag name</p></li>
+<li><p>all have language information described the same way as IATI XML.</p></li>
 </ul>
 </p></dd>
 <ol start="2">
-<li>There is also a codelist schema that all the source XML validates against - <a href="https://github.com/IATI/IATI-Codelists/blob/version-1.04/codelist.xsd">https://github.com/IATI/IATI-Codelists/blob/version-1.04/codelist.xsd</a>.</li>
-<li>Finally, more metadata, including a description, is now included in the codelists.</li>
+<li><p>There is also a codelist schema that all the source XML validates against - <a href="https://github.com/IATI/IATI-Codelists/blob/version-1.04/codelist.xsd">https://github.com/IATI/IATI-Codelists/blob/version-1.04/codelist.xsd</a>.</p></li>
+<li><p>Finally, more metadata, including a description, is now included in the codelists.</p></li>
 </ol>
 <p>If you rely on the codelist API you should also read the notes on ‘Codelist API Compatibility in version 1.04 of the IATI Standard and above’ below.</p>
-</p>
-<p id="codelist-api-compatibility-in-version-1-04-of-the-iati-standard-and-above">
+</section>
+<section id="codelist-api-compatibility-in-version-1-04-of-the-iati-standard-and-above">
 <h2>Codelist API Compatibility in version 1.04 of the IATI Standard and above</h2>
 <p>For version 2.01 data, a more sustainable approach would be to migrate your codelist handling routines to deal with the latest CLv3 format.</p>
 <p>If moving from a version before 1.04 to a higher 1.x decimal version you might first consider moving your data to version 2.01 instead.
 If you decide to upgrade to a higher 1.x version, you should consider going to the highest decimal version your data can accommodate.
 If you do this you may not need to alter the way you deal with codelists, but there are a few things that anyone relying on CLv1 should be aware of.</p>
 <ul>
-<li>The ‘metadata’ link/call is no longer available (instead, some of this is now available in the CLv2 style code lists, and some is stored in the github repository metadata to be consistent with the rest of the Single Source of Truth)</li>
-<li>Only the latest versions (those required in v1.04 of the standard and above) will be available through the API. If you need an older version use the static archives detailed above.</li>
-<li>URLs containing the version and/or language do not work. (for example in the past a url like: /data/codelist/AidTypeFlag/version/1.0/lang/en was possible. This will not work using the /codelists/downloads/clv1/ endpoint. Instead, translations, where available, are maintained in the codelist version 2 (CLv2) files.</li>
-<li>The ‘fields’ element is no longer provided in the index XML/JSON (See <a href="http://data.aidinfolabs.org/data/codelist.xml">http://data.aidinfolabs.org/data/codelist.xml</a> and compare with <a href="/reference_downloads/203/codelists/downloads/clv1/codelist.xml">http://iatistandard.org/codelists/downloads/clv1/codelist.xml</a></li>
-<li>Version information is no longer provided in the XML.</li>
-<li>Specific changes to codelists:<ul>
-<li>The <a href="/en/iati-standard/105/codelists/budgetidentifier/">BudgetIdentifier</a> codelist has different categories, and no ‘sector’ elements.</li>
-<li>Names in the <a href="/en/iati-standard/203/codelists/fileformat/">FileFormat</a> codelist are no longer there as they make little sense, and the list now tracks the IANA source it is derived from directly.</li>
+<li><p>The ‘metadata’ link/call is no longer available (instead, some of this is now available in the CLv2 style code lists, and some is stored in the github repository metadata to be consistent with the rest of the Single Source of Truth)</p></li>
+<li><p>Only the latest versions (those required in v1.04 of the standard and above) will be available through the API. If you need an older version use the static archives detailed above.</p></li>
+<li><p>URLs containing the version and/or language do not work. (for example in the past a url like: /data/codelist/AidTypeFlag/version/1.0/lang/en was possible. This will not work using the /codelists/downloads/clv1/ endpoint. Instead, translations, where available, are maintained in the codelist version 2 (CLv2) files.</p></li>
+<li><p>The ‘fields’ element is no longer provided in the index XML/JSON (See <a href="http://data.aidinfolabs.org/data/codelist.xml">http://data.aidinfolabs.org/data/codelist.xml</a> and compare with <a href="/reference_downloads/203/codelists/downloads/clv1/codelist.xml">http://iatistandard.org/codelists/downloads/clv1/codelist.xml</a></p></li>
+<li><p>Version information is no longer provided in the XML.</p></li>
+<li><p>Specific changes to codelists:</p>
+<ul>
+<li><p>The <a href="/en/iati-standard/105/codelists/budgetidentifier/">BudgetIdentifier</a> codelist has different categories, and no ‘sector’ elements.</p></li>
+<li><p>Names in the <a href="/en/iati-standard/203/codelists/fileformat/">FileFormat</a> codelist are no longer there as they make little sense, and the list now tracks the IANA source it is derived from directly.</p></li>
 </ul>
 </li>
 </ul>
-</p>
-</p>
+</section>
+</section>
+
 </div>

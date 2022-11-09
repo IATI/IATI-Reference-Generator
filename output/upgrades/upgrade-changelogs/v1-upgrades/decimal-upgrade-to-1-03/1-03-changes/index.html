@@ -1,124 +1,119 @@
 <div class="body" role="main">
-<p id="changes">
+<section id="changes">
 <h1>1.03 changes</h1>
 <p>Changes / Additions to IATI Standard for version 1.03</p>
-<p id="schema-changes">
+<section id="schema-changes">
 <h2>Schema Changes</h2>
-<p id="activities-schema">
+<section id="activities-schema">
 <h3>Activities schema</h3>
 <p>Updated elements:</p>
 <ul>
-<li>Version numbers now included in the document root. Versions match the
+<li><p>Version numbers now included in the document root. Versions match the
 version of the standard, not the document, although documents will
-only change in line with the standard.</li>
-<li>added the
+only change in line with the standard.</p></li>
+<li><p>added the
 optional <a href="/en/iati-standard/203/activity-standard/contact-info/">contact-info</a>/website
-element</li>
-<li>added the
+element</p></li>
+<li><p>added the
 optional <a href="/en/iati-standard/203/activity-standard/contact-info/">contact-info</a><a href="mailto:/%40type">/<span>@</span>type</a>
-attribute</li>
-<li>added the
+attribute</p></li>
+<li><p>added the
 optional <a href="/en/iati-standard/203/activity-standard/contact-info/">contact-info</a>/job-title
-element</li>
-<li>changed the following subelements
+element</p></li>
+<li><p>changed the following subelements
 of <a href="/en/iati-standard/203/activity-standard/contact-info/">contact-info</a> to
 allow multiple-language versions explicitly (no change to parsing;
 purely semantic): organisation, person-name, job-title,
-mailing-address</li>
-<li>added
+mailing-address</p></li>
+<li><p>added
 optional <a href="/en/iati-standard/203/activity-standard/recipient-region/">recipient-region</a><a href="mailto:n/%40vocabulary">n/<span>@</span>vocabulary</a>
-attribute</li>
-<li>globally changed the @percentage attribute to allow decimals (e.g.
-<code>55.5</code> as well as <code>50</code>)</li>
-<li>globally changed the @currency attribute to allow decimals (e.g.
-<code>99.99</code> as well as <code>99</code>)</li>
-<li>added the
-optional <a href="/en/iati-standard/203/activity-standard/country_budget_items/">country-budget-item</a> element</li>
-<li>added the
-optional <a href="/en/iati-standard/203/activity-standard/capital_spend/">capital-spend</a> element</li>
-<li>added the
+attribute</p></li>
+<li><p>globally changed the @percentage attribute to allow decimals (e.g.
+<code>55.5</code> as well as <code>50</code>)</p></li>
+<li><p>globally changed the @currency attribute to allow decimals (e.g.
+<code>99.99</code> as well as <code>99</code>)</p></li>
+<li><p>added the
+optional <a href="/en/iati-standard/203/activity-standard/country_budget_items/">country-budget-item</a> element</p></li>
+<li><p>added the
+optional <a href="/en/iati-standard/203/activity-standard/capital_spend/">capital-spend</a> element</p></li>
+<li><p>added the
 optional <a href="/en/iati-standard/203/activity-standard/crs-add/">crs-add</a> element
-and its child elements</li>
-<li>added
-the <a href="/en/iati-standard/203/activity-standard/activity-scope/">activity-scope</a> element</li>
-<li>added the
+and its child elements</p></li>
+<li><p>added
+the <a href="/en/iati-standard/203/activity-standard/activity-scope/">activity-scope</a> element</p></li>
+<li><p>added the
 optional <a href="/en/iati-standard/203/activity-standard/fss/">fss</a> element
-and its child elements</li>
+and its child elements</p></li>
 </ul>
-</p>
-<p id="organisation-schema">
+</section>
+<section id="organisation-schema">
 <h3>Organisation schema</h3>
 <ul>
-<li>Version numbers now included in the document root. Versions match the
+<li><p>Version numbers now included in the document root. Versions match the
 version of the standard, not the document, although documents will
-only change in line with the standard.</li>
-<li>globally changed the @currency attribute to allow decimals (e.g.
-<code>99.99</code> as well as <code>99</code>)</li>
+only change in line with the standard.</p></li>
+<li><p>globally changed the @currency attribute to allow decimals (e.g.
+<code>99.99</code> as well as <code>99</code>)</p></li>
 </ul>
-</p>
-<p id="common-schema">
+</section>
+<section id="common-schema">
 <h3>Common schema</h3>
 <ul>
-<li>Version numbers now included in the document root. Versions match the
+<li><p>Version numbers now included in the document root. Versions match the
 version of the standard, not the document, although documents will
-only change in line with the standard.</li>
-<li>Currency values are now allowed to be declared as decimals instead of
-integers.</li>
-<li>Moved the @percentage attribute to common, so that it can be reused.</li>
+only change in line with the standard.</p></li>
+<li><p>Currency values are now allowed to be declared as decimals instead of
+integers.</p></li>
+<li><p>Moved the @percentage attribute to common, so that it can be reused.</p></li>
 </ul>
-</p>
-<p id="registry-record-schema">
+</section>
+<section id="registry-record-schema">
 <h3>Registry Record schema</h3>
 <ul>
-<li>Version numbers now included in the document root. Versions match the
+<li><p>Version numbers now included in the document root. Versions match the
 version of the standard, not the document, although documents will
-only change in line with the standard.</li>
+only change in line with the standard.</p></li>
 </ul>
-</p>
-</p>
-<p id="codelist-changes">
+</section>
+</section>
+<section id="codelist-changes">
 <h2>Codelist Changes</h2>
-<p id="new-codelists">
+<section id="new-codelists">
 <h3>New Codelists</h3>
 <ul>
 <li><p>Activity Scope
-<a href="/en/iati-standard/203/codelists/activity_scope/">http://iatistandard.org/codelists/activity_scope/</a></p>
-</li>
+<a href="/en/iati-standard/203/codelists/activity_scope/">http://iatistandard.org/codelists/activity_scope/</a></p></li>
 <li><p>Aid Type Flag
-<a href="/en/iati-standard/105/codelists/aid-type-flag/">http://iatistandard.org/codelists/aid-type-flag/</a></p>
-</li>
+<a href="/en/iati-standard/105/codelists/aid-type-flag/">http://iatistandard.org/codelists/aid-type-flag/</a></p></li>
 <li><p>Budget Identifier
-<a href="/en/iati-standard/203/codelists/budget_identifier/">http://iatistandard.org/codelists/budget_identifier/</a></p>
-</li>
+<a href="/en/iati-standard/203/codelists/budget_identifier/">http://iatistandard.org/codelists/budget_identifier/</a></p></li>
 <li><p>Budget Identifier
-Vocabulary<a href="/en/iati-standard/203/codelists/budget_identifier_vocabulary/">http://iatistandard.org/codelists/budget_identifier_vocabulary/</a></p>
-</li>
+Vocabulary<a href="/en/iati-standard/203/codelists/budget_identifier_vocabulary/">http://iatistandard.org/codelists/budget_identifier_vocabulary/</a></p></li>
 <li>
 <p>Contact Type <a href="/en/iati-standard/203/codelists/contact-type/">http://iatistandard.org/codelists/contact-type/</a></p>
 <p>Loan Repayment Period <a href="/en/iati-standard/203/codelists/loan-repayment-period/">http://iatistandard.org/codelists/loan-repayment-period/</a></p>
 
 </li>
 <li><p>Loan Repayment Type
-<a href="/en/iati-standard/203/codelists/loan-repayment-type/">http://iatistandard.org/codelists/loan-repayment-type/</a></p>
-</li>
+<a href="/en/iati-standard/203/codelists/loan-repayment-type/">http://iatistandard.org/codelists/loan-repayment-type/</a></p></li>
 <li><p>Region Vocabulary
-<a href="/en/iati-standard/203/codelists/region-vocabulary/">http://iatistandard.org/codelists/region-vocabulary/</a></p>
-</li>
+<a href="/en/iati-standard/203/codelists/region-vocabulary/">http://iatistandard.org/codelists/region-vocabulary/</a></p></li>
 </ul>
-</p>
-<p id="updated-codelists">
+</section>
+<section id="updated-codelists">
 <h3>Updated Codelists</h3>
 <ul>
-<li>Document Category
-<a href="/en/iati-standard/203/codelists/document_category/">http://iatistandard.org/codelists/document_category/</a></li>
-<li>Condition Type
-<a href="/en/iati-standard/203/codelists/condition_type/">http://iatistandard.org/codelists/condition_type/</a></li>
-<li>Collaboration Type
-<a href="/en/iati-standard/203/codelists/collaboration_type/">http://iatistandard.org/codelists/collaboration_type/</a></li>
-<li>Flow Type
-<a href="/en/iati-standard/203/codelists/flow_type/">http://iatistandard.org/codelists/flow_type/</a></li>
+<li><p>Document Category
+<a href="/en/iati-standard/203/codelists/document_category/">http://iatistandard.org/codelists/document_category/</a></p></li>
+<li><p>Condition Type
+<a href="/en/iati-standard/203/codelists/condition_type/">http://iatistandard.org/codelists/condition_type/</a></p></li>
+<li><p>Collaboration Type
+<a href="/en/iati-standard/203/codelists/collaboration_type/">http://iatistandard.org/codelists/collaboration_type/</a></p></li>
+<li><p>Flow Type
+<a href="/en/iati-standard/203/codelists/flow_type/">http://iatistandard.org/codelists/flow_type/</a></p></li>
 </ul>
-</p>
-</p>
-</p>
+</section>
+</section>
+</section>
+
 </div>

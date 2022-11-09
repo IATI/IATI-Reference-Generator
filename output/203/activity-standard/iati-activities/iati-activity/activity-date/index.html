@@ -1,9 +1,9 @@
 <div class="body" role="main">
-<p id="activity-date">
+<section id="activity-date">
 <h1>activity-date</h1>
 <p><code>iati-activities/iati-activity/activity-date</code></p>
 <p>This is the reference page for the XML element <code>activity-date</code>.</p>
-<p id="definition">
+<section id="definition">
 <h2>Definition</h2>
 <p>The planned and actual start and completion dates of the
 activity. Start dates may reflect either the commencement of
@@ -12,17 +12,16 @@ wherever possible, reflect the ending of physical activity.</p>
 <p>The narrative content may contain text (e.g. 2011Q1) for
 accurately recording less specific dates such as month,
 quarter, or year.</p>
-</p>
-<p id="rules">
+</section>
+<section id="rules">
 <h2>Rules</h2>
 <p>This element must occur at least once (within each parent element).</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L56">6.11.1</a>: The activity must have a planned start date or an actual start date.</p>
-</p>
-<p id="attributes">
+</section>
+<section id="attributes">
 <h2>Attributes</h2>
 <dl id="iati-activities-iati-activity-activity-date-type">
-<dt>@type</dt>
-<dd><p>An IATI code defining the type of activity date being reported.</p>
+<dt>@type</dt><dd><p>An IATI code defining the type of activity date being reported.</p>
 <p>This attribute is required.</p>
 <p>This value must be of type xsd:string.</p>
 <p>This value must be on the <a href="../../../../codelists/ActivityDateType/"><span>ActivityDateType codelist</span></a>.</p>
@@ -37,8 +36,8 @@ quarter, or year.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L166">11.1.4</a>: The actual start date of the activity must not be in the future.</p>
 <p><a href="https://github.com/IATI/IATI-Rulesets/blob/version-2.03/rulesets/standard.json#L179">11.1.5</a>: The actual end date of the activity must not be in the future.</p>
 </p></dd>
-</p>
-<p id="example-usage">
+</section>
+<section id="example-usage">
 <h2>Example Usage</h2>
 <p>Example <code>activity-date</code> for an``iati-activity``.</p>
 
@@ -67,32 +66,33 @@ quarter, or year.</p>
 
 <p>Note: All instances of the <em>ActivityDateType</em> code <em>2</em> &amp; <em>4</em> (actual dates) are not expected to be in the <em>future</em>.</p>
 
-</p>
-<p id="changelog">
+</section>
+<section id="changelog">
 <h2>Changelog</h2>
-<p id="id6">
+<section id="id6">
 <h3>2.01</h3>
 <p>Freetext is no longer allowed with this element.  It should <a href="/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/">now be declared</a>  with the new child <code>narrative</code> element.</p>
 
 <p>The <code>ActivityDateType</code> codelist was changed to numeric codes</p>
 
-</p>
-</p>
-<p id="developer-tools">
+</section>
+</section>
+<section id="developer-tools">
 <h2>Developer tools</h2>
 <p>Find the source of this documentation on github:</p>
 <ul>
-<li><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L632">Schema</a></li>
-<li><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/activity-date.rst">Extra Documentation</a></li>
+<li><p><a href="https://github.com/IATI/IATI-Schemas/blob/version-2.03/iati-activities-schema.xsd#L632">Schema</a></p></li>
+<li><p><a href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-2.03/en/activity-standard/iati-activities/iati-activity/activity-date.rst">Extra Documentation</a></p></li>
 </ul>
-</p>
-<p id="subelements">
+</section>
+<section id="subelements">
 <h2>Subelements</h2>
 <p>
 <ul>
 <li><a href="narrative/">narrative</a></li>
 </ul>
 </p>
-</p>
-</p>
+</section>
+</section>
+
 </div>

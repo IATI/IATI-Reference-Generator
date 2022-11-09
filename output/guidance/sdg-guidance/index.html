@@ -1,26 +1,26 @@
 <div class="body" role="main">
-<p id="sustainable-development-goals-sdgs">
+<section id="sustainable-development-goals-sdgs">
 <h1>Sustainable Development Goals (SDGs)</h1>
 <p>Guidance on how to use the IATI Standard for publishing and using data on the Sustainable Development Goals (SDGs).</p>
-<p id="how-to-publish-sdg-data">
+<section id="how-to-publish-sdg-data">
 <h2><strong>1. How to publish SDG data</strong></h2>
 <p>IATI recommends that, if possible, you should attribute SDGs to your activities as well as to their specific results:</p>
 <ul>
-<li>SDG Goals and Targets should be attributed to activities using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> element;</li>
-<li>The more granular SDG Indicators should be attributed to results via the result indicator <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a> element.</li>
+<li><p>SDG Goals and Targets should be attributed to activities using the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> element;</p></li>
+<li><p>The more granular SDG Indicators should be attributed to results via the result indicator <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a> element.</p></li>
 </ul>
 <p>If you are unsure which SDG Goals or Targets your activity relates to, it may be helpful to look at other activity classifications including sectors, policy markers and expected results you are using. Look for keywords that relate to specific SDGs.</p>
 <p>If the activity has an SDG Indicator in its results framework, or the result relates to an SDG Indicator, the corresponding SDG Indicator code should be added to the indicator <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">&lt;reference&gt;</a> element in the results section. The corresponding SDG Target should also be included in the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">&lt;tag&gt;</a> element.</p>
-</p>
+</section>
 <hr/>
-<p id="publishing-sdgs-at-activity-level-using-tag">
+<section id="publishing-sdgs-at-activity-level-using-tag">
 <h2>1.1 Publishing SDGs at activity level using <code>tag</code></h2>
 <p>Version 2.03 of the IATI Standard introduced the element <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">&lt;tag&gt;</a>. This allows you to ‘tag’ the whole of an activity to one or multiple SDG Goals or Targets. This will indicate which SDG Goals or Targets a given activity contributes to, without associating specific percentages, finances or priorities.</p>
 <p>It is possible to identify SDGs at two levels, either using the 17 SDG Goals or the 169 SDG Targets. You specify what level you are using by declaring the <a href="/en/iati-standard/203/codelists/TagVocabulary/">tag vocabulary</a>.</p>
 <p><strong>Using the SDG Target vocabulary is recommended.</strong></p>
 <ul>
-<li><strong>SDG Goal</strong>: <strong>&lt;tag</strong> vocabulary=”2” code=”8”<strong>/&gt;</strong></li>
-<li><strong>SDG Target</strong>: <strong>&lt;tag</strong> vocabulary=”3” code=”8.8”<strong>/&gt;</strong></li>
+<li><p><strong>SDG Goal</strong>: <strong>&lt;tag</strong> vocabulary=”2” code=”8”<strong>/&gt;</strong></p></li>
+<li><p><strong>SDG Target</strong>: <strong>&lt;tag</strong> vocabulary=”3” code=”8.8”<strong>/&gt;</strong></p></li>
 </ul>
 <p>As one SDG Goal contains a number of Targets but Targets only link to one Goal, it will always be possible for data users to derive SDG Goals from reported SDG Targets (but not the other way around). Please note if you are reporting at target level, you <strong>should not</strong> also report the corresponding SDG Goal.</p>
 <p>It is possible to link an activity to one or more SDG Goals or Targets. IATI does not place a limit on the number of SDG Goals or Targets you can publish in the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> element.</p>
@@ -43,8 +43,8 @@ and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activi
 &lt;/tag&gt;
 </pre></code>
 </p>
-</p>
-<p id="publishing-sdgs-at-result-level-using-reference">
+</section>
+<section id="publishing-sdgs-at-result-level-using-reference">
 <h2>1.2 Publishing SDGs at result level using <code>reference</code></h2>
 <p>Version 2.02 of the IATI Standard introduced the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a> element within the result indicator element. A result can be measured through multiple indicators; publishers may link each of their indicators to one SDG Indicator.</p>
 <p>If you publish an SDG Indicator in the indicator <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a> element IATI strongly recommends that you publish the corresponding SDG Target in the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> element. For example, if you publish SDG Indicator 6.4.1 (which belongs to target 6.4) in the results section, ensure you also publish SDG Target 6.4 as a <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a>.</p>
@@ -107,18 +107,18 @@ and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activi
 &lt;/result&gt;
 </pre></code>
 </p>
-</p>
+</section>
 <hr/>
-<p id="using-sdg-data-in-iati">
+<section id="using-sdg-data-in-iati">
 <h2><strong>2. Using SDG data in IATI</strong></h2>
-</p>
-<p id="different-areas-where-sdg-data-can-be-found">
+</section>
+<section id="different-areas-where-sdg-data-can-be-found">
 <h2>2.1 Different areas where SDG data can be found</h2>
 <p>The IATI Standard is designed to allow organisations to publish SDG data in a way that makes sense to them. IATI recommends that publishers should attribute SDGs to their activities, as well as to the results of each activity. This means when using IATI SDG data, you may be required to combine SDG data published in different parts of the IATI Standard.</p>
 <p>IATI recommends that organisations publish SDG data in two places:</p>
 <ul>
-<li>Goals and Targets can be published at activity level via the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> element</li>
-<li>Indicators can be published at result level via the indicator <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a> element</li>
+<li><p>Goals and Targets can be published at activity level via the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> element</p></li>
+<li><p>Indicators can be published at result level via the indicator <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a> element</p></li>
 </ul>
 <p>Both approaches involve ‘tagging’ an activity or result with either an SDG Goal, Target or Indicator. The guidance below explains how the data can be combined and used.</p>
 <p>Please note that <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> was introduced at version 2.03. The indicator <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a> element was introduced at version 2.02.</p>
@@ -126,9 +126,9 @@ and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activi
 <p>It is possible that organisations will have published SDG data under the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/sector/">sector</a> and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/policy-marker/">policy-marker</a> elements. Neither of these options are recommended.</p>
 <p>If you require help in using SDG data published in these elements, please contact: <a href="mailto:support%40iatistandard.org">support<span>@</span>iatistandard<span>.</span>org</a>. Please do also get in contact with the organisation and ask them to consider changing their publishing.</p>
 <p>If you are building a data use tool, IATI advises that you should only include SDG data published in the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> and indicator <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/reference/">reference</a> elements.</p>
-</p>
+</section>
 <hr/>
-<p id="combining-goals-targets-and-indicators">
+<section id="combining-goals-targets-and-indicators">
 <h2>2.2 Combining Goals, Targets and Indicators</h2>
 <p>There are three levels to the Sustainable Development Goals:</p>
 <p><strong>X) Goals</strong></p>
@@ -145,18 +145,20 @@ and <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activi
 <dd>
 <p class=""><p>Belongs to Target 1.1</p>
 <dd>
-<p class="">Which belongs to Goal 1.</p></dd>
+<p class=""><p>Which belongs to Goal 1.</p>
+</p></dd>
 </p></dd>
 <p>Organisations can tag their IATI activities and results with a mixture of Goals, Targets and Indicators. This can make it harder to aggregate IATI SDG data.</p>
 <p>However, you can transform Indicators into Targets and Targets into Goals. If an activity is tagged with Indicator 1.1.1, you know that the activity is targeting Goal 1: Ending poverty in all its forms. Using this method will allow you to aggregate and analyse SDG data from multiple publishers.</p>
-</p>
+</section>
 <hr/>
-<p id="data-use-tips">
+<section id="data-use-tips">
 <h2>2.3 Data use tips</h2>
 <p>IATI recommends that SDG Indicator codes are presented in the format 1.1.1. This allows each code to be attributed to a specific SDG Target. A handful of SDG Indicators are repeated across different SDG Targets. A list of duplicated SDG Indicators can be found <a href="https://unstats.un.org/sdgs/indicators/indicators-list/">here</a>.</p>
 <p>A conversion to SDG Indicators in the format CO10101 can be found by downloading the excel files <a href="https://unstats.un.org/sdgs/indicators/indicators-list/">here</a>.</p>
 <p>IATI recommends that if a publisher’s internal indicators do not directly match any SDG Indicator, they should choose one SDG Indicator that their internal result’s indicator best relates or contributes to. Note that a publisher’s result’s indicator may contribute to multiple SDG Indicators. If you are looking to see which IATI activities contribute to a specific SDG Indicator, you are advised to first check the <a href="/en/iati-standard/203/activity-standard/iati-activities/iati-activity/tag/">tag</a> element to see which activities have specified the particular SDG Goal or Target as well conducting a free word search of the activity’s narrative elements.</p>
 <hr/>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="Sustainable Development Goals (SDGs)" name="title"/><meta content="Guidance on how to use the IATI Standard for publishing and using data on the Sustainable Development Goals (SDGs)." name="description"/><meta content="activity" name="guidance_type"/><meta content="September 25, 2019" name="date"/></div>

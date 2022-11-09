@@ -1,5 +1,5 @@
 <div class="body" role="main">
-<p id="organisation-budgets-and-spend">
+<section id="organisation-budgets-and-spend">
 <h1>Organisation budgets and spend</h1>
 <p>An organisation budget is a total planned budget for an organisation for a given time period, and these can be broken down into different programmes or areas of work. These budgets are published in organisation files. IATI recommends that organisation files contain budgets for the next three fiscal years.</p>
 <p>Similar to an annual report, the <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-budget/">total-budget</a> element covers all of an organisation’s expected development and humanitarian spend for the current and following three years. Each budget must span a period of no more than 12 months, preferably aligned with the publishing organisation’s fiscal year.</p>
@@ -8,10 +8,8 @@
 <p>Please note that the same budget should not be published in multiple currencies.</p>
 <p><strong>For example</strong></p>
 <ul>
-<li><p>An organisation has a budget of $2,000 for the year 2020.</p>
-</li>
-<li><p>This funding is being split equally between Uganda and Kenya.</p>
-</li>
+<li><p>An organisation has a budget of $2,000 for the year 2020.</p></li>
+<li><p>This funding is being split equally between Uganda and Kenya.</p></li>
 <li><p>The reporting organisation has committed $500 of the budget to be core funding for organisation 1 to carry out some of the work.</p>
 <p><strong>Total Budget</strong></p>
 </li>
@@ -53,47 +51,41 @@
 <p>When publishing a budget for a recipient country, the budget periods should match the fiscal year for the specific country. This is in order to help the recipient of the funds with their budgeting. The budgets can also be published in the currency of the recipient country. This is shown by using the <a href="/en/iati-standard/203/codelists/Currency/">currency</a> attribute to override the default publishing currency of the reporting organisation. Please note that the same budget should not be published in multiple currencies.</p>
 <p>Budgets often change over time. When this happens, the budget value and corresponding data should be amended. Each budget can have one of two status codes, either:</p>
 <ul>
-<li><strong>indicative (1)</strong> - a non-binding estimate for the described budget.</li>
-<li><strong>committed (2)</strong> - a binding agreement for the described budget.</li>
+<li><p><strong>indicative (1)</strong> - a non-binding estimate for the described budget.</p></li>
+<li><p><strong>committed (2)</strong> - a binding agreement for the described budget.</p></li>
 </ul>
 <p>When a budget changes status, the value and budget <a href="/en/iati-standard/203/codelists/BudgetStatus/">status</a> already in the file should be amended. A new budget should not be created.</p>
-<p id="what-should-organisation-budgets-include">
+<section id="what-should-organisation-budgets-include">
 <h2>What should organisation budgets include?</h2>
 <ul>
-<li>Each budget should be described from the perspective of the reporting organisation.</li>
-<li>Budget values should not be negative.</li>
-<li>Budgets can be updated at any point. When a budget changes, this budget value and status should be amended. A new budget element should not be created.</li>
-<li>The budget <a href="/en/iati-standard/203/codelists/BudgetStatus/">status</a> explains whether the budget being published is indicative or has been formally committed.</li>
-<li>If no status is present, the budget is assumed to be indicative.</li>
-<li>Budgets must be published in periods of no longer than a year.</li>
-<li>The <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-budget/">total-budget</a> in an organisation file is the total amount the organisation plans to spend on humanitarian and development work across the given time period.</li>
-<li>The periods published within the total-budget element should not overlap.</li>
-<li>Total-budgets should be published according to the fiscal year of the reporting organisation.</li>
-<li>The total budget can be broken down into budgets for recipient countries, regions and organisations.</li>
-<li>Recipient country budgets should be presented according to the fiscal years or planning cycle of the recipient country.</li>
-<li>Recipient country budgets can be published in the currency of the country. However, budget values should not be repeated in multiple currencies.</li>
-<li>The sum of budget lines, or budget breakdowns, does not have to equal the overall value provided for recipient country, region, organisation or total budgets.</li>
+<li><p>Each budget should be described from the perspective of the reporting organisation.</p></li>
+<li><p>Budget values should not be negative.</p></li>
+<li><p>Budgets can be updated at any point. When a budget changes, this budget value and status should be amended. A new budget element should not be created.</p></li>
+<li><p>The budget <a href="/en/iati-standard/203/codelists/BudgetStatus/">status</a> explains whether the budget being published is indicative or has been formally committed.</p></li>
+<li><p>If no status is present, the budget is assumed to be indicative.</p></li>
+<li><p>Budgets must be published in periods of no longer than a year.</p></li>
+<li><p>The <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-budget/">total-budget</a> in an organisation file is the total amount the organisation plans to spend on humanitarian and development work across the given time period.</p></li>
+<li><p>The periods published within the total-budget element should not overlap.</p></li>
+<li><p>Total-budgets should be published according to the fiscal year of the reporting organisation.</p></li>
+<li><p>The total budget can be broken down into budgets for recipient countries, regions and organisations.</p></li>
+<li><p>Recipient country budgets should be presented according to the fiscal years or planning cycle of the recipient country.</p></li>
+<li><p>Recipient country budgets can be published in the currency of the country. However, budget values should not be repeated in multiple currencies.</p></li>
+<li><p>The sum of budget lines, or budget breakdowns, does not have to equal the overall value provided for recipient country, region, organisation or total budgets.</p></li>
 </ul>
-</p>
-<p id="technical-guidance-summary">
+</section>
+<section id="technical-guidance-summary">
 <h2>Technical guidance summary</h2>
 <p><strong>Organisation budget information</strong></p>
 <p>All organisations should include the elements below to publish their annual planned budgets:</p>
-<table border="1">
-<colgroup>
-<col width="25%"/>
-<col width="25%"/>
-<col width="25%"/>
-<col width="25%"/>
-</colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<table>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-budget/">total-budget</a></td>
 <td>This provides
 the
@@ -115,7 +107,7 @@ indicative or
 formally
 committed.
 </td>
-<td> </td>
+<td></td>
 <td>The
 organisation’s
 total annual
@@ -170,7 +162,7 @@ organisation.</td>
 for the end
 date of the
 budget.</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-budget/value/">value</a></td>
 <td>The financial
@@ -213,27 +205,27 @@ organisation.</td>
 </table>
 <p><strong>Budget lines</strong></p>
 <p>Further budget information can be added by using the budget-line element. Budget lines allow the total-budget element to be broken down into sub-budgets and a description added, such as budget breakdowns and descriptions for different programmes happening in a given year.</p>
-<table border="1">
+<table>
 <colgroup>
-<col width="16%"/>
-<col width="28%"/>
-<col width="28%"/>
-<col width="28%"/>
+<col/>
+<col/>
+<col/>
+<col/>
 </colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/">budget-line</a></td>
 <td>This provides a breakdown of the total-budget.
 The period covered is the same as that of the parent total-budget.
 Multiple budget-lines can be published.
 </td>
-<td> </td>
+<td></td>
 <td>The sum of the budget-line values does not have to equal the value of the parent total-budget element.
 An @ref attribute can be provided, linking the budget-line to an internal reference taken from the reporting organisation’s system.
 </td>
@@ -243,7 +235,7 @@ An @ref attribute can be provided, linking the budget-line to an internal refere
 <td>This element must appear once and only once within each budget-line element.
 The value-date must be declared for the value.
 </td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-budget/budget-line/narrative/">narrative</a></td>
 <td>A description of the budget-line breakdown.</td>
@@ -263,21 +255,15 @@ This can be repeated in multiple languages.
 <p>Once an organisation knows their total spend for a budget period, as declared in the <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-budget/">total-budget</a> elements, IATI recommends that this too is published. This can be done through the <a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-expenditure/">total-expenditure</a> element. This allows users to work out ‘coverage’ – the percentage of an organisation’s total spend captured in its published IATI activities. IATI recommends that all IATI publishers include this data for the previous three years.</p>
 <p>Total expenditure is defined as the total amount of humanitarian and development disbursement and expenditure an organisation has made in a given time period.</p>
 <p>Like budget-lines, the total expenditure can be broken down into expense-lines.</p>
-<table border="1">
-<colgroup>
-<col width="25%"/>
-<col width="25%"/>
-<col width="25%"/>
-<col width="25%"/>
-</colgroup>
-<thead valign="bottom">
-<tr><th>Element</th>
-<th>Use</th>
-<th>Rules</th>
-<th>Guidance</th>
+<table>
+<thead>
+<tr><th><p>Element</p></th>
+<th><p>Use</p></th>
+<th><p>Rules</p></th>
+<th><p>Guidance</p></th>
 </tr>
 </thead>
-<tbody valign="top">
+<tbody>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-expendititure/">total-expenditure</a></td>
 <td>This provides
 the
@@ -289,7 +275,7 @@ development
 spend for the
 following
 period.</td>
-<td> </td>
+<td></td>
 <td>The
 organisation’s
 total
@@ -338,7 +324,7 @@ element.</td>
 for the end
 date of the
 period.</td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-expenditure/value/">value</a></td>
 <td>The financial
@@ -390,7 +376,7 @@ expense-lines
 can be
 published.
 </td>
-<td> </td>
+<td></td>
 <td>The sum of the
 expense-line
 values does
@@ -429,7 +415,7 @@ must be
 declared for
 the value.
 </td>
-<td> </td>
+<td></td>
 </tr>
 <tr><td><a href="/en/iati-standard/203/organisation-standard/iati-organisations/iati-organisation/total-expenditure/expense-line/narrative/">narrative</a></td>
 <td>A description
@@ -454,12 +440,13 @@ languages.</td>
 </tr>
 </tbody>
 </table>
-</p>
-<p id="activity-budgets">
+</section>
+<section id="activity-budgets">
 <h2>Activity budgets</h2>
 <p>For details on activity budgets, please see:
 - <a href="../budgets-overview/"><span>Budgets overview</span></a>
 - <a href="../activity-budgets/"><span>Activity budgets</span></a></p>
-</p>
-</p>
+</section>
+</section>
+
 <meta content="Organisation budgets and spend" name="title"/><meta content="An organisation budget is a total planned budget for an organisation for a given time period, and these can be broken down into different programmes or areas of work." name="description"/><meta content="organisation" name="guidance_type"/><meta content="September 19, 2019" name="date"/></div>
