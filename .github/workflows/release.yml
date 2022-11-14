@@ -55,19 +55,23 @@ jobs:
                 repo: context.repo.repo,
                 tag_name: process.env.RELEASE_TAG,
               });
-              await github.rest.repos.uploadReleaseAsset({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                release_id: release.data.id,
-                name: 'downloads.zip',
+              await github.request({
+                method: 'POST',
+                url: release.data.upload_url,
+                headers: {
+                  "content-type": "application/zip",
+                },
                 data: fs.readFileSync("downloads.zip"),
+                name: 'downloads.zip',
               });
-              await github.rest.repos.uploadReleaseAsset({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                release_id: release.data.id,
-                name: 'output.zip',
+              await github.request({
+                method: 'POST',
+                url: release.data.upload_url,
+                headers: {
+                  "content-type": "application/zip",
+                },
                 data: fs.readFileSync("output.zip"),
+                name: 'output.zip',
               });
             } catch (error) {
               core.error(error.message);
