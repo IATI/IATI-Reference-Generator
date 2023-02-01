@@ -5,7 +5,7 @@ Jinja2==3.1.2
 pytz==2022.7.1
 pyspellchecker==0.7.1
 python-dateutil==2.8.2
-beautifulsoup4==4.11.1
+beautifulsoup4==4.11.2
 docutils==0.19
 Pygments==2.14.0
 six==1.16.0
