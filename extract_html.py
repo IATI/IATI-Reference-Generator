@@ -345,7 +345,7 @@ for parent_slug, root_dir in build_dirs.items():
                                     tag_to_transform.transformed = True
                         for tag in main():
                             if tag.name in ["p", "span"]:
-                                if len(tag.get_text(strip=True)) == 0:
+                                if len(tag.get_text(strip=True)) == 0 and tag.parent.name != "pre":
                                     tag.decompose()
                                     continue
                             if tag.name in ["a"]:
