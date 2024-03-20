@@ -1,0 +1,12 @@
+Sphinx
+lxml
+flake8
+Jinja2
+pytz
+pyspellchecker
+python-dateutil
+beautifulsoup4
+docutils
+Pygments
+six
+pytest
