@@ -86,5 +86,5 @@ sphinxcontrib-serializinghtml==1.1.10
     # via sphinx
 tomli==2.0.1
     # via pytest
-urllib3==2.2.2
+urllib3==2.5.0
     # via requests
