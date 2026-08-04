@@ -35,7 +35,12 @@ jobs:
 
       - name: "Determine tag"
         run: |
-          last_tag=`git describe --tags $(git rev-list --tags --max-count=1)`
+          # Sort by version, not by commit date. `git rev-list --tags
+          # --max-count=1` returns the most recently *committed* tagged commit,
+          # which is not necessarily the highest version: v1.27 was tagged on a
+          # newer commit than v1.28, so the old logic returned v1.27 and built a
+          # v1.28 that collided with the existing tag.
+          last_tag=$(git tag --sort=-v:refname | head -n 1)
           next_tag="${last_tag%.*}.$((${last_tag##*.}+1))"
           echo "RELEASE_TAG=$next_tag" >> $GITHUB_ENV
 
