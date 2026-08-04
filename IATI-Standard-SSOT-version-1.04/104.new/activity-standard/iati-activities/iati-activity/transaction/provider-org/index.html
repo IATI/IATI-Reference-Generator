@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>provider-org &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../../search/" />
+    <link rel="next" title="receiver-org" href="../receiver-org/" />
+    <link rel="prev" title="transaction-type" href="../transaction-type/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../receiver-org/" title="receiver-org"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../transaction-type/" title="transaction-type"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../../" >iati-activity</a> &#187;</li>
+          <li class="nav-item nav-item-6"><a href="../" accesskey="U">transaction</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">provider-org</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="provider-org">
+<h1>provider-org<a class="headerlink" href="#provider-org" title="Link to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">iati-activities/iati-activity/transaction/provider-org</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal notranslate"><span class="pre">provider-org</span></code>.</p>
+<section id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>The organisation providing the money for the
+transaction (if omitted, the provider organisation is
+the reporting organisation).</p>
+</section>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<dl id="iati-activities-iati-activity-transaction-provider-org-ref">
+<dt>&#64;ref</dt><dd><p>Machine-readable identification string for the business
+object being described.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-transaction-provider-org-provider-activity-id">
+<dt>&#64;provider-activity-id</dt><dd><p>If the funds are being provided from the budget of
+another activity that is reported to IATI, this
+should record the unique IATI activity identifier for
+that activity.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
+<p>The full name of the organisation making the financial <code class="docutils literal notranslate"><span class="pre">transaction</span></code>
+(receiving in the case of loan and interest repayments).:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;provider-org&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+</pre></div>
+</div>
+<p>The unique Organisation Identifier for the <code class="docutils literal notranslate"><span class="pre">provider-org</span></code>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+</pre></div>
+</div>
+<p>If the funds are being provided from another reported <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>, the unique <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code> is included:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+</pre></div>
+</div>
+<p>Full example:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span><span class="w">  </span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Transaction<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;IF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="hll"><span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+</span><span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;AA-AAA-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+</pre></div>
+</div>
+<p>Full example with additional elements which can override the default value set in <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Transaction<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;IF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="hll"><span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+</span><span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;AA-AAA-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;20&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;111&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;5&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Link to this heading">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L690">Schema</a></p></li>
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/transaction/provider-org.rst">Extra Documentation</a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">provider-org</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../transaction-type/"
+                          title="previous chapter">transaction-type</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../receiver-org/"
+                          title="next chapter">receiver-org</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../../_sources/activity-standard/iati-activities/iati-activity/transaction/provider-org.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../receiver-org/" title="receiver-org"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../transaction-type/" title="transaction-type"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../../" >iati-activity</a> &#187;</li>
+          <li class="nav-item nav-item-6"><a href="../" >transaction</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">provider-org</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

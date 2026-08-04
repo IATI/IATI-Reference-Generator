@@ -1,0 +1,7 @@
+code,name,description,language,category,category-name,category-description
+1,Agrovoc,"A controlled vocabulary covering all areas of interest of the Food and Agriculture Organization (FAO) of the United Nations, including food, nutrition, agriculture, fisheries, forestry, environment etc.",en,,,
+2,UN Sustainable Development Goals (SDG),A value from the top-level list of UN sustainable development goals (SDGs) (e.g. ‘1’),en,,,
+3,UN Sustainable Development Goals (SDG) Targets,A value from the second-level list of UN sustainable development goals (SDGs) (e.g. ‘1.1’),en,,,
+4,Team Europe Initiatives,"A value from the list of Team Europe Initiatives. Team Europe consists of the European Commission, the EU Member States — including their implementing agencies and public development banks — as well as the European Investment Bank (EIB) and the European Bank for Reconstruction and Development (EBRD).",en,,,
+5,Global Food and Nutrition Security (GFNS) Preparedness Plan (PP),A two-digit ISO code corresponding to a country that has an active Global Food and Nutrition Security (GFNS) Preparedness Plan (PP).,en,,,
+99,Reporting Organisation,,en,,,

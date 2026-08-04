@@ -1,0 +1,48 @@
+<codelist name="RegionVocabulary" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <category>
+            <narrative>Non-Core</narrative>
+        </category>
+        <name>
+            <narrative>Region Vocabulary</narrative>
+        </name>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>
+                <narrative>OECD DAC</narrative>
+                <narrative xml:lang="fr">OCDE CAD</narrative>
+            </name>
+            <description>
+                <narrative>Supra-national regions according to OECD DAC CRS recipient codes</narrative>
+                <narrative xml:lang="fr">R&#233;gions supranationales selon les codes de b&#233;n&#233;ficiaire OCDE CAD SNPC</narrative>
+            </description>
+            <url>http://reference.iatistandard.org/codelists/Region/</url>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>
+                <narrative>UN</narrative>
+                <narrative xml:lang="fr">ONU</narrative>
+            </name>
+            <description>
+                <narrative>Supra-national regions maintained by UN Statistics Division (M49 standard)</narrative>
+                <narrative xml:lang="fr">R&#233;gions supranationales maintenues par la Division de la statistique de l'ONU</narrative>
+            </description>
+            <url>https://unstats.un.org/unsd/methodology/m49/</url>
+        </codelist-item>
+        <codelist-item>
+            <code>99</code>
+            <name>
+                <narrative>Reporting Organisation</narrative>
+                <narrative xml:lang="fr">Organisation d&#233;clarante</narrative>
+            </name>
+            <description>
+                <narrative>The region reported corresponds to a region vocabulary maintained by the reporting organisation for this activity.</narrative>
+                <narrative xml:lang="fr">La r&#233;gion d&#233;clar&#233;e correspond &#224; un vocabulaire r&#233;gional maintenu par l'organisation d&#233;clarante aux fins de l'activit&#233;.</narrative>
+            </description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

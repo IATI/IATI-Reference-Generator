@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ruleset development &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="prev" title="IATI Ruleset Spec" href="../ruleset-spec/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../ruleset-spec/" title="IATI Ruleset Spec"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" accesskey="U">Rulesets</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Ruleset development</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="ruleset-development">
+<h1>Ruleset development<a class="headerlink" href="#ruleset-development" title="Link to this heading">¶</a></h1>
+<p>IATI rules and rulesets can be developed and deployed in a number of possible ways.</p>
+<section id="different-types-of-rules">
+<h2>Different types of rules<a class="headerlink" href="#different-types-of-rules" title="Link to this heading">¶</a></h2>
+<p>So far, the Standard Ruleset deploys two types of rules:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Starts</span> <span class="pre">with</span></code> - conditions around the formation of the <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Date</span> <span class="pre">order</span></code> - logics around the ordering of various date elements.</p></li>
+</ul>
+<p>Other rules are also possible /  feasible.</p>
+</section>
+<section id="making-new-rulesets">
+<h2>Making new rulesets<a class="headerlink" href="#making-new-rulesets" title="Link to this heading">¶</a></h2>
+<p>Individual rules can be used and re-used in various collections of Rulesets.</p>
+<p>The Standard Ruleset could be extended by adding rules particular to a single publisher, to allow them, and others, to check the data they are producing matches a certain criteria.</p>
+</section>
+<section id="limitations-of-rulesets">
+<h2>Limitations of rulesets<a class="headerlink" href="#limitations-of-rulesets" title="Link to this heading">¶</a></h2>
+<p>Via the IATI Validator, Rulesets do not currently apply to an entire dataset, consisting of several files.  Hence, a ruleset cannot test if an activity identifer has been used once, and only once, by a publisher across their entire dataset.</p>
+<p>Rulesets do not allow for checks such as whether or not supplied text contains meaningful information.</p>
+<p>Rulesets do not check codes against codelists.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Ruleset development</a><ul>
+<li><a class="reference internal" href="#different-types-of-rules">Different types of rules</a></li>
+<li><a class="reference internal" href="#making-new-rulesets">Making new rulesets</a></li>
+<li><a class="reference internal" href="#limitations-of-rulesets">Limitations of rulesets</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../ruleset-spec/"
+                          title="previous chapter">IATI Ruleset Spec</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/rulesets/ruleset-development.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../ruleset-spec/" title="IATI Ruleset Spec"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" >Rulesets</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Ruleset development</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

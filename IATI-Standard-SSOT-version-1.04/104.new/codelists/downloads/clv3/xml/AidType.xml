@@ -1,0 +1,566 @@
+<codelist xmlns:extras="https://namespaces.iatistandard.org/codelist_extras" name="AidType" xml:lang="en" complete="1" category-codelist="AidType-category" embedded="0">
+    <metadata>
+        <category>
+            <narrative>Replicated</narrative>
+        </category>
+        <name>
+            <narrative>Aid Type</narrative>
+        </name>
+        <url>http://www.oecd.org/dac/stats/dacandcrscodelists.htm</url>
+    </metadata>
+    <codelist-items>
+        <codelist-item status="active" activation-date="2019-01-01">
+            <code>A00</code>
+            <name>
+                <narrative>Budget support</narrative>
+                <narrative xml:lang="fr">Budget support</narrative>
+            </name>
+            <description>
+                <narrative>Identifies contributions from the provider to the government budget of a recipient country, which has exclusive responsibility for the use of and accountability for the funds. Budget support can be generic (not sector allocated) or sectoral (e.g. energy, agriculture).</narrative>
+                <narrative xml:lang="fr">Identifies contributions from the provider to the government budget of a recipient country, which has exclusive responsibility for the use of and accountability for the funds. Budget support can be generic (not sector allocated) or sectoral (e.g. energy, agriculture).</narrative>
+            </description>
+            <category>A</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>A01</code>
+            <name>
+                <narrative>General budget support</narrative>
+                <narrative xml:lang="fr">Soutien budg&#233;taire g&#233;n&#233;ral</narrative>
+            </name>
+            <description>
+                <narrative>Unearmarked contributions to the government budget including funding to support the implementation of macroeconomic reforms (structural adjustment programmes, poverty reduction strategies). Budget support is a method of financing a recipient country&#8217;s budget through a transfer of resources from an external financing agency to the recipient government&#8217;s national treasury. The funds thus transferred are managed in accordance with the recipient&#8217;s budgetary procedures. Funds transferred to the national treasury for financing programmes or projects managed according to different budgetary procedures from those of the recipient country, with the intention of earmarking the resources for specific uses, are therefore excluded.</narrative>
+                <narrative xml:lang="fr">Contributions au budget du gouvernement non pr&#233;affect&#233;es y compris le soutien &#224; la mise en &#339;uvre de r&#233;formes macro&#233;conomiques (programmes d&#8217;ajustement structurel, strat&#233;gies de lutte contre la pauvret&#233;). Le soutien budg&#233;taire se d&#233;finit comme une m&#233;thode de financement du budget d&#8217;un pays b&#233;n&#233;ficiaire via un transfert de ressources d&#8217;un organisme de financement externe au Tr&#233;sor public du gouvernement b&#233;n&#233;ficiaire. Les fonds ainsi transf&#233;r&#233;s sont g&#233;r&#233;s conform&#233;ment aux proc&#233;dures budg&#233;taires du b&#233;n&#233;ficiaire. Cette d&#233;finition n&#8217;englobe donc pas les fonds transf&#233;r&#233;s au Tr&#233;sor public pour le financement de programmes ou de projets g&#233;r&#233;s selon des proc&#233;dures budg&#233;taires diff&#233;rentes de celles du pays b&#233;n&#233;ficiaire, dans l&#8217;intention d&#8217;affecter ces ressources &#224; des usages sp&#233;cifiques.</narrative>
+            </description>
+            <category>A</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>A02</code>
+            <name>
+                <narrative>Sector budget support</narrative>
+                <narrative xml:lang="fr">Soutien budg&#233;taire sectoriel</narrative>
+            </name>
+            <description>
+                <narrative>Sector budget support, like general budget support, is a financial contribution to a recipient government&#8217;s budget.  However, in sector budget support, the dialogue between donors and partner governments focuses on sector-specific concerns, rather than on overall policy and budget priorities.</narrative>
+                <narrative xml:lang="fr">Le soutien budg&#233;taire sectoriel, comme le soutien budg&#233;taire g&#233;n&#233;ral, est une contribution financi&#232;re au budget du gouvernement du pays b&#233;n&#233;ficiaire. Cependant, dans le cas du soutien budg&#233;taire sectoriel, le dialogue entre les donneurs et les gouvernements partenaires se concentre sur les pr&#233;occupations sp&#233;cifiques &#224; un secteur plut&#244;t que sur les priorit&#233;s de la politique globale et les priorit&#233;s budg&#233;taires.</narrative>
+            </description>
+            <category>A</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>B01</code>
+            <name>
+                <narrative>Core support to NGOs, other private bodies, PPPs and research institutes</narrative>
+                <narrative xml:lang="fr">Contributions aux budgets r&#233;guliers des ONG, autres organismes priv&#233;s, partenariats public-priv&#233; (PPP) et instituts de recherche</narrative>
+            </name>
+            <description>
+                <narrative>Funds are paid over to NGOs (local, national and international) for use at the latter&#8217;s discretion, and contribute to programmes and activities which NGOs have developed themselves, and which they implement on their own authority and responsibility. Core contributions to PPPs, funds paid over to foundations (e.g. philanthropic foundations), and contributions to research institutes (public and private) are also recorded here. Annex 2 of the DAC Directives provides a list of INGOs, PPPs and networks core contributions to which may be reported under B01. This list is not exclusive.</narrative>
+                <narrative xml:lang="fr">Fonds vers&#233;s &#224; des PPP, r&#233;seaux, instituts de recherche et organismes priv&#233;s &#224; but non lucratif &#8211; ONG bas&#233;es dans des pays en d&#233;veloppement, dans des pays donneurs ou ONG internationales et autres organisations de la soci&#233;t&#233; civile par exemple les fondations philanthropiques &#8211; qui sont utilis&#233;s &#224; la discr&#233;tion de ces organisations, et qui contribuent au financement de programmes et activit&#233;s que ces organisations ont mis au point elles-m&#234;mes et qu&#8217;elles mettent en &#339;uvre sous leur propre autorit&#233; et responsabilit&#233;.La Liste des organisations internationales &#233;ligible en APD (voir l&#8217;annexe 2) fournit une liste d&#8217;ONGI, de PPP et de r&#233;seaux en faveur desquels les contributions aux budgets r&#233;guliers peuvent &#234;tre notifi&#233;es sous B01. Cette liste n&#8217;est pas exhaustive.</narrative>
+            </description>
+            <category>B</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>B02</code>
+            <name>
+                <narrative>Core contributions to multilateral institutions and global funds</narrative>
+                <narrative xml:lang="fr">Contributions aux budgets r&#233;guliers des institutions multilat&#233;rales</narrative>
+            </name>
+            <description>
+                <narrative>These funds are classified as multilateral (all other categories are bilateral). The recipient multilateral institution pools contributions so that they lose their identity and become an integral part of its financial assets or liabilities. Also includes Financial Intermediary Funds (GEF, CIFs) for which the World Bank is the Trustee, as well as some UN inter-agency pooled funds, such as CERF and the UN Peacebuilding Fund. See Annex 2 of the Reporting Directives for a comprehensive list of agencies, core contributions to which may be reported under B02 and its subcategories. (Section I. Multilateral institutions). Nota bene: contributions to multilateral development organisations beyond Annex 2 are not reportable in the DAC statistics. The non-ODA components of core support to multilateral organisations included in Annex 2 are not reportable either.</narrative>
+                <narrative xml:lang="fr">Ces fonds sont class&#233;s comme multilat&#233;raux (toutes les autres cat&#233;gories sont bilat&#233;rales). L'institution multilat&#233;rale b&#233;n&#233;ficiaire met en commun les contributions de sorte qu'elles perdent leur identit&#233; et deviennent partie int&#233;grante de ses actifs ou passifs financiers. Comprend &#233;galement les fonds d'interm&#233;diation financi&#232;re (FEM, FIC) dont la Banque mondiale est l'administrateur, ainsi que certains fonds communs inter-institutions des Nations unies, tels que le CERF et le Fonds des Nations unies pour la consolidation de la paix. Voir l'annexe 2 des Directives pour une liste compl&#232;te des agences dont les contributions de base peuvent &#234;tre rapport&#233;es sous B02 et ses sous-cat&#233;gories. (Section I. Institutions multilat&#233;rales). Nota bene : les contributions aux organisations multilat&#233;rales de d&#233;veloppement hors de l'annexe 2 ne sont pas &#224; d&#233;clarer dans les statistiques du CAD. Les composantes non-APD du soutien de base aux organisations multilat&#233;rales incluses dans l'annexe 2 ne sont pas non plus &#224; d&#233;clarer.</narrative>
+            </description>
+            <category>B</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>B021</code>
+            <name>
+                <narrative>Core contributions to multilateral institutions</narrative>
+                <narrative xml:lang="fr">Contributions aux budgets r&#233;guliers des institutions multilat&#233;rales</narrative>
+            </name>
+            <description>
+                <narrative>Contributions in this category are pooled by the recipient multilateral institution and become an integral part of its financial assets or liabilities.</narrative>
+                <narrative xml:lang="fr">Les contributions de cette cat&#233;gorie sont mises en commun par l'institution multilat&#233;rale b&#233;n&#233;ficiaire et deviennent partie int&#233;grante de ses actifs ou passifs financiers.</narrative>
+            </description>
+            <category>B02</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>B022</code>
+            <name>
+                <narrative>Core contributions to global funds</narrative>
+                <narrative xml:lang="fr">Contributions de base aux fonds mondiaux</narrative>
+            </name>
+            <description>
+                <narrative>Contributions to global funds classified as multilateral including Financial Intermediary Funds for which the World Bank is the Trustee and which have gone through the Annex 2 process (GEF, CIFs) as well as some UN inter-agency pooled funds, e.g. CERF and the UN Peacebuilding Fund.</narrative>
+                <narrative xml:lang="fr">Contributions &#224; des fonds mondiaux class&#233;s comme multilat&#233;raux, y compris les fonds d'interm&#233;diation financi&#232;re dont la Banque mondiale est l'administrateur et qui sont pass&#233;s par le processus de l'annexe 2 (FEM, FIC), ainsi que certains fonds communs inter-institutions des Nations unies, par exemple le CERF et le Fonds de consolidation de la paix des Nations unies.</narrative>
+            </description>
+            <category>B02</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>B02a</code>
+            <name>
+                <narrative>Assessed contributions to multilateral institutions</narrative>
+                <narrative xml:lang="fr">Assessed contributions to multilateral institutions</narrative>
+            </name>
+            <description>
+                <narrative>Fixed contributions calculated based on agreed formula that members of multilateral institutions commit to when joining an institution.</narrative>
+                <narrative xml:lang="fr">Fixed contributions calculated based on agreed formula that members of multilateral institutions commit to when joining an institution.</narrative>
+            </description>
+            <category>B02</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>B02b</code>
+            <name>
+                <narrative>Voluntary core contributions to multilateral institutions</narrative>
+                <narrative xml:lang="fr">Voluntary core contributions to multilateral institutions</narrative>
+            </name>
+            <description>
+                <narrative>Voluntary unearmarked contributions to the general budgets of multilateral institutions.</narrative>
+                <narrative xml:lang="fr">Voluntary unearmarked contributions to the general budgets of multilateral institutions.</narrative>
+            </description>
+            <category>B02</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>B03</code>
+            <name>
+                <narrative>Contributions to specific-purpose programmes and funds managed by implementing partners</narrative>
+                <narrative xml:lang="fr">Contributions &#224; des programmes ou fonds &#224; objectif sp&#233;cifique g&#233;r&#233;s par des partenaires d'ex&#233;cution</narrative>
+            </name>
+            <description>
+                <narrative>In addition to their core-funded operations, international organisations &#8211; multilateral agencies, NGOs, PPPs or networks &#8211; both in provider and in third countries, set up programmes and funds with a specific sectoral, thematic or geographical focus. Donors&#8217; bilateral contributions to such programmes and funds are recorded here. Use categories B031 and B032 for trust funds managed by the UN (all designed as multi-donor) unless contributions are earmarked for a specific geographical location or funding window.</narrative>
+                <narrative xml:lang="fr">Outre leurs op&#233;rations de base, les organisations internationales &#8211; agences multilat&#233;rales, ONG, PPP et r&#233;seaux &#8211; tant dans les pays fournisseurs que dans les pays tiers, mettent en place des programmes ou fonds qui visent des objectifs sectoriels, th&#233;matiques ou g&#233;ographiques sp&#233;cifiques. Les contributions bilat&#233;rales des donneurs &#224; ce type de programmes et fonds entrent dans cette cat&#233;gorie. Utilisez les cat&#233;gories B031 et B032 pour les fonds d'affectation sp&#233;ciale g&#233;r&#233;s par l'ONU (tous con&#231;us comme multidonateurs) &#224; moins que les contributions ne soient affect&#233;es &#224; un lieu g&#233;ographique ou &#224; une fen&#234;tre de financement sp&#233;cifique.</narrative>
+            </description>
+            <category>B</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>B031</code>
+            <name>
+                <narrative>Contributions to multi-donor/multi-entity funding mechanisms</narrative>
+                <narrative xml:lang="fr">Contributions aux m&#233;canismes de financement multi-donateurs / multi-entit&#233;s</narrative>
+            </name>
+            <description>
+                <narrative>Contributions to funding mechanisms (specific-purpose programmes and funds) that pool resources from several providers and from which several international organisations &#8211; multilateral agencies, NGOs, PPPs or networks &#8211; may be allocated funds for implementation e.g. contributions to UN country-based pooled funds and country-level development funds. Excludes contributions to global funds classified as multilateral (see B022). Includes Financial Intermediary Funds for which the World Bank is the Trustee and which have not gone through the Annex 2 process.</narrative>
+                <narrative xml:lang="fr">Contributions &#224; des m&#233;canismes de financement (programmes et fonds &#224; finalit&#233; sp&#233;cifique) qui mettent en commun les ressources de plusieurs fournisseurs et &#224; partir desquels plusieurs agences multilat&#233;rales &#8211;  agences multilat&#233;rales, ONG, PPP et r&#233;seaux &#8211; peuvent se voir allouer des fonds pour la mise en &#339;uvre ; contributions &#224; des fonds communs par pays des Nations unies et &#224; des fonds de d&#233;veloppement au niveau des pays. Ne comprend pas les contributions aux fonds mondiaux class&#233;s comme multilat&#233;raux (voir B022). Comprend les fonds interm&#233;diaires financiers dont la Banque mondiale est l'administrateur et qui ne sont pas pass&#233;s par le processus de l'annexe 2.</narrative>
+            </description>
+            <category>B03</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>B032</code>
+            <name>
+                <narrative>Contributions to multi-donor/single-entity funding mechanisms</narrative>
+                <narrative xml:lang="fr">Contributions aux m&#233;canismes de financement multi-donateurs / entit&#233; unique</narrative>
+            </name>
+            <description>
+                <narrative>Contributions to multi-donor funding mechanisms (specific-purpose programmes and funds) managed by a single international organisation &#8211; multilateral agency, NGO, PPP or network &#8211; e.g. UN single-agency thematic funds; World Bank or other MDB trust funds. Classify the contribution as B032 even if in the initial stages only one donor contributes to the fund.</narrative>
+                <narrative xml:lang="fr">Contributions &#224; des m&#233;canismes de financement multi-donateurs (programmes et fonds &#224; but sp&#233;cial) g&#233;r&#233;s par une seule organisation multilat&#233;rale  &#8211;  agences multilat&#233;rales, ONG, PPP et r&#233;seaux &#8211; , par exemple, les fonds th&#233;matiques d'une seule agence des Nations Unies ; les fonds fiduciaires de la Banque mondiale ou d'autres BMD. Classer la contribution sous B032 m&#234;me si un seul donateur contribue initialement au fonds.</narrative>
+            </description>
+            <category>B03</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>B033</code>
+            <name>
+                <narrative>Contributions to single-donor funding mechanisms and contributions earmarked for a specific funding window or geographical location</narrative>
+                <narrative xml:lang="fr">Contributions aux m&#233;canismes de financement &#224; un seul donateur et contributions affect&#233;es &#224; un guichet de financement ou &#224; un emplacement g&#233;ographique</narrative>
+            </name>
+            <description>
+                <narrative>Contributions to funding mechanisms (specific-purpose programmes and funds) where the donor has a significant influence on the allocation of funds. This includes contributions to single-donor trust funds and earmarked contributions to specific countries/geographical locations or funding windows within multi-donor trust funds. When the donor designs the activity but channels it through an international organisation, the activity should be classified as C01.</narrative>
+                <narrative xml:lang="fr">Contributions aux m&#233;canismes de financement (programmes et fonds &#224; but sp&#233;cifique) o&#249; le donateur a une influence significative sur l'allocation des fonds. Cela comprend les contributions &#224; des fonds d'affectation sp&#233;ciale &#224; donateur unique et les contributions affect&#233;es &#224; des pays/emplacements g&#233;ographiques sp&#233;cifiques ou &#224; des guichets de financement au sein de fonds d'affectation sp&#233;ciale &#224; donateur multiple. Lorsque le donateur con&#231;oit l'activit&#233; mais la fait transiter par une organisation internationale, l'activit&#233; doit &#234;tre class&#233;e en C01.</narrative>
+            </description>
+            <category>B03</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>B04</code>
+            <name>
+                <narrative>Basket funds/pooled funding</narrative>
+                <narrative xml:lang="fr">Fonds communs/financements group&#233;s</narrative>
+            </name>
+            <description>
+                <narrative>The donor contributes funds to an autonomous account, managed jointly with other donors and/or the recipient. The account will have specific purposes, modes of disbursement and accountability mechanisms, and a limited time frame. Basket funds are characterised by common project documents, common funding contracts and common reporting/audit procedures with all donors. Donors&#8217; contributions to funds managed autonomously by international organisations are recorded under B03.</narrative>
+                <narrative xml:lang="fr">Le donneur d&#233;pose des fonds sur un compte autonome, g&#233;r&#233; conjointement avec d&#8217;autres donneurs et/ou le b&#233;n&#233;ficiaire. Sont associ&#233;s &#224; ce compte des objectifs, des modalit&#233;s de versement, des m&#233;canismes de reddition de comptes sp&#233;cifiques, et un horizon temporel pr&#233;cis.La mise en commun de fonds suppose des documents de projet communs, des contrats de financement communs et des proc&#233;dures de notification/audit communes &#224; tous les donneurs.Les contributions des donneurs &#224; des fonds g&#233;r&#233;s par des organisations internationales sont notifi&#233;es sous B03.</narrative>
+            </description>
+            <category>B</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2023-01-01">
+            <code>B05</code>
+            <name>
+                <narrative>PSI intra-governmental transfers</narrative>
+                <narrative xml:lang="fr">Transfert intra-gouvernemental pour ISP</narrative>
+            </name>
+            <description>
+                <narrative>Capital increases of PSI vehicles, decapitalisations and dividends paid to the government.</narrative>
+                <narrative xml:lang="fr">Augmentation ou baisse de de capital de v&#233;hicules pour ISP et dividendes vers&#233;s au gouvernement.</narrative>
+            </description>
+            <category>B</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>C01</code>
+            <name>
+                <narrative>Project-type interventions</narrative>
+                <narrative xml:lang="fr">Interventions de type projet</narrative>
+            </name>
+            <description>
+                <narrative>A project is a set of inputs, activities and outputs, agreed with the partner country*, to reach specific objectives/outcomes within a defined time frame, with a defined budget and a  defined geographical area. Projects can vary significantly in terms of objectives, complexity, amounts involved and duration. There are smaller projects that might involve modest financial resources and last only a few months, whereas large projects might involve more significant amounts, entail successive phases and last for many years. A large project with a number of different components is sometimes referred to as a programme, but should nevertheless be recorded here. Feasibility studies, appraisals and evaluations are included (when designed as part of projects/programmes or dedicated funding arrangements). Monitoring, auditing and situation analyses of projects and programmes are also included. Academic studies, research and development, trainings, scholarships, and other technical assistance activities not directly linked to development projects/programmes should instead be recorded under D02. Aid channelled through NGOs or multilaterals is also recorded here. This includes payments for NGOs and multilaterals to implement donors&#8217; projects and programmes, and funding of specified NGOs projects. By contrast, core funding of NGOs and multilaterals as well as contributions to specific-purpose funds are recorded under B.* In the cases of equity investments, humanitarian aid or aid channelled through NGOs, projects are recorded here even if there was no direct agreement between the donor and the partner country. Contributions to single-donor trust funds and contributions to trust funds earmarked for a specific funding window and/or country are recorded under B033.</narrative>
+                <narrative xml:lang="fr">Un projet est un ensemble d&#8217;&#233;l&#233;ments, d&#8217;activit&#233;s et de produits, convenus avec le pays partenaire*, en vue d&#8217;atteindre des objectifs/r&#233;sultats sp&#233;cifiques dans un laps de temps et une zone g&#233;ographique pr&#233;d&#233;finis au moyen d&#8217;un budget fix&#233; &#224; l&#8217;avance. Les projets peuvent diff&#233;rer consid&#233;rablement par leurs objectifs, leur complexit&#233;, les montants en jeu et leur dur&#233;e. Si les petits projets ne mettent en jeu que des ressources financi&#232;res modestes et ne durent souvent que quelques mois, les grands projets peuvent porter sur des montants substantiels, devoir &#234;tre mis en &#339;uvre par tranches et durer plusieurs ann&#233;es. Lorsqu&#8217;un grand projet se subdivise en plusieurs composantes, il est parfois appel&#233; programme, mais doit n&#233;anmoins &#234;tre comptabilis&#233; dans la pr&#233;sente rubrique. Sont inclues les &#233;tudes de faisabilit&#233;, ainsi que les &#233;valuations pr&#233;alables ou r&#233;trospectives (lorsqu&#8217;elles sont con&#231;ues comme un volet du projet/programme ou qu&#8217;elles font l&#8217;objet de modalit&#233;s de financement d&#233;di&#233;es). Le suivi, l'audit et les analyses de situation des projets et programmes sont &#233;galement inclus. Les &#233;tudes universitaires, la recherche et le d&#233;veloppement, les formations, les bourses et autres activit&#233;s d'assistance technique non directement li&#233;es aux projets/programmes de d&#233;veloppement doivent plut&#244;t &#234;tre enregistr&#233;es sous D02. L&#8217;aide achemin&#233;e par l&#8217;interm&#233;diaire d&#8217;ONG ou d&#8217;organisations multilat&#233;rales est &#233;galement notifi&#233;e ici. Cela comprend les paiements effectu&#233;s aux ONG et aux organisations multilat&#233;rales pour qu&#8217;elles mettent en &#339;uvre les projets et programmes des donneurs, ainsi que le financement de projets sp&#233;cifiques des ONG. En revanche, les contributions de caract&#232;re g&#233;n&#233;ral aux ONG et aux organisations multilat&#233;rales ainsi que les contributions aux fonds &#224; objectif sp&#233;cifique sont notifi&#233;es sous B. * Dans le cas d&#8217;investissements sous forme de prises de participation, d&#8217;une aide humanitaire ou d&#8217;une aide par l&#8217;interm&#233;diaire d&#8217;ONG, les projets sont notifi&#233;s ici m&#234;me s&#8217;ils ne font pas l&#8217;objet d&#8217;un accord direct avec le pays partenaire. Les contributions aux fonds d'affectation sp&#233;ciale &#224; donateur unique et les contributions aux fonds d'affectation sp&#233;ciale destin&#233;s &#224; un guichet de financement et/ou &#224; un pays sp&#233;cifiques sont enregistr&#233;es sous B033.</narrative>
+            </description>
+            <category>C</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>D01</code>
+            <name>
+                <narrative>Donor country personnel</narrative>
+                <narrative xml:lang="fr">Personnel du pays donneur</narrative>
+            </name>
+            <description>
+                <narrative>Experts, consultants, teachers, academics, researchers, volunteers and contributions to public and private bodies for sending experts to developing countries.</narrative>
+                <narrative xml:lang="fr">Experts, consultants, enseignants, universitaires, chercheurs, stagiaires et volontaires, ainsi que contributions &#224; des organismes publics et priv&#233;s pour l&#8217;envoi d&#8217;experts dans les pays en d&#233;veloppement.</narrative>
+            </description>
+            <category>D</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>D011</code>
+            <name>
+                <narrative>(for SSC providers only) In-kind technical cooperation. Experts costs</narrative>
+                <narrative xml:lang="fr">(for SSC providers only) In-kind technical cooperation. Experts costs</narrative>
+            </name>
+            <description>
+                <narrative>Expenses related to hiring specialists, technical hours of government officials and opportunity costs, directly associated with the technical co-operation activity.</narrative>
+                <narrative xml:lang="fr">Expenses related to hiring specialists, technical hours of government officials and opportunity costs, directly associated with the technical co-operation activity.</narrative>
+            </description>
+            <category>D01</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>D012</code>
+            <name>
+                <narrative>(for SSC providers only) In-kind technical cooperation experts. Travel related costs</narrative>
+                <narrative xml:lang="fr">(for SSC providers only) In-kind technical cooperation experts. Travel related costs</narrative>
+            </name>
+            <description>
+                <narrative>Expenses related to per diems, daily allowances and airfares, that are directly associated with the technical co-operation activity. Also includes expenditures for travel-related costs of volunteers.</narrative>
+                <narrative xml:lang="fr">Expenses related to per diems, daily allowances and airfares, that are directly associated with the technical co-operation activity. Also includes expenditures for travel-related costs of volunteers.</narrative>
+            </description>
+            <category>D01</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>D013</code>
+            <name>
+                <narrative>(for SSC providers only) In-kind technical cooperation. Services, materials, equipment and supplies.</narrative>
+                <narrative xml:lang="fr">(for SSC providers only) In-kind technical cooperation. Services, materials, equipment and supplies.</narrative>
+            </name>
+            <description>
+                <narrative>Expenses regarding the acquisition of services, materials, equipment and supplies that are needed to deliver technical co-operation activities/projects between developing countries.</narrative>
+                <narrative xml:lang="fr">Expenses regarding the acquisition of services, materials, equipment and supplies that are needed to deliver technical co-operation activities/projects between developing countries.</narrative>
+            </description>
+            <category>D01</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>D02</code>
+            <name>
+                <narrative>Other technical assistance</narrative>
+                <narrative xml:lang="fr">Autres formes d&#8217;assistance technique</narrative>
+            </name>
+            <description>
+                <narrative>Provision, outside projects as described in category C01, of technical assistance in recipient countries (excluding technical assistance performed by donor experts reported under D01, and scholarships/training in donor country reported under E01). This includes training and research; language training; south-south studies; research studies; collaborative research between donor and recipient universities and organisations); local scholarships; development-oriented social and cultural programmes. This category also covers ad hoc contributions such as conferences, seminars and workshops, exchange visits, publications, etc.</narrative>
+                <narrative xml:lang="fr">Cette cat&#233;gorie couvre l&#8217;apport de savoir-faire en dehors de projets tels qu&#8217;ils sont d&#233;finis dans la cat&#233;gorie C01 (sauf l&#8217;assistance technique fournie par des experts des pays donneurs couverte sous D01, et les bourses/formations dans le pays donneur couvertes sous E01.) Sont inclues les activit&#233;s de formation et de recherche, les formations linguistiques, les &#233;tudes Sud-Sud, les &#233;tudes pour la recherche, les activit&#233;s de recherche impliquant une collaboration entre des universit&#233;s ou organismes du pays donneur et du pays b&#233;n&#233;ficiaire, les bourses locales, et les programmes sociaux et culturels &#224; des fins de d&#233;veloppement. La cat&#233;gorie couvre &#233;galement les contributions ponctuelles telles les conf&#233;rences, s&#233;minaires et ateliers, &#233;changes, publications, etc.</narrative>
+            </description>
+            <category>D</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>D021</code>
+            <name>
+                <narrative>(for SSC providers only) Training</narrative>
+                <narrative xml:lang="fr">(for SSC providers only) Training</narrative>
+            </name>
+            <description>
+                <narrative>Includes the provision of training using internationally or locally recruited experts. This category also covers various capacity building activities such as conferences, seminars, workshops, exchange visits.</narrative>
+                <narrative xml:lang="fr">Includes the provision of training using internationally or locally recruited experts. This category also covers various capacity building activities such as conferences, seminars, workshops, exchange visits.</narrative>
+            </description>
+            <category>D02</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>E01</code>
+            <name>
+                <narrative>Scholarships/training in donor country</narrative>
+                <narrative xml:lang="fr">Bourses/formations dans le pays donneur</narrative>
+            </name>
+            <description>
+                <narrative>Financial aid awards for individual students and contributions to trainees.</narrative>
+                <narrative xml:lang="fr">Bourses octroy&#233;es &#224; des &#233;tudiants et contributions aux frais associ&#233;s &#224; des stages.</narrative>
+            </description>
+            <category>E</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>E02</code>
+            <name>
+                <narrative>Imputed student costs</narrative>
+                <narrative xml:lang="fr">Co&#251;ts imput&#233;s des &#233;tudiants</narrative>
+            </name>
+            <description>
+                <narrative>Indirect (&#8220;imputed&#8221;) costs of tuition in donor countries.</narrative>
+                <narrative xml:lang="fr">Co&#251;ts indirects (&#8220;imput&#233;s&#8221;) correspondant aux frais de scolarit&#233; dans le pays donneur.</narrative>
+            </description>
+            <category>E</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>F01</code>
+            <name>
+                <narrative>Debt relief</narrative>
+                <narrative xml:lang="fr">All&#233;gement de la dette</narrative>
+            </name>
+            <description>
+                <narrative>Groups all actions relating to debt (forgiveness, conversions, swaps, buy-backs, rescheduling, refinancing).</narrative>
+                <narrative xml:lang="fr">Regroupe toutes les actions se rapportant &#224; la dette (annulation, conversion, &#233;change, rachat, r&#233;&#233;chelonnement, refinancement).</narrative>
+            </description>
+            <category>F</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-01-01">
+            <code>F02</code>
+            <name>
+                <narrative>Debt relief - principal (original loan not recorded in TOSSD)</narrative>
+                <narrative xml:lang="fr">Debt relief - principal (original loan not recorded in TOSSD)</narrative>
+            </name>
+            <description>
+                <narrative>Principal component of a debt relief operation, in cases where the loans concerned were not previously recorded in TOSSD (private claims or official claims not previously recorded in TOSSD).</narrative>
+                <narrative xml:lang="fr">Principal component of a debt relief operation, in cases where the loans concerned were not previously recorded in TOSSD (private claims or official claims not previously recorded in TOSSD).</narrative>
+            </description>
+            <category>F</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-01-01">
+            <code>F03</code>
+            <name>
+                <narrative>Debt relief - interest</narrative>
+                <narrative xml:lang="fr">Debt relief - interest</narrative>
+            </name>
+            <description>
+                <narrative>Interest component of a debt relief operation (interests in arrears and late interests).</narrative>
+                <narrative xml:lang="fr">Interest component of a debt relief operation (interests in arrears and late interests).</narrative>
+            </description>
+            <category>F</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>G01</code>
+            <name>
+                <narrative>Administrative costs not included elsewhere</narrative>
+                <narrative xml:lang="fr">Frais administratifs non inclus ailleurs</narrative>
+            </name>
+            <description>
+                <narrative>Administrative costs of development assistance programmes not already included under other ODA items as an integral part of the costs of delivering or implementing the aid provided. This category covers situation analyses and auditing activities.As regards the salaries component of administrative costs, it relates to  in-house agency staff and contractors only; costs associated with donor experts/consultants are to be reported under category C or D01.</narrative>
+                <narrative xml:lang="fr">Frais d'administration des programmes d'aide au d&#233;veloppement qui ne sont pas d&#233;j&#224; inclus dans d'autres rubriques comme partie int&#233;grante du co&#251;t de l&#8217;acheminement ou de la mise en &#339;uvre de l&#8217;aide fournie. Cette cat&#233;gorie comprend les analyses de situation et les activit&#233;s d&#8217;audit.En ce qui concerne la composante salariale des frais administratifs, elle se rapporte uniquement au personnel et contractuels de l&#8217;agence ; les co&#251;ts associ&#233;s aux experts/consultants du pays donneur sont &#224; notifier sous les cat&#233;gories C ou D01.</narrative>
+            </description>
+            <category>G</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2019-01-01">
+            <code>H00</code>
+            <name>
+                <narrative>Expenditures in the provider country</narrative>
+                <narrative xml:lang="fr">Expenditures in the provider country</narrative>
+            </name>
+            <description>
+                <narrative>Expenditures in the provider country not included elsewhere.</narrative>
+                <narrative xml:lang="fr">Expenditures in the provider country not included elsewhere.</narrative>
+            </description>
+            <category>H</category>
+        </codelist-item>
+        <codelist-item status="active">
+            <code>H01</code>
+            <name>
+                <narrative>Development awareness</narrative>
+                <narrative xml:lang="fr">Sensibilisation au d&#233;veloppement</narrative>
+            </name>
+            <description>
+                <narrative>Funding of activities designed to increase public support, i.e.&#160;awareness in the donor country of development co-operation efforts, needs and issues.</narrative>
+                <narrative xml:lang="fr">Financement d&#8217;activit&#233;s visant &#224; accro&#238;tre le soutien du public dans le pays donneur pour les efforts de coop&#233;ration pour le d&#233;veloppement et &#224; rendre la population plus consciente des besoins et probl&#232;mes du d&#233;veloppement.</narrative>
+            </description>
+            <category>H</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2018-01-01">
+            <code>H02</code>
+            <name>
+                <narrative>Refugees/asylum seekers in donor countries</narrative>
+                <narrative xml:lang="fr">Refugi&#233;s/demandeurs d&#8217;asile dans les pays donneurs</narrative>
+            </name>
+            <description>
+                <narrative>Costs incurred in donor countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months, when costs cannot be disaggregated. See section II.6 and Annex 17.</narrative>
+                <narrative xml:lang="fr">Co&#251;ts encourus dans les pays donneurs au titre de l&#8217;aide de base apport&#233;e aux demandeurs d&#8217;asile et aux r&#233;fugi&#233;s en provenance des pays en d&#233;veloppement pendant une p&#233;riode pouvant aller jusqu&#8217;&#224; 12 mois, quand les co&#251;ts ne peuvent pas &#234;tre d&#233;sagr&#233;g&#233;s. Voir section II.6 et Annexe 17.</narrative>
+            </description>
+            <category>H</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2018-01-01">
+            <code>H03</code>
+            <name>
+                <narrative>Asylum-seekers ultimately accepted</narrative>
+                <narrative xml:lang="fr">Demandeurs d&#8217;asile finalement accept&#233;s</narrative>
+            </name>
+            <description>
+                <narrative>Costs incurred in donor countries for basic assistance to asylum seekers, when these are ultimately accepted. This category includes only costs incurred prior to recognition.</narrative>
+                <narrative xml:lang="fr">Co&#251;ts encourus dans les pays donneurs au titre de l&#8217;aide de base apport&#233;e aux demandeurs d&#8217;asile lorsque ceux-ci sont finalement accept&#233;s. Cette cat&#233;gorie couvre uniquement les co&#251;ts encourus avant la reconnaissance de statut.</narrative>
+            </description>
+            <category>H</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2018-01-01">
+            <code>H04</code>
+            <name>
+                <narrative>Asylum-seekers ultimately rejected</narrative>
+                <narrative xml:lang="fr">Demandeurs d&#8217;asile finalement d&#233;bout&#233;s</narrative>
+            </name>
+            <description>
+                <narrative>Costs incurred in donor countries for basic assistance to asylum seekers, when these are ultimately rejected. This category includes only costs incurred prior to rejection. Members may base their reporting on the first instance rejection, where a final decision on status is anticipated to occur after a 12-month period, and this facilitates the establishment of a conservative estimate. For further guidance on how to proceed with calculating costs related to rejected asylum seekers, see Clarification 5, third bullet in section II.6 of the Reporting Directives.</narrative>
+                <narrative xml:lang="fr">Co&#251;ts encourus dans les pays donneurs au titre de l&#8217;aide de base apport&#233;e aux demandeurs d&#8217;asile lorsque ceux-ci sont finalement d&#233;bout&#233;s. Cette cat&#233;gorie couvre uniquement les co&#251;ts encourus avant le rejet de la demande. Dans les cas o&#249; il est probable que la d&#233;cision d&#233;finitive relative au statut ne surviendra qu&#8217;apr&#232;s douze mois et afin de parvenir &#224; une estimation prudente, les membres peuvent &#233;tablir leur notification en fonction de la date du rejet en premi&#232;re instance. Pour plus d&#8217;instructions sur la fa&#231;on de calculer les co&#251;ts relatifs aux demandeurs d&#8217;asile finalement d&#233;bout&#233;s, voir la Clarification 5, troisi&#232;me point dans la section II.6 des Directives.</narrative>
+            </description>
+            <category>H</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2018-01-01">
+            <code>H05</code>
+            <name>
+                <narrative>Recognised refugees</narrative>
+                <narrative xml:lang="fr">Personnes auxquelles le statut de r&#233;fugi&#233; a &#233;t&#233; accord&#233;</narrative>
+            </name>
+            <description>
+                <narrative>Costs incurred in donor countries for basic assistance to refugees with a recognised status. This category only includes costs after recognition (or after date of entry into a country through a resettlement programme).</narrative>
+                <narrative xml:lang="fr">Co&#251;ts encourus dans les pays donneurs au titre de l&#8217;aide de base apport&#233;e aux personnes auxquelles le statut de r&#233;fugi&#233; a &#233;t&#233; accord&#233;. Cette cat&#233;gorie couvre uniquement les co&#251;ts post&#233;rieurs &#224; la reconnaissance (ou &#224; la date d&#8217;entr&#233;e dans un pays dans le cadre d&#8217;un programme de r&#233;installation).</narrative>
+            </description>
+            <category>H</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2022-01-01">
+            <code>H06</code>
+            <name>
+                <narrative>Refugees and asylum seekers in other provider countries</narrative>
+                <narrative xml:lang="fr">R&#233;fugi&#233;s et demandeurs d'asile dans d'autres pays fournisseurs</narrative>
+            </name>
+            <description>
+                <narrative>Costs incurred in other non-ODA eligible provider countries for basic assistance to asylum seekers and refugees from developing countries, up to 12 months. The host and origin country of refugees/asylum seekers shall be specified in one of the descriptive fields of the CRS (fields 14 or 19).</narrative>
+                <narrative xml:lang="fr">Co&#251;ts encourus dans d'autres pays fournisseurs non &#233;ligibles &#224; l'APD pour l'assistance de base aux demandeurs d'asile et aux r&#233;fugi&#233;s des pays en d&#233;veloppement, jusqu'&#224; 12 mois. Le pays d'accueil et d'origine des r&#233;fugi&#233;s/demandeurs d'asile doit &#234;tre pr&#233;cis&#233; dans l'un des champs descriptifs du SNPC (champs 14 ou 19).</narrative>
+            </description>
+            <category>H</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2019-01-01">
+            <code>I01</code>
+            <name>
+                <narrative>Support to refugees/protected persons in the provider country (up to 12 months of their stay)</narrative>
+                <narrative xml:lang="fr">Support to refugees/protected persons in the provider country (up to 12 months of their stay)</narrative>
+            </name>
+            <description>
+                <narrative>Costs incurred in provider countries for basic assistance to asylum seekers, refugees and protected persons from TOSSD-eligible countries, up to 12 months. Reportable under Pillar II.</narrative>
+                <narrative xml:lang="fr">Costs incurred in provider countries for basic assistance to asylum seekers, refugees and protected persons from TOSSD-eligible countries, up to 12 months. Reportable under Pillar II.</narrative>
+            </description>
+            <category>I</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2019-01-01">
+            <code>I02</code>
+            <name>
+                <narrative>Support to refugees/protected persons in the provider country (beyond the 12-month period)</narrative>
+                <narrative xml:lang="fr">Support to refugees/protected persons in the provider country (beyond the 12-month period)</narrative>
+            </name>
+            <description>
+                <narrative>Costs incurred in provider countries for basic assistance to asylum seekers, refugees and protected persons from TOSSD-eligible countries, beyond the 12-month period, to the extent that the individual is not recognised by the competent authorities of the country in which he/she has sought asylum as having the rights and obligations which are attached to the possession of residency or nationality of that country. Reportable under Pillar II.</narrative>
+                <narrative xml:lang="fr">Costs incurred in provider countries for basic assistance to asylum seekers, refugees and protected persons from TOSSD-eligible countries, beyond the 12-month period, to the extent that the individual is not recognised by the competent authorities of the country in which he/she has sought asylum as having the rights and obligations which are attached to the possession of residency or nationality of that country. Reportable under Pillar II.</narrative>
+            </description>
+            <category>I</category>
+        </codelist-item>
+        <codelist-item status="withdrawn" activation-date="2019-01-01" withdrawal-date="2021-12-31">
+            <code>I03</code>
+            <name>
+                <narrative>Support to refugees/protected persons - in other countries of asylum</narrative>
+                <narrative xml:lang="fr">Support to refugees/protected persons - in other countries of asylum</narrative>
+            </name>
+            <description>
+                <narrative>Financial, material or technical support to asylum seekers, refugees and protected persons in other host countries. Reportable under Pillar I.</narrative>
+                <narrative xml:lang="fr">Financial, material or technical support to asylum seekers, refugees and protected persons in other host countries. Reportable under Pillar I.</narrative>
+            </description>
+            <category>I</category>
+        </codelist-item>
+        <codelist-item status="withdrawn" activation-date="2019-01-01" withdrawal-date="2021-12-31">
+            <code>I04</code>
+            <name>
+                <narrative>Support to refugees/protected persons - voluntary returns</narrative>
+                <narrative xml:lang="fr">Support to refugees/protected persons - voluntary returns</narrative>
+            </name>
+            <description>
+                <narrative>Support to refugees, asylum seekers and protected persons voluntarily returning to their countries of origin, nationality or last habitual residence. &#160;Excluding pre-departure assistance. Reportable under Pillar I.</narrative>
+                <narrative xml:lang="fr">Support to refugees, asylum seekers and protected persons voluntarily returning to their countries of origin, nationality or last habitual residence. &#160;Excluding pre-departure assistance. Reportable under Pillar I.</narrative>
+            </description>
+            <category>I</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2020-01-01">
+            <code>I05</code>
+            <name>
+                <narrative>Support to refugees/protected persons/migrants for their integration in the economy of provider countries</narrative>
+                <narrative xml:lang="fr">Support to refugees/protected persons/migrants for their integration in the economy of provider countries</narrative>
+            </name>
+            <description>
+                <narrative>Costs incurred in provider countries for promoting the integration in their economy of asylum seekers, refugees, protected persons and migrants from TOSSD-eligible countries. Covers activities that promote the integration in the economy and culture of the provider country (including language training, vocational training, social protection schemes, employment programmes, awareness on national culture), up to the first 5 years of stay. Temporary sustenance/basic assistance is covered under modalities I01 and I02. Reportable under Pillar II.</narrative>
+                <narrative xml:lang="fr">Costs incurred in provider countries for promoting the integration in their economy of asylum seekers, refugees, protected persons and migrants from TOSSD-eligible countries. Covers activities that promote the integration in the economy and culture of the provider country (including language training, vocational training, social protection schemes, employment programmes, awareness on national culture), up to the first 5 years of stay. Temporary sustenance/basic assistance is covered under modalities I01 and I02. Reportable under Pillar II.</narrative>
+            </description>
+            <category>I</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2025-01-01">
+            <code>J01</code>
+            <name>
+                <narrative>In-kind donations of goods</narrative>
+                <narrative xml:lang="fr">Dons en nature de biens</narrative>
+            </name>
+            <description>
+                <narrative>Donation of goods and materials. Includes food, equipment (including medical equipment), materials, and motor vehicles.</narrative>
+                <narrative xml:lang="fr">Dons de biens et de mat&#233;riel. Cela comprend des denr&#233;es alimentaires, de l'&#233;quipement (y compris du mat&#233;riel m&#233;dical), des mat&#233;riaux et des v&#233;hicules motoris&#233;s.</narrative>
+            </description>
+            <category>J</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>K01</code>
+            <name>
+                <narrative>(for SSC providers only) Research and development</narrative>
+                <narrative xml:lang="fr">(for SSC providers only) Research and development</narrative>
+            </name>
+            <description>
+                <narrative>Disbursements for joint research projects between two or more developing countries, covering the working time and opportunity costs of scientists/specialists and other research personnel from the reporting country as well as expenses for scientific-related infrastructure and services (labs, equipment, materials, supplies) directly associated with the research activity.</narrative>
+                <narrative xml:lang="fr">Disbursements for joint research projects between two or more developing countries, covering the working time and opportunity costs of scientists/specialists and other research personnel from the reporting country as well as expenses for scientific-related infrastructure and services (labs, equipment, materials, supplies) directly associated with the research activity.</narrative>
+            </description>
+            <category>K</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>K011</code>
+            <name>
+                <narrative>(for SSC providers only) Scientific-related infrastructure</narrative>
+                <narrative xml:lang="fr">(for SSC providers only) Scientific-related infrastructure</narrative>
+            </name>
+            <description>
+                <narrative>Laboratories, equipment and supplies directly associated with research and development activities.</narrative>
+                <narrative xml:lang="fr">Laboratories, equipment and supplies directly associated with research and development activities.</narrative>
+            </description>
+            <category>K01</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>K012</code>
+            <name>
+                <narrative>(for SSC providers only) Research personnel</narrative>
+                <narrative xml:lang="fr">(for SSC providers only) Research personnel</narrative>
+            </name>
+            <description>
+                <narrative>Covers working hours and opportunity costs of scientists/specialists and other research personnel from the reporting country.</narrative>
+                <narrative xml:lang="fr">Covers working hours and opportunity costs of scientists/specialists and other research personnel from the reporting country.</narrative>
+            </description>
+            <category>K01</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2022-01-01">
+            <code>K02</code>
+            <name>
+                <narrative>RESEARCH AND DEVELOPMENT (R&amp;D)</narrative>
+                <narrative xml:lang="fr">RESEARCH AND DEVELOPMENT (R&amp;D)</narrative>
+            </name>
+            <description>
+                <narrative>Research and experimental development comprising creative and systematic work undertaken in order to increase the stock of knowledge &#8211; including knowledge of humankind, culture and society &#8211; and to devise new applications of available knowledge.</narrative>
+                <narrative xml:lang="fr">Research and experimental development comprising creative and systematic work undertaken in order to increase the stock of knowledge &#8211; including knowledge of humankind, culture and society &#8211; and to devise new applications of available knowledge.</narrative>
+            </description>
+            <category>K</category>
+        </codelist-item>
+        <codelist-item status="active" activation-date="2021-01-01">
+            <code>L01</code>
+            <name>
+                <narrative>(for SSC providers only) Direct cash transfers under social development public programmes in partner countries</narrative>
+                <narrative xml:lang="fr">(for SSC providers only) Direct cash transfers under social development public programmes in partner countries</narrative>
+            </name>
+            <description>
+                <narrative>Direct cash transfers expenditure benefiting individuals, in the context of public programmes of sustainable development in partner countries (with the consent and support of the partner country).</narrative>
+                <narrative xml:lang="fr">Direct cash transfers expenditure benefiting individuals, in the context of public programmes of sustainable development in partner countries (with the consent and support of the partner country).</narrative>
+            </description>
+            <category>L</category>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

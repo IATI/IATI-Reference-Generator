@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Geography &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Country Budget Alignment" href="../country-budget-alignment/" />
+    <link rel="prev" title="Organisations" href="../organisations/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../country-budget-alignment/" title="Country Budget Alignment"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../organisations/" title="Organisations"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" accesskey="U">Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Geography</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="geography">
+<h1>Geography<a class="headerlink" href="#geography" title="Link to this heading">¶</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>Within the <strong>IATI activity standard</strong> there are three ways to describe the <em>geography</em> of an <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">recipient-country</span></code> - the country that will benefit from the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">recipient-region</span></code> - geopolitical region (above the country level) that will benefit from the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">location</span></code> - a geographical location of the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>.</p></li>
+</ul>
+<p>In addition, the following can also be utilised:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">activity-scope</span></code> - to classify the geographic coverage of the the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>.</p></li>
+</ul>
+</section>
+<section id="considerations">
+<h2>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">¶</a></h2>
+<p>When using the <strong>IATI activity standard</strong> to describe <em>geography</em>, the following should be considered:</p>
+<ul class="simple">
+<li><p>When describing the <code class="docutils literal notranslate"><span class="pre">recipient-country</span></code> the relevant <code class="docutils literal notranslate"><span class="pre">Country</span></code> code must be used.</p></li>
+<li><p>When describing the <code class="docutils literal notranslate"><span class="pre">recipient-region</span></code> the relevant <code class="docutils literal notranslate"><span class="pre">Region</span></code> code must be used.</p></li>
+<li><p>It is possible to have multiple <code class="docutils literal notranslate"><span class="pre">recipient-country</span></code> in an <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code></p></li>
+<li><p>It is possible to have multiple <code class="docutils literal notranslate"><span class="pre">recipient-region</span></code> in an <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code></p></li>
+<li><p>When declaring multiple <code class="docutils literal notranslate"><span class="pre">recipient-country</span></code> or <code class="docutils literal notranslate"><span class="pre">recipient-region</span></code> then a <code class="docutils literal notranslate"><span class="pre">pecentage</span></code> must be declared.  These must sum to 100%.</p></li>
+<li><p>If a <code class="docutils literal notranslate"><span class="pre">recipient-country</span></code> is known, then a <code class="docutils literal notranslate"><span class="pre">recipient-region</span></code> is not expected.</p></li>
+<li><p>If a <code class="docutils literal notranslate"><span class="pre">recipient-country</span></code> is not known, then a <code class="docutils literal notranslate"><span class="pre">recipient-region</span></code> is expected.</p></li>
+<li><p>The free-text instances of <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">description</span></code> in <code class="docutils literal notranslate"><span class="pre">location</span></code> should avoid use of text in CAPITALS.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">activity-scope</span></code> element should only be used once.  It must use a relevant <code class="docutils literal notranslate"><span class="pre">ActivityScope</span></code> code.</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Geography</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#considerations">Considerations</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../organisations/"
+                          title="previous chapter">Organisations</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../country-budget-alignment/"
+                          title="next chapter">Country Budget Alignment</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/activity-standard/overview/geography.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../country-budget-alignment/" title="Country Budget Alignment"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../organisations/" title="Organisations"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" >Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Geography</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

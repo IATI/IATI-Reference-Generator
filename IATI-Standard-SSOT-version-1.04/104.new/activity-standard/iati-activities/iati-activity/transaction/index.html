@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>transaction &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../search/" />
+    <link rel="next" title="value" href="value/" />
+    <link rel="prev" title="capital-spend" href="../capital-spend/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="value/" title="value"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../capital-spend/" title="capital-spend"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../" accesskey="U">iati-activity</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">transaction</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="transaction">
+<h1>transaction<a class="headerlink" href="#transaction" title="Link to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">iati-activities/iati-activity/transaction</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal notranslate"><span class="pre">transaction</span></code>.</p>
+<section id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>Committed or actual money flowing in or out of an aid
+activity.The &#64;ref attribute allows uniquely identifying a
+transaction, to match it up with the corresponding in- or
+outflow in a different activity.</p>
+</section>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<dl id="iati-activities-iati-activity-transaction-ref">
+<dt>&#64;ref</dt><dd><p>Machine-readable identification string for the business
+object being described.</p>
+<p>This value must be of type xsd:string.</p>
+</dd>
+</dl>
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">transaction</span></code> element acts as a container for other sub elements.</p>
+<p>At the <code class="docutils literal notranslate"><span class="pre">transaction</span></code> level, the attribute <code class="docutils literal notranslate"><span class="pre">ref</span></code> can be used to describe reference to this <code class="docutils literal notranslate"><span class="pre">transaction</span></code> in another system:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+....
+<span class="nt">&lt;/transaction&gt;</span>
+</pre></div>
+</div>
+<p>Example <code class="docutils literal notranslate"><span class="pre">transaction</span></code>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+</span><span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span><span class="w">  </span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Transaction<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;IF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;AA-AAA-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="hll"><span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+</span></pre></div>
+</div>
+<p>Full example with additional elements which can override the default value set in <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+</span><span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Transaction<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;IF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;AA-AAA-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;20&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;111&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;5&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="hll"><span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+</span></pre></div>
+</div>
+<p>An <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code> can have multiple <code class="docutils literal notranslate"><span class="pre">transaction</span></code> elements.</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;ABC&quot;</span><span class="nt">&gt;</span>
+</span><span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;CC-CCC-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;CC-CCC-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>C<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;10&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;110&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w">   </span>
+<span class="hll"><span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+</span><span class="hll"><span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+</span><span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;IF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;AA-AAA-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;10&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;110&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="hll"><span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+</span></pre></div>
+</div>
+</section>
+<section id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Link to this heading">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L651">Schema</a></p></li>
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/transaction.rst">Extra Documentation</a></p></li>
+</ul>
+</section>
+<section id="subelements">
+<h2>Subelements<a class="headerlink" href="#subelements" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="value/">value</a></li>
+<li class="toctree-l1"><a class="reference internal" href="description/">description</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transaction-type/">transaction-type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="provider-org/">provider-org</a></li>
+<li class="toctree-l1"><a class="reference internal" href="receiver-org/">receiver-org</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transaction-date/">transaction-date</a></li>
+<li class="toctree-l1"><a class="reference internal" href="flow-type/">flow-type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finance-type/">finance-type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aid-type/">aid-type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tied-status/">tied-status</a></li>
+<li class="toctree-l1"><a class="reference internal" href="disbursement-channel/">disbursement-channel</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">transaction</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+<li><a class="reference internal" href="#subelements">Subelements</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../capital-spend/"
+                          title="previous chapter">capital-spend</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="value/"
+                          title="next chapter">value</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../_sources/activity-standard/iati-activities/iati-activity/transaction.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="value/" title="value"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../capital-spend/" title="capital-spend"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../" >iati-activity</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">transaction</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

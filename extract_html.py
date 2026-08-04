@@ -129,7 +129,7 @@ build_dirs = {
     "202": "IATI-Standard-SSOT-version-2.02/docs/en/_build/dirhtml",
     "201": "IATI-Standard-SSOT-version-2.01/docs/en/_build/dirhtml",
     "105": "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml",
-    "104": "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml",
+    "104": "IATI-Standard-SSOT-version-1.04/104.new",
     "103": "IATI-Standard-SSOT-version-1.03/103.new",
     "102": "IATI-Standard-SSOT-version-1.02/102.new",
     "101": "IATI-Standard-SSOT-version-1.01/101.new",
@@ -156,8 +156,8 @@ download_folders = {
         "IATI-Standard-SSOT-version-1.05/docs/en/_build/dirhtml/schema/downloads/": "schema/downloads"
     },
     "104": {
-        "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/codelists/downloads/": "codelists/downloads",
-        "IATI-Standard-SSOT-version-1.04/docs/en/_build/dirhtml/schema/downloads/": "schema/downloads"
+        "IATI-Standard-SSOT-version-1.04/104.new/codelists/downloads/": "codelists/downloads",
+        "IATI-Standard-SSOT-version-1.04/104.new/schema/downloads/": "schema/downloads"
     },
     "103": {},
     "102": {},

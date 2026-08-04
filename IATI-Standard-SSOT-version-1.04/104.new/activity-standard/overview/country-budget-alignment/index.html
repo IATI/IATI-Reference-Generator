@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Country Budget Alignment &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Classifications" href="../classifications/" />
+    <link rel="prev" title="Geography" href="../geography/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../classifications/" title="Classifications"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../geography/" title="Geography"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" accesskey="U">Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Country Budget Alignment</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="country-budget-alignment">
+<h1>Country Budget Alignment<a class="headerlink" href="#country-budget-alignment" title="Link to this heading">¶</a></h1>
+<section id="guidance-on-implementing-budget-and-aid-alignment">
+<h2>Guidance on implementing budget and aid alignment<a class="headerlink" href="#guidance-on-implementing-budget-and-aid-alignment" title="Link to this heading">¶</a></h2>
+<p>During the 2.03 upgrade process, decision was made to deprecate BudgetIdentifier codelist. As a result, further guidance was required to provide to publishers on implementing aid and budget alignment.
+This guidance explains how the methodology now works. It stems from work conducted by the IATI TAG 2017 Working Group on Aid and Budget Alignment, and reflects decisions made by the WP-STAT and IATI Steering Committee. In summary:</p>
+</section>
+<section id="publish-the-capital-spend-field">
+<h2>1) Publish the capital-spend field<a class="headerlink" href="#publish-the-capital-spend-field" title="Link to this heading">¶</a></h2>
+<p>For activities at the commitment stage, the percentage of an activity that is capital expenditure should be published using the <code class="docutils literal notranslate"><span class="pre">capital-spend</span></code> field. The definition of capital expenditure follows the IMF GFS definition:</p>
+<blockquote>
+<div><p>Capital spending is generally defined as physical assets with a useful life of more than one year. But it also includes capital improvements or the rehabilitation of physical assets that enhance or extend the useful life of the asset (as distinct from repair or maintenance, which assures that the asset is functional for its planned life). Capital includes all aspects of design and construction that are required to make the asset operational. Source: D Jacobs, 2009, Capital Expenditures and the Budget, IMF PFM Technical Guidance Note No 8. (IMF, Washington)]</p>
+</div></blockquote>
+<p>This definition was approved by <a class="reference external" href="http://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2015)30/REV1&amp;docLanguage=En/">WP-STAT under the written procedure</a> in February 2016.</p>
+</section>
+<section id="publish-detailed-crs-purpose-codes-in-the-sector-field">
+<h2>2) Publish detailed CRS purpose codes in the sector field<a class="headerlink" href="#publish-detailed-crs-purpose-codes-in-the-sector-field" title="Link to this heading">¶</a></h2>
+<p><strong>(a) Don’t use very broad codes</strong></p>
+<p>Broad “multisector aid” or “sector not specified” purpose codes are not mappable to budgets and are too aggregate to tell you much that is useful about the activity. Publishers should not use these purpose codes if they want activities to be mappable to budgets.</p>
+<p>List of multisector codes that should not be used (source <a class="reference external" href="http://www.aidtransparency.net/wp-content/uploads/2013/05/Study-on-better-reflecting-aid-flows-in-country-budgets.doc">IATI 2012 Study on Better Reflecting Aid Flows in Country Budgets</a>, <a class="reference external" href="http://www.aidtransparency.net/wp-content/uploads/2013/05/Annex-4-Common-Code-and-CRS-Spreadsheet.xls">Annex 4</a> - codes that are “not classifiable - multisector”):</p>
+<ul class="simple">
+<li><p>43010 - Multisector aid</p></li>
+<li><p>43050 - Non-agricultural alternative development</p></li>
+<li><p>43081 - Multisector education / training</p></li>
+<li><p>43082 - Research / scientific institutions</p></li>
+<li><p>52010 - Food aid/food security programmes</p></li>
+<li><p>99810 - Sectors not specified</p></li>
+</ul>
+<p><strong>(b) Use the more detailed “voluntary” CRS purpose codes, not “parent” codes</strong></p>
+<p>In a fairly broad sample of 35-40 countries, various studies found that more disaggregated (“voluntary”) codes under 15 existing CRS purpose codes were needed to map to budgets. Publishers should use the voluntary codes instead of the “parent” codes if they want their activities to be mappable to budgets.</p>
+<p>The CRS purpose codes, including the more detailed voluntary codes, are listed in the <a class="reference external" href="http://www.oecd.org/dac/financing-sustainable-development/development-finance-standards/DAC-CRS-CODES.xls">DAC and CRS codelists Excel sheet</a> .</p>
+<p>The additional codes were <a class="reference external" href="http://www.oecd.org/officialdocuments/publicdisplaydocumentpdf/?cote=DCD/DAC/STAT(2015)30/REV1&amp;docLanguage=En">approved by WP-STAT under the written procedure</a> in February 2016. The <a class="reference external" href="http://www.aidtransparency.net/wp-content/uploads/2013/01/Paper-4c-from-TAG-Working-Group-on-Budget-Identifier.pdf">IATI Steering Committee approved the use of the more detailed CRS purpose codes</a> (instead of using the “Common Code” codelist) in March 2014.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Country Budget Alignment</a><ul>
+<li><a class="reference internal" href="#guidance-on-implementing-budget-and-aid-alignment">Guidance on implementing budget and aid alignment</a></li>
+<li><a class="reference internal" href="#publish-the-capital-spend-field">1) Publish the capital-spend field</a></li>
+<li><a class="reference internal" href="#publish-detailed-crs-purpose-codes-in-the-sector-field">2) Publish detailed CRS purpose codes in the sector field</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../geography/"
+                          title="previous chapter">Geography</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../classifications/"
+                          title="next chapter">Classifications</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/activity-standard/overview/country-budget-alignment.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../classifications/" title="Classifications"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../geography/" title="Geography"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" >Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Country Budget Alignment</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

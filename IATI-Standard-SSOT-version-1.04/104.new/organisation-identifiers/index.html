@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="3" name="order" />
+
+    <title>Organisation Identifiers &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/traditional.css?v=c86a0c57" />
+    <script src="../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Activity Standard" href="../activity-standard/" />
+    <link rel="prev" title="Reference" href="../reference/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../activity-standard/" title="Activity Standard"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../reference/" title="Reference"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../reference/" accesskey="U">Reference</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Organisation Identifiers</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="organisation-identifiers">
+<h1>Organisation Identifiers<a class="headerlink" href="#organisation-identifiers" title="Link to this heading">¶</a></h1>
+<p>The <strong>IATI standard</strong> allows for the recording of information on all <em>organisations</em> that participate in any part of the lifecycle of an aid activity: inter alia donors, beneficiaries, extending and implementing agencies.</p>
+<p>Crucial to this, is a common process through which to identify and declare identifiers for these organisations.</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h2>
+<p><em>Organisational identifiers</em> have two uses in IATI.</p>
+<p>In the <strong>IATI organisation standard</strong>:</p>
+<ul class="simple">
+<li><p>They are used to identify organisations as reporting organisations (<code class="docutils literal notranslate"><span class="pre">reporting-org</span></code>), as receiving budgets (<code class="docutils literal notranslate"><span class="pre">recipient-org</span></code>), and of course as an <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code>.</p></li>
+<li><p>They form the <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code> - used to declare a globally unique identifier for the specific <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code></p></li>
+</ul>
+<p>In the <strong>IATI activity standard</strong>:</p>
+<ul class="simple">
+<li><p>They are used to identify organisations as reporting organisations (<code class="docutils literal notranslate"><span class="pre">reporting-org</span></code>), receiving funds (<code class="docutils literal notranslate"><span class="pre">receiver-org</span></code>), providing funds (<code class="docutils literal notranslate"><span class="pre">provider-org</span></code>), or otherwise involved in <code class="docutils literal notranslate"><span class="pre">iati-activities</span></code> (using <code class="docutils literal notranslate"><span class="pre">participating-org</span></code>)</p></li>
+<li><p>They form the basis of the <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code> - used to declare a globally unique activity identifier for the specific <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>  - composed of the reporting organisation Organisation ID, and an Activity ID.</p></li>
+</ul>
+</section>
+<section id="two-components-of-iati-organisation-identifiers">
+<h2>Two components of IATI Organisation Identifiers<a class="headerlink" href="#two-components-of-iati-organisation-identifiers" title="Link to this heading">¶</a></h2>
+<p><a class="reference external" href="Organisational-ID-Diagrams.png"><img alt="image0" src="../_images/Organisational-ID-Diagrams.png" /></a></p>
+<p>The two components of <strong>IATI Organisation Identifiers</strong></p>
+<p>The <strong>IATI Organisational Identifier</strong> scheme is based on re-using existing known identifiers for an <em>organisation</em>.</p>
+<p>Identifier strings consist of two components:</p>
+<ol class="arabic simple">
+<li><p>The <strong>namespace code</strong> - a code that creates and maintains a given organisational identifier registry</p></li>
+<li><p>The <strong>base identifier</strong> – re-use of an existing identifier from that namespace/registry</p></li>
+</ol>
+<p>1 and 2 are separated by a dash <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p>
+<p>The namespace code (1) may contain a dash <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p>
+</section>
+<section id="worked-example">
+<h2>Worked example<a class="headerlink" href="#worked-example" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">GB-COH</span></code> is the <strong>namespace code</strong> to the UK Companies Registrar which issues numerical company identifiers to legally constituted limited companies in the United Kingdom of Great Britain and Northern Ireland:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.companieshouse.gov.uk/">Companies House.</a>.</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">06368740</span></code> is the company number (base identifier) issued to Development Initiatives Poverty Research Limited.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://data.companieshouse.gov.uk/doc/company/06368740">Development Initiatives Poverty Research Limited record on Companies House.</a>.</p></li>
+</ul>
+<p>Combining these we get an <strong>IATI Organisational Identifier</strong> of: <code class="docutils literal notranslate"><span class="pre">GB-COH-06368740</span></code></p>
+</section>
+<section id="organisation-registration-agencies">
+<h2>Organisation Registration Agencies<a class="headerlink" href="#organisation-registration-agencies" title="Link to this heading">¶</a></h2>
+<p>To assist with creating and de-referencing <strong>IATI Organisation Identifiers</strong>, the codelist <a class="reference internal" href="../codelists/OrganisationRegistrationAgency/"><span class="doc">Organisation Registration Agency</span></a> is available.</p>
+<p>This codelist provides the <strong>namespace</strong> codes for a number of Registration Agencies.  This list is non-embedded in the <strong>IATI Standard</strong>, which means changes and additions may be made at short notice, outside of published decimal and integer upgrade schedules. If a Registation Agency that you wish to use is not on this list, please contact <a class="reference external" href="mailto:support&#37;&#52;&#48;iatistandard&#46;org">support<span>&#64;</span>iatistandard<span>&#46;</span>org</a>.</p>
+</section>
+<section id="guidance-on-selecting-an-organisation-registration-agencies-namespace">
+<h2>Guidance on selecting an Organisation Registration Agencies (namespace)<a class="headerlink" href="#guidance-on-selecting-an-organisation-registration-agencies-namespace" title="Link to this heading">¶</a></h2>
+<p>An <strong>IATI Organisation Identifier</strong> should:</p>
+<ul class="simple">
+<li><p><strong>Use an existing registration number/identifier</strong> that has been given to an organisation by an official registry of organisations (for example, a national company registrar, or drawn from a government register of charities). Registries that provide machine readable access to the data about organisations are generally preferred over those that do not (subject to (3) below).</p></li>
+<li><p><strong>Use a namespace/registry code from the existing IATI list of namespaces and registration agency codes</strong>. This is currently available as <a class="reference internal" href="../codelists/OrganisationRegistrationAgency/"><span class="doc">a codelist</span></a>. If no existing code is available then you should contact IATI Support with details of the registration agency you wish to re-use a code from in order to have a code set up.</p></li>
+<li><p><strong>Where an organisation has multiple registration numbers, prefer those identifiers which uniquely pick out the organisation itself, rather than properties of the organisation</strong>. For example, a VAT/Tax registration number describes that an entity is registered for tax, but may not map directly onto a single legal entity – as – for example – groups of companies may share a VAT registration number. For this reason, an identifier such as <code class="docutils literal notranslate"><span class="pre">GB-COH-123456</span></code> would be preferred to <code class="docutils literal notranslate"><span class="pre">GB-VAT-987765</span></code>.</p></li>
+<li><p><strong>Where an organisation is not identified in an official national registry, but it is identified on the (deprecated since v1.04 of the standard) ``OrganisationIdentifier`` codelist, these codes should be used as given.</strong>.</p></li>
+<li><p><strong>Where none of the above provide an appropriate identifier, third-parties may provide appropriate lists of organisations</strong>.  Consult with IATI Support to identify appropriate identifier lists.</p></li>
+<li><p><strong>Where no other identifiers are held or available</strong>, please contact IATI support.</p></li>
+</ul>
+<p>If you are unsure of which registration agency to prefer, please consult IATI Support. If no authoritative registration agency information is currently collected (e.g. internal identifiers and supplier numbers are recorded, but no external identifiers) IATI publishers are encouraged to identify opportunities to collect an authoritative public identifier.</p>
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
+<p>Once determined, the <strong>IATI Organisational Identifier</strong> can be used:</p>
+<ul class="simple">
+<li><p><strong>IATI organisation standard</strong>: as the <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code>, in the <code class="docutils literal notranslate"><span class="pre">&#64;ref</span></code> attribute of <code class="docutils literal notranslate"><span class="pre">reporting-org</span></code> and <code class="docutils literal notranslate"><span class="pre">recipient-org-budget/recipient-org</span></code>.</p></li>
+<li><p><strong>IATI activity standard</strong>: in the <code class="docutils literal notranslate"><span class="pre">&#64;ref</span></code> attribute of <code class="docutils literal notranslate"><span class="pre">reporting-org</span></code> and <code class="docutils literal notranslate"><span class="pre">participating-org</span></code>, and should be used in <code class="docutils literal notranslate"><span class="pre">&#64;ref</span></code> attribute of <code class="docutils literal notranslate"><span class="pre">transaction/provider-org</span></code> and <code class="docutils literal notranslate"><span class="pre">transaction/recipient-org</span></code>.</p></li>
+</ul>
+<p>The string value name within any organisational identifier XML tag is provided for convenience of consuming applications only, and should not be treated as definitive.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Organisation Identifiers</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#two-components-of-iati-organisation-identifiers">Two components of IATI Organisation Identifiers</a></li>
+<li><a class="reference internal" href="#worked-example">Worked example</a></li>
+<li><a class="reference internal" href="#organisation-registration-agencies">Organisation Registration Agencies</a></li>
+<li><a class="reference internal" href="#guidance-on-selecting-an-organisation-registration-agencies-namespace">Guidance on selecting an Organisation Registration Agencies (namespace)</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../reference/"
+                          title="previous chapter">Reference</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../activity-standard/"
+                          title="next chapter">Activity Standard</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/organisation-identifiers.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../activity-standard/" title="Activity Standard"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../reference/" title="Reference"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../reference/" >Reference</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Organisation Identifiers</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

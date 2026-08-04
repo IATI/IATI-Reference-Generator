@@ -1,0 +1,68 @@
+<codelist name="AidType-category" date-last-modified="2026-08-04T15:42:15.272821+00:00" version="" xml:lang="en">
+  <AidType-category>
+    <code>A</code>
+    <name>Budget support</name>
+    <language>en</language>
+    <description>For contributions under this category, the donor relinquishes the exclusive control of its funds by sharing the responsibility with the recipient.</description>
+  </AidType-category>
+  <AidType-category>
+    <code>B</code>
+    <name>Core contributions and pooled programmes and funds</name>
+    <language>en</language>
+    <description>For contributions under this category, the donor relinquishes the exclusive control of its funds by sharing the responsibility with other stakeholders (other donors, NGOs, multilateral institutions, Public Private Partnerships or PSI vehicles). The category covers both core contributions (B01 and B02), pooled contributions with a specific earmarking (B03 and B04) and PSI intra-governmental transfers (B05).</description>
+  </AidType-category>
+  <AidType-category>
+    <code>C</code>
+    <name>Project-type interventions</name>
+    <language>en</language>
+    <description>N.B.  Within this category, members able to do so are requested to report the aggregate amount used for financing donor experts/consultants on Table DAC11. Where the activity consists solely of experts&#8217; costs, report under category D.</description>
+  </AidType-category>
+  <AidType-category>
+    <code>D</code>
+    <name>Experts and other technical assistance</name>
+    <language>en</language>
+    <description>This category covers the provision, outside projects as described in category C, of know-how in the form of personnel, training and research.</description>
+  </AidType-category>
+  <AidType-category>
+    <code>E</code>
+    <name>Scholarships and student costs in donor countries</name>
+    <language>en</language>
+  </AidType-category>
+  <AidType-category>
+    <code>F</code>
+    <name>Debt relief</name>
+    <language>en</language>
+  </AidType-category>
+  <AidType-category>
+    <code>G</code>
+    <name>Administrative costs not included elsewhere</name>
+    <language>en</language>
+  </AidType-category>
+  <AidType-category>
+    <code>H</code>
+    <name>Other in-donor expenditures</name>
+    <language>en</language>
+    <description>Groups a number of contributions that do not give rise to a cross-border flow.</description>
+  </AidType-category>
+  <AidType-category>
+    <code>I</code>
+    <name>Support to refugees / protected persons</name>
+    <language>en</language>
+    <description>Covers expenses on the temporary sustenance of refugees and protected persons in refugee-like situations in the provider country as well as financial, material or technical support to refugees in other host countries. Also includes support to refugees returning to their countries of origin.</description>
+  </AidType-category>
+  <AidType-category>
+    <code>J</code>
+    <name>In-kind donations</name>
+    <language>en</language>
+  </AidType-category>
+  <AidType-category>
+    <code>K</code>
+    <name>Research and development</name>
+    <language>en</language>
+  </AidType-category>
+  <AidType-category>
+    <code>L</code>
+    <name>Direct cash transfers to developing countries</name>
+    <language>en</language>
+  </AidType-category>
+</codelist>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Type of Organisations &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Budgets" href="../budgets/" />
+    <link rel="prev" title="IATI Organisation" href="../iati-organisation/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../budgets/" title="Budgets"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../iati-organisation/" title="IATI Organisation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Organisation Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" accesskey="U">Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Type of Organisations</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="type-of-organisations">
+<h1>Type of Organisations<a class="headerlink" href="#type-of-organisations" title="Link to this heading">¶</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>Within the <strong>IATI organisation standard</strong> three types of <em>organisations</em> can be declared:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">reporting-org</span></code> - the organisation publishing the data within the <em>organisation file</em>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code> - the organisation that the data is about</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">recipient-org</span></code> - the organisation in receipt of budgets specified in <code class="docutils literal notranslate"><span class="pre">recipient-org-budget</span></code></p></li>
+</ul>
+</section>
+<section id="considerations">
+<h2>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">¶</a></h2>
+<p>When using the <strong>IATI organisation standard</strong> to declare <em>organisations</em>, the following should be considered:</p>
+<ul class="simple">
+<li><p>In many cases, an <em>organisation file</em> will contain information from the perspective of a single <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code>.  Most commonly, this will be the same as the <code class="docutils literal notranslate"><span class="pre">reporting-org</span></code></p></li>
+<li><p>Multiple <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code> can be described in a single <em>organisation file</em>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">reporting-org</span></code> and <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code> should include reference to their associated unique <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code></p></li>
+<li><p>For <code class="docutils literal notranslate"><span class="pre">reporting-org</span></code>, inclusion of the <code class="docutils literal notranslate"><span class="pre">OrganisationType</span></code> code is recommended.</p></li>
+<li><p>An <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code> should include a <code class="docutils literal notranslate"><span class="pre">name</span></code> element - free text title of the organisation</p></li>
+<li><p>Single or multiple <code class="docutils literal notranslate"><span class="pre">recipient-org</span></code> entries can be recorded.</p></li>
+<li><p>For each <code class="docutils literal notranslate"><span class="pre">recipient-org</span></code> multiple forward looking <code class="docutils literal notranslate"><span class="pre">recipient-org-budget</span></code> can be recorded.</p></li>
+</ul>
+</section>
+<section id="further-guidance">
+<h2>Further Guidance<a class="headerlink" href="#further-guidance" title="Link to this heading">¶</a></h2>
+<p>Please also consider and refer to the <a class="reference internal" href="../../../organisation-identifiers/"><span class="doc">Organisation Identifiers guidance</span></a> when constructing an appropriate identifier.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Type of Organisations</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#considerations">Considerations</a></li>
+<li><a class="reference internal" href="#further-guidance">Further Guidance</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../iati-organisation/"
+                          title="previous chapter">IATI Organisation</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../budgets/"
+                          title="next chapter">Budgets</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/organisation-standard/overview/organisations.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../budgets/" title="Budgets"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../iati-organisation/" title="IATI Organisation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Organisation Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" >Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Type of Organisations</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

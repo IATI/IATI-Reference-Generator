@@ -18,11 +18,6 @@
 	url = https://github.com/IATI/IATI-Standard-SSOT.git
 	branch = version-1.05
 	ignore = dirty
-[submodule "IATI-Standard-SSOT-version-1.04"]
-	path = IATI-Standard-SSOT-version-1.04
-	url = https://github.com/IATI/IATI-Standard-SSOT.git
-	branch = version-1.04
-	ignore = dirty
 [submodule "IATI-Guidance"]
 	path = IATI-Guidance
 	url = https://github.com/IATI/IATI-Guidance.git
