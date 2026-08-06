@@ -1,0 +1,10 @@
+code,name,description,category,url
+ADT,AidData,,,
+COFOG,COFOG (UN),,,http://unstats.un.org/unsd/cr/registry/regcst.asp?Cl=4
+DAC,OCDE Comité d'aide au développement,,,http://www.oecd.org/dac/stats/dacandcrscodelists.htm
+DAC-3,OCDE Comité d'aide au développement 3 digit codes,,,http://www.oecd.org/dac/stats/dacandcrscodelists.htm
+ISO,Organisation internationale de normalisation,,,
+NACE,Nomenclature statistique des activités économiques dans la Communauté européenne,,,http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=NACE_REV2&StrLanguageCode=EN
+NTEE,National Taxonomy for Exempt Entities (USA),,,http://nccs.urban.org/classification/NTEE.cfm
+RO,Organisation déclarante (i.e. maintained by the organisation referred to in the <reporting-org> element.,,,
+WB,Banque mondiale,,,

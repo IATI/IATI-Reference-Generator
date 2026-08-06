@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Result &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Related Data" href="../related-data/" />
+    <link rel="prev" title="Transaction" href="../transactions/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../related-data/" title="Related Data"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../transactions/" title="Transaction"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" accesskey="U">Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Result</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="result">
+<h1>Result<a class="headerlink" href="#result" title="Link to this heading">¶</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>The <strong>IATI activity standard</strong> enables the publishing of information on measurable results from an <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>, through use of the <code class="docutils literal notranslate"><span class="pre">result</span></code> element via:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">result</span></code> - a container for reporting outputs, outcomes, impacts and other results that stem directly from the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>.</p></li>
+</ul>
+</section>
+<section id="considerations">
+<h2>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">¶</a></h2>
+<p>When using the <strong>IATI activity standard</strong> to declare <em>result</em>, the following should be considered:</p>
+<ul class="simple">
+<li><p>Any <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code> can have multiple <code class="docutils literal notranslate"><span class="pre">result</span></code> elements.</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">result</span></code> should have a <code class="docutils literal notranslate"><span class="pre">title</span></code> and a <code class="docutils literal notranslate"><span class="pre">description</span></code> to clarify the information being detailed.</p></li>
+<li><p>Every <code class="docutils literal notranslate"><span class="pre">result</span></code> should include an <code class="docutils literal notranslate"><span class="pre">indicator</span></code>, which in turn details a period of time, and then a <code class="docutils literal notranslate"><span class="pre">target</span></code> and <code class="docutils literal notranslate"><span class="pre">actual</span></code> measure.</p></li>
+<li><p>An <code class="docutils literal notranslate"><span class="pre">indicator</span></code> can have a <code class="docutils literal notranslate"><span class="pre">title</span></code> and a <code class="docutils literal notranslate"><span class="pre">description</span></code> to clarify the information being detailed.</p></li>
+<li><p>An <code class="docutils literal notranslate"><span class="pre">indicator</span></code> can be repeated within any <code class="docutils literal notranslate"><span class="pre">result</span></code>.</p></li>
+<li><p>It is also recommended to include a <code class="docutils literal notranslate"><span class="pre">baseline</span></code> measure for each <code class="docutils literal notranslate"><span class="pre">result</span></code> recorded.</p></li>
+<li><p>Any <code class="docutils literal notranslate"><span class="pre">target</span></code>, <code class="docutils literal notranslate"><span class="pre">actual</span></code> and <code class="docutils literal notranslate"><span class="pre">baseline</span></code> can have attached a <code class="docutils literal notranslate"><span class="pre">comment</span></code> to provide additional narrative or information.</p></li>
+<li><p>The free-text instances of <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">description</span></code> and <code class="docutils literal notranslate"><span class="pre">comment</span></code> can be repeated for multiple languages, using <code class="docutils literal notranslate"><span class="pre">xml:lang</span></code>.</p></li>
+<li><p>The free-text instances of <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">description</span></code> and <code class="docutils literal notranslate"><span class="pre">comment</span></code> should avoid use of text in CAPITALS, where possible.</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Result</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#considerations">Considerations</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../transactions/"
+                          title="previous chapter">Transaction</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../related-data/"
+                          title="next chapter">Related Data</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/activity-standard/overview/result.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../related-data/" title="Related Data"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../transactions/" title="Transaction"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" >Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Result</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

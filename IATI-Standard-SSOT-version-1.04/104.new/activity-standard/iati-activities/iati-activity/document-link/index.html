@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>document-link &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../search/" />
+    <link rel="next" title="title" href="title/" />
+    <link rel="prev" title="disbursement-channel" href="../transaction/disbursement-channel/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="title/" title="title"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../transaction/disbursement-channel/" title="disbursement-channel"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../" accesskey="U">iati-activity</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">document-link</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="document-link">
+<h1>document-link<a class="headerlink" href="#document-link" title="Link to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">iati-activities/iati-activity/document-link</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal notranslate"><span class="pre">document-link</span></code>.</p>
+<section id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>A categorized link to an external document.</p>
+<p>The schema states that this element must have at least 1 subelement.</p>
+</section>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<dl id="iati-activities-iati-activity-document-link-url">
+<dt>&#64;url</dt><dd><p>The target URL of the external document, e.g. “<a class="reference external" href="http://www.example.org/doc.odt">http://www.example.org/doc.odt</a>”.</p>
+<p>This value must be of type xsd:anyURI.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-document-link-format">
+<dt>&#64;format</dt><dd><p>The MIME type of the external document,
+e.g. “application/pdf”.  A list of MIME types
+appears at <a class="reference external" href="http://iatistandard.org/codelists/file_format">http://iatistandard.org/codelists/file_format</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a class="reference internal" href="../../../../codelists/FileFormat/"><span class="doc">FileFormat codelist</span></a>.</p>
+</dd>
+</dl>
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Example <code class="docutils literal notranslate"><span class="pre">document-link</span></code> with <code class="docutils literal notranslate"><span class="pre">FileFormat</span></code> <em>application/vnd.oasis.opendocument.text</em>.</div>
+<div class="line"><br /></div>
+<div class="line">The <code class="docutils literal notranslate"><span class="pre">DocumentCategory</span></code> is declared as <em>A01</em>.</div>
+<div class="line"><br /></div>
+<div class="line">Note: <code class="docutils literal notranslate"><span class="pre">DocumentCategory</span></code> codes with the <em>A</em> <code class="docutils literal notranslate"><span class="pre">DocumentCategory</span></code> prefix are recommended within the <strong>IATI activity standard</strong> <code class="docutils literal notranslate"><span class="pre">document-link</span></code> element.</div>
+</div>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_en.odt&quot;</span><span class="nt">&gt;</span>
+</span><span class="w">   </span><span class="nt">&lt;title&gt;</span>Project<span class="w"> </span>report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="hll"><span class="w">  </span><span class="nt">&lt;/document-link&gt;</span>
+</span></pre></div>
+</div>
+</section>
+<section id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h2>
+<section id="id1">
+<h3>1.02<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p>Removed language attribute from, and introduced an new <code class="docutils literal notranslate"><span class="pre">language</span></code> child element to, the <code class="docutils literal notranslate"><span class="pre">document-link</span></code> element.</p>
+</section>
+</section>
+<section id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Link to this heading">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-common.xsd#L119">Schema</a></p></li>
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/document-link.rst">Extra Documentation</a></p></li>
+</ul>
+</section>
+<section id="subelements">
+<h2>Subelements<a class="headerlink" href="#subelements" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="title/">title</a></li>
+<li class="toctree-l1"><a class="reference internal" href="category/">category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language/">language</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">document-link</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#changelog">Changelog</a><ul>
+<li><a class="reference internal" href="#id1">1.02</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+<li><a class="reference internal" href="#subelements">Subelements</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../transaction/disbursement-channel/"
+                          title="previous chapter">disbursement-channel</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="title/"
+                          title="next chapter">title</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../_sources/activity-standard/iati-activities/iati-activity/document-link.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="title/" title="title"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../transaction/disbursement-channel/" title="disbursement-channel"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../" >iati-activity</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">document-link</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

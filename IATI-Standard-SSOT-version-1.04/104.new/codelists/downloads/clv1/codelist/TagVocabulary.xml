@@ -1,0 +1,37 @@
+<codelist name="TagVocabulary" date-last-modified="2026-08-04T15:42:15.131741+00:00" version="" xml:lang="en">
+  <TagVocabulary>
+    <code>1</code>
+    <name>Agrovoc</name>
+    <language>en</language>
+    <description>A controlled vocabulary covering all areas of interest of the Food and Agriculture Organization (FAO) of the United Nations, including food, nutrition, agriculture, fisheries, forestry, environment etc.</description>
+  </TagVocabulary>
+  <TagVocabulary>
+    <code>2</code>
+    <name>UN Sustainable Development Goals (SDG)</name>
+    <language>en</language>
+    <description>A value from the top-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1&#8217;)</description>
+  </TagVocabulary>
+  <TagVocabulary>
+    <code>3</code>
+    <name>UN Sustainable Development Goals (SDG) Targets</name>
+    <language>en</language>
+    <description>A value from the second-level list of UN sustainable development goals (SDGs) (e.g. &#8216;1.1&#8217;)</description>
+  </TagVocabulary>
+  <TagVocabulary>
+    <code>4</code>
+    <name>Team Europe Initiatives</name>
+    <language>en</language>
+    <description>A value from the list of Team Europe Initiatives. Team Europe consists of the European Commission, the EU Member States &#8212; including their implementing agencies and public development banks &#8212; as well as the European Investment Bank (EIB) and the European Bank for Reconstruction and Development (EBRD).</description>
+  </TagVocabulary>
+  <TagVocabulary>
+    <code>5</code>
+    <name>Global Food and Nutrition Security (GFNS) Preparedness Plan (PP)</name>
+    <language>en</language>
+    <description>A two-digit ISO code corresponding to a country that has an active Global Food and Nutrition Security (GFNS) Preparedness Plan (PP).</description>
+  </TagVocabulary>
+  <TagVocabulary>
+    <code>99</code>
+    <name>Reporting Organisation</name>
+    <language>en</language>
+  </TagVocabulary>
+</codelist>

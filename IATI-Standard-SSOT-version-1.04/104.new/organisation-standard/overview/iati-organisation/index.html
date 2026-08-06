@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>IATI Organisation &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Type of Organisations" href="../organisations/" />
+    <link rel="prev" title="Organisation file" href="../organisation-file/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../organisations/" title="Type of Organisations"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../organisation-file/" title="Organisation file"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Organisation Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" accesskey="U">Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">IATI Organisation</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="iati-organisation">
+<h1>IATI Organisation<a class="headerlink" href="#iati-organisation" title="Link to this heading">¶</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>Within the <strong>IATI organisation standard</strong>. the <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code> is the building block to describe organisations.</p>
+<div class="line-block">
+<div class="line">An <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code> represents a distinct grouping of information that reports various facts about an organisation.</div>
+</div>
+<div class="line-block">
+<div class="line">For each <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code> described, the following are expected as a minium:</div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code> is the unique reference for the organisation.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> - a human-readable name of the organisation.</p></li>
+</ul>
+</section>
+<section id="considerations">
+<h2>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">¶</a></h2>
+<p>When using the <strong>IATI organisation standard</strong> to declare an <em>iati-organisation</em>, the following should be considered:</p>
+<ul class="simple">
+<li><p>Every <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code> must use a globally unique <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code></p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code> should have no leading or trailing whitespace.</p></li>
+<li><p>It is recommended that no forward slashes (/) or spaces should be contained within the <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code>.</p></li>
+<li><dl class="simple">
+<dt>It is recommended to avoid spaces and non-ascii characters.  For example:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">AA-AAA-123456789</span></code> is preferable to <code class="docutils literal notranslate"><span class="pre">AA-AAA</span> <span class="pre">123456789</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>A default language and <code class="docutils literal notranslate"><span class="pre">default-currency</span></code> can be set for any <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code>.  This can be overridden in subsequent elements.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">last-updated-datetime</span></code> date must change whenever the value of any field within the associated <code class="docutils literal notranslate"><span class="pre">iati-organisation</span></code> are updated.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">name</span></code> can be repeated for different languages.</p></li>
+<li><p>The free-text instance of <code class="docutils literal notranslate"><span class="pre">name</span></code> should avoid use of text in CAPITALS, where possible.</p></li>
+</ul>
+</section>
+<section id="further-guidance">
+<h2>Further Guidance<a class="headerlink" href="#further-guidance" title="Link to this heading">¶</a></h2>
+<p>Please also consider and refer to the <a class="reference internal" href="../../../organisation-identifiers/"><span class="doc">Organisation Identifiers guidance</span></a> when constructing an appropriate identifier.</p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">IATI Organisation</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#considerations">Considerations</a></li>
+<li><a class="reference internal" href="#further-guidance">Further Guidance</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../organisation-file/"
+                          title="previous chapter">Organisation file</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../organisations/"
+                          title="next chapter">Type of Organisations</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/organisation-standard/overview/iati-organisation.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../organisations/" title="Type of Organisations"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../organisation-file/" title="Organisation file"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Organisation Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" >Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">IATI Organisation</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

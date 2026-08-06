@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Standard Ruleset &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="IATI Ruleset Spec" href="../ruleset-spec/" />
+    <link rel="prev" title="Rulesets" href="../" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../ruleset-spec/" title="IATI Ruleset Spec"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../" title="Rulesets"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" accesskey="U">Rulesets</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Standard Ruleset</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="standard-ruleset">
+<h1>Standard Ruleset<a class="headerlink" href="#standard-ruleset" title="Link to this heading">¶</a></h1>
+<p>The Standard Ruleset is a collection of rules that cover some of the basic requirements of the IATI Standard. It covers for example, the ordering of dates, and checks on the format of an iati-identifier.</p>
+<section id="using-the-standard-ruleset">
+<h2>Using the Standard Ruleset<a class="headerlink" href="#using-the-standard-ruleset" title="Link to this heading">¶</a></h2>
+<p>The current Standard Ruleset is applicable to a single <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>.</p>
+<p>Each test, detailed below, can be repeated within an <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>, depending upon the scope and scale of elements of the <strong>IATI Activity Standard</strong> used.</p>
+<p>For example, an activity with a single <code class="docutils literal notranslate"><span class="pre">transaction</span></code> would only be subject to two tests (detailed below).  For each and every time a <code class="docutils literal notranslate"><span class="pre">transaction</span></code> is repeated within an <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>, these tests would be undertaken subsequently.</p>
+<p>Hence, the minimum and maximum number of tests undertaken on an <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code> can fluctuate according to the content.</p>
+<p>This could also be duplicated, if the tests are run on a single <em>IATI activity file</em>, which contains multiple <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code> instances.</p>
+</section>
+<section id="contents-of-the-ruleset">
+<h2>Contents of the Ruleset<a class="headerlink" href="#contents-of-the-ruleset" title="Link to this heading">¶</a></h2>
+<p>The ruleset consists of two types of rules:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Starts</span> <span class="pre">with</span></code> - conditions around the formation of the <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Date</span> <span class="pre">order</span></code> - logics around the ordering of various date elements.</p></li>
+</ul>
+<p>These rules are applicable to various elements:</p>
+</section>
+<section id="iati-activity">
+<h2>//iati-activity<a class="headerlink" href="#iati-activity" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">activity-date[&#64;type='start-actual']/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal notranslate"><span class="pre">activity-date[&#64;type='end-actual']/&#64;iso-date</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">activity-date[&#64;type='start-planned']/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal notranslate"><span class="pre">activity-date[&#64;type='end-planned']/&#64;iso-date</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">activity-date[&#64;type='start-actual']/&#64;iso-date</span></code> must not be in the future.</p>
+<p><code class="docutils literal notranslate"><span class="pre">activity-date[&#64;type='end-actual']/&#64;iso-date</span></code> must not be in the future.</p>
+<p><code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code> should start with the value in <code class="docutils literal notranslate"><span class="pre">reporting-org/&#64;ref</span></code></p>
+</section>
+<section id="transaction">
+<h2>//transaction<a class="headerlink" href="#transaction" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">transaction-date/&#64;iso-date</span></code> must not be in the future.</p>
+<p><code class="docutils literal notranslate"><span class="pre">value/&#64;value-date</span></code> must not be in the future.</p>
+</section>
+<section id="planned-disbursement">
+<h2>//planned-disbursement<a class="headerlink" href="#planned-disbursement" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal notranslate"><span class="pre">period-end/&#64;iso-date</span></code></p>
+</section>
+<section id="result-indicator-period">
+<h2>//result/indicator/period<a class="headerlink" href="#result-indicator-period" title="Link to this heading">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">period-start/&#64;iso-date</span></code> must be before or the same as <code class="docutils literal notranslate"><span class="pre">period-end/&#64;iso-date</span></code></p>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Standard Ruleset</a><ul>
+<li><a class="reference internal" href="#using-the-standard-ruleset">Using the Standard Ruleset</a></li>
+<li><a class="reference internal" href="#contents-of-the-ruleset">Contents of the Ruleset</a></li>
+<li><a class="reference internal" href="#iati-activity">//iati-activity</a></li>
+<li><a class="reference internal" href="#transaction">//transaction</a></li>
+<li><a class="reference internal" href="#planned-disbursement">//planned-disbursement</a></li>
+<li><a class="reference internal" href="#result-indicator-period">//result/indicator/period</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../"
+                          title="previous chapter">Rulesets</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../ruleset-spec/"
+                          title="next chapter">IATI Ruleset Spec</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/rulesets/standard-ruleset.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../ruleset-spec/" title="IATI Ruleset Spec"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../" title="Rulesets"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" >Rulesets</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Standard Ruleset</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

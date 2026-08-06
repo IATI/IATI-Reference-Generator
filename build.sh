@@ -40,12 +40,9 @@ rm -rf IATI-Extra-Documentation/en/_build
 ./gen.sh
 cd ..
 
-cd IATI-Standard-SSOT-version-1.04
-git submodule init
-git submodule update
-rm -rf IATI-Extra-Documentation/en/_build
-./gen.sh
-cd ..
+# Version 1.04 is no longer built. Like 1.01-1.03, it is now shipped as a
+# static snapshot (IATI-Standard-SSOT-version-1.04/104.new) which
+# extract_html.py reads directly.
 
 cd IATI-Guidance/en
 rm -rf _build

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>title &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../../search/" />
+    <link rel="next" title="description" href="../description/" />
+    <link rel="prev" title="result" href="../" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../description/" title="description"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../" title="result"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../../" >iati-activity</a> &#187;</li>
+          <li class="nav-item nav-item-6"><a href="../" accesskey="U">result</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">title</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="title">
+<h1>title<a class="headerlink" href="#title" title="Link to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">iati-activities/iati-activity/result/title</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal notranslate"><span class="pre">title</span></code>.</p>
+<section id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>A short, human-readable title.  May be repeated for different
+languages.</p>
+</section>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<dl id="iati-activities-iati-activity-result-title-xml-lang">
+<dt>&#64;xml:lang</dt><dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a class="reference internal" href="../../../../../codelists/Language/"><span class="doc">Language codelist</span></a>.</p>
+</dd>
+</dl>
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
+<p>Example usage of <code class="docutils literal notranslate"><span class="pre">title</span></code> in context of <code class="docutils literal notranslate"><span class="pre">result</span></code> element.</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="nt">&lt;result</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">aggregation-status=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="hll"><span class="w">   </span><span class="nt">&lt;title&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+</span><span class="w">   </span><span class="nt">&lt;description&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;indicator</span><span class="w"> </span><span class="na">measure=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">ascending=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">     </span><span class="nt">&lt;title&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">     </span><span class="nt">&lt;description&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">     </span><span class="nt">&lt;baseline</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2012&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment&gt;</span>Baseline<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span>
+<span class="w">     </span><span class="nt">&lt;/baseline&gt;</span>
+<span class="w">     </span><span class="nt">&lt;period&gt;</span>
+<span class="w">      </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">       </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-03-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">       </span><span class="nt">&lt;target</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;comment&gt;</span>Target<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span><span class="w"> </span>
+<span class="w">       </span><span class="nt">&lt;/target&gt;</span>
+<span class="w">       </span><span class="nt">&lt;actual</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;11&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;comment&gt;</span>Actual<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span><span class="w"> </span>
+<span class="w">       </span><span class="nt">&lt;/actual&gt;</span>
+<span class="w">     </span><span class="nt">&lt;/period&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/indicator&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/result&gt;</span>
+</pre></div>
+</div>
+<p>It may be appropriate to repeat the <code class="docutils literal notranslate"><span class="pre">title</span></code> in other languages using <code class="docutils literal notranslate"><span class="pre">xml:lang</span></code> attribute.
+In this example, the language <em>en</em> has been set in the ‘’iati-activity’’ element:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="nt">&lt;result</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">aggregation-status=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="hll"><span class="w">   </span><span class="nt">&lt;title&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+</span><span class="hll"><span class="w">   </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>titre<span class="nt">&lt;/title&gt;</span>
+</span><span class="w">   </span><span class="nt">&lt;description&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;indicator</span><span class="w"> </span><span class="na">measure=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">ascending=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;title&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">    </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>titre<span class="nt">&lt;/title&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">    </span><span class="nt">&lt;baseline</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2012&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+<span class="w">     </span><span class="nt">&lt;comment&gt;</span>Baseline<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span>
+<span class="w">     </span><span class="nt">&lt;comment</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Baseline<span class="w"> </span>comment<span class="w"> </span>texte<span class="nt">&lt;/comment&gt;</span><span class="w"> </span>
+<span class="w">    </span><span class="nt">&lt;/baseline&gt;</span>
+<span class="w">    </span><span class="nt">&lt;period&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="nt">/&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-03-31&quot;</span><span class="nt">/&gt;</span>
+<span class="w">     </span><span class="nt">&lt;target</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment&gt;</span>Target<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Target<span class="w"> </span>comment<span class="w"> </span>texte<span class="nt">&lt;/comment&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;/target&gt;</span>
+<span class="w">     </span><span class="nt">&lt;actual</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;11&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment&gt;</span>Actual<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Actual<span class="w"> </span>comment<span class="w"> </span>texte<span class="nt">&lt;/comment&gt;</span><span class="w">     </span>
+<span class="w">     </span><span class="nt">&lt;/actual&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/period&gt;</span><span class="w"> </span>
+<span class="w">   </span><span class="nt">&lt;/indicator&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/result&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Link to this heading">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-common.xsd#L27">Schema</a></p></li>
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/result/title.rst">Extra Documentation</a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">title</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../"
+                          title="previous chapter">result</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../description/"
+                          title="next chapter">description</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../../_sources/activity-standard/iati-activities/iati-activity/result/title.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../description/" title="description"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../" title="result"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../../" >iati-activity</a> &#187;</li>
+          <li class="nav-item nav-item-6"><a href="../" >result</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">title</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

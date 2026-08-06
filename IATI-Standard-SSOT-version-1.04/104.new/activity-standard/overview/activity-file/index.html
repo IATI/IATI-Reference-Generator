@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Activity file &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="IATI Activity" href="../iati-activity/" />
+    <link rel="prev" title="Activity Standard Summary Table" href="../../summary-table/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../iati-activity/" title="IATI Activity"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../../summary-table/" title="Activity Standard Summary Table"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" accesskey="U">Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Activity file</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="activity-file">
+<h1>Activity file<a class="headerlink" href="#activity-file" title="Link to this heading">¶</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>The <em>activity file</em> contains the data defined by the <strong>IATI activity standard</strong>.</p>
+<p>It is an XML file, containing the relevant <strong>IATI activity standard</strong> fields for the publishing organisation.</p>
+</section>
+<section id="considerations">
+<h2>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">¶</a></h2>
+<p>When using the <strong>IATI activity standard</strong> to produce an <em>iati-identifier</em>, the following should be considered:</p>
+<ul class="simple">
+<li><p>An IATI publisher should publish at least one activity file.</p></li>
+<li><p>An activity file should contain at least one <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code></p></li>
+<li><p>It should be updated at least annually.</p></li>
+<li><p>It must be <span class="xref std std-doc">well-formed XML</span>.</p></li>
+<li><p>It must validate against the relevant version of the <a class="reference internal" href="../../../schema/"><span class="doc">**IATI activity schema**</span></a></p></li>
+<li><p>Any <em>activity file</em> must have <code class="docutils literal notranslate"><span class="pre">iati-activities</span></code> as the root element - to contain all other elements.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">generated-datetime</span></code> attribute of <code class="docutils literal notranslate"><span class="pre">iati-activities</span></code> - a date/time stamp for when the <em>activity-file</em> was generated - is highly recommended.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">generated-datetime</span></code> is declared at the <code class="docutils literal notranslate"><span class="pre">iati-activities</span></code> level.  Is not necessarily the same as the <code class="docutils literal notranslate"><span class="pre">last-updated-datetime</span></code> for the individual <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code> records within it.</p></li>
+<li><p>Across a set of <em>activity files</em> published by a single organisation, individual <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>, referenced via a unique <code class="docutils literal notranslate"><span class="pre">iati-identifier</span></code>, should not be duplicated.</p></li>
+<li><p>A link to the activity file(s) should be published on the <strong>IATI Registry</strong>.</p></li>
+<li><p>Ideally, this link would be to an activity file(s) on the publisher website or open data portal.  However, third party tools are available to generate and host files on behalf of publishers.</p></li>
+<li><dl class="simple">
+<dt>When creating the <em>activity file</em> it is recommended to avoid spaces and non-ascii characters in file names and urls.  For example:</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">iatiactivity.xml</span></code> is preferable to <code class="docutils literal notranslate"><span class="pre">IATI</span> <span class="pre">Activity.xml</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">http://example.org/files/iatidata/iatiactivity.xml</span></code> is preferable to <code class="docutils literal notranslate"><span class="pre">http://example.org/files/iati</span> <span class="pre">data/IATI</span> <span class="pre">Activity.xml</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<section id="further-guidance">
+<h2>Further Guidance<a class="headerlink" href="#further-guidance" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>For <em>well-formed XML</em> tests, see the <a class="reference external" href="http://www.w3schools.com/xml/xml_validator.asp">W3C XML Validator</a></p></li>
+<li><p>The <a class="reference external" href="http://validator.iatistandard.org/">IATI Validator</a> tests data against the relevant version of the <strong>IATI organisation schema</strong>.</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Activity file</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#considerations">Considerations</a></li>
+<li><a class="reference internal" href="#further-guidance">Further Guidance</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../../summary-table/"
+                          title="previous chapter">Activity Standard Summary Table</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../iati-activity/"
+                          title="next chapter">IATI Activity</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/activity-standard/overview/activity-file.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../iati-activity/" title="IATI Activity"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../../summary-table/" title="Activity Standard Summary Table"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" >Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Activity file</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

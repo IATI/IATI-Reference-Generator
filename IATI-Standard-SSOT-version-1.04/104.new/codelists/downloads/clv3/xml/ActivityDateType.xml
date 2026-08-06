@@ -1,0 +1,41 @@
+<codelist name="ActivityDateType" xml:lang="en" complete="1" embedded="1">
+    <metadata>
+        <name>
+            <narrative>Activity Date Type</narrative>
+        </name>
+        <description>
+            <narrative>Types of date for activities</narrative>
+        </description>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>start-actual</code>
+            <name>
+                <narrative>The actual start date, such as date of first disbursement</narrative>
+                <narrative xml:lang="fr">d&#233;but-r&#233;el</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>end-actual</code>
+            <name>
+                <narrative>The actual end date, such as date of last disbursement</narrative>
+                <narrative xml:lang="fr">fin-r&#233;elle</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>start-planned</code>
+            <name>
+                <narrative>The planned start date as recorded in project documentation. Can be date of signature of activity agreement or approval by relevant body</narrative>
+                <narrative xml:lang="fr">d&#233;but-pr&#233;vu</narrative>
+            </name>
+        </codelist-item>
+        <codelist-item>
+            <code>end-planned</code>
+            <name>
+                <narrative>The planned end date as recorded in project documentation</narrative>
+                <narrative xml:lang="fr">fin-pr&#233;vue</narrative>
+            </name>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

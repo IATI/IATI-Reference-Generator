@@ -1,0 +1,61 @@
+<codelist name="GeographicLocationClass" xml:lang="en" complete="1" embedded="0">
+    <metadata>
+        <category>
+            <narrative>Non-Core</narrative>
+        </category>
+        <name>
+            <narrative>Geographic Location Class</narrative>
+            <narrative xml:lang="fr">Cat&#233;gorie du lieu g&#233;ographique</narrative>
+        </name>
+        <description>
+            <narrative/>
+        </description>
+    </metadata>
+    <codelist-items>
+        <codelist-item>
+            <code>1</code>
+            <name>
+                <narrative>Administrative Region</narrative>
+                <narrative xml:lang="fr">R&#233;gion administrative</narrative>
+            </name>
+            <description>
+                <narrative>The designated geographic location is an administrative region (state, county, province, district, municipality etc.)</narrative>
+                <narrative xml:lang="fr">Le lieu indiqu&#233; est une r&#233;gion administrative (&#233;tat, comt&#233;, province, district, municipalit&#233;, etc.).</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>2</code>
+            <name>
+                <narrative>Populated Place</narrative>
+                <narrative xml:lang="fr">Lieu habit&#233;</narrative>
+            </name>
+            <description>
+                <narrative>The designated geographic location is a populated place (town, village, farm etc.)</narrative>
+                <narrative xml:lang="fr">Le lieu indiqu&#233; est habit&#233; (ville, village, exploitation agricole, etc.).</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>3</code>
+            <name>
+                <narrative>Structure</narrative>
+                <narrative xml:lang="fr">Structure</narrative>
+            </name>
+            <description>
+                <narrative>The designated geopgraphic location is a structure (such as a school or a clinic)</narrative>
+                <narrative xml:lang="fr">Le lieu indiqu&#233; est un &#233;tablissement (p. ex., une &#233;cole ou une clinique).</narrative>
+            </description>
+        </codelist-item>
+        <codelist-item>
+            <code>4</code>
+            <name>
+                <narrative>Other Topographical Feature</narrative>
+                <narrative xml:lang="fr">Autre &#233;l&#233;ment topographique</narrative>
+            </name>
+            <description>
+                <narrative>The designated geographic location is a topographical feature, such as a mountain, a river, a forest</narrative>
+                <narrative xml:lang="fr">Le lieu indiqu&#233; est un &#233;l&#233;ment topographique (p. ex., une montagne, une rivi&#232;re, une for&#234;t).</narrative>
+            </description>
+        </codelist-item>
+    </codelist-items>
+</codelist>
+

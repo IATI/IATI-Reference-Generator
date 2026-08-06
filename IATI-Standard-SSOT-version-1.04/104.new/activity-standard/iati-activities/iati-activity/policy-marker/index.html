@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>policy-marker &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../search/" />
+    <link rel="next" title="collaboration-type" href="../collaboration-type/" />
+    <link rel="prev" title="description" href="../country-budget-items/budget-item/description/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../collaboration-type/" title="collaboration-type"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../country-budget-items/budget-item/description/" title="description"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../" accesskey="U">iati-activity</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">policy-marker</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="policy-marker">
+<h1>policy-marker<a class="headerlink" href="#policy-marker" title="Link to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">iati-activities/iati-activity/policy-marker</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal notranslate"><span class="pre">policy-marker</span></code>.</p>
+<section id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>A policy or theme addressed by the activity.  A text
+description of the theme appears in the content, and a formal
+identifier appears in the &#64;ref attribute.  The &#64;vocabulary
+attribute can also help to segment the markers into separate
+vocabularies.  This element can be repeated for each policy
+marker.  For the value of the &#64;code attribute, see
+<a class="reference external" href="http://iatistandard.org/codelists/policy_marker">http://iatistandard.org/codelists/policy_marker</a></p>
+</section>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<dl id="iati-activities-iati-activity-policy-marker-code">
+<dt>&#64;code</dt><dd><p>Policy marker code. If vocabulary is missing or “DAC” use
+the IATI Policy Marker Codelist which is based on columns
+20-23 and 28-31 of the CRS++ reporting format.</p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a class="reference internal" href="../../../../codelists/PolicyMarker/"><span class="doc">PolicyMarker codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-policy-marker-vocabulary">
+<dt>&#64;vocabulary</dt><dd><p>Policy vocabulary used. Default is “DAC”, but “RO” may also
+be used for publisher’s own markers.</p>
+<p>See <a class="reference external" href="http://iatistandard.org/codelists/vocabulary">http://iatistandard.org/codelists/vocabulary</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a class="reference internal" href="../../../../codelists/Vocabulary/"><span class="doc">Vocabulary codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-policy-marker-significance">
+<dt>&#64;significance</dt><dd><p>The significance of the policy marker for this activity
+(e.g. principal or significant), from a list defined by
+IATI.  If a marker is not significant, the policy-marker
+element will not be present.</p>
+<p>See <a class="reference external" href="http://iatistandard.org/codelists/policy_significance">http://iatistandard.org/codelists/policy_significance</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a class="reference internal" href="../../../../codelists/PolicySignificance/"><span class="doc">PolicySignificance codelist</span></a>.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-policy-marker-xml-lang">
+<dt>&#64;xml:lang</dt><dd><p>ISO 2 letter code specifying the language of text in this element.</p>
+<p>This value should be on the <a class="reference internal" href="../../../../codelists/Language/"><span class="doc">Language codelist</span></a>.</p>
+</dd>
+</dl>
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
+<p>Example <code class="docutils literal notranslate"><span class="pre">policy-marker</span></code> that declares a <code class="docutils literal notranslate"><span class="pre">PolicyMarker</span></code> code <em>2</em>, with a <code class="docutils literal notranslate"><span class="pre">PolicySignificance</span></code> code of <em>3</em>.</p>
+<div class="line-block">
+<div class="line">In this example, the <code class="docutils literal notranslate"><span class="pre">vocabulary</span></code> <em>DAC</em> is also declared:</div>
+</div>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="nt">&lt;policy-marker</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">significance=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;DAC&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+<p>Multiple <code class="docutils literal notranslate"><span class="pre">policy-marker</span></code> elements can be reported:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="nt">&lt;policy-marker</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">significance=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;DAC&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;policy-marker</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">significance=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;DAC&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Link to this heading">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L583">Schema</a></p></li>
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/policy-marker.rst">Extra Documentation</a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">policy-marker</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../country-budget-items/budget-item/description/"
+                          title="previous chapter">description</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../collaboration-type/"
+                          title="next chapter">collaboration-type</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../_sources/activity-standard/iati-activities/iati-activity/policy-marker.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../collaboration-type/" title="collaboration-type"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../country-budget-items/budget-item/description/" title="description"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../" >iati-activity</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">policy-marker</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

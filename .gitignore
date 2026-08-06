@@ -1,8 +1,12 @@
 venv
-output
-output.zip
-downloads
-downloads.zip
+# Anchored to the repository root: these are the build artefacts produced by
+# extract_html.py. Unanchored, they also matched any nested directory called
+# output/ or downloads/, which silently excluded the downloads inside the
+# static version snapshots (101.new, 102.new, 103.new, 104.new).
+/output
+/output.zip
+/downloads
+/downloads.zip
 pyenv
 .vscode
 **/__pycache__

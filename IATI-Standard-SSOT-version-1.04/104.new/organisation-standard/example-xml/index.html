@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="3" name="order" />
+
+    <title>Example Usage XML &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Elements" href="../elements/" />
+    <link rel="prev" title="Documents" href="../overview/documents/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../elements/" title="Elements"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../overview/documents/" title="Documents"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" >Organisation Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../overview/" accesskey="U">Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Example Usage XML</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="example-usage-xml">
+<h1>Example Usage XML<a class="headerlink" href="#example-usage-xml" title="Link to this heading">¶</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>This page presents <em>example usage XML</em> for the <strong>IATI organisation standard</strong>.</p>
+</section>
+<section id="considerations">
+<h2>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">¶</a></h2>
+<p>This is a <em>example usage XML</em> and not intended to reflect any real organisations or entities.</p>
+<p>Extracts from this example are used throughout this documentation.</p>
+<p>Comments markup is optional and intended to supplement the documentation:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="cm">&lt;!--iati-identifier ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--name starts--&gt;</span>
+</pre></div>
+</div>
+<p>This example file can also be <a class="reference external" href="https://raw.githubusercontent.com/IATI/IATI-Extra-Documentation/version-1.04/en/organisation-standard/organisation-standard-example-annotated.xml">downloaded.</a>.</p>
+<p>Full XML example usage of the <strong>IATI organisation standard</strong>:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;iati-organisations</span><span class="w"> </span><span class="na">generated-datetime=</span><span class="s">&quot;2014-05-06T10:15:37&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;1.04&quot;</span><span class="nt">&gt;</span>
+<span class="w"> </span><span class="cm">&lt;!--iati-organisation starts--&gt;</span>
+<span class="w"> </span><span class="nt">&lt;iati-organisation</span><span class="w"> </span><span class="na">default-currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">last-updated-datetime=</span><span class="s">&quot;2014-05-06T10:15:37&quot;</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;1.04&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--reporting-org starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;reporting-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;40&quot;</span><span class="w"> </span><span class="na">secondary-reporter=</span><span class="s">&quot;0&quot;</span><span class="nt">&gt;</span>Organisation<span class="w"> </span>name<span class="nt">&lt;/reporting-org&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--reporting-org ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--iati-identifier starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;iati-identifier&gt;</span>AA-AAA-123456789<span class="nt">&lt;/iati-identifier&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--iati-identifier ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--name starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;name&gt;</span>Organisation<span class="w"> </span>name<span class="nt">&lt;/name&gt;</span>
+<span class="w">  </span><span class="nt">&lt;name</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Nom<span class="w"> </span>de<span class="w"> </span>l&#39;organisme<span class="nt">&lt;/name&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--name ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--total-budget starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;total-budget&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>250000000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/total-budget&gt;</span>
+<span class="w">  </span><span class="nt">&lt;total-budget&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2015-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2015-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>300000000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/total-budget&gt;</span>
+<span class="w">  </span><span class="nt">&lt;total-budget&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2016-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2016-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>350000000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/total-budget&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--total-budget ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-org-budget starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-org-budget&gt;</span>
+<span class="w">   </span><span class="nt">&lt;recipient-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;123&quot;</span><span class="nt">&gt;</span>Example<span class="w"> </span>Recipient<span class="w"> </span>Organisation<span class="nt">&lt;/recipient-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>2500000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/recipient-org-budget&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-org-budget&gt;</span>
+<span class="w">   </span><span class="nt">&lt;recipient-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;123&quot;</span><span class="nt">&gt;</span>Example<span class="w"> </span>Recipient<span class="w"> </span>Organisation<span class="nt">&lt;/recipient-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2015-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2015-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2015-01-01&quot;</span><span class="nt">&gt;</span>3000000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/recipient-org-budget&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-org-budget&gt;</span>
+<span class="w">   </span><span class="nt">&lt;recipient-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;123&quot;</span><span class="nt">&gt;</span>Example<span class="w"> </span>Recipient<span class="w"> </span>Organisation<span class="nt">&lt;/recipient-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2016-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2016-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>3500000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/recipient-org-budget&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-org-budget ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-country-budget starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-country-budget&gt;</span>
+<span class="w">   </span><span class="nt">&lt;recipient-country</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;AA&quot;</span><span class="nt">&gt;</span>Country<span class="w"> </span>Name<span class="nt">&lt;/recipient-country&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>25000000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/recipient-country-budget&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-country-budget&gt;</span>
+<span class="w">   </span><span class="nt">&lt;recipient-country</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;AA&quot;</span><span class="nt">&gt;</span>Country<span class="w"> </span>Name<span class="nt">&lt;/recipient-country&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2015-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2015-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>30000000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/recipient-country-budget&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-country-budget&gt;</span>
+<span class="w">   </span><span class="nt">&lt;recipient-country</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;AA&quot;</span><span class="nt">&gt;</span>Country<span class="w"> </span>Name<span class="nt">&lt;/recipient-country&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2016-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2016-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;USD&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>35000000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/recipient-country-budget&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-country-budget ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_en.odt&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;B01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Annual<span class="w"> </span>Report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/document-link&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link-language starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_fr.odt&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;B01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;fr&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Annual<span class="w"> </span>Report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Rapport<span class="w"> </span>annuel<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/document-link&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link-language ends--&gt;</span><span class="w">  </span>
+<span class="w">  </span><span class="cm">&lt;!--document-link-lang starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_en.odt&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;B01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Annual<span class="w"> </span>Report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Rapport<span class="w"> </span>annuel<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/document-link&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link-lang ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--multi-cat-document-link starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_en.odt&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;B01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;B02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;B03&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Annual<span class="w"> </span>Report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/document-link&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--multi-cat-document-link ends--&gt;</span>
+<span class="w"> </span><span class="nt">&lt;/iati-organisation&gt;</span>
+<span class="w"> </span><span class="cm">&lt;!--iati-organisation ends--&gt;</span>
+<span class="nt">&lt;/iati-organisations&gt;</span>
+<span class="cm">&lt;!--iati-organisations ends--&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="further-guidance">
+<h2>Further guidance<a class="headerlink" href="#further-guidance" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../iati-organisations/"><span class="doc">IATI organisation standard - reference pages</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Example Usage XML</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#considerations">Considerations</a></li>
+<li><a class="reference internal" href="#further-guidance">Further guidance</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../overview/documents/"
+                          title="previous chapter">Documents</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../elements/"
+                          title="next chapter">Elements</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/organisation-standard/example-xml.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../elements/" title="Elements"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../overview/documents/" title="Documents"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" >Organisation Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../overview/" >Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Example Usage XML</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

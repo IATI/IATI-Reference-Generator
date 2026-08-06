@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Activity Dates &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../genindex/" />
+    <link rel="search" title="Search" href="../../../search/" />
+    <link rel="next" title="Organisations" href="../organisations/" />
+    <link rel="prev" title="IATI Identifier" href="../iati-identifier/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../organisations/" title="Organisations"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../iati-identifier/" title="IATI Identifier"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" accesskey="U">Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Activity Dates</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="activity-dates">
+<h1>Activity Dates<a class="headerlink" href="#activity-dates" title="Link to this heading">¶</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>Within the <strong>IATI activity standard</strong> several types of dates can be specified.</p>
+<p>Dates that relate directly to the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">activity-date</span></code> - the planned and actual start/end dates of the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">transaction-date</span></code> - the date a specific <code class="docutils literal notranslate"><span class="pre">transaction</span></code> took place.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">value-date</span></code> - the specific date for the <code class="docutils literal notranslate"><span class="pre">value</span></code> of a <code class="docutils literal notranslate"><span class="pre">budget</span></code> or <code class="docutils literal notranslate"><span class="pre">transaction</span></code>, which is used for currency conversion purposes.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">period-start</span></code> and <code class="docutils literal notranslate"><span class="pre">period-end</span></code> dates are used to describe a period of time in a <code class="docutils literal notranslate"><span class="pre">budget</span></code> , <code class="docutils literal notranslate"><span class="pre">planned-disbursement</span></code> or <code class="docutils literal notranslate"><span class="pre">indicator</span></code></p></li>
+</ul>
+<div class="line-block">
+<div class="line">Additionally, a time-sensitive (non-date) declaration works in conjunction with the <code class="docutils literal notranslate"><span class="pre">activity-date</span></code>:</div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">activity-status</span></code> - a numeric code to declare current stage of the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>.</p></li>
+</ul>
+</section>
+<section id="considerations">
+<h2>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">¶</a></h2>
+<p>When using the <strong>IATI activity standard</strong> to declare <em>dates</em>, the following should be considered:</p>
+<ul class="simple">
+<li><p>Date format for <code class="docutils literal notranslate"><span class="pre">activity-date</span></code>, <code class="docutils literal notranslate"><span class="pre">period-start</span></code>, <code class="docutils literal notranslate"><span class="pre">period-end</span></code>, <code class="docutils literal notranslate"><span class="pre">transaction-date</span></code> and <code class="docutils literal notranslate"><span class="pre">value-date</span></code> must be in ISO 8601 (YYYY-MM-DD), eg: 2014-03-21</p></li>
+<li><p>Date format for <code class="docutils literal notranslate"><span class="pre">generated-datetime</span></code> <code class="docutils literal notranslate"><span class="pre">last-updated-datetime</span></code> must use ISO 8601 date format, e.g. “2014-03-21T18:45:00+01:00”.</p></li>
+<li><p>A start and end date must be provided - if exact dates are not known then start planned or end planned should be used</p></li>
+<li><p>Any start date should be before the end date, or the same</p></li>
+<li><p>All dates can be updated at any point</p></li>
+<li><dl class="simple">
+<dt>An <code class="docutils literal notranslate"><span class="pre">activity-date</span></code> can have four types:</dt><dd><ul>
+<li><p>start-planned - the forecast start date for the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code> (e.g. if the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code> is in the pipeline stage or the date of the first disbursement is not known).</p></li>
+<li><p>start-actual - the actual start date for the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code> (e.g. the date of the first disbursement).</p></li>
+<li><p>end-planned - the forecast end date for the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code>.</p></li>
+<li><p>end-actual (code <em>4</em>)- the actual end date for the <code class="docutils literal notranslate"><span class="pre">iati-activity</span></code> (End dates should, wherever possible, reflect the ending of physical activity.).</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">activity-status</span></code> represents the latest stage for the activity.  It can be updated at any time.</p></li>
+<li><p>When the <code class="docutils literal notranslate"><span class="pre">activity-status</span></code> reaches <code class="docutils literal notranslate"><span class="pre">ActivityStatus</span></code> codes <em>3</em>, <em>4</em> or <em>5</em> then it is recommended that an <code class="docutils literal notranslate"><span class="pre">end-actual</span></code> date is added.</p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Activity Dates</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#considerations">Considerations</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../iati-identifier/"
+                          title="previous chapter">IATI Identifier</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../organisations/"
+                          title="next chapter">Organisations</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../_sources/activity-standard/overview/dates.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../organisations/" title="Organisations"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../iati-identifier/" title="IATI Identifier"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../" >Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Activity Dates</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

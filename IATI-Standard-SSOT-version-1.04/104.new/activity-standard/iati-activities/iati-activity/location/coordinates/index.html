@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../../../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>coordinates &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../../../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../../../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../../../../genindex/" />
+    <link rel="search" title="Search" href="../../../../../search/" />
+    <link rel="next" title="gazetteer-entry" href="../gazetteer-entry/" />
+    <link rel="prev" title="feature-designation" href="../feature-designation/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../gazetteer-entry/" title="gazetteer-entry"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../feature-designation/" title="feature-designation"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../../" >iati-activity</a> &#187;</li>
+          <li class="nav-item nav-item-6"><a href="../" accesskey="U">location</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">coordinates</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="coordinates">
+<h1>coordinates<a class="headerlink" href="#coordinates" title="Link to this heading">¶</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">iati-activities/iati-activity/location/coordinates</span></code></p>
+<p>This is the reference page for the XML element <code class="docutils literal notranslate"><span class="pre">coordinates</span></code>.</p>
+<section id="definition">
+<span id="index-0"></span><h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>Deprecated since 1.04</p>
+<p>Geodetic coordinates for the location (latitude, longitude).</p>
+</section>
+<section id="attributes">
+<h2>Attributes<a class="headerlink" href="#attributes" title="Link to this heading">¶</a></h2>
+<dl id="iati-activities-iati-activity-location-coordinates-latitude">
+<dt>&#64;latitude</dt><dd><p>Deprecated since 1.04</p>
+<p>The decimal latitude (north is positive), e.g. “45.5”
+for 45.5 degrees north (45 degrees 30 minutes).</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-location-coordinates-longitude">
+<dt>&#64;longitude</dt><dd><p>Deprecated since 1.04</p>
+<p>The decimal longitude (east is positive), e.g. “-75.5”
+for 75.5 degrees west (74 degrees 30 minutes).</p>
+<p>This value must be of type xsd:decimal.</p>
+</dd>
+</dl>
+<dl id="iati-activities-iati-activity-location-coordinates-precision">
+<dt>&#64;precision</dt><dd><p>Deprecated since 1.04</p>
+<p>An IATI-defined subset of UCPD precision codes for
+the location (e.g. “2” for within 25 km of the
+specified latitude/longitude).</p>
+<p>See <a class="reference external" href="http://iatistandard.org/codelists/geographical_precision">http://iatistandard.org/codelists/geographical_precision</a></p>
+<p>This value must be of type xsd:string.</p>
+<p>This value must be on the <a class="reference internal" href="../../../../../codelists/GeographicalPrecision/"><span class="doc">GeographicalPrecision codelist</span></a>.</p>
+</dd>
+</dl>
+</section>
+<section id="example-usage">
+<h2>Example Usage<a class="headerlink" href="#example-usage" title="Link to this heading">¶</a></h2>
+<p><em>NB: this element is deprecated in version 1.04</em></p>
+<p>UNOPS example, with co-ordinates set to a precision of “near exact location” (code 2):</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;location&gt;</span>
+<span class="w">      </span><span class="nt">&lt;name&gt;</span>Herat<span class="nt">&lt;/name&gt;</span>
+<span class="w">      </span><span class="nt">&lt;coordinates</span><span class="w"> </span><span class="na">latitude=</span><span class="s">&quot;34.341944400000003000&quot;</span><span class="w"> </span><span class="na">longitude=</span><span class="s">&quot;62.203055599999971000&quot;</span><span class="w"> </span><span class="na">precision=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;location-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;PPL&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">      </span><span class="nt">&lt;administrative</span><span class="w"> </span><span class="na">country=</span><span class="s">&quot;AF&quot;</span><span class="nt">&gt;</span>Afghanistan,<span class="w"> </span>Herat,<span class="w"> </span>Injil<span class="nt">&lt;/administrative&gt;</span>
+<span class="w"> </span><span class="nt">&lt;/location&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="changelog">
+<h2>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">¶</a></h2>
+<section id="id1">
+<h3>1.04<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Deprecated in 1.04</div>
+<div class="line">The location/coordinates element was deprecated in 1.04. Coordinates can now be specified in the location/point element instead.</div>
+</div>
+</section>
+</section>
+<section id="developer-tools">
+<h2>Developer tools<a class="headerlink" href="#developer-tools" title="Link to this heading">¶</a></h2>
+<p>Find the source of this documentation on github:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Schemas/blob/version-1.04/iati-activities-schema.xsd#L1089">Schema</a></p></li>
+<li><p><a class="reference external" href="https://github.com/IATI/IATI-Extra-Documentation/blob/version-1.04/en/activity-standard/iati-activities/iati-activity/location/coordinates.rst">Extra Documentation</a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../../../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">coordinates</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#attributes">Attributes</a></li>
+<li><a class="reference internal" href="#example-usage">Example Usage</a></li>
+<li><a class="reference internal" href="#changelog">Changelog</a><ul>
+<li><a class="reference internal" href="#id1">1.04</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#developer-tools">Developer tools</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../feature-designation/"
+                          title="previous chapter">feature-designation</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../gazetteer-entry/"
+                          title="next chapter">gazetteer-entry</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../../../../_sources/activity-standard/iati-activities/iati-activity/location/coordinates.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../gazetteer-entry/" title="gazetteer-entry"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../feature-designation/" title="feature-designation"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../../../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../../../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../../../../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../../../../elements/" >Elements</a> &#187;</li>
+          <li class="nav-item nav-item-4"><a href="../../../" >iati-activities</a> &#187;</li>
+          <li class="nav-item nav-item-5"><a href="../../" >iati-activity</a> &#187;</li>
+          <li class="nav-item nav-item-6"><a href="../" >location</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">coordinates</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>

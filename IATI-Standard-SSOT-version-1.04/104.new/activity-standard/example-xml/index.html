@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta content="3" name="order" />
+
+    <title>Example Usage XML &#8212; IATI Standard 1.04 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/traditional.css?v=c86a0c57" />
+    <script src="../../_static/documentation_options.js?v=f5159fc3"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="../../genindex/" />
+    <link rel="search" title="Search" href="../../search/" />
+    <link rel="next" title="Elements" href="../elements/" />
+    <link rel="prev" title="Contact Info" href="../overview/contact-info/" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../elements/" title="Elements"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../overview/contact-info/" title="Contact Info"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../overview/" accesskey="U">Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Example Usage XML</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="example-usage-xml">
+<h1>Example Usage XML<a class="headerlink" href="#example-usage-xml" title="Link to this heading">¶</a></h1>
+<section id="definition">
+<h2>Definition<a class="headerlink" href="#definition" title="Link to this heading">¶</a></h2>
+<p>This page presents <em>example usage XML</em> for the <strong>IATI activity standard</strong></p>
+</section>
+<section id="considerations">
+<h2>Considerations<a class="headerlink" href="#considerations" title="Link to this heading">¶</a></h2>
+<p>These is <em>example usage XML</em> and not intended to reflect any real activities, organisations or entities.</p>
+<p>Extracts from these example files are used throughout this documentation.</p>
+<p>Comments markup is optional and intended to supplement the documentation:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="w">  </span><span class="cm">&lt;!--reporting-org ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--iati-identifier starts--&gt;</span>
+</pre></div>
+</div>
+<p>There are two <em>example usage XML</em> files:</p>
+<ul class="simple">
+<li><p><em>Example usage XML</em> file: <a class="reference external" href="https://raw.githubusercontent.com/IATI/IATI-Extra-Documentation/version-1.04/en/activity-standard/activity-standard-example-annotated.xml">download</a>.</p></li>
+<li><p><em>Example usage XML</em> - with multiple values: <a class="reference external" href="https://raw.githubusercontent.com/IATI/IATI-Extra-Documentation/version-1.04/en/activity-standard/activity-standard-example-annotated-multi.xml">download</a>.</p></li>
+</ul>
+<p><em>Example usage XML</em> file:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;iati-activities</span><span class="w"> </span><span class="na">generated-datetime=</span><span class="s">&quot;2014-05-06T10:15:37&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;1.04&quot;</span><span class="w"> </span><span class="na">linked-data-default=</span><span class="s">&quot;http://data.example.org/&quot;</span><span class="nt">&gt;</span>
+<span class="w"> </span><span class="cm">&lt;!--iati-activity starts--&gt;</span><span class="w">	</span>
+<span class="w"> </span><span class="nt">&lt;iati-activity</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="na">default-currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">last-updated-datetime=</span><span class="s">&quot;2014-05-06T10:15:37&quot;</span><span class="w"> </span><span class="na">hierarchy=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;1.04&quot;</span><span class="w"> </span><span class="na">linked-data-uri=</span><span class="s">&quot;http://data.example.org/123456789&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--reporting-org starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;reporting-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;21&quot;</span><span class="nt">&gt;</span>Organisation<span class="w"> </span>Name<span class="nt">&lt;/reporting-org&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--reporting-org ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--iati-identifier starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;iati-identifier&gt;</span>AA-AAA-123456789-ABC123<span class="nt">&lt;/iati-identifier&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--iati-identifier ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--other-identifier starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;other-identifier</span><span class="w"> </span><span class="na">owner-name=</span><span class="s">&quot;Agency A&quot;</span><span class="w"> </span><span class="na">owner-ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>ABC123-XYZ<span class="nt">&lt;/other-identifier&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--other-identifier ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--title starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;title&gt;</span>Activity<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--title ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--description starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>General<span class="w"> </span>activity<span class="w"> </span>description<span class="w"> </span>text.<span class="w">  </span>Long<span class="w"> </span>description<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>activity<span class="w"> </span>with<span class="w"> </span>no<span class="w"> </span>particular<span class="w"> </span>structure.<span class="nt">&lt;/description&gt;</span>
+<span class="w">  </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>Objectives<span class="w"> </span>for<span class="w"> </span>the<span class="w"> </span>activity,<span class="w"> </span>for<span class="w"> </span>example<span class="w"> </span>from<span class="w"> </span>a<span class="w"> </span>logical<span class="w"> </span>framework.<span class="nt">&lt;/description&gt;</span>
+<span class="w">  </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>Statement<span class="w"> </span>of<span class="w"> </span>groups<span class="w"> </span>targeted<span class="w"> </span>to<span class="w"> </span>benefit<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>activity.<span class="nt">&lt;/description&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--description ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-status starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-status ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-date starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-04-15&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;start-planned&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-04-28&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;start-actual&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2015-12-31&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;end-planned&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-date ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--contact-info starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;contact-info</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;organisation&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/organisation&gt;</span>
+<span class="w">   </span><span class="nt">&lt;person-name&gt;</span>A.<span class="w"> </span>Example<span class="nt">&lt;/person-name&gt;</span>
+<span class="w">   </span><span class="nt">&lt;job-title&gt;</span>Transparency<span class="w"> </span>Lead<span class="nt">&lt;/job-title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;telephone&gt;</span>0044111222333444<span class="nt">&lt;/telephone&gt;</span>
+<span class="w">   </span><span class="nt">&lt;email&gt;</span>transparency@example.org<span class="nt">&lt;/email&gt;</span>
+<span class="w">   </span><span class="nt">&lt;mailing-address&gt;</span>Transparency<span class="w"> </span>House,<span class="w"> </span>The<span class="w"> </span>Street,<span class="w"> </span>Town,<span class="w"> </span>City,<span class="w"> </span>Postcode<span class="nt">&lt;/mailing-address&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;website&gt;</span>http://www.example.org<span class="nt">&lt;/website&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/contact-info&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--contact-info ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--participating-org starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;participating-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="w"> </span><span class="na">role=</span><span class="s">&quot;Funding&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;40&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/participating-org&gt;</span>
+<span class="w">  </span><span class="nt">&lt;participating-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;CC-CCC-123456789&quot;</span><span class="w"> </span><span class="na">role=</span><span class="s">&quot;Extending&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>C<span class="nt">&lt;/participating-org&gt;</span>
+<span class="w">  </span><span class="nt">&lt;participating-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="w"> </span><span class="na">role=</span><span class="s">&quot;Implementing&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;21&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/participating-org&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--participating-org ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-scope starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-scope</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-scope ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--Note: only country OR region has to be declared--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-country starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-country</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;AF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-country ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-region starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-region</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;498&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-region ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--location starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;location</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AF-KAN&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;location-id</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;G1&quot;</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1453782&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;name&gt;</span>Location<span class="w"> </span>name<span class="nt">&lt;/name&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Location<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;activity-description&gt;</span>A<span class="w"> </span>description<span class="w"> </span>that<span class="w"> </span>qualifies<span class="w"> </span>the<span class="w"> </span>activity<span class="w"> </span>taking<span class="w"> </span>place<span class="w"> </span>at<span class="w"> </span>the<span class="w"> </span>location<span class="nt">&lt;/activity-description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;administrative</span><span class="w"> </span><span class="na">level=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1453782&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;G1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;point</span><span class="w"> </span><span class="na">srsName=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;pos&gt;</span>31.616944<span class="w"> </span>65.716944<span class="nt">&lt;/pos&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/point&gt;</span>
+<span class="w">   </span><span class="nt">&lt;exactness</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;location-reach</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;location-class</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;feature-designation</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;PRNQ&quot;</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/location&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--location ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--sector starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;sector</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;11110&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;DAC&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--sector ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--country-budget-items starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;country-budget-items</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;budget-item</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1.1.1&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description&gt;</span>Description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/budget-item&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/country-budget-items&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--country-budget-items ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--policy-marker starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;policy-marker</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">significance=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;DAC&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--policy-marker ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--collaboration-type starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;collaboration-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--collaboration-type ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-finance-type starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;default-finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;110&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-finance-type ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-flow-type starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;default-flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;10&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-flow-type ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-aid-type starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;default-aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-aid-type ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-tied-status starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;default-tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-tied-status ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--budget starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;budget</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>3000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/budget&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--budget ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--planned-disbursement starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;planned-disbursement</span><span class="w"> </span><span class="na">updated=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>3000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/planned-disbursement&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--planned-disbursement ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--capital-spend starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;capital-spend</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;88.8&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--capital-spend ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--min transaction starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span><span class="w">  </span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Transaction<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;IF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;AA-AAA-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--min transaction ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--full transaction starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Transaction<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;IF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;AA-AAA-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;20&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;111&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;5&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--full transaction ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_en.odt&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Project<span class="w"> </span>report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/document-link&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-website starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-website&gt;</span>http://www.example.com/en/activity/ABC123<span class="nt">&lt;/activity-website&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-website ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--related-activity starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;related-activity</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789-6789&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--related-activity ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--conditions starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;conditions</span><span class="w"> </span><span class="na">attached=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;condition</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>Conditions<span class="w"> </span>text<span class="nt">&lt;/condition&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/conditions&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--conditions ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--result starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;result</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">aggregation-status=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;indicator</span><span class="w"> </span><span class="na">measure=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">ascending=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">     </span><span class="nt">&lt;title&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">     </span><span class="nt">&lt;description&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">     </span><span class="nt">&lt;baseline</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2012&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment&gt;</span>Baseline<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span>
+<span class="w">     </span><span class="nt">&lt;/baseline&gt;</span>
+<span class="w">     </span><span class="nt">&lt;period&gt;</span>
+<span class="w">      </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">       </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-03-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">       </span><span class="nt">&lt;target</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;comment&gt;</span>Target<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span><span class="w"> </span>
+<span class="w">       </span><span class="nt">&lt;/target&gt;</span>
+<span class="w">       </span><span class="nt">&lt;actual</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;11&quot;</span><span class="nt">&gt;</span>
+<span class="w">        </span><span class="nt">&lt;comment&gt;</span>Actual<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span><span class="w"> </span>
+<span class="w">       </span><span class="nt">&lt;/actual&gt;</span>
+<span class="w">     </span><span class="nt">&lt;/period&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/indicator&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/result&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--result ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--fss starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;fss</span><span class="w"> </span><span class="na">extraction-date=</span><span class="s">&quot;2014-05-06&quot;</span><span class="w"> </span><span class="na">priority=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">phaseout-year=</span><span class="s">&quot;2016&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;forecast</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2014&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2013-07-03&quot;</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;GBP&quot;</span><span class="nt">&gt;</span>10000<span class="nt">&lt;/forecast&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/fss&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--fss ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--crs-add starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;crs-add&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aidtype-flag</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">significance=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;loan-terms</span><span class="w"> </span><span class="na">rate-1=</span><span class="s">&quot;4&quot;</span><span class="w"> </span><span class="na">rate-2=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;repayment-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;repayment-plan</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;4&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;commitment-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-09-01&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;repayment-first-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;repayment-final-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2020-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/loan-terms&gt;</span>
+<span class="w">   </span><span class="nt">&lt;loan-status</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2014&quot;</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;GBP&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2013-05-24&quot;</span><span class="nt">&gt;</span>
+<span class="w">     </span><span class="nt">&lt;interest-received&gt;</span>200000<span class="nt">&lt;/interest-received&gt;</span>
+<span class="w">     </span><span class="nt">&lt;principal-outstanding&gt;</span>1500000<span class="nt">&lt;/principal-outstanding&gt;</span>
+<span class="w">     </span><span class="nt">&lt;principal-arrears&gt;</span>0<span class="nt">&lt;/principal-arrears&gt;</span>
+<span class="w">     </span><span class="nt">&lt;interest-arrears&gt;</span>0<span class="nt">&lt;/interest-arrears&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/loan-status&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/crs-add&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--crs-add ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--legacy-data starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;legacy-data</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Project Status&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;7&quot;</span><span class="w"> </span><span class="na">iati-equivalent=</span><span class="s">&quot;activity-status&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;legacy-data</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;cost&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;1000&quot;</span><span class="w"> </span><span class="na">iati-equivalent=</span><span class="s">&quot;transaction&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--legacy-data ends--&gt;</span>
+<span class="w"> </span><span class="nt">&lt;/iati-activity&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--iati-activity ends--&gt;</span><span class="w">	</span>
+<span class="nt">&lt;/iati-activities&gt;</span>
+</pre></div>
+</div>
+<p><em>Example usage XML</em> - with multiple values:</p>
+<div class="highlight-xml notranslate"><div class="highlight"><pre><span></span><span class="nt">&lt;iati-activities</span><span class="w"> </span><span class="na">generated-datetime=</span><span class="s">&quot;2014-05-06T10:15:37&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;1.04&quot;</span><span class="w"> </span><span class="na">linked-data-default=</span><span class="s">&quot;http://data.example.org/&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--iati-activity starts--&gt;</span>
+<span class="w"> </span><span class="nt">&lt;iati-activity</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="na">default-currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">last-updated-datetime=</span><span class="s">&quot;2014-05-06T10:15:37&quot;</span><span class="w"> </span><span class="na">hierarchy=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">version=</span><span class="s">&quot;1.04&quot;</span><span class="w"> </span><span class="na">linked-data-uri=</span><span class="s">&quot;http://data.example.org/123456789&quot;</span><span class="nt">&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--reporting-org starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;reporting-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;40&quot;</span><span class="w"> </span><span class="na">secondary-reporter=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>Organisation<span class="w"> </span>Name<span class="nt">&lt;/reporting-org&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--reporting-org ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--iati-identifier starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;iati-identifier&gt;</span>BB-BBB-123456789-ABC123<span class="nt">&lt;/iati-identifier&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--iati-identifier ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--other-identifier starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;other-identifier</span><span class="w"> </span><span class="na">owner-name=</span><span class="s">&quot;Agency A&quot;</span><span class="w"> </span><span class="na">owner-ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>ABC123-XYZ<span class="nt">&lt;/other-identifier&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--other-identifier ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--title starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;title&gt;</span>Activity<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Titre<span class="w"> </span>de<span class="w"> </span>l&#39;activité<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;es&quot;</span><span class="nt">&gt;</span>Título<span class="w"> </span>de<span class="w"> </span>la<span class="w"> </span>actividad<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--title ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--description starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>General<span class="w"> </span>activity<span class="w"> </span>description<span class="w"> </span>text.<span class="w"> </span>Long<span class="w"> </span>description<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>activity<span class="w"> </span>with<span class="w"> </span>no<span class="w"> </span>particular<span class="w"> </span>structure<span class="nt">&lt;/description&gt;</span>
+<span class="w">  </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>Objectives<span class="w"> </span>for<span class="w"> </span>the<span class="w"> </span>activity,<span class="w"> </span>for<span class="w"> </span>example<span class="w"> </span>from<span class="w"> </span>a<span class="w"> </span>logical<span class="w"> </span>framework.<span class="nt">&lt;/description&gt;</span>
+<span class="w">  </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>Statement<span class="w"> </span>of<span class="w"> </span>groups<span class="w"> </span>targeted<span class="w"> </span>to<span class="w"> </span>benefit<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>activity.<span class="nt">&lt;/description&gt;</span>
+<span class="w">  </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Activité<span class="w"> </span>générale<span class="w"> </span>du<span class="w"> </span>texte<span class="w"> </span>de<span class="w"> </span>description.<span class="w"> </span>Longue<span class="w"> </span>description<span class="w"> </span>de<span class="w"> </span>l&#39;activité<span class="w"> </span>sans<span class="w"> </span>structure<span class="w"> </span>particulière.<span class="nt">&lt;/description&gt;</span>
+<span class="w">  </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Objectifs<span class="w"> </span>de<span class="w"> </span>l&#39;activité,<span class="w"> </span>par<span class="w"> </span>exemple<span class="w"> </span>à<span class="w"> </span>partir<span class="w"> </span>d&#39;un<span class="w"> </span>cadre<span class="w"> </span>logique.<span class="nt">&lt;/description&gt;</span>
+<span class="w">  </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Déclaration<span class="w"> </span>de<span class="w"> </span>groupes<span class="w"> </span>ciblés<span class="w"> </span>pour<span class="w"> </span>bénéficier<span class="w"> </span>de<span class="w"> </span>l&#39;activité.<span class="nt">&lt;/description&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--description ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-status starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-status ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-date starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-04-15&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;start-planned&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-04-28&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;start-actual&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2015-12-31&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;end-planned&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2015-12-31&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;end-actual&quot;</span><span class="nt">&gt;</span>Closing<span class="w"> </span>date<span class="w"> </span>of<span class="w"> </span>project<span class="nt">&lt;/activity-date&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-date ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--contact-info starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;contact-info</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;organisation&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/organisation&gt;</span>
+<span class="w">   </span><span class="nt">&lt;person-name&gt;</span>A.<span class="w"> </span>Example<span class="nt">&lt;/person-name&gt;</span>
+<span class="w">   </span><span class="nt">&lt;job-title&gt;</span>Transparency<span class="w"> </span>Lead<span class="nt">&lt;/job-title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;mailing-address&gt;</span>Transparency<span class="w"> </span>House,<span class="w"> </span>The<span class="w"> </span>Street,<span class="w"> </span>Town,<span class="w"> </span>City,<span class="w"> </span>Postcode<span class="nt">&lt;/mailing-address&gt;</span>
+<span class="w">   </span><span class="nt">&lt;telephone&gt;</span>0044111222333444<span class="nt">&lt;/telephone&gt;</span>
+<span class="w">   </span><span class="nt">&lt;email&gt;</span>transparency@example.org<span class="nt">&lt;/email&gt;</span>
+<span class="w">   </span><span class="nt">&lt;website&gt;</span>http://www.example.org<span class="nt">&lt;/website&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/contact-info&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--contact-info ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--participating-org starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;participating-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="w"> </span><span class="na">role=</span><span class="s">&quot;Funding&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;40&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/participating-org&gt;</span>
+<span class="w">  </span><span class="nt">&lt;participating-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;CC-CCC-123456789&quot;</span><span class="w"> </span><span class="na">role=</span><span class="s">&quot;Extending&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>C<span class="nt">&lt;/participating-org&gt;</span>
+<span class="w">  </span><span class="nt">&lt;participating-org</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="w"> </span><span class="na">role=</span><span class="s">&quot;Implementing&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;21&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/participating-org&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--participating-org ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-scope starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-scope</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-scope ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--Note: only country OR region has to be declared--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-country starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-country</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;AF&quot;</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;50&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-country</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;AL&quot;</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;50&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-country ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-region starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-region</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;498&quot;</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;50&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;recipient-region</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;289&quot;</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;50&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--recipient-region ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--location starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;location</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AF-KAN&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;location-id</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;G1&quot;</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1453782&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;name&gt;</span>Location<span class="w"> </span>name<span class="nt">&lt;/name&gt;</span>
+<span class="w">   </span><span class="nt">&lt;name</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Emplacement<span class="w"> </span>du<span class="w"> </span>nom<span class="nt">&lt;/name&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Location<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Description<span class="w"> </span>de<span class="w"> </span>l&#39;emplacement<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;activity-description&gt;</span>A<span class="w"> </span>description<span class="w"> </span>that<span class="w"> </span>qualifies<span class="w"> </span>the<span class="w"> </span>activity<span class="w"> </span>taking<span class="w"> </span>place<span class="w"> </span>at<span class="w"> </span>the<span class="w"> </span>location<span class="nt">&lt;/activity-description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;activity-description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Une<span class="w"> </span>description<span class="w"> </span>qui<span class="w"> </span>qualifie<span class="w"> </span>l&#39;activité<span class="w"> </span>ayant<span class="w"> </span>lieu<span class="w"> </span>à<span class="w"> </span>cet<span class="w"> </span>emplacement<span class="nt">&lt;/activity-description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;administrative</span><span class="w"> </span><span class="na">level=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1453782&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;G1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;point</span><span class="w"> </span><span class="na">srsName=</span><span class="s">&quot;http://www.opengis.net/def/crs/EPSG/0/4326&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;pos&gt;</span>31.616944<span class="w"> </span>65.716944<span class="nt">&lt;/pos&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/point&gt;</span>
+<span class="w">   </span><span class="nt">&lt;exactness</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;location-reach</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;location-class</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;2&quot;</span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;feature-designation</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;PRNQ&quot;</span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/location&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--location ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--sector starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;sector</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;22010&quot;</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;50&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;DAC&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;sector</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;11110&quot;</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;50&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;DAC&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--sector ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--country-budget-items starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;country-budget-items</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;budget-item</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1.1.1&quot;</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;50&quot;</span><span class="nt">&gt;</span>
+<span class="w">     </span><span class="nt">&lt;description&gt;</span>Description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">     </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/budget-item&gt;</span>
+<span class="w">   </span><span class="nt">&lt;budget-item</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1.1.2&quot;</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;50&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description&gt;</span>Description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/budget-item&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/country-budget-items&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--country-budget-items ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--policy-marker starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;policy-marker</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">significance=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;DAC&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;policy-marker</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;2&quot;</span><span class="w"> </span><span class="na">significance=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="na">vocabulary=</span><span class="s">&quot;DAC&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--policy-marker ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--collaboration-type starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;collaboration-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--collaboration-type ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-finance-type starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;default-finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;110&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-finance-type ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-flow-type starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;default-flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;10&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-flow-type ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-aid-type starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;default-aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-aid-type ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-tied-status starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;default-tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--default-tied-status ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--budget starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;budget</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/budget&gt;</span>
+<span class="w">  </span><span class="nt">&lt;budget</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="nt">&gt;</span>2000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/budget&gt;</span>
+<span class="w">  </span><span class="nt">&lt;budget</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-12-31&quot;</span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="nt">&gt;</span>2500<span class="nt">&lt;/value&gt;</span><span class="w">  </span>
+<span class="w">  </span><span class="nt">&lt;/budget&gt;</span>
+<span class="w">  </span><span class="nt">&lt;budget</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="nt">&gt;</span>3000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/budget&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--budget ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--planned-disbursement starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;planned-disbursement</span><span class="w"> </span><span class="na">updated=</span><span class="s">&quot;2012-04-01&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-04-01&quot;</span><span class="nt">&gt;</span>Planned<span class="w"> </span>disbursement<span class="w"> </span>for<span class="w"> </span>financial<span class="w"> </span>year<span class="w"> </span>2012/13<span class="nt">&lt;/period-start&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-04-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/planned-disbursement&gt;</span>
+<span class="w">  </span><span class="nt">&lt;planned-disbursement</span><span class="w"> </span><span class="na">updated=</span><span class="s">&quot;2013-04-01&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-04-01&quot;</span><span class="nt">&gt;</span>Planned<span class="w"> </span>disbursement<span class="w"> </span>for<span class="w"> </span>financial<span class="w"> </span>year<span class="w"> </span>2013/14<span class="nt">&lt;/period-start&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2013-04-01&quot;</span><span class="nt">&gt;</span>2000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/planned-disbursement&gt;</span>
+<span class="w">  </span><span class="nt">&lt;planned-disbursement</span><span class="w"> </span><span class="na">updated=</span><span class="s">&quot;2014-04-01&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-04-01&quot;</span><span class="nt">&gt;</span>Planned<span class="w"> </span>disbursement<span class="w"> </span>for<span class="w"> </span>financial<span class="w"> </span>year<span class="w"> </span>2014/15<span class="nt">&lt;/period-start&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2014-04-01&quot;</span><span class="nt">&gt;</span>3000<span class="nt">&lt;/value&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/planned-disbursement&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--planned-disbursement ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--capital-spend starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;capital-spend</span><span class="w"> </span><span class="na">percentage=</span><span class="s">&quot;88.8&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--capital-spend ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--transaction multi-lang starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;XYZ&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-31&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;CC-CCC-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;CC-CCC-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>C<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;10&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;110&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--transaction multi-lang ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--transaction starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;ABC&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;C&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;CC-CCC-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;CC-CCC-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>C<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;10&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;110&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w">   </span>
+<span class="w">   </span><span class="nt">&lt;tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span><span class="w">   </span>
+<span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+<span class="w">  </span><span class="nt">&lt;transaction</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;1234&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;value</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;EUR&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="nt">&gt;</span>1000<span class="nt">&lt;/value&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;IF&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;provider-org</span><span class="w"> </span><span class="na">provider-activity-id=</span><span class="s">&quot;BB-BBB-123456789-1234AA&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;BB-BBB-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>B<span class="nt">&lt;/provider-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;receiver-org</span><span class="w"> </span><span class="na">receiver-activity-id=</span><span class="s">&quot;AA-AAA-123456789-1234&quot;</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789&quot;</span><span class="nt">&gt;</span>Agency<span class="w"> </span>A<span class="nt">&lt;/receiver-org&gt;</span>
+<span class="w">   </span><span class="nt">&lt;transaction-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2012-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;flow-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;10&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;finance-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;110&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aid-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;tied-status</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;disbursement-channel</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/transaction&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--transaction ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_en.odt&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Project<span class="w"> </span>report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/document-link&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link-lang starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_en.odt&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Project<span class="w"> </span>report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Rapport<span class="w"> </span>de<span class="w"> </span>projet<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span><span class="w"> </span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/document-link&gt;</span><span class="w">  </span>
+<span class="w">  </span><span class="cm">&lt;!--document-link-lang ends--&gt;</span><span class="w">    </span>
+<span class="w">  </span><span class="cm">&lt;!--document-link-language starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_fr.odt&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Project<span class="w"> </span>report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Rapport<span class="w"> </span>de<span class="w"> </span>projet<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;B01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;fr&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/document-link&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--document-link-language ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--multi-cat-document-link starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;document-link</span><span class="w"> </span><span class="na">format=</span><span class="s">&quot;application/vnd.oasis.opendocument.text&quot;</span><span class="w"> </span><span class="na">url=</span><span class="s">&quot;http:www.example.org/docs/report_en.odt&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Project<span class="w"> </span>report<span class="w"> </span>2013<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A02&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;category</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;A03&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;language</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;en&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/document-link&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--multi-cat-document-link ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-website starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;activity-website&gt;</span>http://www.example.com/en/activity/ABC123<span class="nt">&lt;/activity-website&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--activity-website ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--related-activity starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;related-activity</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789-6789&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;related-activity</span><span class="w"> </span><span class="na">ref=</span><span class="s">&quot;AA-AAA-123456789-XYZ&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;3&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--related-activity ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--conditions starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;conditions</span><span class="w"> </span><span class="na">attached=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;condition</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>Conditions<span class="w"> </span>text<span class="nt">&lt;/condition&gt;</span>
+<span class="w">   </span><span class="nt">&lt;condition</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>Conditions<span class="w"> </span>texte<span class="nt">&lt;/condition&gt;</span>
+<span class="w">   </span><span class="nt">&lt;condition</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>Conditions<span class="w"> </span>text<span class="nt">&lt;/condition&gt;</span>
+<span class="w">   </span><span class="nt">&lt;condition</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;2&quot;</span><span class="nt">&gt;</span>Conditions<span class="w"> </span>texte<span class="nt">&lt;/condition&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/conditions&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--conditions ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--result starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;result</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">aggregation-status=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;indicator</span><span class="w"> </span><span class="na">measure=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">ascending=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;title&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">    </span><span class="nt">&lt;baseline</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2012&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;period&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="nt">/&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-03-31&quot;</span><span class="nt">/&gt;</span>
+<span class="w">     </span><span class="nt">&lt;target</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span>
+<span class="w">     </span><span class="nt">&lt;actual</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;11&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/period&gt;</span><span class="w"> </span>
+<span class="w">   </span><span class="nt">&lt;/indicator&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/result&gt;</span>
+<span class="w">  </span><span class="nt">&lt;result</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">aggregation-status=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Result<span class="w"> </span>2<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Result<span class="w"> </span>2<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;indicator</span><span class="w"> </span><span class="na">measure=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">ascending=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;title&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">    </span><span class="nt">&lt;baseline</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2012&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;110&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;period&gt;</span>
+<span class="w">     </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="nt">/&gt;</span>
+<span class="w">     </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-03-31&quot;</span><span class="nt">/&gt;</span>
+<span class="w">     </span><span class="nt">&lt;target</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;110&quot;</span><span class="nt">/&gt;</span>
+<span class="w">     </span><span class="nt">&lt;actual</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;111&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/period&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/indicator&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/result&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--result ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--multi-lang result starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;result</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">aggregation-status=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>titre<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;indicator</span><span class="w"> </span><span class="na">measure=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">ascending=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;title&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">    </span><span class="nt">&lt;title</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>titre<span class="nt">&lt;/title&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>texte<span class="w"> </span>de<span class="w"> </span>description<span class="nt">&lt;/description&gt;</span>
+<span class="w">    </span><span class="nt">&lt;baseline</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2012&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+<span class="w">     </span><span class="nt">&lt;comment&gt;</span>Baseline<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span>
+<span class="w">     </span><span class="nt">&lt;comment</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Baseline<span class="w"> </span>comment<span class="w"> </span>texte<span class="nt">&lt;/comment&gt;</span><span class="w"> </span>
+<span class="w">    </span><span class="nt">&lt;/baseline&gt;</span>
+<span class="w">    </span><span class="nt">&lt;period&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="nt">/&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-03-31&quot;</span><span class="nt">/&gt;</span>
+<span class="w">     </span><span class="nt">&lt;target</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment&gt;</span>Target<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Target<span class="w"> </span>comment<span class="w"> </span>texte<span class="nt">&lt;/comment&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;/target&gt;</span>
+<span class="w">     </span><span class="nt">&lt;actual</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;11&quot;</span><span class="nt">&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment&gt;</span>Actual<span class="w"> </span>comment<span class="w"> </span>text<span class="nt">&lt;/comment&gt;</span>
+<span class="w">      </span><span class="nt">&lt;comment</span><span class="w"> </span><span class="na">xml:lang=</span><span class="s">&quot;fr&quot;</span><span class="nt">&gt;</span>Actual<span class="w"> </span>comment<span class="w"> </span>texte<span class="nt">&lt;/comment&gt;</span><span class="w">     </span>
+<span class="w">     </span><span class="nt">&lt;/actual&gt;</span>
+<span class="w">    </span><span class="nt">&lt;/period&gt;</span><span class="w"> </span>
+<span class="w">   </span><span class="nt">&lt;/indicator&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/result&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--multi-lang result ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--multi-indicator result starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;result</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">aggregation-status=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;title&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">   </span><span class="nt">&lt;description&gt;</span>Result<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">   </span><span class="nt">&lt;indicator</span><span class="w"> </span><span class="na">measure=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">ascending=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;title&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description&gt;</span>Indicator<span class="w"> </span>1<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">    </span><span class="nt">&lt;baseline</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2012&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;period&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-01-01&quot;</span><span class="nt">/&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-03-31&quot;</span><span class="nt">/&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;target</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span><span class="w"> </span>
+<span class="w">     </span><span class="nt">&lt;actual</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;11&quot;</span><span class="nt">/&gt;</span><span class="w"> </span>
+<span class="w">    </span><span class="nt">&lt;/period&gt;</span><span class="w"> </span>
+<span class="w">   </span><span class="nt">&lt;/indicator&gt;</span>
+<span class="w">   </span><span class="nt">&lt;indicator</span><span class="w"> </span><span class="na">measure=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">ascending=</span><span class="s">&quot;1&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;title&gt;</span>Indicator<span class="w"> </span>2<span class="w"> </span>title<span class="nt">&lt;/title&gt;</span>
+<span class="w">    </span><span class="nt">&lt;description&gt;</span>Indicator<span class="w"> </span>2<span class="w"> </span>description<span class="w"> </span>text<span class="nt">&lt;/description&gt;</span>
+<span class="w">    </span><span class="nt">&lt;baseline</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2012&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;10&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;period&gt;</span>
+<span class="w">	 </span><span class="nt">&lt;period-start</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-04-01&quot;</span><span class="nt">/&gt;</span>
+<span class="w">	 </span><span class="nt">&lt;period-end</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-06-30&quot;</span><span class="nt">/&gt;</span>
+<span class="w">	 </span><span class="nt">&lt;target</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;11&quot;</span><span class="nt">/&gt;</span>
+<span class="w">	 </span><span class="nt">&lt;actual</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;12&quot;</span><span class="nt">/&gt;</span><span class="w"> </span>
+<span class="w">	</span><span class="nt">&lt;/period&gt;</span><span class="w"> </span>
+<span class="w">   </span><span class="nt">&lt;/indicator&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/result&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--multi-indicator result ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--legacy-data starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;legacy-data</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;Project Status&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;7&quot;</span><span class="w"> </span><span class="na">iati-equivalent=</span><span class="s">&quot;activity-status&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="nt">&lt;legacy-data</span><span class="w"> </span><span class="na">name=</span><span class="s">&quot;cost&quot;</span><span class="w"> </span><span class="na">value=</span><span class="s">&quot;1000&quot;</span><span class="w"> </span><span class="na">iati-equivalent=</span><span class="s">&quot;transaction&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--legacy-data ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--fss starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;fss</span><span class="w"> </span><span class="na">extraction-date=</span><span class="s">&quot;2014-05-06&quot;</span><span class="w"> </span><span class="na">priority=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">phaseout-year=</span><span class="s">&quot;2016&quot;</span><span class="nt">&gt;</span>
+<span class="w">   </span><span class="nt">&lt;forecast</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2014&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2013-07-03&quot;</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;GBP&quot;</span><span class="nt">&gt;</span>10000<span class="nt">&lt;/forecast&gt;</span>
+<span class="w">   </span><span class="nt">&lt;forecast</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2015&quot;</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;GBP&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2013-07-03&quot;</span><span class="nt">&gt;</span>20000<span class="nt">&lt;/forecast&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/fss&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--fss ends--&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--crs-add starts--&gt;</span>
+<span class="w">  </span><span class="nt">&lt;crs-add&gt;</span>
+<span class="w">   </span><span class="nt">&lt;aidtype-flag</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">significance=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;loan-terms</span><span class="w"> </span><span class="na">rate-1=</span><span class="s">&quot;4&quot;</span><span class="w"> </span><span class="na">rate-2=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;</span>
+<span class="w">    </span><span class="nt">&lt;repayment-type</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;repayment-plan</span><span class="w"> </span><span class="na">code=</span><span class="s">&quot;4&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;commitment-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2013-09-01&quot;</span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;repayment-first-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2014-01-01&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">    </span><span class="nt">&lt;repayment-final-date</span><span class="w"> </span><span class="na">iso-date=</span><span class="s">&quot;2020-12-31&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/loan-terms&gt;</span>
+<span class="w">   </span><span class="nt">&lt;loan-status</span><span class="w"> </span><span class="na">year=</span><span class="s">&quot;2014&quot;</span><span class="w"> </span><span class="na">currency=</span><span class="s">&quot;GBP&quot;</span><span class="w"> </span><span class="na">value-date=</span><span class="s">&quot;2013-05-24&quot;</span><span class="nt">&gt;</span>
+<span class="w">     </span><span class="nt">&lt;interest-received&gt;</span>200000<span class="nt">&lt;/interest-received&gt;</span>
+<span class="w">     </span><span class="nt">&lt;principal-outstanding&gt;</span>1500000<span class="nt">&lt;/principal-outstanding&gt;</span>
+<span class="w">     </span><span class="nt">&lt;principal-arrears&gt;</span>0<span class="nt">&lt;/principal-arrears&gt;</span>
+<span class="w">     </span><span class="nt">&lt;interest-arrears&gt;</span>0<span class="nt">&lt;/interest-arrears&gt;</span>
+<span class="w">   </span><span class="nt">&lt;/loan-status&gt;</span>
+<span class="w">  </span><span class="nt">&lt;/crs-add&gt;</span>
+<span class="w">  </span><span class="cm">&lt;!--crs-add ends--&gt;</span>
+<span class="w"> </span><span class="nt">&lt;/iati-activity&gt;</span>
+<span class="w"> </span><span class="cm">&lt;!--iati-activity ends--&gt;</span>
+<span class="nt">&lt;/iati-activities&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="further-guidance">
+<h2>Further guidance<a class="headerlink" href="#further-guidance" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="../iati-activities/"><span class="doc">IATI activity standard - reference pages</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../sitemap/">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Example Usage XML</a><ul>
+<li><a class="reference internal" href="#definition">Definition</a></li>
+<li><a class="reference internal" href="#considerations">Considerations</a></li>
+<li><a class="reference internal" href="#further-guidance">Further guidance</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../overview/contact-info/"
+                          title="previous chapter">Contact Info</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../elements/"
+                          title="next chapter">Elements</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/activity-standard/example-xml.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search/" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex/" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../elements/" title="Elements"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../overview/contact-info/" title="Contact Info"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../sitemap/">IATI Standard 1.04 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../../reference/" >Reference</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="../" >Activity Standard</a> &#187;</li>
+          <li class="nav-item nav-item-3"><a href="../overview/" >Overview</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Example Usage XML</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright Development Initiatives, licensed under CC-BY 4.0.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.2.6.
+    </div>
+  </body>
+</html>
