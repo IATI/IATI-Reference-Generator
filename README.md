@@ -33,3 +33,15 @@ Some diagnostic files are also created as a result of the process, they include:
 - `class_dict.json`: A nested data structure showing the class names of HTML elements within each file. This is used to ensure classes from the HTML output will be appropriately styled on the IATI Standard Website.
 - `href_list.csv`: A spreadsheet of links used within the output HTML, to help avoid broken links.
 - `unknown_words.csv`: A spreadsheet of words that a standard Python dictionary thinks may be misspelled to avoid typos.
+
+
+## To Update
+
+If you have updated the SSOT, then create a PR to pull the new version of the SSOT. Once merged, proceed to release. 
+
+## To Release
+
+Run the [Make_release](https://github.com/IATI/IATI-Reference-Generator/actions/workflows/release.yml) workflow manually. Check the release and make it public if necessary. 
+
+If deploying to the IATI Website, go to [the IATI Standard edit page](https://iatistandard.org/cms/pages/88/edit/), select the relevant release, and click "Update SSOT data"
+
